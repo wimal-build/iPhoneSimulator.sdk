@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1809D2EB-FF83-3FDA-93A0-B3E8934A68CF
+    value:           6DCAD3F5-434D-37A7-BDC6-0276DBAC997B
   - target:          arm64-ios-simulator
-    value:           0DCA13C9-B93D-31D4-9712-AE98E0ED0C5D
+    value:           87946DCE-F704-3598-9F1D-7891DCB2C324
 install-name:    '/System/Library/PrivateFrameworks/MessageProtection.framework/MessageProtection'
 current-version: 224.0.3
 exports:

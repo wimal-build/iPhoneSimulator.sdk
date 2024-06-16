@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           472E7A4B-8527-3ACC-A6BA-DFABDE85CA6A
   - target:          x86_64-ios-simulator
-    value:           39912BAB-756A-3056-B829-A6FF9295CC9E
+    value:           45DCBE00-75D9-3F73-9E8C-25E47B90262F
   - target:          arm64-ios-simulator
-    value:           F0E8ED6B-4D5E-32C7-86A1-93A3004AF346
+    value:           5F321057-139E-33AE-9E9C-368151ED64BF
 install-name:    '/System/Library/PrivateFrameworks/CoreOptimization.framework/CoreOptimization'
 exports:
   - targets:         [ i386-ios-simulator ]

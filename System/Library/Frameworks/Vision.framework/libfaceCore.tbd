@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           83F03EEF-ADDF-3F8D-8BEB-040E52545C68
+    value:           DDE971ED-DAC1-30DD-AD72-B5A4791AB8C5
   - target:          arm64-ios-simulator
-    value:           9D835F22-8FEF-3623-B776-04D4704FE5AE
+    value:           EA841587-7BE2-38C5-8A0D-F737FAA4FF19
 install-name:    '/System/Library/Frameworks/Vision.framework/libfaceCore.dylib'
-current-version: 4.0.51
+current-version: 4.0.70
 exports:
   - targets:         [ x86_64-ios-simulator ]
     weak-symbols:    [ __ZTINSt3__113basic_filebufIcNS_11char_traitsIcEEEE, __ZTINSt3__114basic_ifstreamIcNS_11char_traitsIcEEEE, 

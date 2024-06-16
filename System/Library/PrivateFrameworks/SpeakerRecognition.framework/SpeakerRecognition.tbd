@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4EF8CA76-DF61-359A-B90F-6FEC5733E464
+    value:           2A7D5078-7155-389B-B2AB-1842C70B64ED
   - target:          arm64-ios-simulator
-    value:           D6804257-CD09-39C7-A497-9338D8E7D372
+    value:           D3BB630D-83E2-3AA7-A09B-91EDF1DB42DB
 install-name:    '/System/Library/PrivateFrameworks/SpeakerRecognition.framework/SpeakerRecognition'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -23,12 +23,12 @@ exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CSAudioLogDirectory, _CSErrorDomain, _CSHasAOP, _CSInternalPreferencesSynchronize, 
                        _CSIsBridgeOS, _CSIsCommunalDevice, _CSIsEmbedded, _CSIsHorseman, 
-                       _CSIsHorsemanLiveOn, _CSIsIOS, _CSIsIPad, _CSIsIPhone, _CSIsInternalBuild, 
-                       _CSIsMac, _CSIsOSX, _CSIsSimulator, _CSIsTV, _CSIsTorpedo, 
-                       _CSIsWatch, _CSLogContextFacilityCoreSpeech, _CSLogDirectory, 
-                       _CSLogInitIfNeeded, _CSMachAbsoluteTimeAddTimeInterval, _CSMachAbsoluteTimeGetTimeInterval, 
-                       _CSMachAbsoluteTimeToMachContinuousTime, _CSMakeTimestampedAudioLogFilenameWithPrefixAndSuffix, 
-                       _CSNotBackedupInternalPreferencesSynchronize, _CSRunsSimple, 
+                       _CSIsHorsemanJunior, _CSIsHorsemanLiveOn, _CSIsIOS, _CSIsIPad, 
+                       _CSIsIPhone, _CSIsInternalBuild, _CSIsMac, _CSIsOSX, _CSIsSimulator, 
+                       _CSIsTV, _CSIsTorpedo, _CSIsWatch, _CSLogContextFacilityCoreSpeech, 
+                       _CSLogDirectory, _CSLogInitIfNeeded, _CSMachAbsoluteTimeAddTimeInterval, 
+                       _CSMachAbsoluteTimeGetTimeInterval, _CSMachAbsoluteTimeToMachContinuousTime, 
+                       _CSMakeTimestampedAudioLogFilenameWithPrefixAndSuffix, _CSNotBackedupInternalPreferencesSynchronize, 
                        _CSSafeSetOutErrorWithNSError, _CSSupportsVibrator, _CSSystemRootDirectory, 
                        _CSVTUI_AVAudioSessionPortBorealisInput, _CSVoiceProfileAvailabilityMetaBlobVersion, 
                        _KSSRDeviceBuildVersion, _SSRErrorDomain, _SSRLoggingSubsystem, 

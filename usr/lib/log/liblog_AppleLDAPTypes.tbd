@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FB4D0375-6998-3B9C-903E-25A94299D59C
+    value:           35C67D89-B457-3869-93C2-65415F77C389
   - target:          arm64-ios-simulator
-    value:           934CCA14-55C7-3242-86F6-297737AE9A02
+    value:           5EEFA80A-2193-3B75-9697-087D14F40A8D
 install-name:    '/usr/lib/log/liblog_AppleLDAPTypes.dylib'
 current-version: 54
 ...

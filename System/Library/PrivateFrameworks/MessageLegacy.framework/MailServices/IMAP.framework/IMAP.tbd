@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FB1B0D79-9332-3AAA-A5A3-FD4D6DAE70AF
+    value:           011CAFA9-B003-3B64-8635-C54746ED2901
   - target:          arm64-ios-simulator
-    value:           13994564-2269-3E02-A569-21672761AFDC
+    value:           E5EBD24B-A0CC-33EA-988F-D52D42E52295
 install-name:    '/System/Library/PrivateFrameworks/MessageLegacy.framework/MailServices/IMAP.framework/IMAP'
 current-version: 13
 exports:

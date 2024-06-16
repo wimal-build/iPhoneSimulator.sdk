@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           275D12AC-06E8-35E1-BA50-1D1CC85E6665
+    value:           32013968-B01F-3D02-A295-0E68CDB32A28
   - target:          arm64-ios-simulator
-    value:           B8AC947C-82B5-3203-92D0-A486B350D7EF
+    value:           A800A98C-7E7F-3966-AC3C-1944CD677AFB
 install-name:    '/System/Library/PrivateFrameworks/QLCharts.framework/QLCharts'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AA5BA96D-C2B9-3E1A-88C0-3BE227DC6E24
+    value:           0179CCED-2681-3A9E-9643-A48141B6CBE0
   - target:          arm64-ios-simulator
-    value:           AA4FE480-BCF4-3FE6-ADB4-F3A012E589A6
+    value:           9F16A8BA-F851-3690-9284-071DEEA09646
 install-name:    '/System/Library/PrivateFrameworks/PlatterKit.framework/PlatterKit'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

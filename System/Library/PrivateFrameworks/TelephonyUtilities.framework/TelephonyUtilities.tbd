@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           77D976B1-1C50-39E8-8BF1-74A8ECE133CF
   - target:          x86_64-ios-simulator
-    value:           2014B739-2D13-36FB-87DA-FA244BE57C37
+    value:           EC51558C-A97E-31AC-8054-8C2B0E99CD80
   - target:          arm64-ios-simulator
-    value:           8F98D898-AB18-34B0-90A6-869273ED50CF
+    value:           D837EDA9-4772-309B-8E86-DEB44765157C
 install-name:    '/System/Library/PrivateFrameworks/TelephonyUtilities.framework/TelephonyUtilities'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -66,19 +66,19 @@ exports:
                        _TUAudioRouteBluetoothProductIdentifierAirPodsPro, _TUAudioRouteBluetoothProductIdentifierBeatsSolo, 
                        _TUAudioRouteBluetoothProductIdentifierBeatsSoloPro, _TUAudioRouteBluetoothProductIdentifierBeatsStudio, 
                        _TUAudioRouteBluetoothProductIdentifierBeatsStudio2, _TUAudioRouteBluetoothProductIdentifierBeatsX, 
-                       _TUAudioRouteBluetoothProductIdentifierPowerbeats, _TUAudioRouteBluetoothProductIdentifierPowerbeats2, 
-                       _TUAudioRouteBluetoothProductIdentifierPowerbeats4, _TUAudioRouteBluetoothProductIdentifierPowerbeatsPro, 
-                       _TUAudioSystemActiveCategoryVolumeChangedNotification, _TUAudioSystemAudioPickableRoutesChanged, 
-                       _TUAudioSystemDownlinkMuteStatusChangedNotification, _TUAudioSystemTTYChangedNotification, 
-                       _TUAudioSystemUplinkMuteStatusChangedNotification, _TUBinaryGCD, 
-                       _TUBundle, _TUBundleIdentifierCallServicesDaemon, _TUBundleIdentifierFaceTimeApplication, 
-                       _TUBundleIdentifierInCallServiceApplication, _TUBundleIdentifierLivePhotoXPCService, 
-                       _TUBundleIdentifierMessagesApplication, _TUBundleIdentifierMobilePhoneApplication, 
-                       _TUBundleIdentifierNanoPhoneApplication, _TUBundleIdentifierSpringBoardApplication, 
-                       _TUBundleIdentifierTelephonyUtilitiesFramework, _TUBundleIdentifierTinCan, 
-                       _TUBundleIdentifierVideoConferenceIdentifier, _TUCTServerConnection, 
-                       _TUCallAudioPropertiesChangedNotification, _TUCallCameraTypeChangedNotification, 
-                       _TUCallCapabilitiesCloudCallingDevicesChangedNotification, 
+                       _TUAudioRouteBluetoothProductIdentifierBeatsX2, _TUAudioRouteBluetoothProductIdentifierPowerbeats, 
+                       _TUAudioRouteBluetoothProductIdentifierPowerbeats2, _TUAudioRouteBluetoothProductIdentifierPowerbeats4, 
+                       _TUAudioRouteBluetoothProductIdentifierPowerbeatsPro, _TUAudioSystemActiveCategoryVolumeChangedNotification, 
+                       _TUAudioSystemAudioPickableRoutesChanged, _TUAudioSystemDownlinkMuteStatusChangedNotification, 
+                       _TUAudioSystemTTYChangedNotification, _TUAudioSystemUplinkMuteStatusChangedNotification, 
+                       _TUBinaryGCD, _TUBundle, _TUBundleIdentifierCallServicesDaemon, 
+                       _TUBundleIdentifierFaceTimeApplication, _TUBundleIdentifierInCallServiceApplication, 
+                       _TUBundleIdentifierLivePhotoXPCService, _TUBundleIdentifierMessagesApplication, 
+                       _TUBundleIdentifierMobilePhoneApplication, _TUBundleIdentifierNanoPhoneApplication, 
+                       _TUBundleIdentifierSpringBoardApplication, _TUBundleIdentifierTelephonyUtilitiesFramework, 
+                       _TUBundleIdentifierTinCan, _TUBundleIdentifierVideoConferenceIdentifier, 
+                       _TUCTServerConnection, _TUCallAudioPropertiesChangedNotification, 
+                       _TUCallCameraTypeChangedNotification, _TUCallCapabilitiesCloudCallingDevicesChangedNotification, 
                        _TUCallCapabilitiesEmergencyCallbackModeChangedNotification, 
                        _TUCallCapabilitiesEmergencyCallbackPossibleChangedNotification, 
                        _TUCallCapabilitiesFaceTimeAvailabilityChangedNotification, 

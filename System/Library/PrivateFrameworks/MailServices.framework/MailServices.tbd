@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           EAAC03F9-2299-3F61-BA60-2690ACD9532E
   - target:          x86_64-ios-simulator
-    value:           C7E6D827-4596-3A80-B774-1704525AC257
+    value:           6B8C04B2-9582-3939-8761-85DA0210006C
   - target:          arm64-ios-simulator
-    value:           E1AF89B2-554E-3A09-8F99-13BE7B021981
+    value:           3A351909-F535-366C-939C-F4994A9A29EF
 install-name:    '/System/Library/PrivateFrameworks/MailServices.framework/MailServices'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _BCCSelfKey, _BlockRemoteImagesKey, _FlagStyleColor, _FlagStyleKey, 

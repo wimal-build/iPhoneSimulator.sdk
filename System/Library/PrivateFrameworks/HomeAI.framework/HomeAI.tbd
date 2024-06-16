@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           24F1A457-38BB-3E9B-8766-E984ADFF67C7
+    value:           C71DA96A-33BD-3956-B5EB-EECC161DC91C
   - target:          arm64-ios-simulator
-    value:           D8C776AF-BC07-36A6-A31B-A1E4A72FCA9B
+    value:           56D63A47-6FD5-3F5E-AF36-7E5B1A58826E
 install-name:    '/System/Library/PrivateFrameworks/HomeAI.framework/HomeAI'
 exports:
   - targets:         [ x86_64-ios-simulator ]

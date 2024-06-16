@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           15C524E1-D0A3-3132-B60B-011011A2E983
+    value:           F39812AE-53F9-3E49-89E5-E3627BA661AD
   - target:          arm64-ios-simulator
-    value:           B5E41CF8-9449-320E-AC46-0892A20F1D20
+    value:           D1BA5844-FF32-3E06-BD58-C54BB907C861
 install-name:    '/System/Library/PrivateFrameworks/SpeakThisServices.framework/SpeakThisServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

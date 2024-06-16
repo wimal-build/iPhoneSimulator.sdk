@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           88D2A362-C296-3072-A2E5-F3F4994DA069
   - target:          x86_64-ios-simulator
-    value:           9B385E3D-2C36-359B-8B58-A9495F3AE97F
+    value:           20FFF494-10BE-37D4-A86B-8E597A8A47F8
   - target:          arm64-ios-simulator
-    value:           5F70FED5-C875-3FB7-A513-DA77848DE33B
+    value:           070BE017-1FDC-341A-BCA2-CF70A643CE46
 install-name:    '/usr/lib/system/libmacho.dylib'
 current-version: 973.0.1
 parent-umbrella:

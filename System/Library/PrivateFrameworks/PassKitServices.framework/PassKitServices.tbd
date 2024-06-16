@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F91E8535-AE2F-3341-AB8C-2A464F6AABF5
+    value:           05280536-E797-3DF9-AFA1-9A6CC2795075
   - target:          arm64-ios-simulator
-    value:           9387893F-29E7-3D13-B428-BBCCB3B756AC
+    value:           AEC76F04-CEE6-3139-8408-3A31435FF41E
 install-name:    '/System/Library/PrivateFrameworks/PassKitServices.framework/PassKitServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

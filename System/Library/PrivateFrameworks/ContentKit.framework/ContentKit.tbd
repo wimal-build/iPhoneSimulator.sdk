@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           57E7A8A4-1984-3719-9ADF-1680F49E1025
+    value:           E49DFEBF-185B-3E53-8BE7-2F57FDE8956D
   - target:          arm64-ios-simulator
-    value:           98694609-778E-370F-9DFE-17985B4E68BF
+    value:           7096E696-07BD-319D-8CF6-CD48434F8D37
 install-name:    '/System/Library/PrivateFrameworks/ContentKit.framework/ContentKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

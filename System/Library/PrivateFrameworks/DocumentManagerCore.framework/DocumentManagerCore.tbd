@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EB84B637-D7CB-33CC-9F00-E541691F636E
+    value:           75580E73-7BA1-36DC-B7AF-1F7A8538B442
   - target:          arm64-ios-simulator
-    value:           827AFA65-ECBA-3535-AA3B-39F44D684D33
+    value:           CDEF6663-6775-3531-B72C-5F1DC292925D
 install-name:    '/System/Library/PrivateFrameworks/DocumentManagerCore.framework/DocumentManagerCore'
-current-version: 200
+current-version: 200.1.255
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ DOCFPItemCollectionManager._activeCollections ]

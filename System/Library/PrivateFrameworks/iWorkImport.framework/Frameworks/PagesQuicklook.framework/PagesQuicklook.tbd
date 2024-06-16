@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F8DB1E79-9F67-3100-981A-9C768C0576E5
+    value:           A5541074-CEBE-309B-8484-6BF817CB0F39
   - target:          arm64-ios-simulator
-    value:           FDC19FB1-A558-33E8-9C21-AFF137191C63
+    value:           ADE576E5-9AFA-3854-89FD-4B352A9BA724
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/PagesQuicklook.framework/PagesQuicklook'
 swift-abi-version: 7
 exports:

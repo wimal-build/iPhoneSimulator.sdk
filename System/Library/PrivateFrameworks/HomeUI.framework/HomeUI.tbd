@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C36CC871-1B84-331F-9B96-3B0CE0F5841C
   - target:          x86_64-ios-simulator
-    value:           19A8BAA5-76EC-3B51-9743-A534EB7D794C
+    value:           593E0185-8FCB-38B4-9314-658F2008B241
   - target:          arm64-ios-simulator
-    value:           E7EFB8EA-F9C2-3F56-AD6B-D2D1340443D0
+    value:           EA35D477-3437-3E2E-A6A5-A75CEF1254B6
 install-name:    '/System/Library/PrivateFrameworks/HomeUI.framework/HomeUI'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -101,10 +101,11 @@ exports:
                        _HUGridPlaceholderServicesSectionIdentifier, _HUGridScenesSectionIdentifier, 
                        _HUGridServicesSectionIdentifier, _HUGridStatusBannerSectionIdentifier, 
                        _HUGridStatusCellParseTextLines, _HUGridStatusSectionIdentifier, 
-                       _HUHighestCommonFactor, _HUHomeControlServiceHomeAppIconViewInNavigationHeaderFrameKey, 
+                       _HUGridWelcomeUIBannerSectionIdentifier, _HUHighestCommonFactor, 
+                       _HUHomeControlServiceHomeAppIconViewInNavigationHeaderFrameKey, 
                        _HUHomeControlServiceHomeNameLabelInNavigationHeaderFrameKey, 
                        _HUHomeControlServiceRoomNameLabelInNavigationHeaderFrameKey, 
-                       _HUHomeFeatureOnboardingKey_CameraRecording_DismissReminderBanner, 
+                       _HUHomeFeatureOnboardingKey_Announce_FinishedOnboarding, _HUHomeFeatureOnboardingKey_CameraRecording_DismissReminderBanner, 
                        _HUHomeFeatureOnboardingKey_CameraRecording_FinishedOnboarding, 
                        _HUHomeFeatureOnboardingKey_IdentifyVoice_DismissReminderBanner, 
                        _HUHomeFeatureOnboardingKey_IdentifyVoice_FinishedOnboarding, 
@@ -198,6 +199,7 @@ exports:
                        _HUTriggerActionEditorItemManagerShortcutsHeaderSectionIdentifier, 
                        _HUTriggerActionEditorItemManagerShortcutsItemSectionIdentifier, 
                        _HUTriggerBuilderItemResultActiveForceDisableReasonsKey, _HUTriggerBuilderItemResultForceDisableReasonsForSecureCharacteristicControlKey, 
+                       _HUTriggerMediaPickerUnavailableMusicAppUninstalledForMusicAlarmPromptMessage, 
                        _HUTriggerMediaPickerUnavailableMusicAppUninstalledPromptMessage, 
                        _HUTriggerMediaPickerUnavailableMusicCatalogPlaybackDisabledPromptMessage, 
                        _HUTriggerSummaryTransactionReasonTestTrigger, _HUUpgradeMultiUserDevicesOnboardingKey_UserInput, 
@@ -214,6 +216,7 @@ exports:
                        __HUSetOverrideGlobalCoordinateSpace, __supportedVoiceRecognitionLanguages, 
                        _borderColorSurroundingColor, _bottomInset, _defaultNumberOfDescriptionLines, 
                        _defaultNumberOfTitleLines, _inlineDatePickerCellSpacing, 
+                       _kAnnounceDisplayThreshold, _kAnnounceTextButtonDisplayStatsKey, 
                        _kBorderLineOpacity, _kBorderLineWidth, _kButtonMargin, _kCodeFieldItemSeparation, 
                        _kCodeFieldItemsViewSpacing, _kDatePickerCellLeftMargin, _kDefaultNumDigits, 
                        _kDisableUpdatesReason_HUItemCollectionViewController_NotVisible, 
@@ -227,11 +230,11 @@ exports:
                        _kHUAlarmTableViewCellCornerRadius, _kHUAlarmTableViewCellEditModeSeparatorInset, 
                        _kHUAlarmTableViewCellEstimatedRowHeight, _kHUAlarmTableViewCellNormalSeparatorInset, 
                        _kHUAlarmTableViewCellReuseIdentifier, _kHUAlarmTableViewCellSwitchMargin, 
-                       _kHUAlbumArtworkCornerRadius, _kHUAlbumArtworkSize, _kHUEditAlarmTitleFinishedNotification, 
-                       _kHUEditUserPersonalRequestsRequireAuthSection, _kHUHomeIdentifierKey, 
-                       _kHUHomeNameKey, _kHUHomePropertyKey, _kHUInvitationAcceptActionKey, 
-                       _kHUInvitationDeclineActionKey, _kHUInvitationPropertyKey, 
-                       _kHUOutgoingInvitationKey, _kHUQuickControlPresentationProgrammaticBounceDuration, 
+                       _kHUAlbumArtworkCornerRadius, _kHUAlbumArtworkSize, _kHUDfaultActionURLKey, 
+                       _kHUEditAlarmTitleFinishedNotification, _kHUEditUserPersonalRequestsRequireAuthSection, 
+                       _kHUHomeIdentifierKey, _kHUHomeNameKey, _kHUHomePropertyKey, 
+                       _kHUInvitationAcceptActionKey, _kHUInvitationDeclineActionKey, 
+                       _kHUInvitationPropertyKey, _kHUOutgoingInvitationKey, _kHUQuickControlPresentationProgrammaticBounceDuration, 
                        _kHUQuickControlValveToggleViewIntrinsicContentSize, _kHURoomIdentifierKey, 
                        _kHURoomNameKey, _kHUServiceTypeKey, _kHUUpdateSpecifierActionKey, 
                        _kHUUserDataContactKey, _kHUUserDataEmailNameKey, _kHUUserDataImageKey, 
@@ -395,7 +398,8 @@ exports:
                        HUGridServiceCellTextView, HUGridServicePlaceholderCell, HUGridStatusBadgeView, 
                        HUGridStatusBannerCellLayoutOptions, HUGridStatusCell, HUGridStatusCellLayoutOptions, 
                        HUGridStatusCellTextView, HUGridStatusIconBadgeView, HUGridStatusListViewController, 
-                       HUGridStatusNumberedBadgeView, HUHomeAccessoryTileView, HUHomeAssistantDeviceLanguageConfigurationViewController, 
+                       HUGridStatusNumberedBadgeView, HUGridWelcomeUIBannerCellLayoutOptions, 
+                       HUHomeAccessoryTileView, HUHomeAssistantDeviceLanguageConfigurationViewController, 
                        HUHomeAssistantDeviceLanguageSetupViewController, HUHomeAssistantDevicesUnsupportedLanguageFlow, 
                        HUHomeAssistantDevicesUnsupportedLanguageViewController, HUHomeControlServiceContext, 
                        HUHomeControlServiceManager, HUHomeFeatureOnboarder, HUHomeFeatureOnboardingUtilities, 
@@ -537,8 +541,9 @@ exports:
                        HUQuickControlWheelPickerViewItem, HUQuickControlWheelPickerViewProfile, 
                        HURecommendationItem, HURecommendationItemModule, HURecommendationItemModuleController, 
                        HURecommendationItemProvider, HURecommendationListContentItemManager, 
-                       HURecommendationListContentViewController, HURecordingEventCellFamiliarFacesView, 
-                       HURelativeAnimation, HURemoteAccessItemManager, HURemoteAccessTableViewController, 
+                       HURecommendationListContentViewController, HURecordedWaveformView, 
+                       HURecordingEventCellFamiliarFacesView, HURelativeAnimation, 
+                       HURemoteAccessItemManager, HURemoteAccessTableViewController, 
                        HURemoteContextHostingView, HURemoveNetworkRouterMoreInformationViewController, 
                        HUReverseCircleOverlay, HUReverseCircleRenderer, HURoomActionSetListItemManager, 
                        HURoomListItemCell, HURoomListItemManager, HURoomListToRoomAnimator, 
@@ -634,8 +639,8 @@ exports:
                        HUWallpaperPhotoCell, HUWallpaperPhotoCollectionCell, HUWallpaperPhotoCollectionViewController, 
                        HUWallpaperPickerInlineViewController, HUWallpaperPickerViewController, 
                        HUWallpaperThumbnailCell, HUWallpaperView, HUWaterDropletIconContentView, 
-                       HUWaveformSlice, HUWaveformView, HUWebViewController, HUWheelColorWheelSpace, 
-                       HUWheelControlPanelCell, HUWheelControlPanelConfiguration, 
+                       HUWaveformSlice, HUWaveformView, HUWebViewController, HUWelcomeUIBannerCell, 
+                       HUWheelColorWheelSpace, HUWheelControlPanelCell, HUWheelControlPanelConfiguration, 
                        HUWheelControlPopUpButton, HUWheelControlView, HUZoneModuleController, 
                        _HUCameraNavigationToolbarForHomeAffordance, _HUMoveAlongNothingToSeeHere, 
                        _HUPocketButton, _HUQuickControlContentCharacteristicWriteQueuedUpdate, 

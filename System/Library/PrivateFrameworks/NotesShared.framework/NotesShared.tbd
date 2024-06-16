@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F0D4D7E9-E46C-3043-8D23-D4D7420FF64D
   - target:          x86_64-ios-simulator
-    value:           A9E9D24E-AB4F-37B2-97D2-684EE78D7050
+    value:           71B4FF84-5762-3490-ABCF-5B322BBC32A8
   - target:          arm64-ios-simulator
-    value:           091C3E06-2190-3854-A9EB-5E63188C9C5B
+    value:           3BDD2092-39C4-364D-9629-6E38EFE88CBE
 install-name:    '/System/Library/PrivateFrameworks/NotesShared.framework/NotesShared'
 current-version: 1759
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FA8C4F23-D606-3940-BF94-67118C166D23
   - target:          x86_64-ios-simulator
-    value:           AB967DC5-3844-30CD-9F73-765BE42902A1
+    value:           E252F090-6E6C-32C4-BDA8-F5499CCA6BA7
   - target:          arm64-ios-simulator
-    value:           55034EED-70CF-3E3B-B075-771D6E94CECF
+    value:           6029606A-78A7-361F-905C-B6AF0D58ABA2
 install-name:    '/System/Library/PrivateFrameworks/MediaLibraryCore.framework/MediaLibraryCore'
 exports:
   - targets:         [ i386-ios-simulator ]

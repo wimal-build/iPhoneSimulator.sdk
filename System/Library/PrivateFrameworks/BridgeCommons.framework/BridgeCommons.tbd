@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3D99A754-81EC-31FD-B002-673D91EEAA8C
+    value:           C4506378-2A19-329E-998E-4D85F2DC6D74
   - target:          arm64-ios-simulator
-    value:           C0637C1C-151C-3876-80C7-1FE205B39A2B
+    value:           D7610FF6-239B-3443-A00C-E8CB7FF65291
 install-name:    '/System/Library/PrivateFrameworks/BridgeCommons.framework/BridgeCommons'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

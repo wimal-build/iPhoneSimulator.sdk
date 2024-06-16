@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2FB5C88B-8675-3E30-87A8-BA4E870BC152
   - target:          x86_64-ios-simulator
-    value:           089A8337-149C-3B9F-8E4C-D57944B2600A
+    value:           046BFFBB-FC88-3223-9A0B-D365F6B09B23
   - target:          arm64-ios-simulator
-    value:           36B6CA88-2469-3896-99FF-27EE00F20CC9
+    value:           C23CE3B8-00B1-3F00-AFB5-89666FED797B
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/AVFoundation'
 current-version: 2
 reexported-libraries:
@@ -1391,9 +1391,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           15A1E568-1F9B-3CDB-993D-07117F7C056C
   - target:          x86_64-ios-simulator
-    value:           EA8DD6BD-F504-38AC-AA73-67A962C5A450
+    value:           FFEAC4C7-4177-3ED4-B5DD-0B2DBB9B708C
   - target:          arm64-ios-simulator
-    value:           09ECA239-9FF5-305A-A4FE-FC947031D675
+    value:           297633FE-7E64-30B9-BA23-35F08EBBF33C
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1507,9 +1507,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DE952E99-4C1F-3B02-B504-505367D0FB08
+    value:           0F009829-7EDD-3507-B36B-433B229E7F13
   - target:          arm64-ios-simulator
-    value:           68E06DA1-BD4D-3721-B1C7-E3684C3D148A
+    value:           8AA1ACF4-AA6C-3C81-B6CB-18E47AB73B2A
 install-name:    '/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1519,12 +1519,13 @@ exports:
     symbols:         [ _AVAppleMakerNote_ARKitPhoto, _AVAppleMakerNote_AssetIdentifier, 
                        _AVAppleMakerNote_BurstUUID, _AVAppleMakerNote_ImageCaptureRequestIdentifier, 
                        _AVAppleMakerNote_ImageGroupIdentifier, _AVAppleMakerNote_LuminanceNoiseAmplitude, 
-                       _AVAppleMakerNote_OriginatingAppID, _AVAppleMakerNote_PhotoIdentifier, 
-                       _AVAppleMakerNote_PhotoProcessingFlags, _AVAppleMakerNote_PhotosAppFeatureFlags, 
-                       _AVAppleMakerNote_PhotosOriginatingSignature, _AVAppleMakerNote_PhotosRenderEffect, 
-                       _AVAppleMakerNote_PhotosRenderOriginatingSignature, _AVAppleMakerNote_SceneFlags, 
-                       _AVAppleMakerNote_SpatialOverCaptureGroupIdentifier, _AVAppleMakerNote_SpatialOverCaptureImageType, 
-                       _AVAppleMakerNote_StillImageProcessingHomography, _AVAppleMakerNote_iCloudServerSoftwareVersionForDynamicallyGeneratedMedia, 
+                       _AVAppleMakerNote_MeteorPlusGainMap, _AVAppleMakerNote_OriginatingAppID, 
+                       _AVAppleMakerNote_PhotoIdentifier, _AVAppleMakerNote_PhotoProcessingFlags, 
+                       _AVAppleMakerNote_PhotosAppFeatureFlags, _AVAppleMakerNote_PhotosOriginatingSignature, 
+                       _AVAppleMakerNote_PhotosRenderEffect, _AVAppleMakerNote_PhotosRenderOriginatingSignature, 
+                       _AVAppleMakerNote_SceneFlags, _AVAppleMakerNote_SpatialOverCaptureGroupIdentifier, 
+                       _AVAppleMakerNote_SpatialOverCaptureImageType, _AVAppleMakerNote_StillImageProcessingHomography, 
+                       _AVAppleMakerNote_iCloudServerSoftwareVersionForDynamicallyGeneratedMedia, 
                        _AVCaptureBravoCameraSelectionBehaviorEvaluatesContinuously, 
                        _AVCaptureBravoCameraSelectionBehaviorEvaluatesNever, _AVCaptureBravoCameraSelectionBehaviorEvaluatesOnZoomChange, 
                        _AVCaptureBravoCameraSelectionBehaviorUnsupported, _AVCaptureCancelPrewarm, 
@@ -1603,8 +1604,9 @@ exports:
                        _AVMetadataObjectTypeQRCode, _AVMetadataObjectTypeSaliencyHeatMap, 
                        _AVMetadataObjectTypeSalientObject, _AVMetadataObjectTypeTrackedFaces, 
                        _AVMetadataObjectTypeUPCECode, _AVMetadataObjectTypeVideoPreviewHistogram, 
-                       _AVSemanticSegmentationMatteTypeHair, _AVSemanticSegmentationMatteTypeSkin, 
-                       _AVSemanticSegmentationMatteTypeTeeth, _kAVFCaptureSCMVersion ]
+                       _AVSemanticSegmentationMatteTypeGlasses, _AVSemanticSegmentationMatteTypeHair, 
+                       _AVSemanticSegmentationMatteTypeSkin, _AVSemanticSegmentationMatteTypeTeeth, 
+                       _kAVFCaptureSCMVersion ]
     objc-classes:    [ AVApplePortraitMetadata, AVCameraCalibrationData, AVCaptureAudioChannel, 
                        AVCaptureAudioDataOutput, AVCaptureAutoExposureBracketedStillImageSettings, 
                        AVCaptureBracketedStillImageSettings, AVCaptureCameraCalibrationDataOutput, 
@@ -1638,10 +1640,6 @@ targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator
 uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
-  - target:          x86_64-ios-simulator
-    value:           650A6725-FCF7-3212-8137-09723B2EEE94
-  - target:          arm64-ios-simulator
-    value:           063AE2B3-1DF5-3535-BC54-2AB9C67932D8
 install-name:    '/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

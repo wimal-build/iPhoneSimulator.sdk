@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           456A5AF5-963B-37DF-8F25-01262C407296
+    value:           3A1A6E7A-6D51-38CF-B3E9-8E2C907FDF64
   - target:          arm64-ios-simulator
-    value:           873B499E-C895-3B06-ADBD-6D4B6C217FA2
+    value:           1E94F9FC-040C-3B42-8B32-CFF3F8F9A3FC
 install-name:    '/System/Library/PrivateFrameworks/JetEngine.framework/JetEngine'
 swift-abi-version: 7
 allowable-clients:

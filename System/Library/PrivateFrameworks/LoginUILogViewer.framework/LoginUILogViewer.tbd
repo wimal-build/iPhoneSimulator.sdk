@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5AC28A45-BA25-3916-92E0-54B0DF36DAB5
+    value:           E8DCA058-1607-37DD-A7B6-55AFFDB5FE62
   - target:          arm64-ios-simulator
-    value:           8210F4ED-4AAD-381F-813D-1E7E221C2A36
+    value:           C5E4B365-A801-3F38-BC37-69ACE21714F8
 install-name:    '/System/Library/PrivateFrameworks/LoginUILogViewer.framework/LoginUILogViewer'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

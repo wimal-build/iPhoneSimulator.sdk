@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A664F34E-3968-3CD0-87CD-C7803CEAD89E
   - target:          x86_64-ios-simulator
-    value:           E789B360-01B4-3E75-9CE1-2B0022DCB978
+    value:           DE75708D-AA7E-3D96-AEE2-DEF1DAF2D17D
   - target:          arm64-ios-simulator
-    value:           0C091F5C-1906-371B-BD9B-0AF3563EB937
+    value:           84BC4CEE-2E96-3BEC-AB19-E0C5A0679880
 install-name:    '/System/Library/PrivateFrameworks/CalendarDaemon.framework/CalendarDaemon'
 exports:
   - targets:         [ i386-ios-simulator ]

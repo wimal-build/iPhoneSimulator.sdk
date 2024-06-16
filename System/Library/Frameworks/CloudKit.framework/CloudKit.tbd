@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           413609CC-83C6-3BD3-B872-BA61486B4734
   - target:          x86_64-ios-simulator
-    value:           75F800AA-98DA-3280-833D-1D37BF7511BE
+    value:           14D4C24B-57F7-3534-91B6-6D3B57D0B410
   - target:          arm64-ios-simulator
-    value:           5CD6316D-EF64-3A76-925E-48894F2C20AE
+    value:           E7F658FC-F093-3CD5-B529-552E21CE1640
 install-name:    '/System/Library/Frameworks/CloudKit.framework/CloudKit'
 current-version: 950
 exports:

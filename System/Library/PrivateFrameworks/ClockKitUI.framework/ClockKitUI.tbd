@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4943AA08-D1DD-3954-8696-CD6D7CD9004D
   - target:          x86_64-ios-simulator
-    value:           FA14374C-AB15-3618-BCF3-C7741050BAFE
+    value:           F9DF56E0-128D-36DF-938C-B54CA80D857F
   - target:          arm64-ios-simulator
-    value:           819EC666-EC8C-35A8-9F00-15BA39C50F4C
+    value:           8F3571D2-D57F-3BAD-9D17-24B3B0BAD8C2
 install-name:    '/System/Library/PrivateFrameworks/ClockKitUI.framework/ClockKitUI'
 exports:
   - targets:         [ i386-ios-simulator ]

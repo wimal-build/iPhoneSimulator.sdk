@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           345A7055-6101-3574-B05F-A7D0493CF137
   - target:          x86_64-ios-simulator
-    value:           A370CC96-8D59-3DED-A79F-7B3CADA5AEAC
+    value:           192FC4F5-9E83-3D15-A5DB-BB96411E3D46
   - target:          arm64-ios-simulator
-    value:           4DCB526E-E3F1-3E78-8F0D-A2A35DB30C78
+    value:           33F9D580-213A-3EEC-9D02-A968E4B93984
 install-name:    '/System/Library/PrivateFrameworks/SafariSafeBrowsing.framework/SafariSafeBrowsing'
 current-version: 0
 compatibility-version: 0

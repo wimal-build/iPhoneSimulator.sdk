@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1AA13B50-A748-380D-B6E1-9204025D0AAA
   - target:          x86_64-ios-simulator
-    value:           4936B84A-B47D-3113-AA7C-663D04E5361B
+    value:           7C1144C3-8BE1-3948-8C55-7F28799987A6
   - target:          arm64-ios-simulator
-    value:           6B5FCA66-E95A-3905-9C4D-81D44E360107
+    value:           CBD054CB-9155-37B3-9103-A984CAE1AA0D
 install-name:    '/System/Library/PrivateFrameworks/OAuth.framework/OAuth'
 current-version: 25
 exports:

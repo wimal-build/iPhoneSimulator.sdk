@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           821CC510-4387-313A-93B2-8D893E5FDF00
   - target:          x86_64-ios-simulator
-    value:           120DCBFC-CDAC-32A9-84F7-D924474A59A2
+    value:           947CAE96-2923-3B51-BD2E-15E037F0F7C2
   - target:          arm64-ios-simulator
-    value:           0F7BE562-42AA-3B82-8725-3712090F4C98
+    value:           5CA44DE5-4F23-3080-8585-5CCF1542CBA1
 install-name:    '/System/Library/Frameworks/CoreMedia.framework/CoreMedia'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1310,13 +1310,15 @@ exports:
                        _FigH264Bridge_LocateSliceHeaderForHLSfMP4EncryptableNAL, 
                        _FigH264Bridge_MeasureSliceHeader, _FigHEVCBridge_CopyHEVCSEIPayloadData, 
                        _FigHEVCBridge_CopyParsingInformation, _FigHEVCBridge_CreateAlphaInfoSEI, 
-                       _FigHEVCBridge_CreateArrayOfSEINALUnitsFromJumboSEINALUnit, 
-                       _FigHEVCBridge_CreateHLSfMP4ParsingInfoFromHVCCData, _FigHEVCBridge_CreateHVCCFromHEVCParameterSets, 
-                       _FigHEVCBridge_CreateMuxedAlphaDataBuffer, _FigHEVCBridge_CreateMuxedAlphaFormatDescription, 
-                       _FigHEVCBridge_CreateMuxedAlphaHVCC, _FigHEVCBridge_CreateSelectedLayerFormatDescriptionFromMuxedAlphaFormatDescription, 
+                       _FigHEVCBridge_CreateAmbientViewingEnvironmentSEINAL, _FigHEVCBridge_CreateArrayOfSEINALUnitsFromJumboSEINALUnit, 
+                       _FigHEVCBridge_CreateDolbyRPUNAL, _FigHEVCBridge_CreateHLSfMP4ParsingInfoFromHVCCData, 
+                       _FigHEVCBridge_CreateHVCCFromHEVCParameterSets, _FigHEVCBridge_CreateMuxedAlphaDataBuffer, 
+                       _FigHEVCBridge_CreateMuxedAlphaFormatDescription, _FigHEVCBridge_CreateMuxedAlphaHVCC, 
+                       _FigHEVCBridge_CreateSelectedLayerFormatDescriptionFromMuxedAlphaFormatDescription, 
                        _FigHEVCBridge_CreateSelectedLayerHVCCFromMuxedAlphaHVCC, 
                        _FigHEVCBridge_CreateUpdatedHVCCWithAdditionalHEVCParameterSets, 
-                       _FigHEVCBridge_GetATCSEI, _FigHEVCBridge_GetHEVCParameterSetAtIndex, 
+                       _FigHEVCBridge_GetATCSEI, _FigHEVCBridge_GetAmbientViewingEnvironment, 
+                       _FigHEVCBridge_GetHEVCParameterSetAtIndex, _FigHEVCBridge_GetL1RPUMetadata, 
                        _FigHEVCBridge_GetNALUnitHeader, _FigHEVCBridge_GetNALUnitHeaderLengthFromHVCC, 
                        _FigHEVCBridge_GetSEIAlphaChannelInfo, _FigHEVCBridge_GetSPSBitDepths, 
                        _FigHEVCBridge_GetSPSChromaFormatAndBitDepths, _FigHEVCBridge_GetSPSIsInterlaced, 
@@ -1325,11 +1327,12 @@ exports:
                        _FigHEVCBridge_GetVPSAlphaChannelNuhLayerId, _FigHEVCBridge_HLSfMP4ParsingInfoDestroy, 
                        _FigHEVCBridge_LocateSliceHeaderForHLSfMP4EncryptableNAL, 
                        _FigHEVCBridge_MeasureSliceHeader, _FigHEVCBridge_ParseMuxedAlphaFrameAndWriteSelectedLayerNALUnitsToBuffer, 
-                       _FigHostTimeToNanoseconds, _FigInstallSysdiagnoseBlock, _FigInt64MulDiv, 
-                       _FigIsHDRAllowedOnDevice, _FigIsItOKToLogURLs, _FigIsMemoryPoolBlockBuffer, 
-                       _FigIsPersistentURL, _FigIsReferenceAllowedBySecurityPolicy, 
-                       _FigJSONObjectCreateWithData, _FigLogBacktrace, _FigLogBacktraceFrames, 
-                       _FigLogCALayers, _FigMachPortReleaseReceiveRight_, _FigMachPortReleaseSendRight_, 
+                       _FigHEVCBridge_WritePaddingNALU, _FigHostTimeToNanoseconds, 
+                       _FigInstallSysdiagnoseBlock, _FigInt64MulDiv, _FigIsHDRAllowedOnDevice, 
+                       _FigIsItOKToLogURLs, _FigIsMemoryPoolBlockBuffer, _FigIsPersistentURL, 
+                       _FigIsReferenceAllowedBySecurityPolicy, _FigJSONObjectCreateWithData, 
+                       _FigLogBacktrace, _FigLogBacktraceFrames, _FigLogCALayers, 
+                       _FigMachPortReleaseReceiveRight_, _FigMachPortReleaseSendRight_, 
                        _FigMakeIOVecArrayWithBlockBuffer, _FigManagedFilePoolCreate, 
                        _FigManagedFilePoolCreateByteStreamForFile, _FigManagedFilePoolGetTypeID, 
                        _FigMayAccessPersistentURLForToken, _FigMemoryBarrier, _FigMemoryPoolCreateBlockBuffer, 
@@ -1464,6 +1467,7 @@ exports:
                        _FigVideoFormatDescriptionCreateFromBigEndianImageDescriptionData, 
                        _FigVideoFormatDescriptionCreateFromBigEndianImageDescriptionDataWithReporter, 
                        _FigVideoFormatDescriptionCreateFromSPSAndPPS, _FigVideoFormatDescriptionCreateUpdatedFromHEVCParameterSets, 
+                       _FigVideoFormatDescriptionCreateUpdatedHVCCWithAdditionalHEVCParameterSets, 
                        _FigVideoFormatDescriptionCreateWithSampleDescriptionExtensionAtom, 
                        _FigXPCArrayGetCount, _FigXPCConnectionHasEntitlement, _FigXPCCreateBasicMessage, 
                        _FigXPCHandleStdCopyPropertyMessage, _FigXPCHandleStdSetPropertyMessage, 
@@ -1527,6 +1531,7 @@ exports:
                        _kCMFormatDescriptionColorPrimaries_SMPTE_C, _kCMFormatDescriptionConformsToMPEG2VideoProfile, 
                        _kCMFormatDescriptionExtensionKey_MetadataKeyTable, _kCMFormatDescriptionExtension_AlphaChannelMode, 
                        _kCMFormatDescriptionExtension_AlternativeTransferCharacteristics, 
+                       _kCMFormatDescriptionExtension_AmbientViewingEnvironment, 
                        _kCMFormatDescriptionExtension_AuxiliaryTypeInfo, _kCMFormatDescriptionExtension_BytesPerRow, 
                        _kCMFormatDescriptionExtension_ChromaLocationBottomField, 
                        _kCMFormatDescriptionExtension_ChromaLocationTopField, _kCMFormatDescriptionExtension_CleanAperture, 

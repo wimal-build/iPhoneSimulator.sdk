@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           225A6109-7C8F-3051-B8A2-87C8A6E85236
+    value:           7F3FCABC-D355-3F8E-A8AB-04F6818DB7FF
   - target:          arm64-ios-simulator
-    value:           0894BE1D-DFF1-38E0-80A5-7EA9E87E96BC
+    value:           F3111647-88B6-3355-A92C-9EDACC7DF398
 install-name:    '/System/Library/PrivateFrameworks/iMessageApps.framework/iMessageApps'
 current-version: 0
 compatibility-version: 0

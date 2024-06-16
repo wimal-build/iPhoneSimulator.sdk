@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F3896B6C-F711-391A-BFF0-6F1578A138AE
+    value:           A9B4FE49-B8ED-3CDD-BB01-D08DABC43A1C
   - target:          arm64-ios-simulator
-    value:           2C733C9E-9CCE-3BD1-91E1-31F31A1CA36D
+    value:           EAFDA85D-06CF-3B16-9674-6EFDC4B9095C
 install-name:    '/System/Library/PrivateFrameworks/Phoenix.framework/Phoenix'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

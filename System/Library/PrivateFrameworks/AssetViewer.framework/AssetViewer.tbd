@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A6634FE1-5099-376E-85E3-9D3C797EBA27
+    value:           F155CABD-38EC-383A-807A-FCA99AA85A55
   - target:          arm64-ios-simulator
-    value:           5674436D-6BF1-34FC-BDAA-219DC40B69EE
+    value:           F5DD72A7-CC8C-31B3-AC47-B19ED2EC4FB6
 install-name:    '/System/Library/PrivateFrameworks/AssetViewer.framework/AssetViewer'
-current-version: 119.5
+current-version: 123
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ARQLPrivateARRecordingURLKey, _ARQLPrivateSourceAppKey, _ARQLPrivateSourceAppWebKit, 

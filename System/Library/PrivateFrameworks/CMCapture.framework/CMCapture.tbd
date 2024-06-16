@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2A8F6D06-A197-3B3C-BE71-5A12B3946DF9
+    value:           A4F69E72-99D9-3BBC-986C-09CA755C6CEA
   - target:          arm64-ios-simulator
-    value:           324C7164-CA1C-3A45-95F7-E2977D9C62B8
+    value:           7ED0BBB6-E8A9-3E56-86FD-C9A2DEB5CC57
 install-name:    '/System/Library/PrivateFrameworks/CMCapture.framework/CMCapture'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -138,13 +138,16 @@ exports:
                        _kFigCaptureFlatDictionaryAppleMakerNote_AssetIdentifier, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_BracketedCaptureSequenceNumber, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_BurstUUID, _kFigCaptureFlatDictionaryAppleMakerNote_CCT, 
+                       _kFigCaptureFlatDictionaryAppleMakerNote_CameraControlsStatisticsMaster, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_FocusAccelerometerVector, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_FocusPosition, _kFigCaptureFlatDictionaryAppleMakerNote_HDRMethod, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_ImageCaptureRequestIdentifier, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_ImageGroupIdentifier, 
+                       _kFigCaptureFlatDictionaryAppleMakerNote_IntelligentDistortionCorrection, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_LastFocusingMethod, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_LuminanceNoiseAmplitude, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_LuxLevel, _kFigCaptureFlatDictionaryAppleMakerNote_MeteorHeadroom, 
+                       _kFigCaptureFlatDictionaryAppleMakerNote_MeteorPlusGainMap, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_NRFInputBracketCount, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_NRFRegisteredBracketCount, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_NRFSRLStatus, _kFigCaptureFlatDictionaryAppleMakerNote_NRFStatus, 
@@ -168,8 +171,10 @@ exports:
                        _kFigCaptureFlatDictionaryAppleMakerNote_StillImageProcessingHomography, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_StillImageSNR, _kFigCaptureFlatDictionaryAppleMakerNote_StillImageSNRType, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_StillImageSceneFlags, 
+                       _kFigCaptureFlatDictionaryAppleMakerNote_SystemPressureLevel, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_TimeOfFlightAssistedAutoFocusEstimatorMeasuredDepth, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_TimeOfFlightAssistedAutoFocusEstimatorROIType, 
+                       _kFigCaptureFlatDictionaryAppleMakerNote_TimeOfFlightAssistedAutoFocusEstimatorSensorConfidence, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_Timestamp, _kFigCaptureFlatDictionaryAppleMakerNote_UBMethod, 
                        _kFigCaptureFlatDictionaryAppleMakerNote_Version, _kFigCaptureFlatDictionaryAppleMakerNote_iCloudServerSoftwareVersionForDynamicallyGeneratedMedia, 
                        _kFigCaptureMetadata_CompositeImage, _kFigCaptureMetadata_ExifWhiteBalance, 
@@ -243,6 +248,8 @@ exports:
                        _kFigCaptureSessionNotificationPayloadKey_DepthDataSurface, 
                        _kFigCaptureSessionNotificationPayloadKey_DepthMetadata, _kFigCaptureSessionNotificationPayloadKey_ErrorReason, 
                        _kFigCaptureSessionNotificationPayloadKey_ErrorStatus, _kFigCaptureSessionNotificationPayloadKey_FormatDescription, 
+                       _kFigCaptureSessionNotificationPayloadKey_GlassesSegmentationMatteMetadata, 
+                       _kFigCaptureSessionNotificationPayloadKey_GlassesSegmentationMatteSurface, 
                        _kFigCaptureSessionNotificationPayloadKey_HairSegmentationMatteMetadata, 
                        _kFigCaptureSessionNotificationPayloadKey_HairSegmentationMatteSurface, 
                        _kFigCaptureSessionNotificationPayloadKey_MasterClock, _kFigCaptureSessionNotificationPayloadKey_MasterClockType, 
@@ -298,9 +305,12 @@ exports:
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_DigitalFlashUserInterfaceHints, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_DigitalFlashUserInterfaceRGBEstimate, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_FlashActive, 
+                       _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_GlassesSegmentationMatteHeight, 
+                       _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_GlassesSegmentationMatteWidth, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_HDRActive, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_HairSegmentationMatteHeight, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_HairSegmentationMatteWidth, 
+                       _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_IDCEnabled, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_IrisMovieHeight, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_IrisMovieWidth, 
                        _kFigCaptureSessionWillBeginCaptureNotificationPayloadKey_NoiseReductionEnabled, 
@@ -356,6 +366,7 @@ exports:
                        _kFigCaptureSourceAttributeKey_HEIF, _kFigCaptureSourceAttributeKey_HEVC, 
                        _kFigCaptureSourceAttributeKey_ISPAPSData, _kFigCaptureSourceAttributeKey_ISPChromaNoiseReductionForPairingDisabled, 
                        _kFigCaptureSourceAttributeKey_ISPMotionData, _kFigCaptureSourceAttributeKey_ISPZoomLatency, 
+                       _kFigCaptureSourceAttributeKey_IntelligentDistortionCorrection, 
                        _kFigCaptureSourceAttributeKey_IspMBNRSupported, _kFigCaptureSourceAttributeKey_LensAperture, 
                        _kFigCaptureSourceAttributeKey_LocalizedName, _kFigCaptureSourceAttributeKey_ManualExposure, 
                        _kFigCaptureSourceAttributeKey_ManualFocus, _kFigCaptureSourceAttributeKey_ManualWhiteBalance, 
@@ -549,6 +560,10 @@ targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator
 uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           9D9BCC26-C23E-3BFD-9D4E-0B358C15022B
+  - target:          arm64-ios-simulator
+    value:           5AB69963-FFF0-32FF-AA51-32157988DB8A
 install-name:    '/System/Library/PrivateFrameworks/CMCaptureCore.framework/CMCaptureCore'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -562,27 +577,30 @@ exports:
                        _kFigAppleMakerNote_AFPerformance, _kFigAppleMakerNote_AFStable, 
                        _kFigAppleMakerNote_ARKitPhoto, _kFigAppleMakerNote_ApsMode, 
                        _kFigAppleMakerNote_AssetIdentifier, _kFigAppleMakerNote_BracketedCaptureSequenceNumber, 
-                       _kFigAppleMakerNote_BurstUUID, _kFigAppleMakerNote_CCT, _kFigAppleMakerNote_FocusAccelerometerVector, 
-                       _kFigAppleMakerNote_FocusPosition, _kFigAppleMakerNote_HDRMethod, 
-                       _kFigAppleMakerNote_ImageCaptureRequestIdentifier, _kFigAppleMakerNote_ImageGroupIdentifier, 
+                       _kFigAppleMakerNote_BurstUUID, _kFigAppleMakerNote_CCT, _kFigAppleMakerNote_CameraControlsStatisticsMaster, 
+                       _kFigAppleMakerNote_FocusAccelerometerVector, _kFigAppleMakerNote_FocusPosition, 
+                       _kFigAppleMakerNote_HDRMethod, _kFigAppleMakerNote_ImageCaptureRequestIdentifier, 
+                       _kFigAppleMakerNote_ImageGroupIdentifier, _kFigAppleMakerNote_IntelligentDistortionCorrection, 
                        _kFigAppleMakerNote_LastFocusingMethod, _kFigAppleMakerNote_LuminanceNoiseAmplitude, 
                        _kFigAppleMakerNote_LuxLevel, _kFigAppleMakerNote_MeteorHeadroom, 
-                       _kFigAppleMakerNote_NRFInputBracketCount, _kFigAppleMakerNote_NRFRegisteredBracketCount, 
-                       _kFigAppleMakerNote_NRFSRLStatus, _kFigAppleMakerNote_NRFStatus, 
-                       _kFigAppleMakerNote_OISMode, _kFigAppleMakerNote_OriginatingAppID, 
-                       _kFigAppleMakerNote_PhotoIdentifier, _kFigAppleMakerNote_PhotoTranscodeQualityHint, 
-                       _kFigAppleMakerNote_PhotosAppFeatureFlags, _kFigAppleMakerNote_PhotosOriginatingSignature, 
-                       _kFigAppleMakerNote_PhotosRenderEffect, _kFigAppleMakerNote_PhotosRenderOriginatingSignature, 
-                       _kFigAppleMakerNote_QRMOutputType, _kFigAppleMakerNote_SISMethod, 
-                       _kFigAppleMakerNote_SpatialOverCaptureGroupIdentifier, _kFigAppleMakerNote_SpatialOverCaptureImageType, 
-                       _kFigAppleMakerNote_SphereExternalForceOffset, _kFigAppleMakerNote_SphereHealthAverageCurrent, 
-                       _kFigAppleMakerNote_SphereHealthTrackingError, _kFigAppleMakerNote_SphereMotionDataStatus, 
-                       _kFigAppleMakerNote_SphereStatus, _kFigAppleMakerNote_StillImageCaptureFlags, 
-                       _kFigAppleMakerNote_StillImageCaptureType, _kFigAppleMakerNote_StillImageProcessingFlags, 
-                       _kFigAppleMakerNote_StillImageProcessingHomography, _kFigAppleMakerNote_StillImageSNR, 
-                       _kFigAppleMakerNote_StillImageSNRType, _kFigAppleMakerNote_StillImageSceneFlags, 
+                       _kFigAppleMakerNote_MeteorPlusGainMap, _kFigAppleMakerNote_NRFInputBracketCount, 
+                       _kFigAppleMakerNote_NRFRegisteredBracketCount, _kFigAppleMakerNote_NRFSRLStatus, 
+                       _kFigAppleMakerNote_NRFStatus, _kFigAppleMakerNote_OISMode, 
+                       _kFigAppleMakerNote_OriginatingAppID, _kFigAppleMakerNote_PhotoIdentifier, 
+                       _kFigAppleMakerNote_PhotoTranscodeQualityHint, _kFigAppleMakerNote_PhotosAppFeatureFlags, 
+                       _kFigAppleMakerNote_PhotosOriginatingSignature, _kFigAppleMakerNote_PhotosRenderEffect, 
+                       _kFigAppleMakerNote_PhotosRenderOriginatingSignature, _kFigAppleMakerNote_QRMOutputType, 
+                       _kFigAppleMakerNote_SISMethod, _kFigAppleMakerNote_SpatialOverCaptureGroupIdentifier, 
+                       _kFigAppleMakerNote_SpatialOverCaptureImageType, _kFigAppleMakerNote_SphereExternalForceOffset, 
+                       _kFigAppleMakerNote_SphereHealthAverageCurrent, _kFigAppleMakerNote_SphereHealthTrackingError, 
+                       _kFigAppleMakerNote_SphereMotionDataStatus, _kFigAppleMakerNote_SphereStatus, 
+                       _kFigAppleMakerNote_StillImageCaptureFlags, _kFigAppleMakerNote_StillImageCaptureType, 
+                       _kFigAppleMakerNote_StillImageProcessingFlags, _kFigAppleMakerNote_StillImageProcessingHomography, 
+                       _kFigAppleMakerNote_StillImageSNR, _kFigAppleMakerNote_StillImageSNRType, 
+                       _kFigAppleMakerNote_StillImageSceneFlags, _kFigAppleMakerNote_SystemPressureLevel, 
                        _kFigAppleMakerNote_TimeOfFlightAssistedAutoFocusEstimatorMeasuredDepth, 
                        _kFigAppleMakerNote_TimeOfFlightAssistedAutoFocusEstimatorROIType, 
+                       _kFigAppleMakerNote_TimeOfFlightAssistedAutoFocusEstimatorSensorConfidence, 
                        _kFigAppleMakerNote_Timestamp, _kFigAppleMakerNote_UBMethod, 
                        _kFigAppleMakerNote_Version, _kFigAppleMakerNote_iCloudServerSoftwareVersionForDynamicallyGeneratedMedia, 
                        _kFigApplePortraitMetadata, _kFigApplePortraitMetadata_ApertureFocalRatio, 
@@ -590,8 +608,8 @@ exports:
                        _kFigApplePortraitMetadata_FocusRectangle, _kFigApplePortraitMetadata_LuminanceNoiseAmplitude, 
                        _kFigApplePortraitMetadata_MaximumApertureFocalRatio, _kFigApplePortraitMetadata_MinimumApertureFocalRatio, 
                        _kFigApplePortraitMetadata_PortraitLightingEffectStrength, 
-                       _kFigApplePortraitMetadata_SDOFFaceLandmarkIndexes, _kFigApplePortraitMetadata_Version, 
-                       _kFigAutofocusSampleBufferProcessorMetadata_AccelerometerDeltas, 
+                       _kFigApplePortraitMetadata_SDOFFaceLandmarkIndexes, _kFigApplePortraitMetadata_SDOFRenderingVersion, 
+                       _kFigApplePortraitMetadata_Version, _kFigAutofocusSampleBufferProcessorMetadata_AccelerometerDeltas, 
                        _kFigAutofocusSampleBufferProcessorMetadata_ColorEdge, _kFigAutofocusSampleBufferProcessorMetadata_FocusBand, 
                        _kFigAutofocusSampleBufferProcessorMetadata_FocusMode, _kFigAutofocusSampleBufferProcessorMetadata_FocusScan, 
                        _kFigAutofocusSampleBufferProcessorMetadata_FocusScanID, _kFigAutofocusSampleBufferProcessorMetadata_FocusWindow, 
@@ -752,7 +770,8 @@ exports:
                        _kFigCaptureSampleBufferMetadata_FinalCropRectHasBeenAppliedByBlackeningBorders, 
                        _kFigCaptureSampleBufferMetadata_FocalLenIn35mmFilmFromSource, 
                        _kFigCaptureSampleBufferMetadata_FocusAccelerometerVector, 
-                       _kFigCaptureSampleBufferMetadata_NRFInputBracketCount, _kFigCaptureSampleBufferMetadata_NRFRegisteredBracketCount, 
+                       _kFigCaptureSampleBufferMetadata_GainMapHeadroom, _kFigCaptureSampleBufferMetadata_NRFInputBracketCount, 
+                       _kFigCaptureSampleBufferMetadata_NRFRegisteredBracketCount, 
                        _kFigCaptureSampleBufferMetadata_NRFSRLStatus, _kFigCaptureSampleBufferMetadata_NRFStatus, 
                        _kFigCaptureSampleBufferMetadata_RequestedExposureBias, _kFigCaptureSampleBufferMetadata_SISMethod, 
                        _kFigCaptureSampleBufferMetadata_Stationary, _kFigCaptureSampleBufferMetadata_StillImageScaleFactorHasBeenApplied, 
@@ -1547,6 +1566,8 @@ exports:
                        _kFigGNRSampleBufferProcessorProperty_ShortFramesDelivered, 
                        _kFigGNRSampleBufferProcessorProperty_StereoFusionCapture, 
                        _kFigGNRSampleBufferProcessorSampleBufferAttachmentKey_IsNoiseReducedWithGNR, 
+                       _kFigHDRGainMapCGImageMetadataNamespaceHDRGainMap, _kFigHDRGainMapCGImageMetadataPrefixHDRGainMap, 
+                       _kFigHDRGainMapCGImagePrivateMetadataTagKey_HDRGainMapVersion, 
                        _kFigHDRSampleBufferProcessorAttachmentKey_EVMinusJPEGSurface, 
                        _kFigHDRSampleBufferProcessorAttachmentKey_EVMinusJPEGSurfaceSize, 
                        _kFigHDRSampleBufferProcessorAttachmentKey_EVMinusSbuf, _kFigHDRSampleBufferProcessorAttachmentKey_EVPlusJPEGSurface, 
@@ -1615,6 +1636,7 @@ exports:
                        _kFigShallowDepthOfFieldRenderingMetadata_LuminanceNoiseAmplitude, 
                        _kFigShallowDepthOfFieldRenderingMetadata_MaximumApertureFocalRatio, 
                        _kFigShallowDepthOfFieldRenderingMetadata_MinimumApertureFocalRatio, 
+                       _kFigShallowDepthOfFieldRenderingMetadata_RenderingVersion, 
                        _kFigStereoFusionSampleBufferProcessorMetadata_ExifOrientation, 
                        _kFigStereoFusionSampleBufferProcessorOption_ProcessingType, 
                        _kFigStereoFusionSampleBufferProcessorProperty_ZoomRectangle, 
@@ -1684,6 +1706,7 @@ exports:
                        _kFigVideoStabilizationSampleBufferProcessorProperty_FlipHorizontalOrientation, 
                        _kFigVideoStabilizationSampleBufferProcessorProperty_FrameRateConversionEnabled, 
                        _kFigVideoStabilizationSampleBufferProcessorProperty_LongPressModeEnabled, 
+                       _kFigVideoStabilizationSampleBufferProcessorProperty_P3ToBT2020ConversionEnabled, 
                        _kFigVideoStabilizationSampleBufferProcessorProperty_SphereVideoEnabled, 
                        _kFigVideoStabilizationSampleBufferProcessorProperty_VideoStabilizationDisabled ]
 ...

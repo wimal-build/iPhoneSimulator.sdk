@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           25E6E047-5892-3011-98FD-6911A2DAB041
+    value:           1A638FD7-03BD-36AF-9778-D0F8909B109E
   - target:          arm64-ios-simulator
-    value:           FAF9E74D-9CFE-3255-9F8E-103A5846D6AC
+    value:           62DD0DC6-51B3-3A10-BFF7-416B8079F5F6
 install-name:    '/System/Library/PrivateFrameworks/AttentionAwareness.framework/AttentionAwareness'
 current-version: 84
 exports:

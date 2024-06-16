@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B365A9BB-7EE4-3A4E-8230-268F105B2B92
   - target:          x86_64-ios-simulator
-    value:           8FA8DE92-11F7-3EDF-919E-FB1D763AB9C2
+    value:           FD293D41-817A-3D7A-AD73-B9B238F124B1
   - target:          arm64-ios-simulator
-    value:           8D07DC83-2B5D-3EC8-9B0A-F5B2CC82B717
+    value:           096D2DC1-4297-3CA5-8728-2DA93F18F557
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Libraries/libCGInterfaces.dylib'
 current-version: 540
 exports:

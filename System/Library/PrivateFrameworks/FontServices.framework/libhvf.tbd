@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           49E0C2CB-111A-3F0C-8D89-D6F3CFF9C352
+    value:           B2FDE0DA-FB55-39FD-BE19-DB2A45CBA567
   - target:          arm64-ios-simulator
-    value:           BC877CEC-5989-323E-8252-3E5D3E47B3BF
+    value:           03BA27D6-9889-3CA9-B359-91572A7F2F60
 install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libhvf.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C86212DA-2160-38D3-AF88-FAEEE72947F3
+    value:           2DA3CB72-6B3D-36FC-A29A-66AF3E2E3818
   - target:          arm64-ios-simulator
-    value:           BE593C3D-B1AE-3378-B329-243CF0ADC53C
+    value:           80D5F992-2CDA-308C-A8D2-F26142D77EBE
 install-name:    '/System/Library/PrivateFrameworks/TVPlayback.framework/TVPlayback'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

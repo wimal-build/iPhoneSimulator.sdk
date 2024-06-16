@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A4A4AEB2-9588-3F6A-972C-D34D973BED9E
   - target:          x86_64-ios-simulator
-    value:           A9E719D5-D3D8-340A-884A-FC97515B0352
+    value:           787C2F85-D879-3246-A8C6-8E6E64C70988
   - target:          arm64-ios-simulator
-    value:           60B0B0DD-F830-3892-9FBF-37CCC4A9F6C6
+    value:           2520E78F-40EA-34B2-9123-46407EDDB8C0
 install-name:    '/System/Library/PrivateFrameworks/IMCore.framework/IMCore'
 current-version: 800
 reexported-libraries:
@@ -324,9 +324,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CFC00296-1011-3F8F-A52B-640A4D3D1AEC
   - target:          x86_64-ios-simulator
-    value:           2BF9DC16-B938-3A3A-8C8D-A6C27FA594C0
+    value:           64417F97-1A16-3F30-9B81-3B1B52C7A0A6
   - target:          arm64-ios-simulator
-    value:           377B4FF3-0A5A-3E39-8DCB-D83778E14788
+    value:           9FAB9FE0-E26C-3DE1-9FA9-7F61A1411C79
 install-name:    '/System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation'
 current-version: 800
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           153E99E0-8AB2-3CF5-AC60-8D28DB18A204
   - target:          x86_64-ios-simulator
-    value:           6B4C163F-4D5B-347E-8DBA-161DA16BD637
+    value:           A30A0574-1985-3896-A50C-76DDF88CFB44
   - target:          arm64-ios-simulator
-    value:           8C5DA3E9-88D0-3247-88C4-74DC9A8D16AC
+    value:           1903DE80-0269-33B8-8A0E-2CF6781187E3
 install-name:    '/System/Library/PrivateFrameworks/AccountsDaemon.framework/AccountsDaemon'
 exports:
   - targets:         [ i386-ios-simulator ]

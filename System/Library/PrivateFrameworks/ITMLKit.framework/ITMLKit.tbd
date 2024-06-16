@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0FF505C4-3575-32FA-9C3B-388B0F166AD9
   - target:          x86_64-ios-simulator
-    value:           E42C831B-18E2-3774-8534-678ADFD0D7E8
+    value:           E053F3BD-95A5-3DAF-8FE9-ADE89A09F845
   - target:          arm64-ios-simulator
-    value:           8D772526-2079-3FA6-B4CF-81F7D482EDB5
+    value:           FD70859C-CD7E-3494-B72D-6B7CDFF6289B
 install-name:    '/System/Library/PrivateFrameworks/ITMLKit.framework/ITMLKit'
 exports:
   - targets:         [ i386-ios-simulator ]

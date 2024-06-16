@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           D6E496B5-09E1-393F-BC35-8CD05672F798
   - target:          x86_64-ios-simulator
-    value:           A1A6244E-99F7-374D-A146-2C8E660474FE
+    value:           E5AB5E23-93A4-3AAE-8C41-A9CB7328D528
   - target:          arm64-ios-simulator
-    value:           93B361FE-40A6-30A3-9EAA-050E698C0EC8
+    value:           0AD32803-AE87-3CAA-83A4-EF84C43CF981
 install-name:    '/System/Library/PrivateFrameworks/EmailCore.framework/EmailCore'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ECAccountCacheKeyEnabled, _ECAccountCacheKeyParentAccount, 

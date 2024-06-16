@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D745A40B-E3C1-32DA-8FC5-84855DCC9A35
+    value:           5874E340-6A16-3EAE-9F9D-786CC064A711
   - target:          arm64-ios-simulator
-    value:           7A8A25A7-C9C4-3889-9308-2AF2A44F30C0
+    value:           DF9FE195-BDE1-3025-A9F8-B4488AD7C0C7
 install-name:    '/System/Library/PrivateFrameworks/HIDDisplay.framework/HIDDisplay'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

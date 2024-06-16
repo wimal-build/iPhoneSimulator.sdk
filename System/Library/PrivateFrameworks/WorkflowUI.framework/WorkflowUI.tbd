@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA8FDF40-9721-35A9-9377-4B25B29DE1CB
+    value:           0BB1C952-F1E3-3D3A-A4CD-F8FAE86BC55E
   - target:          arm64-ios-simulator
-    value:           AA40554B-268D-383E-AA5F-B00F8DA52815
+    value:           258AB2A0-510E-3C74-92E3-D9D71C8CEDA3
 install-name:    '/System/Library/PrivateFrameworks/WorkflowUI.framework/WorkflowUI'
 swift-abi-version: 7
 allowable-clients:
@@ -135,11 +135,10 @@ exports:
                        WFItemBasedTableSection, WFKeyboardToolbarAccessoryView, WFLibraryZoomTransition, 
                        WFLocationTriggerConfigurationViewController, WFLowPowerModeTriggerConfigurationViewController, 
                        WFMapSearchTableViewController, WFMessageTriggerConfigurationViewController, 
-                       WFMockActionDonation, WFModuleTitleButton, WFModuleTitleView, 
-                       WFMultilineBackgroundFadingButton, WFNFCTriggerConfigurationViewController, 
-                       WFObjectBasedTableSection, WFPaddedTextField, WFPaddedTextFieldCell, 
-                       WFPassthroughView, WFPlugInTriggerConfigurationViewController, 
-                       WFPredictedLocationTransitionTriggerConfigurationViewController, 
+                       WFMockActionDonation, WFModuleTitleView, WFMultilineBackgroundFadingButton, 
+                       WFNFCTriggerConfigurationViewController, WFObjectBasedTableSection, 
+                       WFPaddedTextField, WFPaddedTextFieldCell, WFPassthroughView, 
+                       WFPlugInTriggerConfigurationViewController, WFPredictedLocationTransitionTriggerConfigurationViewController, 
                        WFRowOfIconsView, WFSegmentedControlTableCell, WFSegmentedControlTableItem, 
                        WFSegmentedControlValue, WFSelectableListOption, WFSettingsButtonCell, 
                        WFSettingsCell, WFSettingsFieldCell, WFSettingsIconCell, WFSettingsSwitchCell, 

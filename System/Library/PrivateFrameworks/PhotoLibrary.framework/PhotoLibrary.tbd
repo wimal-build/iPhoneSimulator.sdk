@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           8DFD78F8-3402-39C0-ABCD-C99FCB3C5844
   - target:          x86_64-ios-simulator
-    value:           05ACAEB8-F190-3C1E-AC89-3A03077702E2
+    value:           44B3B115-1DE9-3B6A-8924-C42534B97043
   - target:          arm64-ios-simulator
-    value:           08273672-B514-354D-A705-8398BF3C6008
+    value:           8363D1B9-DBDF-3EF0-A798-382B559BF133
 install-name:    '/System/Library/PrivateFrameworks/PhotoLibrary.framework/PhotoLibrary'
-current-version: 302.0.220
+current-version: 310.1.160
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ AssetExplorer, MobileSlideShow, PhotosUI, PhotosUITester, 
@@ -284,9 +284,12 @@ targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator
 uuids:
   - target:          i386-ios-simulator
     value:           4E83300D-30FD-35E7-9977-475A61A13F1D
-flags:           [ installapi ]
+  - target:          x86_64-ios-simulator
+    value:           B3D16B09-4DA6-37F7-A7B0-D657E9D40650
+  - target:          arm64-ios-simulator
+    value:           E9FD5974-2737-3610-A492-DB458F2511DC
 install-name:    '/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CPLResetCloudPhotosServer, _CreateCGImageFromData, _DCFFileGroupNameFormat, 

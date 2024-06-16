@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F28471F0-A341-38A0-99B9-F84113187226
+    value:           C14CE53C-F363-3490-8F48-C8B5A1D80847
   - target:          arm64-ios-simulator
-    value:           1B2C9325-75E6-3C54-A439-207F9FF801AD
+    value:           0DDF1EB2-F073-33EC-87DB-6E05364199E7
 install-name:    '/System/Library/PrivateFrameworks/DiagnosticRequest.framework/DiagnosticRequest'
 current-version: 0
 exports:

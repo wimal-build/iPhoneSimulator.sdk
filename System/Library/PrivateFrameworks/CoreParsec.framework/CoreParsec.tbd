@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9BF6BA5C-351C-369E-BD83-A7AC35A96842
   - target:          x86_64-ios-simulator
-    value:           B5151529-B8BE-341A-B7F5-8A2E2CC4A7AC
+    value:           B52B35C9-6DB2-3429-97F3-4188831EE8E2
   - target:          arm64-ios-simulator
-    value:           7B067CF4-6BAA-3269-BC36-BFDEE597351F
+    value:           2398BBE5-DAF0-331C-98E9-C717EB55064C
 install-name:    '/System/Library/PrivateFrameworks/CoreParsec.framework/CoreParsec'
 exports:
   - targets:         [ i386-ios-simulator ]

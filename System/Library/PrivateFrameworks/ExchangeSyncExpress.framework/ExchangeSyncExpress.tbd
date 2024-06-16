@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           ED9FBAF7-0EEA-3EF7-89EC-F125DD09ADD5
+    value:           9D29828A-3D6F-38AE-8A27-E6FDDE12A213
   - target:          arm64-ios-simulator
-    value:           BFB608B9-8C44-34F9-B8A2-357D7A4D1713
+    value:           7C71EEB2-388D-3EE9-8C5E-270DB827C68D
 install-name:    '/System/Library/PrivateFrameworks/ExchangeSyncExpress.framework/ExchangeSyncExpress'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

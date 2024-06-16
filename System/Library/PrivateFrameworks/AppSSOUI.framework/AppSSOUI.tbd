@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1701DBA6-7FC6-323B-A8AA-3725FEC45ADE
+    value:           0821BADE-58BA-347D-8199-96485A3FED5D
   - target:          arm64-ios-simulator
-    value:           D1B991DD-4AE3-3DCB-9866-CF94419B8813
+    value:           694FA994-DCD4-3366-AA4B-38AA7100BCCE
 install-name:    '/System/Library/PrivateFrameworks/AppSSOUI.framework/AppSSOUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

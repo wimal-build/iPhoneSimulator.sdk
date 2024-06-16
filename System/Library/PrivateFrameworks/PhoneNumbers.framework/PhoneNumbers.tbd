@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BCFB1856-0976-39F0-8199-25E1020C3E1A
+    value:           B428FFA4-3251-34DA-A681-9DC8E5E2A226
   - target:          arm64-ios-simulator
-    value:           D8977A98-923A-3B7F-8925-186464003133
+    value:           730C27D1-BF66-37D0-8B5A-89F337EB1AD3
 install-name:    '/System/Library/PrivateFrameworks/PhoneNumbers.framework/PhoneNumbers'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -22,9 +22,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B56A71F5-BB57-3A9D-9656-8A53210B945B
+    value:           3130AF85-38BC-3CD4-A99E-EE8260CB93CA
   - target:          arm64-ios-simulator
-    value:           47C40E20-DEA1-33D0-AE36-C15825E4E3B6
+    value:           210376F9-40B1-36B1-9B5D-21F62D00D7B5
 install-name:    '/System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

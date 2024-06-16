@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           696B6C90-57C7-3CE6-A0A7-DE6964828900
   - target:          x86_64-ios-simulator
-    value:           CDD7C08F-41E4-324B-AF73-BE759F21A0A6
+    value:           7C35EBB7-D72B-374D-9393-6E8F0DDDD2EF
   - target:          arm64-ios-simulator
-    value:           C25EB473-7053-3DFF-9DC2-001E93077BA9
+    value:           14F64509-0813-38E3-89A7-D63A7694AE06
 install-name:    '/System/Library/PrivateFrameworks/EmailAddressing.framework/EmailAddressing'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _EAAddressComment ]

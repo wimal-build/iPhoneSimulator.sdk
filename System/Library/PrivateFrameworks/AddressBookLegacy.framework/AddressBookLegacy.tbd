@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7DA876C4-121A-3B11-9DC3-9B9E4C730A0B
+    value:           E9F9EBCE-B234-3EDC-A777-F2CCC23245CE
   - target:          arm64-ios-simulator
-    value:           349287A4-2A8F-3F23-998F-37195FAD9260
+    value:           517594A9-1EC9-3868-9D9E-9FF65D6DE122
 install-name:    '/System/Library/PrivateFrameworks/AddressBookLegacy.framework/AddressBookLegacy'
 current-version: 30
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F390DCE3-C535-31E7-BAC3-E9D386420EF6
   - target:          x86_64-ios-simulator
-    value:           DAE338ED-61F8-3D7D-A96A-D7721C23D553
+    value:           FDA31B2C-FCA8-3B5C-878A-A6F33B4615DC
   - target:          arm64-ios-simulator
-    value:           91C49467-BB35-374C-93F2-3F39DE510844
+    value:           F6669964-57D6-378F-8260-B79C9A7BF431
 install-name:    '/System/Library/PrivateFrameworks/AppleJPEG.framework/AppleJPEG'
 exports:
   - targets:         [ i386-ios-simulator ]

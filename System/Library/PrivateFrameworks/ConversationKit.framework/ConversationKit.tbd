@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           403EBD29-3A33-36A1-9411-5B4658C33511
+    value:           C912F3F1-9470-3D92-92E3-FA41291671D7
   - target:          arm64-ios-simulator
-    value:           90E70567-AE29-3750-ABB6-509F160172C4
+    value:           CD5DC21D-656E-3778-A120-D595F60F6A8A
 install-name:    '/System/Library/PrivateFrameworks/ConversationKit.framework/ConversationKit'
 swift-abi-version: 7
 exports:

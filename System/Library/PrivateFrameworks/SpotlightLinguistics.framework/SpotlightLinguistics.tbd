@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           11D40753-9A83-3A4D-971A-B007A173AFBF
+    value:           2C7717EE-A4F7-3752-8AF4-938BAAD97AF8
   - target:          arm64-ios-simulator
-    value:           1B5614EE-52E9-3077-B1A5-842677F6C1A2
+    value:           6124B2CA-C05D-34E9-8269-A7B6F7EBD624
 install-name:    '/System/Library/PrivateFrameworks/SpotlightLinguistics.framework/SpotlightLinguistics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

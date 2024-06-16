@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E1709F56-7BDB-3040-AABB-E7BEB9204A1D
   - target:          x86_64-ios-simulator
-    value:           50C356CF-5FCA-314C-9634-42CFC307B5A4
+    value:           4948A721-0C3F-32C5-B1D3-BAC5EA905696
   - target:          arm64-ios-simulator
-    value:           7A6E6884-A61A-3395-959E-1A29FB51E634
+    value:           FD294DBF-0A6F-3529-8529-4AB9E4B3192E
 install-name:    '/System/Library/PrivateFrameworks/Navigation.framework/Navigation'
 exports:
   - targets:         [ i386-ios-simulator ]

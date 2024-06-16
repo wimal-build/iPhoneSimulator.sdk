@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BDCBC9FA-3AD2-36A3-A960-E7A2037D307F
   - target:          x86_64-ios-simulator
-    value:           464AFCDF-7073-3056-BEB5-9074CF1C5803
+    value:           FB5D6B2A-07B3-360E-9143-C6118E2E4016
   - target:          arm64-ios-simulator
-    value:           13FD770A-C9B2-3156-AF09-86C18A9032F5
+    value:           1AF977EF-B3CE-3D4E-B6F4-F2D2A6671907
 install-name:    '/System/Library/Frameworks/UIKit.framework/UIKit'
-current-version: 3987.0.109
+current-version: 3987.9
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]
@@ -1420,11 +1420,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F611A0D0-C17F-3612-B5FB-A503580B835F
+    value:           DF05CF91-6A29-3928-84D6-2A86E91C481A
   - target:          arm64-ios-simulator
-    value:           81B536EE-0F23-391D-903B-56F6D21D746C
+    value:           63417C63-FF93-3B7E-941E-3AC33E4DF29B
 install-name:    '/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager'
-current-version: 200
+current-version: 200.1.255
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _DOCAdaptSizeToRect, _DOCAlertItemIsNotReadable, _DOCAlertUserTheNetworkIsNotReachable, 
@@ -1507,11 +1507,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5F2079F5-D983-34DC-A062-1C4303CFD13D
+    value:           6556600C-92B0-3AE4-B092-D872F6025CFC
   - target:          arm64-ios-simulator
-    value:           4AB41DF1-9D6D-30D9-A818-3C535A461BDD
+    value:           E1C1D9FC-6236-3E29-9206-5A9AFF0514F6
 install-name:    '/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet'
-current-version: 1564.6
+current-version: 1566.6
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SUIActivityTypeShare, _UIActivityTypeAddToReadingList, _UIActivityTypeAirDrop, 
@@ -1568,9 +1568,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C4CE84E-9340-3389-898D-2887BD90B6D2
   - target:          x86_64-ios-simulator
-    value:           F641E3E5-38C4-30CA-A99F-438CD388D007
+    value:           A5CD52C1-D885-35F8-8BB1-38EFD4366BA2
   - target:          arm64-ios-simulator
-    value:           1EF62A88-1DC7-3BB9-8612-3343FED2C933
+    value:           3C79C4C9-032B-3D8E-A9F1-64548EE7E3AA
 install-name:    '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation'
 current-version: 717
 exports:
@@ -1850,11 +1850,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           84BFEBFC-73CC-38A1-AB39-9B0D09287200
+    value:           CF8C062B-079E-3DA6-BFE2-3366C11A1F29
   - target:          arm64-ios-simulator
-    value:           33E08ED4-5367-3983-889B-2B66E4F84E66
+    value:           7933EC3B-DA5A-31C7-8A72-21132DA95F97
 install-name:    '/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore'
-current-version: 3987.0.109
+current-version: 3987.9
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]

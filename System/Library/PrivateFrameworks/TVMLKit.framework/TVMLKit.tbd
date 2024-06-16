@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F61CECE1-4D45-385A-A39C-C29D41AA8489
   - target:          x86_64-ios-simulator
-    value:           76690CC3-CA34-3A3C-AD73-40127F2CF76B
+    value:           98CC4B6D-8848-3CA5-B75D-D37E1A0AC563
   - target:          arm64-ios-simulator
-    value:           6118D18D-997F-3A64-B9C0-2F27A01E7A13
+    value:           F2210BA1-38A6-3262-A5CF-40003AC1DFA2
 install-name:    '/System/Library/PrivateFrameworks/TVMLKit.framework/TVMLKit'
 exports:
   - targets:         [ i386-ios-simulator ]

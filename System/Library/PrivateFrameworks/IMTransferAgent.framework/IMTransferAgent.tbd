@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8589FB4C-0EEE-3C6D-8A47-02B2A3CBB362
   - target:          x86_64-ios-simulator
-    value:           27396048-25B8-30AC-8A31-5471D712DD11
+    value:           D111E18E-374C-3F3C-B018-D60F78535C45
   - target:          arm64-ios-simulator
-    value:           1524FE1A-2080-3B62-83BF-F9489FB6C58E
+    value:           912E22EF-A95E-306F-9BB8-376C96FD0485
 install-name:    '/System/Library/PrivateFrameworks/IMTransferAgent.framework/IMTransferAgent'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

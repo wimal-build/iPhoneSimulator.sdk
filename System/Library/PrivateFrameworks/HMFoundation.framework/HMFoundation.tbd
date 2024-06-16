@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           387249E3-2C94-305B-95CC-3FEE8B93E54D
   - target:          x86_64-ios-simulator
-    value:           84A88575-79E8-3753-BF21-D02046D61E4A
+    value:           2F81678C-5556-3805-A55D-9452D5B16DC1
   - target:          arm64-ios-simulator
-    value:           B17CE64A-BF62-3C3F-B9A2-383B87D9E8D2
+    value:           AD242637-3AC1-3E99-B09C-D9C6B54F4DC1
 install-name:    '/System/Library/PrivateFrameworks/HMFoundation.framework/HMFoundation'
-current-version: 607.0.2
+current-version: 607.1.2
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _HMFHTTPHostHeaderFieldKey, _HMFHTTPMessageHeaderFieldContentLengthKey, 

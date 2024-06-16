@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA66F76E-71CC-349E-A50B-4223E2ABE7BB
+    value:           1EB7E504-49CE-30CD-AC6E-A46953794CC0
   - target:          arm64-ios-simulator
-    value:           204826EE-D810-34CB-9713-9F2743CE86D7
+    value:           0CF569E0-2A46-34AE-963E-EAA0AC48C8C5
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MetalPerformanceShaders ]

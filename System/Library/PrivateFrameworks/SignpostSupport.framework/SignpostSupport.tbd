@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           23A50728-B7BA-351D-B2CC-F117779C0921
+    value:           60542409-EC7B-3424-A886-01260A54859B
   - target:          arm64-ios-simulator
-    value:           FC34358E-6F54-3AF2-B539-216A1D2E57FC
+    value:           F1277B9D-A0AC-3561-9CE2-2E0F66FA571F
 install-name:    '/System/Library/PrivateFrameworks/SignpostSupport.framework/SignpostSupport'
 current-version: 53
 exports:

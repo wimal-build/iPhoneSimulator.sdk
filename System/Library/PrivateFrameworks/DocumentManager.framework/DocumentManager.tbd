@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F611A0D0-C17F-3612-B5FB-A503580B835F
+    value:           DF05CF91-6A29-3928-84D6-2A86E91C481A
   - target:          arm64-ios-simulator
-    value:           81B536EE-0F23-391D-903B-56F6D21D746C
+    value:           63417C63-FF93-3B7E-941E-3AC33E4DF29B
 install-name:    '/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager'
-current-version: 200
+current-version: 200.1.255
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _DOCAdaptSizeToRect, _DOCAlertItemIsNotReadable, _DOCAlertUserTheNetworkIsNotReachable, 

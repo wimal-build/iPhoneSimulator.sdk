@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A29B7CA4-9C56-3962-BDAF-D75758837F3E
+    value:           A4FF9EA2-AC7B-367A-8C9A-A5EB5AB0F065
   - target:          arm64-ios-simulator
-    value:           91655003-415E-350D-965D-B8A64E4DD810
+    value:           7EBF9FD5-15D8-396B-8A64-0EBDECC9E3F1
 install-name:    '/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/AppleMediaServicesUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           51BD6B40-8EA9-3F7E-B12D-DBDC0708C309
+    value:           2D34EE3B-DE1E-3E4F-8E78-E4AF46EEFECA
   - target:          arm64-ios-simulator
-    value:           23A4E4BC-6C9E-34A9-8099-961EF38EF92F
+    value:           8C32B37E-6173-3BF3-B611-E19DD4FBB29D
 install-name:    '/System/Library/PrivateFrameworks/TestFlightCore.framework/TestFlightCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

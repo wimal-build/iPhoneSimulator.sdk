@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9CEC2783-7B05-3EEA-B8F1-B7D35310D332
   - target:          x86_64-ios-simulator
-    value:           29AC4B09-F6B6-3212-BC71-59554A97068A
+    value:           EC152437-ABD2-3F00-99E6-9C76F7B6B285
   - target:          arm64-ios-simulator
-    value:           7E6B40EF-F187-3D74-BD8F-B37528620D3D
+    value:           95A9A98B-BD16-331A-8069-0365C5419CF2
 install-name:    '/System/Library/PrivateFrameworks/WirelessDiagnostics.framework/WirelessDiagnostics'
 current-version: 757
 reexported-libraries:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C7C71FB7-949A-32B4-9EDD-730172D853E4
   - target:          x86_64-ios-simulator
-    value:           27D52E18-1034-3090-983B-F74751918408
+    value:           F5E843F2-9D68-34F3-8EAE-79F3F6619F9F
   - target:          arm64-ios-simulator
-    value:           196A08F7-3434-38B4-992D-DB8B6052E0B5
+    value:           5DA46AF0-6D49-3C63-BC89-DE47D6C57665
 install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACoreDAVGlue.framework/DACoreDAVGlue'
 exports:
   - targets:         [ i386-ios-simulator ]

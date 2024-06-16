@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C347DB74-4DFB-38FE-B9C9-01EF44336203
   - target:          x86_64-ios-simulator
-    value:           8652E355-FDBD-3CEA-A132-48AE822D128E
+    value:           5FD1C631-688D-35E1-BB22-4FA3C7487CFB
   - target:          arm64-ios-simulator
-    value:           403BA5D9-F615-3BCE-8BF6-201195988EAB
+    value:           8168FE6D-0F77-3F2D-9194-61105E665161
 install-name:    '/System/Library/PrivateFrameworks/ChatKit.framework/ChatKit'
 exports:
   - targets:         [ i386-ios-simulator ]

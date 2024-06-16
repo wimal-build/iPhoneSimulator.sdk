@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           28969BE1-8864-3621-9712-90FBDB92DF24
   - target:          x86_64-ios-simulator
-    value:           5DFCBB34-26E5-396A-B1E2-BF9CF306C371
+    value:           F2C4E08F-0388-3B6F-8AB2-BDB06F4F0D33
   - target:          arm64-ios-simulator
-    value:           A694644D-4CCA-386B-AA22-FD263B849179
+    value:           B2D7E91A-2CEA-3EFB-8F52-1259F5FC8B71
 install-name:    '/System/Library/PrivateFrameworks/AppleLDAP.framework/AppleLDAP'
 current-version: 54
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1CBF3D0E-5981-32AE-89D3-B0D8BBDC2E6E
+    value:           2E3CD4D3-1341-305A-888B-70DD130C06F7
   - target:          arm64-ios-simulator
-    value:           865861B1-A767-3CA3-AF85-0FCC56983C46
+    value:           4846CF18-5C4F-397B-9E39-8F80DEF78DE3
 install-name:    '/System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags'
 current-version: 28.0.1
 swift-abi-version: 7

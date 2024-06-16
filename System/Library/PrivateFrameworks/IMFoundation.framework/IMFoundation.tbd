@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CFC00296-1011-3F8F-A52B-640A4D3D1AEC
   - target:          x86_64-ios-simulator
-    value:           2BF9DC16-B938-3A3A-8C8D-A6C27FA594C0
+    value:           64417F97-1A16-3F30-9B81-3B1B52C7A0A6
   - target:          arm64-ios-simulator
-    value:           377B4FF3-0A5A-3E39-8DCB-D83778E14788
+    value:           9FAB9FE0-E26C-3DE1-9FA9-7F61A1411C79
 install-name:    '/System/Library/PrivateFrameworks/IMFoundation.framework/IMFoundation'
 current-version: 800
 exports:

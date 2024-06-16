@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           82C04D76-7433-364F-B86E-A6938C2317A6
+    value:           5AEF13D9-9DAD-364A-8F40-34D73A748C21
   - target:          arm64-ios-simulator
-    value:           A0A08023-1A7F-320F-BA3B-04861E56DA26
+    value:           054650FB-C064-3737-A773-D20100A255B7
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/MetalPerformanceShaders'
-current-version: 124.0.27
+current-version: 124.0.29
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore', 
@@ -29,11 +29,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C1B4439F-AE3B-384C-93DF-F852B916EB5C
+    value:           D02FB693-55E3-3F0A-81CE-1C8DBD2767CF
   - target:          arm64-ios-simulator
-    value:           F8C29FFE-EA27-3A09-9EEE-4A952D151BF2
+    value:           D36BF356-FF6C-3EDD-8481-42B81ABEA9D5
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MPSImage, MPSMatrix, MPSNDArray, MPSNeuralNetwork, MPSParallelPrimitives, 
@@ -205,11 +205,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0E290C97-36CC-3C10-8ADA-FD0125FF9BAC
+    value:           50EB2FA5-AA2E-3084-8284-4A7A7B3E75CA
   - target:          arm64-ios-simulator
-    value:           B865D373-9F74-3FEE-8BFF-BBB0158D0B82
+    value:           2671FFE3-52D4-3F7D-9D4B-FA6DFB7A7A31
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MPSNeuralNetwork, MetalPerformanceShaders ]
@@ -246,11 +246,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C487E30C-8E60-36BC-80CE-C786D83C8FEB
+    value:           A9ABF92B-8C46-3C3E-8935-71AF8E9D980D
   - target:          arm64-ios-simulator
-    value:           1876BED9-94CB-3D06-8CBB-FC767EB68E1E
+    value:           E0E527F8-9284-385E-8F24-2DBFA22C29A8
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MPSNDArray, MPSNeuralNetwork, MetalPerformanceShaders ]
@@ -273,11 +273,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA66F76E-71CC-349E-A50B-4223E2ABE7BB
+    value:           1EB7E504-49CE-30CD-AC6E-A46953794CC0
   - target:          arm64-ios-simulator
-    value:           204826EE-D810-34CB-9713-9F2743CE86D7
+    value:           0CF569E0-2A46-34AE-963E-EAA0AC48C8C5
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNDArray.framework/MPSNDArray'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MetalPerformanceShaders ]
@@ -369,11 +369,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           24B70B52-CDCA-3336-90AC-931EE8CEB9CF
+    value:           782CD263-A0B1-32B9-9E9C-C5BF88CA1DE8
   - target:          arm64-ios-simulator
-    value:           C5F59980-CEA8-3F23-B233-D167D92F78CB
+    value:           66AD50DE-F801-3C18-9F59-C8F5F72D800E
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MetalPerformanceShaders ]
@@ -484,11 +484,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2A338F45-28C9-3EF7-B2C5-B371F734A0E3
+    value:           03D29D48-3AB7-3FD2-871E-B55634EBB661
   - target:          arm64-ios-simulator
-    value:           2A9C1856-94EA-3E6B-AF7A-86EC4E14A434
+    value:           C9481094-8CD2-3082-8A38-C2A33359F59E
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MetalPerformanceShaders ]

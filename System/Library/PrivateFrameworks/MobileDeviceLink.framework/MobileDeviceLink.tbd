@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D0617331-067E-3D07-BD34-E0457B9C51A5
   - target:          x86_64-ios-simulator
-    value:           B13461A6-9C86-379C-B6DA-DD49F5FC60B1
+    value:           C639749F-79E3-3881-A1C7-45A73CA78665
   - target:          arm64-ios-simulator
-    value:           4AB17F16-3978-3CC0-A28F-611B5CD20D5F
+    value:           AB0C0BAE-D0D3-3CDF-A5B1-46596216BCA0
 install-name:    '/System/Library/PrivateFrameworks/MobileDeviceLink.framework/MobileDeviceLink'
 current-version: 264
 compatibility-version: 100

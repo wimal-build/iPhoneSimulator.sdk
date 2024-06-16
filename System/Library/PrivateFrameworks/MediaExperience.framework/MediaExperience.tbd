@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           528F0691-E004-336D-89D8-82AB75C171E6
+    value:           4BDCC4DA-712B-3CEF-ADA3-662BC08ECC71
   - target:          arm64-ios-simulator
-    value:           66DF40C0-1EB7-3EF2-83E6-5D0FC7A7083F
+    value:           913F4F9B-0B26-3BE5-934F-57C9798C3534
 install-name:    '/System/Library/PrivateFrameworks/MediaExperience.framework/MediaExperience'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

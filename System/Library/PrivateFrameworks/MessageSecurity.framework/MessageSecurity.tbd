@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2EDC3320-AAEF-363B-A954-3AD254436A4F
+    value:           3E9B06DF-F8FB-3113-9F85-C066FCCC3410
   - target:          arm64-ios-simulator
-    value:           D40C7145-3317-3451-A040-FE14C28DE1AB
+    value:           F43BFAB8-59C3-333F-AA07-6B93BFEE6ADE
 install-name:    '/System/Library/PrivateFrameworks/MessageSecurity.framework/MessageSecurity'
 current-version: 0
 compatibility-version: 0

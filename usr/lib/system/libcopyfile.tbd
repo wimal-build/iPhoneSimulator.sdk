@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C26F1F85-E9E0-33E9-9005-F269F30AD13C
   - target:          x86_64-ios-simulator
-    value:           624C7AB3-EE14-3A5F-BC18-234961F400D1
+    value:           AB7442DE-0149-37D1-97E8-95037B0E6C0B
   - target:          arm64-ios-simulator
-    value:           9C5D9B64-4D2C-3A2B-A7A8-7CD92659FDC8
+    value:           07A78E42-9B6D-3CD8-91A7-D0023553BF39
 install-name:    '/usr/lib/system/libcopyfile.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

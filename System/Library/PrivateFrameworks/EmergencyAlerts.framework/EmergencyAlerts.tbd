@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D89F1B1E-7C02-313A-81D1-B50B6FB275E1
+    value:           0216BE9C-964E-39A0-9DD1-47CFF9AC0DB8
   - target:          arm64-ios-simulator
-    value:           668B2253-4FA4-3FBF-BD06-76B955866418
+    value:           A6580CEC-AB63-387B-BA56-FBD44FE0ADAB
 install-name:    '/System/Library/PrivateFrameworks/EmergencyAlerts.framework/EmergencyAlerts'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

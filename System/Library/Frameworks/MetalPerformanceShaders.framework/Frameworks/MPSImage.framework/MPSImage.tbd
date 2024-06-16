@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0E290C97-36CC-3C10-8ADA-FD0125FF9BAC
+    value:           50EB2FA5-AA2E-3084-8284-4A7A7B3E75CA
   - target:          arm64-ios-simulator
-    value:           B865D373-9F74-3FEE-8BFF-BBB0158D0B82
+    value:           2671FFE3-52D4-3F7D-9D4B-FA6DFB7A7A31
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSImage.framework/MPSImage'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MPSNeuralNetwork, MetalPerformanceShaders ]

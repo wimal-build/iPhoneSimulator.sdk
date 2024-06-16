@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C88C7578-4C03-3D6D-8490-C6017264E269
   - target:          x86_64-ios-simulator
-    value:           11A7558B-F60D-30B1-9AF9-A8F6DF6B8ED9
+    value:           D690286C-2367-3435-B813-B815F6ACC4B9
   - target:          arm64-ios-simulator
-    value:           583820E6-2A9A-3A68-B985-D8148DFE6BA1
+    value:           618C33A6-95FD-30E7-907A-FF9E725D0057
 install-name:    '/System/Library/PrivateFrameworks/SiriUICore.framework/SiriUICore'
 exports:
   - targets:         [ i386-ios-simulator ]

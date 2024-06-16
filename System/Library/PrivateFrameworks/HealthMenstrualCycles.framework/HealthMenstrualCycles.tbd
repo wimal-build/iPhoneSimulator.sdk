@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AEAE74C1-1184-351E-9386-D46CAAD22E8A
+    value:           5402F49E-ADCB-397E-94DA-96C859A1FBFC
   - target:          arm64-ios-simulator
-    value:           C7C656B3-2057-33BF-89D3-07B1D79DCBD5
+    value:           9D6AC5C3-3443-3B29-A505-0AA839E10D3D
 install-name:    '/System/Library/PrivateFrameworks/HealthMenstrualCycles.framework/HealthMenstrualCycles'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

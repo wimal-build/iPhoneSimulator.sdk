@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D5ACCC97-0DEE-3998-A66C-6B6F7E2EC4EB
+    value:           AA3EA448-EBAD-3723-AA2A-FE7BDEDBBEE1
   - target:          arm64-ios-simulator
-    value:           CD14952B-2475-33DE-9FE2-3107C19F21D0
+    value:           D91EE43D-9606-39C7-ACDC-4A40A3DE87E2
 install-name:    '/System/Library/PrivateFrameworks/ExtensionFoundation.framework/ExtensionFoundation'
 current-version: 17.3
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8B5E2385-A621-3707-B31D-A0D2D04847E6
+    value:           546A628A-DAFA-392F-B06F-767FA71860A2
   - target:          arm64-ios-simulator
-    value:           5A73434C-B383-3047-B77C-001C30B2518E
+    value:           1FB84294-3680-3ADD-828C-97F73A819E01
 install-name:    '/System/Library/PrivateFrameworks/ManagedConfigurationUI.framework/ManagedConfigurationUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

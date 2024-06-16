@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           17C32D17-696B-3621-BBB4-1BD25C1762A6
+    value:           0D8082B9-1C37-345D-815A-4FE693168099
   - target:          arm64-ios-simulator
-    value:           9A28BA88-CE0D-377E-9B5A-CB00225FE963
+    value:           0C88FD29-B300-3A8F-B637-F989730748AE
 install-name:    '/System/Library/PrivateFrameworks/AXTapToSpeakTime.framework/AXTapToSpeakTime'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

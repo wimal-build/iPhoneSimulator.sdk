@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5D686847-7AEE-3C96-9959-61FCCA2E64D5
   - target:          x86_64-ios-simulator
-    value:           22948B88-E3C9-334F-8F4C-9E4653D5CDD2
+    value:           43EBD905-534D-3291-BBB4-CB487FF5B361
   - target:          arm64-ios-simulator
-    value:           4E26C0E0-E5FB-3549-9EA0-31C87C9A3496
+    value:           17743700-B0C7-3753-92EB-65309CB025F2
 install-name:    '/System/Library/PrivateFrameworks/CoreDuetDaemonProtocol.framework/CoreDuetDaemonProtocol'
 exports:
   - targets:         [ i386-ios-simulator ]

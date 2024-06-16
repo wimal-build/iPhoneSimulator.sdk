@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3B6BE693-34A3-3CEA-9D3A-74229A33CCF7
   - target:          x86_64-ios-simulator
-    value:           9351E28B-95D4-3B2C-A00E-C1727EEB4B39
+    value:           2E5476DE-CB83-3749-A1AD-F05CE838E968
   - target:          arm64-ios-simulator
-    value:           627DF9A4-54F4-3BE3-954A-F1899A48C352
+    value:           598B78D7-AFE5-3906-8087-890ED3FBC6B6
 install-name:    '/System/Library/PrivateFrameworks/PreferencesUI.framework/PreferencesUI'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

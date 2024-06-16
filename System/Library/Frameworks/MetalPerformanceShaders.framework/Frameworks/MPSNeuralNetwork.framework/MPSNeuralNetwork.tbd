@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           24B70B52-CDCA-3336-90AC-931EE8CEB9CF
+    value:           782CD263-A0B1-32B9-9E9C-C5BF88CA1DE8
   - target:          arm64-ios-simulator
-    value:           C5F59980-CEA8-3F23-B233-D167D92F78CB
+    value:           66AD50DE-F801-3C18-9F59-C8F5F72D800E
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSNeuralNetwork.framework/MPSNeuralNetwork'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MetalPerformanceShaders ]

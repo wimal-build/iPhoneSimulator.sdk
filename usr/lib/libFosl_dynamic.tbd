@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E7BC879A-54F8-3702-B7E0-6CC8AE4DD2E7
   - target:          x86_64-ios-simulator
-    value:           C2698AA5-A807-3203-BC9F-772A10BEC46F
+    value:           2517A4F9-2768-317F-9E03-222C0C8F7EF2
   - target:          arm64-ios-simulator
-    value:           5EE7B066-DE0F-3441-AEE2-E30226486D64
+    value:           D0C9FE7C-F827-3CD9-A657-1C7B72FFB658
 install-name:    '/usr/lib/libFosl_dynamic.dylib'
 current-version: 0
 compatibility-version: 0

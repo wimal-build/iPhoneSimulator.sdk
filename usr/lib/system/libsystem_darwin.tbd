@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7B388B29-0CCC-37D3-AD2D-F40E3C5262A3
+    value:           83E822C2-0E09-3728-8ECB-41ED3C68E407
   - target:          arm64-ios-simulator
-    value:           354BBB8E-B372-36C2-851C-127E67849B27
+    value:           56C0BADC-92AF-31E9-BBA8-7D277480E65E
 install-name:    '/usr/lib/system/libsystem_darwin.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

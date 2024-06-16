@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FFE39461-6828-3C84-850A-67D9218CE96B
+    value:           DA4B17FC-EEF0-3DC7-A205-C44B0D0441B4
   - target:          arm64-ios-simulator
-    value:           6EB66AF6-74E1-3E83-BA50-A6939ED06FBD
+    value:           3C7A361E-037F-3339-A747-4B1E6A8F9DAA
 install-name:    '/System/Library/PrivateFrameworks/BiomeStorage.framework/BiomeStorage'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

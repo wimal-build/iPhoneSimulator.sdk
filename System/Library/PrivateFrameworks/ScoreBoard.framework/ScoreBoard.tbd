@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2F139CE3-5390-34FF-B7DA-F94A4CAF1162
+    value:           8CEA5ED7-B3A3-363A-9F1E-B33D012FC025
   - target:          arm64-ios-simulator
-    value:           D04F7729-8FEC-31F8-A8CA-46E33CE47229
+    value:           5B5A21EC-BD7F-39DE-9AEB-A15E6A677363
 install-name:    '/System/Library/PrivateFrameworks/ScoreBoard.framework/ScoreBoard'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

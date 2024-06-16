@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E675C84F-08F3-307C-8859-FA9122D56871
   - target:          x86_64-ios-simulator
-    value:           E2898A70-164F-33DB-B932-8488DEDCE04F
+    value:           B1855A17-9730-36C0-8E94-3F428DC28C88
   - target:          arm64-ios-simulator
-    value:           38C61982-8969-3372-AEEE-1BBDA79E265E
+    value:           E94B7526-82B8-332E-9376-209116F79CF0
 install-name:    '/usr/lib/libobjc.A.dylib'
 current-version: 228
 exports:

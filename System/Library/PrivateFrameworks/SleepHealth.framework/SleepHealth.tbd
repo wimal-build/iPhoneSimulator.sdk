@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4F8234D4-AC57-3B58-81E1-8AF3C2E77BC2
+    value:           14FE6DBC-874F-38A0-9F82-25B0706B4A74
   - target:          arm64-ios-simulator
-    value:           8DC477B0-3EE5-3D53-B4AB-E04667ADAFBC
+    value:           E7B78614-46F7-368A-802E-40D912991D63
 install-name:    '/System/Library/PrivateFrameworks/SleepHealth.framework/SleepHealth'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

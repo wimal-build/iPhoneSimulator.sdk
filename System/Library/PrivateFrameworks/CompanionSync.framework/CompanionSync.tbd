@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6E59A01D-E8B2-3195-9466-52AC9049F7ED
   - target:          x86_64-ios-simulator
-    value:           3064F538-480F-3963-B6F0-DC2824E9EDD9
+    value:           ADBB3472-8E6E-3C2C-B2A4-B98DC6C0472D
   - target:          arm64-ios-simulator
-    value:           55C14937-BBC7-3E5A-BCDA-8FC39E071876
+    value:           28489103-6FD3-3078-89E6-F2313D71209C
 install-name:    '/System/Library/PrivateFrameworks/CompanionSync.framework/CompanionSync'
 exports:
   - targets:         [ i386-ios-simulator ]

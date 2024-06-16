@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           860DCE8F-737F-3313-BAE8-5CBEA1926058
+    value:           BC07501D-BBFF-30E2-9DD5-735275881F98
   - target:          arm64-ios-simulator
-    value:           7EAA3224-83E6-35E2-9CE8-BF36420E285B
+    value:           E380C883-4685-39B9-92CB-392BAED8395E
 install-name:    '/System/Library/Frameworks/Accessibility.framework/Accessibility'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

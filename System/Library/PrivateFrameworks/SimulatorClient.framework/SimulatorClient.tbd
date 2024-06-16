@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           62F92FDF-51D3-3FBC-B1D9-0BAF528860A4
   - target:          x86_64-ios-simulator
-    value:           BE9FE2D1-307D-342C-97CD-C4CD2BC7144A
+    value:           06759A28-315A-3090-AAAC-E788133A81B1
   - target:          arm64-ios-simulator
-    value:           96EECD97-E6E2-3A3C-AA95-62038CFBAC3D
+    value:           F3B45BBC-DB71-3704-A168-FECA22B643C2
 install-name:    '/System/Library/PrivateFrameworks/SimulatorClient.framework/SimulatorClient'
 current-version: 819
 exports:

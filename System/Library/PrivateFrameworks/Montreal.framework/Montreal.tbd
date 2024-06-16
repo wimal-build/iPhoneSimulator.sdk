@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F257FB84-52DF-3ED2-88BC-35EA28A98663
   - target:          x86_64-ios-simulator
-    value:           04150B33-24AD-344B-8D4C-0653B05307A0
+    value:           D9BE843B-7E66-388D-8224-6D04FF9975CB
   - target:          arm64-ios-simulator
-    value:           20CC9819-8600-3E1C-9CE5-574A3C9E9C38
+    value:           A50DF3E2-8860-3D23-AC3F-798CA403C476
 install-name:    '/System/Library/PrivateFrameworks/Montreal.framework/Montreal'
 current-version: 142
 exports:

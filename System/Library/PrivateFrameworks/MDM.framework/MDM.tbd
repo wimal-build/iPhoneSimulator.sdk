@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C95913FA-44B0-364C-95BE-03CAF311C3AA
+    value:           2289C68A-F224-3034-84DE-7D47BFE2B959
   - target:          arm64-ios-simulator
-    value:           D9F3E540-4133-30B7-9424-6399D407FD71
+    value:           FFFDBBF2-77A9-3A39-8CB6-4BC0BAC27441
 install-name:    '/System/Library/PrivateFrameworks/MDM.framework/MDM'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

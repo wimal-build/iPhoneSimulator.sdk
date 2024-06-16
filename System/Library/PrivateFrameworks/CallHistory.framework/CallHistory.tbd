@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4B35F48B-A3D6-33D1-9755-52C780B2D177
   - target:          x86_64-ios-simulator
-    value:           DC76F334-D9BF-3AF1-B147-A92BB5D003BD
+    value:           75380E5E-75AB-3AB3-8B1B-411C91C1E279
   - target:          arm64-ios-simulator
-    value:           C9976D11-22F1-3B01-95B5-C7F1F93894BE
+    value:           B9DB3C2A-73B3-3803-8AB8-50363002AB2C
 install-name:    '/System/Library/PrivateFrameworks/CallHistory.framework/CallHistory'
 current-version: 2
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A690E7A2-1E89-3AB2-8316-9292512D9895
+    value:           B569B073-4BF9-3BF7-8BBB-AD6614A4D196
   - target:          arm64-ios-simulator
-    value:           5717092E-21F1-33D4-ADF9-49ACA62FEDEC
+    value:           C645BA47-7252-3783-800F-8AB61B3DF85B
 install-name:    '/System/Library/PrivateFrameworks/SafariFoundation.framework/SafariFoundation'
 current-version: 610.1.28
 exports:

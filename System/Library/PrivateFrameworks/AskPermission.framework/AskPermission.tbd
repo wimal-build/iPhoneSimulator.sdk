@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BCD1E9DB-36F2-3E9D-8CD4-CF0D5873ACA0
+    value:           064E7E35-E0EC-3438-BB69-FCF0D27AD619
   - target:          arm64-ios-simulator
-    value:           9EEDC7BF-9064-30E4-949A-7A03CFBBF0D3
+    value:           802FAD50-3FE7-3423-AB9A-F3A93B9E8092
 install-name:    '/System/Library/PrivateFrameworks/AskPermission.framework/AskPermission'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

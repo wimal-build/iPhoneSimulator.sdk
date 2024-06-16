@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9E88FE37-D9FB-371E-867E-7B018F37E771
+    value:           D1C6C55C-1264-38EE-81EA-AAAEE26232A1
   - target:          arm64-ios-simulator
-    value:           282891E7-C844-3588-A65F-567149B2EDB2
+    value:           ED38DF40-5B1D-386A-9A67-3D27CC779C25
 install-name:    '/System/Library/PrivateFrameworks/BiometricKit.framework/BiometricKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

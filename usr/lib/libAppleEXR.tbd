@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7594616E-E409-3533-AECB-73747DA62D92
+    value:           7C0B1FA3-1F44-3726-8220-77CA5E3E3E06
   - target:          arm64-ios-simulator
-    value:           A822654D-68CC-35FE-A706-6BF5E4288E63
+    value:           A8565075-167F-3A69-BEF8-8633CADE1FAA
 install-name:    '/usr/lib/libAppleEXR.dylib'
 current-version: 1.2.7
 exports:

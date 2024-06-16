@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CEC67554-F4BA-3F8C-B88A-BF92007CF4CA
+    value:           3C1BB9DA-9B58-34BF-93D6-E814EC06398B
   - target:          arm64-ios-simulator
-    value:           290927C8-09E9-3A2D-A579-E04486402B49
+    value:           71C1BE13-E34A-354A-958B-A5E60AA22BD3
 install-name:    '/System/Library/PrivateFrameworks/MapsSuggestions.framework/MapsSuggestions'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

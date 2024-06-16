@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           13633383-8373-3563-BD1F-5B6A93A5A890
   - target:          x86_64-ios-simulator
-    value:           6CAE74C5-5B44-3279-BED8-7A7F5D6684E4
+    value:           25E2EBA2-5B24-362D-A065-3709040B328A
   - target:          arm64-ios-simulator
-    value:           35394FD6-0BCB-3895-8BBF-4C6D86D59368
+    value:           FD60F204-4CAB-363D-9629-74A8741DCFED
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           08B26FEF-0C55-3679-93E9-08AA142C85DE
+    value:           AC3BA65A-3F20-3339-B692-4C8096466C70
   - target:          arm64-ios-simulator
-    value:           6B46284A-0B70-33C9-84AF-B4473819A772
+    value:           5AD0E6A2-E8A4-3650-9305-1594A7AE63DB
 install-name:    '/System/Library/PrivateFrameworks/FilesActionsUI.framework/FilesActionsUI'
 current-version: 35
 exports:

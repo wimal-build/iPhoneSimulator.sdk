@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BC87C3F9-ACC0-314C-B2FF-00FB8BCC5BC3
   - target:          x86_64-ios-simulator
-    value:           48B71F82-D6E4-39FD-8147-036C1C55C351
+    value:           5AFFD379-4770-3E70-A6B1-D9385E3831C2
   - target:          arm64-ios-simulator
-    value:           F9D06023-CEF3-36EC-B6E3-75571C3E5916
+    value:           FD7E5C66-2BC6-366C-8BDB-FA8E7283DDD4
 install-name:    '/usr/lib/system/libsystem_malloc.dylib'
 current-version: 317.0.1
 parent-umbrella:

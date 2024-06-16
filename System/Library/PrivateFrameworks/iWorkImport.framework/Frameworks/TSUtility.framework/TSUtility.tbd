@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2AE95891-8D2C-3457-B2FC-7EE4BE77F5AA
+    value:           04BE0430-6288-3431-A194-2042926997C1
   - target:          arm64-ios-simulator
-    value:           A2D4665B-CE08-3828-935E-69F7C72348DF
+    value:           2E0C6925-A7B9-36D1-BA85-C98E1D48B4E9
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSUtility.framework/TSUtility'
 swift-abi-version: 7
 exports:

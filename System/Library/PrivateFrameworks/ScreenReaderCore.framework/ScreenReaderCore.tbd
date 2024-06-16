@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           421A7BB7-9B41-311F-B5D0-FB95F8756768
   - target:          x86_64-ios-simulator
-    value:           F123DED0-764D-3086-B20B-5548E5573D31
+    value:           2987B762-54AA-39C7-B6DC-908B3E9E3400
   - target:          arm64-ios-simulator
-    value:           0F58DC7A-0B57-3232-B152-178A3BA3CAE5
+    value:           96748266-E3E5-3BB1-8D70-EF858EB45BAD
 install-name:    '/System/Library/PrivateFrameworks/ScreenReaderCore.framework/ScreenReaderCore'
 current-version: 390
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DFE91018-EE35-3D1E-81A6-BBC6846143C7
   - target:          x86_64-ios-simulator
-    value:           AD489D3D-45F5-39EC-A13B-42157EC517B1
+    value:           5A5CD52A-17AB-3EBC-BECA-3D01CF948394
   - target:          arm64-ios-simulator
-    value:           5B28EB93-A2F0-35EB-9A9E-EC9D0108F343
+    value:           74E5B2C6-369D-39FF-BEF0-5EB9CD6900AB
 install-name:    '/System/Library/PrivateFrameworks/Preferences.framework/Preferences'
 exports:
   - targets:         [ i386-ios-simulator ]

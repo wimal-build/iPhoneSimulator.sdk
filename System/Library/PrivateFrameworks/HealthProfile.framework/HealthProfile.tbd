@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AEB74DDD-1D60-3A96-8235-3D493AB156F1
+    value:           EA312C0D-D19B-3E1C-B5AD-48B8183B321D
   - target:          arm64-ios-simulator
-    value:           8B639695-B4A4-38B5-951F-F58F8A92C4D9
+    value:           1550E3D7-F980-370F-9201-2797DC69685F
 install-name:    '/System/Library/PrivateFrameworks/HealthProfile.framework/HealthProfile'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           81215D05-911F-362F-9BCB-F8B283ADE5BE
   - target:          x86_64-ios-simulator
-    value:           48B9954F-9814-3D44-BBA5-99FB0BAF05E9
+    value:           E2C7CAF9-C2D7-3664-892E-50B98CE9C998
   - target:          arm64-ios-simulator
-    value:           DBD42463-A042-37CD-BA23-C390481C3A85
+    value:           6F7030C2-983A-343E-90B0-76FA1EA1327D
 install-name:    '/System/Library/PrivateFrameworks/EasyConfig.framework/EasyConfig'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

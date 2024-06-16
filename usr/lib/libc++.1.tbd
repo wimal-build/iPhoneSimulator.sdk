@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7CE1FBA8-3A82-3977-82FA-F43B16743317
   - target:          x86_64-ios-simulator
-    value:           9E6E2846-57F0-3F7A-893D-3F6540D7C803
+    value:           1A1EE805-BA68-31FB-9374-45999536C65A
   - target:          arm64-ios-simulator
-    value:           1F08BEF1-3DDD-3A6D-9AEC-930B7D525BB9
+    value:           EC4E9C36-C587-3A77-8E9B-3E7E41CA1EDA
 install-name:    '/usr/lib/libc++.1.dylib'
 current-version: 904.4
 reexported-libraries:

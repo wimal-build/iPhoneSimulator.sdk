@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B4309EFB-4BA8-3400-9A7B-93F9E3BAD084
   - target:          x86_64-ios-simulator
-    value:           92E7E196-4035-38CA-A986-B05F734DFB35
+    value:           B1598E2D-6414-30A0-BB9A-A2CF99419F3D
   - target:          arm64-ios-simulator
-    value:           72E281BE-52FF-3121-8C75-B9BD84238AEB
+    value:           643BBF50-0FD4-321C-B5D3-97E09143FBDE
 install-name:    '/System/Library/PrivateFrameworks/SoftwareUpdateServices.framework/SoftwareUpdateServices'
 exports:
   - targets:         [ i386-ios-simulator ]

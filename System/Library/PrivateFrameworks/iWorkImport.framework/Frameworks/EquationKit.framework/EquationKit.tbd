@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           51546890-2AE0-3828-AF86-B4129A657F93
+    value:           DF506C7C-1976-3180-AE58-D479F5A3C940
   - target:          arm64-ios-simulator
-    value:           F9A0427B-9D04-3696-81D9-63808461FCFA
+    value:           06B05A01-6CE3-3E01-BFB7-FB7B5EFCF847
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/EquationKit.framework/EquationKit'
 exports:
   - targets:         [ x86_64-ios-simulator ]

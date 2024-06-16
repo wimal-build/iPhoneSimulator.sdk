@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4474DA63-9FCB-3388-AC07-3EAA9E3CD27A
+    value:           BD28133A-FD9E-36CA-BF8B-6333F3C70386
   - target:          arm64-ios-simulator
-    value:           9A3B4F47-EE12-3119-A925-0EE073C18B91
+    value:           6412FD02-07B1-3F0C-A447-84DACB390EC3
 install-name:    '/System/Library/PrivateFrameworks/FSEvents.framework/FSEvents'
 current-version: 1290
 exports:

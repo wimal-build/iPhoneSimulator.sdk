@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F1A4B7D4-5252-34CC-84B8-E2E2E4EB0CDD
+    value:           A7AE8DD6-BE67-320D-BB34-FAAD092BECF5
   - target:          arm64-ios-simulator
-    value:           C2E453F2-ED8F-3AF7-95BB-FDC6B1DF174E
+    value:           081AE2CE-CFA3-359B-93F0-0FD3C3C3EC75
 install-name:    '/System/Library/PrivateFrameworks/VoiceServices.framework/Support/libvoiced_tts.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator ]

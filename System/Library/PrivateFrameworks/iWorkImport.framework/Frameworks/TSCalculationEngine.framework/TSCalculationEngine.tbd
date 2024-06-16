@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           30B6C4AC-834D-3F82-9FE5-13125B405422
+    value:           21BC675E-3664-363E-BAAE-843ADCAF9010
   - target:          arm64-ios-simulator
-    value:           0020C4F5-E58F-37EA-A317-4C53AF95AA8A
+    value:           40B2EC5C-7F31-372F-B172-27840E37A8F6
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSCalculationEngine.framework/TSCalculationEngine'
 exports:
   - targets:         [ x86_64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5E2D1371-5F11-3211-8099-48A03C6AF81D
   - target:          x86_64-ios-simulator
-    value:           EFDDE66B-964B-3E04-8255-80695B6E97FC
+    value:           935E5C34-9CCC-3B6E-BD9D-2E70CF77BC2E
   - target:          arm64-ios-simulator
-    value:           5D096AB0-9918-358B-A67E-C957E741DEC1
+    value:           086B62A9-C246-3F1F-8FF5-2B4630CCE1D5
 install-name:    '/System/Library/PrivateFrameworks/ToneKit.framework/ToneKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

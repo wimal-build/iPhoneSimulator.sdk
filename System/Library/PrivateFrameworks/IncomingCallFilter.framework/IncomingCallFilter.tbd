@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           85AC4985-95A4-3E49-B05E-4F573D9DA1BE
   - target:          x86_64-ios-simulator
-    value:           1C8051CF-67F9-367D-8C17-AC20E2E6270C
+    value:           554AB54F-6446-3EFB-AA45-4B3E6F9ED999
   - target:          arm64-ios-simulator
-    value:           9C1A7DDF-025E-3401-8ADF-4ADE30434FA4
+    value:           3518A588-1E5C-3049-ABC6-BE49F278BBC7
 install-name:    '/System/Library/PrivateFrameworks/IncomingCallFilter.framework/IncomingCallFilter'
 current-version: 800
 exports:

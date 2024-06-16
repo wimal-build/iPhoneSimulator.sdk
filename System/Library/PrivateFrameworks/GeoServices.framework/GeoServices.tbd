@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6224418C-BD3D-3E68-BEB1-51FB0C4BEB34
   - target:          x86_64-ios-simulator
-    value:           BA89508C-BDBC-36BE-B29C-1C96DA171D2C
+    value:           5C6DF0CE-F951-3BBF-99A0-CCBAB92F80B1
   - target:          arm64-ios-simulator
-    value:           D0A30B1C-5A3D-3EE9-8D92-53113B48017D
+    value:           3212C978-7C16-3653-A2EB-79715B7CE5DC
 install-name:    '/System/Library/PrivateFrameworks/GeoServices.framework/GeoServices'
 current-version: 1757.30.8
 exports:

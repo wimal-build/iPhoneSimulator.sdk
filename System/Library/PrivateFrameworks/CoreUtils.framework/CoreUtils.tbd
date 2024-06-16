@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           904A473F-C000-3BE5-B9F2-F42F825A5EE4
   - target:          x86_64-ios-simulator
-    value:           24FF18F4-4A31-33E1-9878-EADB5BB33A04
+    value:           5A362784-5690-3F72-BC0C-59A2EE562016
   - target:          arm64-ios-simulator
-    value:           AEF9BD29-EE4D-3928-AEAF-450D64299D78
+    value:           0D31F7B0-D068-33FD-97F9-CB942347E282
 install-name:    '/System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils'
 exports:
   - targets:         [ i386-ios-simulator ]

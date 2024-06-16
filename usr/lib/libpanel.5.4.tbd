@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CE711B09-753D-309E-8C20-52A0E91A8156
   - target:          x86_64-ios-simulator
-    value:           134A09AA-B5A0-3042-992C-FABF63A8F608
+    value:           6D71516E-30E1-34FA-835E-0CD9EBF233ED
   - target:          arm64-ios-simulator
-    value:           5538FCAA-D6BA-39A3-80F7-E2B102505276
+    value:           7ADFC780-40EB-3C2E-B866-1FD386FE19CD
 install-name:    '/usr/lib/libpanel.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           16F06EC3-705F-324B-A04A-D77ED6C9CCC1
   - target:          x86_64-ios-simulator
-    value:           7065D29F-B8B5-33FB-9E6C-CA2DDDEF1CA5
+    value:           D96C170B-FA1D-3D4E-B7E7-23E23395366D
   - target:          arm64-ios-simulator
-    value:           CDB700F9-5ACF-3D4F-AA1D-B9DFD5EB1A25
+    value:           BE20475C-B473-338B-96E5-1C98E61EE810
 install-name:    '/System/Library/PrivateFrameworks/AnnotationKit.framework/AnnotationKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

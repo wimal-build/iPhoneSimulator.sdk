@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           05E5A220-C084-3829-AD9D-0493703606E8
   - target:          x86_64-ios-simulator
-    value:           0877A338-CD8C-3EF9-9840-7BD6DB789842
+    value:           920CBE2C-9B7D-35E4-90CB-7DFA1CE84654
   - target:          arm64-ios-simulator
-    value:           C417BA61-0CFC-33E8-8DFE-846797EC8592
+    value:           8671FF7C-CC02-3DC3-ACF9-FFFABC2E015E
 install-name:    '/System/Library/PrivateFrameworks/CoreSuggestionsUI.framework/CoreSuggestionsUI'
 current-version: 1115
 exports:

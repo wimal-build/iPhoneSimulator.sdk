@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           91D75E36-5C85-3DFA-A178-40D8310EB785
+    value:           546DC556-26F0-3042-B0FE-3D440E19B963
   - target:          arm64-ios-simulator
-    value:           908E1B5F-4E0F-3112-B04A-D92FD8F3631F
+    value:           9D968434-C74F-3489-8CC3-5F6E07B235D4
 install-name:    '/System/Library/PrivateFrameworks/NewsDaemon.framework/NewsDaemon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           24113072-C57A-397E-886A-B5360CFCACF2
   - target:          x86_64-ios-simulator
-    value:           71680989-5C35-30F4-AF6E-39B01C91A4E6
+    value:           026F6709-BE76-335F-AFB2-BB2EBD48060D
   - target:          arm64-ios-simulator
-    value:           145B32C4-AC01-3DB8-8DCF-79CB46424EBA
+    value:           854F5677-9588-395D-9352-9415C5C7CC68
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 swift-abi-version: 7
 exports:
@@ -1008,6 +1008,7 @@ exports:
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC12minimumValueSivpMV', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC12minimumValueSivs', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC12sizeThatFitsySo6CGSizeVAFF', 
+                       '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC13updateStepper5valueySi_tF', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC14layoutSubviewsyyF', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC15isStepperHiddenSbvM', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC15isStepperHiddenSbvg', 

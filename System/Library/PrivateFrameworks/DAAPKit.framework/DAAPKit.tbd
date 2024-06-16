@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BD2CA1F0-6E1A-37A5-A99E-E90A21842A50
   - target:          x86_64-ios-simulator
-    value:           1D080ED5-2007-3F15-B2C7-D5D0A014CCE5
+    value:           32BDDC92-84A2-3AF1-8355-3437AAB7F8A5
   - target:          arm64-ios-simulator
-    value:           6BAD393C-2FF0-3553-8FD0-70B7873AACA5
+    value:           8266AC50-D79F-35D3-85B9-5D3597C658CE
 install-name:    '/System/Library/PrivateFrameworks/DAAPKit.framework/DAAPKit'
 exports:
   - targets:         [ i386-ios-simulator ]

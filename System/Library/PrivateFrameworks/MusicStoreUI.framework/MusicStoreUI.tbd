@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B23C1FDD-0D5A-39C2-8936-8E0EBD0620C7
   - target:          x86_64-ios-simulator
-    value:           290BF920-0CD7-31C6-A478-C19456E120F4
+    value:           C46AC8AF-6789-38EA-86D8-3ED72EEED6BB
   - target:          arm64-ios-simulator
-    value:           CDA19C94-4718-3740-A452-E037627E01DB
+    value:           01E78B77-F539-3AFD-9181-BF810927ACB6
 install-name:    '/System/Library/PrivateFrameworks/MusicStoreUI.framework/MusicStoreUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

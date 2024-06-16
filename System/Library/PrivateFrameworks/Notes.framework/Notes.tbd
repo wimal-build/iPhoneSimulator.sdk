@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1CF66091-B8CB-31DD-B2A5-FAD8AD08E4B1
   - target:          x86_64-ios-simulator
-    value:           3FF6C2E5-CBCE-35A9-AF5F-F1CE6EFE3C03
+    value:           B16F3800-05B5-35C6-9125-41CC782E942F
   - target:          arm64-ios-simulator
-    value:           A4766BB9-E4B9-35AC-96CE-C991F6BC21A0
+    value:           EA0A2DAA-DECA-303C-B5E1-7105C10B49E1
 install-name:    '/System/Library/PrivateFrameworks/Notes.framework/Notes'
 current-version: 1759
 exports:

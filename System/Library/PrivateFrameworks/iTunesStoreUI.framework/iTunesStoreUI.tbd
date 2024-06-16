@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A0B58879-1851-3420-B75B-0405996397D2
   - target:          x86_64-ios-simulator
-    value:           11FEE3B8-009A-39CA-B7BA-F767C6DC03BA
+    value:           89023A09-304B-3600-A545-6243120C1F6E
   - target:          arm64-ios-simulator
-    value:           A821F869-1DE1-3347-BBE4-6AA5CB3D36AF
+    value:           9A304BE1-9E8C-3F28-99A4-4AF43D9F7BB4
 install-name:    '/System/Library/PrivateFrameworks/iTunesStoreUI.framework/iTunesStoreUI'
 exports:
   - targets:         [ i386-ios-simulator ]

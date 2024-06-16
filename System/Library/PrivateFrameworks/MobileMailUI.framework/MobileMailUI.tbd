@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           88F0A884-DB25-3584-864B-2D391FE4472B
+    value:           D08AB524-EBED-32F1-B640-B7CACF7FF292
   - target:          arm64-ios-simulator
-    value:           0F0FE13A-D970-36FC-B1AB-442CE2198027
+    value:           7986D893-3C08-322C-9035-4345FAB55854
 install-name:    '/System/Library/PrivateFrameworks/MobileMailUI.framework/MobileMailUI'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _MFActivityTypeMailQuicklook, _MFActivityTypeMarkupDocument, 

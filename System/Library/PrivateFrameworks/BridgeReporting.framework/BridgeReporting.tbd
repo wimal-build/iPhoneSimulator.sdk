@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7B0543A1-2F52-35EF-BA1C-1AD28847B644
+    value:           D4FF7818-86B4-3B4B-BF6A-B8C9567CD0E3
   - target:          arm64-ios-simulator
-    value:           B44B0D7E-62C3-3932-AF2D-B21BC7EE7A24
+    value:           7F091B96-8BFF-358D-B499-137367BE0178
 install-name:    '/System/Library/PrivateFrameworks/BridgeReporting.framework/BridgeReporting'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

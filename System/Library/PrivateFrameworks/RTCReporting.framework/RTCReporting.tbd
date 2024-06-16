@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           40B6DA61-09DC-395B-9EC4-66367E691970
   - target:          x86_64-ios-simulator
-    value:           15D05593-41DB-394B-BC0F-D238D121808E
+    value:           81397976-BAC9-3A9C-96B3-3F2300E202D0
   - target:          arm64-ios-simulator
-    value:           14A2941C-52A4-35D1-9F3D-4A824158C5F4
+    value:           9461EE32-895C-3698-83D4-D2199B558156
 install-name:    '/System/Library/PrivateFrameworks/RTCReporting.framework/RTCReporting'
 exports:
   - targets:         [ i386-ios-simulator ]

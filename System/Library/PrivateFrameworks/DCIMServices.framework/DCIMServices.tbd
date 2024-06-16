@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           31231267-DF74-3A2E-B764-7B306C48B7D4
   - target:          x86_64-ios-simulator
-    value:           16DFF9D5-E7AF-366C-A361-4031603BEAEE
+    value:           C356EC18-A8BA-3C01-90B9-F3E0AF94B07D
   - target:          arm64-ios-simulator
-    value:           9764AA29-AC38-3DFD-B3BB-B1EBD8D1E724
+    value:           D5F85E57-0048-3A34-83A9-E778F46BBB0A
 install-name:    '/System/Library/PrivateFrameworks/DCIMServices.framework/DCIMServices'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _PLAddAdditionalMetadata, _PLAddAdditionalMetadataToProperties, 

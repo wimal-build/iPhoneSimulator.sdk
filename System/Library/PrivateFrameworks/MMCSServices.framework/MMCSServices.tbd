@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A9066173-67C9-3C8E-8B12-05FFBC1B85BF
   - target:          x86_64-ios-simulator
-    value:           41112512-DD72-3073-9C14-C5421DFA3901
+    value:           3DDA7FF6-BD41-37E1-BB33-5D5DB24F66A7
   - target:          arm64-ios-simulator
-    value:           3C7D7ED9-E678-348E-BDFF-443969EED723
+    value:           A3839CA5-3849-3294-919C-7664B226F9F2
 install-name:    '/System/Library/PrivateFrameworks/MMCSServices.framework/MMCSServices'
 current-version: 800
 exports:

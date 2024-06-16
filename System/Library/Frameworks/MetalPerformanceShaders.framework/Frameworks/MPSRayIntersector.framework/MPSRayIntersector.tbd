@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2A338F45-28C9-3EF7-B2C5-B371F734A0E3
+    value:           03D29D48-3AB7-3FD2-871E-B55634EBB661
   - target:          arm64-ios-simulator
-    value:           2A9C1856-94EA-3E6B-AF7A-86EC4E14A434
+    value:           C9481094-8CD2-3082-8A38-C2A33359F59E
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSRayIntersector.framework/MPSRayIntersector'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MetalPerformanceShaders ]

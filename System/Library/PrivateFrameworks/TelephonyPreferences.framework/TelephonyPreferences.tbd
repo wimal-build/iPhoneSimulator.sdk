@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           835089F0-0D37-37A0-8C3D-E6C886DA971F
+    value:           1A6311A3-6CAA-3A09-B42C-C3DB72BC3478
   - target:          arm64-ios-simulator
-    value:           1B37E917-D708-3CA5-8E19-7D1BB6013DC5
+    value:           EC574CFE-5842-366B-A8DF-6A43736B8754
 install-name:    '/System/Library/PrivateFrameworks/TelephonyPreferences.framework/TelephonyPreferences'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

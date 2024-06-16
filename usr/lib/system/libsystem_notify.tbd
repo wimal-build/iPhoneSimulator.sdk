@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ABD5F0CD-741B-3361-8438-879572813CFD
   - target:          x86_64-ios-simulator
-    value:           5055D2B4-D92D-3B0B-8C56-8B9957C50494
+    value:           EA84AC20-C7D2-34B8-B989-E7D6002EE312
   - target:          arm64-ios-simulator
-    value:           F9329A79-F208-321A-AE6C-52ABB1B2DE20
+    value:           7309F095-0D19-39C6-8A6B-91BD0E9EA301
 install-name:    '/usr/lib/system/libsystem_notify.dylib'
 current-version: 279.0.2
 exports:

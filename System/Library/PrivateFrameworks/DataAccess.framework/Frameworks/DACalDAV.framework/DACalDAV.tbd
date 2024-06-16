@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           07E2A4A3-4268-3C33-B458-610827EB39E3
   - target:          x86_64-ios-simulator
-    value:           89728BB7-ED6C-3FE4-A793-B1568A1CAE67
+    value:           0B20B670-9254-3F8C-81BF-3B2A248A5638
   - target:          arm64-ios-simulator
-    value:           CA3A452C-948F-3D29-AF2E-4E8FF27657AE
+    value:           50B26A8E-750C-31DF-A6FA-A7D02C4F2B5C
 install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACalDAV.framework/DACalDAV'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A53594CC-4C2A-3ACE-9192-5AF3110D40D2
+    value:           AEA08B4F-8C16-3407-AC5F-787675D931A5
   - target:          arm64-ios-simulator
-    value:           53E1E31C-A067-3CC5-9BCB-3039A5D20CAF
+    value:           93D90F70-D3D2-31A9-979A-3FC5E9FD38FF
 install-name:    '/System/Library/PrivateFrameworks/BookCoverUtility.framework/BookCoverUtility'
-current-version: 419
+current-version: 421
 compatibility-version: 0
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

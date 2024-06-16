@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           16CEFB06-4865-30DB-9A75-ABAB939905E3
   - target:          x86_64-ios-simulator
-    value:           AB3BDB49-34C4-30D5-825A-AAE55D66B3A0
+    value:           AA45923B-35C7-3A5A-BDE0-9B29C9AE01C9
   - target:          arm64-ios-simulator
-    value:           CB1C801D-42C9-3FF3-B037-76E47090BBCC
+    value:           2B6BAAB1-95B0-3329-AF9E-9BB3FBE0D24C
 install-name:    '/System/Library/PrivateFrameworks/iCloudQuotaDaemon.framework/iCloudQuotaDaemon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

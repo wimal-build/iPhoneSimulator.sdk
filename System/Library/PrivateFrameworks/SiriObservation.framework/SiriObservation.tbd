@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBDD16E8-43D4-3FF1-B36A-483508634B36
+    value:           3A6142B3-8128-3DE5-B2D2-F4431D4544EB
   - target:          arm64-ios-simulator
-    value:           47435640-D4E8-3BB7-9A24-ABDF6D580BD0
+    value:           C69C1937-9B4A-36B8-8565-9D9E1CBAEDDA
 install-name:    '/System/Library/PrivateFrameworks/SiriObservation.framework/SiriObservation'
 current-version: 0
 compatibility-version: 0

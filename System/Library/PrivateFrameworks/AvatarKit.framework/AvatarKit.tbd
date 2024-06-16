@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BAB0716A-2BC6-3AE7-B65D-48121426A927
+    value:           44338D60-ABD4-3552-9C42-C2FABC7E6A62
   - target:          arm64-ios-simulator
-    value:           5C8E167A-5216-34E4-99A4-D6EE84A3F732
+    value:           8A1AC934-968E-38E7-9C5D-43EEFEF81E63
 install-name:    '/System/Library/PrivateFrameworks/AvatarKit.framework/AvatarKit'
 current-version: 296
 exports:

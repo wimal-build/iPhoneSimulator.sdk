@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           028F3DD1-FC35-3821-997B-6042BA578F92
+    value:           BD75A575-C594-33AB-A6F2-22ED113BFA73
   - target:          arm64-ios-simulator
-    value:           9AEE3014-CE49-3292-9C71-2AE3201CAA3B
+    value:           4FF426A6-AB07-36C2-B866-FE8398414835
 install-name:    '/System/Library/PrivateFrameworks/MediaControls.framework/MediaControls'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

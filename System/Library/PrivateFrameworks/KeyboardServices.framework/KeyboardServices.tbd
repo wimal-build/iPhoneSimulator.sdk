@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           047D187C-9C35-36A1-B249-48D0D76DC29A
   - target:          x86_64-ios-simulator
-    value:           72ABD15E-55B1-374D-9314-5946ACC53DC7
+    value:           6AE456C8-12E7-3B1E-B954-41EA40E9CCCB
   - target:          arm64-ios-simulator
-    value:           5A36A0DB-1BB7-3D8E-8AED-3BAC6E4B18AE
+    value:           C5937B75-6B5B-3A59-ACA1-383DAA24CA22
 install-name:    '/System/Library/PrivateFrameworks/KeyboardServices.framework/KeyboardServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

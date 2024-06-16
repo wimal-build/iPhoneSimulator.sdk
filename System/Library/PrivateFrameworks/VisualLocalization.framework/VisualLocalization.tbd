@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BDE2A0CD-99F9-3303-A9B9-2B96E9EBE061
+    value:           F9A5208B-E205-3EE1-A865-B6E649FCEBD6
   - target:          arm64-ios-simulator
-    value:           F13C88AD-6EE8-32B6-86F1-050805B968ED
+    value:           FC21E42F-FCE2-3D4F-96BA-E51B40FAA1D2
 install-name:    '/System/Library/PrivateFrameworks/VisualLocalization.framework/VisualLocalization'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

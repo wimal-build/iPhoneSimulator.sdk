@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           880C3CCB-29C9-322D-801B-5D9CCF506F75
   - target:          x86_64-ios-simulator
-    value:           D4081807-FC49-3266-9845-8E5241023581
+    value:           40C7D827-CAF3-3DC0-8936-76DB569DDB0B
   - target:          arm64-ios-simulator
-    value:           DA844273-9C88-3A8D-954A-0B772C8C55B7
+    value:           4F9C930A-3F5F-3EA9-9D88-B745BE736B20
 install-name:    '/System/Library/PrivateFrameworks/MobileContainerManager.framework/MobileContainerManager'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

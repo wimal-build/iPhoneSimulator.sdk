@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           CF5177F5-900C-3F86-BB47-5EC17F2B7E27
   - target:          x86_64-ios-simulator
-    value:           259F0D1F-3987-3F62-B14B-1EFA1BE06FB2
+    value:           1E0BA3A2-78D0-3976-86B4-FD0C7FEB1B7C
   - target:          arm64-ios-simulator
-    value:           131CCF01-E85F-317F-978C-342E1428546B
+    value:           76B65F0B-8E37-32FB-A35A-8CE9414FFF49
 install-name:    '/System/Library/PrivateFrameworks/MobileSpotlightIndex.framework/MobileSpotlightIndex'
-current-version: 2142.8
+current-version: 2142.11
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _SIHasInFlightUpdates, _SIQueryResolveFriendlyFieldNames, 

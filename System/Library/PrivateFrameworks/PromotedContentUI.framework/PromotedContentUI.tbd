@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           276915A0-CFD3-3E4D-9107-31B90B5D80F2
+    value:           BE881361-115D-308D-9212-E7C07EB85DA7
   - target:          arm64-ios-simulator
-    value:           25086FB9-96EE-3A19-9E4E-A0BE64CF16E5
+    value:           9C78AAF9-BCB0-3285-A184-832FDEEB1CDA
 install-name:    '/System/Library/PrivateFrameworks/PromotedContentUI.framework/PromotedContentUI'
 swift-abi-version: 7
 exports:

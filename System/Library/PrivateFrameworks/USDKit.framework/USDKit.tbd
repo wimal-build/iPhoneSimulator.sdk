@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C4F3DAC0-5627-32D9-95C2-ACD73878D399
+    value:           DFDBC463-63C7-39DB-A634-8CF3855E1A90
   - target:          arm64-ios-simulator
-    value:           383D50D0-03C8-3AC7-9EE9-71067C464A28
+    value:           D93980A6-24FB-38F7-A258-2939593EE850
 install-name:    '/System/Library/PrivateFrameworks/USDKit.framework/USDKit'
 current-version: 40
 exports:

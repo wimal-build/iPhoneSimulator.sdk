@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4961E5A2-ED29-359F-9F59-C3CFD2EB6147
+    value:           3262D25F-877A-36B5-B5AB-0617C0B2026A
   - target:          arm64-ios-simulator
-    value:           B212216D-2F3C-337C-9432-CFFE6A21D588
+    value:           06D41272-F3EB-3B59-BBB2-45D406B875F5
 install-name:    '/System/Library/PrivateFrameworks/RenderBox.framework/RenderBox'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

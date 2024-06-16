@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A162D875-0AAA-35E2-8A35-020F4F5C9551
+    value:           9F6F9DDA-B749-33D2-BB87-E8E713FB8A50
   - target:          arm64-ios-simulator
-    value:           B8EB4281-A358-3319-9F8C-D8762C95415E
+    value:           1C119FCF-B5EB-3013-8687-CE4BF7582EE8
 install-name:    '/System/Library/PrivateFrameworks/MetalTools.framework/MetalTools'
 current-version: 0
 compatibility-version: 0

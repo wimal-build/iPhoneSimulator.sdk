@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           403A8CF5-0862-3367-8AA4-DEDCE677037A
+    value:           AF076668-1143-30E3-A1EF-5EDB02303BA6
   - target:          arm64-ios-simulator
-    value:           D444A292-4C43-30F9-92CC-FF67DA796F58
+    value:           758E0992-E26A-3869-8DE3-F474C3DEB7F0
 install-name:    '/usr/lib/swift/libswiftCoreMIDI.dylib'
 current-version: 2
 swift-abi-version: 7

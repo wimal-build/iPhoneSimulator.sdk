@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           28F30845-D777-3F8B-8A7C-BE890B6E9E57
   - target:          x86_64-ios-simulator
-    value:           2960771B-83A7-3A35-A35C-8CF97A161F38
+    value:           ADE5932A-D446-34CE-A254-99FD07028BD6
   - target:          arm64-ios-simulator
-    value:           10456E5D-1FCC-3F80-937F-B5E9FB88D78A
+    value:           02A18319-659C-393A-8C82-B237E96CD741
 install-name:    '/System/Library/PrivateFrameworks/AssetCacheServices.framework/AssetCacheServices'
 current-version: 115
 exports:

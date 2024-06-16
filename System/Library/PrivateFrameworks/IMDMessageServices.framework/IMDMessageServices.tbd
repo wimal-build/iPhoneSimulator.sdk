@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5B6AD0D7-2ED8-3508-8468-1BBD4E18EF19
   - target:          x86_64-ios-simulator
-    value:           44123746-013A-3CE2-9F1C-3B1D2FCCB866
+    value:           F167BE54-F7FA-30A0-BBC8-D1F5C8890A9E
   - target:          arm64-ios-simulator
-    value:           7E6E1DBE-1CDF-341E-8496-FF537E1E7B97
+    value:           9E49C285-5DB9-3CA5-A006-74F253471792
 install-name:    '/System/Library/PrivateFrameworks/IMDMessageServices.framework/IMDMessageServices'
 current-version: 800
 exports:

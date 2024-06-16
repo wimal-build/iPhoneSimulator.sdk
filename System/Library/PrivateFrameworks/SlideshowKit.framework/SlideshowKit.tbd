@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BFA0D5ED-C584-37AA-A1C5-A4893A81EE5A
   - target:          x86_64-ios-simulator
-    value:           090579E5-A291-342F-A8BD-AAE581E1317A
+    value:           4A69387D-5C32-3096-A5F4-84563BF0294B
   - target:          arm64-ios-simulator
-    value:           419DA4B6-0B65-3D1F-9201-F1EF1156AE32
+    value:           5D72C195-2854-33AC-B347-5B63A4711C8E
 install-name:    '/System/Library/PrivateFrameworks/SlideshowKit.framework/SlideshowKit'
 current-version: 1702.0.160
 reexported-libraries:
@@ -25,9 +25,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           03E15754-07A8-3804-BBCB-6C121D767BFD
   - target:          x86_64-ios-simulator
-    value:           CA05F47F-463B-34C9-8744-06B07341793D
+    value:           E1D2DAEC-7844-35FD-82CB-58EAE891C453
   - target:          arm64-ios-simulator
-    value:           EB0EB484-CAAA-3FE0-A15A-13D847044822
+    value:           BB150C1C-07B7-3DFD-B476-37513058C056
 install-name:    '/System/Library/PrivateFrameworks/SlideshowKit.framework/Frameworks/OpusFoundation.framework/OpusFoundation'
 current-version: 1702.0.160
 exports:
@@ -95,9 +95,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C06F4103-F4C8-3700-B906-062EBE0A41C5
   - target:          x86_64-ios-simulator
-    value:           12060136-F474-3C50-88AB-4485E7901640
+    value:           717BDFD3-7E78-3C1E-9FAB-385B69C839D7
   - target:          arm64-ios-simulator
-    value:           C5CCDEF1-400F-38B5-ACEA-2F641AD6EE20
+    value:           C41EF7E4-3C6D-3A99-924E-AA368590C4DB
 install-name:    '/System/Library/PrivateFrameworks/SlideshowKit.framework/Frameworks/OpusKit.framework/OpusKit'
 current-version: 1702.0.160
 exports:

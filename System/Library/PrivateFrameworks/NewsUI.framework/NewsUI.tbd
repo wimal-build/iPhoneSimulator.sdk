@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           273CEA4E-659F-3B8D-A81F-2E220B6ABA67
+    value:           EB24D4D4-9A29-3824-BFFB-1DE2F141E933
   - target:          arm64-ios-simulator
-    value:           31ABE6A8-537E-35A3-B180-AD1A1A4CA8DA
+    value:           01EA0A2F-C9C2-309B-9EF2-6A6DFA2138F4
 install-name:    '/System/Library/PrivateFrameworks/NewsUI.framework/NewsUI'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

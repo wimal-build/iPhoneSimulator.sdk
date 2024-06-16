@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           30CE77A4-1B77-372C-A8A3-4784D1BB5BAC
   - target:          x86_64-ios-simulator
-    value:           2F4407C4-F9B8-38C1-A26D-4F9D834584FC
+    value:           E13AA8C6-2C60-3806-9C03-14F1AD24F0FB
   - target:          arm64-ios-simulator
-    value:           C8109863-2306-3270-B8E8-5FB715E8C8FB
+    value:           326E7BB1-A913-3FD6-B188-1A9A0487D6B0
 install-name:    '/System/Library/PrivateFrameworks/WeatherFoundation.framework/WeatherFoundation'
-current-version: 326
+current-version: 329
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _NSLocaleTemperatureUnitFromWFTemperatureUnit, _NSLocaleTemperatureUnitToWFTemperatureUnit, 
@@ -231,10 +231,10 @@ exports:
                        _WFWeatherWebForecastDailyLinkComponent, _WFWeatherWebForecastHourlyLinkComponent, 
                        _WFWeatherWebForecastMonthlyLinkComponent, _WFWeatherWebLinkComponent, 
                        _WFWeatherWebRadarLinkComponent, _WFWeatherWindDirectionComponent, 
-                       _WFWeatherWindSpeedComponent, _WeatherFoundationInternalUserDefaults, 
-                       _WeatherFoundationVersionNumber, _WeatherFoundationVersionString, 
-                       ___WFWeatherLegacyConditionComponent, ___WFWeatherSeriesIndexComponent, 
-                       _kWFErrorDomain, _kWFNetworkTimeoutInNanoseconds ]
+                       _WFWeatherWindSpeedComponent, _WFWidgetRefreshPolicyConfigKey, 
+                       _WeatherFoundationInternalUserDefaults, _WeatherFoundationVersionNumber, 
+                       _WeatherFoundationVersionString, ___WFWeatherLegacyConditionComponent, 
+                       ___WFWeatherSeriesIndexComponent, _kWFErrorDomain, _kWFNetworkTimeoutInNanoseconds ]
     objc-classes:    [ WFAPIConfigurationFactory, WFAQIScaleATMO, WFAQIScaleCAQI, 
                        WFAQIScaleCategory, WFAQIScaleCategoryATMO, WFAQIScaleCategoryCAQI, 
                        WFAQIScaleCategoryDAQI, WFAQIScaleCategoryEPA, WFAQIScaleCategoryHJ6332012, 

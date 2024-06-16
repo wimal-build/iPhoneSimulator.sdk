@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           89CB2BB4-FFF0-365E-B2A3-2A0AD51677DE
+    value:           0399F1BF-A180-342A-84CC-FA0B4AB07BA7
   - target:          arm64-ios-simulator
-    value:           6FBEBE9B-F58A-3687-B7B3-58F3601C24AD
+    value:           90228C4D-7F77-3F08-AA3F-B81B2CCF190D
 install-name:    '/System/Library/PrivateFrameworks/TrustedPeers.framework/TrustedPeers'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

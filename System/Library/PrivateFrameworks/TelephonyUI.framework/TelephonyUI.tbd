@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B9659EBB-215A-3654-997B-4A37259D756A
   - target:          x86_64-ios-simulator
-    value:           A9F94739-E7FD-3027-9B20-14BD3016C11D
+    value:           AC4DC00A-ADDF-3FCA-9275-BBE7B2947D93
   - target:          arm64-ios-simulator
-    value:           9F256DE8-F654-3E9C-857C-2251CD7E5DD7
+    value:           83897491-D090-39DA-88ED-A44FCB012427
 install-name:    '/System/Library/PrivateFrameworks/TelephonyUI.framework/TelephonyUI'
 exports:
   - targets:         [ i386-ios-simulator ]

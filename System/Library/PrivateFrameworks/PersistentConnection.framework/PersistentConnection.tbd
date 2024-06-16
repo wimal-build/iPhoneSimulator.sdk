@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FB19D7A1-CFD8-3459-875E-AB13808AB4A1
   - target:          x86_64-ios-simulator
-    value:           D34DE2EE-0BB9-37BD-A3F8-326EFBB5433B
+    value:           36905BA8-8CAB-3642-BF92-B072E28F008D
   - target:          arm64-ios-simulator
-    value:           7059C959-B6B5-3F83-93F7-DE43B13D521A
+    value:           6732FF1C-6192-3435-93A9-2095545F6885
 install-name:    '/System/Library/PrivateFrameworks/PersistentConnection.framework/PersistentConnection'
 exports:
   - targets:         [ i386-ios-simulator ]

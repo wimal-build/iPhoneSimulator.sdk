@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           E1EBE646-F2EE-33C1-A177-DDD391719382
   - target:          x86_64-ios-simulator
-    value:           BC963635-6630-334F-A3DE-F7C2B1B259CF
+    value:           F39A78B3-7813-30EC-BC5B-0838526EE69E
   - target:          arm64-ios-simulator
-    value:           33763D5F-F236-3D1C-8459-4676FFD71A82
+    value:           9C9B6B38-035B-3B81-B020-1F32E104A308
 install-name:    '/System/Library/PrivateFrameworks/AssetsLibraryServices.framework/AssetsLibraryServices'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _ALCleanupModelForDataMigration, _ALDataMigrationWillFinish, 
@@ -243,11 +243,12 @@ exports:
                        _PLFileSystemPersistenceGroupingUUIDKey, _PLFileSystemPersistenceHiddenKey, 
                        _PLFileSystemPersistenceImportedByKey, _PLFileSystemPersistenceInProgressCameraAdjustmentsDataKey, 
                        _PLFileSystemPersistenceInProgressDestinationPathKey, _PLFileSystemPersistenceInProgressFilteredPreviewImagePathKey, 
-                       _PLFileSystemPersistenceInProgressPublishableKey, _PLFileSystemPersistenceMediaGroupUUIDKey, 
-                       _PLFileSystemPersistenceNamespace, _PLFileSystemPersistenceOriginalAssetUUIDKey, 
-                       _PLFileSystemPersistenceOriginalFilenameKey, _PLFileSystemPersistencePlaceAnnotationDataKey, 
-                       _PLFileSystemPersistencePublicGlobalUUIDKey, _PLFileSystemPersistenceResourceType, 
-                       _PLFileSystemPersistenceSavedAssetTypeKey, _PLFileSystemPersistenceSpatialOverCaptureGroupIdentifierKey, 
+                       _PLFileSystemPersistenceInProgressPublishableKey, _PLFileSystemPersistenceInProgressSemanticDevelopmentKey, 
+                       _PLFileSystemPersistenceMediaGroupUUIDKey, _PLFileSystemPersistenceNamespace, 
+                       _PLFileSystemPersistenceOriginalAssetUUIDKey, _PLFileSystemPersistenceOriginalFilenameKey, 
+                       _PLFileSystemPersistencePlaceAnnotationDataKey, _PLFileSystemPersistencePublicGlobalUUIDKey, 
+                       _PLFileSystemPersistenceResourceType, _PLFileSystemPersistenceSavedAssetTypeKey, 
+                       _PLFileSystemPersistenceSpatialOverCaptureGroupIdentifierKey, 
                        _PLFileSystemPersistenceTimeZoneNameKey, _PLFileSystemPersistenceTimeZoneOffsetKey, 
                        _PLFileSystemPersistenceTitleKey, _PLFileSystemPersistenceTrashedKey, 
                        _PLFileSystemPersistenceUUIDKey, _PLFileSystemPersistenceVideoComplementVisibilityKey, 
@@ -357,14 +358,14 @@ exports:
                        _PLSandboxExtensionTokenAsData, _PLSandboxedURLFromDictionary, 
                        _PLSandboxedURLFromXPCDictionary, _PLScaleDimensionsForThumbnailCore, 
                        _PLScaleDimensionsToShortSide, _PLScaledSizeWithinSizeCore, 
-                       _PLSearchDatabaseDirectoryName, _PLSendCoreAnalyticEvent, 
-                       _PLServicesLocalizedFrameworkString, _PLServicesLocalizedFrameworkStringForAssetsd, 
-                       _PLSetIsAssetsdProxyService, _PLSetIsSuppressingLogsForUnitTesting, 
-                       _PLSetSystemLibraryAccessProhibited, _PLSharedCountFormatter, 
-                       _PLShouldPreventAutomaticLimitedAccessAlert, _PLSimulateCrash, 
-                       _PLSingleQueryReadFrom, _PLSizeFromCGSize, _PLSizeMake, _PLSleepUntilNotification, 
-                       _PLSpatialOverCaptureFileSuffix, _PLSplitToCGRectFromInt64, 
-                       _PLSplitToDoubleFromInt64, _PLStringFromLibraryServicesState, 
+                       _PLSearchDatabaseDirectoryName, _PLSemanticDevelopmentProxyFileSuffix, 
+                       _PLSendCoreAnalyticEvent, _PLServicesLocalizedFrameworkString, 
+                       _PLServicesLocalizedFrameworkStringForAssetsd, _PLSetIsAssetsdProxyService, 
+                       _PLSetIsSuppressingLogsForUnitTesting, _PLSetSystemLibraryAccessProhibited, 
+                       _PLSharedCountFormatter, _PLShouldPreventAutomaticLimitedAccessAlert, 
+                       _PLSimulateCrash, _PLSingleQueryReadFrom, _PLSizeFromCGSize, 
+                       _PLSizeMake, _PLSleepUntilNotification, _PLSpatialOverCaptureFileSuffix, 
+                       _PLSplitToCGRectFromInt64, _PLSplitToDoubleFromInt64, _PLStringFromLibraryServicesState, 
                        _PLStringFromPLPhotoLibraryCacheSubPathType, _PLStringFromPLPhotoLibraryExternalPathType, 
                        _PLStringFromPLPhotoLibrarySubPathLeafType, _PLStringFromPLPhotoLibrarySubPathType, 
                        _PLStringFromPLQueryComparatorType, _PLStringFromPLQueryConjunction, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0ACB1942-F211-3C1A-A04E-46D8428355B8
+    value:           8BC3EFFD-3304-34E7-AD12-2744180F3F77
   - target:          arm64-ios-simulator
-    value:           CCC305C7-2656-3E27-B22D-6AC42D9CC5D7
+    value:           FA6D4F1C-8FDC-340E-80D5-ED4983F79061
 install-name:    '/System/Library/PrivateFrameworks/SPShared.framework/SPShared'
 swift-abi-version: 7
 allowable-clients:

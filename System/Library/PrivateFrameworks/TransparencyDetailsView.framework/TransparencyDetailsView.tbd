@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           75809573-0F81-34FD-9C4F-F9572F6E4165
+    value:           A2EA2067-BDB2-3402-831F-1D200CA501A2
   - target:          arm64-ios-simulator
-    value:           B2EDB624-FD2D-3016-BF18-B895F179B0C1
+    value:           38FC8BDB-D2F0-3868-8013-F022EBAA2195
 install-name:    '/System/Library/PrivateFrameworks/TransparencyDetailsView.framework/TransparencyDetailsView'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

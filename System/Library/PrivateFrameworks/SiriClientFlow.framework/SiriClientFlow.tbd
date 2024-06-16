@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           74D06ADA-7AB5-3994-9BF1-FF28729EBF6F
   - target:          x86_64-ios-simulator
-    value:           D59A2B06-2F35-34BB-8409-89009A1F8F1F
+    value:           585ED7E1-1B74-3024-8395-6ACA9266EEA2
   - target:          arm64-ios-simulator
-    value:           7F74E9BB-5515-32EE-97BE-D2CF5A551AE7
+    value:           44918224-548C-3328-8784-8967357D5B37
 install-name:    '/System/Library/PrivateFrameworks/SiriClientFlow.framework/SiriClientFlow'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9C609A29-383D-32CD-8D7C-F12EC861DB06
+    value:           198210CA-A8C7-37EC-9142-A1D30E45DE35
   - target:          arm64-ios-simulator
-    value:           F7519AB2-1A98-3388-88B8-F1392DB655E5
+    value:           2DF65129-8FAB-3914-952A-3BB7F3EA9EBF
 install-name:    '/System/Library/PrivateFrameworks/TipsDaemon.framework/TipsDaemon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
@@ -38,13 +38,13 @@ exports:
                        TPSNRDeviceCapabilityValidation, TPSNRElectrocardiogramValidation, 
                        TPSNRFallDetectionValidation, TPSNotificationCache, TPSNotificationController, 
                        TPSPairedCarPlayValidation, TPSPairedDeviceValidation, TPSPairedDevicesCondition, 
-                       TPSPairedHomePodValidation, TPSPairedWatchValidation, TPSPeopleSuggestionValidation, 
-                       TPSPreferredLanguageValidation, TPSProactiveSuggestion, TPSRegionsCondition, 
-                       TPSRegionsValidation, TPSScreenTimeCloudValidation, TPSScreenTimeValidation, 
-                       TPSSiriEnabledValidation, TPSSiriLanguageValidation, TPSSiriLanguagesCondition, 
-                       TPSSiriSystemLanguageMatchValidation, TPSSpatialAudioValidation, 
-                       TPSTargetingCache, TPSTargetingValidateOperation, TPSTargetingValidation, 
-                       TPSTargetingValidator, TPSTinkerValidation, TPSTipsManager, 
-                       TPSUserNotification, TPSUserTypeCondition, TPSUserTypesValidation, 
-                       TPSWelcomeDocument ]
+                       TPSPairedHomePodValidation, TPSPairedSmallHomePodValidation, 
+                       TPSPairedWatchValidation, TPSPeopleSuggestionValidation, TPSPreferredLanguageValidation, 
+                       TPSProactiveSuggestion, TPSRegionsCondition, TPSRegionsValidation, 
+                       TPSScreenTimeCloudValidation, TPSScreenTimeValidation, TPSSiriEnabledValidation, 
+                       TPSSiriLanguageValidation, TPSSiriLanguagesCondition, TPSSiriSystemLanguageMatchValidation, 
+                       TPSSpatialAudioValidation, TPSTargetingCache, TPSTargetingValidateOperation, 
+                       TPSTargetingValidation, TPSTargetingValidator, TPSTinkerValidation, 
+                       TPSTipsManager, TPSUserNotification, TPSUserTypeCondition, 
+                       TPSUserTypesValidation, TPSWelcomeDocument ]
 ...

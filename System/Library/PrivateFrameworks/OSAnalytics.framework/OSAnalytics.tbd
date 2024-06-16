@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           30D22315-8071-3767-8C06-AFBE7D617DB8
+    value:           1D3DC5FB-971B-3B1D-9044-E37B433A5417
   - target:          arm64-ios-simulator
-    value:           A32B4F89-835C-30D1-8604-E2BD88254A94
+    value:           FC260A0D-C07E-3EEB-91BA-2D5B12AFFACE
 install-name:    '/System/Library/PrivateFrameworks/OSAnalytics.framework/OSAnalytics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -40,7 +40,8 @@ exports:
                        OSACrashReport._threadStateCount, OSACrashReport._threadStateFlavor, 
                        OSACrashReport._uid, OSACrashReport._uniqId, OSACrashReport._usedImages, 
                        OSACrashReport._vmregion_info, OSACrashReport._workloop_id, 
-                       OSAJetsamReport._aleFlag, OSAJetsamReport._event_code, OSAJetsamReport._event_reason, 
+                       OSAJetsamReport._aleFlag, OSAJetsamReport._audioAssertionState, 
+                       OSAJetsamReport._event_code, OSAJetsamReport._event_reason, 
                        OSAJetsamReport._isSuspendedOnlyJetsam, OSAJetsamReport._killedActiveApps, 
                        OSAJetsamReport._killed_or_suspended_count, OSAJetsamReport._largestActiveApp, 
                        OSAJetsamReport._largestProcess, OSAJetsamReport._snapshot, 
@@ -58,10 +59,11 @@ exports:
                        OSAProxyConfiguration._serialNumber, OSAProxyConfiguration._systemId, 
                        OSAProxyConfiguration._targetAudience, OSAProxyConfiguration._uiCountryCode, 
                        OSAReport._capture_time, OSAReport._incidentID, OSAReport._logType, 
-                       OSAReport._logWritingOptions, OSAReport._notes, OSAStackShotReport._appName, 
-                       OSAStackShotReport._exceptionCodeCount, OSAStackShotReport._exceptionCodes, 
-                       OSAStackShotReport._extras, OSAStackShotReport._frontmostPids, 
-                       OSAStackShotReport._pid, OSAStackShotReport._reason, OSAStackShotReport._ss_trace_buffer, 
+                       OSAReport._logWritingOptions, OSAReport._notes, OSAStackShotReport._additionalPayload, 
+                       OSAStackShotReport._appName, OSAStackShotReport._exceptionCodeCount, 
+                       OSAStackShotReport._exceptionCodes, OSAStackShotReport._extras, 
+                       OSAStackShotReport._frontmostPids, OSAStackShotReport._pid, 
+                       OSAStackShotReport._reason, OSAStackShotReport._ss_trace_buffer, 
                        OSAStackShotReport._ss_trace_length, OSAStackShotReport._stackshot_config, 
                        OSAStackShotReport._thermalNotificationCurrentLevel, OSAStackShotReport._thermalSensorValues, 
                        OSASymbolInfo._uuid, OSASymbolInfo.legacy_arch, OSASymbolInfo.legacy_name ]
@@ -70,10 +72,11 @@ exports:
                        _OSASanitizeOptionKeepFilename, _OSASanitizeOptionMountedVolume, 
                        _OSASanitizeOptionNetworkVolume, _OSASanitizePath, _OSA_OSX_Legacy_GetUserUUID, 
                        _OSAnalyticsVersionNumber, _OSAnalyticsVersionString, _SimulateCrash, 
-                       _WriteJetsamMemoryReport, _WriteStackshotReport, _WriteStackshotReportWithOptions, 
+                       _WriteJetsamMemoryReport, _WriteJetsamMemoryReportWithIDAndPids, 
+                       _WriteStackshotReport, _WriteStackshotReportWithOptions, _WriteStackshotReportWithOptionsAndPayload, 
                        _WriteStackshotReportWithOptions_async, _WriteStackshotReportWithPID, 
-                       _WriteStackshotReportWithPID_async, _WriteStackshotReport_async, 
-                       _WriteStackshotReport_stdc, _WriteSystemMemoryResetReport, 
+                       _WriteStackshotReportWithPID_async, _WriteStackshotReportWithPayload, 
+                       _WriteStackshotReport_async, _WriteStackshotReport_stdc, _WriteSystemMemoryResetReport, 
                        _WriteSystemMemoryResetReportWithPids, _adsc_addScalarForKey, 
                        _adsc_batchKeys, _adsc_pushDistrubtionForKey, _adsc_setScalarForKey, 
                        _casc_sendEvent, _kDomainKey, _kKeyKey, _kOSAIPSHeaderAppNameKey, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0CB5DD05-558E-35D4-B233-818FF2796487
   - target:          x86_64-ios-simulator
-    value:           C41309B2-D5D7-3CA7-8A98-6AFA11478446
+    value:           6C208109-4999-3819-AE76-3DA1FA0956F5
   - target:          arm64-ios-simulator
-    value:           937056F7-A0BB-365D-9DCF-C46FA730CB81
+    value:           97D7B52A-CDEC-356F-B595-D485FF0EA1D6
 install-name:    '/System/Library/PrivateFrameworks/CertUI.framework/CertUI'
 exports:
   - targets:         [ i386-ios-simulator ]

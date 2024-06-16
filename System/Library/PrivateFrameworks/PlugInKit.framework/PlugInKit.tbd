@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3CAEBF18-F63A-3DEA-B662-0D6BA0B887A1
   - target:          x86_64-ios-simulator
-    value:           7CA1D3F2-FB1E-31EE-995B-2C3A535D19CD
+    value:           344BC901-D967-3CD1-97ED-BA35F15BC9AE
   - target:          arm64-ios-simulator
-    value:           C42FA943-5C4D-347C-B194-FAF64F71D242
+    value:           18ABE4D8-86C5-3269-9A50-097D609B24E3
 install-name:    '/System/Library/PrivateFrameworks/PlugInKit.framework/PlugInKit'
 exports:
   - targets:         [ i386-ios-simulator ]

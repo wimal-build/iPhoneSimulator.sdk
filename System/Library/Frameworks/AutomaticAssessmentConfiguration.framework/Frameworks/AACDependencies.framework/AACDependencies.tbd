@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           26888A8E-C8FB-3315-999C-A41C344B3BB0
+    value:           2F65EA7A-F9A4-38EB-B65A-9F22DCD920B6
   - target:          arm64-ios-simulator
-    value:           1F678340-4F12-3442-803C-B579F0218848
+    value:           53461B24-E803-3D2F-AED7-A1532FBEB6CE
 install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/Frameworks/AACDependencies.framework/AACDependencies'
 swift-abi-version: 7
 exports:

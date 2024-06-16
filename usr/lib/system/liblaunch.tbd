@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CBFD7F72-76F5-35CA-AB86-B21A64FE2CE6
   - target:          x86_64-ios-simulator
-    value:           1581EDDD-D131-3F22-BEB4-1441FC1B7FA5
+    value:           F2426EB2-539C-3595-9C05-89B846B589C1
   - target:          arm64-ios-simulator
-    value:           1AFA294B-64E8-3027-9FFB-891C81F442A4
+    value:           B0E231CE-63BC-3646-99DC-0A9D2D7ECA2D
 install-name:    '/usr/lib/system/liblaunch.dylib'
 current-version: 2038.0.15
 parent-umbrella:

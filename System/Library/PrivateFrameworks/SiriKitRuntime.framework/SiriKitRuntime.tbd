@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F5D58065-AD07-3B4A-BF2C-A6B153DAF53E
+    value:           70348144-F5C5-3889-8D4F-8FBBEFBF422B
   - target:          arm64-ios-simulator
-    value:           E2B3164F-7666-332F-96EE-5A09F1A8BD03
+    value:           FE271489-2C65-3C86-96DA-8E4EAD5C2ECC
 install-name:    '/System/Library/PrivateFrameworks/SiriKitRuntime.framework/SiriKitRuntime'
 swift-abi-version: 7
 allowable-clients:

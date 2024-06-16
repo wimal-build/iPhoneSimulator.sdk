@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           29E39E82-E1BE-3569-8C31-1E95ABB5F644
   - target:          x86_64-ios-simulator
-    value:           46CF6A63-0C86-3D5B-9485-D88A38EF1392
+    value:           AF1CDA7A-FBD3-314F-9F1C-3F19290D7B71
   - target:          arm64-ios-simulator
-    value:           5D815C7B-02EB-3CFE-8A04-060805927600
+    value:           2C6C6B9F-FAC9-399A-B45F-9CC7557EC23C
 install-name:    '/System/Library/PrivateFrameworks/CaptiveNetwork.framework/CaptiveNetwork'
 exports:
   - targets:         [ i386-ios-simulator ]

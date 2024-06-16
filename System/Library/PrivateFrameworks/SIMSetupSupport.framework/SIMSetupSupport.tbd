@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D20A570D-B85B-3EC1-8223-DC95DE6F715E
+    value:           D52F5CBA-88F4-3AE0-A56B-BB0BAD7E778B
   - target:          arm64-ios-simulator
-    value:           DFF9E2C4-EE99-38D0-9309-3247D0D99471
+    value:           968EBE7C-1821-3016-B771-9E9BDC9C3B79
 install-name:    '/System/Library/PrivateFrameworks/SIMSetupSupport.framework/SIMSetupSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

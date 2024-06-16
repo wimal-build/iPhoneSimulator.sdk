@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3E9216E9-8AAA-329F-A92B-0C15E1702B94
   - target:          x86_64-ios-simulator
-    value:           38466D00-DFE7-3194-B3A3-154915FDE516
+    value:           4907386A-D73A-3054-AB96-A108859A0D67
   - target:          arm64-ios-simulator
-    value:           765BC3A6-EA9C-33A6-B773-2883C38B46FA
+    value:           B480DB2C-F202-32A4-A3BC-1452321EFA5D
 install-name:    '/System/Library/PrivateFrameworks/ProactiveWidgetTracker.framework/ProactiveWidgetTracker'
 current-version: 294.1
 exports:

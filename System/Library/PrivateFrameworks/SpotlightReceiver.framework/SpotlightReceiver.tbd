@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3F837C4B-A008-3627-BF5B-DB7B2633A478
   - target:          x86_64-ios-simulator
-    value:           36FBCDBF-54C8-3F62-BE4C-B79A77CBFD00
+    value:           EBF608B6-85AE-37A3-BC0E-EF936E27C2EB
   - target:          arm64-ios-simulator
-    value:           5C5D1923-A25C-3611-881E-E9E46D6DBB5F
+    value:           8B03FF5C-0547-3CD1-9A52-9025482AACA8
 install-name:    '/System/Library/PrivateFrameworks/SpotlightReceiver.framework/SpotlightReceiver'
 exports:
   - targets:         [ i386-ios-simulator ]

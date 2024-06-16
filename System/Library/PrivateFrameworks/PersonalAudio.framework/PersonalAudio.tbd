@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5F8570CB-6B1B-372A-A34F-CD8BD8C97DB6
+    value:           AA3E0456-A470-30A4-A7B7-3D2869A9B75B
   - target:          arm64-ios-simulator
-    value:           B393EFD9-25B1-3803-8931-940E4B24E92E
+    value:           CAC85632-F73C-3638-86C9-5EDD09FEE9A4
 install-name:    '/System/Library/PrivateFrameworks/PersonalAudio.framework/PersonalAudio'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

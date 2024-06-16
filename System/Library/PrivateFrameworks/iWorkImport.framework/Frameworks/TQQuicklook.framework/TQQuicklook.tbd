@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A63823FE-AC6D-3DD9-9026-F3E894136198
+    value:           9295248D-FFC5-358E-BB3C-038E36EFFFD7
   - target:          arm64-ios-simulator
-    value:           4340B25C-D530-3546-AD15-36556C9E0159
+    value:           78EECD4C-CC09-320F-A20F-781766B9784B
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TQQuicklook.framework/TQQuicklook'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

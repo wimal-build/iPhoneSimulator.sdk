@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           68000553-4AFB-3128-8240-F5495690564B
+    value:           59684122-AB30-37A2-A92D-4FF7B7F7DD27
   - target:          arm64-ios-simulator
-    value:           904C54B9-FF16-34C0-A432-F014755ECC99
+    value:           412711E5-02BB-3F86-99CC-60D4BEAEBBB3
 install-name:    '/System/Library/PrivateFrameworks/VisualPairing.framework/VisualPairing'
 current-version: 0
 compatibility-version: 0

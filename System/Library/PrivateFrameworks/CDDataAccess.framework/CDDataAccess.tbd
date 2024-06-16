@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B4D49E01-30A1-37E9-A6C5-EC40AE67EA70
+    value:           82B34538-A8D5-34D4-B7E7-45A24DADFDCF
   - target:          arm64-ios-simulator
-    value:           038DA792-C999-3785-82E6-65F8402C8AC0
+    value:           A273967D-D90E-3D55-A263-3F428E20C125
 install-name:    '/System/Library/PrivateFrameworks/CDDataAccess.framework/CDDataAccess'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

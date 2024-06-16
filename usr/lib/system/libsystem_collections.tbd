@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           969F2F8D-F477-353E-A7B7-022179AB5BCA
+    value:           469C6D04-FE3E-3C7F-A3A7-289B2B102E9A
   - target:          arm64-ios-simulator
-    value:           BB8CE9B5-20B0-343C-834E-118D3211CBC9
+    value:           278F8A95-3CFD-3929-A8D6-6F61CFD60281
 install-name:    '/usr/lib/system/libsystem_collections.dylib'
 current-version: 1439.0.3
 parent-umbrella:

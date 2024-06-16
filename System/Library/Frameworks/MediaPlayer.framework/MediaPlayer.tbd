@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3E0D1EDE-44FD-3E79-93C4-A1AF7A22E40E
   - target:          x86_64-ios-simulator
-    value:           0B6ED3E1-2EA7-3196-8271-5DD6AB3E4270
+    value:           E89211AF-571E-3D5B-BD72-D981D0CB997E
   - target:          arm64-ios-simulator
-    value:           09134295-FD16-3DFF-B883-2100970CE579
+    value:           96402C7E-23A3-3A15-B55E-9BA66EB9A31A
 install-name:    '/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer'
 exports:
   - targets:         [ i386-ios-simulator ]

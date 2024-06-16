@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           99053C78-3595-3E9E-9EC5-CED3EC17766C
   - target:          x86_64-ios-simulator
-    value:           5ACF603E-B3F2-3EFA-BA47-19456154E8BF
+    value:           53C451E5-A5E4-3367-BFEC-CAF4EBB35C07
   - target:          arm64-ios-simulator
-    value:           BF77BE00-F830-350E-86E8-D69DD1FD7B8E
+    value:           F19765D2-5513-3A5C-8003-45EC66FD90E3
 install-name:    '/System/Library/PrivateFrameworks/FTServices.framework/FTServices'
 current-version: 800
 exports:

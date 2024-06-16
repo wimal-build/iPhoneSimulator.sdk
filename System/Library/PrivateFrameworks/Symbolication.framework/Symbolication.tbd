@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CFD8D1C6-6B41-308E-A0B1-0CEF1E1880D6
   - target:          x86_64-ios-simulator
-    value:           A0047CA6-21B7-371F-841A-0D61E327603E
+    value:           4F179871-8BCF-3D1A-8E00-65D0A70C94F3
   - target:          arm64-ios-simulator
-    value:           D7CD5802-4228-3E23-8A92-A1CE5B795F01
+    value:           FE1C783E-FB26-3160-B02B-49C229E21466
 install-name:    '/System/Library/PrivateFrameworks/Symbolication.framework/Symbolication'
 current-version: 64540.79.1
 exports:

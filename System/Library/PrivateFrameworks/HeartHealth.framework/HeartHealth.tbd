@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9F2DF5BD-DD30-3253-94B1-6AE349B0839F
+    value:           298FE1AC-7E52-3A55-B1C0-90117CC9954E
   - target:          arm64-ios-simulator
-    value:           5B08DEF9-2CF6-3926-BEAF-516F2225297E
+    value:           7FF35D5F-A8D6-33B2-A67F-A6FBCFE0E146
 install-name:    '/System/Library/PrivateFrameworks/HeartHealth.framework/HeartHealth'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

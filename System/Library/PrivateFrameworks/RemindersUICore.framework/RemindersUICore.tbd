@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           58B897AB-4E37-3FFB-8DE1-F842415CB224
+    value:           B26BF619-9BFA-30F3-8A9A-DD37E0EA7166
   - target:          arm64-ios-simulator
-    value:           549F3693-1FF2-3704-8EEB-3D4BF97DF8F9
+    value:           9007B1A2-0737-3867-A36D-DF720DDCC53D
 install-name:    '/System/Library/PrivateFrameworks/RemindersUICore.framework/RemindersUICore'
 current-version: 2157
 swift-abi-version: 7

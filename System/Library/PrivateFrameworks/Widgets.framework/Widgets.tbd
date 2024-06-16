@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           16A7CF7B-22FB-333C-81F9-A8EE71C83DF4
   - target:          x86_64-ios-simulator
-    value:           05DD4A5B-965E-32F3-92B2-04C2DF894440
+    value:           2BFD29DD-DDF6-3D31-B6C4-CAFF450B1ED8
   - target:          arm64-ios-simulator
-    value:           32B10216-21BE-35B0-A72F-478D26B06EBA
+    value:           6731578F-EB88-3519-9A52-752C9956F066
 install-name:    '/System/Library/PrivateFrameworks/Widgets.framework/Widgets'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

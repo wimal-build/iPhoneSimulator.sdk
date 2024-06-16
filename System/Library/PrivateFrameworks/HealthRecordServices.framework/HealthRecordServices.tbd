@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           39999EF5-F141-3E50-83E7-587B7EC31C2F
+    value:           6F3F43CB-E755-323F-BBAC-7ABB17B184E2
   - target:          arm64-ios-simulator
-    value:           DF6247EB-0AC6-35DF-A973-83E75299FF5C
+    value:           463BB866-6712-3374-9C5B-26044888F642
 install-name:    '/System/Library/PrivateFrameworks/HealthRecordServices.framework/HealthRecordServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

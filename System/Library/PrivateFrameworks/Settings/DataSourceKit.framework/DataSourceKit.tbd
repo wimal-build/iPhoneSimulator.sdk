@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8493FB8F-9EEC-325A-9B65-D6833F11B5B2
+    value:           30E5EF07-B897-3203-9930-CE2BE906554E
   - target:          arm64-ios-simulator
-    value:           756856FE-281B-3E60-AD96-EF0B35F2DB45
+    value:           577D3F57-A564-343E-87F5-1F701ECCC1F9
 install-name:    '/System/Library/PrivateFrameworks/Settings/DataSourceKit.framework/DataSourceKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

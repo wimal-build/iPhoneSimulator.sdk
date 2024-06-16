@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A50F8416-F9FE-3481-BFF1-669AFAA8DB12
   - target:          x86_64-ios-simulator
-    value:           0B599ABC-FC9D-362B-88C3-199A4E9A0F84
+    value:           0160A413-1BD9-3325-AD4B-4E34B45DB3CA
   - target:          arm64-ios-simulator
-    value:           36D83E53-E532-3EFE-B15F-D6685FF1677D
+    value:           C7524FB1-598A-3E56-B89D-2CF290ED847B
 install-name:    '/System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices'
 current-version: 505.0.12
 exports:

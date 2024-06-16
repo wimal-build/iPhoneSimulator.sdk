@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C25930B2-74EE-3321-AC13-B2F6591F5937
+    value:           EED08C7D-0E35-3BED-8DEF-6800B5048659
   - target:          arm64-ios-simulator
-    value:           6044E973-FBC0-3982-9C67-01AE42EB48FA
+    value:           A0F695FF-E663-3B90-AA15-75D8B8A250FC
 install-name:    '/System/Library/PrivateFrameworks/AppStoreComponents.framework/AppStoreComponents'
 swift-abi-version: 7
 exports:
@@ -64,9 +64,10 @@ exports:
                        _ASCSignpostTagMaxValue, _ASCSignpostTagNull, _ASCSignpostTagUnique, 
                        _AppStoreComponentsVersionNumber, _AppStoreComponentsVersionString ]
     objc-classes:    [ ASCAdamID, ASCArtwork, ASCContentSkeleton, ASCLocalOffer, 
-                       ASCLockup, ASCLockupProductDetails, ASCLockupRequest, ASCLockupView, 
-                       ASCLockupViewGroup, ASCMetrics, ASCMetricsActivity, ASCMetricsData, 
-                       ASCOfferMetadata, ASCOfferTheme, ASCOverlaySettings, ASCSignpostPredicate, 
-                       ASCSignpostSpan, ASCURLOffer, ASCViewMetrics, ASCViewMetricsInstruction, 
-                       ASCViewRender, ASCWatchApps, _ASCLockupResponse, __ASCLayoutProxy ]
+                       ASCLockup, ASCLockupFeatureSignpostTags, ASCLockupProductDetails, 
+                       ASCLockupRequest, ASCLockupView, ASCLockupViewGroup, ASCMetrics, 
+                       ASCMetricsActivity, ASCMetricsData, ASCOfferMetadata, ASCOfferTheme, 
+                       ASCOverlaySettings, ASCSignpostPredicate, ASCSignpostSpan, 
+                       ASCURLOffer, ASCViewMetrics, ASCViewMetricsInstruction, ASCViewRender, 
+                       ASCWatchApps, _ASCLockupResponse, __ASCLayoutProxy ]
 ...

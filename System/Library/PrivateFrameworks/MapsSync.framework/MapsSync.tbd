@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EEF983A0-4513-3B1D-9A15-D0EF19686FD9
+    value:           E8BE07EE-DF51-3807-8326-37011ACC00AA
   - target:          arm64-ios-simulator
-    value:           BDA691FC-1767-3587-8E37-D7A079E0621A
+    value:           D90405B4-7E4B-3D9E-8EC3-CB5230B1B570
 install-name:    '/System/Library/PrivateFrameworks/MapsSync.framework/MapsSync'
 swift-abi-version: 7
 exports:

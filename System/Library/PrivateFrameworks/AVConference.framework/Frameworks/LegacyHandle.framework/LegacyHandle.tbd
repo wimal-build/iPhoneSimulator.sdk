@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F405E991-EFC9-3773-98E7-D160B7794B99
+    value:           D79E4A23-91A6-3F12-9ADD-B5C64BE42219
   - target:          arm64-ios-simulator
-    value:           7FABBAAF-BD83-3F64-A337-43E629FE3E9B
+    value:           6EC05AE6-21B2-3351-ACF6-7244080F3A75
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/LegacyHandle.framework/LegacyHandle'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

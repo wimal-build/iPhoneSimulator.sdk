@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5821FE7C-1B68-3FF8-9EC6-FB26719E4EC9
+    value:           13A214F8-BEBD-3A2D-A63C-D6E48D27CFA6
   - target:          arm64-ios-simulator
-    value:           FBBB94C8-D5DF-3971-838B-229DE200A844
+    value:           07281179-3675-3AEB-B5D1-9F8A0C95840A
 install-name:    '/System/Library/PrivateFrameworks/SiriUIActivation.framework/SiriUIActivation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

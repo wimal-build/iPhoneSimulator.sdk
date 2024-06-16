@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BABC3B44-3F64-3C74-BF6B-380569C3D423
   - target:          x86_64-ios-simulator
-    value:           375E0A26-F996-322C-8710-A4FBD4ABDB21
+    value:           F4419477-17DC-3E49-8217-AF8BDCBFA495
   - target:          arm64-ios-simulator
-    value:           A9C129FE-0595-3BEF-A463-32FCDF97A2CF
+    value:           317EDAE9-2378-3FCA-9879-0E658F75699A
 install-name:    '/System/Library/PrivateFrameworks/Futhark.framework/Futhark'
 exports:
   - targets:         [ i386-ios-simulator ]

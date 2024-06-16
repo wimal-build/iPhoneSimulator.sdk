@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           924A7991-B0A4-3AEB-B31B-178BA7416456
   - target:          x86_64-ios-simulator
-    value:           3F3178EC-F755-36AB-AD18-DCB2F2B296AD
+    value:           2257CD14-93A1-3175-9FCB-2A1DE01320B5
   - target:          arm64-ios-simulator
-    value:           42EBB499-C8B2-3C3D-8CFF-EA7C9295124D
+    value:           AE354870-CC95-3843-877D-612BA9C38BD5
 install-name:    '/System/Library/PrivateFrameworks/OfficeImport.framework/OfficeImport'
 current-version: 282
 exports:

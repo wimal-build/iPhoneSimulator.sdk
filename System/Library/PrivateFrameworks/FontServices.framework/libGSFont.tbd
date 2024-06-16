@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           71510FA8-1624-3CD2-B7D8-BE5A61FDC542
+    value:           943888E5-39F4-359A-A93D-86E970BE19B6
   - target:          arm64-ios-simulator
-    value:           536BC677-8298-3324-820F-8DCE636C60E2
+    value:           E3427EC4-804F-34FD-AD9B-6BB122639AB3
 install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libGSFont.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B8E7C91C-87CE-3A55-9D52-6E029B8505DE
+    value:           A8F7ADBC-653F-34E5-ACA4-B7FC15B47ECB
   - target:          arm64-ios-simulator
-    value:           9253E104-193E-3292-ADEE-B2F8F69D9507
+    value:           422152C1-D8E4-3164-8BA0-042B7D82FC12
 install-name:    '/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

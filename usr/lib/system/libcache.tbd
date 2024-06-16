@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D986B653-2714-3F3D-BB1D-0CAC9558252C
   - target:          x86_64-ios-simulator
-    value:           5D2D7E5E-6827-3B65-B78C-A70980CAFEDB
+    value:           C7C5D3F3-0E15-3DC6-B92D-3C101FD3DE35
   - target:          arm64-ios-simulator
-    value:           8FF6EA91-181B-36F1-B9F6-037F33923560
+    value:           653C6A63-9AFA-3C2D-AE52-7CECBA81715B
 install-name:    '/usr/lib/system/libcache.dylib'
 current-version: 83
 parent-umbrella:

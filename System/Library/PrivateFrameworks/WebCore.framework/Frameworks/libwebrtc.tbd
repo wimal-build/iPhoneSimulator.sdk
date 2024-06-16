@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E18A5358-1D24-31B9-A196-52D991DFE860
+    value:           A0CB6D74-60F3-3841-BB21-820E39584A9C
   - target:          arm64-ios-simulator
-    value:           918F7800-A78D-3E10-9597-89B834343E34
+    value:           11B39FB2-EAFB-30E3-BC7C-82FF76E3D392
 install-name:    '/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libwebrtc.dylib'
 current-version: 610.1.28
 exports:

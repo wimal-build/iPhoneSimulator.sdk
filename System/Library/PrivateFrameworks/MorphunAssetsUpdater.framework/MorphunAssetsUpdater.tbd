@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4B27F03D-196F-3870-8E34-9E7710AC9BFD
+    value:           3B86CCC1-50BF-3463-AEA8-393E86194F46
   - target:          arm64-ios-simulator
-    value:           F0B4D805-1665-3193-B071-9ADC11021F17
+    value:           40153E9A-863D-3C55-89D4-109B0C4A0470
 install-name:    '/System/Library/PrivateFrameworks/MorphunAssetsUpdater.framework/MorphunAssetsUpdater'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

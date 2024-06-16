@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E8ACB3A5-BB06-39FE-AA58-771879BEFA18
   - target:          x86_64-ios-simulator
-    value:           0036279C-6882-3D98-AD1A-C94F16B3D5E8
+    value:           9B03551E-EBAA-3F5C-AA06-691A82208879
   - target:          arm64-ios-simulator
-    value:           E55DE08E-ED7B-37B3-80FF-DC798A5076AC
+    value:           486692F9-E31C-3DE1-B9DE-5F7EB9D38EC7
 install-name:    '/usr/lib/liblzma.5.dylib'
 current-version: 6.3
 compatibility-version: 6

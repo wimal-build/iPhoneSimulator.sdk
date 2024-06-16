@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           59376457-587E-3AD0-BD90-B13C36537A15
+    value:           13AF3F5A-3424-3282-B94A-4DBA54DFBBC7
   - target:          arm64-ios-simulator
-    value:           DDA60D15-1EA4-3654-A7AD-1DFF06A59C31
+    value:           73CB45EE-714B-3E1C-BF64-2555ED3A4762
 install-name:    '/System/Library/PrivateFrameworks/AppAnalytics.framework/AppAnalytics'
 swift-abi-version: 7
 allowable-clients:

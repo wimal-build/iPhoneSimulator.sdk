@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BAF5B4DD-63CC-336B-9BDD-84D253ABBFC4
   - target:          x86_64-ios-simulator
-    value:           B8C68D4C-6A92-3D1A-A599-EE503E27C3F0
+    value:           4234FDFB-09C6-3A1C-95D2-2049F3497725
   - target:          arm64-ios-simulator
-    value:           CCE25D2B-D3CA-3EEF-B7B5-BD1EF46F97CB
+    value:           1985B8D8-EB31-32D8-9E15-12491D062DA7
 install-name:    '/System/Library/PrivateFrameworks/TouchRemote.framework/TouchRemote'
 exports:
   - targets:         [ i386-ios-simulator ]

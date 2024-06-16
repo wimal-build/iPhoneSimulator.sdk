@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4024AA80-EDF1-315B-B87E-77B9A067CD08
   - target:          x86_64-ios-simulator
-    value:           AAF87F72-DCC4-3EF5-8B7B-3DE061214468
+    value:           C35A484D-992C-3FDD-98B5-6FE6C8785ABA
   - target:          arm64-ios-simulator
-    value:           1C773A1B-D1D2-322E-B9A2-E8FEB1F0587C
+    value:           E3046DA6-7911-38E0-9E7B-2926CD8A56B3
 install-name:    '/usr/lib/system/introspection/libdispatch.dylib'
 current-version: 1271.0.4
 parent-umbrella:

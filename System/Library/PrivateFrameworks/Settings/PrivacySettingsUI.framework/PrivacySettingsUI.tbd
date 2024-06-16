@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           127E0C1F-B866-3892-8578-765F9D2D6AFA
+    value:           B2E05269-8708-38F3-89A3-56BB8BD6A7E2
   - target:          arm64-ios-simulator
-    value:           2E645E82-8AD2-3D27-9518-35B4A637A0EB
+    value:           70DE0798-A835-3C00-A365-2113934F7D54
 install-name:    '/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DC89AD49-A38C-3C5B-92C6-2930BA52819B
+    value:           276DE4AD-953C-313C-8224-2BFF25730CD6
   - target:          arm64-ios-simulator
-    value:           FFB30ECB-D8C6-3C4D-9D72-50EC4D8FEB10
+    value:           58E8F7EA-9084-34F8-A836-D437ECF6143B
 install-name:    '/usr/lib/log/liblog_geo.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

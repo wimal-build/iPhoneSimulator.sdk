@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2A013C6E-E53F-3E50-B935-EA897A6E2263
   - target:          x86_64-ios-simulator
-    value:           191332D6-DFCE-3E69-9912-E4E0899099D2
+    value:           098EBF78-25B7-3594-8523-53D5B169596C
   - target:          arm64-ios-simulator
-    value:           1655D1CE-FFD4-3B19-9F3B-B96EB62D0BD8
+    value:           D245D347-C01B-3C5E-8418-8B23AFBDC5B0
 install-name:    '/usr/lib/swift/libswiftNetwork.dylib'
 current-version: 2288.0.26
 swift-abi-version: 7

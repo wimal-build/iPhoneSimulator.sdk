@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           53EF0938-8D3C-31F6-AFB3-732E80622E83
+    value:           7FAD5562-9C9D-3549-977D-90B8E8D3317F
   - target:          arm64-ios-simulator
-    value:           A36F9654-B562-3D5D-B75C-DBF0E267B8D8
+    value:           47F9B7B4-895A-307E-A41C-B1FBC4374E0A
 install-name:    '/System/Library/PrivateFrameworks/MediaMiningKit.framework/MediaMiningKit'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

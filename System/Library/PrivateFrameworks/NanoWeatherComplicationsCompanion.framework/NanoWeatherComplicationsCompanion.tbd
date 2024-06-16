@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D90F2E38-B3F1-350D-8924-AEA5E31AE2C8
+    value:           233EF3F8-2B03-339C-8A38-093A863C9CB5
   - target:          arm64-ios-simulator
-    value:           9C33D291-5B4C-3DF2-B3C8-35500955410E
+    value:           8181E0D7-475D-3316-A615-E2BF4E04494C
 install-name:    '/System/Library/PrivateFrameworks/NanoWeatherComplicationsCompanion.framework/NanoWeatherComplicationsCompanion'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C2DD4C2-78D6-3EBF-9483-705DB9EAAC81
   - target:          x86_64-ios-simulator
-    value:           0A040F07-FAEF-3FC6-859D-3E5BCA86D92A
+    value:           6A827F1F-E7D8-373E-BD44-6C5505590BE2
   - target:          arm64-ios-simulator
-    value:           6C90103C-4B90-30A9-AED8-E452165528D5
+    value:           1D9E6952-5E9D-3738-9636-6387574D10CF
 install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libType1Scaler.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

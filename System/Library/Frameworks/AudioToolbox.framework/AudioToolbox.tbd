@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           380E2753-50A2-3C5F-B8B4-F83A5536255B
   - target:          x86_64-ios-simulator
-    value:           35424057-457E-31DC-A112-8042AB74844D
+    value:           97C6EA65-F3F6-3D9B-8398-F4186C63C2CD
   - target:          arm64-ios-simulator
-    value:           776F568E-190C-38E1-9B89-F9FFAC4AB1CE
+    value:           C2309B51-4A36-3DF5-9B34-C8590C95DF2C
 install-name:    '/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox'
 current-version: 1000
 reexported-libraries:
@@ -275,9 +275,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBA76350-5E12-3973-B7CD-0BB319848F57
+    value:           92814302-69E7-358E-9D2B-6CEA7A38D221
   - target:          arm64-ios-simulator
-    value:           B178BAA6-3DF0-335A-B379-B5344B16CF81
+    value:           7185DD7F-B6C7-337E-9734-47B8819F7115
 install-name:    '/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore'
 exports:
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EAE8132C-6A03-3548-A7F8-D4F1C4F918C4
+    value:           E248E2DA-BECA-345A-A272-FF8FDEE726A5
   - target:          arm64-ios-simulator
-    value:           EEF27A80-2E4C-3975-964B-5842F2A54147
+    value:           F7019922-E940-33BF-8A35-66B47CA4DD27
 install-name:    '/System/Library/PrivateFrameworks/CDDataAccess.framework/Frameworks/DADaemonSupport.framework/DADaemonSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

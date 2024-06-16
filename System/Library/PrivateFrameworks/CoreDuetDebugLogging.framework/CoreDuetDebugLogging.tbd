@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           532ABB3F-11E7-3714-AFAD-156D66B2B0B3
   - target:          x86_64-ios-simulator
-    value:           B486F1AF-109A-3368-9C2C-4DD9D0F99A1E
+    value:           B974B399-AF5D-32B1-93C0-CF8B9A21E867
   - target:          arm64-ios-simulator
-    value:           A6569B5E-FF08-391D-8BE5-AA930E069A3F
+    value:           48391FC2-FF77-35F6-A1A4-65A9933D526F
 install-name:    '/System/Library/PrivateFrameworks/CoreDuetDebugLogging.framework/CoreDuetDebugLogging'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

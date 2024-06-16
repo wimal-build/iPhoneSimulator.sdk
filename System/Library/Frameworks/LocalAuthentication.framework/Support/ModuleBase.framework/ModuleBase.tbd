@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           66CAA7F6-5C61-33F3-89B6-66AC403FC3A7
   - target:          x86_64-ios-simulator
-    value:           76830414-8966-3A8F-8B02-DCBC5D606612
+    value:           C2449B1A-BEDC-3554-9673-E949427C811C
   - target:          arm64-ios-simulator
-    value:           5D5FDF33-16CB-3BBB-AF06-6AACF01DFF8B
+    value:           0C5BF059-C4EC-3C06-92B2-48625B91B42B
 install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/ModuleBase.framework/ModuleBase'
-current-version: 827.0.6
+current-version: 827.11.2
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _ModuleBaseVersionNumber, _ModuleBaseVersionString ]

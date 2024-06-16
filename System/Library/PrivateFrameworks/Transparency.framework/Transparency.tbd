@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AE40E002-69AF-3032-8DC9-CF2DED2CE4B4
+    value:           5C55972D-8300-3E93-889F-43CC6D553F27
   - target:          arm64-ios-simulator
-    value:           436B2699-E774-33AA-BCFF-6146B9F2E5B2
+    value:           7F92E491-2849-3C46-9C0B-E35CF58F606E
 install-name:    '/System/Library/PrivateFrameworks/Transparency.framework/Transparency'
 current-version: 0
 compatibility-version: 0

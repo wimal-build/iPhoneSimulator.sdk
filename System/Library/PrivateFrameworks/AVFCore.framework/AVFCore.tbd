@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           650A6725-FCF7-3212-8137-09723B2EEE94
+    value:           6CE633CC-7BBE-3638-A192-2D6391A51D5D
   - target:          arm64-ios-simulator
-    value:           063AE2B3-1DF5-3535-BC54-2AB9C67932D8
+    value:           A694F07D-6836-319B-B5D1-86CC0AC7640C
 install-name:    '/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

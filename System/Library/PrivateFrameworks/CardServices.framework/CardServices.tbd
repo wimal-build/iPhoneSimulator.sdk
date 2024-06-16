@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CAE2BFD5-6E49-3516-8FE5-F72306015E7B
+    value:           BFD1EBA0-5CB3-3C6E-8B5F-144112CDE27E
   - target:          arm64-ios-simulator
-    value:           8848939A-DE55-35AC-8D6A-04096516E012
+    value:           2459EC57-95FB-3DF0-8B13-F9B8E06C0053
 install-name:    '/System/Library/PrivateFrameworks/CardServices.framework/CardServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BB0E0FF2-866B-3395-8E35-708DA947ABB7
+    value:           F2A99C38-ADC5-3A04-B96C-6B7E86229602
   - target:          arm64-ios-simulator
-    value:           07E951B9-95E2-3F96-BB69-9133EED03449
+    value:           6E222036-0812-3360-AC57-5BB125484DB3
 install-name:    '/System/Library/PrivateFrameworks/AdCore.framework/AdCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

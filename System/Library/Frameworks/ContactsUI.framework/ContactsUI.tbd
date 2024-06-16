@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FEA222FA-F050-357F-BB75-AD98D03E7833
   - target:          x86_64-ios-simulator
-    value:           EDC0AA99-27E5-3A4F-B848-3BF6D66F0EE4
+    value:           A89D5EAE-7D4A-380D-81FA-F6CEE2A79874
   - target:          arm64-ios-simulator
-    value:           E3B10204-194D-3437-9E38-80E14573F876
+    value:           4F4E51CA-0286-3FDC-8963-90B1B13873D3
 install-name:    '/System/Library/Frameworks/ContactsUI.framework/ContactsUI'
 current-version: 33
 exports:

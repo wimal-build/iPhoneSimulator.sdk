@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7EC7D098-DBDC-3EDA-AB0B-A748A7EE03D6
+    value:           4AFB628F-B19E-358B-A203-95FF096A4D5A
   - target:          arm64-ios-simulator
-    value:           A594AF0D-4506-395A-8A36-1744A5B8B75E
+    value:           4CA92547-EC16-3A40-A798-72CA835CAE70
 install-name:    '/System/Library/PrivateFrameworks/SiriAudioInternal.framework/SiriAudioInternal'
 swift-abi-version: 7
 allowable-clients:

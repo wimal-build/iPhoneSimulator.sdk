@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5B191408-55F4-32D5-BD04-BE708DD86EAA
+    value:           84EE1685-DD3B-3513-AE4B-F3D2BD334D86
   - target:          arm64-ios-simulator
-    value:           B5E084CF-134F-3F85-8105-09A84B81FB16
+    value:           4B900C8D-C018-3E41-920D-C8C8161BC58E
 install-name:    '/System/Library/PrivateFrameworks/CoreUtilsUI.framework/CoreUtilsUI'
 current-version: 0
 compatibility-version: 0

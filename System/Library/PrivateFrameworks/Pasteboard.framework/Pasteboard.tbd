@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           709E3F91-18F2-3914-B29E-A14EF8447808
   - target:          x86_64-ios-simulator
-    value:           9B5C3A49-33E8-3CA4-80F9-E584548D6EEC
+    value:           DB2F686E-1D20-304A-B440-D3CBB797B576
   - target:          arm64-ios-simulator
-    value:           99AF3E86-9255-3AD7-98BE-E6772DDB1462
+    value:           81E57988-E1A3-3054-A96E-C7FF4C28BE02
 install-name:    '/System/Library/PrivateFrameworks/Pasteboard.framework/Pasteboard'
 exports:
   - targets:         [ i386-ios-simulator ]

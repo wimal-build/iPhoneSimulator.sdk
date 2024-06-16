@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1675EBB4-1D5D-3452-A0E7-E89C9193CE06
   - target:          x86_64-ios-simulator
-    value:           7D1E2952-3044-3ABE-A098-EFEB49C98895
+    value:           A37E302C-1739-3B0F-9692-45C1687C0753
   - target:          arm64-ios-simulator
-    value:           6575DE6A-17F1-3581-909A-7D5DAAFEEE18
+    value:           43121A98-E205-319C-AFAA-347D8B7970E7
 install-name:    '/System/Library/Frameworks/GameKit.framework/GameKit'
-current-version: 764.1.1
+current-version: 767.1.2
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
     libraries:       [ '/System/Library/Frameworks/UIKit.framework/UIKit', '/System/Library/PrivateFrameworks/GameCenter.framework/GameCenter' ]
@@ -34,9 +34,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D53C6FE2-BF4E-34A0-A114-91DC121B4598
   - target:          x86_64-ios-simulator
-    value:           D067A734-EE94-3526-BF7E-BD4C78A404C2
+    value:           1BDDC854-7D32-37DE-BF2B-E1DBE8B403F3
   - target:          arm64-ios-simulator
-    value:           BD573F4D-82A7-3557-88F7-4E6AC42EE1EE
+    value:           CA8E8F31-612B-3DB9-9859-FAD503EF5C16
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -485,9 +485,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           24113072-C57A-397E-886A-B5360CFCACF2
   - target:          x86_64-ios-simulator
-    value:           71680989-5C35-30F4-AF6E-39B01C91A4E6
+    value:           026F6709-BE76-335F-AFB2-BB2EBD48060D
   - target:          arm64-ios-simulator
-    value:           145B32C4-AC01-3DB8-8DCF-79CB46424EBA
+    value:           854F5677-9588-395D-9352-9415C5C7CC68
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 swift-abi-version: 7
 exports:
@@ -1488,6 +1488,7 @@ exports:
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC12minimumValueSivpMV', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC12minimumValueSivs', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC12sizeThatFitsySo6CGSizeVAFF', 
+                       '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC13updateStepper5valueySi_tF', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC14layoutSubviewsyyF', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC15isStepperHiddenSbvM', 
                        '_$s12GameCenterUI29GKMultiplayerButtonHeaderViewC15isStepperHiddenSbvg', 
@@ -2043,9 +2044,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5F258460-5EE7-3482-96C1-1312CC5060FD
+    value:           B8E478F6-6D5A-37B8-9CE9-2E7E6EA46A6F
   - target:          arm64-ios-simulator
-    value:           FFF9074E-73A9-30A9-A34C-809FF1AFFBC8
+    value:           9E305089-841C-3BED-9129-650AFFC12AF7
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUICore.framework/GameCenterUICore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2078,9 +2079,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           13633383-8373-3563-BD1F-5B6A93A5A890
   - target:          x86_64-ios-simulator
-    value:           6CAE74C5-5B44-3279-BED8-7A7F5D6684E4
+    value:           25E2EBA2-5B24-362D-A065-3709040B328A
   - target:          arm64-ios-simulator
-    value:           35394FD6-0BCB-3895-8BBF-4C6D86D59368
+    value:           FD60F204-4CAB-363D-9629-74A8741DCFED
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:
   - targets:         [ i386-ios-simulator ]

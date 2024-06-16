@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7E5465C4-23FE-301C-BBC1-129C557ED148
+    value:           23E3EB60-97B4-3B00-B759-010580E4FED7
   - target:          arm64-ios-simulator
-    value:           21802609-BB06-3475-8E67-8A8EA80E6651
+    value:           7F834662-F17F-372A-A3EC-D0405712F414
 install-name:    '/System/Library/PrivateFrameworks/ComplicationDisplay.framework/ComplicationDisplay'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D023C26F-7ECB-39C3-A14D-4EA856DECDDF
+    value:           2B2D38A3-B07E-3B9C-BE5A-BA77CEBB3A33
   - target:          arm64-ios-simulator
-    value:           7D414B16-6806-315A-8F54-E0C263DAB073
+    value:           E76DA840-D124-3C3D-AC25-8FA75F06664A
 install-name:    '/System/Library/PrivateFrameworks/DoNotDisturbServer.framework/DoNotDisturbServer'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B88CB1EF-4A48-3C67-B747-24D09C2CCF4F
   - target:          x86_64-ios-simulator
-    value:           005DA34B-393B-3B06-9069-9B15D6DA1C15
+    value:           2123DE48-D231-39E6-A36B-C2FE92A7F15A
   - target:          arm64-ios-simulator
-    value:           C684292C-6F5B-3AC6-A235-2685FB72A055
+    value:           2C7B52D2-C400-32D9-AA69-1C36BE1FA7A0
 install-name:    '/System/Library/Frameworks/MapKit.framework/MapKit'
 current-version: 14
 exports:

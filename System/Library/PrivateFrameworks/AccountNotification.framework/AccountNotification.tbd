@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5E9429C9-75C9-39E3-BA31-0A268735BC42
   - target:          x86_64-ios-simulator
-    value:           E0C868A9-2412-3FD3-AF19-8404E74E3A6D
+    value:           295C8104-7B58-32C8-A461-FCC051F66D8B
   - target:          arm64-ios-simulator
-    value:           A80DED7E-0964-30B5-A6AD-32FA478317F2
+    value:           59FE7D83-E6E5-3EB6-8870-22C5FC8C7EEC
 install-name:    '/System/Library/PrivateFrameworks/AccountNotification.framework/AccountNotification'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

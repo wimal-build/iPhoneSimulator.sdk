@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4E6625AF-45CD-36C1-BA4D-A38BF00ED0D4
+    value:           E3D5260E-81B7-3E8A-92DE-47DAF1E17D50
   - target:          arm64-ios-simulator
-    value:           94F93D99-854E-3F46-9072-820BFB2D98BB
+    value:           9F6FFEEE-5053-385C-840B-68E62EAB18DD
 install-name:    '/System/Library/PrivateFrameworks/AudioSession.framework/AudioSession'
 exports:
   - targets:         [ x86_64-ios-simulator ]

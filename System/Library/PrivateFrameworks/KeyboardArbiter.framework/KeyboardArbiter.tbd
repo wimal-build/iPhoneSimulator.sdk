@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           DDD95BCA-6B6D-3608-BD00-20B79B1E88DD
   - target:          x86_64-ios-simulator
-    value:           9CD5DC88-C3E9-3E7C-B2B2-7E40C1992DA3
+    value:           C94F6B52-9713-3DAC-8ED0-4E0E6AB88746
   - target:          arm64-ios-simulator
-    value:           134FE605-7935-39A3-A096-0CD10DC9346D
+    value:           296AC5F3-E5FD-3F88-A8DB-CBAF9E84B1DB
 install-name:    '/System/Library/PrivateFrameworks/KeyboardArbiter.framework/KeyboardArbiter'
-current-version: 3987.0.109
+current-version: 3987.9
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ __UIKeyboardArbiter_ForSpringBoard_WorkspaceIdentifier ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           03523D41-C2CD-31EC-8B43-E76F84CD7466
   - target:          x86_64-ios-simulator
-    value:           80832024-0522-38A9-82BB-7C4D075EF4BD
+    value:           5BD6D5EC-1AEB-3CC9-AA5E-5E1DB4AC2A49
   - target:          arm64-ios-simulator
-    value:           CEBD1DE8-63F9-3281-9EC5-F3BC06F1474C
+    value:           0049093D-D75F-3D1F-9C16-7FD13A262FDA
 install-name:    '/usr/lib/system/libdyld.dylib'
-current-version: 828.4
+current-version: 828.5
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System

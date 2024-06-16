@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9739EB77-A613-3810-A841-43E04EAAF677
+    value:           8E6904AD-D6EC-3AC0-B3ED-B4E9D581E9DC
   - target:          arm64-ios-simulator
-    value:           D3272D90-1E4C-3361-A354-39B76EF3FA06
+    value:           3DA51657-5600-3F96-AF90-8A4360EBF019
 install-name:    '/System/Library/PrivateFrameworks/TeaUI.framework/TeaUI'
 swift-abi-version: 7
 allowable-clients:
@@ -8119,7 +8119,8 @@ exports:
                        '_$s5TeaUI9TogglablePAAE17makeToggleRequestAA0eF0VyF', '_$s5TeaUI9TogglablePAAE3set11toggleState8animatedyAA06ToggleF0O_SbtF', 
                        '_$s5TeaUI9TogglablePAAE6toggleyyF', '_$s5TeaUI9TogglableTL', 
                        '_$s6Object5TeaUI0A16ReuseFactoryTypePTl', '_$s9LayerView5TeaUI0aB12ProviderTypePTl', 
-                       '_$s9LayerView5TeaUI0aB12RendererTypePTl', '_$sSD5TeaUISo29UIApplicationLaunchOptionsKeyaRszypRs_rlE016applicationStatedE0SDy0A10Foundation011Applicationhd6OptionF0OypGvg', 
+                       '_$s9LayerView5TeaUI0aB12RendererTypePTl', '_$s9WidgetKit20TimelineReloadPolicyV5TeaUIE5after_12jitteredUpToAC10Foundation4DateV_SdtFZ', 
+                       '_$sSD5TeaUISo29UIApplicationLaunchOptionsKeyaRszypRs_rlE016applicationStatedE0SDy0A10Foundation011Applicationhd6OptionF0OypGvg', 
                        '_$sSD5TeaUISo29UIApplicationLaunchOptionsKeyaRszypRs_rlE016applicationStatedE0SDy0A10Foundation011Applicationhd6OptionF0OypGvpMV', 
                        '_$sSS5TeaUI27SegmentedControlSegmentTypeAAMc', '_$sSS5TeaUI27SegmentedControlSegmentTypeAAWP', 
                        '_$sSS5TeaUIE10identifierSSvg', '_$sSS5TeaUIE10identifierSSvpMV', 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B6D4EEB0-26B2-367C-BD58-6DDD45517C65
+    value:           4743C8B4-1ED0-3DFC-903F-B50E7134DEAD
   - target:          arm64-ios-simulator
-    value:           1CD0C080-0D34-3425-8A05-E1D1887C6DB6
+    value:           9FC046E0-5305-32C3-A534-D09FE7DA2965
 install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
 current-version: 145.2
 exports:

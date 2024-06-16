@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A6701F3E-8B7E-35A5-A3EB-451958BDBCE7
+    value:           7BC7F4A1-9061-3238-9F35-603305B7FF0B
   - target:          arm64-ios-simulator
-    value:           FF117864-290A-391D-8C77-E9E4AC31B61E
+    value:           B90DFD33-CE83-32FA-953E-8BC0A8109169
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSStyles.framework/TSStyles'
 exports:
   - targets:         [ x86_64-ios-simulator ]

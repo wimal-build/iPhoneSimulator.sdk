@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CAE03E5C-771A-37D3-BF97-A70A35E3BF96
   - target:          x86_64-ios-simulator
-    value:           B0988AA5-A07E-375E-8BD0-9A81FF46B75F
+    value:           B71C22FC-91FD-3A4D-9780-0D2ED7C77EA5
   - target:          arm64-ios-simulator
-    value:           CAEC320D-3255-3648-9C37-2E4F80939FA8
+    value:           4BEC779A-4183-327E-8E9A-A2E16FE14EA6
 install-name:    '/System/Library/PrivateFrameworks/HealthDaemon.framework/HealthDaemon'
 exports:
   - targets:         [ i386-ios-simulator ]

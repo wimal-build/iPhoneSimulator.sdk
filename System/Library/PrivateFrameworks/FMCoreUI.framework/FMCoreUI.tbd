@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0AA38FD3-1C39-33DA-8A91-7BE89A1DC000
   - target:          x86_64-ios-simulator
-    value:           9A6F35BF-8CDE-33A1-A05D-3188A55EAC0E
+    value:           2AF99348-517E-32FC-AB85-C0177624C97A
   - target:          arm64-ios-simulator
-    value:           FC132825-10A5-370F-A554-A95F03E11B28
+    value:           B9DE2855-0057-357A-9C26-332EFB5D0B3B
 install-name:    '/System/Library/PrivateFrameworks/FMCoreUI.framework/FMCoreUI'
 exports:
   - targets:         [ i386-ios-simulator ]

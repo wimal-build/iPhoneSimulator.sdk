@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           33C99058-ACBD-321D-92AA-3A96166E35CC
   - target:          x86_64-ios-simulator
-    value:           BF6708A4-A842-3EF2-BADB-C07572F10E71
+    value:           FD4378C8-7EC2-3710-AC3E-B2BBD2E7F213
   - target:          arm64-ios-simulator
-    value:           42FB1B8C-95A5-3DE6-9FFB-EBBF018EF8B3
+    value:           26EC80AD-EFF1-3FEC-87DB-E99B8FCCFC63
 install-name:    '/System/Library/PrivateFrameworks/IDSSimulatorSupport.framework/IDSSimulatorSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

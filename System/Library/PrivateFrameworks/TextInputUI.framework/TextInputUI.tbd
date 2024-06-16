@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5BC45E9B-E321-3F57-8EA2-BFA17EBDB74A
   - target:          x86_64-ios-simulator
-    value:           4BAE055A-A7FA-3FF1-AAE6-166B12A57CA2
+    value:           54006C00-F3F1-3A3C-948C-AD3C35CFE578
   - target:          arm64-ios-simulator
-    value:           D3CE757D-BD64-3400-9505-A90AED26B826
+    value:           5E50BBC4-DC88-3D4B-BEBD-F5D569B50DC3
 install-name:    '/System/Library/PrivateFrameworks/TextInputUI.framework/TextInputUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5D228AC9-D019-31D8-9988-742F6072B0E7
   - target:          x86_64-ios-simulator
-    value:           722070A4-3AE4-3B58-B40D-79BB4EAF85FF
+    value:           BBF38E7D-FF8B-3BE8-839D-86FDE7463925
   - target:          arm64-ios-simulator
-    value:           D2C5E2E4-7E53-31EE-86B5-A3956AB0434A
+    value:           2E26A806-DB8E-3937-AA2F-F4CB53812172
 install-name:    '/System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard'
 current-version: 0
 exports:

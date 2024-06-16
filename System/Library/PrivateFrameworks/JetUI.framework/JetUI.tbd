@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F0E8C176-5B7D-3FE1-98A0-B84DEAF698E7
+    value:           AD4BF432-461F-3B8D-AE24-D00B89ED083A
   - target:          arm64-ios-simulator
-    value:           B53876C2-015D-3D31-AD53-9BAE3F9845A7
+    value:           CB0D92CE-8888-3733-8672-3FCA470A276F
 install-name:    '/System/Library/PrivateFrameworks/JetUI.framework/JetUI'
 swift-abi-version: 7
 allowable-clients:

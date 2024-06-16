@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           31FD9391-2A04-38EF-B6C8-A6449214FDE9
   - target:          x86_64-ios-simulator
-    value:           61B1FAAF-FBD8-3275-8993-7CC6B042DBFD
+    value:           2D7AC92E-3A34-31A1-A7DA-398923BCF93A
   - target:          arm64-ios-simulator
-    value:           6D205458-38FA-35DC-B657-E62EB4357AAA
+    value:           3DBE30C4-8E4C-321D-BCF9-1C6961B22391
 install-name:    '/usr/lib/libcupolicy.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

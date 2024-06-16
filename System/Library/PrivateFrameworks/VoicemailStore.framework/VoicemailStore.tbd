@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           997038CE-6C66-3813-A90A-59A8FB0065E9
   - target:          x86_64-ios-simulator
-    value:           E168156E-2116-36FB-8041-FC8795143A55
+    value:           E5C09CAA-C9BC-33F9-84CF-94A80C24CB89
   - target:          arm64-ios-simulator
-    value:           8B5EE699-22B9-3780-A1C3-F60BB7FDDB9B
+    value:           B54A7E97-B0D5-3BB5-8E5A-AB87EF5A185F
 install-name:    '/System/Library/PrivateFrameworks/VoicemailStore.framework/VoicemailStore'
 exports:
   - targets:         [ i386-ios-simulator ]

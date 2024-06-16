@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AC609FC6-7732-38C8-A9BE-F91F1AE29AF5
+    value:           EF4F0FDF-236F-316F-9884-E73F13329FE2
   - target:          arm64-ios-simulator
-    value:           E8691C82-8C7A-3E22-BE37-E1A4F959DF39
+    value:           CE488DEC-6B0E-3B8E-8379-B8D1052F16D2
 install-name:    '/System/Library/PrivateFrameworks/VoiceShortcutClient.framework/VoiceShortcutClient'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6C469E94-B256-3261-91E8-F0C8A9F7DE67
+    value:           15E328BE-30D7-3C4E-927E-78847422AC8B
   - target:          arm64-ios-simulator
-    value:           43AFE6FF-173C-3B99-A7BF-CA09712BC93B
+    value:           DCBB1067-D4B7-30BC-82EE-89D2CD25E37E
 install-name:    '/System/Library/PrivateFrameworks/PeopleSuggester.framework/PeopleSuggester'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

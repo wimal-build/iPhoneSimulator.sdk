@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0C31951E-1A0E-3120-B4F7-D9C20BEE9696
   - target:          x86_64-ios-simulator
-    value:           D4B2F51D-F181-349D-9D5D-2BAC0C57CF2E
+    value:           A247698F-BE2B-395F-B22C-84BE2DB4D6DB
   - target:          arm64-ios-simulator
-    value:           9F42763C-D59F-35F4-9162-0A36DE05DBF1
+    value:           E0D48CA3-F498-3C58-BD19-430D120F62AB
 install-name:    '/usr/lib/swift/libswiftCoreAudio.dylib'
 current-version: 1.1
 swift-abi-version: 7

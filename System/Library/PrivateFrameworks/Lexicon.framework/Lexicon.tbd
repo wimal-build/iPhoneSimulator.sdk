@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1043E23E-8B2A-34A9-8A37-4B7778752013
+    value:           EE5AE39D-C938-382C-B175-EA103344760F
   - target:          arm64-ios-simulator
-    value:           C459A996-EE00-3546-BB0E-8018BFA91CDD
+    value:           D1F1CF19-576F-3192-B3ED-C5BBF51E3D57
 install-name:    '/System/Library/PrivateFrameworks/Lexicon.framework/Lexicon'
 current-version: 86
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           44F57993-B7DF-343E-BC37-175FBC926E52
   - target:          x86_64-ios-simulator
-    value:           2E7E1EC4-2770-38CE-A890-FDB05EF90310
+    value:           B6BE693D-EB28-3A68-825A-1B88CCE0638F
   - target:          arm64-ios-simulator
-    value:           BCD6E279-FCAB-3A3E-92AD-99E8E24233C3
+    value:           1182B324-D0AD-3DF6-A372-82990B10FACF
 install-name:    '/System/Library/PrivateFrameworks/Quagga.framework/Quagga'
 current-version: 85
 exports:

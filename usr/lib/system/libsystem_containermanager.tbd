@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7FE4AE9B-24C3-343B-A816-49226CB3E125
   - target:          x86_64-ios-simulator
-    value:           A0EA7BF2-EC05-3AC1-B355-1FF6BFBB0899
+    value:           4E4B9CA0-E69A-31F6-A45E-0B26462D0319
   - target:          arm64-ios-simulator
-    value:           F8188D7F-6ED8-3A81-AD01-0B9AB23454C9
+    value:           A298A575-E1B7-3D12-8DD2-2441B7D1C046
 install-name:    '/usr/lib/system/libsystem_containermanager.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           29D58074-D8F6-3675-B425-BCE118B8BE09
   - target:          x86_64-ios-simulator
-    value:           F272614C-21FA-3935-A07D-5DCBD5828BCA
+    value:           9077CC2A-B503-363B-A197-6AEB6F79EA4F
   - target:          arm64-ios-simulator
-    value:           2AC969C5-824B-3EE3-B190-A622E2DD2A88
+    value:           2FD79BE1-0C90-3850-A08F-40FC1904FA02
 install-name:    '/System/Library/PrivateFrameworks/IMAVCore.framework/IMAVCore'
 current-version: 800
 exports:

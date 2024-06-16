@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D3CEFF79-F07F-3386-AB23-E1896C479C8E
+    value:           358ED69C-0918-3A83-B788-D9734A95FE9E
   - target:          arm64-ios-simulator
-    value:           3DA05AA5-C47D-3A19-B5D6-572F3D7C2C05
+    value:           2E7A9DA9-A8E7-3F56-A19D-09C10DA48819
 install-name:    '/System/Library/PrivateFrameworks/HealthArticlesGeneration.framework/HealthArticlesGeneration'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A4E63BB3-2721-30B5-9D01-0E3F12DDB0A0
+    value:           F978B262-C102-3A42-ADCC-C9C079EFFC8B
   - target:          arm64-ios-simulator
-    value:           F8C711A9-CB83-3539-B40A-EEA1F199D1E4
+    value:           17690CA6-DFF2-3C07-91C1-0E7E68995820
 install-name:    '/usr/lib/system/libsystem_product_info_filter.dylib'
 current-version: 8.0.1
 parent-umbrella:

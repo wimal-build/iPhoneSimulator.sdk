@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           87D1B5E6-8A4B-3DAD-8BEA-B55CD99A565F
+    value:           5333250D-2B18-3968-B717-DAA4809A2A4B
   - target:          arm64-ios-simulator
-    value:           7AC612FD-536B-3462-9222-0A4EA38807E8
+    value:           709E5F4C-1309-30F5-81A8-860B9447F74D
 install-name:    '/System/Library/PrivateFrameworks/TipKit.framework/TipKit'
 current-version: 0
 exports:

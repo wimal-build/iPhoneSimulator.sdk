@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           42422C3A-183F-314F-8D14-89B5C1EB08D2
+    value:           AC12AA2A-ABFC-34E0-8B35-BA55D468A9BF
   - target:          arm64-ios-simulator
-    value:           5A8594EF-6FE3-37E4-B49C-A9B1C1D133D1
+    value:           B37D4B0C-8254-311A-9D38-7EAF8F920A03
 install-name:    '/System/Library/PrivateFrameworks/TrialProto.framework/TrialProto'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

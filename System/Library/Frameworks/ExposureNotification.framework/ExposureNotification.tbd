@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CB5BB286-DA0A-3B5B-A3B7-A13B1287F686
+    value:           4AA3A385-ECB6-30AC-842E-50AD2CDD1F9D
   - target:          arm64-ios-simulator
-    value:           AB23FD8E-379E-3694-AA14-B634E1370F87
+    value:           D2A82460-EB77-306A-B231-91848CEF06C8
 install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
 current-version: 0
 compatibility-version: 0

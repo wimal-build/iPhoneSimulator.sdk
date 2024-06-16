@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A3CEFFE5-1579-3843-9E3C-200BF4CB0BB3
   - target:          x86_64-ios-simulator
-    value:           67D3B2DC-B7E8-36C0-BA8B-1677519A41BA
+    value:           D1C39A4F-771F-3FE8-9415-43ED16F7770E
   - target:          arm64-ios-simulator
-    value:           BADE55FD-B8FD-3F59-AD4E-9F7288E1B788
+    value:           D4AEE2EB-A7B7-3FFC-B730-2A8D9B651886
 install-name:    '/System/Library/Frameworks/Social.framework/Social'
 current-version: 87
 exports:

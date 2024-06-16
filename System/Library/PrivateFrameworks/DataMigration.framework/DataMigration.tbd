@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B99CD6B2-4F6D-3A07-A8E8-2360136ED42D
   - target:          x86_64-ios-simulator
-    value:           FD33C173-89D8-3FD1-AA8E-7E8141B334D5
+    value:           D508D3B9-3F7B-34FD-B3CA-9C4E38019E04
   - target:          arm64-ios-simulator
-    value:           F133BF47-87D4-3329-B0AB-E06DD3023603
+    value:           3CD2F463-FAA4-3501-B79C-9375D1015A48
 install-name:    '/System/Library/PrivateFrameworks/DataMigration.framework/DataMigration'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E6FED87E-26BF-3A5B-9B26-EFE56A3DC0B3
+    value:           65A77DCE-71E8-30CB-89A3-9F182EC4FFC1
   - target:          arm64-ios-simulator
-    value:           B58ECD68-2CE4-3746-ADB9-FC03723B15D7
+    value:           9920C77A-4563-319F-B317-5A6677F99F1B
 install-name:    '/System/Library/PrivateFrameworks/ScreenReaderBrailleDriver.framework/ScreenReaderBrailleDriver'
 current-version: 390
 exports:

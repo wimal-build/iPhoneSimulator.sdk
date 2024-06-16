@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4C24025B-B34C-3FC5-8F7D-38CDF14EAF68
+    value:           0E6CC19B-DFE7-3469-A279-489E2A602800
   - target:          arm64-ios-simulator
-    value:           45D04040-01C5-306A-B0A4-197EAFF54565
+    value:           E30ADFDB-880F-38B0-AE95-CECBFEBAE242
 install-name:    '/System/Library/PrivateFrameworks/ScreenTimeCore.framework/ScreenTimeCore'
-current-version: 481
+current-version: 481.1
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ ActivitySharingPlugin, ActivitySharingTests, Bridge, ChatKit, 

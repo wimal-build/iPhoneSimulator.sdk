@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           98B5AF62-E37E-35BC-9142-35571AB878EC
   - target:          x86_64-ios-simulator
-    value:           FF6866E7-5B8F-3123-B9F8-CC4A9D84E699
+    value:           9EA12F9E-860D-3953-9E1D-D21E654030BD
   - target:          arm64-ios-simulator
-    value:           A2A7F669-1D07-3F23-B658-CB3252D8040B
+    value:           5041AC55-8E5D-3271-96BE-56814B794125
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

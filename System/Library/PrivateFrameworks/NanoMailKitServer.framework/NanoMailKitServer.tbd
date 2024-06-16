@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B1FD6EC8-3766-38ED-B8E3-61EBCADE0C23
   - target:          x86_64-ios-simulator
-    value:           B6EB26CE-320A-30DD-865C-CE2A97F3874D
+    value:           553CFC91-11A9-33EA-A52A-C528B8136024
   - target:          arm64-ios-simulator
-    value:           CCFA9069-64F6-36D9-B67B-A9BB3FF3B933
+    value:           65A3EF8C-8C1A-365D-B07B-ABCCCF7F388B
 install-name:    '/System/Library/PrivateFrameworks/NanoMailKitServer.framework/NanoMailKitServer'
 exports:
   - targets:         [ i386-ios-simulator ]

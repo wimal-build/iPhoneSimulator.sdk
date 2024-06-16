@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           95F6B3DE-745D-3256-8857-FAC48BCF0447
+    value:           440BAB90-B005-37C7-A085-C2DA7F25CFB6
   - target:          arm64-ios-simulator
-    value:           DE8F0660-7971-33D9-9079-63DCE592B79B
+    value:           D37AD651-AEBA-326E-9168-1CEAA0DFD158
 install-name:    '/System/Library/PrivateFrameworks/NLPLearner.framework/NLPLearner'
 current-version: 34
 exports:

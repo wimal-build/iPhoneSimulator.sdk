@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FBFD54F9-0C55-35ED-86A6-FDE8329D581F
+    value:           B5410F29-8459-3F67-941F-87B953E23CF2
   - target:          arm64-ios-simulator
-    value:           118F329F-D382-3106-9612-9D64C98D5043
+    value:           69C5A133-E9F6-3C33-AA5F-D45E51E9844D
 install-name:    '/System/Library/Frameworks/IOSurface.framework/IOSurface'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]

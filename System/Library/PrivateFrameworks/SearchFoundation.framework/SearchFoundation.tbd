@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           820F835E-B4AE-3FD8-A721-AFEAC3497E0A
   - target:          x86_64-ios-simulator
-    value:           2AC1D8D3-3307-3E9E-AB0E-A933881BC220
+    value:           0855329F-4C68-3919-9F51-A3DF5674E9F0
   - target:          arm64-ios-simulator
-    value:           5FB0B9F6-5842-3D1A-B381-EE38570B8578
+    value:           22271678-344E-37CA-BABE-5F068C8CC4DE
 install-name:    '/System/Library/PrivateFrameworks/SearchFoundation.framework/SearchFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]

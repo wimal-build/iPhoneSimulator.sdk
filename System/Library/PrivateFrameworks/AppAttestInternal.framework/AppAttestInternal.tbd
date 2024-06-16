@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           ACC53391-1F0E-310D-9678-F6179E241014
+    value:           91F62A6A-D5AF-33B5-BBFB-5F482438E2A2
   - target:          arm64-ios-simulator
-    value:           9EF8FB1F-4811-3C1F-A082-94700F919A32
+    value:           3ABA9D51-3239-376B-9880-5B5FB2955728
 install-name:    '/System/Library/PrivateFrameworks/AppAttestInternal.framework/AppAttestInternal'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

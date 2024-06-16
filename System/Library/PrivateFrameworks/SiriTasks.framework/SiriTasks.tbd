@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           959CB020-9F4F-30E2-A66D-827564A47A12
   - target:          x86_64-ios-simulator
-    value:           0ED035F7-C869-3B5C-AEAC-25569B450490
+    value:           59391203-B1FC-3F39-8AE1-AC7C878C2337
   - target:          arm64-ios-simulator
-    value:           BF7B4E51-1031-3512-AF6D-61B09BBE2481
+    value:           2BF30473-16FE-3887-9A62-B725CC541729
 install-name:    '/System/Library/PrivateFrameworks/SiriTasks.framework/SiriTasks'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

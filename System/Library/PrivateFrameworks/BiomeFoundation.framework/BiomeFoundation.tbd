@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           45270192-4FB9-3BB0-822D-82F8015CF598
+    value:           DD294452-186A-3C5A-9E82-C54ED109D92E
   - target:          arm64-ios-simulator
-    value:           4578AE97-A183-33D6-94BE-370568A0B891
+    value:           8B9D6965-1AB4-3E5C-AF12-3B20FD3E6E7C
 install-name:    '/System/Library/PrivateFrameworks/BiomeFoundation.framework/BiomeFoundation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

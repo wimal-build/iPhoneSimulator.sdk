@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C9964F3F-C58E-327A-979E-31A41191D0F6
+    value:           E86FB2FF-169B-34A8-9617-16E45D81D51B
   - target:          arm64-ios-simulator
-    value:           0328B3F6-322D-3343-AF73-0DA2FB69C224
+    value:           919AF4EE-0439-3F4F-BD83-9A458987C68B
 install-name:    '/System/Library/PrivateFrameworks/ActivityAchievements.framework/ActivityAchievements'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

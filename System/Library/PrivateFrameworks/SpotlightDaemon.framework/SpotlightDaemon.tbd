@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E6356326-8ACB-39F7-B34E-CFEBB280F139
   - target:          x86_64-ios-simulator
-    value:           0780BDA9-557C-3D0C-A23B-A762D3E4EBF7
+    value:           28D54085-1E82-3234-8EBE-7CDAF62D10EF
   - target:          arm64-ios-simulator
-    value:           78801879-4138-31B3-AB1B-6DDAA6B4D212
+    value:           E9966BCF-E243-31ED-9EF9-1CC1A396A88D
 install-name:    '/System/Library/PrivateFrameworks/SpotlightDaemon.framework/SpotlightDaemon'
 exports:
   - targets:         [ i386-ios-simulator ]

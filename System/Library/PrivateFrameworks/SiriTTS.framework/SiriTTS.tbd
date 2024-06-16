@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B88663AE-B34F-3C78-9F94-D74C4E9CC0BE
+    value:           68651D66-7FE2-3F18-8D00-F9308E59D161
   - target:          arm64-ios-simulator
-    value:           3A34AD2A-5FC4-3BC8-ABD5-8FFFBE4B8995
+    value:           D92218AE-A94E-3F48-992D-D5801CF6923E
 install-name:    '/System/Library/PrivateFrameworks/SiriTTS.framework/SiriTTS'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           59B48FF4-7823-3A3E-8EB5-DBD159F23CB6
   - target:          x86_64-ios-simulator
-    value:           993524A0-41A4-3D4B-BE46-1F7546FF477C
+    value:           4C75776A-56D7-342D-A352-93E85109010A
   - target:          arm64-ios-simulator
-    value:           610B2A1A-8449-3795-82A1-36307160525F
+    value:           EEB96957-7284-325B-A230-883C73262185
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib'
-current-version: 760
+current-version: 760.11.4
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _VVACOS, _VVACOSF, _VVACOSF_, _VVACOSH, _VVACOSHF, _VVACOSHF_, 

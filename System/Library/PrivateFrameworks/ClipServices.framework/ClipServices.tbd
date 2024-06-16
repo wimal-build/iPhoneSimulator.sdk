@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BD50EE87-8A42-3A32-83DC-79A877109AF0
+    value:           16A3F2CF-C948-3879-87AC-EC917B7C545D
   - target:          arm64-ios-simulator
-    value:           1014C862-A824-3BF8-A6B6-A430776DBBD5
+    value:           C1CA3E3A-EEE0-3234-8EEF-4543101FBFF8
 install-name:    '/System/Library/PrivateFrameworks/ClipServices.framework/ClipServices'
 current-version: 20.20
 exports:

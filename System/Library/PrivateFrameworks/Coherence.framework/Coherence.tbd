@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           75CA7430-686A-3719-BAAE-6AB55E15D3F1
+    value:           BFCE804D-3546-3C23-BD42-F87EDBD80073
   - target:          arm64-ios-simulator
-    value:           6098891A-609F-384A-9CE0-CBB9E1909289
+    value:           2B8D03BC-E56A-3AF2-9114-8F34391FB21F
 install-name:    '/System/Library/PrivateFrameworks/Coherence.framework/Coherence'
 swift-abi-version: 7
 allowable-clients:

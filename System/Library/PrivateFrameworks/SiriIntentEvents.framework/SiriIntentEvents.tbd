@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C2D92900-198B-3A33-908C-E72DF9E32F40
+    value:           874D627F-27C9-3778-BAF5-2E2817EBCC54
   - target:          arm64-ios-simulator
-    value:           4D30FE70-4CAC-38A8-A9F9-AC777692084B
+    value:           B42B02D5-53E7-3B57-B29B-FE1134135BE3
 install-name:    '/System/Library/PrivateFrameworks/SiriIntentEvents.framework/SiriIntentEvents'
 current-version: 0
 compatibility-version: 0

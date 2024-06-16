@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           45F0FBF9-8434-3562-BC32-394A8F5EEE36
   - target:          x86_64-ios-simulator
-    value:           DABF30D8-ECBB-321D-BC6F-B87B1F8D577D
+    value:           1AF5437E-B054-390C-A03B-90A14A7118D9
   - target:          arm64-ios-simulator
-    value:           288625AE-A7B8-3CEE-871E-4BC73F34E546
+    value:           6EB29A23-93F8-3F39-BECF-AC5DAD969D08
 install-name:    '/System/Library/PrivateFrameworks/MediaPlatform.framework/MediaPlatform'
 exports:
   - targets:         [ i386-ios-simulator ]

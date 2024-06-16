@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F146BD92-887F-361F-8871-2A3357FA1376
   - target:          x86_64-ios-simulator
-    value:           987DF60B-F1D1-33F8-808D-25577CC6E80A
+    value:           5CF465BE-63AC-3E42-AB22-60C3A097F113
   - target:          arm64-ios-simulator
-    value:           97A9B7BF-2066-37AE-8D8A-57DDECB79DAB
+    value:           2F4EFCC8-951A-3036-906B-D2ABF2DAEAA1
 install-name:    '/System/Library/PrivateFrameworks/LatentSemanticMapping.framework/LatentSemanticMapping'
 current-version: 2.12.5
 exports:

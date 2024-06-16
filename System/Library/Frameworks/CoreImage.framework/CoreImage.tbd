@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BCF6EB5A-2DF3-379E-A189-05F560293468
   - target:          x86_64-ios-simulator
-    value:           03217548-B729-3281-BD80-C24023732898
+    value:           9B930436-FF15-31F0-B920-5BECC40FA7A1
   - target:          arm64-ios-simulator
-    value:           2F67A321-35FD-3EB7-AC0B-2F911A3BC680
+    value:           1BE2F6DF-8354-379F-8547-F56983BF2CF8
 install-name:    '/System/Library/Frameworks/CoreImage.framework/CoreImage'
 current-version: 5
 exports:
@@ -135,7 +135,8 @@ exports:
                        _kCIImageAutoAdjustLevel_MaxAngle, _kCIImageAutoAdjustLevel_MinAngle, 
                        _kCIImageAutoAdjustLevel_UseVerticalDetector, _kCIImageAutoAdjustLevel_VerticalAngleThreshold, 
                        _kCIImageAutoAdjustRedEye, _kCIImageAuxiliaryDepth, _kCIImageAuxiliaryDisparity, 
-                       _kCIImageAuxiliaryPortraitEffectsMatte, _kCIImageAuxiliarySemanticSegmentationHairMatte, 
+                       _kCIImageAuxiliaryHDRGainMap, _kCIImageAuxiliaryPortraitEffectsMatte, 
+                       _kCIImageAuxiliarySemanticSegmentationGlassesMatte, _kCIImageAuxiliarySemanticSegmentationHairMatte, 
                        _kCIImageAuxiliarySemanticSegmentationSkinMatte, _kCIImageAuxiliarySemanticSegmentationTeethMatte, 
                        _kCIImageCacheHint, _kCIImageCacheImmediately, _kCIImageClampToEdge, 
                        _kCIImageColorSpace, _kCIImageEdgeRepeat, _kCIImageEdgesAreClear, 
@@ -145,12 +146,14 @@ exports:
                        _kCIImageProviderTileSize, _kCIImageProviderUserInfo, _kCIImageRepresentationAVDepthData, 
                        _kCIImageRepresentationAVPortraitEffectsMatte, _kCIImageRepresentationAVSemanticSegmentationMattes, 
                        _kCIImageRepresentationDepthImage, _kCIImageRepresentationDisparityImage, 
-                       _kCIImageRepresentationPortraitEffectsMatteImage, _kCIImageRepresentationSemanticSegmentationHairMatteImage, 
+                       _kCIImageRepresentationHDRGainMapImage, _kCIImageRepresentationPortraitEffectsMatteImage, 
+                       _kCIImageRepresentationSemanticSegmentationGlassesMatteImage, 
+                       _kCIImageRepresentationSemanticSegmentationHairMatteImage, 
                        _kCIImageRepresentationSemanticSegmentationSkinMatteImage, 
                        _kCIImageRepresentationSemanticSegmentationTeethMatteImage, 
-                       _kCIImageTextScaleFactor, _kCIImageYCCMatrix, _kCIInputAllowDraftModeKey, 
-                       _kCIInputAmountKey, _kCIInputAngleKey, _kCIInputAspectRatioKey, 
-                       _kCIInputBackgroundImageKey, _kCIInputBaselineExposureKey, 
+                       _kCIImageTextScaleFactor, _kCIImageToneMapHDRtoSDR, _kCIImageYCCMatrix, 
+                       _kCIInputAllowDraftModeKey, _kCIInputAmountKey, _kCIInputAngleKey, 
+                       _kCIInputAspectRatioKey, _kCIInputBackgroundImageKey, _kCIInputBaselineExposureKey, 
                        _kCIInputBiasKey, _kCIInputBoostKey, _kCIInputBoostShadowAmountKey, 
                        _kCIInputBrightnessKey, _kCIInputCenterKey, _kCIInputColorKey, 
                        _kCIInputColorNoiseReductionAmountKey, _kCIInputContrastKey, 

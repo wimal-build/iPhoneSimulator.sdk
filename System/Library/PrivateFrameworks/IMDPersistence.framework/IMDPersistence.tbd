@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E089BB8E-CD67-3907-9016-33110B0A8BFB
   - target:          x86_64-ios-simulator
-    value:           831ECA76-C80D-3BA9-8183-7CD1AE787A02
+    value:           4CD8AFDF-EACA-373E-8C94-F52C42ED9507
   - target:          arm64-ios-simulator
-    value:           BEF71944-E195-35E7-8E48-A063172E635E
+    value:           974D542B-A9CB-3E6D-8593-E5C2A5D88992
 install-name:    '/System/Library/PrivateFrameworks/IMDPersistence.framework/IMDPersistence'
 current-version: 800
 exports:

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           DF84AF63-0B83-331E-AF67-35B3A9C83DDE
   - target:          x86_64-ios-simulator
-    value:           4998633A-3FFC-3A51-9A71-76AE49C3D832
+    value:           E979E6F4-1D45-342A-B573-BD9EB9EAA5B9
   - target:          arm64-ios-simulator
-    value:           BF3FAFFD-73E1-39E1-BBBD-6FAE4B1A4ABD
+    value:           18627847-B263-3D89-B5D6-C4B51AAA0A2A
 install-name:    '/System/Library/PrivateFrameworks/PhotosPlayer.framework/PhotosPlayer'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _BlurFilterKey, _CMTimeMod, _ISBlurFilterName, _ISBlurKeyPath, 

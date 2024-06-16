@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BCEB0F54-CE0D-3AD3-B640-0FACBC94A8ED
   - target:          x86_64-ios-simulator
-    value:           5EF5E738-4AFC-3D1A-A046-77C015CA9D41
+    value:           5C0056E8-07CC-3819-9274-1BA06B84D84B
   - target:          arm64-ios-simulator
-    value:           BB9C2ACF-9C8F-3AC9-9D97-05A4819E6ABF
+    value:           161E44BB-16F5-3D0D-ACA2-AFB3DEAFBA69
 install-name:    '/System/Library/PrivateFrameworks/CoreKnowledge.framework/CoreKnowledge'
 swift-abi-version: 7
 exports:

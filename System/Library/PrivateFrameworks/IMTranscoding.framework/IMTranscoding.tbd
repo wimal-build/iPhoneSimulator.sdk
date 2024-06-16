@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CF14EDBE-C0EE-3AC2-BCCF-AB26A62CFAE6
   - target:          x86_64-ios-simulator
-    value:           B0279DA9-24B4-3DE7-BE07-DEADB2200E61
+    value:           8822CB42-4877-3F4C-A747-5D2176AC3A57
   - target:          arm64-ios-simulator
-    value:           5E70A203-164E-3338-BF32-41BA05C04053
+    value:           4D31E13C-F83A-3BD6-BAF6-9B1F03C3E187
 install-name:    '/System/Library/PrivateFrameworks/IMTranscoding.framework/IMTranscoding'
 current-version: 800
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F3D6D747-5DC3-3912-960F-7AD3192930F3
   - target:          x86_64-ios-simulator
-    value:           5C62F934-F534-31C9-8809-DAD5F9652140
+    value:           CB8FBE08-7001-303B-8D03-D1FD164D9372
   - target:          arm64-ios-simulator
-    value:           4DC5D972-8B91-3093-B9F7-206BB2302BC0
+    value:           14095FFE-4195-3313-84DC-EE5BC57FB724
 install-name:    '/System/Library/Frameworks/EventKit.framework/EventKit'
 current-version: 1586
 exports:

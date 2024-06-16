@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2130AB97-FAC2-395A-84C7-68CF5F2A74B5
   - target:          x86_64-ios-simulator
-    value:           59578F87-D5ED-39EF-839B-8D049B9AC942
+    value:           87295DA5-C4E4-3649-959E-531351653ADC
   - target:          arm64-ios-simulator
-    value:           0878E2C3-4E49-37B3-87B3-3D2C894D72C7
+    value:           82893FA3-74BD-331A-B46C-93CDA39A9EED
 install-name:    '/System/Library/PrivateFrameworks/VisualAlert.framework/VisualAlert'
 exports:
   - targets:         [ i386-ios-simulator ]

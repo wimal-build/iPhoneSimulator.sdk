@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A1989A7C-0A55-3795-8A7C-273008C07975
+    value:           18BE10AF-3FA8-36EE-B260-2CEB376BDE81
   - target:          arm64-ios-simulator
-    value:           DE200946-BA95-3FBB-9AD9-9D7C712D1BC6
+    value:           D223A64F-D8C7-3290-A7C2-04781AF03C52
 install-name:    '/System/Library/PrivateFrameworks/NLFoundInAppsPlugin.framework/NLFoundInAppsPlugin'
 current-version: 210
 exports:

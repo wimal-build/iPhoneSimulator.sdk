@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           799197DE-0B8B-336B-B6CA-C5E8D61B4B21
   - target:          x86_64-ios-simulator
-    value:           516BC7E4-5318-30DA-BC5C-B55D9D5D7267
+    value:           B3244D86-C73A-355C-ACC3-198159E9385B
   - target:          arm64-ios-simulator
-    value:           FF715B00-7F2A-3BB4-8902-3C5BEE8D0FA6
+    value:           CC272C47-09CF-35A0-88C6-C699A7CFFB34
 install-name:    '/System/Library/PrivateFrameworks/MobileSync.framework/MobileSync'
 current-version: 932
 exports:

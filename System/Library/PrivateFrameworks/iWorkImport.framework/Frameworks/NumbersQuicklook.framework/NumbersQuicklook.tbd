@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           74B3CCA7-54A8-32E4-90A2-8BCCE4A0F6FF
+    value:           237EF258-7DA2-3A49-897A-22F5397CBDCE
   - target:          arm64-ios-simulator
-    value:           012BD829-8647-3477-BA4E-46C4092B742A
+    value:           F1DE135C-40D5-392E-8F39-A90DA910C06F
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/NumbersQuicklook.framework/NumbersQuicklook'
 exports:
   - targets:         [ x86_64-ios-simulator ]

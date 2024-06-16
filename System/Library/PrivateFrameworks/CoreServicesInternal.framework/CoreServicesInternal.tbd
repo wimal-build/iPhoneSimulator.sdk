@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BE5C4733-AF2A-31C4-8B7D-40AF7B0EC559
   - target:          x86_64-ios-simulator
-    value:           F4325DCA-A823-3C1E-827C-FAFF3B88C0EB
+    value:           EDEC1598-7AAE-3B20-AFD5-A028A3155088
   - target:          arm64-ios-simulator
-    value:           62FF952E-EFDB-3630-AED2-0E3BFFD28C77
+    value:           351CBFDF-3BA5-39D7-BBC2-A78EE1C220EB
 install-name:    '/System/Library/PrivateFrameworks/CoreServicesInternal.framework/CoreServicesInternal'
 current-version: 474.1
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F28285D9-81DC-3521-A615-EFA3233C8C0F
+    value:           B4D00821-8B2F-3668-9F8F-6D1547C83812
   - target:          arm64-ios-simulator
-    value:           C4839387-828F-3E42-B459-46CB340A3FAA
+    value:           1F210B88-B02D-3F37-A877-2DD7B80BA496
 install-name:    '/System/Library/PrivateFrameworks/WorkflowKit.framework/WorkflowKit'
 exports:
   - targets:         [ x86_64-ios-simulator ]

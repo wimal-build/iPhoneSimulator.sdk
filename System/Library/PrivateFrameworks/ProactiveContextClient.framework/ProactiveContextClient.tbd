@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           819D4B9E-74BC-3D71-935D-73876D389BE0
+    value:           B025B6D0-73F9-3B35-91E6-9C8ADEC01BFD
   - target:          arm64-ios-simulator
-    value:           56B67545-A82C-35F9-B6A2-AB086C89992F
+    value:           10449152-B2E1-39E2-BE57-584E7A0FF4E8
 install-name:    '/System/Library/PrivateFrameworks/ProactiveContextClient.framework/ProactiveContextClient'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

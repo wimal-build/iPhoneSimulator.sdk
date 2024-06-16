@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6E921BCB-F1E0-325D-A9F3-2A913776B30B
+    value:           2573287B-6A9A-386D-8866-7EE4255ECF0F
   - target:          arm64-ios-simulator
-    value:           0D9F5010-449B-3DC8-8DBC-1B1BD4D86E6D
+    value:           436D8A7F-8916-3980-A53A-781CC41E0B7A
 install-name:    '/System/Library/PrivateFrameworks/VideosUI.framework/VideosUI'
-current-version: 550.0.10
+current-version: 550.0.11
 swift-abi-version: 7
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

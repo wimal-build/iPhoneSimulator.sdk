@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7FFF47B7-C4E9-3233-AC2C-38E9E51814BE
   - target:          x86_64-ios-simulator
-    value:           8D0250F6-6E15-31FA-901E-5AFB1A27614C
+    value:           DB5AC7AB-3C1D-3FF3-9AA3-0EA3EFF0F318
   - target:          arm64-ios-simulator
-    value:           9DB20F78-E4BD-3971-9409-B1412FB85517
+    value:           184B64D4-F905-3F3D-ACC7-4B62D98F41BD
 install-name:    '/System/Library/PrivateFrameworks/SpringBoardUIServices.framework/SpringBoardUIServices'
 exports:
   - targets:         [ i386-ios-simulator ]

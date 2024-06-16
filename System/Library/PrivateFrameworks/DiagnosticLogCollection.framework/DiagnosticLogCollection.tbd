@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BA1CA2D9-3D7F-310B-BC60-F1AC2A7C173C
   - target:          x86_64-ios-simulator
-    value:           922D7484-6DCC-3477-93E3-513A96B44C30
+    value:           1D26DD76-A6C8-3FE2-8A87-DA980B680C13
   - target:          arm64-ios-simulator
-    value:           29302607-3F50-3139-8AA3-5F6F1E57AF7D
+    value:           43AD280D-2D9A-39AA-9BB7-3ABB5C5D2DC8
 install-name:    '/System/Library/PrivateFrameworks/DiagnosticLogCollection.framework/DiagnosticLogCollection'
 current-version: 800
 exports:

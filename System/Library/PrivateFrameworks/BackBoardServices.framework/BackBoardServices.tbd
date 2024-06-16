@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E223F911-5CB3-3832-A52A-42E25BF0543A
   - target:          x86_64-ios-simulator
-    value:           246EE85B-AB30-30BA-9533-8204EB532FC5
+    value:           2B9F2BAC-6E60-362E-81A9-4EBBD0593ACE
   - target:          arm64-ios-simulator
-    value:           B854B4F2-E568-3F70-B455-44BB5019CBB3
+    value:           B3CDC9F2-7279-3757-A479-B80565E715DC
 install-name:    '/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -315,9 +315,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A50F8416-F9FE-3481-BFF1-669AFAA8DB12
   - target:          x86_64-ios-simulator
-    value:           0B599ABC-FC9D-362B-88C3-199A4E9A0F84
+    value:           0160A413-1BD9-3325-AD4B-4E34B45DB3CA
   - target:          arm64-ios-simulator
-    value:           36D83E53-E532-3EFE-B15F-D6685FF1677D
+    value:           C7524FB1-598A-3E56-B89D-2CF290ED847B
 install-name:    '/System/Library/PrivateFrameworks/AssertionServices.framework/AssertionServices'
 current-version: 505.0.12
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EC764CCF-EF5C-3321-9FA4-BE2CCFB07B06
+    value:           747AD268-F639-3551-9B45-7B0ABDB4E41A
   - target:          arm64-ios-simulator
-    value:           E75E529A-5897-3EBE-86C9-ADBB4F1D862C
+    value:           365F61B0-B863-35A8-B4F6-FB3460A0F69F
 install-name:    '/System/Library/PrivateFrameworks/TeaSnappy.framework/TeaSnappy'
 swift-abi-version: 7
 allowable-clients:

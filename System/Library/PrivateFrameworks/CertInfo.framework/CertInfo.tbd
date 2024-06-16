@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CB61DFD2-C115-3EC2-A3CE-FC13BD009EDE
   - target:          x86_64-ios-simulator
-    value:           5BED7C38-DBB3-3CAC-9D38-19A576C1F20D
+    value:           13703B2B-EAD3-3D59-9743-F1B96D0C5E3B
   - target:          arm64-ios-simulator
-    value:           DDABBA16-CBC7-3D4A-BB0F-AE77CB9DFB73
+    value:           2921D785-9F2E-3D46-A53A-9981C1D2EB1C
 install-name:    '/System/Library/PrivateFrameworks/CertInfo.framework/CertInfo'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

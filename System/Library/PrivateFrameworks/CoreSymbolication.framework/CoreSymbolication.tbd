@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0E4F822A-E6FD-3A03-9A1A-59D6ECD30813
   - target:          x86_64-ios-simulator
-    value:           B8DE7941-C7D0-3D1A-B597-0AAE8E72C6F4
+    value:           B9D1B7CF-7FC4-3975-B717-C2BA1C6CCD41
   - target:          arm64-ios-simulator
-    value:           44AFDA38-3328-3707-A387-FA26B86B8DB4
+    value:           B840C863-67F5-3973-8607-8B566BA61936
 install-name:    '/System/Library/PrivateFrameworks/CoreSymbolication.framework/CoreSymbolication'
 current-version: 64540.89.1
 exports:

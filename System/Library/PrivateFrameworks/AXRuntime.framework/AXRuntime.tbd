@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6442FDAF-EB5B-346F-9F25-70E53B6ADBAE
   - target:          x86_64-ios-simulator
-    value:           F8004E8F-807F-34F6-8DFD-F78010C83265
+    value:           23BD7CDE-DF29-345E-968F-F0C8F9450740
   - target:          arm64-ios-simulator
-    value:           74ADAE97-CC4B-380D-86D9-8721793DC2CF
+    value:           C9760DE4-383A-3322-B515-0AA58AFDE84F
 install-name:    '/System/Library/PrivateFrameworks/AXRuntime.framework/AXRuntime'
 exports:
   - targets:         [ i386-ios-simulator ]

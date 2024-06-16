@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2946A44B-1BD2-3159-BB09-E27F81E157EA
+    value:           15CBEF32-1FC2-3752-811C-DC931573B060
   - target:          arm64-ios-simulator
-    value:           E61DB959-5665-3F78-A7B3-0FFB1D1530C9
+    value:           E2B46BCF-5563-39BA-8E5D-2D7DC55C6309
 install-name:    '/System/Library/PrivateFrameworks/HealthToolbox.framework/HealthToolbox'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

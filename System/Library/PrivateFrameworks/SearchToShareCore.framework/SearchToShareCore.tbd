@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           572561BF-7B5C-34A6-93C5-0D9C36F9EF76
+    value:           43F3CEE7-9818-33B4-A10B-B0C44070C16C
   - target:          arm64-ios-simulator
-    value:           0CBE5279-1FBF-3614-81C7-0E284FFEA071
+    value:           57D394B3-52C4-36C5-9CD5-E20719340346
 install-name:    '/System/Library/PrivateFrameworks/SearchToShareCore.framework/SearchToShareCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1C7AA72A-07E6-3AEC-AC5C-595DD4B17B17
+    value:           3D3C8CD4-BA15-37E8-AAAA-B8B2075F7277
   - target:          arm64-ios-simulator
-    value:           385A6E6E-2B70-32B7-BC0B-BACE099457B2
+    value:           C5701818-B755-3288-B075-FF1844844E80
 install-name:    '/System/Library/PrivateFrameworks/AssistantCardServiceSupport.framework/AssistantCardServiceSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

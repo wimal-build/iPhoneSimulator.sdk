@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3FF80453-D5D4-3A8D-8CDD-6BCD3C5F8D95
+    value:           6EE8156E-E086-3D67-B14D-3824C25DE069
   - target:          arm64-ios-simulator
-    value:           3583DF55-94D9-3B1B-88AB-D780E44451E8
+    value:           B761036F-7009-355D-A9DA-8CFB3851E668
 install-name:    '/System/Library/PrivateFrameworks/TextInputChinese.framework/TextInputChinese'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

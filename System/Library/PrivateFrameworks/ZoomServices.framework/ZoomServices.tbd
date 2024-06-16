@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D26E9D7D-7EBD-30A2-B895-96F572864207
+    value:           8E16D0EC-1EE5-3DAA-8440-F126080E6D9D
   - target:          arm64-ios-simulator
-    value:           7830E503-BE3D-343B-88A9-187D5EB70240
+    value:           E5C756C0-08C2-3E46-AEAB-6D8BA0669EBA
 install-name:    '/System/Library/PrivateFrameworks/ZoomServices.framework/ZoomServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

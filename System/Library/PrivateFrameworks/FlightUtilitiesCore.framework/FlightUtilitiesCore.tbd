@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5C6BCC42-EEEA-3A91-9041-6FBD50AE1F57
+    value:           0BA15D44-DD00-36AD-9A88-CDDFC8F45B61
   - target:          arm64-ios-simulator
-    value:           1F952060-0EB6-38D9-9203-467437B38684
+    value:           752ED242-9C36-31B4-AC00-C5C382A8EBF6
 install-name:    '/System/Library/PrivateFrameworks/FlightUtilitiesCore.framework/FlightUtilitiesCore'
 current-version: 140
 exports:

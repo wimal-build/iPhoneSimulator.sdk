@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           62E3BC3C-9745-3061-A173-14931F9DD052
+    value:           76A0916C-C40C-3779-B8DF-636C2DEDD5C1
   - target:          arm64-ios-simulator
-    value:           BE91AA11-F5B2-3D19-8CCE-9FF8B9BEA2A2
+    value:           BFE1E790-4193-34A0-ACA9-7A4A6896717A
 install-name:    '/System/Library/PrivateFrameworks/BatteryCenterUI.framework/BatteryCenterUI'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

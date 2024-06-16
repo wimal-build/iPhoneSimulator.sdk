@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F5DA9C56-A2E6-32A2-B4EE-6E6CF063308D
   - target:          x86_64-ios-simulator
-    value:           08DDB373-3639-392A-8634-2A44B8D97D1E
+    value:           9E89CD5B-2234-3FCC-BB3B-0AEF6F92BBE9
   - target:          arm64-ios-simulator
-    value:           D0B94F8E-E72A-3134-9A8A-DE9D43473570
+    value:           26DA0004-9B78-3E6F-8058-2D7CA7AB088C
 install-name:    '/System/Library/PrivateFrameworks/IDSKVStore.framework/IDSKVStore'
 current-version: 800
 exports:

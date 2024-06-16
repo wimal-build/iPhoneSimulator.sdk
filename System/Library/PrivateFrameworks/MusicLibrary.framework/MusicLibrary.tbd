@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B73DDCD2-D0C3-37C6-BD38-A2F4DB9F72B0
   - target:          x86_64-ios-simulator
-    value:           7FC15E77-A7F7-3958-B466-159D4361B9A8
+    value:           308286EC-EB6E-3ACE-B12D-B028D9110786
   - target:          arm64-ios-simulator
-    value:           0B9208A2-39AE-34DD-B31D-4256F0A1E32A
+    value:           2A1BCC1D-24E1-378E-B5A0-2C0E05518706
 install-name:    '/System/Library/PrivateFrameworks/MusicLibrary.framework/MusicLibrary'
 current-version: 18
 exports:

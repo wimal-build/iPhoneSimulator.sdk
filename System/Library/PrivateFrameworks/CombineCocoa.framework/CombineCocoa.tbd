@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           48F8B060-79D1-302E-BA2C-81D5EB691800
+    value:           30E93A49-3BCE-381C-A4DF-2513CF8BA84D
   - target:          arm64-ios-simulator
-    value:           2174324D-FEBE-3D54-B946-6863DF777364
+    value:           459DB7A8-ECAC-3D95-A91C-927ECD02821C
 install-name:    '/System/Library/PrivateFrameworks/CombineCocoa.framework/CombineCocoa'
 current-version: 235.101
 ...

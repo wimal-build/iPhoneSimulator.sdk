@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2563BF59-A0FB-398B-AB99-5DE901A23A62
+    value:           AE1A50B8-9420-3462-AF05-7D2B05250EF2
   - target:          arm64-ios-simulator
-    value:           45476BFE-D34C-30AD-AB1E-03FFF778446A
+    value:           4EB9F54A-4F50-39E2-98E0-57CBE765C8AE
 install-name:    '/System/Library/PrivateFrameworks/AudioTransportCommon.framework/AudioTransportCommon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

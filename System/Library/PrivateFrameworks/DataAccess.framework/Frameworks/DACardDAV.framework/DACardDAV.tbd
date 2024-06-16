@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C842D723-569F-386D-B181-8D0A6FBA3F14
   - target:          x86_64-ios-simulator
-    value:           60A8C0AF-B5C9-35BA-8416-536A76B3BC6B
+    value:           412E80A8-7E7F-3C4B-8D60-6C36E62C6CF3
   - target:          arm64-ios-simulator
-    value:           1A2124A8-C0A8-3086-9E79-18943E3CF8AD
+    value:           04CB4E0E-E3A1-3136-98DC-8BFF1DB69650
 install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DACardDAV.framework/DACardDAV'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

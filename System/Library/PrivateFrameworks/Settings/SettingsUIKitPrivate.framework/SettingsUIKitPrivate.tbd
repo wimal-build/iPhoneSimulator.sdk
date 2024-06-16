@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           51DF5E9A-E0B5-309C-86F7-45FDECD0B862
+    value:           CF8FC115-80CD-3856-9815-B22A30AA550B
   - target:          arm64-ios-simulator
-    value:           35A160A1-6049-34BA-B00D-74325CC3558D
+    value:           EF7C329C-C616-350B-B07D-2DC272FF1EBE
 install-name:    '/System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework/SettingsUIKitPrivate'
 swift-abi-version: 7
 exports:

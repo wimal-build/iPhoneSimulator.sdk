@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           EB4375BC-400C-3861-8399-C9689E3A8CD6
   - target:          x86_64-ios-simulator
-    value:           876BDE2E-02FE-35D7-8502-0EA0F236E986
+    value:           B68D9985-0848-37EF-B901-75529BD71400
   - target:          arm64-ios-simulator
-    value:           546ED48E-79E7-3506-A244-6E8DD3DFC81A
+    value:           2DDE4015-24FB-33AF-ACAC-2FB123041CAE
 install-name:    '/System/Library/PrivateFrameworks/ControlCenterUIKit.framework/ControlCenterUIKit'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -31,7 +31,7 @@ exports:
                        _CCUILogAnimationRunner, _CCUILogModuleInstance, _CCUILogUserInterface, 
                        _CCUIMaximumExpandedContentModuleHeight, _CCUIPunchOutRootLayers, 
                        _CCUIReferenceScreenBounds, _CCUIRegisterControlCenterLogging, 
-                       _CCUIScreenBounds, _CCUISliderExpandedContentModuleHeight, 
+                       _CCUIScreenBounds, _CCUIScreenSafeAreaInsets, _CCUISliderExpandedContentModuleHeight, 
                        _CCUISliderExpandedContentModuleWidth, _CCUISliderExpandedModuleContinuousCornerRadius, 
                        _ControlCenterUIKitVersionNumber, _ControlCenterUIKitVersionString, 
                        _kCCUIGlyphStateDefault ]

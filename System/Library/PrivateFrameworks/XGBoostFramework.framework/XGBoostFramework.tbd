@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           06370079-3E74-3194-9FB4-40576B9BBB49
+    value:           50C631B5-CDFE-3D66-B5B9-B57EF96FE63A
   - target:          arm64-ios-simulator
-    value:           66D771AE-E624-3428-A16C-4629B1C6E4B5
+    value:           69E72642-597B-3E28-8D02-6F40FA6F21E9
 install-name:    '/System/Library/PrivateFrameworks/XGBoostFramework.framework/XGBoostFramework'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

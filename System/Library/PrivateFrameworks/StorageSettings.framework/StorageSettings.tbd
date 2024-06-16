@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2077289D-EAC9-349C-94CA-39E13D9FA541
+    value:           DF0E491B-1ACC-3E2E-9165-8F00BC19D068
   - target:          arm64-ios-simulator
-    value:           785ED835-FAD0-3569-A0A9-34EEBA8D24CF
+    value:           AC1B91D2-9A35-3BCA-B03D-68782ED9BB59
 install-name:    '/System/Library/PrivateFrameworks/StorageSettings.framework/StorageSettings'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

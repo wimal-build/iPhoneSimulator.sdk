@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2EA54F55-382E-3218-BD63-9CE0DE2B4E22
+    value:           8BC392D3-BC14-3353-BE93-7D3DFE9FB16C
   - target:          arm64-ios-simulator
-    value:           13960745-07B0-31FA-A331-223DFA3EAF8C
+    value:           8CDA50EC-50C5-3E11-AE43-A6162CDB5F0F
 install-name:    '/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/ContinuousDialogManagerService'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

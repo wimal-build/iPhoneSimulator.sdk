@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           0F7FC3DF-29F5-327B-AF6B-445EBCCE2F00
   - target:          x86_64-ios-simulator
-    value:           F5D9A24F-8494-3190-AD00-ED892B90CA30
+    value:           8EFBE35F-CE18-3219-96BC-46679D0DD6FF
   - target:          arm64-ios-simulator
-    value:           D00ED052-7F1B-3343-BCFD-9578BC497DAF
+    value:           AC8856A1-1C7C-3509-BDE3-15D85E7FFFE9
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib'
-current-version: 760
+current-version: 760.11.4
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _FFTCSForPFAs, _FFTCSForPFAv, _HasCharacteristic, _conv, _convD, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0DAEAF7F-97D2-3F10-A9A4-99A8760AECC7
+    value:           141EF85F-159C-3E3F-9F00-5B6520C975C6
   - target:          arm64-ios-simulator
-    value:           04C3428A-8F26-32E8-9089-BC2DF154D813
+    value:           8849BB51-49EE-3AB1-B9EB-AB6AEDCCDD86
 install-name:    '/System/Library/PrivateFrameworks/HealthPluginHost.framework/HealthPluginHost'
 swift-abi-version: 7
 exports:

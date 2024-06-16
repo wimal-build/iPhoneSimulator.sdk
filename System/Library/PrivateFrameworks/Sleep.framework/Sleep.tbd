@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4BDE953C-B7E9-38A6-A0DB-AE7C1F27B116
+    value:           136DB03E-F1D4-3EDA-80D1-AC5BA25E4454
   - target:          arm64-ios-simulator
-    value:           247665DE-E704-380E-88CA-DED92C544F41
+    value:           6CB472DD-1DEA-3E59-B3C7-CE762C616F3B
 install-name:    '/System/Library/PrivateFrameworks/Sleep.framework/Sleep'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

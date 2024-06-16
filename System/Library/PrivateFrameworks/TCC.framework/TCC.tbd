@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           83282AEF-3AFE-3F9A-AB1F-13A29C1B0611
   - target:          x86_64-ios-simulator
-    value:           CB2E9D82-A96D-394D-B1E4-1E56A049FDF5
+    value:           46033747-958D-3474-8B50-3B846CA97E00
   - target:          arm64-ios-simulator
-    value:           D82EAA97-E6E2-3FA3-A20B-C0D6452F72F7
+    value:           96EE2414-56D8-3947-BF4C-4922D5193862
 install-name:    '/System/Library/PrivateFrameworks/TCC.framework/TCC'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

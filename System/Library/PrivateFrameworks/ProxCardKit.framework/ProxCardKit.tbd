@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           766A37E3-4125-3E2F-BD75-E2AF5FC7A381
+    value:           42D819A5-9308-3DF3-B026-07F1F0D58040
   - target:          arm64-ios-simulator
-    value:           8E52ECAD-5AA3-34B9-B366-4DA70EAB0C0C
+    value:           BE25D59A-F763-35F0-A4E7-5F92C9812AAC
 install-name:    '/System/Library/PrivateFrameworks/ProxCardKit.framework/ProxCardKit'
-current-version: 1564.6
+current-version: 1566.6
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _PRXActivityIndicatorBottomMargin, _PRXActivityIndicatorToStatusMargin, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           01D76261-F317-335F-AE6E-F155F5F8150B
   - target:          x86_64-ios-simulator
-    value:           7D99EEFD-4B22-3FB9-B21F-23B2963BE84C
+    value:           E1D24E0A-3AB6-3B01-B033-D4D49C57ACA4
   - target:          arm64-ios-simulator
-    value:           14256A24-841D-3ADB-9168-B99BFBECC65E
+    value:           84D880D3-0200-30FC-AAD0-78F3D8F95702
 install-name:    '/System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine'
-current-version: 738.0.2
+current-version: 741
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _RTLogFacilityAction, _RTLogFacilityApplicationPrediction, 

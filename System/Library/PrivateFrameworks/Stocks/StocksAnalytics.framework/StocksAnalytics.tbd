@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8EB5946C-BCB4-367E-94D7-AE441AA3C035
+    value:           351D6597-286E-3024-844F-D0BCFF1593F7
   - target:          arm64-ios-simulator
-    value:           B5F27D88-20EF-3E0C-AA48-FB8182C39766
+    value:           38151D5D-73B4-3FA6-B1EF-7032C2620A28
 install-name:    '/System/Library/PrivateFrameworks/Stocks/StocksAnalytics.framework/StocksAnalytics'
 swift-abi-version: 7
 allowable-clients:

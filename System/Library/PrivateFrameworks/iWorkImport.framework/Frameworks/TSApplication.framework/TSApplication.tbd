@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2019C637-14DF-3B72-8CF0-55F659B3CA24
+    value:           1F19BC93-DA5D-3E70-A522-857A3FC6435D
   - target:          arm64-ios-simulator
-    value:           B62EF68A-8550-3CD6-997D-694A799B6A7E
+    value:           22445817-3DCE-31F7-9FBF-99E4402C4279
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSApplication.framework/TSApplication'
 exports:
   - targets:         [ x86_64-ios-simulator ]

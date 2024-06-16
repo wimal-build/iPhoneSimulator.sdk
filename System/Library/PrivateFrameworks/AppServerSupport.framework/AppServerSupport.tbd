@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A5318358-49C4-3F2D-B0A3-92B5862509C8
+    value:           38E602EF-E988-3A54-B812-B716C10F82B1
   - target:          arm64-ios-simulator
-    value:           74749A42-721F-377E-81A2-CE510F95D6A5
+    value:           B684C04B-2356-30D2-A579-032EC83CCE0C
 install-name:    '/System/Library/PrivateFrameworks/AppServerSupport.framework/AppServerSupport'
 current-version: 2038.0.15
 exports:

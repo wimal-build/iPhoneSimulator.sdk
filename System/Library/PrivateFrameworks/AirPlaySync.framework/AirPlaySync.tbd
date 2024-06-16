@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0B8852C1-3F3D-34BA-89F2-183F91FCABD9
+    value:           61B60C69-8523-301B-B833-F5E886B73E71
   - target:          arm64-ios-simulator
-    value:           EA1605A8-D5BE-3CDF-8770-67B574C38B43
+    value:           FCCA56E2-3CD5-38B6-8E5C-6C4C2D85BC00
 install-name:    '/System/Library/PrivateFrameworks/AirPlaySync.framework/AirPlaySync'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

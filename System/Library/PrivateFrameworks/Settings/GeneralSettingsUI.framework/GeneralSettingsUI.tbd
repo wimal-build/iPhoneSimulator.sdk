@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EABB942F-1147-3B15-B718-6B0688B78A37
+    value:           88C0A625-5F97-348F-B925-00A13FD9FDCF
   - target:          arm64-ios-simulator
-    value:           E7A078D3-BC81-3B6E-B36F-E1B4BA4E9D57
+    value:           2C18F814-F215-3B39-BCEA-F4CED20CB705
 install-name:    '/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

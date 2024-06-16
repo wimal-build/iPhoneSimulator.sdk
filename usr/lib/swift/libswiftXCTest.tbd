@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C1BBD39E-AF42-3A40-A21A-016A4AA987C4
   - target:          x86_64-ios-simulator
-    value:           11E7FF13-999B-36F3-8EAC-1DDFCD72B8B8
+    value:           9A09D205-977A-3D54-B9C5-D315B7B336C0
   - target:          arm64-ios-simulator
-    value:           28418E86-1563-3297-A199-0E0559ED50F3
+    value:           C960BB8F-8DA8-3977-95E0-696AAAC80459
 install-name:    '/usr/lib/swift/libswiftXCTest.dylib'
 current-version: 0
 swift-abi-version: 7

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           545A71B0-420D-35F4-A0F0-0AD558E9B1D2
   - target:          x86_64-ios-simulator
-    value:           C87C46F9-71C3-3FF8-9043-2B9F27112A23
+    value:           9C4DD876-6D3F-32FF-801B-BFAD7445A214
   - target:          arm64-ios-simulator
-    value:           BF52FEE0-C66F-372B-8465-AF972683EB9B
+    value:           E0803C62-3D24-3587-B433-1C673683AE58
 install-name:    '/System/Library/PrivateFrameworks/VoiceServices.framework/VoiceServices'
 exports:
   - targets:         [ i386-ios-simulator ]

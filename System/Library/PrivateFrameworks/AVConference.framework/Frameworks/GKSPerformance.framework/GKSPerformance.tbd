@@ -5,8 +5,8 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A3BFB7BC-AC1A-346A-9686-F05062D6BEA4
+    value:           8A2DD1B3-BB3D-3AEF-901A-24A86BA1451E
   - target:          arm64-ios-simulator
-    value:           E74ACC3E-9004-3376-8B98-61226E498B6E
+    value:           70DA8559-78F5-3F38-A8E4-2F77287F8269
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/GKSPerformance.framework/GKSPerformance'
 ...

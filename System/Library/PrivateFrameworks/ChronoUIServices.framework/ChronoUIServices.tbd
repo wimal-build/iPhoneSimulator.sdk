@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6797EB07-57E4-3B51-8E7D-460615A11BAE
+    value:           9AD9532F-9CE5-3897-A454-16E46C9E3695
   - target:          arm64-ios-simulator
-    value:           A0AC45F3-50A4-331B-9438-DA46C1EA2B80
+    value:           5CF58951-D4E5-3167-BA98-4AD8ACABBD0F
 install-name:    '/System/Library/PrivateFrameworks/ChronoUIServices.framework/ChronoUIServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

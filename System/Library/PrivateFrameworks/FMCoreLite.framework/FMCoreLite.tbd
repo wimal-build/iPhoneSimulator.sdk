@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AF884664-C621-30B8-B508-A0001E9AF432
   - target:          x86_64-ios-simulator
-    value:           86B31F5B-A4B4-3977-AAEF-145F72B1BB11
+    value:           E7BC8F26-E752-3ED5-A055-16DD509C6E2B
   - target:          arm64-ios-simulator
-    value:           98AD450D-14E7-3B7C-A4C7-347F6E9BDA47
+    value:           29C8AED8-1037-3BC2-BC10-4DEB52DF9ACD
 install-name:    '/System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

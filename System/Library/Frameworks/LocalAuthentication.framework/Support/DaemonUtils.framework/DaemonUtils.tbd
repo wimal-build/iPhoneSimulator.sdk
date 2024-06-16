@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           D6A8896F-E6E8-384C-BECD-65AD3CC31549
   - target:          x86_64-ios-simulator
-    value:           394450DB-12FC-3390-956F-BEBDB8D42093
+    value:           6DCA851E-1669-385D-A241-59AB4B822ACA
   - target:          arm64-ios-simulator
-    value:           3F8C290C-96BB-3E07-9C98-381775EF7EA7
+    value:           9B14E99F-66DA-3611-8C46-C5A7D8588472
 install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/DaemonUtils.framework/DaemonUtils'
-current-version: 827.0.6
+current-version: 827.11.2
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _DaemonUtilsVersionNumber, _DaemonUtilsVersionString ]

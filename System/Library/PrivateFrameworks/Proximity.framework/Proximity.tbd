@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A3C6858A-6A4A-3A45-9511-7DFD67BE70E3
+    value:           A8D7247C-448B-33B9-9FA0-746C5A9D4112
   - target:          arm64-ios-simulator
-    value:           25D236F8-C8A9-3807-BCB7-49DDEA89842C
+    value:           FDFC05B8-BEBC-3276-9FE0-628CAECF808B
 install-name:    '/System/Library/PrivateFrameworks/Proximity.framework/Proximity'
 exports:
   - targets:         [ x86_64-ios-simulator ]

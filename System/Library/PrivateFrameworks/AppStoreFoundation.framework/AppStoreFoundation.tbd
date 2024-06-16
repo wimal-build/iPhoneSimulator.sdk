@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EB91CFD7-6419-356E-9A90-57354D3C951B
+    value:           EC870744-05FB-396E-8319-66150570C964
   - target:          arm64-ios-simulator
-    value:           1822B159-D039-39B5-9422-9E2043967CE1
+    value:           D7EAA874-BEFC-3A22-BAEF-0CE9B8EA8980
 install-name:    '/System/Library/PrivateFrameworks/AppStoreFoundation.framework/AppStoreFoundation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

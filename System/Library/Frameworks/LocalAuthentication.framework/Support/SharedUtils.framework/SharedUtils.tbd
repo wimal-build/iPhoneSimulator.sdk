@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           5A946717-149E-3870-8712-08E3925207F4
   - target:          x86_64-ios-simulator
-    value:           D3E3CBA0-EDEB-39D8-8DB8-529AA85F1A5B
+    value:           E980A39F-6756-3A21-AFDA-DA46FDF5885E
   - target:          arm64-ios-simulator
-    value:           3754B8D0-CFC2-3285-9A9E-97D9EEEC6C7B
+    value:           2E827657-CDD6-30DB-AD01-EC43BA5D6998
 install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/Support/SharedUtils.framework/SharedUtils'
-current-version: 827.0.6
+current-version: 827.11.2
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _SharedUtilsVersionNumber, _SharedUtilsVersionString, __libBiometricKit ]

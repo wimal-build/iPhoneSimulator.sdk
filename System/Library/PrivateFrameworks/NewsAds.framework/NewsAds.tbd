@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E2817147-C1A4-310F-9A95-6A91DC25B1CA
+    value:           938366CA-BC88-361F-94FF-BCAB5B4DE256
   - target:          arm64-ios-simulator
-    value:           D53873FA-26DF-3EDB-A810-053BE1D2C056
+    value:           6BFFFA8E-6517-33E7-839E-68C0E6AE601A
 install-name:    '/System/Library/PrivateFrameworks/NewsAds.framework/NewsAds'
 swift-abi-version: 7
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BFFE4439-9143-3C32-822F-9752B9C326FF
   - target:          x86_64-ios-simulator
-    value:           8B15CA98-F5C8-31A2-AB22-BF8A6F9E3261
+    value:           B99BB783-EECC-3FE8-91AD-54191EAC464E
   - target:          arm64-ios-simulator
-    value:           8142AF47-5B32-38F4-B9E6-5CC8D42AB77F
+    value:           2A974379-FC3F-3DC7-AFD9-B48B7DA1E63E
 install-name:    '/System/Library/PrivateFrameworks/CloudKitDaemon.framework/CloudKitDaemon'
 current-version: 950
 exports:

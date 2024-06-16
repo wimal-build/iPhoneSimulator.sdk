@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FA146C41-43ED-34BE-997C-2F750BA8E3C0
   - target:          x86_64-ios-simulator
-    value:           C387FE86-2EB6-331B-BD88-7FC62913A2FC
+    value:           5B8C317B-EDD2-321F-9F7E-8DD2A4873703
   - target:          arm64-ios-simulator
-    value:           FC42837F-AAAA-305D-96E2-42F1354C3865
+    value:           5DAEC8B2-295A-3381-A5B6-4B02AF483D26
 install-name:    '/System/Library/PrivateFrameworks/MPUFoundation.framework/MPUFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]

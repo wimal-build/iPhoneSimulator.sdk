@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DB83F650-2574-3479-AC3F-2263C687B837
   - target:          x86_64-ios-simulator
-    value:           B8B46096-2680-318D-9140-A66495DA7863
+    value:           EBD10EB9-85BA-3B02-BA41-3133758B333D
   - target:          arm64-ios-simulator
-    value:           92C1FA6E-4FEF-39B2-A32E-79E29136BC55
+    value:           095FD2BE-4D4C-35FB-B238-31B8CF7958B6
 install-name:    '/System/Library/PrivateFrameworks/CorePDF.framework/CorePDF'
 exports:
   - targets:         [ i386-ios-simulator ]

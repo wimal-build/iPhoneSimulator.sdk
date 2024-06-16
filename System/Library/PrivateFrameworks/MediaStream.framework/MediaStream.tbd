@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           FC08EAAB-CC3C-3FFF-9F1E-414379CBE2A8
   - target:          x86_64-ios-simulator
-    value:           5069CC8D-2B5C-3C32-A84A-2E0CFB9F85AA
+    value:           CCD4E886-4DA9-3069-8AA6-C108C924D89A
   - target:          arm64-ios-simulator
-    value:           82A76785-D095-318D-8070-79DC1FE00663
+    value:           A2A77719-0192-312F-85BA-F9992690E7BA
 install-name:    '/System/Library/PrivateFrameworks/MediaStream.framework/MediaStream'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _kMSASNoWakeServiceName, _kMSDoNothingCFTypeDictionaryValueCallbacks, 

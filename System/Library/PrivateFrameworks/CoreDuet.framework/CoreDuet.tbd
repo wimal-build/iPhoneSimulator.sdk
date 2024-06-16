@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BC55C51C-CD0F-3331-BBE6-0F747ACE7F93
   - target:          x86_64-ios-simulator
-    value:           18438ADE-B5A6-3F09-983D-ACB4CB0C4057
+    value:           E8C5B136-9366-3FD3-B94D-747F9713E6BC
   - target:          arm64-ios-simulator
-    value:           03285DE3-00BD-3034-9FDD-D181E151E2E6
+    value:           C704CD87-AFB1-3537-92A7-83D9953301AA
 install-name:    '/System/Library/PrivateFrameworks/CoreDuet.framework/CoreDuet'
 exports:
   - targets:         [ i386-ios-simulator ]

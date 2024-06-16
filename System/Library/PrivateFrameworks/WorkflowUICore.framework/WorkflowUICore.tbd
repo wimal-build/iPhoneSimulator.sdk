@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D1E900C9-A78E-38D7-8297-8B0987415EDB
+    value:           4762A99A-838F-30DA-ACB7-96F939D68766
   - target:          arm64-ios-simulator
-    value:           7B6F24B0-6064-39D5-B435-2B2409E2EB81
+    value:           820094E2-9EB6-3AFA-9E8D-E90271DEC23A
 install-name:    '/System/Library/PrivateFrameworks/WorkflowUICore.framework/WorkflowUICore'
 swift-abi-version: 7
 allowable-clients:

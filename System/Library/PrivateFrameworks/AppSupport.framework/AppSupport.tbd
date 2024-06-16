@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CF1D1359-E5D5-32EF-9FC7-8CAB56EE06D6
   - target:          x86_64-ios-simulator
-    value:           30DE64FC-B02B-3620-8736-590DF582D239
+    value:           13BF3331-F152-3810-B414-7C8394C07319
   - target:          arm64-ios-simulator
-    value:           9231E73B-4D57-3EEF-987E-1B25D0D54AE1
+    value:           81D0C89B-34DB-3FD7-8582-CA31A2C00E0E
 install-name:    '/System/Library/PrivateFrameworks/AppSupport.framework/AppSupport'
 current-version: 29
 reexported-libraries:
@@ -364,9 +364,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B56A71F5-BB57-3A9D-9656-8A53210B945B
+    value:           3130AF85-38BC-3CD4-A99E-EE8260CB93CA
   - target:          arm64-ios-simulator
-    value:           47C40E20-DEA1-33D0-AE36-C15825E4E3B6
+    value:           210376F9-40B1-36B1-9B5D-21F62D00D7B5
 install-name:    '/System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

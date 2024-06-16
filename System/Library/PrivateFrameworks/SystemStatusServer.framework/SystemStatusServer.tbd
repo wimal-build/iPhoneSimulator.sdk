@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DBCA0169-03B4-3008-91B5-6CECECC29482
+    value:           0F0775A6-4D2E-3153-8C2C-C594D3964757
   - target:          arm64-ios-simulator
-    value:           9888154B-FFF4-3EA5-B5E1-9D94DBCA6F2B
+    value:           173A1F4B-5D75-3A18-958D-9225BBBC1C9D
 install-name:    '/System/Library/PrivateFrameworks/SystemStatusServer.framework/SystemStatusServer'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

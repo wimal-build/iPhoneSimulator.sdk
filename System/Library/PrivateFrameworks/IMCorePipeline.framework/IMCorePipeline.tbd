@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8680AA05-91FE-3627-8A4C-733A780665E5
+    value:           B71B4623-76C6-34A8-B491-9DB1E0A16668
   - target:          arm64-ios-simulator
-    value:           51C5717F-05A6-3B14-9131-3CE3D68F7762
+    value:           BEAC557F-1F0C-3654-8DEC-E40288122013
 install-name:    '/System/Library/PrivateFrameworks/IMCorePipeline.framework/IMCorePipeline'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

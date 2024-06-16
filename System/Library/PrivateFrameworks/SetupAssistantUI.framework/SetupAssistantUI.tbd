@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7E76D10B-0DE2-39BD-95D2-7D0801D57C3E
   - target:          x86_64-ios-simulator
-    value:           FBC43D9C-3632-376D-994B-6D7ED3817B20
+    value:           C5053121-673E-3EC5-B443-3AC9B3BEC401
   - target:          arm64-ios-simulator
-    value:           9C8BDD78-C7F0-3A28-8C63-87968624765A
+    value:           B9EAF550-A6F6-3020-A401-A5C176F8DB7E
 install-name:    '/System/Library/PrivateFrameworks/SetupAssistantUI.framework/SetupAssistantUI'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4E90E027-A793-37AD-9FA8-879B899B4F18
   - target:          x86_64-ios-simulator
-    value:           B3BB6528-7B01-309D-A789-9EFD9BE0958C
+    value:           2C95D7A0-CE7D-37D9-921A-0C54163EF883
   - target:          arm64-ios-simulator
-    value:           378AF8EA-7DCA-36B9-A763-D33EEFBA6264
+    value:           9EAB4C63-CAAC-3A4B-848B-75DAEB82FBC4
 install-name:    '/System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice'
 exports:
   - targets:         [ i386-ios-simulator ]

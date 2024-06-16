@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A8A15FA8-29A5-3B92-934B-BFB0B0D73CE9
   - target:          x86_64-ios-simulator
-    value:           1B1CF438-BA29-395F-8CAE-3CF32467CA78
+    value:           A37D61AF-BB87-3144-83D8-D3F427D27D58
   - target:          arm64-ios-simulator
-    value:           BD280503-521D-3BA3-B40F-43CB82CF2946
+    value:           C095616C-47D1-3325-8CB7-9E96E443C931
 install-name:    '/System/Library/Frameworks/AudioToolbox.framework/AudioCodecs'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

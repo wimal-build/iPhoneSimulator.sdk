@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0677054D-8329-326E-8713-1F0B9CE77D6E
+    value:           40153EAE-079C-3A89-932A-200617378F4E
   - target:          arm64-ios-simulator
-    value:           946CA625-300C-3B91-A747-FE620DC77CBB
+    value:           A9758B76-A37C-3438-8382-15319F18CC6C
 install-name:    '/System/Library/PrivateFrameworks/HomeRecommendationEngine.framework/HomeRecommendationEngine'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

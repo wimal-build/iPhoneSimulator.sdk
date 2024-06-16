@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DCEB0A76-61CA-38A9-B79A-8496F8BBE4D4
+    value:           E6B8CE80-BD30-38C0-A9B8-5B34F255A616
   - target:          arm64-ios-simulator
-    value:           73D224C3-718A-335B-A7E9-BFDB5DF887C8
+    value:           C6729684-CCF6-3D18-AF51-AE9C5EC96055
 install-name:    '/System/Library/PrivateFrameworks/HealthVisualization.framework/HealthVisualization'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CCE868AD-9B95-3026-A5B2-FF301460AFD4
+    value:           2E2AFCD0-588F-3FC4-8EFE-39B531A92778
   - target:          arm64-ios-simulator
-    value:           C7145B11-3943-37D6-8807-56A9024FCFE8
+    value:           44084C04-B64E-3425-A280-E3F481106A95
 install-name:    '/System/Library/PrivateFrameworks/PhoneNumberResolver.framework/PhoneNumberResolver'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

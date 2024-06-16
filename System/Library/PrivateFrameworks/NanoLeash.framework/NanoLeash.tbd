@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           377D5EA8-2C8B-3516-8A6D-19BA45DCBE2B
   - target:          x86_64-ios-simulator
-    value:           4BBEB571-9165-3464-9ADC-401F3A774796
+    value:           824895B8-925A-37B9-AC50-72AC16D239EF
   - target:          arm64-ios-simulator
-    value:           BC4F7F9F-426E-3463-A29C-50411F0C16D1
+    value:           1CD28BA8-5F26-3C4E-AE99-CE32B087AF38
 install-name:    '/System/Library/PrivateFrameworks/NanoLeash.framework/NanoLeash'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           55F9442F-D123-35F5-8533-87DB7A40DE6C
   - target:          x86_64-ios-simulator
-    value:           1AEC575C-AC4C-3B35-ACAA-B45BE73EF420
+    value:           4B34C64E-1432-3FEA-873C-B5C866EA2A2E
   - target:          arm64-ios-simulator
-    value:           691FF591-4B28-3D24-A291-D45BB2BBD902
+    value:           1B79914D-574E-3E3A-930F-62111AD64D2C
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
 current-version: 610.1.28
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BA4F1BA3-4368-3BF8-9A6A-69106D4E9A1A
   - target:          x86_64-ios-simulator
-    value:           1797112E-0DF2-34B4-863B-A107BE551B6E
+    value:           05CE3FCE-43D5-35B2-9888-37754DD09B20
   - target:          arm64-ios-simulator
-    value:           3B256834-99F6-3E67-91E9-BB7A0FBA3EE7
+    value:           22699CC7-6400-3E72-AF39-87BA34D49C53
 install-name:    '/System/Library/PrivateFrameworks/CoreNameParser.framework/CoreNameParser'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

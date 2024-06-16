@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FC3873F1-CBB7-3303-A034-824D1D933558
+    value:           50E162F0-7729-3FAD-88AE-4245A2C87618
   - target:          arm64-ios-simulator
-    value:           634495A9-0043-328D-BB2D-92B7C7094434
+    value:           3FC4C451-14AF-3144-9D06-EC83ADF82CAE
 install-name:    '/System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI'
-current-version: 481
+current-version: 481.1
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ ChatKit, ChatKitTests, ContactsUI, GameCenterUI, IMCore, InCallService, 

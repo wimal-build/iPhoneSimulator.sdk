@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5C7B512D-4BA5-30FD-83B0-755E8D281D90
+    value:           50824438-C9D7-3563-92FF-5B85ED6CCDED
   - target:          arm64-ios-simulator
-    value:           6EBE4D2E-BE5A-3E6D-92F8-3001FEF59C1B
+    value:           06FBBFD7-B1DD-3E51-8E31-3D5E876BED89
 install-name:    '/System/Library/PrivateFrameworks/ChronoCore.framework/ChronoCore'
 swift-abi-version: 7
 allowable-clients:
@@ -75,6 +75,35 @@ exports:
                        '_$s10ChronoCore21_ChronodStartupHelperCMn', '_$s10ChronoCore21_ChronodStartupHelperCMo', 
                        '_$s10ChronoCore21_ChronodStartupHelperCMu', '_$s10ChronoCore21_ChronodStartupHelperCN', 
                        '_$s10ChronoCore21_ChronodStartupHelperCfD', '_$s10ChronoCore21_ChronodStartupHelperCfd', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC02iscdE08previous7currentSbAC5TimesV_AHtFZ', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC09actionFordE08previous7current8screenOnAC0F6ActionOAC5TimesV_AKSbtFZ', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO2eeoiySbAE_AEtFZ', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO4hash4intoys6HasherVz_tF', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO5delayyA2EmFWC', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO6ignoreyA2EmFWC', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO6notifyyA2EmFWC', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO9hashValueSivg', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionO9hashValueSivpMV', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionOMa', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionOMn', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionON', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionOSHAAMc', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC0F6ActionOSQAAMc', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC10isMidnight4dateSb10Foundation4DateV_tFZ', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC5TimesVMa', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC5TimesVMn', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC5TimesVN', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC7defaultACvgZ', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC9publisher7Combine12AnyPublisherVyyts5NeverOGvg', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationC9publisher7Combine12AnyPublisherVyyts5NeverOGvpMV', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCACycfC', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCACycfCTj', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCACycfCTq', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCACycfc', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCMa', '_$s10ChronoCore33SignificantTimeChangeNotificationCMm', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCMn', '_$s10ChronoCore33SignificantTimeChangeNotificationCMo', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCMu', '_$s10ChronoCore33SignificantTimeChangeNotificationCN', 
+                       '_$s10ChronoCore33SignificantTimeChangeNotificationCfD', '_$s10ChronoCore33SignificantTimeChangeNotificationCfd', 
                        '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV7receive10subscriberyqd___tAA10SubscriberRd__7FailureQyd__AJRtz5InputQyd__6OutputRtzlF', 
                        '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8extendedq_vg', 
                        '_$s7Combine10PublishersO10ChronoCoreE20WithExtendedLifetimeV8extendedq_vpMV', 

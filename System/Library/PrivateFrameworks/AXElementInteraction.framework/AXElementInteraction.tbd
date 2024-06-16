@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA4BD4D8-B603-3ABD-822A-AD0C349B6DFA
+    value:           B4FAA382-CBDD-33E8-87EC-650C7E3D166B
   - target:          arm64-ios-simulator
-    value:           14696CC7-CD81-390E-A8A7-3FAF663684DF
+    value:           40AF05EF-FD13-30E1-BA45-09E496638B95
 install-name:    '/System/Library/PrivateFrameworks/AXElementInteraction.framework/AXElementInteraction'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

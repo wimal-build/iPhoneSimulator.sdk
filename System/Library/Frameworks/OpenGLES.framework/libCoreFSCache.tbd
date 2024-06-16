@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           785CE4B3-8B4B-39EB-91DF-2A1AA71D9451
   - target:          x86_64-ios-simulator
-    value:           D9497795-8475-3139-804B-3290BCFCE964
+    value:           C15392FC-AEA7-3625-A217-046B8BB449D9
   - target:          arm64-ios-simulator
-    value:           457492A1-8F3F-375A-A27A-0D8ACA340F75
+    value:           FED985D3-6B63-3EF0-8739-3D320AB6DC8B
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libCoreFSCache.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

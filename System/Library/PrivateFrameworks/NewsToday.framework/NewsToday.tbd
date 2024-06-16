@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3575F574-3731-370F-9837-AF2FCAB203FB
+    value:           F679E7A3-C052-3FC8-86D6-B4C5F77518EE
   - target:          arm64-ios-simulator
-    value:           CD03DDBE-25EB-3CC6-9603-7E8B32496822
+    value:           39233ADE-05FC-3484-A0C2-8AB01C38BDED
 install-name:    '/System/Library/PrivateFrameworks/NewsToday.framework/NewsToday'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

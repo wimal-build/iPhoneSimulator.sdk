@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           204BFA7E-B59E-3969-8F41-7AA70ACDF8AE
   - target:          x86_64-ios-simulator
-    value:           E1035545-BD54-3032-9152-DF7AE1783D78
+    value:           D5D62920-73E9-3D08-B9A3-07C36EB864D0
   - target:          arm64-ios-simulator
-    value:           42764778-1A24-3EBB-8FF6-3A7A02EA4112
+    value:           1ABBD5BA-DE52-374C-9282-CD2658409CC0
 install-name:    '/System/Library/PrivateFrameworks/iCalendar.framework/iCalendar'
 current-version: 1008
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8D8DC825-7B23-33AD-B1F7-7875405666F0
   - target:          x86_64-ios-simulator
-    value:           BD85C789-996B-3EFE-B556-55199D062759
+    value:           AFF2C893-56D1-31E9-B15C-5E6ED7CC3783
   - target:          arm64-ios-simulator
-    value:           3559276E-ED61-3441-92E7-6DA26A09292A
+    value:           73307721-514A-3D93-82DE-0EA09535579F
 install-name:    '/System/Library/PrivateFrameworks/WebBookmarks.framework/WebBookmarks'
 exports:
   - targets:         [ i386-ios-simulator ]

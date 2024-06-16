@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8696BCBC-CB5D-3C86-9AB9-409C0475D676
   - target:          x86_64-ios-simulator
-    value:           E7079B82-A843-3111-895D-7822F335E340
+    value:           CD005C9B-CAB3-3855-93A3-9A30AD188BF7
   - target:          arm64-ios-simulator
-    value:           9F040C64-3411-3D9F-95EB-364B86C09970
+    value:           067E902D-43CE-365E-886A-242097DEDDDF
 install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libFontParser.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

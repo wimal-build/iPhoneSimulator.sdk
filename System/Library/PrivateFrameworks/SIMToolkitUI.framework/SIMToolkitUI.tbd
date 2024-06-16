@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D1B8E766-599A-346D-8AF7-B577ED545EF4
+    value:           31227430-4193-3FD8-848A-2C3D8FCE2B1A
   - target:          arm64-ios-simulator
-    value:           69B86FB2-3B42-35A4-B964-7439E08546AC
+    value:           D6BDC540-0102-3D13-A687-45A6AFF86F28
 install-name:    '/System/Library/PrivateFrameworks/SIMToolkitUI.framework/SIMToolkitUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

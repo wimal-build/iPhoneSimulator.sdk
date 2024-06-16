@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F8A88E32-2F47-3C45-8C2C-68DAD1E10D43
+    value:           B1B50FD1-58BD-365E-8B2E-94ABA58D6C8A
   - target:          arm64-ios-simulator
-    value:           C9C0EF21-0B23-3AF6-82C5-AB2324935E88
+    value:           30D2464C-1FFC-3D6D-97A5-59ED47717A58
 install-name:    '/System/Library/PrivateFrameworks/PromotedContentProxy.framework/PromotedContentProxy'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

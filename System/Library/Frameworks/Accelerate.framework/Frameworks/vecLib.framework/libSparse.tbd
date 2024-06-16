@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CE73D3DB-AC30-39E4-9763-8DE87C97CD8F
+    value:           66BEF29D-4CDD-32DF-A451-D06457ED82C6
   - target:          arm64-ios-simulator
-    value:           13A7A6BF-A2B6-36CC-808E-40BAC4BE3112
+    value:           4687AC7F-61C2-3858-904E-2CE8B3261A4D
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

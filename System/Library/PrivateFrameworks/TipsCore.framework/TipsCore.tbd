@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BC25690F-3256-3618-BD82-57F7C9E468EB
+    value:           7E15A8C6-6825-3185-A87E-F7ED7A3EDC4B
   - target:          arm64-ios-simulator
-    value:           093276DF-A518-300B-9417-A1753DCB67A4
+    value:           C3673D04-9399-3A4D-B73F-F2C2B3F49E62
 install-name:    '/System/Library/PrivateFrameworks/TipsCore.framework/TipsCore'
-current-version: 563
+current-version: 564.1
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _KTipsEventRetrievedServiceErrorKey, _TPSAnalyticsContentStyleCollection, 

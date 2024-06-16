@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2EDE6378-CA8B-32F2-911D-B8C1C2CE2F62
   - target:          x86_64-ios-simulator
-    value:           B850251F-B0FD-337C-898A-17F8957962AF
+    value:           FC814299-F0FB-3244-9DE9-CE3D452BB66F
   - target:          arm64-ios-simulator
-    value:           991DD964-10AF-378D-9DD1-BBFEDF72C239
+    value:           1FBC5021-0974-38DC-961E-94379A3F4F52
 install-name:    '/System/Library/PrivateFrameworks/CorePrediction.framework/CorePrediction'
 exports:
   - targets:         [ i386-ios-simulator ]

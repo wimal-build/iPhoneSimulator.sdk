@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           71B69633-2CA6-35FD-A173-581370443B7D
   - target:          x86_64-ios-simulator
-    value:           5647D453-D1D5-323E-A02F-894EBC508226
+    value:           92FD852A-F5A2-36AB-A2B0-A24A5F1B3510
   - target:          arm64-ios-simulator
-    value:           A5972315-6DEA-38DF-81EF-5ACF70D553B9
+    value:           BC7E4EEB-2891-3B5B-B3EE-8F75C971D601
 install-name:    '/usr/lib/libprequelite.dylib'
 current-version: 103
 exports:

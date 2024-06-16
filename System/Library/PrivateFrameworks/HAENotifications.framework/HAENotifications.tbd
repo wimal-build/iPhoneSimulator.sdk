@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8F1B0713-BA22-34AB-8C8D-0568D594C137
+    value:           0F99DD3F-15B7-37DF-9E10-B9ED314DFA4C
   - target:          arm64-ios-simulator
-    value:           AE8F654B-1A34-306C-8499-C8B285D661DB
+    value:           7ADC9198-D255-3FD2-B97F-A5F9E2348AB7
 install-name:    '/System/Library/PrivateFrameworks/HAENotifications.framework/HAENotifications'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5FC4B0B2-E482-364F-9729-76A9D1E38C51
+    value:           C08431A8-E16B-37F7-9FBF-8723C989CD50
   - target:          arm64-ios-simulator
-    value:           D7E3A93D-9D46-36E2-B45F-8A0DF757E145
+    value:           8AA04C78-481A-35E1-8B4B-05BD97EC94C9
 install-name:    '/System/Library/PrivateFrameworks/TeaCharts.framework/TeaCharts'
 swift-abi-version: 7
 allowable-clients:

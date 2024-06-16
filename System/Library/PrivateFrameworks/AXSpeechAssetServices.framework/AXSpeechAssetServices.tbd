@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E3709382-C634-3057-BD81-3EC8EF131B75
+    value:           9CB39C9C-47DF-35F8-9B6F-7C0457974946
   - target:          arm64-ios-simulator
-    value:           9EFDBB40-61F7-31EF-94E9-A8F7F48FC732
+    value:           C98B887B-4DFB-38E8-A2D2-42CA04ACF1CC
 install-name:    '/System/Library/PrivateFrameworks/AXSpeechAssetServices.framework/AXSpeechAssetServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

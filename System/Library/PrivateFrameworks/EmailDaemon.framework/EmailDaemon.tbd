@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0FC0E2BD-74FD-34E3-83A1-878443B77BF1
+    value:           FEBBE0B5-9C67-3F2B-8AE1-2830A9E19B77
   - target:          arm64-ios-simulator
-    value:           68B79A57-6E1B-3E3D-9830-0588644175C1
+    value:           B3E80B5C-CEE8-3B8B-88FE-52EB0AB79BB8
 install-name:    '/System/Library/PrivateFrameworks/EmailDaemon.framework/EmailDaemon'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ EDPBInteractionEvent._appBackground, EDPBInteractionEvent._appLaunch, 

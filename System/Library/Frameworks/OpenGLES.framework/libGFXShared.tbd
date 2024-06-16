@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2C8D1428-E877-3BF1-99C3-5E025B00DEEC
   - target:          x86_64-ios-simulator
-    value:           EE26EBA7-A646-3249-94AE-3F9479117017
+    value:           F2AECED2-27ED-3A76-BE9D-D7429538B08F
   - target:          arm64-ios-simulator
-    value:           3C50CC6D-057D-3D87-9E3B-25166DDF49F8
+    value:           9E51E862-3970-3F9B-A5DE-1F2E1A8E3769
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGFXShared.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A2FFC035-67C8-33DA-8F26-243CA27B510A
+    value:           B20F4DC2-3827-3C11-94E6-1DA4DB6CA909
   - target:          arm64-ios-simulator
-    value:           A2F62D0A-BA1F-3AE6-AF61-C66EFFD86F4A
+    value:           80F32283-8BA3-3659-A926-E443E163F7E9
 install-name:    '/usr/lib/log/liblog_SystemConfiguration.dylib'
 current-version: 1109.0.4
 exports:

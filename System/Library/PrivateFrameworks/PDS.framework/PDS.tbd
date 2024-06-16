@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           531C376C-F2FF-3272-BE13-55BF99C48BB3
+    value:           B94A77B9-9A5F-3908-A240-F1D10E154E1A
   - target:          arm64-ios-simulator
-    value:           5C381530-128E-3587-958C-55F7ECABF5E9
+    value:           AAFB2688-4629-34D9-ABEE-1462ABD4D7A1
 install-name:    '/System/Library/PrivateFrameworks/PDS.framework/PDS'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

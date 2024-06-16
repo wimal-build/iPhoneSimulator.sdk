@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           94CA801C-BB3A-3732-A0A7-A613EC1632FC
+    value:           8ADA479E-1281-33AE-8343-29865E597175
   - target:          arm64-ios-simulator
-    value:           73392CF1-7A1C-35FA-A37D-0AA97FCCA3D9
+    value:           18BA3675-9B24-3F9A-A420-4C46018E1EFA
 install-name:    '/System/Library/PrivateFrameworks/SocialServices.framework/SocialServices'
 current-version: 87
 exports:

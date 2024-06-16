@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E8052FFD-3516-3336-B7F4-55A002B3483B
+    value:           D7280696-50ED-39AD-9591-E6E4250BE0B2
   - target:          arm64-ios-simulator
-    value:           2DD7CF79-3178-3912-9A50-7D4C883BD0D7
+    value:           AC5BDCBC-6B74-34E4-AAFC-C625DFE3144D
 install-name:    '/System/Library/PrivateFrameworks/PhotosImagingFoundation.framework/PhotosImagingFoundation'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ IPABestFitTotalPixelCountImageSizePolicy._totalPixelCount, 

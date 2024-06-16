@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           32D9301C-2AFF-3941-80AC-5EC9BD1C5BE3
+    value:           882C58FC-5ED9-36A6-86A9-A19F5F2040DD
   - target:          arm64-ios-simulator
-    value:           2FD6DA05-8046-3248-8BBA-CC43D3DDF7F0
+    value:           760243ED-5118-3FAE-A055-87CE8307C726
 install-name:    '/System/Library/PrivateFrameworks/HomeKitBackingStore.framework/HomeKitBackingStore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

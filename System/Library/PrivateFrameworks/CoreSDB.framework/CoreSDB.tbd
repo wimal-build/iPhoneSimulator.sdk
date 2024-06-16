@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CD28E143-B479-3C45-9268-767BDE2B34CC
   - target:          x86_64-ios-simulator
-    value:           F85CF762-B9CF-3914-BA81-5C2F99103A4A
+    value:           AE6C32B8-112D-39B9-BB98-E5ACF6F51D8A
   - target:          arm64-ios-simulator
-    value:           4C6E7B3D-4AF9-35C5-9578-B9B61E0CF378
+    value:           0595D76F-CAAF-37D7-B71F-CF39AC04CA5F
 install-name:    '/System/Library/PrivateFrameworks/CoreSDB.framework/CoreSDB'
 current-version: 800
 exports:

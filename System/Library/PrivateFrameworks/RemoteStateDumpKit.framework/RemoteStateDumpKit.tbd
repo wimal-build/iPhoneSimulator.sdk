@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           03A18921-E00E-3E91-962A-CBAF13389DCB
+    value:           0252E7D6-944E-390C-8F1D-F0F910B8F815
   - target:          arm64-ios-simulator
-    value:           A7976AF1-2FED-302D-AFAD-328439CC5E03
+    value:           1F0EDE9C-FC49-3E26-9BEB-B1B698473D2A
 install-name:    '/System/Library/PrivateFrameworks/RemoteStateDumpKit.framework/RemoteStateDumpKit'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

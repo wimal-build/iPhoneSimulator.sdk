@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           12AE349B-0F08-3C62-8169-0216F0F13FC1
   - target:          x86_64-ios-simulator
-    value:           72E2F020-7A66-38C0-AC1C-13433A791AF6
+    value:           52F134B0-3929-3367-9E25-AB11FBEE9745
   - target:          arm64-ios-simulator
-    value:           6787BA5F-687A-36E4-94B2-A56838358454
+    value:           93A7B283-CC57-3BB6-84ED-0DF874CC48DF
 install-name:    '/System/Library/PrivateFrameworks/DictionaryServices.framework/DictionaryServices'
 current-version: 339
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D6741A84-2B0B-365E-B957-DFFCCD3FC8F8
+    value:           95CB2D0F-AAB9-3829-8157-97DBE7D70F76
   - target:          arm64-ios-simulator
-    value:           DB45BB40-8954-368A-AA32-82DFE806E942
+    value:           A44C3362-06E3-3DBC-B809-6789E1F61C05
 install-name:    '/System/Library/PrivateFrameworks/CoreLocationProtobuf.framework/CoreLocationProtobuf'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

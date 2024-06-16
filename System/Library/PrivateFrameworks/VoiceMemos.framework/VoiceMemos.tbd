@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           648C1261-ACBF-337E-B2A1-EBB39D8B0551
   - target:          x86_64-ios-simulator
-    value:           34A45D31-9364-3A50-8683-80BC7E42A607
+    value:           8DCD49F5-F8AE-3AAC-9B73-8A0D94B346F0
   - target:          arm64-ios-simulator
-    value:           EB37E4AF-AF99-3478-A642-8CA73CB9D1FA
+    value:           FC9CD566-8776-3804-9013-4A0ADB66B727
 install-name:    '/System/Library/PrivateFrameworks/VoiceMemos.framework/VoiceMemos'
 current-version: 833
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6C01049E-7D7A-394B-98C1-CF526CABDE54
+    value:           9E81D9D1-7E64-3112-837B-F853C8C13637
   - target:          arm64-ios-simulator
-    value:           B2744417-60A8-334A-A307-FE24321FBE8E
+    value:           CA5032CB-1146-335B-A7A0-CA3CB9CE8AB7
 install-name:    '/System/Library/PrivateFrameworks/AirPlayRoutePrediction.framework/AirPlayRoutePrediction'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

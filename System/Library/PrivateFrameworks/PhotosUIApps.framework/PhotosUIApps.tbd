@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EA817B58-8FD3-35D6-AB7E-D10BF7521E73
+    value:           0D281AD6-2EE5-3C78-9E4D-28A4325958E7
   - target:          arm64-ios-simulator
-    value:           4BB15CD9-7F83-3542-9495-01651C3F4D6B
+    value:           C9DD04DA-3BF4-39D9-8DB1-5C3E3E27B09D
 install-name:    '/System/Library/PrivateFrameworks/PhotosUIApps.framework/PhotosUIApps'
-current-version: 302.0.220
+current-version: 310.1.160
 swift-abi-version: 7
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           50CF2046-8E22-37F5-9686-CB95180147D1
   - target:          x86_64-ios-simulator
-    value:           9220B0DD-67C0-31D1-A27C-AD1F0E098582
+    value:           A9A9911D-24FA-3E1C-A80F-81ECDC73A1FC
   - target:          arm64-ios-simulator
-    value:           B4D251C0-CB31-38A6-BA69-2ADBCDA8B090
+    value:           05FCD9BB-F72B-36C9-9329-4D11E005C47A
 install-name:    '/System/Library/PrivateFrameworks/Message.framework/MailServices/IMAP.framework/IMAP'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MFAuthSchemeGmailClientToken, _MFAuthSchemeNewcastle, _MFAuthSchemeOAuth2Token, 

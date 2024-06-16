@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A19AFD2A-3314-3AB8-A972-D09CFB3B1F7A
   - target:          x86_64-ios-simulator
-    value:           D398FD6D-1144-3AE8-9793-7ED56725CB39
+    value:           7350612F-EEB1-3FCF-841E-BA7065CEB469
   - target:          arm64-ios-simulator
-    value:           9BE40FD7-517A-352D-9E6C-4429C532BC63
+    value:           F9C6DFF2-F732-3D7A-931C-330F02844B8D
 install-name:    '/System/Library/PrivateFrameworks/DiagnosticExtensions.framework/DiagnosticExtensions'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8626EBE4-366E-3BF1-AD41-86808ABC47A4
   - target:          x86_64-ios-simulator
-    value:           E3CD9330-DA76-31E8-A023-912AC00C0DBE
+    value:           82799E75-08BA-3A01-94E2-47AC2E4FB5D3
   - target:          arm64-ios-simulator
-    value:           984D7C3E-56A5-3DB5-9182-BE8F45CF4F48
+    value:           433C08E7-0E08-3DF5-B938-4D0F74E06D56
 install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/FontServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

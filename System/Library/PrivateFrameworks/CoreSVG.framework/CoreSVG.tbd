@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BA020D18-79E4-35F9-A82B-53F53E9B3E7A
+    value:           0A5B29E0-CD6A-3BDD-893D-8ADEA633D599
   - target:          arm64-ios-simulator
-    value:           9C8149D0-FD02-3432-A728-156F11773266
+    value:           98DB271C-F9B3-304F-91BF-A43AE1DAFA6B
 install-name:    '/System/Library/PrivateFrameworks/CoreSVG.framework/CoreSVG'
 current-version: 149
 exports:
@@ -90,5 +90,5 @@ exports:
                        _CGSVGShapeNodeSetCircleGeometry, _CGSVGShapeNodeSetEllipseGeometry, 
                        _CGSVGShapeNodeSetFloats, _CGSVGShapeNodeSetLineGeometry, 
                        _CGSVGShapeNodeSetPath, _CGSVGShapeNodeSetRectGeometry, _CoreSVGVersionNumber, 
-                       _CoreSVGVersionString ]
+                       _CoreSVGVersionString, _kCGSVGPacked ]
 ...

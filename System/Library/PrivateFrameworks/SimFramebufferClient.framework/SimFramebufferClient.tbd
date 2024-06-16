@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           458D61A9-4938-391E-BB43-AA611CFD581F
+    value:           08D22170-34AC-334A-B094-3737F880B449
   - target:          arm64-ios-simulator
-    value:           2CD2B69C-A5BF-38DA-868A-59F5F2B8E74C
+    value:           D561A4ED-1675-3F0F-AFA0-FAEDEAA0F5AE
 install-name:    '/System/Library/PrivateFrameworks/SimFramebufferClient.framework/SimFramebufferClient'
 current-version: 732.8
 exports:

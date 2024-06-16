@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BCF73B4F-7D98-3637-B059-5CAFC450C96F
+    value:           2125E95A-EF93-3024-A7F9-791D39E1A4EB
   - target:          arm64-ios-simulator
-    value:           BCD396DA-6DA8-3AFF-AD0D-C3DEED0022CE
+    value:           F7E8F174-B999-30C8-91E6-D81DCFAD0D44
 install-name:    '/System/Library/PrivateFrameworks/RemoteTextInput.framework/RemoteTextInput'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

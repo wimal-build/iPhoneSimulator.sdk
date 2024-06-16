@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           94D5325B-5292-3E8A-87CD-E3696F45CFA2
+    value:           30A51EF7-1648-36DC-AFDA-3D50B75C4D07
   - target:          arm64-ios-simulator
-    value:           C325DEB3-634C-3B93-AC54-411BE693CDF5
+    value:           58A40DEC-D84E-30A0-AA83-1FC7C158AD4F
 install-name:    '/System/Library/PrivateFrameworks/VFX.framework/VFX'
 swift-abi-version: 7
 exports:

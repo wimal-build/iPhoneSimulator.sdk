@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AC667906-CA89-3CBC-8532-C7CC155217BF
   - target:          x86_64-ios-simulator
-    value:           42E4E665-A7AD-3038-B156-D4D78FE869A9
+    value:           E3A8DC85-26EF-3767-B66C-29A241249FAC
   - target:          arm64-ios-simulator
-    value:           7E278060-B05F-3C3C-B142-0CC3625499E4
+    value:           8FB180ED-071A-39C3-9165-F1B9CD72C4DD
 install-name:    '/System/Library/PrivateFrameworks/InputContext.framework/InputContext'
 exports:
   - targets:         [ i386-ios-simulator ]

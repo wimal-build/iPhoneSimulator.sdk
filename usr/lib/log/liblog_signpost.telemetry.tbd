@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9A6D31C1-4D40-3824-9886-7FC35A6FD164
+    value:           B2568B5C-BDC7-33E5-9C18-9BC51B8E375C
   - target:          arm64-ios-simulator
-    value:           FAC6AAC1-5479-3B1B-BEA1-2414EA1FC2AD
+    value:           DF979550-7F3C-3787-81B2-DA778CF3767D
 install-name:    '/usr/lib/log/liblog_signpost.telemetry.dylib'
 current-version: 53
 ...

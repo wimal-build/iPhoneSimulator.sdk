@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5D9FAD19-BCE4-3B56-AFDC-6A086251B9D7
+    value:           62584B86-42F1-357C-8AFC-9341C3667610
   - target:          arm64-ios-simulator
-    value:           D8E8C5CA-97D7-3501-A5DD-56971D8CE66C
+    value:           89F80468-71CC-3BF0-84D8-6EA4BC59EA9D
 install-name:    '/System/Library/PrivateFrameworks/SPOwner.framework/SPOwner'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
@@ -48,7 +48,6 @@ exports:
                        SPCommandKeys, SPCommandKeysCriteria, SPHandle, SPKeyReconciler, 
                        SPLocationAddress, SPLocationProvider, SPLostModeInfo, SPMacBeaconConfig, 
                        SPObservationLocation, SPOwnerInterface, SPOwnerSession, SPPairingManager, 
-                       SPRawSearchResult, SPSafeLocation, SPSettingsConfiguration, 
-                       SPUnauthorizedTrackingAdvertisement, SPUnauthorizedTrackingObservation, 
-                       SPUnknownBeacon ]
+                       SPRawSearchResult, SPSettingsConfiguration, SPUnauthorizedTrackingAdvertisement, 
+                       SPUnauthorizedTrackingObservation, SPUnknownBeacon ]
 ...

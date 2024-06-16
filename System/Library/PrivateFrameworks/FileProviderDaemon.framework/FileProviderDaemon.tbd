@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CAC059E0-B434-373B-B72C-A0027BB3C5B9
+    value:           5ADE619D-89E2-3CBF-921C-A1DB1D1C2A6D
   - target:          arm64-ios-simulator
-    value:           727E233A-A924-333D-ACAC-7497829145AE
+    value:           9BA32BCE-C9E3-3221-B043-2809FFA0C74E
 install-name:    '/System/Library/PrivateFrameworks/FileProviderDaemon.framework/FileProviderDaemon'
 current-version: 0
 compatibility-version: 0

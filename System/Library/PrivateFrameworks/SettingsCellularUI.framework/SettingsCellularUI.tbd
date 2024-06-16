@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           51437312-CE1E-3019-86E4-FC87FE6D549B
+    value:           3DC85A77-99A3-3426-9E37-E64F3FC1DAA6
   - target:          arm64-ios-simulator
-    value:           028F978C-A83D-3814-87ED-E313AA563082
+    value:           2675BB21-7727-346F-AEB2-DF73BB70C532
 install-name:    '/System/Library/PrivateFrameworks/SettingsCellularUI.framework/SettingsCellularUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

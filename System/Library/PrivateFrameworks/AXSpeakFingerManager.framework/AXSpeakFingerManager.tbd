@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           ACBF1FF4-400D-33C2-B9B5-1E95C233C3F4
+    value:           049CD06D-15F0-3E1C-860D-CAC692171E51
   - target:          arm64-ios-simulator
-    value:           7060D5E4-CA32-3E24-A0FE-E39F754FC217
+    value:           DDDBF0F9-B85A-35B1-9776-2391CEA66FB7
 install-name:    '/System/Library/PrivateFrameworks/AXSpeakFingerManager.framework/AXSpeakFingerManager'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

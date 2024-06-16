@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           25EDFB83-A679-3D2E-B18E-1CA9674BCD20
   - target:          x86_64-ios-simulator
-    value:           CD91E42D-98EC-3407-965A-8E0EC264AF22
+    value:           60C643B4-FF9B-30C2-B7AD-6FB94D6BD1FF
   - target:          arm64-ios-simulator
-    value:           5B038518-C82C-33B2-8790-EE83434EED2F
+    value:           BEA60D19-21E5-37AE-9DFF-B7DEAA37D7BD
 install-name:    '/System/Library/PrivateFrameworks/AppleAccount.framework/AppleAccount'
 exports:
   - targets:         [ i386-ios-simulator ]

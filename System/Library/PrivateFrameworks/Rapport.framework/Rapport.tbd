@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C8FB4E2A-0E7F-3056-8650-CA5557A5F8A5
+    value:           416E02E7-CF1E-3B44-9C0C-8769347CBF50
   - target:          arm64-ios-simulator
-    value:           18B86C49-8133-3112-9D3B-71514CD88076
+    value:           1F91EC29-F770-31B1-9DFF-4085C10C7568
 install-name:    '/System/Library/PrivateFrameworks/Rapport.framework/Rapport'
 current-version: 0
 compatibility-version: 0

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A351F64F-8F9E-3A7B-BCE1-F03293AAB36F
   - target:          x86_64-ios-simulator
-    value:           368F522A-EBC3-31D3-A869-2BDBDCAE5969
+    value:           31E0A320-A91B-3617-A107-635C5DA88B9B
   - target:          arm64-ios-simulator
-    value:           4E2EC52A-4CA8-35D9-8203-9FADDB2F133B
+    value:           780D06F5-D33A-3AF2-A62F-6E37B108088D
 install-name:    '/System/Library/PrivateFrameworks/NanoUniverse.framework/NanoUniverse'
 exports:
   - targets:         [ i386-ios-simulator ]

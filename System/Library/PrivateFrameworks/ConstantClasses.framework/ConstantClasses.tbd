@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1C586EB7-D4DB-343D-9D27-D3E627ED09D6
   - target:          x86_64-ios-simulator
-    value:           03152C0C-F7B2-3716-B58D-994FE33BFF03
+    value:           9113A1C2-7186-3171-A1C7-20D6D36F8BD6
   - target:          arm64-ios-simulator
-    value:           BC64FACF-A697-3D6D-89C7-D06CB71D8427
+    value:           030A015A-9FE6-3EE4-B15B-3449D29B4086
 install-name:    '/System/Library/PrivateFrameworks/ConstantClasses.framework/ConstantClasses'
 exports:
   - targets:         [ i386-ios-simulator ]

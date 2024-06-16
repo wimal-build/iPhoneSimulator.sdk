@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           347AC04E-3A06-37BF-B2A9-FEA63B600144
   - target:          x86_64-ios-simulator
-    value:           64997BDB-0D17-3784-B8AA-607EE0EBDBE7
+    value:           304B68AE-6D08-3555-B89B-3ACC4B594788
   - target:          arm64-ios-simulator
-    value:           6A2E956A-1239-32B4-A1C6-D65F9CC0B86D
+    value:           7C04C0D6-DB75-35BC-B18E-D3E41E9E4810
 install-name:    '/System/Library/Frameworks/ModelIO.framework/ModelIO'
 current-version: 236
 exports:

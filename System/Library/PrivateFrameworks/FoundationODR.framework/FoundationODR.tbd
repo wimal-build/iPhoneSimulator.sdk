@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1884C1C6-067C-3EB3-A03C-781208942BFE
   - target:          x86_64-ios-simulator
-    value:           469BB694-101E-36DF-A749-996CC217B227
+    value:           D79DA711-892D-30D7-B2F0-DF361C790DF6
   - target:          arm64-ios-simulator
-    value:           1BA75847-1F06-3C26-AA5F-36E4256D84A9
+    value:           8E73472A-FA29-3C87-9B0C-D6FAE9922557
 install-name:    '/System/Library/PrivateFrameworks/FoundationODR.framework/FoundationODR'
 exports:
   - targets:         [ i386-ios-simulator ]

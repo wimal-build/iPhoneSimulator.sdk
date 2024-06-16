@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           90FEB588-0C80-3E27-9267-5893397297D7
+    value:           F2F72A0F-9AB8-34CE-A938-84B2CF5E3955
   - target:          arm64-ios-simulator
-    value:           1C3D8D6E-0F2B-3165-93AE-7C644A5C99A8
+    value:           000ECDD6-36F6-3E18-A9F1-189DD179E8B2
 install-name:    '/System/Library/Frameworks/NaturalLanguage.framework/NaturalLanguage'
 current-version: 84
 exports:

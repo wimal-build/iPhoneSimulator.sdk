@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           961EC9C2-0BED-39C2-A53E-B65433CA149A
   - target:          x86_64-ios-simulator
-    value:           CA47FE2A-3B5B-360C-B2EE-1435D61A6511
+    value:           FC663C5C-8C7C-3DEA-8E12-7079D5E42CE4
   - target:          arm64-ios-simulator
-    value:           5217F7E2-68C8-3F1B-B9ED-B062C982BF66
+    value:           0708BBD1-D894-3690-9025-64944D1FFEAA
 install-name:    '/usr/lib/libTelephonyUtilDynamic.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

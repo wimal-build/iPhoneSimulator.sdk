@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B4CA7AF6-9668-39ED-A3FA-5D8E1BD0E687
+    value:           7D45D9EA-FEDB-304A-8EDC-9B9E34CE4BF4
   - target:          arm64-ios-simulator
-    value:           54B66C5F-2406-3E07-9F6B-44D59CFBF1E2
+    value:           CA69F9C9-A295-3A5B-B5C6-0E28565C81B3
 install-name:    '/System/Library/PrivateFrameworks/HeroAppPredictionClient.framework/HeroAppPredictionClient'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

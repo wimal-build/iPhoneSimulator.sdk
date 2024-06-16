@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           24F054B1-175F-3C13-839C-83AA31F0FFFA
+    value:           7ADD8B45-6FC7-34C2-9584-917124F82318
   - target:          arm64-ios-simulator
-    value:           999B804C-18B4-37E7-BC38-4B8D01D9FFBB
+    value:           63155835-6F0F-3808-9A34-A6EF35D21043
 install-name:    '/System/Library/PrivateFrameworks/SiriUICardKitProviderSupport.framework/SiriUICardKitProviderSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

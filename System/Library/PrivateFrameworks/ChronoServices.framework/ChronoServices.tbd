@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C9DB0AFA-E849-3C05-AD71-B0CDFA3BFCF7
+    value:           86333F5B-227A-3182-84E7-C8BAEEE25D65
   - target:          arm64-ios-simulator
-    value:           DC3205A0-AE46-3BF9-8B17-424246DE4A61
+    value:           B0D5DF69-77CD-329F-A356-ECFB3B4D281F
 install-name:    '/System/Library/PrivateFrameworks/ChronoServices.framework/ChronoServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

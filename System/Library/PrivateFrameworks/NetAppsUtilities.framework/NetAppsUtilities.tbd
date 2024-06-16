@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DC66ADA0-755A-3EFF-AC33-9E5F94B8C8FE
   - target:          x86_64-ios-simulator
-    value:           CC825ECD-3D42-3343-8C21-51CBA76BA3D2
+    value:           81E425E4-1C96-3C42-A704-286A975001E2
   - target:          arm64-ios-simulator
-    value:           21F0AD47-6014-3B1F-A702-9A0E3C20F883
+    value:           856428D8-4D02-3876-B6B9-19ECBC17A4B2
 install-name:    '/System/Library/PrivateFrameworks/NetAppsUtilities.framework/NetAppsUtilities'
 exports:
   - targets:         [ i386-ios-simulator ]

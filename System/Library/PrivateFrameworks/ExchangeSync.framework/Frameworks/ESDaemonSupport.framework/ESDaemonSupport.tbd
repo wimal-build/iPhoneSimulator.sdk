@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           30AC9151-8D60-3820-94B2-D41D9DA6082A
+    value:           4FF7544A-2D4E-3BEF-8D86-0B2B0D1AC6F4
   - target:          arm64-ios-simulator
-    value:           4003A7F9-A63F-3668-8375-7A79ABB72430
+    value:           8C7908CC-5F71-3EA1-869C-CF1A83CEDCCD
 install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/Frameworks/ESDaemonSupport.framework/ESDaemonSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

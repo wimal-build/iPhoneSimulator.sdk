@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7F7F90A6-2FC3-3E5C-B52A-BE128120DEF5
   - target:          x86_64-ios-simulator
-    value:           69A20D8A-7A87-32DC-B133-F5F14FBB7E9C
+    value:           7E9E7A88-4901-336E-96BE-E56BDDC62574
   - target:          arm64-ios-simulator
-    value:           94725213-013B-361D-9B85-4E012E87CB41
+    value:           09E3B427-D23F-3049-AC0F-F82DD28B78EC
 install-name:    '/System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices'
 current-version: 14
 exports:

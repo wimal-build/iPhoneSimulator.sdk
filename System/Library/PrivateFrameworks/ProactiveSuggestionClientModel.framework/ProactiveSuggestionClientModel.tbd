@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA8DA179-D931-3621-8648-BF875191DAEE
+    value:           F0D66427-86AD-316B-8EE2-2DB08D6D1F62
   - target:          arm64-ios-simulator
-    value:           5B7D5323-7C99-331D-AAAC-E895C2C1CF50
+    value:           AB34E9DC-1431-3452-9C3B-A4357A878EE3
 install-name:    '/System/Library/PrivateFrameworks/ProactiveSuggestionClientModel.framework/ProactiveSuggestionClientModel'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

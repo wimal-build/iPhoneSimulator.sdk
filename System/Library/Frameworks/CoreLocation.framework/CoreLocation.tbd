@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           947360CF-8080-387A-9FE9-6334FD6C2A93
   - target:          x86_64-ios-simulator
-    value:           DF815426-8699-32B8-81A4-48EBF5593849
+    value:           CEED4310-1938-3E29-92B9-8EF10ADF26DC
   - target:          arm64-ios-simulator
-    value:           C0C10559-50B8-3F6F-8CD9-FF00CA72F7D9
+    value:           97EC550F-D6FD-3DF1-8B0A-C8FC627E1538
 install-name:    '/System/Library/Frameworks/CoreLocation.framework/CoreLocation'
-current-version: 2420.0.57
+current-version: 2420.4.7
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CLClientClearNvramData, _CLClientCreate, _CLClientEnableNmeaOutput, 

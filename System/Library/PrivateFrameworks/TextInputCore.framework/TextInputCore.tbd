@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D98A1903-B185-35A3-B3B3-C5FF52BD8F6A
   - target:          x86_64-ios-simulator
-    value:           B3C2AC4C-0DBB-31CF-85F8-FB36E69F0F53
+    value:           E8679C1B-4666-3115-82F2-92DAC38894E7
   - target:          arm64-ios-simulator
-    value:           93179629-BB73-33DE-AD3D-5081F6A7E3ED
+    value:           61837751-F011-316F-A503-E5B139F1DEFE
 install-name:    '/System/Library/PrivateFrameworks/TextInputCore.framework/TextInputCore'
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]

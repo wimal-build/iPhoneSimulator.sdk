@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           25F04B2B-7CE8-3C9C-9EA3-DE6620C7653D
+    value:           DECE1145-DBE5-3506-9A28-74AF6E97DF91
   - target:          arm64-ios-simulator
-    value:           30842145-83DA-3015-8610-C1F8B87F5D0F
+    value:           6530E804-3CC3-3E53-86BC-65D554B5F053
 install-name:    '/System/Library/PrivateFrameworks/WebCore.framework/Frameworks/libANGLE-shared.dylib'
 current-version: 610.1.28
 allowable-clients:

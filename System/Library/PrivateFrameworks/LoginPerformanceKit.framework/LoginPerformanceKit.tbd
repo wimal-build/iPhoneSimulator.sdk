@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           674D73C2-918C-332C-8301-F04C6B621397
+    value:           9BE5A647-6543-3974-A3F0-9457BFD61F1F
   - target:          arm64-ios-simulator
-    value:           5DF4C1C9-D377-3E5F-9622-52D54F4BA336
+    value:           0D5AFE23-F264-36AA-B3C2-83ADD28396E4
 install-name:    '/System/Library/PrivateFrameworks/LoginPerformanceKit.framework/LoginPerformanceKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

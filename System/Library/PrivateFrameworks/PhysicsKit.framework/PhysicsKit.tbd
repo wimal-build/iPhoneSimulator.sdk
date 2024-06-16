@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5A881B31-09B4-3D3B-8842-673DA954830F
   - target:          x86_64-ios-simulator
-    value:           97CBFD8C-1953-3798-9006-707633528EA0
+    value:           F6A6D50B-5E6B-3D7F-A842-EB9FFCC68EBF
   - target:          arm64-ios-simulator
-    value:           1CD3ACA5-9BCD-3227-A78F-E0293D6298FA
+    value:           72ACB5EB-5201-38D6-ABA7-E7A985F5E33F
 install-name:    '/System/Library/PrivateFrameworks/PhysicsKit.framework/PhysicsKit'
 current-version: 30
 exports:

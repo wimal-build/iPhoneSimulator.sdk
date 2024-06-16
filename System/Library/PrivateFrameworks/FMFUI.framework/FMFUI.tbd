@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           33BE96F5-E00E-3A98-A61B-475D1FE3A460
   - target:          x86_64-ios-simulator
-    value:           73457181-8586-3E37-B62C-49AA3DE283DD
+    value:           BD0D6E9D-B0F5-3AAA-9EC1-1DACAA19A9C5
   - target:          arm64-ios-simulator
-    value:           E3CC0189-12F1-3D65-89F4-C28FCB36F7F6
+    value:           B10C307B-9E99-3F10-BC0D-D0F4BDED70B8
 install-name:    '/System/Library/PrivateFrameworks/FMFUI.framework/FMFUI'
 exports:
   - targets:         [ i386-ios-simulator ]

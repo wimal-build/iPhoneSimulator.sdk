@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           808182CD-E88D-30C7-9595-31CCA0E47AAD
   - target:          x86_64-ios-simulator
-    value:           512A7AB5-E8EE-313F-8007-DF5A713A3559
+    value:           C3A830F4-A1FC-3777-A6E9-6189D586BED2
   - target:          arm64-ios-simulator
-    value:           107FDD05-9BE9-35D7-81B8-82E82E24F107
+    value:           FA15DB2C-3351-3D0D-8776-58433BAE867C
 install-name:    '/System/Library/PrivateFrameworks/CellularPlanManager.framework/CellularPlanManager'
 current-version: 0
 exports:

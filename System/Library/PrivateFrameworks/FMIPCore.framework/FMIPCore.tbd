@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6759138A-6BBD-31BC-8A13-975C3DB153F8
+    value:           9DA1E90F-B5CB-3BA5-BE05-89BD8830F39B
   - target:          arm64-ios-simulator
-    value:           1DABF8AF-7951-35EF-A780-B6EF03A9B21D
+    value:           8C193AEE-4A53-3AF8-A55D-FFD5BD152150
 install-name:    '/System/Library/PrivateFrameworks/FMIPCore.framework/FMIPCore'
 swift-abi-version: 7
 allowable-clients:
@@ -229,8 +229,7 @@ exports:
                        '_$s8FMIPCore12FMIPFeaturesVs28CustomDebugStringConvertibleAAMc', 
                        '_$s8FMIPCore12FMIPFeaturesVs9OptionSetAAMc', '_$s8FMIPCore12FMIPLocationV12isInaccurateSbvg', 
                        '_$s8FMIPCore12FMIPLocationV12isInaccurateSbvpMV', '_$s8FMIPCore12FMIPLocationV12locationTypeAA0bD0Ovg', 
-                       '_$s8FMIPCore12FMIPLocationV12locationTypeAA0bD0OvpMV', '_$s8FMIPCore12FMIPLocationV12safeLocationACSo06SPSafeD0C_tcfC', 
-                       '_$s8FMIPCore12FMIPLocationV14beaconLocationACSo08SPBeaconD0C_tcfC', 
+                       '_$s8FMIPCore12FMIPLocationV12locationTypeAA0bD0OvpMV', '_$s8FMIPCore12FMIPLocationV14beaconLocationACSo08SPBeaconD0C_tcfC', 
                        '_$s8FMIPCore12FMIPLocationV16debugDescriptionSSvg', '_$s8FMIPCore12FMIPLocationV16debugDescriptionSSvpMV', 
                        '_$s8FMIPCore12FMIPLocationV18isLocationFinishedSbvg', '_$s8FMIPCore12FMIPLocationV18isLocationFinishedSbvpMV', 
                        '_$s8FMIPCore12FMIPLocationV2eeoiySbAC_ACtFZ', '_$s8FMIPCore12FMIPLocationV4fromACs7Decoder_p_tKcfC', 

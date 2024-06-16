@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           269B55A9-70E6-3A6E-B666-3D4D20E78158
   - target:          x86_64-ios-simulator
-    value:           5C61E003-32C5-340C-BE4A-15030555668A
+    value:           D64CDC6D-6E51-317A-A00F-6CBA21782059
   - target:          arm64-ios-simulator
-    value:           79B753DC-A06F-3B42-A193-8CCFA48C3763
+    value:           6C1B9B54-40C5-35C2-AB10-EF5B9A04DD56
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

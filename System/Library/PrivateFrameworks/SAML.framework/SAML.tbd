@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           603BBBCC-337D-32E6-BE4D-118F7954FF5B
   - target:          x86_64-ios-simulator
-    value:           9322D6AE-B030-3300-A727-BBD492A1E0BC
+    value:           B33DB8A3-B87A-3686-83E0-A7B00C5FF09D
   - target:          arm64-ios-simulator
-    value:           BDC763A0-B26C-3626-94EF-F0AE14FE9A17
+    value:           794DC66C-C268-3F91-84A3-D6FEA86D07C0
 install-name:    '/System/Library/PrivateFrameworks/SAML.framework/SAML'
 current-version: 364.0.3
 exports:

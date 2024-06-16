@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           659BFC4E-F21B-3892-9933-00E6A6EC5032
   - target:          x86_64-ios-simulator
-    value:           2E713701-34AB-3154-BF2C-924498D5AC87
+    value:           B0EAA1FE-FF28-3858-A7E1-373F011E1FD0
   - target:          arm64-ios-simulator
-    value:           847B1FA8-3EFF-3533-B63F-4AB215689FA5
+    value:           F74FDF99-997D-38A8-89DE-26596B0D8913
 install-name:    '/System/Library/PrivateFrameworks/CommonUtilities.framework/CommonUtilities'
 current-version: 800
 exports:

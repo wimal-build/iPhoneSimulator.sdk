@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4868C6E1-B618-3FAA-84E6-4AA5F2DEE142
   - target:          x86_64-ios-simulator
-    value:           CDD23B94-6411-31B0-A6B0-BB92C7285248
+    value:           A965897B-21F2-3FDE-BFCA-7B9B2819AE71
   - target:          arm64-ios-simulator
-    value:           5E8F6A90-961F-32E3-8C29-8590A013038B
+    value:           4886FA4A-710D-39BE-AE4C-0EACA012715F
 install-name:    '/System/Library/PrivateFrameworks/IAP.framework/IAP'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

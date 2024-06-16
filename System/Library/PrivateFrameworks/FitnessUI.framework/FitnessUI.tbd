@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6B8AB604-3547-3550-979F-6C2EBEDBB279
   - target:          x86_64-ios-simulator
-    value:           648418E5-F0C1-3464-9D9B-EEBC7FC9FFE7
+    value:           6F521248-1956-33BC-9182-E6F755C40E9C
   - target:          arm64-ios-simulator
-    value:           82FA1A8E-8A09-371F-ABFB-E93597183E41
+    value:           8211D479-D909-3E14-8A86-1D69B24D6D69
 install-name:    '/System/Library/PrivateFrameworks/FitnessUI.framework/FitnessUI'
 exports:
   - targets:         [ i386-ios-simulator ]

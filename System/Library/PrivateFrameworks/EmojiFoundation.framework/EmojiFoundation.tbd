@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           32F7684A-DF7A-3E82-9BFB-3866C4FCCB1F
   - target:          x86_64-ios-simulator
-    value:           4F295FE3-A190-32A5-A21D-E31C2F393276
+    value:           B1FA0BF2-39DB-3B6C-8F82-11A81C2C7541
   - target:          arm64-ios-simulator
-    value:           C2ADE3AF-6604-3AD5-8D67-BF1819206C16
+    value:           063A1A70-44B9-353F-BE68-D0472BD5AA92
 install-name:    '/System/Library/PrivateFrameworks/EmojiFoundation.framework/EmojiFoundation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

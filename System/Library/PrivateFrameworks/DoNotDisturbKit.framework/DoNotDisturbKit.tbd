@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B18C295E-544B-3A00-A684-86EDE497B08C
+    value:           7A88D108-DCBB-3981-AFD5-501F3687F16B
   - target:          arm64-ios-simulator
-    value:           377F6086-35B6-31B7-AFE7-3366A78F8F2F
+    value:           8F85FF5C-5F3B-3250-BFB8-76557EEB0BFC
 install-name:    '/System/Library/PrivateFrameworks/DoNotDisturbKit.framework/DoNotDisturbKit'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

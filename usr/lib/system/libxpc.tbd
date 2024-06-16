@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F175CC10-3583-37BF-A648-1E78235C2F05
   - target:          x86_64-ios-simulator
-    value:           16262110-9F40-30DC-BDCB-5F794AC8D7FA
+    value:           5B766255-3DAE-3096-A090-3974BE256194
   - target:          arm64-ios-simulator
-    value:           FD5459F3-F91B-3126-8A7C-6061408ED744
+    value:           5F12A051-C1B4-300E-8139-AA14C65D09C7
 install-name:    '/usr/lib/system/libxpc.dylib'
 current-version: 2038.0.15
 parent-umbrella:

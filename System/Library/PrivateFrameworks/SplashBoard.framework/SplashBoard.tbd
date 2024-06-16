@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B7749269-5447-3B9D-87E6-7D8CAA1ED45A
   - target:          x86_64-ios-simulator
-    value:           C517526A-10D7-3ED6-A926-88D9A829AD03
+    value:           FDE6BA6C-CCD1-30D3-8999-53A364FEE991
   - target:          arm64-ios-simulator
-    value:           F86C701D-1ACF-3A9F-B8EA-0217F88AB723
+    value:           3664D3BA-5004-37CE-839B-06ECDC94D230
 install-name:    '/System/Library/PrivateFrameworks/SplashBoard.framework/SplashBoard'
 exports:
   - targets:         [ i386-ios-simulator ]

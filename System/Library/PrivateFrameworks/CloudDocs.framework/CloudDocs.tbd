@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FCE6F0A6-7FCA-3631-B10D-966CD7CFB198
   - target:          x86_64-ios-simulator
-    value:           09B4DC6B-4335-3E63-95E7-A1A73A502272
+    value:           BACBECE3-F2D2-3697-8683-957FBABF9227
   - target:          arm64-ios-simulator
-    value:           AC2CF694-4B0A-369F-8815-7579AB32E1A4
+    value:           A278B484-4AE4-373D-8E9A-FCBCF59CE29A
 install-name:    '/System/Library/PrivateFrameworks/CloudDocs.framework/CloudDocs'
 current-version: 716
 compatibility-version: 0

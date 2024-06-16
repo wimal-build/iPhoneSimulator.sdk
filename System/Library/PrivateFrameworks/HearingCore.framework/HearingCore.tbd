@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9A81BEDD-2C1D-319C-83FF-0E5C609B3C24
+    value:           953C6F23-A959-32EE-848A-C4D86F7C5BCE
   - target:          arm64-ios-simulator
-    value:           1874AC6A-D137-33CC-8823-DDDA662950EC
+    value:           91681C63-E5BD-30FB-8997-84804D072D6F
 install-name:    '/System/Library/PrivateFrameworks/HearingCore.framework/HearingCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

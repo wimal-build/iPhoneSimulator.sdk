@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           05DB190B-D1CE-30AE-80BC-4B7B15A040AC
+    value:           68847CD9-6F10-33CB-956B-95DF583E733B
   - target:          arm64-ios-simulator
-    value:           0B0032EF-2CC1-346E-AECE-75AF531E834A
+    value:           2F52C955-2FE1-3159-BEFA-EEC2D77266BF
 install-name:    '/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -271,10 +271,10 @@ exports:
                        _SBLogAppSwitcher, _SBLogAudioControl, _SBLogBacklight, _SBLogBanner, 
                        _SBLogButtonsCamera, _SBLogButtonsCombo, _SBLogButtonsHome, 
                        _SBLogButtonsInteraction, _SBLogButtonsLock, _SBLogButtonsVolume, 
-                       _SBLogChrono, _SBLogClassicMode, _SBLogContinuity, _SBLogDataReset, 
-                       _SBLogDock, _SBLogGreen, _SBLogHIDKeyboardEvents, _SBLogHUD, 
-                       _SBLogHomeAffordance, _SBLogIcon, _SBLogIconController, _SBLogLiftToWake, 
-                       _SBLogLockScreenHint, _SBLogPointer, _SBLogProactiveAppLibrary, 
+                       _SBLogCharging, _SBLogChrono, _SBLogClassicMode, _SBLogContinuity, 
+                       _SBLogDataReset, _SBLogDock, _SBLogGreen, _SBLogHIDKeyboardEvents, 
+                       _SBLogHUD, _SBLogHomeAffordance, _SBLogIcon, _SBLogIconController, 
+                       _SBLogLiftToWake, _SBLogLockScreenHint, _SBLogPointer, _SBLogProactiveAppLibrary, 
                        _SBLogProactiveHome, _SBLogProximitySensor, _SBLogRemoteAlert, 
                        _SBLogRingerHUD, _SBLogSceneResize, _SBLogScreenTime, _SBLogSmartCover, 
                        _SBLogSound, _SBLogSwitcherSnapshotCache, _SBLogSystemGesture, 
@@ -405,9 +405,10 @@ exports:
                        _SBTMCachedBooleanDebugName, _SBTTYChangedNotification, _SBTVRemoteUIServiceBundleIdentifier, 
                        _SBTestFlightBundleIdentifier, _SBTestableAlertItemTestCases, 
                        _SBThermalControllerStateDidChange, _SBTodayFavoriteInstructionLabelInset, 
-                       _SBTodayHeaderPlatterMargin, _SBTodayViewIsVisible, _SBTodayViewSearchBarTopOffset, 
-                       _SBTransactionErrorAppRepairFailed, _SBTransactionErrorAppRepairRequiresDataConnection, 
-                       _SBTransactionErrorAutoPiPFailed, _SBUIACStatusChangedNotification, 
+                       _SBTodayHeaderPlatterMargin, _SBTodayViewIsVisible, _SBTransactionErrorAppRepairFailed, 
+                       _SBTransactionErrorAppRepairRequiresDataConnection, _SBTransactionErrorAutoPiPFailed, 
+                       _SBUIACStatusChangedNotification, _SBUIAccessoryAnimationStatusChangedNotification, 
+                       _SBUIAccessoryAttachedNotification, _SBUIAccessoryDetachedNotification, 
                        _SBUIAppSwitcherObscuredNotification, _SBUIAppSwitcherRevealedNotification, 
                        _SBUIAppSwitcherWillRevealNotification, _SBUIApplicationIconLaunchEventLabel, 
                        _SBUIBatteryNotChargingStatusChangedNotification, _SBUICScaledRectWithOffsets, 
@@ -786,12 +787,12 @@ exports:
                        SBExternalGlobalDefaults, SBExternalHomeGestureFloatingSwitcherModifier, 
                        SBExternalInlineAppExposeTransitionSwitcherModifier, SBExternalNotesDefaults, 
                        SBExternalPhoneDefaults, SBExternalSettingsDefaults, SBExternalSetupDefaults, 
-                       SBExternalSoundsDefaults, SBExternalWifiDefaults, SBFMotionGestureController, 
-                       SBFaceContactExpectationManager, SBFaceIDCoachingConditionRecipe, 
-                       SBFailingSystemGestureRecognizer, SBFailureNotifyingTapGestureRecognizer, 
-                       SBFairPlayFamilyLeaveAlertItem, SBFakeiTunesRestoreTestRecipe, 
-                       SBFallbackSnapshotDataProvider, SBFixedLayoutModeSwitcherModifier, 
-                       SBFloatingApplicationInlineAppExposeLiveContentOverlayView, 
+                       SBExternalSoundsDefaults, SBExternalWifiDefaults, SBFMotionAlarmController, 
+                       SBFMotionGestureController, SBFaceContactExpectationManager, 
+                       SBFaceIDCoachingConditionRecipe, SBFailingSystemGestureRecognizer, 
+                       SBFailureNotifyingTapGestureRecognizer, SBFairPlayFamilyLeaveAlertItem, 
+                       SBFakeiTunesRestoreTestRecipe, SBFallbackSnapshotDataProvider, 
+                       SBFixedLayoutModeSwitcherModifier, SBFloatingApplicationInlineAppExposeLiveContentOverlayView, 
                        SBFloatingApplicationLiveContentWindow, SBFloatingApplicationSceneLiveContentOverlayView, 
                        SBFloatingApplicationTestRecipe, SBFloatingDockBehaviorAssertion, 
                        SBFloatingDockController, SBFloatingDockRootViewController, 

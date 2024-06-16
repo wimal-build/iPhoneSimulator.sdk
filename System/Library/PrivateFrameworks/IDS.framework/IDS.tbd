@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4EC50E6E-BFDB-3F11-8213-E31BD1C98677
   - target:          x86_64-ios-simulator
-    value:           56B8D35A-B39B-3FD1-BA5D-08DD86A27B10
+    value:           C9926966-6538-381C-AAF4-A5DD6E7835CC
   - target:          arm64-ios-simulator
-    value:           70FF27B6-3981-32B2-9DD7-FFC2A53B5E69
+    value:           AE17927E-949C-31A9-983C-BBF64851EAC8
 install-name:    '/System/Library/PrivateFrameworks/IDS.framework/IDS'
 current-version: 800
 reexported-libraries:
@@ -202,9 +202,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C99D8B42-C901-3BA8-BE5F-1C37DDC89B3E
   - target:          x86_64-ios-simulator
-    value:           273E2F42-F2CE-3015-B5D9-3D40A0660C7A
+    value:           744552C5-2480-3EF6-A89D-B0DE281AD5E2
   - target:          arm64-ios-simulator
-    value:           F7B8D14B-04BD-3C4D-92F6-959596DE48D2
+    value:           46FA8AE4-2F60-3E77-B0D8-6B28428CE836
 install-name:    '/System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation'
 current-version: 800
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9D0CE68E-87B9-3C49-B97B-FB3117B283B0
   - target:          x86_64-ios-simulator
-    value:           678D52D7-8867-3643-BB49-124E11698C66
+    value:           3CC3545B-AF7D-3746-B6D3-115ECA42405A
   - target:          arm64-ios-simulator
-    value:           C910E128-C7F4-32AC-8000-2BE723868479
+    value:           5652A8CC-B60A-3EF6-9C32-55BCB476BBB4
 install-name:    '/System/Library/PrivateFrameworks/WebInspector.framework/WebInspector'
 current-version: 610.1.28
 exports:

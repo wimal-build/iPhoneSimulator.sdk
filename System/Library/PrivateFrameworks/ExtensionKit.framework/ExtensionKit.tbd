@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           14744B93-FDFC-3C8C-A9C2-EE0811E2B2E1
+    value:           EE11EBE4-A04C-3CCB-9EAE-12BCB76C199A
   - target:          arm64-ios-simulator
-    value:           AA5BE09B-61F9-3C39-A2DE-4851D4AB95D1
+    value:           1F6C7853-02CB-35C6-957E-B56F57D4D5B8
 install-name:    '/System/Library/PrivateFrameworks/ExtensionKit.framework/ExtensionKit'
 current-version: 17.3
 exports:

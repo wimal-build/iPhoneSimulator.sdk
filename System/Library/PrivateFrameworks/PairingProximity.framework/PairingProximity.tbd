@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6A01126B-1F1D-3A0E-AEB0-0C3CE8AC37B7
   - target:          x86_64-ios-simulator
-    value:           27319067-D6C2-3C2D-9D5E-05660C468C50
+    value:           2C2AF578-8FB5-3D35-B61E-C72135734DDD
   - target:          arm64-ios-simulator
-    value:           F922948E-66CB-3667-B53B-C003790E0691
+    value:           145B086E-DD97-314F-B0A7-92C06B73FF33
 install-name:    '/System/Library/PrivateFrameworks/PairingProximity.framework/PairingProximity'
 exports:
   - targets:         [ i386-ios-simulator ]

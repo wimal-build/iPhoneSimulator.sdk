@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8D1FD54E-C537-3B46-94A8-07AC795A151F
   - target:          x86_64-ios-simulator
-    value:           27704A4B-B36C-3460-A1D0-059B0047C786
+    value:           5F77716D-FBB8-3FCB-B59D-DB13DC793FCF
   - target:          arm64-ios-simulator
-    value:           9988BC77-418E-366B-968D-14C46751C353
+    value:           4F5931D7-6A53-38B5-A66E-7D5E1098EDD0
 install-name:    '/System/Library/PrivateFrameworks/NanoComplicationSettings.framework/NanoComplicationSettings'
 exports:
   - targets:         [ i386-ios-simulator ]

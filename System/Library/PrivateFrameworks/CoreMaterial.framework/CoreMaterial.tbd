@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4607CDCD-0D2E-3E55-B8EE-E375500EA28C
+    value:           E9DAA09B-3A65-3D0F-9020-D70E9880BF3D
   - target:          arm64-ios-simulator
-    value:           5DEC1AB9-3B81-3CF2-9974-45A234D6E9F4
+    value:           2EE035CC-B27B-3186-A32E-6894F9CC3A87
 install-name:    '/System/Library/PrivateFrameworks/CoreMaterial.framework/CoreMaterial'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

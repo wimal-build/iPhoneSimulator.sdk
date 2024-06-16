@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C67B6FBA-2852-3228-B332-B4643D57DBCF
   - target:          x86_64-ios-simulator
-    value:           8BDEE7F7-AAB3-3567-BD6A-97729AFFA3DE
+    value:           3E6188C7-E06A-38BA-81EA-6BB10EA723A6
   - target:          arm64-ios-simulator
-    value:           DCC87E2F-2BAD-3DCA-98D9-993F8FA06186
+    value:           7E018B11-9C88-3809-A6B0-6925EEDEAE2A
 install-name:    '/System/Library/PrivateFrameworks/CalendarNotification.framework/CalendarNotification'
 exports:
   - targets:         [ i386-ios-simulator ]

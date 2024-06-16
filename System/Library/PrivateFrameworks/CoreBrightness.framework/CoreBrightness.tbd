@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1CB45B70-4411-31FB-A96A-3FB969430CBC
   - target:          x86_64-ios-simulator
-    value:           2ECF70AB-F5D2-37A0-892E-4BD222387E7F
+    value:           5747DEAC-55A3-3C45-8B71-998D665A6AD2
   - target:          arm64-ios-simulator
-    value:           44752D43-970B-3122-804D-F6EE5F808B3D
+    value:           1FB9DBCE-B0EF-3AF4-B627-8D985625CA4E
 install-name:    '/System/Library/PrivateFrameworks/CoreBrightness.framework/CoreBrightness'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

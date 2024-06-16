@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           117A177E-9C72-34F5-A077-3007B6777FBB
   - target:          x86_64-ios-simulator
-    value:           6CEEC642-3496-3C85-8462-AC0EAE977700
+    value:           349052A6-2D25-3B86-91DE-A092B780A270
   - target:          arm64-ios-simulator
-    value:           E098D794-6F5D-311B-BFDF-05E8614908E0
+    value:           C5A69E70-D2D4-3089-8A88-262CDF75F318
 install-name:    '/System/Library/PrivateFrameworks/RemoteUI.framework/RemoteUI'
 exports:
   - targets:         [ i386-ios-simulator ]

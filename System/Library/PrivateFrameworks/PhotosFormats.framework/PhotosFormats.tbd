@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           DA785257-E67C-31E4-8ADD-5661537F7EBE
   - target:          x86_64-ios-simulator
-    value:           165E8026-4E5A-39E4-972E-4479D8DAB7D9
+    value:           D3C4FEAD-F547-3F0E-83E8-6F86B7DCE71A
   - target:          arm64-ios-simulator
-    value:           2922FA9A-C060-3A53-9884-22F4F7010F4B
+    value:           75DDE9C6-1C6F-3908-9105-9B93C19922EC
 install-name:    '/System/Library/PrivateFrameworks/PhotosFormats.framework/PhotosFormats'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _PFMetadataOriginatingSignature ]
@@ -128,13 +128,14 @@ exports:
                        PFLivePhotoPlaybackSettings, PFMediaCapabilities, PFMediaCapabilitiesQuery, 
                        PFMediaUtilities, PFMetadataBuilder, PFMutableCameraAdjustments, 
                        PFPhotoSharingOperation, PFPhotosFaceUtilities, PFProportionalIntegralController, 
-                       PFRWSampleBufferChannel, PFSharingRemaker, PFSharingRemakerOperation, 
-                       PFSharingRemakerOptions, PFSharingUtilities, PFSinglePassVideoExportItem, 
-                       PFSinglePassVideoExportItemStatistics, PFSlowMotionConfiguration, 
-                       PFSlowMotionRampConfiguration, PFSlowMotionTimeRangeMapper, 
-                       PFSlowMotionTimeRangeMapperScaledRegion, PFSlowMotionUtilities, 
-                       PFTimeZoneLookup, PFVideoAVObjectBuilder, PFVideoAdjustments, 
-                       PFVideoComplement, PFVideoEncoding, PFVideoExport, PFVideoExportRangeCoordinator, 
-                       PFVideoExportRangeWaitingCaller, PFVideoMetadata, PFVideoMetadataBuilder, 
-                       PFVideoSharingOperation, PFXMPMetadataBuilder, _PFCameraMetadataAVMetadataObject ]
+                       PFRWSampleBufferChannel, PFSemanticEnhancePregateCalculator, 
+                       PFSharingRemaker, PFSharingRemakerOperation, PFSharingRemakerOptions, 
+                       PFSharingUtilities, PFSinglePassVideoExportItem, PFSinglePassVideoExportItemStatistics, 
+                       PFSlowMotionConfiguration, PFSlowMotionRampConfiguration, 
+                       PFSlowMotionTimeRangeMapper, PFSlowMotionTimeRangeMapperScaledRegion, 
+                       PFSlowMotionUtilities, PFTimeZoneLookup, PFVideoAVObjectBuilder, 
+                       PFVideoAdjustments, PFVideoComplement, PFVideoEncoding, PFVideoExport, 
+                       PFVideoExportRangeCoordinator, PFVideoExportRangeWaitingCaller, 
+                       PFVideoMetadata, PFVideoMetadataBuilder, PFVideoSharingOperation, 
+                       PFXMPMetadataBuilder, _PFCameraMetadataAVMetadataObject ]
 ...

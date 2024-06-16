@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           08E4CF9E-5575-34D8-85F1-D71AD1B8F8EC
+    value:           8100C5CF-F342-3A96-801A-1401372311F9
   - target:          arm64-ios-simulator
-    value:           2C2B3428-16B5-30D4-B78D-5538FF528B4B
+    value:           316B0A4C-997F-3885-8E13-987F46B85C85
 install-name:    '/System/Library/PrivateFrameworks/Stocks/StocksUI.framework/StocksUI'
 swift-abi-version: 7
 allowable-clients:

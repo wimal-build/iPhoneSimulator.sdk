@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           89DF1D2A-8C6A-3F7A-9FA1-D0BE2BFE7FE6
   - target:          x86_64-ios-simulator
-    value:           780BD3C2-1A07-3666-BB70-CCA014B69834
+    value:           2BAEE5A4-1C65-3EFB-AB9C-247F188CA860
   - target:          arm64-ios-simulator
-    value:           6A275096-AE2C-3CEB-A072-DEADC17F531C
+    value:           F8CC815C-C9AE-3379-8C4B-A9F050621EBC
 install-name:    '/System/Library/PrivateFrameworks/UserNotificationsKit.framework/UserNotificationsKit'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

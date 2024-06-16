@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BB765594-BEB8-3637-AB9E-A1124D8138A4
   - target:          x86_64-ios-simulator
-    value:           4A394DE4-0738-311A-9DA7-A59A27C3B685
+    value:           C40F8A6E-A852-3106-809A-32D145997A68
   - target:          arm64-ios-simulator
-    value:           D5DFE0ED-553F-349F-B650-0715B5C8C423
+    value:           D0D0C52E-C513-3879-BEC5-0AFD233EC7A7
 install-name:    '/usr/lib/libmecabra.dylib'
 current-version: 924
 exports:

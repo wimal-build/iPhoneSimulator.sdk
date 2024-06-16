@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F1D82C83-E84E-3730-A2E3-CC5770538CA7
+    value:           E2AEAD47-6544-3DBE-B10C-7F966A1ACB61
   - target:          arm64-ios-simulator
-    value:           D74AABB6-3DDC-331C-B12C-83B81F21835C
+    value:           03AE349A-0E4C-37EA-B755-D95BA9B97716
 install-name:    '/System/Library/PrivateFrameworks/AttributeGraph.framework/AttributeGraph'
 swift-abi-version: 7
 exports:

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           62DC3661-D665-3391-8BE1-C9524618106B
   - target:          x86_64-ios-simulator
-    value:           31297F79-C8F7-3EDB-9727-966A8FAFE498
+    value:           FD8464D9-2109-3427-83B1-0F64789A3A73
   - target:          arm64-ios-simulator
-    value:           92459415-EA4D-35B8-A8C1-AF70ABF58A2C
+    value:           9373F1CD-A0B6-363E-BB1C-2B202DA02F79
 install-name:    '/System/Library/PrivateFrameworks/Message.framework/MailServices/POP.framework/POP'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ __addValuesToMutableArray ]

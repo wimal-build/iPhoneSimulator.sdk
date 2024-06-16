@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E0570174-07DB-3DE7-968C-E0811E7D78CE
+    value:           87A9A531-08C1-38B7-A82F-9B60F93845B3
   - target:          arm64-ios-simulator
-    value:           B7F7EF5F-CE1E-372A-A8CA-484391323FDC
+    value:           27095FE1-25C2-3AF8-9B74-9824829A2327
 install-name:    '/System/Library/PrivateFrameworks/AppSSOKerberos.framework/AppSSOKerberos'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

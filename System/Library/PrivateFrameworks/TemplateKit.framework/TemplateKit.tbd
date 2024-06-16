@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           54B95F66-00AD-3661-9E7D-A254DEB5EDDD
+    value:           BE0F181A-DC29-3729-B58E-3EB3518187FE
   - target:          arm64-ios-simulator
-    value:           66AACD53-9CFF-343D-A24E-5C43E8CAF097
+    value:           E1D309EF-6FAC-330F-B446-64EA1B4879AA
 install-name:    '/System/Library/PrivateFrameworks/TemplateKit.framework/TemplateKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

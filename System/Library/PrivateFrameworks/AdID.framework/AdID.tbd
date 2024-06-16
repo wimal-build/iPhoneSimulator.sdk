@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           96047251-7B66-310D-B123-0E7B1FC6F92A
+    value:           125F67F4-3653-338F-B5F4-02D64C3CC390
   - target:          arm64-ios-simulator
-    value:           02BB15A5-CFA8-3390-87E1-D4672C048106
+    value:           DDF7B25F-2609-3566-AF2D-2D9AC49C45E5
 install-name:    '/System/Library/PrivateFrameworks/AdID.framework/AdID'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

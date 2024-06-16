@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AAA49988-FFD9-32B7-B33D-F19A183B5349
   - target:          x86_64-ios-simulator
-    value:           0DB29AC2-3181-35C9-92F6-B0187BC09B37
+    value:           15DF03F7-4C26-34CC-9053-EEE2393CBDBB
   - target:          arm64-ios-simulator
-    value:           D28A6963-1343-3E1A-A6DA-D3D90F8FE1C9
+    value:           C664AFB5-A63C-30B3-8734-347E779FDA97
 install-name:    '/System/Library/PrivateFrameworks/BatteryCenter.framework/BatteryCenter'
 current-version: 0
 compatibility-version: 0
@@ -25,9 +25,10 @@ exports:
                        _kBCBatteryDeviceB282ProductIdentifier, _kBCBatteryDeviceB288ProductIdentifier, 
                        _kBCBatteryDeviceB298ProductIdentifier, _kBCBatteryDeviceB312ProductIdentifier, 
                        _kBCBatteryDeviceB352ProductIdentifier, _kBCBatteryDeviceB364ProductIdentifier, 
-                       _kBCBatteryDeviceB419ProductIdentifier, _kBCBatteryDeviceB443ProductIdentifier, 
-                       _kBCBatteryDeviceB444ProductIdentifier, _kBCBatteryDeviceK39ProductIdentifier, 
-                       _kBCBatteryDeviceR5xProductIdentifier, _orderedDeviceAccessoryCategories ]
+                       _kBCBatteryDeviceB372ProductIdentifier, _kBCBatteryDeviceB419ProductIdentifier, 
+                       _kBCBatteryDeviceB443ProductIdentifier, _kBCBatteryDeviceB444ProductIdentifier, 
+                       _kBCBatteryDeviceK39ProductIdentifier, _kBCBatteryDeviceR5xProductIdentifier, 
+                       _orderedDeviceAccessoryCategories ]
     objc-classes:    [ BCBatteryCenterPrototypingDomain, BCBatteryDevice, BCBatteryDeviceController, 
                        _BCPowerSourceController ]
 ...

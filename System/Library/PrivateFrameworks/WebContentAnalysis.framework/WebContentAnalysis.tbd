@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           41841FF0-60F5-3A9F-8D97-A5EC2D28EB0B
   - target:          x86_64-ios-simulator
-    value:           880A0F22-C2CE-320A-A14E-FF25F068DC69
+    value:           F6D0B9DF-1A9A-3BB7-80C9-48F14A6EB13F
   - target:          arm64-ios-simulator
-    value:           748B32EE-7ED7-3A34-A18A-40A24FF31388
+    value:           63BD5D30-6172-311E-AAB3-72FFE2F4912E
 install-name:    '/System/Library/PrivateFrameworks/WebContentAnalysis.framework/WebContentAnalysis'
 current-version: 12.1
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           209C31AB-E7E9-31F7-A803-DB0B47AD916B
+    value:           E726D0B7-9DE2-3A84-91D6-A22564C19979
   - target:          arm64-ios-simulator
-    value:           9D1D4C1A-0C4A-3A97-BC0E-D2FFA79BA355
+    value:           539F0228-3E88-3738-95D0-63B1DFBD8C8D
 install-name:    '/System/Library/PrivateFrameworks/AACCore.framework/AACCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FB4C45AD-E819-39E2-9ADD-991408405E9F
   - target:          x86_64-ios-simulator
-    value:           DCD4BAD3-E580-3DAD-A9C4-9E09AFE83D78
+    value:           960A2FFA-5843-3AD3-9F31-0F3777626599
   - target:          arm64-ios-simulator
-    value:           3664E193-C2AE-3A33-846E-D1DB2C8C8AC4
+    value:           037773DD-F9C3-3E04-91EC-3C0FB97C8A55
 install-name:    '/System/Library/PrivateFrameworks/ParsecSubscriptionServiceSupport.framework/ParsecSubscriptionServiceSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

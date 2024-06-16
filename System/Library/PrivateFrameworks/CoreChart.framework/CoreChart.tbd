@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7FFFBA10-51E7-3E66-8EE1-FFF78AC75105
+    value:           0E16F32E-2490-33B0-A456-5AA510708020
   - target:          arm64-ios-simulator
-    value:           7EC4E0E1-62CF-3ABF-A9EE-A7F09F880004
+    value:           1F3C3DBA-E309-3D29-BEF6-5183C6123118
 install-name:    '/System/Library/PrivateFrameworks/CoreChart.framework/CoreChart'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

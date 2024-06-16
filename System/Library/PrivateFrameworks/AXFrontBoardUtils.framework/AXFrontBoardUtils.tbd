@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4D2E4CEC-B773-313B-AE0E-4D0D6F63A763
+    value:           D0BAEBB2-2C17-30A1-B009-E80CE6166106
   - target:          arm64-ios-simulator
-    value:           CD39CE1C-6BD6-3644-BE38-C4061D41DA40
+    value:           61BDA9B7-A0FA-30E9-99D5-7421D787F429
 install-name:    '/System/Library/PrivateFrameworks/AXFrontBoardUtils.framework/AXFrontBoardUtils'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

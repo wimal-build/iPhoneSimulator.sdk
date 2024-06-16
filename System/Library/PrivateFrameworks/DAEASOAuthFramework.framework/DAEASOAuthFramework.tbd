@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D51FE430-36AE-310B-9423-490758325342
   - target:          x86_64-ios-simulator
-    value:           DD7BAD70-930E-37BA-B5B5-2505ECE2AD88
+    value:           BDEDF615-94F1-3566-982D-300376541E92
   - target:          arm64-ios-simulator
-    value:           9B320AD8-8846-38DB-99EC-9FA0E9DCCF47
+    value:           09BF1409-6B87-3433-8A39-569E5DE22624
 install-name:    '/System/Library/PrivateFrameworks/DAEASOAuthFramework.framework/DAEASOAuthFramework'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

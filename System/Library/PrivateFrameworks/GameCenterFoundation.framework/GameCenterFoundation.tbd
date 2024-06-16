@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D53C6FE2-BF4E-34A0-A114-91DC121B4598
   - target:          x86_64-ios-simulator
-    value:           D067A734-EE94-3526-BF7E-BD4C78A404C2
+    value:           1BDDC854-7D32-37DE-BF2B-E1DBE8B403F3
   - target:          arm64-ios-simulator
-    value:           BD573F4D-82A7-3557-88F7-4E6AC42EE1EE
+    value:           CA8E8F31-612B-3DB9-9859-FAD503EF5C16
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]

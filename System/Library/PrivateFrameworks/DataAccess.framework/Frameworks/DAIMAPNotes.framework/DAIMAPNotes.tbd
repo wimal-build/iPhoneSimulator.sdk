@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           31F38446-9CA5-3943-963C-719B68E03337
   - target:          x86_64-ios-simulator
-    value:           DBBA578D-DBEA-3951-A32F-5A2BB8DD656D
+    value:           0AF150A9-2EC7-35D2-AB31-6EBB23B673D2
   - target:          arm64-ios-simulator
-    value:           7D285EE7-EA81-32A8-996B-F6FDEFA3434E
+    value:           8CF2824D-0F54-3456-B5D8-5FC7085FDB6E
 install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DAIMAPNotes.framework/DAIMAPNotes'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

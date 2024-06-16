@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9CFFBBEB-978B-328E-B1EA-056C18D7A565
+    value:           20726AEC-0B41-3C31-B37D-F49958B92D27
   - target:          arm64-ios-simulator
-    value:           ED3F9467-39B4-38A5-9A5B-CF695C51C5A1
+    value:           9B07108B-D2A0-3756-A43B-470F1D27540A
 install-name:    '/System/Library/PrivateFrameworks/FMFCore.framework/FMFCore'
 swift-abi-version: 7
 allowable-clients:

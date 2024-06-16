@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B3AF2414-29FD-3306-8584-A605438B0A12
+    value:           EE3ED908-38D5-3D43-A006-0ECA891507D1
   - target:          arm64-ios-simulator
-    value:           6D832CD0-73D5-3F11-A564-5ADF23E2FF5A
+    value:           8549E333-1592-3F27-8274-15FDE8433FA3
 install-name:    '/System/Library/PrivateFrameworks/MessageLegacy.framework/MessageLegacy'
 current-version: 13
 exports:

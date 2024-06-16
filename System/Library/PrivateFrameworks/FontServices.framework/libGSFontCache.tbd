@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A6609D2C-FF66-3B49-BEE8-95174B4A8E12
   - target:          x86_64-ios-simulator
-    value:           BD07AF6B-CC7E-3DA4-9B7B-ACB96B32717D
+    value:           1E886905-231C-32B1-A729-2CBACC1CB4F9
   - target:          arm64-ios-simulator
-    value:           D169FC95-98C4-3CDC-92D3-A0E3ADC35D54
+    value:           D6D28D4B-657D-3A9F-8974-214F5B9F9EC1
 install-name:    '/System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

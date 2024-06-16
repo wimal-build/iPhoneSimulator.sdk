@@ -3,10 +3,10 @@ tbd-version:     4
 targets:         [ x86_64-macos, arm64-macos ]
 uuids:
   - target:          x86_64-macos
-    value:           AB0A610C-1E3E-3E77-AA4F-E4EA4E5A06A4
+    value:           96CC4438-CD3E-309C-A439-93619441C88B
   - target:          arm64-macos
-    value:           ED8CD566-0697-370B-914C-781982165DD9
-install-name:    '@iphonesimulator14.0-2038.0.15/usr/lib/system/host/liblaunch_sim.dylib'
+    value:           B95F27FB-77A0-36D6-B489-7ED2C0D3ABB1
+install-name:    '@iphonesimulator14.1-2038.0.15/usr/lib/system/host/liblaunch_sim.dylib'
 current-version: 2038.0.15
 exports:
   - targets:         [ x86_64-macos, arm64-macos ]

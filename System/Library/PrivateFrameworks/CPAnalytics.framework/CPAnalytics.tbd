@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           09801787-3B43-3894-A8A0-72E09A076270
+    value:           4F23B913-E2A8-3A05-9448-24EE2A6A62E5
   - target:          arm64-ios-simulator
-    value:           46BB101B-314D-328E-AE13-9F433306EDCF
+    value:           4E8E5A30-089F-3B20-A496-9664C78E282C
 install-name:    '/System/Library/PrivateFrameworks/CPAnalytics.framework/CPAnalytics'
-current-version: 302.0.220
+current-version: 310.1.160
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ CPAnalyticsTestSupport, MediaMiningKit, MobileSlideShow, PhotoAnalysis, 

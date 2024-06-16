@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E5426AAF-7B64-3EBB-85E4-175D1244D92B
   - target:          x86_64-ios-simulator
-    value:           F6C0338A-F5AF-33C7-8EAD-921A27C46358
+    value:           F5A59A1D-6BA0-35BB-96F7-21C3A3FD348D
   - target:          arm64-ios-simulator
-    value:           9F7EC9A1-A446-34BC-AAC8-81DE7EF37EC6
+    value:           FDC379DC-159B-3D49-B48C-F6EEBFD9D63D
 install-name:    '/System/Library/PrivateFrameworks/BluetoothManager.framework/BluetoothManager'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

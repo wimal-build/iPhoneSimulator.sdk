@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBE3BA23-970B-35F6-82BE-EEBA0ACEA245
+    value:           F2695515-50E0-3663-9C80-44F873047946
   - target:          arm64-ios-simulator
-    value:           32059C9F-D8FE-317B-B204-1C73A5EAED61
+    value:           80592583-63C2-38E9-9BA9-BAAC1E0BA582
 install-name:    '/System/Library/PrivateFrameworks/BarcodeSupport.framework/BarcodeSupport'
 current-version: 100
 exports:

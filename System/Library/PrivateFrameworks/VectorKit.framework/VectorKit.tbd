@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BBF50531-001D-396A-896A-82F44672B592
   - target:          x86_64-ios-simulator
-    value:           8974D8A7-598E-3774-8E05-C438BBB9DFAC
+    value:           AE490D28-F2EF-3100-B4E3-69A4B72880FC
   - target:          arm64-ios-simulator
-    value:           C645D7CC-9AF9-36F4-89E2-31AB164C71CE
+    value:           8B4D14D9-DEEB-39BC-9200-4B557873BAB4
 install-name:    '/System/Library/PrivateFrameworks/VectorKit.framework/VectorKit'
 current-version: 1721.30.8
 exports:

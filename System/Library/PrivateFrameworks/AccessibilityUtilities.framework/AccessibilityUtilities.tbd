@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           06E20EDC-D732-3A10-9C09-FE65CFF7BD19
   - target:          x86_64-ios-simulator
-    value:           F08DED79-D2F8-375A-B548-95C8E85E3108
+    value:           EE2C052F-AB47-3A5B-B061-930BFFEA18A4
   - target:          arm64-ios-simulator
-    value:           E5475CFA-072F-3FED-BAB3-FA85AC18108F
+    value:           B0ED89D7-6F7B-37AD-A6C6-32152F5FDF65
 install-name:    '/System/Library/PrivateFrameworks/AccessibilityUtilities.framework/AccessibilityUtilities'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -96,7 +96,7 @@ exports:
                        _AXAssistiveTouchRemoveIconsFromDictionary, _AXAssistiveTouchScannerColorDescription, 
                        _AXAssistiveTouchScrollIcons, _AXAssistiveTouchServerServiceName, 
                        _AXAssistiveTouchSystemIcons, _AXAssitiveTouchPosition, _AXAudioHDMIChannelLabelDescription, 
-                       _AXBackBoardServerServiceName, _AXBackTapClientIDSwitchControl, 
+                       _AXBTRouteIsAirpods, _AXBackBoardServerServiceName, _AXBackTapClientIDSwitchControl, 
                        _AXBackTapClientIDSystem, _AXBackTapClientIDVoiceOver, _AXBackboardServerShouldToggleGuidedAccessNotification, 
                        _AXBundleIDForAuditToken, _AXBundleIDForPID, _AXCACCommandEditorApplicationIdentifiersToNamesKey, 
                        _AXCACCommandEditorGestureKey, _AXCACCommandEditorPasteboardKey, 
@@ -546,9 +546,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           53575031-F60F-3BAE-811A-1513728EE145
+    value:           AFAAB1F1-741F-3917-AAA3-335D2DAA9DB9
   - target:          arm64-ios-simulator
-    value:           8326C5AC-3A95-37DB-8A6B-11DE3BD52BBE
+    value:           B8BDFF77-2F2F-322B-B138-BC1053B67CCA
 install-name:    '/System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

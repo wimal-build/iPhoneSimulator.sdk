@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           387791F2-D4B7-3F42-8497-151C30F3ECD9
+    value:           3D9B861E-EF1B-3211-B9A9-26B6E9B6B24C
   - target:          arm64-ios-simulator
-    value:           C32C8BAE-A40F-37D5-BC29-D8E99AA92A06
+    value:           9233E5C3-988C-38FE-A249-D5BD16D74695
 install-name:    '/System/Library/PrivateFrameworks/ClipUIServices.framework/ClipUIServices'
 current-version: 20.20
 exports:

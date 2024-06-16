@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F6DEF371-644E-3C06-B2FE-1B3D054A78BA
+    value:           7237C378-CC22-309F-BB50-852D0FA81FB9
   - target:          arm64-ios-simulator
-    value:           B03D55ED-AD05-33DE-B69D-0AD017B5B440
+    value:           84DA127E-B0C0-3221-BE58-7F3573DAC97C
 install-name:    '/System/Library/PrivateFrameworks/SiriOntology.framework/SiriOntology'
 swift-abi-version: 7
 allowable-clients:
@@ -20,7 +20,8 @@ allowable-clients:
                        ConversationStore, CoreKnowledge, CoreKnowledgeTests, CoreKnowledgeTests_OBJC, 
                        FindMyFlowPlugin, FindMyFlowPluginTests, FlowFrameKitTests, 
                        GeoFlowDelegatePlugin, HomeAutomationFlowDelegatePlugin, HomeAutomationFlowDelegatePluginTests, 
-                       HomeAutomationInternal, KnowledgeGraphFlowDelegatePlugin, 
+                       HomeAutomationInternal, HomeCommunicationFlowDelegatePlugin, 
+                       HomeCommunicationFlowDelegatePlugin-Tests, KnowledgeGraphFlowDelegatePlugin, 
                        KnowledgeGraphFlowDelegatePluginTests, MediaDialogTests, MediaFlowDelegatePlugin, 
                        MessagesFlowDelegatePlugin, MessagesFlowDelegatePlugin-Tests, 
                        NLv4InferenceOrchestrator, NLv4InferenceOrchestratorOnDeviceTest, 

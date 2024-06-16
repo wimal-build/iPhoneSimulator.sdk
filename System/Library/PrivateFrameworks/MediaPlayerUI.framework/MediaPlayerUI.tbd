@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CF8021EE-5E4B-336C-9D40-339A037457E8
   - target:          x86_64-ios-simulator
-    value:           ABEE928A-F003-37E1-8C45-A2FE31B3733B
+    value:           5AA32572-C340-3B8E-8BEE-A9AFDC177B9C
   - target:          arm64-ios-simulator
-    value:           AA225D44-3A11-35AC-BB72-476CC30BAFCA
+    value:           FF027576-8782-3929-AC4F-E817D64E044E
 install-name:    '/System/Library/PrivateFrameworks/MediaPlayerUI.framework/MediaPlayerUI'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -52,9 +52,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FA146C41-43ED-34BE-997C-2F750BA8E3C0
   - target:          x86_64-ios-simulator
-    value:           C387FE86-2EB6-331B-BD88-7FC62913A2FC
+    value:           5B8C317B-EDD2-321F-9F7E-8DD2A4873703
   - target:          arm64-ios-simulator
-    value:           FC42837F-AAAA-305D-96E2-42F1354C3865
+    value:           5DAEC8B2-295A-3381-A5B6-4B02AF483D26
 install-name:    '/System/Library/PrivateFrameworks/MPUFoundation.framework/MPUFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]

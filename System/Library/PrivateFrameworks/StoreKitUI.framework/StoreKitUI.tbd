@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           17EBCBB3-266C-35CB-84D4-9800894104CB
   - target:          x86_64-ios-simulator
-    value:           822A362A-2B18-3D04-82EC-0B4FD9E85E41
+    value:           69312E87-EBB4-369B-88D6-ED7C30C94C2C
   - target:          arm64-ios-simulator
-    value:           7A8BF761-9ABC-3FFE-866E-72E99A0826D3
+    value:           BDB12C20-C4EF-3B3E-80B5-B8F3DE5EAFB9
 install-name:    '/System/Library/PrivateFrameworks/StoreKitUI.framework/StoreKitUI'
 exports:
   - targets:         [ i386-ios-simulator ]

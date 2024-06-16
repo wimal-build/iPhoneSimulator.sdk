@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E25142BC-10CD-3C63-8DBE-61F95309881C
+    value:           0E1629EE-44BE-318E-9199-176D5933C7CC
   - target:          arm64-ios-simulator
-    value:           A2276A2A-A365-38FB-8A1C-82918FD4DF4C
+    value:           B56E4738-E496-3A13-83B3-FE623BCB1555
 install-name:    '/System/Library/PrivateFrameworks/Categories.framework/Categories'
 current-version: 5.25
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6F8B6768-4249-35AD-B018-A3BF89215A2A
   - target:          x86_64-ios-simulator
-    value:           03CE7925-F507-3EB8-BBD8-1CADF961D74D
+    value:           BB88439B-F9B7-30BC-B282-A97583C6530E
   - target:          arm64-ios-simulator
-    value:           2D42781B-B12C-3AE3-8882-14DD6F2A9818
+    value:           0AD70886-EDB5-3E7C-A835-2C3BA3538449
 install-name:    '/System/Library/PrivateFrameworks/ProofReader.framework/ProofReader'
 current-version: 524
 exports:

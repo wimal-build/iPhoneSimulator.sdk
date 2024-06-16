@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           42833F58-5983-3720-912D-1F61A9D20D40
+    value:           367E32A6-69C0-3401-8752-4FDBFB99DFA9
   - target:          arm64-ios-simulator
-    value:           EB8267AA-C98C-3A72-9A4E-6F0944ADC62A
+    value:           404D540D-0B8F-3FD3-8AF1-A498A6612B2F
 install-name:    '/System/Library/PrivateFrameworks/BehaviorMiner.framework/BehaviorMiner'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EEB678C5-15C2-39EB-94E7-15A6AAB6DE4B
+    value:           381BCCBF-2F17-33E0-BFF1-E9F9FF72E5BF
   - target:          arm64-ios-simulator
-    value:           C0E996DA-DB87-3DAB-8CE4-52ACEA6D9B2B
+    value:           1AFEB7C1-6110-38CD-BE93-8700810EDD20
 install-name:    '/System/Library/PrivateFrameworks/PhotosGraph.framework/PhotosGraph'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

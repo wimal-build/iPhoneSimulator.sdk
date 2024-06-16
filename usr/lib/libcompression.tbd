@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1194AF61-275F-3890-8958-75DA57A455B5
   - target:          x86_64-ios-simulator
-    value:           86DBBF72-BF63-3D4D-AB48-27BB9398AA5A
+    value:           41B1E3AD-9E14-3507-912D-284FBD716042
   - target:          arm64-ios-simulator
-    value:           37E27483-EF21-360B-BFF1-D6E964F3E3B0
+    value:           B092EB44-A360-396B-969B-74B3AEE344D8
 install-name:    '/usr/lib/libcompression.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

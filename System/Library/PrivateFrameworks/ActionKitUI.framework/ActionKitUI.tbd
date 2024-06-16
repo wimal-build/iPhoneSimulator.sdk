@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EFE9788F-224D-324D-A600-1DBFB721085C
+    value:           FFE9172B-C7BD-3408-8351-5A3A115F131C
   - target:          arm64-ios-simulator
-    value:           0656A2DB-D898-3C31-9222-F24B150D82E7
+    value:           B1EB0503-E696-3DB4-866E-0DBF4A5D0295
 install-name:    '/System/Library/PrivateFrameworks/ActionKitUI.framework/ActionKitUI'
 swift-abi-version: 7
 exports:

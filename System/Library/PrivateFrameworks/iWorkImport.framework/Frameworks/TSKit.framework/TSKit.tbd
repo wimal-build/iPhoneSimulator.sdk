@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           45EEE612-4958-3F55-B450-ACCEE078FBF6
+    value:           CB2EC6B8-D682-31B5-99A3-56D872980DB4
   - target:          arm64-ios-simulator
-    value:           AD593188-FBC0-394F-8165-D90A5C0CEB34
+    value:           3CC6BD09-E874-346A-B928-15847173C364
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSKit.framework/TSKit'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AD6A3187-B428-3767-B189-7B8888B357A0
   - target:          x86_64-ios-simulator
-    value:           8859C17C-475D-3540-BA00-6E777C6D7E6A
+    value:           7E6E1564-ADF4-3208-868E-352F7F847AC9
   - target:          arm64-ios-simulator
-    value:           5D13D16C-BDE6-3FA5-8EA9-78369B5249F8
+    value:           D393D1FA-626A-3D62-8B4D-741F674B680D
 install-name:    '/System/Library/PrivateFrameworks/AggregateDictionary.framework/AggregateDictionary'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C316619A-2CDF-3710-8D26-42D685AB7611
+    value:           10450340-CE49-37AC-A3B2-9EBE161B1E61
   - target:          arm64-ios-simulator
-    value:           29A0CBEF-5D7A-3E8D-A8D5-E126B6372325
+    value:           48B32938-56C5-35B0-A9AF-F0F8E11708C8
 install-name:    '/System/Library/PrivateFrameworks/DialogEngine.framework/DialogEngine'
 current-version: 20067
 exports:

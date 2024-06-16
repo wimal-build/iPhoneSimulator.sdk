@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DA29882D-3652-35B1-848B-93F2D4C871A4
   - target:          x86_64-ios-simulator
-    value:           9C828FF0-DE36-3AEB-A6BE-2822EEED68AA
+    value:           D1C43C01-FE21-3B2C-8CF8-9005D343D6C0
   - target:          arm64-ios-simulator
-    value:           873C1772-6280-3D1B-986A-E8AFDFEAECFC
+    value:           480A076E-38DA-3BF0-ABC3-F18E83191D68
 install-name:    '/usr/lib/system/libsystem_info.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           D3416477-BADA-37C0-9EDD-D7433682361E
   - target:          x86_64-ios-simulator
-    value:           6CD39AAB-CCD9-3228-A867-17EB907258D4
+    value:           135C1326-B6A8-3320-BBAA-B2429D97C2EC
   - target:          arm64-ios-simulator
-    value:           F439725E-D6D0-3915-BA89-E3D81FE2F63A
+    value:           DF9B2716-8083-39AD-B1C8-D94D895DB4A1
 install-name:    '/System/Library/PrivateFrameworks/PhotoAnalysis.framework/PhotoAnalysis'
-current-version: 302.0.220
+current-version: 310.1.160
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ photoanalysisd ]

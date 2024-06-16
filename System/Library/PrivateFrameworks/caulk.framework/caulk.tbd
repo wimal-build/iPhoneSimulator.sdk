@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6E126AF3-48B6-3C84-9F63-4C328FE7A89F
+    value:           F9EB3CB9-1F2B-3CD1-856B-D8EC84FAE7F2
   - target:          arm64-ios-simulator
-    value:           FC15C9FB-BBDB-33E7-BF0D-754B690BBB20
+    value:           AFE8C6E4-1C63-374E-A800-6D29C6100002
 install-name:    '/System/Library/PrivateFrameworks/caulk.framework/caulk'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           61D96E47-5E6C-35EA-A0A6-45114D469466
+    value:           EED54B42-0021-3D2B-A2C0-A04D9154E185
   - target:          arm64-ios-simulator
-    value:           0A205A16-E04F-3059-94D1-96EF177D1F8A
+    value:           D2FED2B6-B423-33DD-B8E7-17A815C5984E
 install-name:    '/System/Library/PrivateFrameworks/InternalSwiftProtobuf.framework/InternalSwiftProtobuf'
 swift-abi-version: 7
 exports:

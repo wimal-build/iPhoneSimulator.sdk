@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EAF7E59F-280B-342E-9136-7C03B4D0C373
+    value:           70FC4BA9-122C-3DC2-80A6-2281CAF3B7EF
   - target:          arm64-ios-simulator
-    value:           F3EECAEA-99DA-334C-949B-58637BDA7EBA
+    value:           0E55AB42-DB21-3E8D-9A05-ADBC8022FDEC
 install-name:    '/System/Library/PrivateFrameworks/HearingUtilities.framework/HearingUtilities'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           262369E9-46A0-38C8-8CAB-0BE78F25BA73
   - target:          x86_64-ios-simulator
-    value:           FFDBD88A-5AA5-3292-B2CE-35B2CBA844AB
+    value:           D633CAEE-DD06-34DA-AC06-6A3AC9132940
   - target:          arm64-ios-simulator
-    value:           E55CBA1D-FA7A-359A-8419-9DD8A392A88E
+    value:           806BC910-A3A8-3676-BF3B-01390C2B153C
 install-name:    '/System/Library/PrivateFrameworks/LoginKit.framework/LoginKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

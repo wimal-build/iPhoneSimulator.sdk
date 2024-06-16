@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1D00793C-A509-3775-9DBB-01A9BC7C36F4
   - target:          x86_64-ios-simulator
-    value:           DB42EBED-C6F6-3C48-B14C-F9B1CA108F23
+    value:           97CB8361-F694-3CD1-AA95-F0E0AE92EBD0
   - target:          arm64-ios-simulator
-    value:           E815122E-9C62-30C1-996D-8114FF2C4F56
+    value:           2D3FAA17-DC38-3957-99C2-09C6DDD69C3F
 install-name:    '/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CommunicationsFilter'
 current-version: 800
 exports:

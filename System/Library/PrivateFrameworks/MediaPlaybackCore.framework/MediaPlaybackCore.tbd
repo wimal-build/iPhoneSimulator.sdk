@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B10EF89F-115E-3EE7-BCA1-240B18AC1766
   - target:          x86_64-ios-simulator
-    value:           D2D73B87-0A75-31F2-8EB4-4EF79A445D92
+    value:           7C31BFDC-2D8D-3CB2-A9A7-0E66B7ABC7CE
   - target:          arm64-ios-simulator
-    value:           A0E99536-1436-311E-A590-18304B8C9700
+    value:           E46C7F6F-2D76-3CBD-81F8-38B7607DDA92
 install-name:    '/System/Library/PrivateFrameworks/MediaPlaybackCore.framework/MediaPlaybackCore'
 current-version: 0
 compatibility-version: 0

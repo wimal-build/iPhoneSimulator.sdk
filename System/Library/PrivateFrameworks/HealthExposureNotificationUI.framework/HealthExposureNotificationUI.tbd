@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EF61CF69-F91A-36B6-AD21-8963D8E89B73
+    value:           A6A64EF6-8494-3B50-8489-9769E88AD139
   - target:          arm64-ios-simulator
-    value:           9EF4BFC8-B3DA-3CF3-8EFA-18EBFACF9DD1
+    value:           72B1F52A-E3B4-3E46-B55E-26B530816263
 install-name:    '/System/Library/PrivateFrameworks/HealthExposureNotificationUI.framework/HealthExposureNotificationUI'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B79AA434-950F-3DC8-AED8-280A84016042
   - target:          x86_64-ios-simulator
-    value:           3D4D43B1-C6F2-3C29-8528-BE4B6B591C6B
+    value:           FB0B74FF-9C17-3760-9361-D43CD114479C
   - target:          arm64-ios-simulator
-    value:           76A9E6DA-DC99-3631-A7E4-DD03B71C8755
+    value:           069179A4-7664-31D1-9B31-2781549B7913
 install-name:    '/System/Library/PrivateFrameworks/BridgePreferences.framework/BridgePreferences'
 exports:
   - targets:         [ i386-ios-simulator ]

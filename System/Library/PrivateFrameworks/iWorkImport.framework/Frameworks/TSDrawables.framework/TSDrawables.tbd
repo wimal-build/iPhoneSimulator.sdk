@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5F5A1F4F-289E-31A7-A115-3041628BF2BE
+    value:           63E4EDD5-37AF-3D97-A974-A5D4DB2A1C6F
   - target:          arm64-ios-simulator
-    value:           CE855A1F-E530-3837-B432-F19AA41EB85C
+    value:           F4E8E07B-7003-3757-AEA4-FE797DA857ED
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSDrawables.framework/TSDrawables'
 exports:
   - targets:         [ x86_64-ios-simulator ]

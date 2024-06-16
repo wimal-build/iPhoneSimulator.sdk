@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C327E5B5-E5F7-3E80-A22A-084B3AD04104
+    value:           63413C69-8A00-3521-9396-EA9CCD17F8EB
   - target:          arm64-ios-simulator
-    value:           738F6A1B-41FA-34C1-84F2-BD5F5C6BB417
+    value:           048E8691-D0CF-31F2-8707-630B44D3B988
 install-name:    '/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

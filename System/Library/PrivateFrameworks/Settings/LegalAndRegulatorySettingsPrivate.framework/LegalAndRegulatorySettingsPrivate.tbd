@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6D7945B0-7AD1-3567-80E6-A2BD81BC265C
+    value:           E584452A-9549-3ABC-9AF0-A842BAD2BDF9
   - target:          arm64-ios-simulator
-    value:           C4B92D51-B339-3541-8F39-7122864FA371
+    value:           DF1A92B3-8622-3973-807B-5B2DB7857BC6
 install-name:    '/System/Library/PrivateFrameworks/Settings/LegalAndRegulatorySettingsPrivate.framework/LegalAndRegulatorySettingsPrivate'
 swift-abi-version: 7
 exports:

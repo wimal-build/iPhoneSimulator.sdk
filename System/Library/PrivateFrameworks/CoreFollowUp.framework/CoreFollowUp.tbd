@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6290CD01-EA8E-38FD-9298-02F667BA9296
+    value:           7BFA8C72-9C33-32E3-9370-134B58A67DDF
   - target:          arm64-ios-simulator
-    value:           A022D69E-033A-34C0-B6F3-F7E255834566
+    value:           6ECF30E4-7FAD-38A8-83B0-FC0629A604C4
 install-name:    '/System/Library/PrivateFrameworks/CoreFollowUp.framework/CoreFollowUp'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

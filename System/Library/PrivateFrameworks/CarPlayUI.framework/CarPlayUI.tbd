@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B502DD49-32F3-3BDC-BF1C-7EE139906696
+    value:           F9D211D7-943D-3904-B23F-B2713CFAEADE
   - target:          arm64-ios-simulator
-    value:           24395867-B8AE-3C41-AB6A-9413E85311FD
+    value:           B6109116-88F0-3B92-89AB-B76DB46D6809
 install-name:    '/System/Library/PrivateFrameworks/CarPlayUI.framework/CarPlayUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

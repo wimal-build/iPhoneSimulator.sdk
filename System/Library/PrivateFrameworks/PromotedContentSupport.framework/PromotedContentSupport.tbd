@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           77C82F6D-AF98-301E-9C8B-66B3D2E804D0
+    value:           FED6561F-C862-3013-8CB1-51ADCBC428C6
   - target:          arm64-ios-simulator
-    value:           E3130D58-085B-3147-89B7-0092AC5FB3AC
+    value:           78201E64-B8B6-33BF-A198-51B7D335B4EC
 install-name:    '/System/Library/PrivateFrameworks/PromotedContentSupport.framework/PromotedContentSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

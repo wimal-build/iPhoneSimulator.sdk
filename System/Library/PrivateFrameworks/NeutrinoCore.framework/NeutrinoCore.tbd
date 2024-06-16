@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6143247A-79D7-3AEC-961A-4BFAE43B2408
+    value:           9195B0AD-EA31-3E2E-8C48-16AA8E19EF8C
   - target:          arm64-ios-simulator
-    value:           D45106A2-7962-3283-B766-BC50DE889ABB
+    value:           D6653CA9-D211-3074-852F-9F752247EE8D
 install-name:    '/System/Library/PrivateFrameworks/NeutrinoCore.framework/NeutrinoCore'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ x86_64-ios-simulator ]
     weak-symbols:    [ __ZTIN2NU10RectFinderE, __ZTIN2NU14PathRectFinderE, __ZTIN2NU16AnchorRectFinderE, 
@@ -269,24 +269,24 @@ exports:
                        NUTransform3DNode, NUTransformNode, NUTrimNode, NUUserOrientationNode, 
                        NUUtilities, NUVersion, NUVideoCacheNode, NUVideoCompositionInstruction, 
                        NUVideoCompositor, NUVideoExportClient, NUVideoExportJob, 
-                       NUVideoExportRequest, NUVideoFrameJobCallbackCompositor, NUVideoFrameSourceNode, 
-                       NUVideoPlaybackCompositor, NUVideoPlaybackFrameJob, NUVideoPlaybackFrameRequest, 
-                       NUVideoPropertiesClient, NUVideoPropertiesJob, NUVideoPropertiesRequest, 
-                       NUVideoRenderClient, NUVideoRenderJob, NUVideoRenderRequest, 
-                       NUVideoRotationExportJob, NUVideoRotationExportRequest, NUVideoSourceNode, 
-                       NUVideoUtilities, NUWrappedBufferStorage, NUZoomFactorScalePolicy, 
-                       _NSPredicateBlockRule, _NSPredicateRule, _NUAbstractBufferStorage, 
-                       _NUAbstractStorage, _NUAuxiliaryImageRenderResult, _NUBlockRule, 
-                       _NUBrushStrokeCIImageProvider, _NUBufferImage, _NUBufferRenderResult, 
-                       _NUClassifyPipelineImageCorrectionResult, _NUColorSamplerResult, 
-                       _NUContiguousImageLayout, _NUExportResult, _NUFaceDetectionResult, 
-                       _NUFixedTileSizeImageLayout, _NUGeometryResult, _NUHistogramRenderResult, 
-                       _NUImage, _NUImageCIProvider, _NUImageDataResult, _NUImageExportResult, 
-                       _NUImageProperties, _NUImagePropertiesResult, _NUImageRenderResult, 
-                       _NUImageTile, _NULivePhotoRenderResult, _NUObservation, _NUObserver, 
-                       _NURAWCameraSpaceProperties, _NURAWImageProperties, _NURAWNoiseReductionProperties, 
-                       _NURenderPipelineBlockVariable, _NURenderResult, _NUSaliencyResult, 
-                       _NUStripImageLayout, _NUSubjectDetectionResult, _NUSurfaceImage, 
-                       _NUSurfaceRenderResult, _NUTaggedSpace, _NUVideoPlaybackFrameRequestResponse, 
+                       NUVideoExportRequest, NUVideoFrameJobCallbackCompositor, NUVideoFrameJobCallbackCompositorHDR, 
+                       NUVideoFrameSourceNode, NUVideoPlaybackCompositor, NUVideoPlaybackCompositorHDR, 
+                       NUVideoPlaybackFrameJob, NUVideoPlaybackFrameRequest, NUVideoPropertiesClient, 
+                       NUVideoPropertiesJob, NUVideoPropertiesRequest, NUVideoRenderClient, 
+                       NUVideoRenderJob, NUVideoRenderRequest, NUVideoRotationExportJob, 
+                       NUVideoRotationExportRequest, NUVideoSourceNode, NUVideoUtilities, 
+                       NUWrappedBufferStorage, NUZoomFactorScalePolicy, _NSPredicateBlockRule, 
+                       _NSPredicateRule, _NUAbstractBufferStorage, _NUAbstractStorage, 
+                       _NUAuxiliaryImageRenderResult, _NUBlockRule, _NUBrushStrokeCIImageProvider, 
+                       _NUBufferImage, _NUBufferRenderResult, _NUClassifyPipelineImageCorrectionResult, 
+                       _NUColorSamplerResult, _NUContiguousImageLayout, _NUExportResult, 
+                       _NUFaceDetectionResult, _NUFixedTileSizeImageLayout, _NUGeometryResult, 
+                       _NUHistogramRenderResult, _NUImage, _NUImageCIProvider, _NUImageDataResult, 
+                       _NUImageExportResult, _NUImageProperties, _NUImagePropertiesResult, 
+                       _NUImageRenderResult, _NUImageTile, _NULivePhotoRenderResult, 
+                       _NUObservation, _NUObserver, _NURAWCameraSpaceProperties, 
+                       _NURAWImageProperties, _NURAWNoiseReductionProperties, _NURenderPipelineBlockVariable, 
+                       _NURenderResult, _NUSaliencyResult, _NUStripImageLayout, _NUSubjectDetectionResult, 
+                       _NUSurfaceImage, _NUSurfaceRenderResult, _NUTaggedSpace, _NUVideoPlaybackFrameRequestResponse, 
                        _NUVideoProperties, _NUVideoPropertiesResult, _NUVideoRenderResult ]
 ...

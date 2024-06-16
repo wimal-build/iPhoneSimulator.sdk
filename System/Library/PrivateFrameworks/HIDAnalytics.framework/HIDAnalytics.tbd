@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DB139F76-FA93-3E2A-B23C-A6427598366F
+    value:           9BEE0563-DAD5-30B4-8C38-9C6581706354
   - target:          arm64-ios-simulator
-    value:           6BC2BF14-EBD4-3B60-B0CF-A7DD699445E0
+    value:           57710A51-F24E-3783-A1F6-3D719C75C85C
 install-name:    '/System/Library/PrivateFrameworks/HIDAnalytics.framework/HIDAnalytics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

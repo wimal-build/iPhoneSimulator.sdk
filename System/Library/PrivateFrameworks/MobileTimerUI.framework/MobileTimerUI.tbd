@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           919A0AED-5B5B-3F32-8D91-735E4F11AF0E
+    value:           3F1B0DC6-3A36-3BA0-A5A6-A399CD90B2D7
   - target:          arm64-ios-simulator
-    value:           EC5E388E-3EBC-3986-BF34-9B793F99A09E
+    value:           010BE14F-0D9F-3D51-BF2E-A3F2FC47FFD5
 install-name:    '/System/Library/PrivateFrameworks/MobileTimerUI.framework/MobileTimerUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

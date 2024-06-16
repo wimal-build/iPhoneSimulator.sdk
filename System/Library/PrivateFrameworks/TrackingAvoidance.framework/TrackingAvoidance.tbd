@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           30F74C9E-D7D5-32CC-9AC0-7B2661CE0908
+    value:           3C7CC901-B709-3178-8D79-18F4DF482BA5
   - target:          arm64-ios-simulator
-    value:           A221A681-1C26-3F0C-8148-CED5A026EF56
+    value:           9F2DEE5B-7C99-3F71-86C7-3F6B2F3ACAA8
 install-name:    '/System/Library/PrivateFrameworks/TrackingAvoidance.framework/TrackingAvoidance'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FDECADA0-7DAF-38A4-976E-EDDED55A5110
+    value:           0823A02F-4D1B-3500-9CE5-0FC91A7075C5
   - target:          arm64-ios-simulator
-    value:           B00DD992-1172-303E-B22F-203B5532FEBC
+    value:           DD115178-44BD-3B20-8905-F934BD68D251
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/SimpleKeyExchange.framework/SimpleKeyExchange'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

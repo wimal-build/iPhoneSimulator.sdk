@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6244AC91-330A-3D8A-A14F-D8EFA5E9816B
+    value:           8824942B-AB92-38BD-AE33-CBBC102155D3
   - target:          arm64-ios-simulator
-    value:           0CFE5C66-469B-32A0-8C28-B79D1BC00063
+    value:           10ABCB30-CBEB-38CC-9E91-960E5C8E1089
 install-name:    '/System/Library/PrivateFrameworks/PrivateFederatedLearning.framework/PrivateFederatedLearning'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

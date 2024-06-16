@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E43914E6-C4F6-3750-BF7D-16CC4220B12A
   - target:          x86_64-ios-simulator
-    value:           24E4FA2E-E0CB-3C38-8F04-647FFCE6293C
+    value:           2F8C98B3-F73A-3EA4-9F4E-C02C6E21EA41
   - target:          arm64-ios-simulator
-    value:           6C0D0372-9002-38C3-A9F2-A70153216CED
+    value:           D7DA4A2D-1C51-3F48-B675-AEB3A4700391
 install-name:    '/usr/lib/system/libsystem_asl.dylib'
 current-version: 385
 parent-umbrella:

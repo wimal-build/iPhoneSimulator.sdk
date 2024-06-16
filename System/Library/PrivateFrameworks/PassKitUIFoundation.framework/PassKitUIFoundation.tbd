@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           97CFA6E7-21DD-3FF8-8858-4862489368CD
   - target:          x86_64-ios-simulator
-    value:           844896E2-BA18-3C08-B981-D5BA4D9D35B6
+    value:           38C63C81-7FA7-38B0-B7A3-3869AA4E596D
   - target:          arm64-ios-simulator
-    value:           1235A3BA-89EC-3916-9314-06B24319C048
+    value:           283130E5-98BE-337E-B56B-4B61F82B3116
 install-name:    '/System/Library/PrivateFrameworks/PassKitUIFoundation.framework/PassKitUIFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8EF0D8A1-C893-3A37-9811-C08052014FB6
+    value:           0659547C-842F-374E-A1E0-AF1495E325BF
   - target:          arm64-ios-simulator
-    value:           F50D5788-BE73-3B8E-8A3D-CBE32E782A59
+    value:           B8858D93-147A-3715-B1D9-A31C383C37F1
 install-name:    '/System/Library/PrivateFrameworks/BannerKit.framework/BannerKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

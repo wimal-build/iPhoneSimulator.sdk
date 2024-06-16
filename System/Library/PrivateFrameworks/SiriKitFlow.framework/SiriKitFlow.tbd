@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4A2C5097-92E0-3D86-8DFB-576FBB87CD0F
+    value:           B4D18545-A7D9-36C3-A2E9-10839AF34ECA
   - target:          arm64-ios-simulator
-    value:           BE67C432-83C5-3C03-9C34-C22F920B1E98
+    value:           B2F1ADBF-F51F-3992-9ACA-E66E151E311F
 install-name:    '/System/Library/PrivateFrameworks/SiriKitFlow.framework/SiriKitFlow'
 swift-abi-version: 7
 allowable-clients:
@@ -18,7 +18,8 @@ allowable-clients:
                        ControlsFlowDelegatePlugin, ControlsFlowDelegatePluginTests, 
                        FindMyFlowPlugin, FindMyFlowPluginTests, GeoFlowDelegatePlugin, 
                        HomeAutomationFlowDelegatePlugin, HomeAutomationFlowDelegatePluginTests, 
-                       HomeAutomationInternal, KnowledgeGraphFlowDelegatePlugin, 
+                       HomeAutomationInternal, HomeCommunicationFlowDelegatePlugin, 
+                       HomeCommunicationFlowDelegatePlugin-Tests, KnowledgeGraphFlowDelegatePlugin, 
                        KnowledgeGraphFlowDelegatePluginTests, MediaDialogTests, MediaFlowDelegatePlugin, 
                        MessagesFlowDelegatePlugin, MessagesFlowDelegatePlugin-Tests, 
                        NotebookFlowDelegatePlugin, NotebookFlowDelegatePlugin-Tests, 

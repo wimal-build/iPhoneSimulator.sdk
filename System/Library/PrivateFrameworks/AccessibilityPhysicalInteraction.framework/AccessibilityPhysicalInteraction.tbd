@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           27BD52B1-545E-3A8D-A413-1352861D0A90
+    value:           3C994A42-C6B0-3297-8E17-D6F45FF0CE2C
   - target:          arm64-ios-simulator
-    value:           4C0C7DC1-F769-3D12-A7D0-D52EFE1C0281
+    value:           14721C16-29B3-3B92-9139-D61305EEE70F
 install-name:    '/System/Library/PrivateFrameworks/AccessibilityPhysicalInteraction.framework/AccessibilityPhysicalInteraction'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

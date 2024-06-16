@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           ED706F93-D4A7-3331-B2AF-C53BFD638950
   - target:          x86_64-ios-simulator
-    value:           E76E6859-95A4-3B05-BEC0-403086D09F27
+    value:           93BCD061-F7BB-3724-A5D1-358F1AAF4EBF
   - target:          arm64-ios-simulator
-    value:           CB55899C-E3C5-3349-974A-679560FAB85C
+    value:           D6F388A0-1002-3E14-845D-1A653EFF5B75
 install-name:    '/System/Library/Frameworks/CoreMotion.framework/CoreMotion'
-current-version: 2420.0.57
+current-version: 2420.4.7
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CMCaptureModeData, _CMWorkoutKeyEventDate, _CMWorkoutKeyLocation, 

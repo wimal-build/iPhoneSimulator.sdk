@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7D262872-36E2-3081-A7A5-4F49B8754A66
+    value:           EB87E860-3DCD-3984-9589-4E483F84D2BD
   - target:          arm64-ios-simulator
-    value:           BC65C6C6-0E50-311B-9BAC-E7D359474B24
+    value:           04309FCC-B208-3462-B1E1-A20CE5884314
 install-name:    '/System/Library/PrivateFrameworks/BiomePubSub.framework/BiomePubSub'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

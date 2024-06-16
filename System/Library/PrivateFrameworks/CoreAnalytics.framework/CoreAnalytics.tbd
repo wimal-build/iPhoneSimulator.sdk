@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7FEA3A6C-C610-3322-A4FB-1A501EDC6598
+    value:           6B7D03C2-251A-354B-BA0C-3D65330F198A
   - target:          arm64-ios-simulator
-    value:           4722A5D8-CC14-3BD3-A4FE-8BE20CD7180E
+    value:           54A6106B-058D-3F40-B2AA-8DDB0810171B
 install-name:    '/System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics'
 exports:
   - targets:         [ x86_64-ios-simulator ]

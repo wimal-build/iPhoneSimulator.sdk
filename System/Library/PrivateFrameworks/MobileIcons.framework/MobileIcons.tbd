@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E6EDF8C2-D46A-3490-9B77-6E65865162C0
   - target:          x86_64-ios-simulator
-    value:           BB38F4EF-E092-317B-B172-C233CFDE5F35
+    value:           438ED8F4-865B-3270-9073-B020FA7B8D63
   - target:          arm64-ios-simulator
-    value:           809C4E94-F40A-367C-9613-844AAFEC1113
+    value:           F6D46223-85CC-38DE-86DA-7DA8C6963F42
 install-name:    '/System/Library/PrivateFrameworks/MobileIcons.framework/MobileIcons'
 current-version: 372
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           883D7986-B835-317A-8428-13110BD5044B
+    value:           A5481609-A234-3DB2-A6CF-44D9DCA0BE11
   - target:          arm64-ios-simulator
-    value:           16B630EF-1CC7-33D7-A062-A542C8826C0D
+    value:           1B2065FF-5861-3695-9B07-489CB0B00544
 install-name:    '/System/Library/PrivateFrameworks/RemoteManagement.framework/Frameworks/RemoteManagementModel.framework/RemoteManagementModel'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

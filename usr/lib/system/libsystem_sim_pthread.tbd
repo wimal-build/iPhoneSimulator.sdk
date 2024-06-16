@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           043CEEB1-9F77-3DFF-8FFD-B52EAFEAC20E
   - target:          x86_64-ios-simulator
-    value:           AF0346AE-E685-355E-8FFD-69BFD89590AA
+    value:           071D64F6-007B-3F03-B4AC-9276A6906B33
   - target:          arm64-ios-simulator
-    value:           B353000E-4579-3E66-900A-46C7C108D44D
+    value:           71CBA296-6A4F-333A-8939-785E11F3893E
 install-name:    '/usr/lib/system/libsystem_sim_pthread.dylib'
 current-version: 227.0.1
 parent-umbrella:
@@ -153,9 +153,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4D9AF813-6727-322C-8FE4-292A16A6920E
   - target:          x86_64-ios-simulator
-    value:           73ABA745-0A31-37E2-AF61-7CF641E51393
+    value:           FA3119E4-8830-3562-80ED-F3278C6BBF0E
   - target:          arm64-ios-simulator
-    value:           9DB33C10-7297-3D6F-82FC-21F1DCF62331
+    value:           7BD64CCC-A0D1-3344-B74B-4DAFF0E9DBDE
 install-name:    '/usr/lib/system/libsystem_sim_pthread_host.dylib'
 current-version: 227.0.1
 parent-umbrella:

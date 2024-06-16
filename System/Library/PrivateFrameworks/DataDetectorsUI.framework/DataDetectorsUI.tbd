@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           31413F01-FFB3-305F-8320-19CE8B951F0F
   - target:          x86_64-ios-simulator
-    value:           0D5AC2F1-B965-3B34-808A-DF7E0D355D6B
+    value:           5361FAE1-0E4E-329E-931A-D2726408384D
   - target:          arm64-ios-simulator
-    value:           3B11D8E5-37A0-341F-B953-79D7835682A9
+    value:           0661B498-5C15-393A-951E-5324C1A2FEAF
 install-name:    '/System/Library/PrivateFrameworks/DataDetectorsUI.framework/DataDetectorsUI'
 current-version: 396
 exports:

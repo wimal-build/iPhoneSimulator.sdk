@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2640AAA8-1C94-3190-BD57-A8885D1C82E8
+    value:           CBDE797A-8057-3A39-BE71-D7F6F6473982
   - target:          arm64-ios-simulator
-    value:           1F84F008-24D9-3E8A-990B-927022C18A23
+    value:           DAFFE51B-49CF-3099-8307-C762B2D096D2
 install-name:    '/System/Library/PrivateFrameworks/JITAppKit.framework/JITAppKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9B524BE6-FDEA-392C-9FBD-5B29EF06FCF8
+    value:           632D88CA-0B02-3CEF-BC92-AD8643E0D510
   - target:          arm64-ios-simulator
-    value:           75DEC407-D441-3535-A59F-B80762117DF7
+    value:           F16CE256-B1D4-3A93-95DD-0564511C4764
 install-name:    '/System/Library/PrivateFrameworks/LocationSupport.framework/LocationSupport'
-current-version: 2420.0.57
+current-version: 2420.4.7
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __ZN12CLConnection10isEntitledERKNSt3__112basic_stringIcNS0_11char_traitsIcEENS0_9allocatorIcEEEE, 

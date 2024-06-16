@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AB9F2B88-5820-3BB5-8C82-C9E4FF47A633
   - target:          x86_64-ios-simulator
-    value:           F9DC1C61-8C01-3D7B-A66F-0081D05A19F2
+    value:           637BB044-0F9F-319C-8C31-766E4140B008
   - target:          arm64-ios-simulator
-    value:           29B455AB-9C97-3944-8DB3-412CB69CE30F
+    value:           5063FFE1-1F3D-39D5-9542-5479C82D3754
 install-name:    '/System/Library/PrivateFrameworks/IMTransferServices.framework/IMTransferServices'
 current-version: 800
 exports:

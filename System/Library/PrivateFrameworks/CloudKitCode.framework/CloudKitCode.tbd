@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1118FFBB-21F9-3923-82C3-0ED8D622B4E6
+    value:           0AE2574A-2BA9-355B-A36B-0A61AA2915C0
   - target:          arm64-ios-simulator
-    value:           EB476CDF-FE0E-32CB-9168-CC1CB13DB1A5
+    value:           622438C7-BEAA-334E-9BA4-31826ACEBE1C
 install-name:    '/System/Library/PrivateFrameworks/CloudKitCode.framework/CloudKitCode'
 current-version: 950
 swift-abi-version: 7

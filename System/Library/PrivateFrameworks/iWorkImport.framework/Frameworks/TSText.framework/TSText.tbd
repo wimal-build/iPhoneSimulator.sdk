@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BF51E045-511C-3DD3-8788-6C0D066F5943
+    value:           AC45237D-772B-36C5-BFE6-D5ED01BFDDD4
   - target:          arm64-ios-simulator
-    value:           CBC43AB0-472B-3303-97AC-271B9620727A
+    value:           33C5BB9A-D285-3C70-A3E5-FAA200B6F774
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSText.framework/TSText'
 swift-abi-version: 7
 exports:

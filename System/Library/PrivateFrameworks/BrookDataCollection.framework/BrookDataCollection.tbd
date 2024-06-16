@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AEDFCE3D-CB23-35F7-8FBE-5ABDBC2F71CC
+    value:           F2B87C22-1351-34BA-A618-B4E2D4905D90
   - target:          arm64-ios-simulator
-    value:           356FEA35-E46B-3071-B761-326394C7E597
+    value:           B4E7D37B-7B2C-3463-99F7-0D1B07391591
 install-name:    '/System/Library/PrivateFrameworks/BrookDataCollection.framework/BrookDataCollection'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

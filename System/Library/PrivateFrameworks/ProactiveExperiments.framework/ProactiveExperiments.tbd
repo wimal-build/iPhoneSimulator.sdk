@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           183C649C-E7C9-3CCA-A90A-5B934D481B22
+    value:           98581784-A947-3A6D-B68D-DF5770CF7C3A
   - target:          arm64-ios-simulator
-    value:           5137D4D1-A8D7-3259-B483-27551384D3FA
+    value:           5652F361-96DF-37D9-8E28-3A547C2BEB94
 install-name:    '/System/Library/PrivateFrameworks/ProactiveExperiments.framework/ProactiveExperiments'
 current-version: 1115
 exports:

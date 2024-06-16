@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7939BA57-1A18-368B-81BF-88FCD379A28A
   - target:          x86_64-ios-simulator
-    value:           BF612A2E-FEDA-3A7B-AD2E-9F3828C6AA55
+    value:           61910B65-56EB-3B92-8EDC-FA303C633019
   - target:          arm64-ios-simulator
-    value:           BE86C61E-6F37-3AC9-81E7-8D2C5BA6CA70
+    value:           8D25CBB7-AB86-39D9-9F70-3C9197AF3312
 install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DALDAP.framework/DALDAP'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

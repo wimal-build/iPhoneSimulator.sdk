@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0949F9A2-6E13-33B2-8896-183D6CAEDFDC
+    value:           BC1C7CE6-81F8-31F5-A333-4D919F848EB6
   - target:          arm64-ios-simulator
-    value:           195A00F1-2B85-3C54-BFA4-EFEA204D35D7
+    value:           09B77B50-1568-322E-B1E7-CBF0A2EFF529
 install-name:    '/System/Library/PrivateFrameworks/ContactsAssistantServices.framework/ContactsAssistantServices'
 current-version: 0
 compatibility-version: 0

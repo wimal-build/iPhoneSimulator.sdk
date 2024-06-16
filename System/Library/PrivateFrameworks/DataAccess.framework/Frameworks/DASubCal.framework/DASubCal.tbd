@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0DFACB6A-A383-3D94-B956-91147DDE1665
   - target:          x86_64-ios-simulator
-    value:           0C3E5DD6-FA6A-376C-930C-7605540659BF
+    value:           D5767822-081E-345A-AA35-ACDC4A2FFB42
   - target:          arm64-ios-simulator
-    value:           AFE279B2-01D9-3A09-9FF6-58463FB5900F
+    value:           34688AFB-C3D7-3F09-9267-839F16D0890B
 install-name:    '/System/Library/PrivateFrameworks/DataAccess.framework/Frameworks/DASubCal.framework/DASubCal'
 exports:
   - targets:         [ i386-ios-simulator ]

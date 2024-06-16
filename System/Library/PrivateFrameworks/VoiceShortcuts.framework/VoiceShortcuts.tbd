@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6B12959A-77D6-3BA1-950C-E5EF3B822C92
+    value:           F0326688-80DE-348A-ACEE-49D295398E2F
   - target:          arm64-ios-simulator
-    value:           8CE0D9A2-0F0D-3B6E-8B6D-14C56557ACCC
+    value:           E9CE2A75-516D-34FB-B588-BDD86B8BFA06
 install-name:    '/System/Library/PrivateFrameworks/VoiceShortcuts.framework/VoiceShortcuts'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -44,11 +44,10 @@ exports:
                        _VCXPCEventLaunchServicesApplicationRegistered, _VCXPCEventLaunchServicesApplicationStateChanged, 
                        _VCXPCEventLaunchServicesApplicationUnregistered, _VCXPCEventPairedDeviceDidChangeVersion, 
                        _VCXPCEventStreamDarwinNotifications, _VCXPCEventStreamDistributedNotifications, 
-                       _VCXPCSignificantTimeChange, _VoiceShortcutsVersionNumber, 
-                       _VoiceShortcutsVersionString, _WFDatabaseChangesContainObjectType, 
-                       _WFDialogNotificationUserInfoRunningContextKey, _WFDialogXPCHostInterface, 
-                       _WFDialogXPCInterface, _WFEventInfoKeyNewValue, _WFEventInfoKeyOldValue, 
-                       _WFLogCategoryDefaultShortcuts, _WFLogCategoryObliterator, 
+                       _VoiceShortcutsVersionNumber, _VoiceShortcutsVersionString, 
+                       _WFDatabaseChangesContainObjectType, _WFDialogNotificationUserInfoRunningContextKey, 
+                       _WFDialogXPCHostInterface, _WFDialogXPCInterface, _WFEventInfoKeyNewValue, 
+                       _WFEventInfoKeyOldValue, _WFLogCategoryDefaultShortcuts, _WFLogCategoryObliterator, 
                        _WFLogCategoryUserNotificationManager, _WFLogCategoryWFScreenOnObserver, 
                        _WFWorkflowRunCoordinatorErrorDomain ]
     objc-classes:    [ VCCKApplicationStateObserver, VCCKShortcutSyncCoordinator, 

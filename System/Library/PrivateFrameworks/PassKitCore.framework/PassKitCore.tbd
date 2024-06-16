@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AD493693-E7C1-3C61-AF8B-BA943501FABC
   - target:          x86_64-ios-simulator
-    value:           5097FD9F-2ACA-3949-934B-FABF8B0C0B75
+    value:           047AC4CE-D497-3E3C-9F92-E5321DC5C6F3
   - target:          arm64-ios-simulator
-    value:           7FF6DF0E-ED1C-3660-B218-0C3B68501641
+    value:           3B40DDCF-0C7E-350C-856F-B74781576EA6
 install-name:    '/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore'
 exports:
   - targets:         [ i386-ios-simulator ]

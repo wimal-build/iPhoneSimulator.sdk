@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           76E02108-E2C0-35D9-9DD7-05BAED338FEA
   - target:          x86_64-ios-simulator
-    value:           8CA50097-BAEF-3CF0-8E58-1B6FB0D9AD15
+    value:           07F5079B-DCB0-3FF8-85B6-5140B9E846EF
   - target:          arm64-ios-simulator
-    value:           4161CA12-E049-30EA-92B4-9600A5C8F214
+    value:           BF8724A8-A8C5-3893-BE43-5F3AB08A6A08
 install-name:    '/System/Library/PrivateFrameworks/FaceCore.framework/FaceCore'
 current-version: 4.1.2
 exports:

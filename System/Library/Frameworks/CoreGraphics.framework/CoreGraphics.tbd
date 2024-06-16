@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           9F32E2F6-41F8-3395-8420-9B09FE258357
   - target:          x86_64-ios-simulator
-    value:           A5631573-37C2-368C-96B3-718D279B801D
+    value:           E31089E0-FC31-3ED5-8AC1-1EC27839D0DC
   - target:          arm64-ios-simulator
-    value:           D7DC2ED0-A343-3B8E-A96B-CA4CE5C753D5
+    value:           FAD6CB54-D8FC-3622-B646-FCB22FC09E0D
 install-name:    '/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics'
-current-version: 1445
+current-version: 1455
 compatibility-version: 64
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1428,7 +1428,8 @@ exports:
                        _kCGColorConversionTRCSize, _kCGColorSpaceACESCGLinear, _kCGColorSpaceAdobeRGB1998, 
                        _kCGColorSpaceDCIP3, _kCGColorSpaceDisplayP3, _kCGColorSpaceDisplayP3_HLG, 
                        _kCGColorSpaceDisplayP3_PQ, _kCGColorSpaceDisplayP3_PQ_EOTF, 
-                       _kCGColorSpaceExtendedGray, _kCGColorSpaceExtendedLinearDisplayP3, 
+                       _kCGColorSpaceExtendedDisplayP3, _kCGColorSpaceExtendedGray, 
+                       _kCGColorSpaceExtendedITUR_2020, _kCGColorSpaceExtendedLinearDisplayP3, 
                        _kCGColorSpaceExtendedLinearGray, _kCGColorSpaceExtendedLinearITUR_2020, 
                        _kCGColorSpaceExtendedLinearSRGB, _kCGColorSpaceExtendedRange, 
                        _kCGColorSpaceExtendedSRGB, _kCGColorSpaceGenericCMYK, _kCGColorSpaceGenericGray, 
@@ -1469,13 +1470,14 @@ exports:
                        _kCGPDFContextAllowsCopying, _kCGPDFContextAllowsPrinting, 
                        _kCGPDFContextArtBox, _kCGPDFContextAuthor, _kCGPDFContextBleedBox, 
                        _kCGPDFContextCreateLinearizedPDF, _kCGPDFContextCreatePDFA, 
-                       _kCGPDFContextCreator, _kCGPDFContextCropBox, _kCGPDFContextEncryptionCipher, 
+                       _kCGPDFContextCreator, _kCGPDFContextCropBox, _kCGPDFContextDate, 
+                       _kCGPDFContextDocumentID, _kCGPDFContextEncryptionCipher, 
                        _kCGPDFContextEncryptionCipherAESv2, _kCGPDFContextEncryptionCipherAESv3, 
                        _kCGPDFContextEncryptionCipherNone, _kCGPDFContextEncryptionCipherRC4, 
                        _kCGPDFContextEncryptionKeyLength, _kCGPDFContextEncryptionOwnerAndUserPasswordsHash, 
                        _kCGPDFContextEncryptionPermissions, _kCGPDFContextKeywords, 
                        _kCGPDFContextMediaBox, _kCGPDFContextOutputIntent, _kCGPDFContextOutputIntents, 
-                       _kCGPDFContextOwnerPassword, _kCGPDFContextSecurityHandlerRevision, 
+                       _kCGPDFContextOwnerPassword, _kCGPDFContextProducer, _kCGPDFContextSecurityHandlerRevision, 
                        _kCGPDFContextShouldCompress, _kCGPDFContextSubject, _kCGPDFContextTitle, 
                        _kCGPDFContextTrimBox, _kCGPDFContextUserPassword, _kCGPDFDocumentAuthor, 
                        _kCGPDFDocumentCreationDate, _kCGPDFDocumentCreator, _kCGPDFDocumentKeywords, 

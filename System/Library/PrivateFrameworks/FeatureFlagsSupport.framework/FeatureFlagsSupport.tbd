@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           907DEA5F-B90A-3BA6-9AA1-CA3554241E4C
+    value:           39E87E9C-A6B3-3D03-B438-48229F68067F
   - target:          arm64-ios-simulator
-    value:           84CDB06C-2FAB-39B6-85D4-E573C0A3AE8D
+    value:           309E3B34-93E0-3AC3-850B-A12E83E90176
 install-name:    '/System/Library/PrivateFrameworks/FeatureFlagsSupport.framework/FeatureFlagsSupport'
 current-version: 28.0.1
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B094B124-77DF-3DB4-A479-BFF86635C375
   - target:          x86_64-ios-simulator
-    value:           764D8492-1518-354A-90CB-0699A27E7016
+    value:           6C049C55-4908-38DF-875C-22CDAAB4ED9A
   - target:          arm64-ios-simulator
-    value:           2DA6F218-6776-3A35-8FF5-60A16D057D7F
+    value:           3F4071EA-6186-3434-93A2-5D794FAA50F6
 install-name:    '/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/ProtectedCloudStorage'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           69B78BE1-EE90-360A-ACFC-46FAD883E8C3
   - target:          x86_64-ios-simulator
-    value:           AF7E3FB5-88D2-352B-A47B-312EE5041F50
+    value:           10355926-C232-36CE-9DF1-DF32F364AB8B
   - target:          arm64-ios-simulator
-    value:           DCC18BB9-5474-339A-A556-656B2946B5AB
+    value:           CDB1F5A9-67CE-365E-A8AB-4A7DFC385C16
 install-name:    '/System/Library/PrivateFrameworks/PersonaUI.framework/PersonaUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

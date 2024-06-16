@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1793F99E-ED87-3F87-8487-973639883FC3
   - target:          x86_64-ios-simulator
-    value:           79914F58-7008-33CB-AF00-2989989D8576
+    value:           A7FC8258-E49F-3808-820E-3BD391742DFB
   - target:          arm64-ios-simulator
-    value:           F6513ED7-9345-385E-8CB6-538D2D27859D
+    value:           BFFCFE64-809F-30CE-84E5-8DA0A6B1CA76
 install-name:    '/System/Library/PrivateFrameworks/BulletinBoard.framework/BulletinBoard'
 exports:
   - targets:         [ i386-ios-simulator ]

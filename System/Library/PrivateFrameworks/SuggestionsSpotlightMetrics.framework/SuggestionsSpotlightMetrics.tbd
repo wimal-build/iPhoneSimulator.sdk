@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3596551B-F0A1-3B22-8F20-36F28628466A
   - target:          x86_64-ios-simulator
-    value:           E47E6A24-510F-3098-B990-ECC08F0FC02C
+    value:           9832B6C4-B9D8-3142-B0CD-25875AFE3147
   - target:          arm64-ios-simulator
-    value:           D71D8662-D45C-3061-8725-8CFF981D786B
+    value:           F7AC8623-8E87-3236-83AA-6CF2751280B8
 install-name:    '/System/Library/PrivateFrameworks/SuggestionsSpotlightMetrics.framework/SuggestionsSpotlightMetrics'
 current-version: 1115
 exports:

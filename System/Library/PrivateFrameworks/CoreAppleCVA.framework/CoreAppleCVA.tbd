@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B78B3363-D884-3EC7-9BFE-71670F3B074E
+    value:           B4E15325-5C19-3454-8FA7-9B55CBA9180D
   - target:          arm64-ios-simulator
-    value:           03986F52-7940-3CA7-8BC0-F871B9409C4A
+    value:           DD32BA58-D68A-357B-AB6A-627BA5EA9F31
 install-name:    '/System/Library/PrivateFrameworks/CoreAppleCVA.framework/CoreAppleCVA'
 current-version: 3.6
 compatibility-version: 3.6

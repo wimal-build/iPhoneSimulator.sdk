@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           53B2B680-EDDE-32AE-BC2A-001D771156CF
+    value:           0A84BBFD-5416-348E-8D67-CF7F975DAF86
   - target:          arm64-ios-simulator
-    value:           2D5A1169-EEAD-33B0-8D72-E1BBFA8A12F9
+    value:           C7D6BE25-3770-3724-9B85-CC97E44785B1
 install-name:    '/System/Library/PrivateFrameworks/PointerUIServices.framework/PointerUIServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           403DDAFD-578A-31CB-88AD-F62A88732854
   - target:          x86_64-ios-simulator
-    value:           CE046DA0-6D60-3B8F-B4E3-C826C8568A08
+    value:           0769AE7F-F68A-34EE-8DBF-17E0E739387C
   - target:          arm64-ios-simulator
-    value:           33ECE077-6FC0-32EE-B215-B569B27F8A91
+    value:           7C3A4E0A-DFA7-3570-ABC0-85FF6367D065
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage'
 current-version: 540
 exports:

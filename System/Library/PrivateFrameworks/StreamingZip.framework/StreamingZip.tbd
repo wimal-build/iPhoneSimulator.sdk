@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E7F6999A-6EDB-3E27-A9D0-FDAE5BE89150
   - target:          x86_64-ios-simulator
-    value:           7BB12A6C-8A30-3A18-9B67-43733A4868F5
+    value:           0B1A8E06-11C3-3787-BDE7-28FDEE3FA95A
   - target:          arm64-ios-simulator
-    value:           0A6C29E6-25C9-3388-988A-AA05DC6A9D36
+    value:           1800A01C-102F-37D7-9CEE-A567E90FAE8F
 install-name:    '/System/Library/PrivateFrameworks/StreamingZip.framework/StreamingZip'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

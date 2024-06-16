@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           06325089-6591-3B9F-AE82-6B193769C919
+    value:           2F1E335C-8176-3CD6-B7FB-F52C3CF346B9
   - target:          arm64-ios-simulator
-    value:           E1052774-2361-3B6A-82DB-7F024E36A605
+    value:           05082001-6901-33DB-A80F-F3CFE3A13E74
 install-name:    '/System/Library/PrivateFrameworks/iTunesCloud.framework/iTunesCloud'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

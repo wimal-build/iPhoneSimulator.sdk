@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A2FB0A07-718C-3547-9F0B-2B3126FDC41A
   - target:          x86_64-ios-simulator
-    value:           02E5F8CF-F4EF-3EF6-9F56-2515D562F511
+    value:           AE9C3051-87EF-3AA0-A653-ABFE432DAB18
   - target:          arm64-ios-simulator
-    value:           7C71A35F-8C49-3EB7-9683-52741158E786
+    value:           95751CF7-F8B9-30E8-A7CE-F9952EE8B3FD
 install-name:    '/System/Library/PrivateFrameworks/AppStoreDaemon.framework/AppStoreDaemon'
 exports:
   - targets:         [ i386-ios-simulator ]

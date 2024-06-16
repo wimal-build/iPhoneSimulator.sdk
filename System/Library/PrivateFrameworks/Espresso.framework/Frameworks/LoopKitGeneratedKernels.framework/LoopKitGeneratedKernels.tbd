@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0750E454-0B75-321F-BA65-A8BFA3DFD36D
+    value:           46DF9F3D-65AA-3ADF-8DE7-B6FE799E6F42
   - target:          arm64-ios-simulator
-    value:           28228054-82EB-389F-8F93-AEC64AF988BF
+    value:           EA1A805A-C1BF-3C6A-A2D4-3FEA80A5FD64
 install-name:    '@rpath/LoopKitGeneratedKernels.framework/LoopKitGeneratedKernels'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

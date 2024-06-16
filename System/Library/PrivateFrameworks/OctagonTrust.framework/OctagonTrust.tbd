@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9E821526-1DEB-377A-9F82-06C06BFDCA32
+    value:           0A248444-795E-3D23-A760-C3B776FDC610
   - target:          arm64-ios-simulator
-    value:           A48DE05B-DEC9-37B7-942A-B217FAD9D4EC
+    value:           3C428D05-314C-30D8-A569-26EFA84D1306
 install-name:    '/System/Library/PrivateFrameworks/OctagonTrust.framework/OctagonTrust'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

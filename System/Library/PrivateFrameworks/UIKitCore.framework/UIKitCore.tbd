@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           84BFEBFC-73CC-38A1-AB39-9B0D09287200
+    value:           CF8C062B-079E-3DA6-BFE2-3366C11A1F29
   - target:          arm64-ios-simulator
-    value:           33E08ED4-5367-3983-889B-2B66E4F84E66
+    value:           7933EC3B-DA5A-31C7-8A72-21132DA95F97
 install-name:    '/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore'
-current-version: 3987.0.109
+current-version: 3987.9
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]
@@ -2046,9 +2046,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C4CE84E-9340-3389-898D-2887BD90B6D2
   - target:          x86_64-ios-simulator
-    value:           F641E3E5-38C4-30CA-A99F-438CD388D007
+    value:           A5CD52C1-D885-35F8-8BB1-38EFD4366BA2
   - target:          arm64-ios-simulator
-    value:           1EF62A88-1DC7-3BB9-8612-3343FED2C933
+    value:           3C79C4C9-032B-3D8E-A9F1-64548EE7E3AA
 install-name:    '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation'
 current-version: 717
 exports:

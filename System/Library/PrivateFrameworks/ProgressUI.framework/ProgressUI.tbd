@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           29AC13C4-99B9-3057-A1EF-81576175CA4B
   - target:          x86_64-ios-simulator
-    value:           73C2E765-4B24-35C3-AB91-5C6E00D390B7
+    value:           A749559A-E917-3CD2-B5F9-3C9DF22BC2D3
   - target:          arm64-ios-simulator
-    value:           2D0F80A8-F136-3F59-AE87-65856503CD87
+    value:           A368F349-9CF7-3EF8-80F3-EAA088BC1A15
 install-name:    '/System/Library/PrivateFrameworks/ProgressUI.framework/ProgressUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

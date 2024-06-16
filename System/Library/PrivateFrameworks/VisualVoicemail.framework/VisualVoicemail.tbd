@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AAEC2831-1802-37D0-B691-59B4866D8F21
   - target:          x86_64-ios-simulator
-    value:           9419F1DF-721C-3C0C-A649-F04236E84EF9
+    value:           1B8E1966-4A64-3656-8994-D7484580333E
   - target:          arm64-ios-simulator
-    value:           17849101-8D30-3468-B815-97664ABED0B0
+    value:           E6F996F8-F50B-36EF-B510-E41FBF26B368
 install-name:    '/System/Library/PrivateFrameworks/VisualVoicemail.framework/VisualVoicemail'
 exports:
   - targets:         [ i386-ios-simulator ]

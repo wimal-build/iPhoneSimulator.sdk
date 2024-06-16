@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9E8A95AD-7CB4-3E14-897A-539BD2352DF0
+    value:           AE3F6AD2-3876-35F8-9993-13DD77CB31AD
   - target:          arm64-ios-simulator
-    value:           ED5241C5-6746-3DDB-A00C-49444D919022
+    value:           216FA147-1D61-395E-9EF8-D2DAE72863FF
 install-name:    '/System/Library/PrivateFrameworks/InstallCoordination.framework/InstallCoordination'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

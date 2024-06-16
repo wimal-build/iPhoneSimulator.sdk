@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           16E24752-2AB2-3A54-8A3D-4144A5F82D16
   - target:          x86_64-ios-simulator
-    value:           7FE89349-FCF9-3EEA-B236-3A82024F6BC7
+    value:           8C54A0A7-6FB8-30E7-BFFF-564E37BAA01B
   - target:          arm64-ios-simulator
-    value:           4FA7083B-0DD0-31AB-B852-91028E2C3F6B
+    value:           E5CA0073-BCCC-32E1-8B24-D834AEAA26F4
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGLProgrammability.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

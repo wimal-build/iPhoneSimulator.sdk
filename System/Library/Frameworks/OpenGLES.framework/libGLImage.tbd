@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DC8E9728-AB3B-37C4-94A6-21678CEB5BF5
   - target:          x86_64-ios-simulator
-    value:           54AF8599-7A07-3725-9452-30FCC1ED5165
+    value:           E22BE744-C82B-3969-ADAA-E36A61ADAD7C
   - target:          arm64-ios-simulator
-    value:           0D58336B-0C2E-3247-AED6-423D98B87866
+    value:           8EF9CDC8-0665-3E3A-98FD-0207E3905A43
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGLImage.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

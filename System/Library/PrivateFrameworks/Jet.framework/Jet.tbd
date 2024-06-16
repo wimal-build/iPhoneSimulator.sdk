@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0BA115C0-6A48-3E04-A4DC-D14CEA183864
   - target:          x86_64-ios-simulator
-    value:           7B0C5432-AC8B-3386-90EF-55C91773C6A0
+    value:           8F5F994E-C3B4-3815-8675-7334240EA401
   - target:          arm64-ios-simulator
-    value:           F06EDED9-0ADB-3F4A-AE1E-97F925FB520E
+    value:           F5CB48CF-49D7-32FC-884B-A08D20A6530C
 install-name:    '/System/Library/PrivateFrameworks/Jet.framework/Jet'
 current-version: 8.19
 exports:

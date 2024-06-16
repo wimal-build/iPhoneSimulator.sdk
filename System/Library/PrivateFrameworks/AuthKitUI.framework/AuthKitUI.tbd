@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F0ED84D1-8926-34B2-AEE2-881C6FDF161B
   - target:          x86_64-ios-simulator
-    value:           D9E1F608-2A24-378C-AFC7-437C82E26B8D
+    value:           1A79204E-043C-32FA-88F2-2AB079ACD52C
   - target:          arm64-ios-simulator
-    value:           732CAE31-6A6D-32FE-9163-89AE25DB5354
+    value:           84F6B980-3024-3596-94DF-4B8DC8A7274D
 install-name:    '/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

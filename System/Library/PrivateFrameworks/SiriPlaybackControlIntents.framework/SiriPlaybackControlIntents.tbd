@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CBFB4814-F070-3621-940F-E21F93037E06
+    value:           B742588C-2D30-35F4-AC81-7890571062C2
   - target:          arm64-ios-simulator
-    value:           C86A729F-9883-3731-B0BD-7CA9319D5115
+    value:           445E8E06-1ADF-3A1B-A45F-070065F1CA6E
 install-name:    '/System/Library/PrivateFrameworks/SiriPlaybackControlIntents.framework/SiriPlaybackControlIntents'
 swift-abi-version: 7
 allowable-clients:

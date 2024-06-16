@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           873B940D-7B99-3F00-BF3D-8EDF3747ED5D
   - target:          x86_64-ios-simulator
-    value:           8B12E81B-F180-323C-8BED-C41B00C97F66
+    value:           ED2A1658-90B1-3BFB-9B51-5C37FEA116B0
   - target:          arm64-ios-simulator
-    value:           34118693-BE46-3BE6-A081-CCF167C4C1BF
+    value:           71FC53EC-9A6E-3A34-94B5-6B950BE0556F
 install-name:    '/System/Library/PrivateFrameworks/UserManagement.framework/UserManagement'
 exports:
   - targets:         [ i386-ios-simulator ]

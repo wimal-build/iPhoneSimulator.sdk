@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BD9B4185-1050-30D5-92EB-6DBFCC0B2045
+    value:           0E7F0B00-BADF-3CB9-B431-4FD08C0579B0
   - target:          arm64-ios-simulator
-    value:           CC69B4AF-AC8F-3F07-A53A-770536FEF07B
+    value:           43A64BE3-F86D-3E61-8954-01F3E4E6D53F
 install-name:    '/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib'
 current-version: 631
 swift-abi-version: 7

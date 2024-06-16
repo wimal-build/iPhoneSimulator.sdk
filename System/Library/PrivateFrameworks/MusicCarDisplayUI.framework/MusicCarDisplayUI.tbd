@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           69223AE7-AC17-3CB6-984F-56F43BF8C39E
   - target:          x86_64-ios-simulator
-    value:           51771CCC-1850-3EE6-9FBF-06C41CFC6EBA
+    value:           DD6EC8EE-54BA-347C-95E7-5140B91EDC2B
   - target:          arm64-ios-simulator
-    value:           B1F93A25-2F12-3BF0-9F7E-D984BA5F789D
+    value:           AF0AF11F-B387-3E7A-BB75-4B823D05A24B
 install-name:    '/System/Library/PrivateFrameworks/MusicCarDisplayUI.framework/MusicCarDisplayUI'
 exports:
   - targets:         [ i386-ios-simulator ]

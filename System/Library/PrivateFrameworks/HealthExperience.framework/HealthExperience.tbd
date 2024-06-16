@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5B199ADA-3528-3A94-93CB-53EC08F3DA15
+    value:           B5E8C4DD-6963-3666-88D9-F370E88C71C0
   - target:          arm64-ios-simulator
-    value:           B93DD154-89E2-3AC4-A7E3-F10E4F700B68
+    value:           2F943E1D-6F7D-3743-BF62-C9050A3BEF48
 install-name:    '/System/Library/PrivateFrameworks/HealthExperience.framework/HealthExperience'
 swift-abi-version: 7
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6E56D617-B0B3-3CA7-9F88-5AA11082F43B
+    value:           A2EA842A-02F1-3172-B1F3-3C00D73C4D62
   - target:          arm64-ios-simulator
-    value:           A9585D0A-E2CE-3925-A5F3-2AF904BC752B
+    value:           536C5E25-0308-3B17-9CD3-3AAF0AADBB2C
 install-name:    '/System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

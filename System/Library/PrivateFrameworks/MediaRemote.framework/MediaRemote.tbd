@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           239350DB-44AF-31B3-8FCB-4E3885E600A6
   - target:          x86_64-ios-simulator
-    value:           E5F0DFBA-4108-3243-921F-E21AE5CBF6B4
+    value:           119AD0F9-9F1F-3CC4-B975-48669EA572FB
   - target:          arm64-ios-simulator
-    value:           A5646CCB-0682-3A50-960D-D2907478ED51
+    value:           40EF10E4-9936-3A2B-B1D9-FE62EB910D55
 install-name:    '/System/Library/PrivateFrameworks/MediaRemote.framework/MediaRemote'
 exports:
   - targets:         [ i386-ios-simulator ]

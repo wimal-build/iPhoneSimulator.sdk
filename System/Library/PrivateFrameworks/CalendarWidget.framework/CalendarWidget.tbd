@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           32AA90C5-4E49-3C46-9A4F-93A1CBF6F1FA
+    value:           6567FF4E-945D-3631-9B02-9346A89724E0
   - target:          arm64-ios-simulator
-    value:           00C4323F-DF7A-303D-85A4-018B803101D0
+    value:           FA4C84F2-7E26-3ADD-9B11-8AB405101D57
 install-name:    '/System/Library/PrivateFrameworks/CalendarWidget.framework/CalendarWidget'
 swift-abi-version: 7
 exports:

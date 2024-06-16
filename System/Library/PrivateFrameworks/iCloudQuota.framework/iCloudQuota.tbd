@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DC63D373-EAC5-32DB-B778-240B5EB07202
   - target:          x86_64-ios-simulator
-    value:           5A21F29B-6A5F-39FC-A068-A15D5389EA0B
+    value:           947976C9-D1D2-3B38-865A-36A245138EA9
   - target:          arm64-ios-simulator
-    value:           C8534164-8AAB-325F-99EE-01CA67169D55
+    value:           01518BCE-3E65-3389-8625-EEE6424194E9
 install-name:    '/System/Library/PrivateFrameworks/iCloudQuota.framework/iCloudQuota'
 exports:
   - targets:         [ i386-ios-simulator ]

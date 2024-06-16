@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FBDB403C-7549-3B23-BE40-045487C1C05C
+    value:           CE84FC4C-F227-38E2-B1E5-FB203A73B8CF
   - target:          arm64-ios-simulator
-    value:           CEA0D593-2EED-3343-A5C6-28A8C09B4ED2
+    value:           B6FBD6ED-0686-309D-B3C6-6C5B02BCF2A5
 install-name:    '/System/Library/PrivateFrameworks/OTSVG.framework/OTSVG'
 current-version: 0
 compatibility-version: 0

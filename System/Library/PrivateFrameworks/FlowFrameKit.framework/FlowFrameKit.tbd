@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1C649695-F6ED-394E-AEB6-FD99404B2209
+    value:           9200F966-42C4-3056-BB9C-01A4AEB9F04D
   - target:          arm64-ios-simulator
-    value:           35CAB95D-AB55-37BB-9E23-350B74339462
+    value:           25DBC814-8509-32C3-93D8-F983913013F3
 install-name:    '/System/Library/PrivateFrameworks/FlowFrameKit.framework/FlowFrameKit'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BC13E71D-3F3E-3BE2-AD45-3D9DF1579445
+    value:           75A9209A-EFC2-3A0B-A171-B0DDABEA7E24
   - target:          arm64-ios-simulator
-    value:           437D45D7-21D6-3294-8D8C-9113161FB485
+    value:           8701E555-8A6B-3DC2-801A-6BBE9226C80F
 install-name:    '/System/Library/PrivateFrameworks/SearchAds.framework/SearchAds'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           30D82B93-67D1-3C2B-8E81-CB3083AA65DD
   - target:          x86_64-ios-simulator
-    value:           E16A52E9-F123-30DE-90BD-EE1A4565F7CD
+    value:           F470A3B9-942F-39F9-91D4-03FD92FDD51C
   - target:          arm64-ios-simulator
-    value:           37A1DB34-5ACC-3EE3-BB97-DE205465DC2D
+    value:           1D110DCE-4EF8-35A2-A136-BFC5F3A6E5BA
 install-name:    '/System/Library/PrivateFrameworks/LoggingSupport.framework/LoggingSupport'
 current-version: 1277.0.9
 exports:

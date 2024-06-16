@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           86DC5712-D2BB-3E82-9393-A73A4C016A56
   - target:          x86_64-ios-simulator
-    value:           029A0457-F287-3EBF-A4AF-67212CA82FBA
+    value:           3CDE6776-0440-3EC4-B4D4-9D9DE8A81910
   - target:          arm64-ios-simulator
-    value:           5CAEBA8C-69DE-34D5-8F14-40CA3AC152A4
+    value:           2BA0B99C-105E-3604-ABC2-EB5F61ED08FE
 install-name:    '/System/Library/PrivateFrameworks/MobileBluetooth.framework/MobileBluetooth'
 exports:
   - targets:         [ i386-ios-simulator ]

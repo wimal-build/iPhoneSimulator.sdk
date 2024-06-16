@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           72197746-87BA-39E2-A815-3C8BD671EB71
+    value:           E19DF533-D6FC-396B-AE06-69B4C84D5C03
   - target:          arm64-ios-simulator
-    value:           D46AC882-99C8-3D5C-860B-70BEE9B59966
+    value:           6A14207B-45FB-3F6D-9AF6-C29FB4EC7C9E
 install-name:    '/System/Library/PrivateFrameworks/VideosUICore.framework/VideosUICore'
-current-version: 550.0.10
+current-version: 550.0.11
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _VUIBoolLogString, _VUIDefaultsAvailabilityEndOverrideInSeconds, 

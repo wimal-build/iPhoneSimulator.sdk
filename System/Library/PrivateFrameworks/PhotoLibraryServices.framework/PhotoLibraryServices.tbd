@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4E83300D-30FD-35E7-9977-475A61A13F1D
   - target:          x86_64-ios-simulator
-    value:           EC36AD46-F57B-324E-B1AA-44950BBEB5DB
+    value:           B3D16B09-4DA6-37F7-A7B0-D657E9D40650
   - target:          arm64-ios-simulator
-    value:           A56A1938-0070-3BD7-9E70-4A8CAC5E552A
+    value:           E9FD5974-2737-3610-A492-DB458F2511DC
 install-name:    '/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/PhotoLibraryServices'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CPLResetCloudPhotosServer, _CreateCGImageFromData, _DCFFileGroupNameFormat, 
@@ -302,7 +302,8 @@ exports:
                        _PFAdjustmentEnvelopeFormatVersionIsValid, _PFAdjustmentErrorDomain, 
                        _PFAdjustmentFormatVersionIsValid, _PFAdjustmentFormatVersionKey, 
                        _PFAdjustmentIdentifierKey, _PFAdjustmentMaskUUIDKey, _PFAdjustmentSettingsAutoCurrentKey, 
-                       _PFAdjustmentSettingsInputValuePrefix, _PHQueryChangeTrackingFilteringAssetAttributesSubstituteProperty, 
+                       _PFAdjustmentSettingsInputValuePrefix, _PFSemanticEnhanceSceneDescription, 
+                       _PHQueryChangeTrackingFilteringAssetAttributesSubstituteProperty, 
                        _PLAbstractMethodException, _PLAccountStoreDidChangeNotification, 
                        _PLAggregateComparator, _PLAlbumFilterFromAlbumListFilter, 
                        _PLAlbumImportOperationDebugDescription, _PLAlbumListFilterFromAlbumFilter, 

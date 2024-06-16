@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B5F13836-D236-340A-BC86-A2DCED9F75FA
   - target:          x86_64-ios-simulator
-    value:           1C1C9C6A-D04B-33E4-B70B-F450A3EB739F
+    value:           9D97D943-B4FA-3D64-8BB7-7BDFF256CC9B
   - target:          arm64-ios-simulator
-    value:           C59C9547-6112-3AA9-8E0F-7834FA00C05C
+    value:           99DCEAC5-6C9D-3EA4-B35E-76A99AA38C6C
 install-name:    '/System/Library/PrivateFrameworks/FrontBoard.framework/FrontBoard'
 current-version: 0
 reexported-libraries:
@@ -136,9 +136,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5D228AC9-D019-31D8-9988-742F6072B0E7
   - target:          x86_64-ios-simulator
-    value:           722070A4-3AE4-3B58-B40D-79BB4EAF85FF
+    value:           BBF38E7D-FF8B-3BE8-839D-86FDE7463925
   - target:          arm64-ios-simulator
-    value:           D2C5E2E4-7E53-31EE-86B5-A3956AB0434A
+    value:           2E26A806-DB8E-3937-AA2F-F4CB53812172
 install-name:    '/System/Library/PrivateFrameworks/BaseBoard.framework/BaseBoard'
 current-version: 0
 exports:
@@ -330,9 +330,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D132251D-1B79-3CB7-B212-A931F85649D6
+    value:           149C60B4-F914-3AF6-9469-94355446948B
   - target:          arm64-ios-simulator
-    value:           FDD45BF9-832C-30EF-85CD-F94338F9CC10
+    value:           B3AA5E12-194E-32F3-99EC-2974C761B127
 install-name:    '/System/Library/PrivateFrameworks/BoardServices.framework/BoardServices'
 current-version: 0
 exports:
@@ -349,9 +349,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CBF6F8BE-A3CA-3DEC-A839-AEA83D2A8EDD
   - target:          x86_64-ios-simulator
-    value:           A010EB4F-E139-3F86-9577-0C0F15E9F510
+    value:           5BE29083-D779-3E22-95DA-4E00B704318E
   - target:          arm64-ios-simulator
-    value:           D7B384E4-028B-3833-BE0F-77E0365BB8A8
+    value:           24DC700F-E0CD-3BDC-9DC7-2D08A7710720
 install-name:    '/System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices'
 current-version: 0
 reexported-libraries:

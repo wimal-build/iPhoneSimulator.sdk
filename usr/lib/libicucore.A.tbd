@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AEDD97EA-D1F0-3AC3-9BB6-3D6F2A4467C1
   - target:          x86_64-ios-simulator
-    value:           7A6C1BF5-5FCD-3A69-8921-90C5BF64EBC2
+    value:           FFA97F95-4FD1-33B0-9B76-35E3C7E2614A
   - target:          arm64-ios-simulator
-    value:           C09D6E57-06E3-3651-BB3C-31A42029F809
+    value:           5B65F347-CE87-32FA-B2FC-9CF58546EA72
 install-name:    '/usr/lib/libicucore.A.dylib'
 current-version: 66.1
 exports:

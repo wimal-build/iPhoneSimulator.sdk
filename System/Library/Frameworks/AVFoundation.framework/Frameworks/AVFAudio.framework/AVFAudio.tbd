@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           15A1E568-1F9B-3CDB-993D-07117F7C056C
   - target:          x86_64-ios-simulator
-    value:           EA8DD6BD-F504-38AC-AA73-67A962C5A450
+    value:           FFEAC4C7-4177-3ED4-B5DD-0B2DBB9B708C
   - target:          arm64-ios-simulator
-    value:           09ECA239-9FF5-305A-A4FE-FC947031D675
+    value:           297633FE-7E64-30B9-BA23-35F08EBBF33C
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio'
 exports:
   - targets:         [ i386-ios-simulator ]

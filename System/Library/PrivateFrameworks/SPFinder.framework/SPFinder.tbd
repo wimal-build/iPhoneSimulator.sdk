@@ -5,17 +5,18 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F9FEFDB7-D0E1-369F-BE0D-102FE6E4AD99
+    value:           9082C86F-34F3-351D-A3D5-C61ACDF3D04A
   - target:          arm64-ios-simulator
-    value:           A457950B-D88E-3F43-AE53-8B19BF71F503
+    value:           A97CA3A6-F3A3-3E9B-B5C8-2398349676C4
 install-name:    '/System/Library/PrivateFrameworks/SPFinder.framework/SPFinder'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ _SPFinderDisabledReasonCannotPublishAnonymously, _SPFinderDisabledReasonFindMyiPhoneOff, 
-                       _SPFinderDisabledReasonLocationServices, _SPFinderDisabledReasonLocationServicesFindMyFramework, 
-                       _SPFinderDisabledReasonLowAccountSecurity, _SPFinderDisabledReasonNone, 
-                       _SPFinderDisabledReasonServiceDisabled, _SPFinderDisabledReasonUserOptOut, 
-                       _SPFinderDisabledReasoniCloudSignedOut, _SPFinderStateChangedNotification ]
+    symbols:         [ _SPFinderDisabledReasonBlockedDeviceRegion, _SPFinderDisabledReasonCannotPublishAnonymously, 
+                       _SPFinderDisabledReasonFindMyiPhoneOff, _SPFinderDisabledReasonLocationServices, 
+                       _SPFinderDisabledReasonLocationServicesFindMyFramework, _SPFinderDisabledReasonLowAccountSecurity, 
+                       _SPFinderDisabledReasonNone, _SPFinderDisabledReasonServiceDisabled, 
+                       _SPFinderDisabledReasonUserOptOut, _SPFinderDisabledReasoniCloudSignedOut, 
+                       _SPFinderStateChangedNotification ]
     objc-classes:    [ SPAdvertisement, SPAdvertisementCache, SPAdvertisementCacheSearchCriteria, 
                        SPAdvertisementCacheSearchResult, SPBeaconAdvertisement, SPBeaconPayload, 
                        SPBeaconPayloadCacheSearchCriteria, SPBeaconPayloadCacheSearchResult, 

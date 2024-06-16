@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1A67DBDF-F57E-39A2-9AB0-7E100FA302BD
   - target:          x86_64-ios-simulator
-    value:           B105D392-7220-385D-A0F2-9582E5C2CDEF
+    value:           7179CDC6-6631-3DFD-8807-18445868A3EA
   - target:          arm64-ios-simulator
-    value:           2F70202F-AE4E-3301-A940-B958EB323DC6
+    value:           28B53BC0-349C-3377-8435-D93777A44528
 install-name:    '/System/Library/PrivateFrameworks/CalDAV.framework/CalDAV'
 current-version: 993
 exports:

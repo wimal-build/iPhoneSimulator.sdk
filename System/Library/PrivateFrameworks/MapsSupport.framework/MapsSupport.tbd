@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3AA13AF9-CB7E-3AC2-8C69-680AB5216403
   - target:          x86_64-ios-simulator
-    value:           68CBC0DC-CF6E-3928-98DE-5DB78586CF4A
+    value:           7F99291C-2513-35BE-A1B4-90500B0FBBC5
   - target:          arm64-ios-simulator
-    value:           45FB8F21-DFE3-3521-BD77-7CA94EF7F06A
+    value:           31E93FDE-2DC6-3B4E-922E-BD6E0D231A9F
 install-name:    '/System/Library/PrivateFrameworks/MapsSupport.framework/MapsSupport'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9800E8A9-420E-300E-AE01-ED6A83887711
+    value:           C5726E83-B7ED-3B0D-8E65-DBBF2F292F08
   - target:          arm64-ios-simulator
-    value:           E2CF3CBE-1093-3110-B6E6-661AA7945314
+    value:           9BF0B008-2102-3626-A633-4C8E352ED5A8
 install-name:    '/System/Library/PrivateFrameworks/SleepDaemon.framework/SleepDaemon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

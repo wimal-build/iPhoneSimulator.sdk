@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E295CC36-6E96-3F79-885B-5CA54CC2D10A
   - target:          x86_64-ios-simulator
-    value:           D343B0BF-76B3-3DA2-B924-962518929358
+    value:           B01DA59B-BF57-3A22-9F50-15177722DB71
   - target:          arm64-ios-simulator
-    value:           688721D4-C484-30DC-9CF6-375AB2B3F566
+    value:           520FA842-DEB7-3831-9183-4E5FA2A030EA
 install-name:    '/System/Library/PrivateFrameworks/ProactiveSupport.framework/ProactiveSupport'
 current-version: 294.1
 exports:

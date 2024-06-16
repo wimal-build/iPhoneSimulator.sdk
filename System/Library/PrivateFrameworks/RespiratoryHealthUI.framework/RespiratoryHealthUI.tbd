@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BBED220F-1C11-3813-853E-AFAB663E8A82
+    value:           2B104A6C-55F0-3442-976D-B2B9F124F706
   - target:          arm64-ios-simulator
-    value:           7EE832EE-F4AE-3DDA-93B8-87D32F56F75E
+    value:           B7AD42A5-FC7E-3B7E-B69B-E5A6FF10EED6
 install-name:    '/System/Library/PrivateFrameworks/RespiratoryHealthUI.framework/RespiratoryHealthUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

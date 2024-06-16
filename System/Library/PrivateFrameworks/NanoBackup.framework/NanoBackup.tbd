@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E0B8B3E4-073E-36D1-8192-A3D16301CA2B
   - target:          x86_64-ios-simulator
-    value:           3A7F3BE3-7A8D-39FD-94AD-C3EB0741C7DE
+    value:           8D169CB2-2B35-3DFD-89FC-010D8D359AB1
   - target:          arm64-ios-simulator
-    value:           330A9C79-ACE5-3A9C-8199-8B40C8E4786B
+    value:           24CD9391-48D0-3E3E-BD24-9D13B7F43D8A
 install-name:    '/System/Library/PrivateFrameworks/NanoBackup.framework/NanoBackup'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

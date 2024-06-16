@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B9FDFC3E-64A4-3773-A55C-A461FF0CF030
   - target:          x86_64-ios-simulator
-    value:           8FDF808A-A673-3F0F-A2CE-A972739DEC46
+    value:           1C1F9249-64B1-3D85-A314-BB46AD50D651
   - target:          arm64-ios-simulator
-    value:           671F7CBE-B23F-3344-96D9-FF453D0A1FE3
+    value:           174757E1-4736-3DC1-9032-2DC80942CB46
 install-name:    '/System/Library/PrivateFrameworks/SyncedDefaults.framework/SyncedDefaults'
 exports:
   - targets:         [ i386-ios-simulator ]

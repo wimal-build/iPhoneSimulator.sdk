@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2BFD7EC4-3E68-3610-97FC-910A72A272A3
+    value:           E7127229-F00C-313B-B501-4E611E00E8AD
   - target:          arm64-ios-simulator
-    value:           1681CABE-C3AB-3653-9C1C-6910D70F55C9
+    value:           14992683-E9AF-3771-8CF6-C94B747410CD
 install-name:    '/System/Library/PrivateFrameworks/FMNetworking.framework/FMNetworking'
 swift-abi-version: 7
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0EBE5427-380F-3E02-AB24-695BC8B1030F
+    value:           61B13F32-DE2B-36C5-A886-32242B034555
   - target:          arm64-ios-simulator
-    value:           C56E3C36-3E91-3013-A59F-2BC8F2CBB874
+    value:           041F0F2D-6A6E-3C39-8379-FD202A5A1B21
 install-name:    '/System/Library/PrivateFrameworks/AXSpringBoardServerInstance.framework/AXSpringBoardServerInstance'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -30,23 +30,23 @@ exports:
                        AXSBServerHelperSBControlCenterController, AXSBServerSBHUDController, 
                        AXSBServerUIApplication, AXSBServerVolumeControl, AXSBUIWindow, 
                        AXSBVoiceOverShakeMessage, AXSBVoiceOverSwipeDetectorView, 
-                       AXSB_SBApplicationSafeCategory, AXSB_SBIconControllerSafeCategory, 
-                       AXSB_SBMainDisplaySceneManagerSafeCategory, AXSB_SBRestartManagerSafeCategory, 
-                       AXSB_UIAlertControllerActionViewSafeCategory, AXSB_UIAlertControllerSafeCategory, 
-                       AXSB_UIScreenSafeCategory, AXSecureWindow, AXSpringBoardAccessibility, 
-                       AXSpringBoardServerAlertManager, AXSpringBoardServerHelper, 
-                       AXSpringBoardServerSideAppManager, AXSpringBoardSettingsLoader, 
-                       AXTripleClickAlertController, AXTripleClickTableViewCell, 
-                       AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride, 
+                       AXSB_SBApplicationSafeCategory, AXSB_SBAssistantControllerSafeCategory, 
+                       AXSB_SBIconControllerSafeCategory, AXSB_SBMainDisplaySceneManagerSafeCategory, 
+                       AXSB_SBRestartManagerSafeCategory, AXSB_UIAlertControllerActionViewSafeCategory, 
+                       AXSB_UIAlertControllerSafeCategory, AXSB_UIScreenSafeCategory, 
+                       AXSecureWindow, AXSpringBoardAccessibility, AXSpringBoardServerAlertManager, 
+                       AXSpringBoardServerHelper, AXSpringBoardServerSideAppManager, 
+                       AXSpringBoardSettingsLoader, AXTripleClickAlertController, 
+                       AXTripleClickTableViewCell, AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride, 
                        _AXSpringBoardServerInstance, __AXCSScrollGestureControllerAccessibility_super, 
                        __AXSBDeviceApplicationSceneStatusBarBreadcrumbProviderAccessibility_super, 
                        __AXSBHomeHardwareButtonActions_super, __AXSBLockScreenManager_super, 
                        __AXSBReachabilityManagerAccessibility_super, __AXSBServerHelperSBControlCenterController_super, 
                        __AXSBServerSBHUDController_super, __AXSBServerUIApplication_super, 
                        __AXSBServerVolumeControl_super, __AXSBUIWindow_super, __AXSB_SBApplicationSafeCategory_super, 
-                       __AXSB_SBIconControllerSafeCategory_super, __AXSB_SBMainDisplaySceneManagerSafeCategory_super, 
-                       __AXSB_SBRestartManagerSafeCategory_super, __AXSB_UIAlertControllerActionViewSafeCategory_super, 
-                       __AXSB_UIAlertControllerSafeCategory_super, __AXSB_UIScreenSafeCategory_super, 
-                       __AXSpringBoardAccessibility_super, __AXSpringBoardServerSideAppManager, 
-                       __AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride_super ]
+                       __AXSB_SBAssistantControllerSafeCategory_super, __AXSB_SBIconControllerSafeCategory_super, 
+                       __AXSB_SBMainDisplaySceneManagerSafeCategory_super, __AXSB_SBRestartManagerSafeCategory_super, 
+                       __AXSB_UIAlertControllerActionViewSafeCategory_super, __AXSB_UIAlertControllerSafeCategory_super, 
+                       __AXSB_UIScreenSafeCategory_super, __AXSpringBoardAccessibility_super, 
+                       __AXSpringBoardServerSideAppManager, __AX_AX_SBSecureMainScreenActiveInterfaceOrientationWindowOverride_super ]
 ...

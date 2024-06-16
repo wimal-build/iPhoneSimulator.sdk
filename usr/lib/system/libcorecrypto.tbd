@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1083CFDB-EBA8-3211-B488-CC549B5DDD4D
   - target:          x86_64-ios-simulator
-    value:           5603BCD4-7575-341C-B7B7-E83549414EDC
+    value:           516F1B2A-3762-3A87-9215-BED0CE878161
   - target:          arm64-ios-simulator
-    value:           6AABA2C7-9B2D-35C6-9085-BC0C2E18B059
+    value:           BBD0BF97-20B0-30F1-A33C-68130B798081
 install-name:    '/usr/lib/system/libcorecrypto.dylib'
 current-version: 1000.0.5
 parent-umbrella:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA47FF78-95A3-38D5-B13A-6DC0CD115446
+    value:           CA0F6238-E7AB-3D41-998A-EF0299E82E6E
   - target:          arm64-ios-simulator
-    value:           34B01F85-E37E-3D23-9C4C-B05C4FF366D1
+    value:           E7F3DE0B-C28A-31C5-BFFF-AC183A9981B6
 install-name:    '/System/Library/PrivateFrameworks/AudioAnalytics.framework/AudioAnalytics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

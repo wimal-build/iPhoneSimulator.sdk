@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           445498F4-2377-3530-831C-97269D372010
   - target:          x86_64-ios-simulator
-    value:           DDFA7A20-DD09-3692-A699-10CD34EBEFE5
+    value:           D8BC6BE2-617F-3F57-814B-ECC2C3FD6971
   - target:          arm64-ios-simulator
-    value:           0B9CCDC1-6EDA-3787-B907-904953D262CC
+    value:           7F9E1312-3C04-36F5-9936-66264381A26D
 install-name:    '/System/Library/PrivateFrameworks/MMCS.framework/MMCS'
 current-version: 569
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           69E7F944-BE42-3367-AA09-C5EF1D9B5626
   - target:          x86_64-ios-simulator
-    value:           B127BE90-A1DD-348B-BB16-8A15E596C524
+    value:           F84E0520-3122-31E4-9F08-9CDD94F4B3C4
   - target:          arm64-ios-simulator
-    value:           D6715FF9-BD6B-3316-89D5-FB04D8214005
+    value:           9E47D140-5F0D-3594-88F3-AFB425CE5293
 install-name:    '/System/Library/PrivateFrameworks/PairedUnlock.framework/PairedUnlock'
 exports:
   - targets:         [ i386-ios-simulator ]

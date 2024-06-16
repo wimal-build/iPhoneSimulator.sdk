@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AD63D77E-BEE8-316B-B858-1DC9338F7C03
+    value:           6537C970-F75A-3416-9FAB-A31ADE0BD152
   - target:          arm64-ios-simulator
-    value:           FDB01E31-EBCF-3535-9527-871CFBBD1B31
+    value:           7BE542C7-0311-3D0E-B10C-09E04484CE99
 install-name:    '/System/Library/PrivateFrameworks/HeartRhythmUI.framework/HeartRhythmUI'
 current-version: 0
 exports:

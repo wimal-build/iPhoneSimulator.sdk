@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           67C1126E-5B25-3F87-A531-1406DC510D12
+    value:           8775C8FE-A3A0-30BD-A605-EC00992814B3
   - target:          arm64-ios-simulator
-    value:           4E29F47F-1386-3981-B97F-835593C254F4
+    value:           F814C1C6-FBFB-36CC-BE5B-A12EC632B9E1
 install-name:    '/System/Library/PrivateFrameworks/AXContainerServices.framework/AXContainerServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

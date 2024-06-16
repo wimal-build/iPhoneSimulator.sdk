@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EB132C6A-9510-3C12-B57F-512A5F841C0B
+    value:           827DC8F4-EB8D-39BD-A3E7-B4398958DD8B
   - target:          arm64-ios-simulator
-    value:           A2A4C4E6-8FF4-3917-A499-B7DE6D57573A
+    value:           FAD5325E-6B1C-3231-9A1E-996E928DCD22
 install-name:    '/System/Library/PrivateFrameworks/SiriAppResolution.framework/SiriAppResolution'
 swift-abi-version: 7
 allowable-clients:
@@ -18,7 +18,8 @@ allowable-clients:
                        ControlsFlowDelegatePlugin, ControlsFlowDelegatePluginTests, 
                        FindMyFlowPlugin, FindMyFlowPluginTests, GeoFlowDelegatePlugin, 
                        HomeAutomationFlowDelegatePlugin, HomeAutomationFlowDelegatePluginTests, 
-                       HomeAutomationInternal, KnowledgeGraphFlowDelegatePlugin, 
+                       HomeAutomationInternal, HomeCommunicationFlowDelegatePlugin, 
+                       HomeCommunicationFlowDelegatePlugin-Tests, KnowledgeGraphFlowDelegatePlugin, 
                        KnowledgeGraphFlowDelegatePluginTests, MediaDialogTests, MediaFlowDelegatePlugin, 
                        MessagesFlowDelegatePlugin, MessagesFlowDelegatePlugin-Tests, 
                        NotebookFlowDelegatePlugin, NotebookFlowDelegatePlugin-Tests, 

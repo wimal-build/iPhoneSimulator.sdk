@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           858B0F45-B6D6-3323-B28D-B010F3719B8A
   - target:          x86_64-ios-simulator
-    value:           B19E420F-00C2-3226-9E1B-FC4B1F9C68FF
+    value:           18008ACE-C655-3F07-B5A5-C9550A1EF41A
   - target:          arm64-ios-simulator
-    value:           CD193FFF-C337-302B-BDDE-34132EDAF682
+    value:           B135F5F7-24F0-3C70-AC8E-F5A4BD65DE1C
 install-name:    '/System/Library/PrivateFrameworks/InternationalTextSearch.framework/InternationalTextSearch'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

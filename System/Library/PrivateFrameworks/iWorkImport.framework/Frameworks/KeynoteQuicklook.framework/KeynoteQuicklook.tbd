@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CB16A958-044E-3A7E-840D-003D2006AB2B
+    value:           34923819-694E-3BFC-8330-B0094BDF0634
   - target:          arm64-ios-simulator
-    value:           629AE4AA-08B6-3DD5-BB4C-01026925AAE6
+    value:           A31E4779-566D-33E8-968A-5380CB422F9C
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/KeynoteQuicklook.framework/KeynoteQuicklook'
 exports:
   - targets:         [ x86_64-ios-simulator ]

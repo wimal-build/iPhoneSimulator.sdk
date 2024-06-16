@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B925BA42-CFAF-3BF7-B390-D2A4486F5E0B
   - target:          x86_64-ios-simulator
-    value:           26B3A6B9-2A39-3806-BC67-E873F4B30C05
+    value:           AC31ABB1-7FEB-366A-8F64-42808B68B359
   - target:          arm64-ios-simulator
-    value:           CC76F775-C37B-31DD-875C-60FCE7FDB7C9
+    value:           19105465-0FFC-3D1F-9810-500CE15AE2AF
 install-name:    '/System/Library/PrivateFrameworks/MarkupUI.framework/MarkupUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

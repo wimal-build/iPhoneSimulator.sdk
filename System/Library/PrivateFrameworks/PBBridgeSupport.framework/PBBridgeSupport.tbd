@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           35084EE4-F788-3879-9884-99B7407268A6
   - target:          x86_64-ios-simulator
-    value:           2F7A67E6-1936-3979-BBA9-DF5FC686C0C9
+    value:           3ADEF04F-2B6A-3BF2-913E-C8F13B284D9B
   - target:          arm64-ios-simulator
-    value:           2E1218FF-FE20-3018-8BF8-AF80493171AD
+    value:           7D0A157C-3532-35B1-9D49-8769B4A45C5C
 install-name:    '/System/Library/PrivateFrameworks/PBBridgeSupport.framework/PBBridgeSupport'
 exports:
   - targets:         [ i386-ios-simulator ]

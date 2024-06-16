@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5EC85044-738E-3436-A839-5E3FEB1074F1
+    value:           BF70F11E-4A85-3FA2-A418-7680D375524C
   - target:          arm64-ios-simulator
-    value:           92D19A11-FA42-3683-AF97-83346B6B9A30
+    value:           39225340-75D8-334F-B604-C573AA59F1DE
 install-name:    '/System/Library/PrivateFrameworks/VisualTestKit.framework/VisualTestKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

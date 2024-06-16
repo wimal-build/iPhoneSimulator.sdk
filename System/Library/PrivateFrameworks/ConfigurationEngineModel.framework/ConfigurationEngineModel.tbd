@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           721E7A84-6E86-3A09-AA6F-B101C047DBD4
+    value:           9FEC2058-B5E2-3A34-8A10-6EA526302682
   - target:          arm64-ios-simulator
-    value:           69039CDC-07E8-334A-B4CC-61DCAAC3A287
+    value:           7B8FEF23-6272-3CC7-99B3-50E83DA89B91
 install-name:    '/System/Library/PrivateFrameworks/ConfigurationEngineModel.framework/ConfigurationEngineModel'
 current-version: 40.18
 exports:

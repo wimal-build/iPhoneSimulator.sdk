@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4EE60515-EE5C-3F1F-AC15-0F1303947ADB
+    value:           7B20E50E-FBA5-39BC-A859-6E2C7ADBAAD2
   - target:          arm64-ios-simulator
-    value:           4F1B5A38-93BC-3085-939C-CB013F4549E8
+    value:           7669EF5F-B81A-3DD8-81B7-3D1F33F001F1
 install-name:    '/System/Library/PrivateFrameworks/DataDeliveryServices.framework/DataDeliveryServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

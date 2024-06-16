@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F7D0B62E-FEC8-324F-8F2A-C428D6E5485C
   - target:          x86_64-ios-simulator
-    value:           3708AF67-EDD2-3F26-85F0-0095D15C7581
+    value:           4368E643-6BE6-3D7D-827D-221AE612E6B8
   - target:          arm64-ios-simulator
-    value:           74F478DF-F724-3F5B-A242-B4AFD8C8F73F
+    value:           77901BDE-A4C1-3936-BD6F-96DDDE33E2C5
 install-name:    '/System/Library/PrivateFrameworks/PrintKit.framework/PrintKit'
 current-version: 253
 exports:

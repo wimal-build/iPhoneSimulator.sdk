@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C76EB977-6BDC-31F8-8B21-1337D3FA3A7B
+    value:           A839669F-BC26-3D0B-B5BD-F4CBC23A0572
   - target:          arm64-ios-simulator
-    value:           AA77F9D0-1F3B-3E00-AE62-43C0D112EDEA
+    value:           A64DDEAE-03D7-3E06-8AA6-4075003237A2
 install-name:    '/System/Library/PrivateFrameworks/Translation.framework/Translation'
-current-version: 124.5
+current-version: 124.6
 compatibility-version: 0
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

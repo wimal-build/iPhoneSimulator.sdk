@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           492EFAD4-AFCE-3475-96EC-E9A83A1D7A0E
+    value:           E8A349D3-C17A-32FF-ABDB-440370C6C1D3
   - target:          arm64-ios-simulator
-    value:           F8D5BED6-35F5-3A41-BCD3-E270C0785483
+    value:           6813272D-E786-3D63-B58F-98B1B9C8D1BC
 install-name:    '/System/Library/PrivateFrameworks/CryptoKitPrivate.framework/CryptoKitPrivate'
 swift-abi-version: 7
 exports:

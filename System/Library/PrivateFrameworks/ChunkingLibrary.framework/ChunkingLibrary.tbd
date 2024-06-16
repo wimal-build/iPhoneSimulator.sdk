@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           595E2C1C-4529-3DDE-AACD-7FD33CEED52A
   - target:          x86_64-ios-simulator
-    value:           0BD6DD46-9387-3876-A65D-FF197EE32DEA
+    value:           E887B9EE-3876-3B3C-A2BF-094A35CBAB4E
   - target:          arm64-ios-simulator
-    value:           6D38ED1C-588E-3A85-82FF-8875E4D6DE09
+    value:           60AB0E5C-BDCF-3C73-BA36-98804077F6A1
 install-name:    '/System/Library/PrivateFrameworks/ChunkingLibrary.framework/ChunkingLibrary'
 current-version: 334
 exports:

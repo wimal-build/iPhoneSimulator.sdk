@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AB8986B3-07E8-3547-BBDE-78AE65521A70
   - target:          x86_64-ios-simulator
-    value:           30B4F2FF-2EBF-37F2-80A0-4A9E8B779D28
+    value:           B728E66F-E984-329A-BA9B-A8A7C52C5BD7
   - target:          arm64-ios-simulator
-    value:           0A7AA63F-3DB9-39B3-BEB6-FB36122B3CF4
+    value:           BA1628CC-D72C-32EA-B208-E253617FA3BA
 install-name:    '/System/Library/PrivateFrameworks/ProtocolBuffer.framework/ProtocolBuffer'
 current-version: 285.30.8
 exports:

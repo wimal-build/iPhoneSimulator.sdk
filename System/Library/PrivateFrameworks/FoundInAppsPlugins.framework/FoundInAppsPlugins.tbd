@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FDC1F436-BF1C-314A-86FB-5F52E08B208A
+    value:           C02667DB-EFC9-3B9B-ACB5-F25ACBFA259F
   - target:          arm64-ios-simulator
-    value:           6E0866AF-C163-39E2-A44E-D34434F8D942
+    value:           EB7F1894-0F95-3723-9626-7A724E331E65
 install-name:    '/System/Library/PrivateFrameworks/FoundInAppsPlugins.framework/FoundInAppsPlugins'
 current-version: 1115
 exports:

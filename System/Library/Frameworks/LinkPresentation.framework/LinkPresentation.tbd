@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FCD3FCF2-A1B4-3276-8FE6-36911170F16D
+    value:           54B31E00-DDB9-329F-A5D4-6C9BDE42B7A3
   - target:          arm64-ios-simulator
-    value:           8A494BE3-BCE9-3967-8210-821180E323C9
+    value:           6B3AAE14-C49B-33A0-990E-427B080EA9A9
 install-name:    '/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation'
 current-version: 145.2
 reexported-libraries:
@@ -54,9 +54,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B6D4EEB0-26B2-367C-BD58-6DDD45517C65
+    value:           4743C8B4-1ED0-3DFC-903F-B50E7134DEAD
   - target:          arm64-ios-simulator
-    value:           1CD0C080-0D34-3425-8A05-E1D1887C6DB6
+    value:           9FC046E0-5305-32C3-A534-D09FE7DA2965
 install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
 current-version: 145.2
 exports:

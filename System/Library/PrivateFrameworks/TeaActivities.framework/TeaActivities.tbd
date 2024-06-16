@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           094BB0F9-0647-3C46-ABF0-52E1AB35A489
+    value:           29F7C2E8-7029-38DD-BB4E-2652C4899512
   - target:          arm64-ios-simulator
-    value:           0EDBA8B5-D44F-3B65-AB27-9A6568F15451
+    value:           055D1F0A-2132-3697-9484-29E73AA208A8
 install-name:    '/System/Library/PrivateFrameworks/TeaActivities.framework/TeaActivities'
 swift-abi-version: 7
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D59907AC-C5C4-3756-A925-12B30B960E58
+    value:           DF0481ED-B3CB-3F30-8054-2E3FEDE4870C
   - target:          arm64-ios-simulator
-    value:           41EC9314-80F5-35A4-8781-DE2DABBCCE30
+    value:           E0402D15-D2C2-3C39-911B-16EEE7E40CD7
 install-name:    '/System/Library/PrivateFrameworks/Settings/WallpaperSettings.framework/WallpaperSettings'
 swift-abi-version: 7
 exports:

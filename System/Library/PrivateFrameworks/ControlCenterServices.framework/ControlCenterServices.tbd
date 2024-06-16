@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FD4C736E-5ECA-3BEC-A1D4-715BF08BF398
+    value:           19906A73-D204-3F24-9171-EC85B9F2D242
   - target:          arm64-ios-simulator
-    value:           3F3FE565-B15D-3B69-95FB-DFCF9CC31C2C
+    value:           5122C598-EA4B-3870-8E46-8F8A06FD3CE0
 install-name:    '/System/Library/PrivateFrameworks/ControlCenterServices.framework/ControlCenterServices'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

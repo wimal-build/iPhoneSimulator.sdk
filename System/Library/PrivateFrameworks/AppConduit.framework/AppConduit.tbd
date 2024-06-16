@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F525CFBD-FCAF-3987-9868-87BE0273758B
   - target:          x86_64-ios-simulator
-    value:           8D1ECC61-5BAA-3ADD-8644-882661E8C138
+    value:           7F2F1855-1880-375C-A6D6-5D3247DF0983
   - target:          arm64-ios-simulator
-    value:           6A847AB7-BA6A-36B7-AEC5-05BC24A2B74D
+    value:           78727BF4-FC15-3D80-A639-21D80B4400BF
 install-name:    '/System/Library/PrivateFrameworks/AppConduit.framework/AppConduit'
 exports:
   - targets:         [ i386-ios-simulator ]

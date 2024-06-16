@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9D8D47D9-071A-328C-B076-A88CD1B321D1
   - target:          x86_64-ios-simulator
-    value:           DB7355E5-E59E-322C-BD37-83B91854F28E
+    value:           1248AA58-D003-34E8-8467-5D1278A731A0
   - target:          arm64-ios-simulator
-    value:           7DACEDEC-594D-306E-BFE4-6BC1FC2204C7
+    value:           599C2A0A-38F9-33FB-9EC6-64DA0AB65001
 install-name:    '/System/Library/PrivateFrameworks/CommonAuth.framework/CommonAuth'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

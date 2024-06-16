@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           90AC4286-1A17-3F5F-8854-B35B03AE5C04
   - target:          x86_64-ios-simulator
-    value:           FF0BC4B4-0415-3CF2-91C6-BE34C32FC20D
+    value:           40FF96EF-0882-38A4-B7A0-DCB5C2BADD1D
   - target:          arm64-ios-simulator
-    value:           00833FC2-DC8D-362A-863C-20CC43342419
+    value:           AA9C7A79-2F77-3EF9-9093-1EAC13E95E83
 install-name:    '/usr/lib/system/libsystem_sim_platform_host.dylib'
 current-version: 227.0.1
 parent-umbrella:

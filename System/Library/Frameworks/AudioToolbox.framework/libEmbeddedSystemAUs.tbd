@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2A2B1BA4-9EAB-35D7-9C47-FAE541007045
+    value:           60A0E121-95FC-3118-BF26-67EB94F37F6D
   - target:          arm64-ios-simulator
-    value:           F814D15E-F9E6-3410-A90B-98AF036AE9E0
+    value:           968E05BE-0C5D-3D60-A021-86E458A01911
 install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libEmbeddedSystemAUs.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator ]

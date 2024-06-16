@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           441E5400-86B3-3776-B47C-27563F40391D
   - target:          x86_64-ios-simulator
-    value:           B132DEC6-5D11-3FBD-B225-6A930FEC4D61
+    value:           29A7B48B-A84A-3B10-AAE2-4A8B3BEEA328
   - target:          arm64-ios-simulator
-    value:           C726613B-1F4B-3B90-B458-BA88DBBE96B6
+    value:           9A68A796-F46B-3D5C-979D-2C7C906F3791
 install-name:    '/System/Library/PrivateFrameworks/TextureIO.framework/TextureIO'
 current-version: 3.10.9
 exports:

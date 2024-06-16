@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D92B81DE-5C9D-320E-B96D-8D27BBDF03D3
+    value:           2EC64294-E602-3069-95C3-2E0D794E273B
   - target:          arm64-ios-simulator
-    value:           0CE91DB1-6B32-3236-B6DD-D14039E647CB
+    value:           EACFFCF8-BAD2-3712-94D6-E781E2C27130
 install-name:    '/System/Library/PrivateFrameworks/SiriVideoIntents.framework/SiriVideoIntents'
 swift-abi-version: 7
 allowable-clients:

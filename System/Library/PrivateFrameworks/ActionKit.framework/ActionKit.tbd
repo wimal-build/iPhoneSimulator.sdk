@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           95A233A4-7C8C-3247-97C9-AE29D1179A04
+    value:           7A074F5F-7F52-3F60-B510-C7DDACC4FA65
   - target:          arm64-ios-simulator
-    value:           1AF8E20C-E106-35A7-B6A6-6D371D0B62AA
+    value:           30351C63-4AFB-34F9-8CB4-360120A514D3
 install-name:    '/System/Library/PrivateFrameworks/ActionKit.framework/ActionKit'
 exports:
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]

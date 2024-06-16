@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AB5AE34F-A0C2-30AC-86EA-28E290FC4BDA
   - target:          x86_64-ios-simulator
-    value:           21D5888D-B4F8-39F3-B75C-C484D9E2F629
+    value:           64E80275-2693-322B-B551-76E296AE1085
   - target:          arm64-ios-simulator
-    value:           505C35E0-8E02-3BD9-A398-0D55C0AB7587
+    value:           BD9A9801-DF6A-3A8B-90F8-539C56C1DD20
 install-name:    '/System/Library/PrivateFrameworks/Bom.framework/Bom'
 current-version: 195
 compatibility-version: 2

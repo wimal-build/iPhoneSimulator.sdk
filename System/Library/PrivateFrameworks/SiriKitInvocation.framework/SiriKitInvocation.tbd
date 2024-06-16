@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           98596AE0-8785-3244-8580-0061DCD734FE
+    value:           5C58910C-ECFB-3243-A45B-6125238BC060
   - target:          arm64-ios-simulator
-    value:           F9C2F4A7-4121-326A-85D8-0A4AA973D9C6
+    value:           2F49F145-C542-3C86-AECF-C6FDC1E7F90A
 install-name:    '/System/Library/PrivateFrameworks/SiriKitInvocation.framework/SiriKitInvocation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

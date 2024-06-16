@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1D617FD0-E8C9-3840-B3DD-A35B5C990392
   - target:          x86_64-ios-simulator
-    value:           422478A7-FFD3-37C8-91D4-321BF0DD2671
+    value:           7C1A4ADF-1400-3723-9413-F0CD9BB4078D
   - target:          arm64-ios-simulator
-    value:           FC711579-54C4-318E-85B7-D51441520147
+    value:           E652F85E-F0D9-3A15-B3FC-A8FDA21C5E97
 install-name:    '/usr/lib/libAXSafeCategoryBundle.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

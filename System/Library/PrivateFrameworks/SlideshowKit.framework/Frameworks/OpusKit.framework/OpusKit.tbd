@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C06F4103-F4C8-3700-B906-062EBE0A41C5
   - target:          x86_64-ios-simulator
-    value:           12060136-F474-3C50-88AB-4485E7901640
+    value:           717BDFD3-7E78-3C1E-9FAB-385B69C839D7
   - target:          arm64-ios-simulator
-    value:           C5CCDEF1-400F-38B5-ACEA-2F641AD6EE20
+    value:           C41EF7E4-3C6D-3A99-924E-AA368590C4DB
 install-name:    '/System/Library/PrivateFrameworks/SlideshowKit.framework/Frameworks/OpusKit.framework/OpusKit'
 current-version: 1702.0.160
 exports:

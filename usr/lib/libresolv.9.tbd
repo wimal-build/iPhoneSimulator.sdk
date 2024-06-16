@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           071F8D58-FBF5-3661-A553-1292D0A2FD21
   - target:          x86_64-ios-simulator
-    value:           88250CA1-2C56-39B3-BEE4-4B955D43D5BC
+    value:           694C5396-D3FC-35C3-95BC-50371C0E6EBC
   - target:          arm64-ios-simulator
-    value:           452FA5FA-0AD3-30BA-88BB-1681384B482C
+    value:           98C9E536-8F4F-3711-AA05-530CB9F5D86A
 install-name:    '/usr/lib/libresolv.9.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

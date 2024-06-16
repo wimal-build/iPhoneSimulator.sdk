@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           649C023B-F070-3158-B530-FB3C37F746C5
   - target:          x86_64-ios-simulator
-    value:           E1FCC860-AF74-3414-939A-0EC7A74BBA5D
+    value:           FF88E75E-A178-372C-9BD8-D5017519CBAE
   - target:          arm64-ios-simulator
-    value:           4898A289-48FD-3566-809D-4A2D38B0C85B
+    value:           4FFCCFFC-F8A4-3D51-A4F2-AB05AEFD365B
 install-name:    '/System/Library/PrivateFrameworks/GenerationalStorage.framework/GenerationalStorage'
 current-version: 322
 exports:

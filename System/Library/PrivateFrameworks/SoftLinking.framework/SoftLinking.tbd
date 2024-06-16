@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BD4FED8C-CA8C-3C22-9134-075317BEE3C6
+    value:           372D3FE2-A60F-35A4-AC3F-C72B4B9980A1
   - target:          arm64-ios-simulator
-    value:           ED4AEA03-59FA-31D5-9948-93D246A1ED69
+    value:           B4C5C9F8-E136-3A00-B2EC-9D2E8397892A
 install-name:    '/System/Library/PrivateFrameworks/SoftLinking.framework/SoftLinking'
 current-version: 37
 exports:

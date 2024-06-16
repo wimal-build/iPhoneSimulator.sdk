@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           746FD8A4-59BF-33FC-B595-4C65E49C9F2D
+    value:           888ECF36-9E53-3B7B-8EA8-A1BF719E9BD5
   - target:          arm64-ios-simulator
-    value:           A6AFBA98-C75D-3BCA-AC5F-9485AF7F5882
+    value:           F1578870-3272-3A30-AD6C-9509E69401DF
 install-name:    '/System/Library/PrivateFrameworks/ActivityRingsUI.framework/ActivityRingsUI'
 swift-abi-version: 7
 exports:

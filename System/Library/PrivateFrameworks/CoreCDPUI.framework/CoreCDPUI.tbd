@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6E000A0B-CAB9-3D02-8EC5-C77F0E30D906
   - target:          x86_64-ios-simulator
-    value:           FBB33606-0742-3DB5-8C86-BBC63BA4A28C
+    value:           CFCA89FC-04FA-34D2-8207-94F2B9CBF5F3
   - target:          arm64-ios-simulator
-    value:           61AFF09A-2211-35A2-B170-6DF9F15B737F
+    value:           CF2118CD-49B5-30F1-A531-CEFC3B0C2A09
 install-name:    '/System/Library/PrivateFrameworks/CoreCDPUI.framework/CoreCDPUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D0693F1E-FAEA-34CA-9AC9-95B76B0B6564
   - target:          x86_64-ios-simulator
-    value:           B6B13836-6643-3F06-90EE-2E281300F36C
+    value:           C6F361E1-3A78-336B-A6E2-46FC658DF74D
   - target:          arm64-ios-simulator
-    value:           3EDF04F1-829A-3DCE-9F7D-8096ABFC241C
+    value:           C8D222CB-F48F-34E4-9D3E-D8D568A7FEE9
 install-name:    '/usr/lib/swift/libswiftSpriteKit.dylib'
 current-version: 1.1
 swift-abi-version: 7

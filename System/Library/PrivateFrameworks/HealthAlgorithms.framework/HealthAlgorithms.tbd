@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           71355895-CDB6-3D7E-98A6-AFD8095D4DAB
+    value:           13B473F3-0EDB-3729-9C10-CA535E631A67
   - target:          arm64-ios-simulator
-    value:           EC514E49-F368-3D22-B9C4-63E7C27A8317
+    value:           CD1B715B-234E-3901-91B8-865CF3B5099F
 install-name:    '/System/Library/PrivateFrameworks/HealthAlgorithms.framework/HealthAlgorithms'
 exports:
   - targets:         [ x86_64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           31F94AA6-41A3-3F65-9482-D2054BE05D4A
   - target:          x86_64-ios-simulator
-    value:           A8978163-3A6D-3CF3-97C0-060971969301
+    value:           524344DB-0C36-30D6-90D0-5592EA28E825
   - target:          arm64-ios-simulator
-    value:           C606A405-A4DA-3788-8685-73BC78E6A038
+    value:           2A82A027-C7DE-3D4D-8694-654DBCF23BF0
 install-name:    '/System/Library/PrivateFrameworks/MobileSystemServices.framework/MobileSystemServices'
 exports:
   - targets:         [ i386-ios-simulator ]

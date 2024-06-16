@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           70C6D6B2-6745-36B8-B776-EB740CE87C36
+    value:           FD62A19B-17E9-3218-90F7-4112A0B82256
   - target:          arm64-ios-simulator
-    value:           3224ADF1-8E51-3152-ACEB-82180C61FF33
+    value:           960E886A-21A2-3F00-B8C4-BC1C3F1F8A6B
 install-name:    '/System/Library/PrivateFrameworks/RTTUtilities.framework/RTTUtilities'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

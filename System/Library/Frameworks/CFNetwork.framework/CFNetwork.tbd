@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           61DF913B-E90D-3EFD-8642-44B9F17B6DEB
   - target:          x86_64-ios-simulator
-    value:           CF71AC81-9FBB-3A27-8243-19BFB05EC6FC
+    value:           E05B29BD-8D28-3E66-A7BB-B71CB1911898
   - target:          arm64-ios-simulator
-    value:           983505DE-EDA0-3560-8984-4FB08E0F1EEC
+    value:           4418E3A5-EBE9-3E24-959D-0ABEE431470E
 install-name:    '/System/Library/Frameworks/CFNetwork.framework/CFNetwork'
 current-version: 1197
 exports:

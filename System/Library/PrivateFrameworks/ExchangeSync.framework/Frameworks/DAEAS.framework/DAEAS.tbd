@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A9CF64E4-E2C6-35DC-AD51-BB444A72F3EF
+    value:           6FEE59A4-567B-3555-A6A3-7EA5CACF8CCA
   - target:          arm64-ios-simulator
-    value:           1AE2A7B5-35CB-3681-85EF-3C851807EDF2
+    value:           90D961B0-0F34-3565-BA1D-B70CAD50B182
 install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/Frameworks/DAEAS.framework/DAEAS'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

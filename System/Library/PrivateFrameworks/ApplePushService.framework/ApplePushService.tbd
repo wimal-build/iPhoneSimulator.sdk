@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           66A8E87A-76B1-3A2C-9E86-8755A3BD5CD1
   - target:          x86_64-ios-simulator
-    value:           96E171A1-C253-3C78-8331-BFAE96B0F140
+    value:           B5EE181A-E5B8-316C-9ABF-383A369DA84C
   - target:          arm64-ios-simulator
-    value:           BAB450D0-5793-3830-8830-D1D02D07F6F8
+    value:           BCE71E0F-24DB-3921-B8CC-702AFCBCAF3C
 install-name:    '/System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService'
 exports:
   - targets:         [ i386-ios-simulator ]

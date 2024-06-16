@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E5E6CCA2-AA71-3AE5-AD38-37AE8EE9FBBA
   - target:          x86_64-ios-simulator
-    value:           1618C747-4373-3A47-B89A-06A233787E81
+    value:           784F5E1D-1B22-3688-A1C6-E6D90B3703CB
   - target:          arm64-ios-simulator
-    value:           59D3F463-E2A0-39E9-9CFA-58EE035F4112
+    value:           0C3175EF-13FE-342A-8CBE-014FBE390015
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libGLVMPlugin.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

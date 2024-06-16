@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           59EBEFAA-893E-3CDF-8ED9-69F595BF9076
   - target:          x86_64-ios-simulator
-    value:           B670A376-850C-3B97-80AE-97EACEBA2A5C
+    value:           37BCFF7C-F286-3A56-A2CA-A7313BC13871
   - target:          arm64-ios-simulator
-    value:           D54229DB-56E4-33AB-97B4-FE0A3EBDC5D2
+    value:           F7D427A6-B24F-3539-8466-58C9E306CC1E
 install-name:    '/System/Library/PrivateFrameworks/CoreMediaStream.framework/CoreMediaStream'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MSShPCCreateShareStateFromProtocol, _MSShPCDeleteShareStates, 

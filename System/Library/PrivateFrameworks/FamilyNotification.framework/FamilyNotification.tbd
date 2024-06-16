@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3B9B4ED4-7C4F-3B32-8067-FF5D686A5FA8
+    value:           8548719A-340B-3DCC-9E09-F1074BAA1439
   - target:          arm64-ios-simulator
-    value:           54790FDA-D47B-3E37-827F-CD4060461921
+    value:           DAF148D3-A367-3BB4-9E72-B90BA8B5D050
 install-name:    '/System/Library/PrivateFrameworks/FamilyNotification.framework/FamilyNotification'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

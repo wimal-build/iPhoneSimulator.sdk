@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           93772C28-3938-32AD-AA2C-91421822D659
+    value:           87F6B73E-22AA-3EE5-9C85-A49055309BDA
   - target:          arm64-ios-simulator
-    value:           2ABBE9C5-5A7B-3506-BC75-D1D091813A41
+    value:           E38D091C-3AFC-3C01-92DB-442FA8E2E757
 install-name:    '/System/Library/PrivateFrameworks/SilexWeb.framework/SilexWeb'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

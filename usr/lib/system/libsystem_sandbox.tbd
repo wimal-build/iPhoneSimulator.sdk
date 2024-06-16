@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1DA9DE88-C4BF-3F97-AA1B-A46EA5B3AFCD
   - target:          x86_64-ios-simulator
-    value:           2381FA85-BEA5-37C6-85A3-1B53DEBB5123
+    value:           B35C392E-00F0-3241-AE77-EEE216C3AEB8
   - target:          arm64-ios-simulator
-    value:           C6350093-0AD4-3180-8A60-CDD626583EBA
+    value:           C451C5B5-48F5-3724-B9A6-18E4431FA48A
 install-name:    '/usr/lib/system/libsystem_sandbox.dylib'
 current-version: 1441.0.4
 parent-umbrella:

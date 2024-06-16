@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           155E29F2-97AF-3D43-9390-6BE6E679EE65
   - target:          x86_64-ios-simulator
-    value:           59BB471D-6A4A-374B-8901-99CB71562152
+    value:           9C49329F-ED9D-31B6-BCC2-E25C3D5D1696
   - target:          arm64-ios-simulator
-    value:           6BF97E76-7F47-3CBC-8613-B0DB4CB00F9F
+    value:           178830B9-6653-330C-8236-9AA45A48ABE5
 install-name:    '/System/Library/PrivateFrameworks/CPMLBestShim.framework/CPMLBestShim'
 exports:
   - targets:         [ i386-ios-simulator ]

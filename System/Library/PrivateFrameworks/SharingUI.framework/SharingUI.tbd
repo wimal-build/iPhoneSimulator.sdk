@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           10AC76CE-EC88-3C7E-B4E6-A61A56AB120B
+    value:           9C712F95-3794-370F-9FA2-FFF287C3DD4A
   - target:          arm64-ios-simulator
-    value:           40A05A3B-F317-33C7-B001-0880E048A1D6
+    value:           7AC33989-4C35-3D35-A3FD-0EC100C5528A
 install-name:    '/System/Library/PrivateFrameworks/SharingUI.framework/SharingUI'
-current-version: 1564.6
+current-version: 1566.6
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SFAdjustmentFiltersForAssetTypeAndURL, _SFAirDropActivityMaxPreviewsKey, 

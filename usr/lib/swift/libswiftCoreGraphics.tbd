@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           171C6838-205F-3797-B480-71F8C86729CB
   - target:          x86_64-ios-simulator
-    value:           77C1BC7B-4DCF-3B50-8986-7C6476210F14
+    value:           21CE94E5-1802-3D8D-A16F-B653A664F79C
   - target:          arm64-ios-simulator
-    value:           F0B48604-38BC-3FC7-9528-E18ACE0246EE
+    value:           3277B622-E442-3534-BF1C-374A484AE5F6
 install-name:    '/usr/lib/swift/libswiftCoreGraphics.dylib'
 current-version: 2
 swift-abi-version: 7

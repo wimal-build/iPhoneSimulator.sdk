@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4FBBA12F-B6AB-3028-BAB7-7A3BF3D77FBA
   - target:          x86_64-ios-simulator
-    value:           A1D8B416-6472-3F8B-ABC4-EF5BA7F777DD
+    value:           B52218D0-720B-3F5B-97C5-1431EE28E81F
   - target:          arm64-ios-simulator
-    value:           9A05C44F-08B3-3EEC-BF91-1917494C0097
+    value:           EBE60B78-9DD5-3537-862B-EAF07F52C762
 install-name:    '/System/Library/PrivateFrameworks/PersonaKit.framework/PersonaKit'
 exports:
   - targets:         [ i386-ios-simulator ]

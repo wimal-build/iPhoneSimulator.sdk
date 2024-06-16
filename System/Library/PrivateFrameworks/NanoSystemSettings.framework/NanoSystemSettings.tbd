@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9BE64684-B2F0-3519-838A-330D6CEC2178
   - target:          x86_64-ios-simulator
-    value:           A4497CBF-C5FE-3B01-9BDF-7846255436A2
+    value:           A5A9EBB9-30B8-37CF-BF96-C53ACC2EED44
   - target:          arm64-ios-simulator
-    value:           4E405ED7-FE1C-309E-AFF3-3DE7EA48B5B2
+    value:           1164DB71-4FA7-31DF-8087-A6BFE0E13429
 install-name:    '/System/Library/PrivateFrameworks/NanoSystemSettings.framework/NanoSystemSettings'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

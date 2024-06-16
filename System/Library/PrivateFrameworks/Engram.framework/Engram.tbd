@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9A2B5D4D-83E4-3112-8DF5-B3B84CE0EBCE
+    value:           6D3D14BB-6AE9-3909-817A-88592E9B3C45
   - target:          arm64-ios-simulator
-    value:           D14D05AB-7C70-3247-BC35-AE00A7444FDA
+    value:           652B5D68-7A71-3F81-8956-DCAB4C90CF5E
 install-name:    '/System/Library/PrivateFrameworks/Engram.framework/Engram'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

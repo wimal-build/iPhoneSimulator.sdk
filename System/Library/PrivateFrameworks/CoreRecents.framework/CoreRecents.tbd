@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D5898624-4B2C-3A09-9C37-8658240E435E
   - target:          x86_64-ios-simulator
-    value:           3CD40ABB-A751-39FD-8D53-1F1530B3319A
+    value:           CAE2BE40-3B39-31A7-A73E-25A18B84A3C0
   - target:          arm64-ios-simulator
-    value:           7DCEDA32-2518-3628-AAC6-6B10D1B51C9D
+    value:           B29F2924-3E80-3484-BFA2-DDBFCF19A511
 install-name:    '/System/Library/PrivateFrameworks/CoreRecents.framework/CoreRecents'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

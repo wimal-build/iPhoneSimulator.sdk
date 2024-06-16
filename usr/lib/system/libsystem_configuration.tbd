@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9E115698-B158-3A49-878B-680E4FE4D8FC
   - target:          x86_64-ios-simulator
-    value:           B071F226-697D-3B99-B976-8F58B23D7F78
+    value:           B7E12274-F010-31BB-AD13-41DE4FDDC32A
   - target:          arm64-ios-simulator
-    value:           1EB44E1B-39F9-3F8B-833B-A3508BF92A7D
+    value:           61944F27-1FF3-3056-B045-79049ADDAC87
 install-name:    '/usr/lib/system/libsystem_configuration.dylib'
 current-version: 1109.0.4
 parent-umbrella:

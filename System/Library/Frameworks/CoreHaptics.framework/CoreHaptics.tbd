@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A706F750-16F8-38D2-A203-46902BBDB622
+    value:           CBCB7D41-6B67-31AB-8200-02B496F55904
   - target:          arm64-ios-simulator
-    value:           9BDED2DD-2BC6-3B6C-B8F3-2E31C3B5286D
+    value:           4898F097-95FF-3056-AD24-D124351C46F4
 install-name:    '/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

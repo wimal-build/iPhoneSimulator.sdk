@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E87ACF36-7A91-3319-87C9-2E97CCACCBAC
   - target:          x86_64-ios-simulator
-    value:           B90A8DE8-12B6-3B97-A1FE-8CD3605097E4
+    value:           E6D81159-7B3F-3F68-B1CE-C2C8F3AA6AA1
   - target:          arm64-ios-simulator
-    value:           FA2823F9-2AE8-3A78-BEB9-7AD3BEB9D019
+    value:           C69C0C33-5FF1-3889-89EC-A920637F0A72
 install-name:    '/System/Library/PrivateFrameworks/NewsTransport.framework/NewsTransport'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1036,19 +1036,20 @@ exports:
                        NTPBTocReorder._has, NTPBTocReorder._tocExposureId, NTPBTocReorder._tocNewIndex, 
                        NTPBTocReorder._tocOldIndex, NTPBTocToggleTap._tocExposureId, 
                        NTPBTodayConfig._audioIndicatorColor, NTPBTodayConfig._backgroundColorDark, 
-                       NTPBTodayConfig._backgroundColorLight, NTPBTodayConfig._todayQueueConfigs, 
-                       NTPBTodayConfig._widgetIdentifier, NTPBTodayModuleContentDescriptor._identifier, 
-                       NTPBTodayModuleContentDescriptor._request, NTPBTodayModuleContentRequest._has, 
-                       NTPBTodayModuleContentRequest._moduleDescriptorType, NTPBTodayModuleContentRequest._name, 
-                       NTPBTodayModuleContentRequest._nameColorDark, NTPBTodayModuleContentRequest._nameColorLight, 
-                       NTPBTodayModuleContentRequest._tagID, NTPBTodayModuleDescriptor._availableContents, 
-                       NTPBTodayModuleDescriptor._has, NTPBTodayModuleDescriptor._identifier, 
-                       NTPBTodayModuleDescriptor._type, NTPBTodayPersonalizationEvent._action, 
-                       NTPBTodayPersonalizationEvent._articleId, NTPBTodayPersonalizationEvent._createdAt, 
-                       NTPBTodayPersonalizationEvent._groupType, NTPBTodayPersonalizationEvent._has, 
-                       NTPBTodayPersonalizationEvent._headlinePublisher, NTPBTodayPersonalizationEvent._headlineTopics, 
-                       NTPBTodayPersonalizationEvent._orderInGroup, NTPBTodayPersonalizationEvent._overallOrder, 
-                       NTPBTodayPersonalizationEvent._personalizationSectionFeatureId, 
+                       NTPBTodayConfig._backgroundColorLight, NTPBTodayConfig._has, 
+                       NTPBTodayConfig._todayQueueConfigs, NTPBTodayConfig._widgetIdentifier, 
+                       NTPBTodayConfig._widgetSystemReloadInterval, NTPBTodayConfig._widgetSystemReloadJitterMax, 
+                       NTPBTodayModuleContentDescriptor._identifier, NTPBTodayModuleContentDescriptor._request, 
+                       NTPBTodayModuleContentRequest._has, NTPBTodayModuleContentRequest._moduleDescriptorType, 
+                       NTPBTodayModuleContentRequest._name, NTPBTodayModuleContentRequest._nameColorDark, 
+                       NTPBTodayModuleContentRequest._nameColorLight, NTPBTodayModuleContentRequest._tagID, 
+                       NTPBTodayModuleDescriptor._availableContents, NTPBTodayModuleDescriptor._has, 
+                       NTPBTodayModuleDescriptor._identifier, NTPBTodayModuleDescriptor._type, 
+                       NTPBTodayPersonalizationEvent._action, NTPBTodayPersonalizationEvent._articleId, 
+                       NTPBTodayPersonalizationEvent._createdAt, NTPBTodayPersonalizationEvent._groupType, 
+                       NTPBTodayPersonalizationEvent._has, NTPBTodayPersonalizationEvent._headlinePublisher, 
+                       NTPBTodayPersonalizationEvent._headlineTopics, NTPBTodayPersonalizationEvent._orderInGroup, 
+                       NTPBTodayPersonalizationEvent._overallOrder, NTPBTodayPersonalizationEvent._personalizationSectionFeatureId, 
                        NTPBTodayPersonalizationEvent._sectionOrder, NTPBTodayPersonalizationUpdate._events, 
                        NTPBTodayQueueConfig._has, NTPBTodayQueueConfig._todaySectionConfigs, 
                        NTPBTodayQueueConfig._widgetVisibleSectionsLimit, NTPBTodayResultOperationFetchInfo._appConfigTreatmentIDInteger, 
@@ -1109,7 +1110,8 @@ exports:
                        NTPBTodayWidgetConfig._contentPrefetchEnabled, NTPBTodayWidgetConfig._externalAnalyticsConfigurationsData, 
                        NTPBTodayWidgetConfig._has, NTPBTodayWidgetConfig._minimumArticleExposureDurationToBePreseen, 
                        NTPBTodayWidgetConfig._minimumNumberOfTimesPreseenToBeSeen, 
-                       NTPBTodayWidgetConfig._prerollLoadingTimeout, NTPBTodayWidgetExposure._contentFetchDate, 
+                       NTPBTodayWidgetConfig._prerollLoadingTimeout, NTPBTodayWidgetConfig._widgetSystemReloadInterval, 
+                       NTPBTodayWidgetConfig._widgetSystemReloadJitterMax, NTPBTodayWidgetExposure._contentFetchDate, 
                        NTPBTodayWidgetExposure._contentId, NTPBTodayWidgetExposure._has, 
                        NTPBTodayWidgetExposure._widgetAppearanceType, NTPBTodayWidgetExposure._widgetArticleCount, 
                        NTPBTodayWidgetExposure._widgetHeadlineExposureCount, NTPBTodayWidgetExposure._widgetIdentifier, 

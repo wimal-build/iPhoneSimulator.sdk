@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FE6BB9F9-A088-3795-8492-4B58E587D195
   - target:          x86_64-ios-simulator
-    value:           70777C08-B9B2-355B-B9BB-F6C029F898D3
+    value:           E6757084-3B4A-37BB-98FA-41A0C071DA66
   - target:          arm64-ios-simulator
-    value:           122DE1EB-075C-3536-9AF7-76AD9A686ECE
+    value:           EEC74A97-A310-38E6-876E-D35684A7D242
 install-name:    '/System/Library/PrivateFrameworks/Stocks.framework/Stocks'
 exports:
   - targets:         [ i386-ios-simulator ]

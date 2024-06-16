@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9FB151B4-8C6B-3CF8-AA18-02EE1E0A42F9
+    value:           033C0AA8-ED8B-3790-8B1E-E7B583D1AF39
   - target:          arm64-ios-simulator
-    value:           8DBA125B-C315-3E32-9590-E2B3A1691479
+    value:           02EF5DB4-6294-34F4-A026-CFBE89E3AB57
 install-name:    '/System/Library/PrivateFrameworks/MallocStackLogging.framework/MallocStackLogging'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

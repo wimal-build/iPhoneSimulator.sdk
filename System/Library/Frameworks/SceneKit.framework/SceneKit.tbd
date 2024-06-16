@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ED115D90-1F37-3A0F-9A48-0463B1544420
   - target:          x86_64-ios-simulator
-    value:           53EF0A45-479A-396E-BE5D-69B32E1AB9B7
+    value:           4312C6B7-A291-3A82-925E-2ADC62399AED
   - target:          arm64-ios-simulator
-    value:           6007D09B-D94B-35F7-AA77-F5D647981AEE
+    value:           1EE87AE9-5246-37D2-8CFD-CBE26DDC05E4
 install-name:    '/System/Library/Frameworks/SceneKit.framework/SceneKit'
 current-version: 555
 exports:

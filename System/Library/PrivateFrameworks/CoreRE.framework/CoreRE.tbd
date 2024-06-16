@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0627D56A-D9FD-3335-A802-C401E2CD5A99
+    value:           E7A4B28D-3622-38EB-9B4B-ECDB6D68E0E6
   - target:          arm64-ios-simulator
-    value:           5736AE42-EE6A-31A2-B9A7-3749EEE491E9
+    value:           7A40371D-6E54-30C7-A74A-15130D829EF1
 install-name:    '/System/Library/PrivateFrameworks/CoreRE.framework/CoreRE'
 current-version: 60.44
 exports:

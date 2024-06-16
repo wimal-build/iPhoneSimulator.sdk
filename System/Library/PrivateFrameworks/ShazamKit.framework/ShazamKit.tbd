@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C425FA93-315D-3F0A-AC45-9D2601B59895
+    value:           F705C38D-C155-3A1B-ABF5-67AB933BF79E
   - target:          arm64-ios-simulator
-    value:           89C2DD44-950E-370D-81C5-01AD4862696A
+    value:           D86BCE91-2B3C-3E17-B0AD-4B86D1EDE84A
 install-name:    '/System/Library/PrivateFrameworks/ShazamKit.framework/ShazamKit'
 exports:
   - targets:         [ x86_64-ios-simulator ]

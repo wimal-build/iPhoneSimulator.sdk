@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           403CE585-207D-35EB-A9DE-8A6D74E5F999
+    value:           E9187646-F2C6-33CD-8B1A-F3994A6800B8
   - target:          arm64-ios-simulator
-    value:           B4344089-677A-3E53-8684-F23B18CCE99D
+    value:           C24814DE-2F4E-32F0-9975-487A67C93EBE
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSPersistence.framework/TSPersistence'
 exports:
   - targets:         [ x86_64-ios-simulator ]

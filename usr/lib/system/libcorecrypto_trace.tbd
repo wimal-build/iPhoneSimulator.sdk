@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9EFB8A7D-44B0-39D6-BA6E-CC633ADAEBA4
+    value:           5365803C-8492-3A26-930C-B53B89AFFAF2
   - target:          arm64-ios-simulator
-    value:           E6CED77B-77CB-39DA-8095-740A5FE0565A
+    value:           800B2CCF-D1BC-3429-A86A-FD32EFCA3A23
 install-name:    '/usr/lib/system/libcorecrypto_trace.dylib'
 current-version: 1000.0.5
 parent-umbrella:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E693D21C-13BC-3070-BF1C-68DCE25BCD03
   - target:          x86_64-ios-simulator
-    value:           945D1E64-7F03-3BB8-8B19-DEE11E00853A
+    value:           E71E00CB-F7FD-3977-BD14-2182959E1606
   - target:          arm64-ios-simulator
-    value:           AD1A1C70-BBA5-3F1E-A2F9-760E947D0378
+    value:           12A25FD2-E0D8-36EC-9435-107FF2A44FA4
 install-name:    '/System/Library/PrivateFrameworks/EmbeddedAcousticRecognition.framework/EmbeddedAcousticRecognition'
 exports:
   - targets:         [ i386-ios-simulator ]

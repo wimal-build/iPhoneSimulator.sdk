@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FFF6A03C-1496-3AFE-8C86-516C9A804F89
+    value:           74FCB43F-68CD-3C04-BFF3-0097B424751A
   - target:          arm64-ios-simulator
-    value:           C12C62C3-2B80-35EC-8441-1F1CBE829351
+    value:           F16A6AEB-4802-35CE-9B3A-92ECFCA014A5
 install-name:    '/System/Library/PrivateFrameworks/HealthArticlesUI.framework/HealthArticlesUI'
 swift-abi-version: 7
 exports:

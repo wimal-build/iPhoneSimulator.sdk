@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A0B3B872-8935-359D-909F-A6EAB85B31AC
+    value:           2565FBFD-F31F-35F5-A527-35985D2B0888
   - target:          arm64-ios-simulator
-    value:           6C98F5D1-9598-36A8-BB86-40FEA967AE27
+    value:           F034FB4C-3CAB-3054-A644-24FC53716F79
 install-name:    '/System/Library/PrivateFrameworks/MediaConversionService.framework/MediaConversionService'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ PHMediaFormatConversionContent._fileSignature, PHMediaFormatConversionContent._fileURL, 

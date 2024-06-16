@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           87D7165B-5A2C-31BC-B811-97A5D2A46860
   - target:          x86_64-ios-simulator
-    value:           4C0857B3-EDED-3849-907A-E5526A329F28
+    value:           A11AD599-97B6-3DDF-8508-9C3B5C803D7C
   - target:          arm64-ios-simulator
-    value:           79C6311D-6EA0-355B-9D58-1DFD6E2FF0E2
+    value:           A644121B-AFAA-3158-8DC3-D2854B2A8E79
 install-name:    '/System/Library/PrivateFrameworks/DigitalTouchShared.framework/DigitalTouchShared'
 exports:
   - targets:         [ i386-ios-simulator ]

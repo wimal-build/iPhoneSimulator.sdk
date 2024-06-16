@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D877EA33-A2BD-3ADD-AC7B-DF2C1FE94C16
+    value:           B265966D-A259-380D-A004-6731DCB34344
   - target:          arm64-ios-simulator
-    value:           5AE605FF-7960-3AD9-B3A2-E7B2A731169F
+    value:           671CCB74-1879-317E-B58E-FFF674874C6E
 install-name:    '/System/Library/PrivateFrameworks/ContextKitExtraction.framework/ContextKitExtraction'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

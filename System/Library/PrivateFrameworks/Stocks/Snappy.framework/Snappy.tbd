@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBA23FB5-FC85-3759-98B8-EB472A823722
+    value:           AD11EED9-09CB-3582-A3AD-0E593D8E63C6
   - target:          arm64-ios-simulator
-    value:           1637053D-76A2-3949-96F9-9E1E8EF61C5C
+    value:           418EC2D8-7505-333F-B242-EC417ECD970E
 install-name:    '/System/Library/PrivateFrameworks/Stocks/Snappy.framework/Snappy'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

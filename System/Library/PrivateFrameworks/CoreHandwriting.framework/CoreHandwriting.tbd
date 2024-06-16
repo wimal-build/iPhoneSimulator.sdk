@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           87794875-ADF3-3B7C-962D-92806AB7BA00
   - target:          x86_64-ios-simulator
-    value:           22FE0653-2200-3B52-9275-E88B6A6C2885
+    value:           951AC7FE-936C-3291-AEDC-C84304D0D937
   - target:          arm64-ios-simulator
-    value:           A137CF41-C17F-3E21-ADE6-7B3CC55504B9
+    value:           BB172E4A-308F-33F6-8679-0E6C48A9F375
 install-name:    '/System/Library/PrivateFrameworks/CoreHandwriting.framework/CoreHandwriting'
 current-version: 0
 exports:

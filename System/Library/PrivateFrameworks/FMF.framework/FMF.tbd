@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1DFF4E0B-1C5C-380D-A232-70920BA3A155
   - target:          x86_64-ios-simulator
-    value:           F31F8B09-A787-3A1A-8288-30A8E38A3FB3
+    value:           32DA5270-85F2-3B8D-B909-7AAE0CAAFDC2
   - target:          arm64-ios-simulator
-    value:           4811F387-7A7E-31C4-8772-15ED72D1F896
+    value:           E9E3A344-3E4B-3B9D-AE5A-EE5F239B4D95
 install-name:    '/System/Library/PrivateFrameworks/FMF.framework/FMF'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B3D70DEF-1C75-3930-8556-EBC018FA4AA6
   - target:          x86_64-ios-simulator
-    value:           CB94A98B-E912-34DD-997E-DF47D19C4278
+    value:           E9C56945-6FDE-3A69-A67F-494D887C9379
   - target:          arm64-ios-simulator
-    value:           754A05EF-2AB2-319F-B4EF-A744C2F42481
+    value:           C3BA853E-3235-3CEA-BD73-04630763A2E0
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

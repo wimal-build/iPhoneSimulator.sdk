@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BBE3610E-4344-3E8B-8F77-16FCA93DE258
+    value:           743683AD-1DE4-3241-A72B-BB89AE6087B3
   - target:          arm64-ios-simulator
-    value:           6882EA56-A79F-36C9-B81A-6A90DD1525B3
+    value:           983457BE-C848-3C13-AF58-2EC2CBEE07E9
 install-name:    '/System/Library/PrivateFrameworks/EmbeddedDataReset.framework/EmbeddedDataReset'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

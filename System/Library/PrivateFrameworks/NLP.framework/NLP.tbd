@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3E9C32F8-8FC5-39F9-99B4-451F48D98AD5
   - target:          x86_64-ios-simulator
-    value:           D63FFF24-3CAD-3DD8-BF1C-3BEA19371BC4
+    value:           19D5916D-11FB-34EB-B339-A6875B060E83
   - target:          arm64-ios-simulator
-    value:           93AA4571-C99E-34A2-A692-D2271B3C3FA6
+    value:           EC02AD96-6B4D-35CE-9BF2-089EA416FE83
 install-name:    '/System/Library/PrivateFrameworks/NLP.framework/NLP'
 current-version: 210
 exports:

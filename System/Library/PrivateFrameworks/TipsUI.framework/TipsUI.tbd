@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           75179066-F13B-320A-906D-15AB6742D1BE
+    value:           0358EADC-7DAC-30A3-9B7B-489E30C03F52
   - target:          arm64-ios-simulator
-    value:           2A772064-8E1E-33F4-B658-1CAE33C76F2A
+    value:           42D48827-BA49-3451-B00F-305770102C20
 install-name:    '/System/Library/PrivateFrameworks/TipsUI.framework/TipsUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3BAFF27B-5845-39EC-9D46-347BC52B1323
+    value:           83E60E93-18B3-3DAE-BE9B-D42C13D2FBE0
   - target:          arm64-ios-simulator
-    value:           17D8ED14-6C08-3CB0-9D56-54F0EA142CF3
+    value:           2CE65FCB-69B0-391B-AF4B-E0C0EB449175
 install-name:    '/System/Library/PrivateFrameworks/SpotlightUIInternal.framework/SpotlightUIInternal'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

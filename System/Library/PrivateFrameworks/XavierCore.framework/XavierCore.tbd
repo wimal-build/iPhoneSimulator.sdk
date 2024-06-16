@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2559D25F-C2B1-368E-AD93-06AE8776765E
+    value:           41F43519-650E-3FFB-B4E6-EBBF1A791D50
   - target:          arm64-ios-simulator
-    value:           99641650-484B-3EF1-90B3-27669A0F9268
+    value:           9C558BFB-C86B-3034-A900-FA079846A00B
 install-name:    '/System/Library/PrivateFrameworks/XavierCore.framework/XavierCore'
 current-version: 0
 compatibility-version: 0

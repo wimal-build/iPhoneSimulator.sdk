@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DA2F4CF1-A9D7-3F82-8A36-89F219F78E03
+    value:           118EDD2C-120F-3E2E-8451-37154769F9B0
   - target:          arm64-ios-simulator
-    value:           83AC1004-0FA9-3D85-AF9A-7B11032430F8
+    value:           5A43A7C3-F835-34D0-B1A4-897E148BC72C
 install-name:    '/System/Library/PrivateFrameworks/SchoolTime.framework/SchoolTime'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9154B874-A23D-330C-B28F-F1F69BDD612F
+    value:           A3E64A86-5E65-33C5-BE07-96625C392627
   - target:          arm64-ios-simulator
-    value:           61C18C43-3746-344D-BCED-9897E14B1E25
+    value:           6A3662B9-AEB3-36A0-961A-B581F488C5CA
 install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompilerImpl.dylib'
-current-version: 31001.40
+current-version: 31001.41
 exports:
   - targets:         [ x86_64-ios-simulator ]
     weak-symbols:    [ __ZTIN4llvm11airstitcher12FunctionNodeE, __ZTIN4llvm11airstitcher18OutputFunctionNodeE, 

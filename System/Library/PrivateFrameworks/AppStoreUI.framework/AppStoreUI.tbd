@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7A6DB62D-F535-3CBA-8733-BA6899420F53
   - target:          x86_64-ios-simulator
-    value:           923C207A-BD87-358B-B48F-C1CB993A0328
+    value:           C6133FB3-8F84-3E08-B756-ED0DA0881008
   - target:          arm64-ios-simulator
-    value:           C0A7D10A-A0B6-31BF-A59F-F42E29A67757
+    value:           15C702CC-3CBF-3B95-A12D-235FEA03D9D7
 install-name:    '/System/Library/PrivateFrameworks/AppStoreUI.framework/AppStoreUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

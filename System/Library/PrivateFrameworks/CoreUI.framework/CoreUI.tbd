@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           FC52E05E-A5E6-3DBF-ACD3-F2F846EE0B40
   - target:          x86_64-ios-simulator
-    value:           50E168D9-C9EE-3EC4-A253-284A556FE00D
+    value:           473DA0DD-E7B4-3EA0-853C-CC8E7EEF9FA8
   - target:          arm64-ios-simulator
-    value:           11E486A2-F893-3798-9B0B-F7486ADFA18E
+    value:           7CEC718B-6CDD-3FCB-8840-457A12725196
 install-name:    '/System/Library/PrivateFrameworks/CoreUI.framework/CoreUI'
-current-version: 676
+current-version: 676.1
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CUIEqualRenditionKeysIgnoringAttribute, _gArtworkDraftTypes, 

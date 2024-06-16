@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E3F61A2F-A8B1-3875-B299-7FFF1CA95D7B
+    value:           8EDF597D-241E-3E57-A9A6-A13BF7D03776
   - target:          arm64-ios-simulator
-    value:           CB2004E9-8B97-3C52-9C34-62CD969FAD2B
+    value:           2548DA23-6EE1-325A-B5F8-37AFB52BE9E6
 install-name:    '/System/Library/PrivateFrameworks/CTCarrierSpaceUI.framework/CTCarrierSpaceUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

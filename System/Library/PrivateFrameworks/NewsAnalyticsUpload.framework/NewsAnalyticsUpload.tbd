@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           ACB44252-4895-3B69-9D62-D7A54F2B51CA
+    value:           A7F44C8C-DAC1-3B0B-ADE7-B1AF5561CC51
   - target:          arm64-ios-simulator
-    value:           5A677246-E8D0-3085-B558-787AB05869E0
+    value:           B89DCD15-E1EB-3004-893D-88E26165FDD0
 install-name:    '/System/Library/PrivateFrameworks/NewsAnalyticsUpload.framework/NewsAnalyticsUpload'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

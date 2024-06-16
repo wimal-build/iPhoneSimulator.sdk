@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5CA3BE0E-8D88-3C3B-AD8C-32E19743DF9C
   - target:          x86_64-ios-simulator
-    value:           B1D9D53B-8CC6-3C06-9D3C-39610E0BBE29
+    value:           43A85CC9-6803-3CD6-AEEB-72A4E69ADDF7
   - target:          arm64-ios-simulator
-    value:           D295A37F-B484-3F77-95BA-DCB3BD64B079
+    value:           4715223C-0DBD-37E8-93F5-FA1184352E60
 install-name:    '/System/Library/PrivateFrameworks/ProactiveEventTracker.framework/ProactiveEventTracker'
 current-version: 294.1
 exports:

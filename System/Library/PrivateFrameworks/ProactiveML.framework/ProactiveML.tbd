@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3F1A4069-C86B-3AF1-A364-7E0179F8BC1E
   - target:          x86_64-ios-simulator
-    value:           25F9A356-21EB-3B7F-83E7-D62429A1D332
+    value:           EB0F27BB-3AF4-31CF-9CFC-7E459EEE6270
   - target:          arm64-ios-simulator
-    value:           711F3FE8-624A-3E45-8F60-505B02FE4C1C
+    value:           72CA6F00-5A8B-3767-B0F6-C667557CBBE6
 install-name:    '/System/Library/PrivateFrameworks/ProactiveML.framework/ProactiveML'
 current-version: 1115
 exports:

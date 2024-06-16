@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3B6A816F-B82C-3AC1-AE94-2D463776C0FC
+    value:           C84B344E-F24E-3BE1-B27C-D2A2A6CBCA6B
   - target:          arm64-ios-simulator
-    value:           9FB2B74A-D794-3AA1-8C3E-F76A7B731C0A
+    value:           958F8206-3C75-39DC-9A08-022D028AB2ED
 install-name:    '/usr/lib/system/libcorecrypto_noasm.dylib'
 current-version: 1000.0.5
 parent-umbrella:

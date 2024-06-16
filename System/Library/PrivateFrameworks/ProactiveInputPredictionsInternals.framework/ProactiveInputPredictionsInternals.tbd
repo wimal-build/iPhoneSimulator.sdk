@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           ED6EB853-D9C1-3AAA-B66D-7EF372824449
+    value:           93960C1F-2CAF-3261-8623-7E75E4B2FAE7
   - target:          arm64-ios-simulator
-    value:           454A3E68-077A-3210-B500-DC3D3D340C64
+    value:           0EF7267B-A2BC-3AD4-BBE7-6FCE46EDC382
 install-name:    '/System/Library/PrivateFrameworks/ProactiveInputPredictionsInternals.framework/ProactiveInputPredictionsInternals'
 current-version: 1115
 exports:

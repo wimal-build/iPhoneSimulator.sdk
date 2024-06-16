@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3D60BA2C-F7A4-36CA-B7D9-41E23B52720F
   - target:          x86_64-ios-simulator
-    value:           C1303B0B-8758-3FC8-AB20-56D611602332
+    value:           5F2BB813-2285-3211-AD3F-05B709FDE951
   - target:          arm64-ios-simulator
-    value:           6CDDF958-7E7A-3542-86C5-0A6A29754D3A
+    value:           E1C0C769-A43A-3C6B-9C95-579AA834BF49
 install-name:    '/System/Library/PrivateFrameworks/FTAWD.framework/FTAWD'
 current-version: 800
 exports:

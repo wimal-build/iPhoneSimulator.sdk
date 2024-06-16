@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           083AF98F-430A-385F-B08A-5382A49942CC
+    value:           976FA237-5F0C-3EB8-AC49-BBBBE722266D
   - target:          arm64-ios-simulator
-    value:           5B5FFA2E-B3A9-3E7F-A520-8C952169B479
+    value:           1F45297A-FC11-395F-A8D7-ED0A9D2AC547
 install-name:    '/System/Library/PrivateFrameworks/VirtualGarage.framework/VirtualGarage'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

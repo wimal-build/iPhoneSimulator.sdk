@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           422A4576-2C49-3714-9B09-CF214E594F53
+    value:           50E51638-C8E4-3BFE-8CCD-2BB2742C86C3
   - target:          arm64-ios-simulator
-    value:           6B790BD8-97C9-3B87-BD6B-2865922B05D5
+    value:           0F34CED8-954F-30F0-A3E4-7AD4A63819C2
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ICE.framework/ICE'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

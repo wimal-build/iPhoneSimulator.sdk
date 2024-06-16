@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           98FE07BA-9D68-3E7E-8679-5A3B5FD9356B
   - target:          x86_64-ios-simulator
-    value:           7F17B0F5-5BFE-3704-BA24-8644CE8AE32D
+    value:           7908A685-0C22-3C56-A89B-CAF7E0234B95
   - target:          arm64-ios-simulator
-    value:           6CAB9F4D-3A4F-355E-9126-8752EAD00F2D
+    value:           4A38953B-53B6-3C24-AAEC-083E8E61F224
 install-name:    '/System/Library/PrivateFrameworks/CameraKit.framework/CameraKit'
 exports:
   - targets:         [ i386-ios-simulator ]

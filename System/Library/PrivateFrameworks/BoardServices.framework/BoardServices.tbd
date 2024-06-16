@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D132251D-1B79-3CB7-B212-A931F85649D6
+    value:           149C60B4-F914-3AF6-9469-94355446948B
   - target:          arm64-ios-simulator
-    value:           FDD45BF9-832C-30EF-85CD-F94338F9CC10
+    value:           B3AA5E12-194E-32F3-99EC-2974C761B127
 install-name:    '/System/Library/PrivateFrameworks/BoardServices.framework/BoardServices'
 current-version: 0
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8402DF3A-C712-3D6B-B2E7-3C136E47B208
   - target:          x86_64-ios-simulator
-    value:           33BEC290-4161-3F92-82E4-7B6744AE7CE8
+    value:           81EF6166-64BE-38B5-A10D-41E8B1280B74
   - target:          arm64-ios-simulator
-    value:           2DD3A2A0-254F-352E-8E63-6E9A70B72E52
+    value:           284AFBD4-C26B-38A1-A41F-0DD123803D17
 install-name:    '/usr/lib/system/libsystem_c.dylib'
 current-version: 1439.0.3
 parent-umbrella:

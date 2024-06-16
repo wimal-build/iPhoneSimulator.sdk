@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E1F98AE4-96A1-3DE6-BFC8-ABB7C4E133DA
   - target:          x86_64-ios-simulator
-    value:           2E6356D1-DBC7-3C9C-B852-035016377944
+    value:           FAACAF1B-7951-3D08-9EE6-C4B9CFBF014D
   - target:          arm64-ios-simulator
-    value:           A2F58742-AA70-3B0C-A407-36CBFFA87AD3
+    value:           48C5A5F3-C029-3C01-ADF7-C1BCC0622F34
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libCoreVMClient.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

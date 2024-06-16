@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B7AB057D-D93E-3DAD-960B-BB4D18A30E2E
   - target:          x86_64-ios-simulator
-    value:           8567F702-DDAD-3DFE-B2A5-B8F045BA35C0
+    value:           A37A6BDF-98B0-3C61-A130-EE7113DA6595
   - target:          arm64-ios-simulator
-    value:           301845AC-12E2-3543-B990-C33B39F73531
+    value:           86DA906A-0DC7-372A-BA71-3F6C7DDBFBAA
 install-name:    '/System/Library/PrivateFrameworks/ClassroomKit.framework/ClassroomKit'
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
@@ -304,9 +304,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           911AEE19-6B45-37D8-B453-47E025EDF6EC
   - target:          x86_64-ios-simulator
-    value:           008F154A-2B04-3DA8-A738-2ACA23B9A0BF
+    value:           9DA7E099-6767-3B88-A3CE-51E07B07F84A
   - target:          arm64-ios-simulator
-    value:           36E21A48-73A7-3C07-A205-339D0D5D6856
+    value:           EE036D36-2CD9-3C01-8932-C2ED3E037339
 install-name:    '/System/Library/PrivateFrameworks/Catalyst.framework/Catalyst'
 current-version: 7
 exports:
@@ -338,9 +338,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FFF68D0C-7D5E-3EAC-8B0A-751202533A1D
   - target:          x86_64-ios-simulator
-    value:           CACCD0E3-E770-3960-8C90-913E4676467D
+    value:           3F36ECF7-747D-31FF-9948-51F5F17710CD
   - target:          arm64-ios-simulator
-    value:           CEAA469C-E799-3FD0-8A5F-EC727E32A56A
+    value:           D2859F7D-F950-3FB7-BF5F-7F01C85037D0
 install-name:    '/System/Library/PrivateFrameworks/DeviceManagement.framework/DeviceManagement'
 current-version: 40.18
 reexported-libraries:
@@ -553,9 +553,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CF1D1359-E5D5-32EF-9FC7-8CAB56EE06D6
   - target:          x86_64-ios-simulator
-    value:           60015252-0169-39FB-A522-222779AF5DF0
+    value:           13BF3331-F152-3810-B414-7C8394C07319
   - target:          arm64-ios-simulator
-    value:           F2D4AC60-CA9F-36A7-9477-EC086F555B1D
+    value:           81D0C89B-34DB-3FD7-8582-CA31A2C00E0E
 install-name:    '/System/Library/PrivateFrameworks/AppSupport.framework/AppSupport'
 current-version: 29
 reexported-libraries:

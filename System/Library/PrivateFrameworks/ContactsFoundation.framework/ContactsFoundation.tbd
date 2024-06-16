@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A0890B81-7660-3203-B107-96C03CC15557
   - target:          x86_64-ios-simulator
-    value:           910599D4-25AB-3E2F-B7D1-609A6078BE1F
+    value:           3BCCCF76-66AE-365E-B43D-EC326ABE9DDC
   - target:          arm64-ios-simulator
-    value:           D443FE3D-3F1B-3CB6-BB76-03F1F4572626
+    value:           EC35F2C3-F308-3B9E-8D6A-7F94C60CD96E
 install-name:    '/System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]

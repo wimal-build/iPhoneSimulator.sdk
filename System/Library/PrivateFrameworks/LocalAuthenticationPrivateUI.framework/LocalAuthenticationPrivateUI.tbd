@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AE540E50-7E0A-38DA-906C-8C532402F102
+    value:           C95AD218-53D3-364B-86EE-A62745388FD3
   - target:          arm64-ios-simulator
-    value:           7E5786C7-6988-3910-8EE1-F49392ADF320
+    value:           F9AF5305-9A95-3C9E-814E-81A9B3DFFE2E
 install-name:    '/System/Library/PrivateFrameworks/LocalAuthenticationPrivateUI.framework/LocalAuthenticationPrivateUI'
 exports:
   - targets:         [ x86_64-ios-simulator ]

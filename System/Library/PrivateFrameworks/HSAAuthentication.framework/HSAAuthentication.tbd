@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BD21D515-3BA0-382B-95C9-539E1A7164CB
   - target:          x86_64-ios-simulator
-    value:           612CD8A6-308F-3A43-9FF3-ECA8EF15A199
+    value:           04A0AA67-EB9C-3754-9A53-6C84DB42AD75
   - target:          arm64-ios-simulator
-    value:           CC221218-B5CA-30CE-8DA0-0E2F52E3723E
+    value:           F7286EB9-E0DF-36F6-9AF0-D47624857A5B
 install-name:    '/System/Library/PrivateFrameworks/HSAAuthentication.framework/HSAAuthentication'
 current-version: 800
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F3928142-EDAB-3B23-94A6-E1CC2C4EE2D9
+    value:           BE9995A5-A6F7-3A3C-9631-FB9B3B37B5C2
   - target:          arm64-ios-simulator
-    value:           025FBC2B-5F23-3F03-A964-BD8C058A9DB2
+    value:           37F0C541-7544-3CBF-B20E-B1762743C091
 install-name:    '/System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

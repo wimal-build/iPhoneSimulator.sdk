@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6063D98A-2A2C-3D2E-BB5C-CA110EABEEF0
   - target:          x86_64-ios-simulator
-    value:           6B80068E-3849-3525-8EC9-61ECFB90F7DF
+    value:           5697AC9D-377F-360C-8842-F314071178ED
   - target:          arm64-ios-simulator
-    value:           13DF10BB-2F43-3E4E-8057-BDF3B9378389
+    value:           2C5EBEA0-5C26-3C41-958E-6B4F9F490E64
 install-name:    '/System/Library/PrivateFrameworks/DictionaryUI.framework/DictionaryUI'
 current-version: 33
 exports:

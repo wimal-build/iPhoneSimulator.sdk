@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9F7448CB-0D3C-3E2B-A99A-68FDE0578D51
+    value:           7D1FF5CF-A722-3498-BA68-14A35005A977
   - target:          arm64-ios-simulator
-    value:           7058341C-0DFC-31DD-81D3-0FF265333C9E
+    value:           EA397D2D-AF72-324E-8E18-F188F7C7468D
 install-name:    '/System/Library/PrivateFrameworks/ReminderKitUI.framework/ReminderKitUI'
 current-version: 282
 exports:

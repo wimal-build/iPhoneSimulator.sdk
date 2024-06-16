@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C1B4439F-AE3B-384C-93DF-F852B916EB5C
+    value:           D02FB693-55E3-3F0A-81CE-1C8DBD2767CF
   - target:          arm64-ios-simulator
-    value:           F8C29FFE-EA27-3A09-9EEE-4A952D151BF2
+    value:           D36BF356-FF6C-3EDD-8481-42B81ABEA9D5
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSCore.framework/MPSCore'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MPSImage, MPSMatrix, MPSNDArray, MPSNeuralNetwork, MPSParallelPrimitives, 

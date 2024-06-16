@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E2F8A1F5-2ADB-3DAA-9249-7C8F561B8092
+    value:           3D3109A3-282A-3704-8EA7-81C9FBAD62B9
   - target:          arm64-ios-simulator
-    value:           03E13BD8-4791-3172-B893-7F179EF55504
+    value:           C7C6C3EC-41C4-3B93-857A-648F583BC6FE
 install-name:    '/System/Library/PrivateFrameworks/EmailFoundation.framework/EmailFoundation'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _EFArraysAreEqual, _EFAtomicObjectLoad, _EFAtomicObjectRelease, 

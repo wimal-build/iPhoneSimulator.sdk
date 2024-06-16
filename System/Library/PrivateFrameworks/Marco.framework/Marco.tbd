@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1D0539F3-2A29-3431-9195-DD67DCFA4AAF
   - target:          x86_64-ios-simulator
-    value:           D7F4916D-7046-37EA-85ED-2B0799A15B9C
+    value:           32278B7C-C849-39E6-8A36-3A211AFE6B53
   - target:          arm64-ios-simulator
-    value:           A3F4B791-1805-3F26-B879-19E63D1DB340
+    value:           185F2A35-3338-3F62-935F-ED9F06179EA2
 install-name:    '/System/Library/PrivateFrameworks/Marco.framework/Marco'
 current-version: 800
 exports:

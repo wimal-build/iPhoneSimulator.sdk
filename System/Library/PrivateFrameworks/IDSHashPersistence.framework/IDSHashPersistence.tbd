@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BA7084B3-53BC-373C-96BF-8E8515E37A6A
   - target:          x86_64-ios-simulator
-    value:           71997937-CB20-353C-952A-0A6DB136173A
+    value:           235F3685-742B-3EE8-A4C8-7962042ECFFB
   - target:          arm64-ios-simulator
-    value:           065092A4-9D40-385B-9565-7EC063C1D07E
+    value:           A7F6325B-764F-3AA7-B7F2-60F983151D34
 install-name:    '/System/Library/PrivateFrameworks/IDSHashPersistence.framework/IDSHashPersistence'
 current-version: 800
 exports:

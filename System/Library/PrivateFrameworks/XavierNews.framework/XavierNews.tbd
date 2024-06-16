@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3F7DE024-D954-3309-8B13-5CA763973E90
+    value:           D6412DFE-6A83-3866-B6DE-1317515C773F
   - target:          arm64-ios-simulator
-    value:           4D30A1EB-E37E-3D4C-99B5-46F8E9014CC6
+    value:           5240C0CF-90C7-39DB-806E-D83A7799BBEC
 install-name:    '/System/Library/PrivateFrameworks/XavierNews.framework/XavierNews'
 current-version: 0
 compatibility-version: 0

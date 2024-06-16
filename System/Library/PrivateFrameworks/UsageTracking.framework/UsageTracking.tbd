@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           588DD954-C98C-3BB1-8F81-4B6944009E5D
+    value:           FBC81C97-6D78-3481-B0D2-E15BE215E162
   - target:          arm64-ios-simulator
-    value:           5C57CB40-45C6-3241-A386-1525395A7A87
+    value:           B8D7343E-A24B-37C6-A6E5-50AF899E845A
 install-name:    '/System/Library/PrivateFrameworks/UsageTracking.framework/UsageTracking'
 current-version: 145
 allowable-clients:

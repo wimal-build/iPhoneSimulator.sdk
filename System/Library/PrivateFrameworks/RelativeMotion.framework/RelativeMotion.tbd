@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           108CE9E4-8FC9-3F08-A956-FBDC22FB6238
+    value:           0302A2FE-25B9-3560-BEFF-9C728A3D4672
   - target:          arm64-ios-simulator
-    value:           00E0A22A-BB24-3940-B2F4-497E27A92A8E
+    value:           3692D757-3089-3E1E-8BB1-6F4AA89546E9
 install-name:    '/System/Library/PrivateFrameworks/RelativeMotion.framework/RelativeMotion'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E68DCF45-A4B1-386B-8076-AE522E427F10
+    value:           43838C10-38C5-3CC9-A2E4-195EC2741E96
   - target:          arm64-ios-simulator
-    value:           6F9584C1-9CD2-3321-BA57-5C618C2DF79C
+    value:           A58ACB84-F6F5-3F07-99BC-B01893536605
 install-name:    '/usr/lib/log/liblog_signpost.dylib'
 current-version: 53
 ...

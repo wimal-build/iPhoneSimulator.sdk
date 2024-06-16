@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7EBF0637-AAC9-3672-B290-59A4623FF498
+    value:           EA125DA3-3187-3295-BDA1-508B24F04917
   - target:          arm64-ios-simulator
-    value:           810DD0FA-E29D-3C06-9E43-BB4446708957
+    value:           1A02261D-AA07-39E8-B624-2B7B5F303820
 install-name:    '/System/Library/PrivateFrameworks/ScreenshotServices.framework/ScreenshotServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

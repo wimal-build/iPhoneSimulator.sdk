@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           117F6A2A-D400-32A6-817D-11BCD45EFD93
   - target:          x86_64-ios-simulator
-    value:           632551F1-3DD9-3740-83A2-7BDCF99CDD5E
+    value:           4276E323-CC1B-3234-A869-2AA9527C9A2D
   - target:          arm64-ios-simulator
-    value:           D792A4FE-3914-336C-859B-B5228C028B82
+    value:           9B074642-1416-330D-B7F0-40AE34C3786A
 install-name:    '/System/Library/PrivateFrameworks/WebCore.framework/WebCore'
 current-version: 610.1.28
 allowable-clients:

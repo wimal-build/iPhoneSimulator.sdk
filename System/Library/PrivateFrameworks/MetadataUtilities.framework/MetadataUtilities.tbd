@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8FD0E7B4-03D7-38FE-98CE-0102E35F32C4
+    value:           5D6BE57C-99DA-3E8D-BF50-F347DC25A8A9
   - target:          arm64-ios-simulator
-    value:           77AD5DDD-794D-386A-A6FD-420E62514486
+    value:           0BFF037B-33D7-3023-B833-047293E0EA7F
 install-name:    '/System/Library/PrivateFrameworks/MetadataUtilities.framework/MetadataUtilities'
-current-version: 2142.8
+current-version: 2142.11
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ _MDMutablePlistBytes._curContainer, _MDMutablePlistBytes._currentUID, 

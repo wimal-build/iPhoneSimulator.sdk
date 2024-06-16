@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FF58EE27-46D6-3852-972A-829796B42AB5
+    value:           74AC623B-C8DD-3811-A4A7-39E1F41B8FD2
   - target:          arm64-ios-simulator
-    value:           DBF432DA-2277-3C11-9471-948E471DFF69
+    value:           DC11B5F0-BDA6-3F89-B243-925DDD815E7B
 install-name:    '/System/Library/PrivateFrameworks/VoiceOverServices.framework/VoiceOverServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

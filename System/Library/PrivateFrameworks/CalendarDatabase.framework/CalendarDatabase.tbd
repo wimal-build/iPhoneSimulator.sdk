@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2DC812EF-C388-370A-BE9D-082329DF840B
   - target:          x86_64-ios-simulator
-    value:           1941A5B7-FF16-31DA-B5A4-651EC9E472D9
+    value:           E824BF64-7F58-3DC5-9A59-B03888370F9A
   - target:          arm64-ios-simulator
-    value:           49C83EFE-E4F0-3091-9BEE-40F5EFDE263B
+    value:           0FE417FE-D9A6-3F0E-8D28-EADF363E0EAB
 install-name:    '/System/Library/PrivateFrameworks/CalendarDatabase.framework/CalendarDatabase'
 exports:
   - targets:         [ i386-ios-simulator ]

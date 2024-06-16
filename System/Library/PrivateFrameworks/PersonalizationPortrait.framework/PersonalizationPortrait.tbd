@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0ACF9109-5A19-342D-9809-15FA7ABD0247
+    value:           7B704464-926A-3900-AE28-5558114A066E
   - target:          arm64-ios-simulator
-    value:           FD09E03F-0859-3891-AC21-55DCE2E42E39
+    value:           5C9C4199-EBCD-3D2D-94CA-1D7D372D3DBF
 install-name:    '/System/Library/PrivateFrameworks/PersonalizationPortrait.framework/PersonalizationPortrait'
 current-version: 1115
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           231F1FCF-CE0E-3D7A-B899-407CF1B65F72
+    value:           3142F60E-D6F5-36BE-926E-801AA77940F7
   - target:          arm64-ios-simulator
-    value:           EEE9BA85-8E59-34C3-8199-BDD37CBF8328
+    value:           3EFDD0EB-71DB-31A1-8502-5841EEF459E3
 install-name:    '/System/Library/PrivateFrameworks/WiFiPeerToPeer.framework/WiFiPeerToPeer'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

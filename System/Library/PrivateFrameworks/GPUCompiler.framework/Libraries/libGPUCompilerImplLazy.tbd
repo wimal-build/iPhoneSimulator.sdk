@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2131500F-F17F-37B7-8C57-CAA36CFC5657
+    value:           D3264C9E-25A5-3B05-B0E9-0F7B150F4833
   - target:          arm64-ios-simulator
-    value:           F2AFECA5-CDE7-305A-A1C4-B29B73A9AEE9
+    value:           37EED78B-BDA4-38DF-A149-2BF41EA8214D
 install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libGPUCompilerImplLazy.dylib'
-current-version: 31001.40
+current-version: 31001.41
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ ___clang_metalfe_GPUCompiler_compileFromSourceToBufferWrapper, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           93E7223F-EDB9-31C2-BE19-D28738CDB566
   - target:          x86_64-ios-simulator
-    value:           57C7E336-8616-31BE-AB30-4B13AF39EA7F
+    value:           745DF072-151B-306D-8F9E-2DD7BFD8CF3B
   - target:          arm64-ios-simulator
-    value:           1FD70296-0AB4-3813-B832-9C2476B95F68
+    value:           8774ED0B-D78E-32BF-B5B9-4758FA1DC0CC
 install-name:    '/System/Library/PrivateFrameworks/UserNotificationsServer.framework/UserNotificationsServer'
 exports:
   - targets:         [ i386-ios-simulator ]

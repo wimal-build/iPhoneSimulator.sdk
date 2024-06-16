@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C421B674-E554-3635-ACAD-C95CD51769B3
+    value:           2AE1F9BC-42DA-3E9D-B641-283F70EE3BC5
   - target:          arm64-ios-simulator
-    value:           BEAE21DF-E8FE-31DA-8C3A-DCDEA34651F1
+    value:           6FF61074-F56F-3B4F-AA60-97ACCAE93A0B
 install-name:    '/System/Library/PrivateFrameworks/LinguisticData.framework/LinguisticData'
 current-version: 399
 exports:

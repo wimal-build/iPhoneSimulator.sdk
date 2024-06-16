@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C390410C-E91C-3A65-A63B-E19B68186F03
   - target:          x86_64-ios-simulator
-    value:           E9163D06-F5C5-3B08-AADB-55659656B5F0
+    value:           8EBB37F2-6ECA-30B8-BD2E-EAA26150A21B
   - target:          arm64-ios-simulator
-    value:           298D2DC6-DA2F-3D4E-9FEA-1CCE3EA81578
+    value:           4187AC35-E3D3-399B-BE6D-17F4A88E8772
 install-name:    '/usr/lib/system/libsystem_trace.dylib'
 current-version: 1277.0.9
 parent-umbrella:

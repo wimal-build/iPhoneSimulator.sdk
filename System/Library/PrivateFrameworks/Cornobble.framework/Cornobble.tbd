@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DD313F7B-147F-3E30-AB99-71BD00472D37
+    value:           FA921334-28EE-3DE1-9902-0009153C9C9C
   - target:          arm64-ios-simulator
-    value:           DFB276DD-6C8B-3725-961B-4115F6434AED
+    value:           96A914E6-37A3-3C62-8C0B-42853C80FF81
 install-name:    '/System/Library/PrivateFrameworks/Cornobble.framework/Cornobble'
 current-version: 17
 exports:

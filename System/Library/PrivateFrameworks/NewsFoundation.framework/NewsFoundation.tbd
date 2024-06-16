@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5397751D-7500-3F18-8DAE-FF2C3EBA26A8
+    value:           E9B8EEBC-D67F-3EBE-A71B-30581EC13002
   - target:          arm64-ios-simulator
-    value:           3ABD3439-3666-35E7-8A70-E8E8EAC9F362
+    value:           9289E72D-56FC-3F7E-A02B-52801682B7D5
 install-name:    '/System/Library/PrivateFrameworks/NewsFoundation.framework/NewsFoundation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

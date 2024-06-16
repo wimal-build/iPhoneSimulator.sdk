@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           40F07332-F66D-330D-A602-488AA8C964A0
+    value:           C2DE252E-28A5-3EA5-B40C-4BF51B96C5CB
   - target:          arm64-ios-simulator
-    value:           732E5312-4E1F-3204-9D60-2B25993628C4
+    value:           3E9DCF2F-0A54-323A-830B-D34D23A8300F
 install-name:    '/System/Library/PrivateFrameworks/TimeSync.framework/TimeSync'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

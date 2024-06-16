@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C356085C-9A89-3EF6-919D-7DB9DFE1E6BC
   - target:          x86_64-ios-simulator
-    value:           60D5A648-9186-3EE2-8473-D6258E765349
+    value:           872564E5-8A26-3738-9496-982411A8B8AA
   - target:          arm64-ios-simulator
-    value:           BB41E8C6-E6BA-32A4-A3AF-47DA02288711
+    value:           4E7B9A98-85F2-3293-9281-B1D78F8F1CB7
 install-name:    '/System/Library/PrivateFrameworks/NanoResourceGrabber.framework/NanoResourceGrabber'
 exports:
   - targets:         [ i386-ios-simulator ]

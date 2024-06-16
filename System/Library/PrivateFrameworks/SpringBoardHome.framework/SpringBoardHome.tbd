@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9B267A60-5937-37C9-B1AA-250AF702B2B9
+    value:           C93E0104-126F-361A-9B4B-F484A9E431EE
   - target:          arm64-ios-simulator
-    value:           DCA81540-562F-3E2E-8C14-34B2B11DC92F
+    value:           83B6A268-1778-340D-BF68-4B1367421653
 install-name:    '/System/Library/PrivateFrameworks/SpringBoardHome.framework/SpringBoardHome'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -342,5 +342,5 @@ exports:
                        _SBIconProgressWaitingLoadingStateTransition, _SBInnerFolderIconZoomAnimator, 
                        _SBRootFolderDockAnimationViewControllerWindow, _SBRootFolderDockOffscreenFractionClient, 
                        _SBRootFolderLayoutWrapperView, _SBRootFolderPageTransitionHandle, 
-                       _SBValueConvergenceAnimatorEngine ]
+                       _SBRootFolderViewElementBorrowedAssertion, _SBValueConvergenceAnimatorEngine ]
 ...

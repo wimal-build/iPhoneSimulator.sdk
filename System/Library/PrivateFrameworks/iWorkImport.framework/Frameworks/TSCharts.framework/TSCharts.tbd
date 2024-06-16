@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           01280E89-0C50-3725-841A-7112515CCB66
+    value:           77157E1F-B5A5-3D91-881E-352E3B53DC5B
   - target:          arm64-ios-simulator
-    value:           716EAB58-5D68-37EA-9F22-3A2E3B60FFFE
+    value:           08C17978-B332-31A3-A053-543A187F88D4
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSCharts.framework/TSCharts'
 exports:
   - targets:         [ x86_64-ios-simulator ]

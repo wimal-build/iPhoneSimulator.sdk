@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4B887E62-0FC8-3B3C-81A7-3C13175541C5
+    value:           45FD838E-936F-340E-A8CF-ACDB316D56C0
   - target:          arm64-ios-simulator
-    value:           8620B899-C968-3307-BDA0-BFEFCF4C639E
+    value:           8F2B7E7F-48FF-3B36-B3FF-044103C25A8E
 install-name:    '/usr/lib/libboringssl.dylib'
 current-version: 0
 compatibility-version: 0

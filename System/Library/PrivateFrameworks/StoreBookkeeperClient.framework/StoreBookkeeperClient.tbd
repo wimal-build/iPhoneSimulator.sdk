@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4E9573C8-7806-3B97-8D01-5BF0E8EC4EA8
   - target:          x86_64-ios-simulator
-    value:           8BCD1B38-ECB0-3F8B-B72F-A71196010A0A
+    value:           0B14175C-AB83-3663-B847-F5EA30EBB436
   - target:          arm64-ios-simulator
-    value:           E2A42C57-6F61-3F65-BF04-034C6C82E249
+    value:           25C5CD06-6054-3E22-8BCF-891C4B74DFA6
 install-name:    '/System/Library/PrivateFrameworks/StoreBookkeeperClient.framework/StoreBookkeeperClient'
 exports:
   - targets:         [ i386-ios-simulator ]

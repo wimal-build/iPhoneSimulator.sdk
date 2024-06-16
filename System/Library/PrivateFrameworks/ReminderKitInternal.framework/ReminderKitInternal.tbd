@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5FCC62AD-B5B9-3B9A-B259-0400DC3D087C
+    value:           4C9C7A4E-AC14-35C1-96D0-3F3D7DD9A41F
   - target:          arm64-ios-simulator
-    value:           60DBAC1F-BE1D-3BD2-BC3C-7A617ACDC975
+    value:           10A2C7DA-3D10-3E5A-B892-63238F1B1F03
 install-name:    '/System/Library/PrivateFrameworks/ReminderKitInternal.framework/ReminderKitInternal'
 current-version: 282
 swift-abi-version: 7

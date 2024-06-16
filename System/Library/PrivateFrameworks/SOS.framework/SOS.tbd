@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5B3747A2-4172-31CE-A7C5-BF554358BA1D
   - target:          x86_64-ios-simulator
-    value:           18AC2711-5340-39E9-AE01-BA03CAFB80CC
+    value:           98093C95-8863-3B3F-8316-77D689007550
   - target:          arm64-ios-simulator
-    value:           47B54896-D4CB-3C93-9B5D-F6D8B4D20837
+    value:           97B9A6F7-CB39-37E0-B686-647F13B2E5A6
 install-name:    '/System/Library/PrivateFrameworks/SOS.framework/SOS'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

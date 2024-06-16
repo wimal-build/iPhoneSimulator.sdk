@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           52B68163-885C-3F83-9A66-C35F91F2A993
+    value:           F802FE93-415E-3403-9AC4-0445D1F0FD99
   - target:          arm64-ios-simulator
-    value:           602BD3A8-AC4D-3D1A-8DE6-276AC34E6F48
+    value:           C1DE55EB-E72B-3BFF-873A-DE94604E13DE
 install-name:    '/System/Library/PrivateFrameworks/IdleTimerServices.framework/IdleTimerServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

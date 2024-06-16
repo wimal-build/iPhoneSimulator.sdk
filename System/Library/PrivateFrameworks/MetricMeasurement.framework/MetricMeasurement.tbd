@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C7EF0BBC-04A6-309D-91EB-CE851E2ED2C8
+    value:           FEB02C96-47FB-33FD-8B45-7A63278D1D08
   - target:          arm64-ios-simulator
-    value:           9C10CC7C-8F64-35DE-937B-7514579B9C63
+    value:           42FEDFC7-EF33-33C7-9C13-F0BF1611D805
 install-name:    '/System/Library/PrivateFrameworks/MetricMeasurement.framework/MetricMeasurement'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           86675ED9-5AAA-32E0-9029-B2E3126460C4
+    value:           E08E15CD-37E0-3159-9CBA-ED51C873109F
   - target:          arm64-ios-simulator
-    value:           27BF9670-9DA3-3BC0-A5B8-0AB20C1376AE
+    value:           855CE128-BEAC-3071-98FE-5455CAF19080
 install-name:    '/System/Library/PrivateFrameworks/FMIPSiriActions.framework/FMIPSiriActions'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

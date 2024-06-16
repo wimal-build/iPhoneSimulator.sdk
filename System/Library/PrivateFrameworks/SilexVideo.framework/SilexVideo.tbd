@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           49E8E5A6-B449-3BBC-96C1-700C137AD8FD
+    value:           0F680DB3-50E0-3E3A-836B-9CA0341E4248
   - target:          arm64-ios-simulator
-    value:           74C06CBE-7EEB-344D-AF6D-10F04B74C2A6
+    value:           58F151DF-82F6-3743-AF9A-9A6B992D88A8
 install-name:    '/System/Library/PrivateFrameworks/SilexVideo.framework/SilexVideo'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

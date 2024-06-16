@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0BA9AE22-7905-332A-8D41-635EA9532EBF
+    value:           A80FDB83-84F3-3907-BFA1-9D27FCCFD7A5
   - target:          arm64-ios-simulator
-    value:           E7BF110F-3C7E-3A62-9A72-6BC124EE799E
+    value:           C53DFC84-5BCF-3B87-ADD0-9B666F712FA1
 install-name:    '/System/Library/PrivateFrameworks/WallpaperKit.framework/WallpaperKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

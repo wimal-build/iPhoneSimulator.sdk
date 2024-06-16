@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           16008ACC-BCB6-3B35-9C3F-CAE9B7480B0E
+    value:           DD8A9E4B-C33D-3D8F-A39F-5F910A224449
   - target:          arm64-ios-simulator
-    value:           84B58046-D323-370A-8561-590875CCCF0F
+    value:           02D1A21D-E2B5-340D-B8F4-DC223A7EFB70
 install-name:    '/System/Library/PrivateFrameworks/HealthDiagnosticExtensionCore.framework/HealthDiagnosticExtensionCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2DF0593A-275A-31D7-B9CA-9706C59222C8
   - target:          x86_64-ios-simulator
-    value:           C64FF279-B9BE-3B7B-BB92-FF38FEA55780
+    value:           D41C92E0-64BF-3D4B-9054-E1E88C97967B
   - target:          arm64-ios-simulator
-    value:           0A93A8D6-C914-3757-8AD3-16ABF0C2AAA0
+    value:           8B397E79-93B6-347C-B552-68F53BC734FB
 install-name:    '/System/Library/PrivateFrameworks/CoreDAV.framework/CoreDAV'
 exports:
   - targets:         [ i386-ios-simulator ]

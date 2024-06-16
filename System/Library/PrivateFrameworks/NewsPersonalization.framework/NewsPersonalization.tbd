@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EE1A2D16-C995-35D9-B0D4-79E297AE1BD6
+    value:           A2DB62D8-A31F-3160-99F0-A3B724BE7994
   - target:          arm64-ios-simulator
-    value:           167B884D-857A-3A48-8B43-CE1622BC6788
+    value:           9CA450A2-E537-3EF4-B49C-B4B81E0F5D8F
 install-name:    '/System/Library/PrivateFrameworks/NewsPersonalization.framework/NewsPersonalization'
 swift-abi-version: 7
 allowable-clients:

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5F2079F5-D983-34DC-A062-1C4303CFD13D
+    value:           6556600C-92B0-3AE4-B092-D872F6025CFC
   - target:          arm64-ios-simulator
-    value:           4AB41DF1-9D6D-30D9-A818-3C535A461BDD
+    value:           E1C1D9FC-6236-3E29-9206-5A9AFF0514F6
 install-name:    '/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet'
-current-version: 1564.6
+current-version: 1566.6
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ UIPrintActivityWrapperNavigationController._completionHandler ]

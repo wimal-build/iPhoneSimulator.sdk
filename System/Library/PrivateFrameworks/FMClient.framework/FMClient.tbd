@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EA99D340-4DF1-3A08-ACF5-05C84B6F1607
+    value:           0CC195E9-1385-332C-B75E-0AD28ED43C4A
   - target:          arm64-ios-simulator
-    value:           39A01FF4-B5F2-33B9-96C9-5B954A460CDE
+    value:           DBE5AB28-2278-31FD-8F7B-A0272426D6C4
 install-name:    '/System/Library/PrivateFrameworks/FMClient.framework/FMClient'
 swift-abi-version: 7
 allowable-clients:

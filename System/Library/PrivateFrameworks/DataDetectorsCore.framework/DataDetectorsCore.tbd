@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B5651316-FE75-3D23-8885-C381A48C95C9
   - target:          x86_64-ios-simulator
-    value:           6B34900C-389B-352B-AE11-54199AB974F6
+    value:           EC45C608-7F8A-3907-B9EA-C2D1F85810CE
   - target:          arm64-ios-simulator
-    value:           6CDB0169-8364-376F-A5C5-B4DD53608F37
+    value:           DD8C3A29-4B09-313D-AD12-B73345767943
 install-name:    '/System/Library/PrivateFrameworks/DataDetectorsCore.framework/DataDetectorsCore'
 current-version: 671
 exports:

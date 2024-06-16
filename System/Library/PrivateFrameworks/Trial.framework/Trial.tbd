@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBB861B2-1100-360F-8CFF-909A645C3A2B
+    value:           1891E8C5-D6D8-3009-8DCE-942BF152F7F2
   - target:          arm64-ios-simulator
-    value:           311BEBD7-B832-3764-B6B0-906B28BDB5B7
+    value:           0FB6E9B9-DBB4-3EAE-874A-15BE5AD0D847
 install-name:    '/System/Library/PrivateFrameworks/Trial.framework/Trial'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

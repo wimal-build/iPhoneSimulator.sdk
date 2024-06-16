@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           20C6352E-532C-3CC5-BEDD-29D0184C7B83
   - target:          x86_64-ios-simulator
-    value:           1ACAC41D-7685-39AD-9155-D98916F25735
+    value:           588064C5-9A1E-3D0C-B3BF-1279111E7D4A
   - target:          arm64-ios-simulator
-    value:           A834C506-FB3A-3787-A47A-758F04F42CEE
+    value:           D3A8E6F4-CFD2-316B-B43A-68D04CB6C20F
 install-name:    '/System/Library/PrivateFrameworks/CoreCDPInternal.framework/CoreCDPInternal'
 exports:
   - targets:         [ i386-ios-simulator ]

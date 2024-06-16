@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D78BE732-D8FF-326C-A453-B7C4EA1560D1
   - target:          x86_64-ios-simulator
-    value:           F7576DFE-AC3D-3624-B3BC-3A22D03CFC22
+    value:           048BA5A7-E0D9-3412-BF52-2B29B1955516
   - target:          arm64-ios-simulator
-    value:           B4D75E97-58D3-3366-BB80-4478AEC96579
+    value:           482D48AC-7D8F-3956-943F-E477B3404603
 install-name:    '/System/Library/PrivateFrameworks/AirPlaySupport.framework/AirPlaySupport'
 exports:
   - targets:         [ i386-ios-simulator ]

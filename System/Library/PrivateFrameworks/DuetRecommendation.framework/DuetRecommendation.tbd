@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8B0972BF-8E34-3A03-A3D0-28BB3967A932
   - target:          x86_64-ios-simulator
-    value:           97DA9105-C9C7-3EE5-A616-6761CAFF0BFD
+    value:           E77EA518-8752-30DD-B531-C22932F50A92
   - target:          arm64-ios-simulator
-    value:           BD5AC789-58E2-36D9-8EDB-FDFE2963C311
+    value:           1E8E73BF-44C3-3226-83FB-D9C59D9B9CEA
 install-name:    '/System/Library/PrivateFrameworks/DuetRecommendation.framework/DuetRecommendation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

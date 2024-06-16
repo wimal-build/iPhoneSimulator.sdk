@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           53575031-F60F-3BAE-811A-1513728EE145
+    value:           AFAAB1F1-741F-3917-AAA3-335D2DAA9DB9
   - target:          arm64-ios-simulator
-    value:           8326C5AC-3A95-37DB-8A6B-11DE3BD52BBE
+    value:           B8BDFF77-2F2F-322B-B138-BC1053B67CCA
 install-name:    '/System/Library/PrivateFrameworks/AXCoreUtilities.framework/AXCoreUtilities'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

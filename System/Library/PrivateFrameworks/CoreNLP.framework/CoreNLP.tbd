@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2256D1AA-5D95-3155-B704-321A7015ACDD
   - target:          x86_64-ios-simulator
-    value:           920EC4A4-C390-318D-B272-272023F46257
+    value:           5827AE0D-17BA-3994-820C-0B524C82E233
   - target:          arm64-ios-simulator
-    value:           42CBEDCE-E509-3257-A0C3-45E14E44EB04
+    value:           F795B21E-1DBD-3127-9B5B-12BC928AA36E
 install-name:    '/System/Library/PrivateFrameworks/CoreNLP.framework/CoreNLP'
 current-version: 244
 exports:

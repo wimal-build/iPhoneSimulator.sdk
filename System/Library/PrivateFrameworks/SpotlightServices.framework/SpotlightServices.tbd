@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E130E41C-CD08-308F-8180-0025A4B7DB0F
+    value:           5F079ADD-86D1-3634-BE79-4284FCB2E6F3
   - target:          arm64-ios-simulator
-    value:           B7F5F1A5-2384-3BE6-BE2C-6E470D8DD4A2
+    value:           6FCF06CF-90F6-37FB-8102-1E79C627FAE7
 install-name:    '/System/Library/PrivateFrameworks/SpotlightServices.framework/SpotlightServices'
-current-version: 2142.8
+current-version: 2142.11
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ PRSBagHandler._bagQueue, PRSSearchSession._client, PRSSearchSession._lastQueryTime, 

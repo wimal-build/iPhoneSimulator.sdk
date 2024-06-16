@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8412F478-04F3-3EFF-8351-528EBF666C3F
+    value:           5D8CB2C5-484C-3844-8111-CB4FB1B36010
   - target:          arm64-ios-simulator
-    value:           B0E7F9FE-E079-3394-880A-B883E1944857
+    value:           D79A5CA5-E808-35A4-AE6C-6E4557DA3AF6
 install-name:    '/System/Library/PrivateFrameworks/ContactsDonation.framework/ContactsDonation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

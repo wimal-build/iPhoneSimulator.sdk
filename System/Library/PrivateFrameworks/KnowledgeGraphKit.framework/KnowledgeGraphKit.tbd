@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1B6B78AC-13EC-3779-B21A-832EF4E6D992
+    value:           4AECA5D8-9D4F-3EE6-B0BA-89848EA6D95D
   - target:          arm64-ios-simulator
-    value:           82354087-E629-3B31-A93F-EDABC5F3603D
+    value:           982E0DD8-4998-3D5C-B0AE-0D4B9B1CAE52
 install-name:    '/System/Library/PrivateFrameworks/KnowledgeGraphKit.framework/KnowledgeGraphKit'
 swift-abi-version: 7
 allowable-clients:

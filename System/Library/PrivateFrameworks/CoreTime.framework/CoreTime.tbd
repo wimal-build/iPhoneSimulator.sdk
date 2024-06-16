@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C7DAB283-184D-36A9-B83B-9161426D79FC
   - target:          x86_64-ios-simulator
-    value:           B3D63EBF-69AE-31F6-838A-B89C8E08F678
+    value:           A9BB72D5-669F-367E-A402-3620F62002F9
   - target:          arm64-ios-simulator
-    value:           86D03641-D55D-394E-AE3F-4A0E2A46AD8B
+    value:           EB8A90F9-0CCA-394C-8C79-2CD61B9D5D3D
 install-name:    '/System/Library/PrivateFrameworks/CoreTime.framework/CoreTime'
 current-version: 282
 exports:

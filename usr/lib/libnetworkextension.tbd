@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C847F215-0EB0-3D31-AD9F-4943A281B95E
+    value:           63FB756A-8235-3803-9BDD-3DEA79EDEA13
   - target:          arm64-ios-simulator
-    value:           9693A906-76CC-3554-9079-07F6DB2B4816
+    value:           FEAF2FC4-FA09-38AC-A105-617C530BE333
 install-name:    '/usr/lib/libnetworkextension.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

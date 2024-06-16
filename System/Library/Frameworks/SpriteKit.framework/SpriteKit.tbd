@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AD98A976-1FC5-326E-B1EC-8702CEAEDF51
   - target:          x86_64-ios-simulator
-    value:           F3770315-B305-3359-9C52-E62C512DF282
+    value:           A53134E0-73C7-3FB3-A14C-0631D62F0AAE
   - target:          arm64-ios-simulator
-    value:           BE25FA7B-5899-35C2-9A90-62CC3F73988F
+    value:           D3B055A4-3651-3BBB-99C9-E344254E3DB6
 install-name:    '/System/Library/Frameworks/SpriteKit.framework/SpriteKit'
 current-version: 43
 exports:

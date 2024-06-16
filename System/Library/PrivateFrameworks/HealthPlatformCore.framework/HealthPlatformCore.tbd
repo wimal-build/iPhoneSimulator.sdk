@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A21C919D-E45B-30E5-8AD8-FB593A9A35BD
+    value:           352642A3-2202-389F-BB75-F7180B9CD1D6
   - target:          arm64-ios-simulator
-    value:           7922D243-6EED-30F9-9A85-E7276F854469
+    value:           27DF4322-7E19-3AC7-9C19-515250206444
 install-name:    '/System/Library/PrivateFrameworks/HealthPlatformCore.framework/HealthPlatformCore'
 swift-abi-version: 7
 allowable-clients:

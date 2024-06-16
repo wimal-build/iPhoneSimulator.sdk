@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1B325249-2135-39A4-B0D4-66BF67AEF6DF
+    value:           0519B7A8-6021-3C77-8946-54123C30BE89
   - target:          arm64-ios-simulator
-    value:           F0DD3726-9E19-3DC3-BC9C-B753642B7F48
+    value:           C537C8AF-D436-3AC2-ADD4-0C10CFCBC091
 install-name:    '/System/Library/PrivateFrameworks/RelevanceEngine.framework/RelevanceEngine'
 exports:
   - targets:         [ x86_64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C4DD9A20-7E52-316B-9B89-E9E0ED569EA1
   - target:          x86_64-ios-simulator
-    value:           289D4123-D1CD-3CEF-9E92-F88691131825
+    value:           E610C209-3A3E-3C82-9B53-AB4A365F1513
   - target:          arm64-ios-simulator
-    value:           2A25C646-55A8-3A1C-9E46-B3A960F72610
+    value:           B24A80CC-08E1-3F29-A98A-FE2EEB535D88
 install-name:    '/System/Library/PrivateFrameworks/DrawingKit.framework/DrawingKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

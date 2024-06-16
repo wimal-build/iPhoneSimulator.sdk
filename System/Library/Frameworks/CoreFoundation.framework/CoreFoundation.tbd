@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0AFF4E11-FBA2-3C48-AF1E-97C62DDA7E69
   - target:          x86_64-ios-simulator
-    value:           58799E38-2A4D-3DEE-9794-C901E87CEC75
+    value:           2DD77836-A51E-369D-AFB9-167069F42530
   - target:          arm64-ios-simulator
-    value:           0E17412A-8A95-3043-B90F-0A642200B24C
+    value:           C64A7892-B9D8-34C3-B60D-DF47E89A1F4B
 install-name:    '/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation'
 current-version: 1751.108
 compatibility-version: 150

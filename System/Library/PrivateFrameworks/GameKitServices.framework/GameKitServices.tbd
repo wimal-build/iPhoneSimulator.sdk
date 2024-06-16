@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           65D29067-DF39-3F5E-9531-60092E3BED73
   - target:          x86_64-ios-simulator
-    value:           33D2113E-339F-3FFC-917C-6D9B62747CF0
+    value:           E7B27C9D-9828-3FDF-8BAC-F461DB2BA050
   - target:          arm64-ios-simulator
-    value:           1EF9B33A-F4A8-3E35-9E79-48B8F1050F38
+    value:           1E5E8B9E-348E-3465-843E-4D4396259BAA
 install-name:    '/System/Library/PrivateFrameworks/GameKitServices.framework/GameKitServices'
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
@@ -218,9 +218,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9002DB01-9C30-311D-A7BD-3A22B118E1C8
+    value:           709A9928-7A65-31BF-A0E4-3D61834081FA
   - target:          arm64-ios-simulator
-    value:           259A4348-4A03-3F1E-A836-17175874A0E7
+    value:           783CB891-315E-3C3B-B24E-81937018C585
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/AVConference'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -338,35 +338,37 @@ exports:
                        _GKSCommNATServerMain0Address, _GKSCommNATServerMain0Name, 
                        _GKSCommNATServerMain1Address, _GKSCommNATServerMain1Name, 
                        _GKSConnectionBlobMaxBytes, _GKSConnectivitySettingsUpdateName, 
-                       _GKSConnectivitySettings_GetICETimeout, _GKSConnectivitySettings_GetNetworkConditionsTimeout, 
-                       _GKSConnectivitySettings_GetNoRemotePacketsTimeout, _GKSDecryptionTimeoutInterval, 
-                       _GKSDidStartParameter_CallID, _GKSDidStartParameter_ConnType, 
-                       _GKSDidStartParameter_DidStart, _GKSDidStartParameter_Error, 
-                       _GKSDidStartParameter_Event, _GKSDidStartParameter_localUseCell, 
-                       _GKSDidStartParameter_remoteUseCell, _GKSErrorDetailedError, 
-                       _GKSErrorReturnCode, _GKSICETimeout, _GKSKeepAliveTimeoutCarrierSpecific, 
-                       _GKSLocalGamingDiscoveryHeartbeat, _GKSLocalGamingDiscoveryTimeout, 
-                       _GKSMaxBitrate2G, _GKSMaxBitrate3G, _GKSMaxBitrateLTE, _GKSMaxBitrateLTEv2, 
+                       _GKSConnectivitySettings_GetICETimeout, _GKSConnectivitySettings_GetMinQueueSizeOverride5G, 
+                       _GKSConnectivitySettings_GetNetworkConditionsTimeout, _GKSConnectivitySettings_GetNoRemotePacketsTimeout, 
+                       _GKSDecryptionTimeoutInterval, _GKSDidStartParameter_CallID, 
+                       _GKSDidStartParameter_ConnType, _GKSDidStartParameter_DidStart, 
+                       _GKSDidStartParameter_Error, _GKSDidStartParameter_Event, 
+                       _GKSDidStartParameter_localUseCell, _GKSDidStartParameter_remoteUseCell, 
+                       _GKSErrorDetailedError, _GKSErrorReturnCode, _GKSICETimeout, 
+                       _GKSKeepAliveTimeoutCarrierSpecific, _GKSLocalGamingDiscoveryHeartbeat, 
+                       _GKSLocalGamingDiscoveryTimeout, _GKSMaxBitrate2G, _GKSMaxBitrate3G, 
+                       _GKSMaxBitrate5G, _GKSMaxBitrateLTE, _GKSMaxBitrateLTEv2, 
                        _GKSMaxBitrateWiFi, _GKSMaxRelayBitrate, _GKSMaxTCPRelayBitrate, 
-                       _GKSNATCheckTimeout, _GKSNATObserver_AddCarrierFlag, _GKSNATObserver_AddInRangeFlag, 
-                       _GKSNATObserver_CheckTCPAndSSL, _GKSNATObserver_FavorNonCarrier, 
-                       _GKSNATObserver_IgnoreCache, _GKSNATObserver_NewCarrierType, 
-                       _GKSNATObserver_NonCarrierOnly, _GKSNetworkConditionsTimeout, 
-                       _GKSNewSessionJoiningInterval, _GKSNoRemotePacketsTimeout, 
-                       _GKSPreEmptiveRelayTimeout, _GKSRateControllerType, _GKSRelayParameter_ClientData, 
-                       _GKSRelayParameter_ConnectionID, _GKSRelayParameter_PeerAddrPointer, 
-                       _GKSRelayParameter_PeerBlob, _GKSRelayParameter_PeerExternalAddr, 
-                       _GKSRelayParameter_PeerID, _GKSRelayParameter_PeerNatType, 
-                       _GKSRelayParameter_PeerRelayIP, _GKSRelayParameter_PeerRelayNatIP, 
-                       _GKSRelayParameter_PeerRelayNatPort, _GKSRelayParameter_PeerRelayPort, 
-                       _GKSRelayParameter_RemotePrimaryId, _GKSRelayParameter_SelfAddrPointer, 
-                       _GKSRelayParameter_SelfBlob, _GKSRelayParameter_SelfExternalAddr, 
-                       _GKSRelayParameter_SelfNatType, _GKSRelayParameter_SelfRelayIP, 
-                       _GKSRelayParameter_SelfRelayNatIP, _GKSRelayParameter_SelfRelayNatPort, 
-                       _GKSRelayParameter_SelfRelayPort, _GKSRelayParameter_Token, 
-                       _GKSRelayParameter_TransactionID, _GKSRelayType, _GKSSSLCheckServerName, 
-                       _GKSStartupTimeout, _GKSStaticNATTypeCarrierSpecific, _GKSSupportsEVSCodec, 
-                       _GKSSupportsRedAudio, _GKSTCPCheckServerName, _GKSVideoDegradedThreshold, 
+                       _GKSMinJBQueueSize5G, _GKSNATCheckTimeout, _GKSNATObserver_AddCarrierFlag, 
+                       _GKSNATObserver_AddInRangeFlag, _GKSNATObserver_CheckTCPAndSSL, 
+                       _GKSNATObserver_FavorNonCarrier, _GKSNATObserver_IgnoreCache, 
+                       _GKSNATObserver_NewCarrierType, _GKSNATObserver_NonCarrierOnly, 
+                       _GKSNetworkConditionsTimeout, _GKSNewSessionJoiningInterval, 
+                       _GKSNoRemotePacketsTimeout, _GKSPreEmptiveRelayTimeout, _GKSRateControllerType, 
+                       _GKSRelayParameter_ClientData, _GKSRelayParameter_ConnectionID, 
+                       _GKSRelayParameter_PeerAddrPointer, _GKSRelayParameter_PeerBlob, 
+                       _GKSRelayParameter_PeerExternalAddr, _GKSRelayParameter_PeerID, 
+                       _GKSRelayParameter_PeerNatType, _GKSRelayParameter_PeerRelayIP, 
+                       _GKSRelayParameter_PeerRelayNatIP, _GKSRelayParameter_PeerRelayNatPort, 
+                       _GKSRelayParameter_PeerRelayPort, _GKSRelayParameter_RemotePrimaryId, 
+                       _GKSRelayParameter_SelfAddrPointer, _GKSRelayParameter_SelfBlob, 
+                       _GKSRelayParameter_SelfExternalAddr, _GKSRelayParameter_SelfNatType, 
+                       _GKSRelayParameter_SelfRelayIP, _GKSRelayParameter_SelfRelayNatIP, 
+                       _GKSRelayParameter_SelfRelayNatPort, _GKSRelayParameter_SelfRelayPort, 
+                       _GKSRelayParameter_Token, _GKSRelayParameter_TransactionID, 
+                       _GKSRelayType, _GKSSSLCheckServerName, _GKSStartupTimeout, 
+                       _GKSStaticNATTypeCarrierSpecific, _GKSSupportsEVSCodec, _GKSSupportsRedAudio, 
+                       _GKSTCPCheckServerName, _GKSVideoDegradedThreshold, _GKSVideoNearDegradedThreshold, 
                        _GKSVideoThrottlingTimeout, _GKSiRATRecommendationSupport, 
                        _GKVoiceChatServiceErrorDomain, _RTCACMaxBitrate2G, _RTCACMaxBitrate3G, 
                        _RTCACMaxBitrateLTE, _RTCACMaxRelayBitrate, _RTCACMaxTCPRelayBitrate, 
@@ -409,8 +411,9 @@ exports:
                        _VCViewpointCorrectionEnableThreshold, _VCViewpointCorrectionEnabled, 
                        _VCVplrFecEnableThreshold, _VCWifiAssistBudgetStatusEnableThreshold, 
                        _VCWifiAssistDuplicationEnableThreshold, _VCWifiAssistStatusBarEnableThreshold, 
-                       _VCWifiLowTierRedundancyEnableThreshold, _VCiRATMetricsEnableThreshold, 
-                       _VCiRATRtpEnableThreshold, _hwrandom, _hwrandom16, _kAVCKeyAudioPowerSpectrumTokenInput, 
+                       _VCWifiLowTierRedundancyEnableThreshold, _VCiRATDuplicationEnableThreshold, 
+                       _VCiRATMetricsEnableThreshold, _VCiRATRtpEnableThreshold, 
+                       _hwrandom, _hwrandom16, _kAVCKeyAudioPowerSpectrumTokenInput, 
                        _kAVCKeyAudioPowerSpectrumTokenOutput, _kAVCKeyRTCPSocket, 
                        _kAVCKeyRTPLocalSSRC, _kAVCKeyRTPSocket, _kAVCKeySharedSocket, 
                        _kAVCKeySourcePort, _kAVCKeySupportedAudioCodecs, _kAVCKeySupportedCodecs, 
@@ -444,9 +447,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F405E991-EFC9-3773-98E7-D160B7794B99
+    value:           D79E4A23-91A6-3F12-9ADD-B5C64BE42219
   - target:          arm64-ios-simulator
-    value:           7FABBAAF-BD83-3F64-A337-43E629FE3E9B
+    value:           6EC05AE6-21B2-3351-ACF6-7244080F3A75
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/LegacyHandle.framework/LegacyHandle'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
@@ -459,9 +462,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F46A167A-05E4-3676-98CC-1F427478289B
+    value:           F9C12EAC-68F5-39E3-964D-C26AEBBE583E
   - target:          arm64-ios-simulator
-    value:           46B56F41-511B-3B1D-A37D-F419145DBCA6
+    value:           CDF105EC-2D23-363B-9EEB-28CF7D9E197B
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/snatmap.framework/snatmap'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

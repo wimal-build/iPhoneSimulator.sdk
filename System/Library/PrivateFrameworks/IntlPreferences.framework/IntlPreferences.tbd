@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3A7A3E55-A363-34A2-86E7-3B3207C7C572
   - target:          x86_64-ios-simulator
-    value:           7240E1EE-1A70-3F2B-A9A2-5A412A91AE71
+    value:           07C62027-1374-37C0-A095-1547823CCCB0
   - target:          arm64-ios-simulator
-    value:           5500FC4B-3F26-35E4-A4E2-DA99B054B7F7
+    value:           3C9069C3-3D96-3375-AE15-13C2505D53D0
 install-name:    '/System/Library/PrivateFrameworks/IntlPreferences.framework/IntlPreferences'
 current-version: 327
 exports:

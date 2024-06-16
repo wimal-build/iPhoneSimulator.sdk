@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           379C7BFC-1C15-37CF-BFFD-79CD26EBE8F7
   - target:          x86_64-ios-simulator
-    value:           4A8B5A62-42BA-3D51-B064-008EC884984C
+    value:           C62C89A4-0031-35BA-8405-6895B0E03C5B
   - target:          arm64-ios-simulator
-    value:           BD58B5E0-0F90-30AD-A805-0331BAF23C47
+    value:           56695E4A-D5DF-3DCD-B0F4-551AE8461FD7
 install-name:    '/System/Library/PrivateFrameworks/WebUI.framework/WebUI'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -60,9 +60,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DB6F1930-E20F-3D91-BBEE-B23C3BAE6B5B
   - target:          x86_64-ios-simulator
-    value:           74A4BB68-6CE5-3777-87C8-C7179E5480A6
+    value:           231209CE-4687-340E-BFEF-D7F8A0C2F9A3
   - target:          arm64-ios-simulator
-    value:           ACAA5709-9309-3445-8B6E-8D28E0118EBC
+    value:           1EFF45DA-58EC-3E76-9D78-BD6E1FBCE0F6
 install-name:    '/System/Library/PrivateFrameworks/SafariCore.framework/SafariCore'
 current-version: 610.1.28
 compatibility-version: 0
@@ -288,9 +288,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4409FD92-93A1-3D6A-AAC7-21CC6A436055
   - target:          x86_64-ios-simulator
-    value:           2B689ECD-1079-3AA3-840C-4A7AD2371A40
+    value:           9F795BE2-A567-3E98-AAC0-AEAF589B14EF
   - target:          arm64-ios-simulator
-    value:           C9DC6C10-56F6-3206-A334-43462AF2A5A4
+    value:           877B2D3F-FF57-30FF-A520-B478D91F9C6A
 install-name:    '/System/Library/PrivateFrameworks/SafariShared.framework/SafariShared'
 current-version: 610.1.28
 compatibility-version: 0
@@ -1036,9 +1036,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6DAD8D18-5A04-3C05-B749-A12DD07A5B49
+    value:           9FE87614-C639-3ED1-94AF-350BCF3D8771
   - target:          arm64-ios-simulator
-    value:           7A8691EE-8A9B-35B0-99FF-0C5DA6C6615C
+    value:           C2E07E44-6D62-346F-BFC7-47D55FA6AB4A
 install-name:    '/System/Library/PrivateFrameworks/SafariSharedUI.framework/SafariSharedUI'
 current-version: 610.1.28
 compatibility-version: 0

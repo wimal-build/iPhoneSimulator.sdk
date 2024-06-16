@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           06612367-BF88-38AD-8FEC-8005C3997EBD
+    value:           98F252F0-BC90-3D02-ACB5-AA44E1A82DE3
   - target:          arm64-ios-simulator
-    value:           C9D55FDE-761C-3199-88A2-105F641783B5
+    value:           F71E81B2-7111-3C09-BAE0-3C23888B957A
 install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices'
 current-version: 610.1.28
 exports:

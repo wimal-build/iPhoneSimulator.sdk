@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E50B784F-0FBA-36AD-A795-A235C22D982E
   - target:          x86_64-ios-simulator
-    value:           6AC52876-552B-3017-B999-8B070ED55E8F
+    value:           99A46391-DAE9-3D3E-A2FF-B1227F338C07
   - target:          arm64-ios-simulator
-    value:           E174ED92-69D6-3881-92DB-9777931448E6
+    value:           F1B490F7-077B-3782-8D9C-95CE49AB305F
 install-name:    '/System/Library/PrivateFrameworks/CloudServices.framework/CloudServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

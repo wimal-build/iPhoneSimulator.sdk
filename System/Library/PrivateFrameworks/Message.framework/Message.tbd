@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BDF691ED-95C3-3A26-9D87-B8023CD4E224
   - target:          x86_64-ios-simulator
-    value:           A14955BB-F6B5-3FEA-B254-2D53DD92D3D5
+    value:           7F57811C-E0A9-3573-8A28-12B6CA234DF8
   - target:          arm64-ios-simulator
-    value:           A3ADE686-D810-39CF-801E-36E32FE7809B
+    value:           E26E248A-46AB-3CBF-9A73-6FF93B91D2B4
 install-name:    '/System/Library/PrivateFrameworks/Message.framework/Message'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _AccountConfigurationServiceCopyAccountsForEmailAddressUsingLocalData, 

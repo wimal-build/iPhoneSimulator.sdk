@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           65659AA6-A355-37C8-BC25-28D248DF93F7
   - target:          x86_64-ios-simulator
-    value:           3F67AE69-74C4-3D9F-947D-2940100D0AA9
+    value:           DB64DC16-FB29-3765-9329-A856577F98EE
   - target:          arm64-ios-simulator
-    value:           4735CED1-6D62-3E9D-BAA8-F2799099CA5F
+    value:           DB1AD4FA-B7AB-3456-A769-1D7280ECCF79
 install-name:    '/System/Library/PrivateFrameworks/WebApp.framework/WebApp'
 exports:
   - targets:         [ i386-ios-simulator ]

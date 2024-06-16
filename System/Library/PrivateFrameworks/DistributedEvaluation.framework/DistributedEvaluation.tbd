@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2FE11F19-2C04-37D4-B4ED-FE6CF1079896
   - target:          x86_64-ios-simulator
-    value:           44D42C72-0C8B-38B2-A70B-0737B58447FF
+    value:           EB7D3B59-CD99-3997-BDDC-99FA2CB3C458
   - target:          arm64-ios-simulator
-    value:           FE04EC5F-C50A-3318-A7D7-4AE0D88EEEE8
+    value:           620D4B52-AA18-39BE-BC03-097AC7AC0A7E
 install-name:    '/System/Library/PrivateFrameworks/DistributedEvaluation.framework/DistributedEvaluation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           793376A1-81FD-3290-98D6-78F9BC8C54BB
+    value:           E10AABC3-E47B-3E15-BE1D-16AF267722F5
   - target:          arm64-ios-simulator
-    value:           687220CF-2449-3CD6-A2F2-69061A9C7F49
+    value:           CDE1DBCE-B4A4-31AA-8F24-9F6294770FE7
 install-name:    '/System/Library/PrivateFrameworks/UIKitServices.framework/UIKitServices'
-current-version: 3987.0.109
+current-version: 3987.9
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ UISApplicationInitializationContext._defaultSceneToken, UISApplicationInitializationContext._deviceContext, 

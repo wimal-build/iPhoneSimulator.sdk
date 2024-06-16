@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           38E6A5D0-1955-328F-9927-AE05EF1FD2B2
   - target:          x86_64-ios-simulator
-    value:           3F473D3C-80FE-3FE4-9534-391E28C256CC
+    value:           12DAC103-FD11-354A-B835-8CE697790A34
   - target:          arm64-ios-simulator
-    value:           1265B3E1-74E1-3CBC-8280-B9324869CCBC
+    value:           20111666-3E8B-35CF-8585-40CB4DAAACC4
 install-name:    '/System/Library/Frameworks/Photos.framework/Photos'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _PHAdjustmentDataOpaqueFormatIdentifier, _PHAssertPredicateContainsNoManagedObjects, 
@@ -153,11 +153,13 @@ exports:
                        _PHFetchTypeShareParticipant, _PHFetchTypeSmartAlbum, _PHFetchTypeSuggestion, 
                        _PHFullScreenSizeForScreen, _PHGenerateCropRectGivenNormalizedCropRect, 
                        _PHImageCancelledKey, _PHImageErrorKey, _PHImageFileDataKey, 
-                       _PHImageFileOrientationKey, _PHImageFileSandboxExtensionTokenKey, 
-                       _PHImageFileURLKey, _PHImageFileUTIKey, _PHImageManagerMaximumSize, 
-                       _PHImageManagerRecordEnabled, _PHImageRequestResultCacheMetricsShouldRecordHit, 
-                       _PHImageRequestResultEligibleForCacheMetricsLogging, _PHImageResultDeliveredImageFormatKey, 
-                       _PHImageResultIsDegradedKey, _PHImageResultIsInCloudKey, _PHImageResultIsPlaceholderKey, 
+                       _PHImageFileHighDynamicRangeGainMapKey, _PHImageFileHighDynamicRangeGainMapOrientationKey, 
+                       _PHImageFileHighDynamicRangeGainMapValueKey, _PHImageFileOrientationKey, 
+                       _PHImageFileSandboxExtensionTokenKey, _PHImageFileURLKey, 
+                       _PHImageFileUTIKey, _PHImageManagerMaximumSize, _PHImageManagerRecordEnabled, 
+                       _PHImageRequestResultCacheMetricsShouldRecordHit, _PHImageRequestResultEligibleForCacheMetricsLogging, 
+                       _PHImageResultDeliveredImageFormatKey, _PHImageResultIsDegradedKey, 
+                       _PHImageResultIsInCloudKey, _PHImageResultIsPlaceholderKey, 
                        _PHImageResultRequestIDKey, _PHImportErrorDomain, _PHImportErrorUserInfoMoreSpaceRequiredKey, 
                        _PHInsertedLocalIdentifiersKey, _PHIsImageAssetResourceType, 
                        _PHIsVideoAssetResourceType, _PHLivePhotoExportSessionInfoBundleURLKey, 

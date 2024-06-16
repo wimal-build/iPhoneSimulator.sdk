@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C1B00DBD-6337-3AAB-B240-435E9F69369F
+    value:           F0E03BF5-E66B-357B-9B30-D7B532DC40C3
   - target:          arm64-ios-simulator
-    value:           56B463BD-8E20-3331-A569-D5F120F4A683
+    value:           87B31545-50FD-35CF-BEAA-A9D88FA48FAC
 install-name:    '/System/Library/PrivateFrameworks/BrailleTranslation.framework/BrailleTranslation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

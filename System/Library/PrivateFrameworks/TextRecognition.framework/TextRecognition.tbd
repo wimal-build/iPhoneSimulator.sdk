@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D8C35297-6EFF-38F9-A711-8DAC80DA9225
+    value:           2E595651-8725-3CA5-8A9E-27462B93C32D
   - target:          arm64-ios-simulator
-    value:           B15EA7D7-6AD4-39A2-9B6F-FF2DB871E0F8
+    value:           B83FD193-9AE4-3265-90C6-D040726402FB
 install-name:    '/System/Library/PrivateFrameworks/TextRecognition.framework/TextRecognition'
 current-version: 157
 exports:

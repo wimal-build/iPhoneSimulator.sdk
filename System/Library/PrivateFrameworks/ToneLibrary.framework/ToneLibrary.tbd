@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           711EA93C-2A89-3012-9A7D-CB691FEE6984
   - target:          x86_64-ios-simulator
-    value:           577DB40B-F40B-3AA9-8838-2B635A8CAFDC
+    value:           6B871DA8-F397-35A8-8A7B-396E2FD56467
   - target:          arm64-ios-simulator
-    value:           F0ACDF15-C091-3D7F-8B7B-F53BCE7465B8
+    value:           29CF0C5B-B849-3357-8AC9-FE0A1C3D93F8
 install-name:    '/System/Library/PrivateFrameworks/ToneLibrary.framework/ToneLibrary'
 exports:
   - targets:         [ i386-ios-simulator ]

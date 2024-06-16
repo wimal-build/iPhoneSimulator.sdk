@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           17E799D0-6254-3E92-892E-61FEFD51E19D
+    value:           749101CB-6042-3DF5-9B57-55E668963242
   - target:          arm64-ios-simulator
-    value:           759E8C0E-9273-3DF8-84C9-F64B42004D66
+    value:           8D553846-8AEF-33A7-8A9F-EB3A4C09CEA3
 install-name:    '/System/Library/PrivateFrameworks/AppPredictionClient.framework/AppPredictionClient'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

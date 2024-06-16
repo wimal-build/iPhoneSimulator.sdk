@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0F7AEF03-D963-33AA-8BF6-2C86A0A197A8
   - target:          x86_64-ios-simulator
-    value:           6A51B768-A2DE-380E-B837-0C0C36E8EFA5
+    value:           D8638463-3296-39BA-815A-7525389D1124
   - target:          arm64-ios-simulator
-    value:           CBEF5806-6E2D-30FD-9DF8-6DED48605C8A
+    value:           2BE10FDD-BE52-38C7-9E39-E92981783092
 install-name:    '/System/Library/PrivateFrameworks/LanguageModeling.framework/LanguageModeling'
 current-version: 246
 exports:

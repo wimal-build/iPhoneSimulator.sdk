@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           52DDD834-0F66-35D4-85B0-42D6FF54F526
   - target:          x86_64-ios-simulator
-    value:           7229E72F-A162-3CEF-91DF-B1B375729F20
+    value:           56B14071-F4FF-34E6-9FF2-4937DF9B6A31
   - target:          arm64-ios-simulator
-    value:           1ABFF305-2B88-3C69-9A57-5C5091C6CAA9
+    value:           11014D16-7F25-3E6E-8F50-11EFA4CB2427
 install-name:    '/System/Library/PrivateFrameworks/Heimdal.framework/Heimdal'
 exports:
   - targets:         [ i386-ios-simulator ]

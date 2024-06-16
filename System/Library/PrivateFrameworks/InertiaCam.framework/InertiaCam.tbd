@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4AAE25A7-4C36-3EB4-BFDE-E6B97D87798F
+    value:           E8A6177E-52CE-3939-97AC-C253B363280E
   - target:          arm64-ios-simulator
-    value:           57AD18C7-C5B1-3E43-8F14-3103E0F5D5E1
+    value:           8BB17D61-C560-3449-AEEC-E7BE57A9123F
 install-name:    '/System/Library/PrivateFrameworks/InertiaCam.framework/InertiaCam'
 exports:
   - targets:         [ x86_64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           35BCAF77-06DE-302B-A5CA-EC3E73F59412
   - target:          x86_64-ios-simulator
-    value:           87628746-EFCF-3D7E-9DD2-84A47B50C38C
+    value:           94AE3CD7-9EA1-3BDA-8B71-740DD76109D6
   - target:          arm64-ios-simulator
-    value:           139C2445-E5F6-3614-A93B-7E9F7831ADC0
+    value:           D2222830-8B88-39A0-965D-B34E2F04B3FB
 install-name:    '/usr/lib/system/libsystem_blocks.dylib'
 current-version: 78
 parent-umbrella:

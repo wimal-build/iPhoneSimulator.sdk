@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5969F0A8-ED2A-34EC-A0F8-626D19B4E917
+    value:           6E058C98-B073-38F9-957F-15828EA10678
   - target:          arm64-ios-simulator
-    value:           D5C793B8-7027-3964-9ADE-D700680B2406
+    value:           0812411A-FAF1-3E85-BDF4-F2E5DEFD9FFA
 install-name:    '/System/Library/PrivateFrameworks/SharingHUD.framework/SharingHUD'
-current-version: 1564.6
+current-version: 1566.6
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SharingHUDVersionNumber, _SharingHUDVersionString ]

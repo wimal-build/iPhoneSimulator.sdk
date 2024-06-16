@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBA6275A-29C8-334C-BA7F-77E0A2B5ACFE
+    value:           B4B8925D-3164-3A1B-BFA3-1FB0B262C571
   - target:          arm64-ios-simulator
-    value:           9791D799-4EC1-365F-BFB1-F8FF6F91AA64
+    value:           2B72F42F-CFD8-3E14-8F8E-FC03F6414797
 install-name:    '/System/Library/PrivateFrameworks/Email.framework/Email'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _EMAccountsChangedNotification, _EMAccountsChangedNotificationAccountsKey, 

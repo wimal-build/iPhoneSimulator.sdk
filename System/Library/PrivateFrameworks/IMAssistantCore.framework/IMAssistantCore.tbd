@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BD7D12F9-684C-3FAF-986B-F49221C9BCC2
+    value:           7FDEFB0F-4C3D-32AB-90DA-8A104E5A63DA
   - target:          arm64-ios-simulator
-    value:           F575C3A2-9613-3AAC-9FA1-4FABCB9BCDE4
+    value:           CCE7AFDD-1FAE-389F-B743-A3F880060126
 install-name:    '/System/Library/PrivateFrameworks/IMAssistantCore.framework/IMAssistantCore'
 current-version: 800
 exports:

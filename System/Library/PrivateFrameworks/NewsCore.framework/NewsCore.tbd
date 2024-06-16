@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2BA649A3-5EBC-3B90-8929-43B79147D90E
   - target:          x86_64-ios-simulator
-    value:           807ADDB1-9880-3545-A518-4F5EB4A2DF1F
+    value:           55BEA422-10F8-3926-9AE2-A56D0B1A351F
   - target:          arm64-ios-simulator
-    value:           CFF27D0E-A0FF-3E43-AB7F-CC5F31B128AB
+    value:           4F6976BE-334A-3C91-A963-3DBF29EFB4C7
 install-name:    '/System/Library/PrivateFrameworks/NewsCore.framework/NewsCore'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

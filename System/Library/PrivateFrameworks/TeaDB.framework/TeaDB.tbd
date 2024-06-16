@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           365B8E47-B980-35CD-8FB8-9ACDFD395AE8
+    value:           A4B18D3A-6EDD-321E-B0EE-55C8C6CDD033
   - target:          arm64-ios-simulator
-    value:           DF6E8F03-DEF1-36E0-8BC3-49092F860176
+    value:           3AC41B4F-C238-3CF9-BEC2-EF5E0DCDDE25
 install-name:    '/System/Library/PrivateFrameworks/TeaDB.framework/TeaDB'
 swift-abi-version: 7
 allowable-clients:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C1857723-E053-32FD-BBD1-DF1E08916162
+    value:           5ED314CE-2900-323C-A2CC-CF278ED53A45
   - target:          arm64-ios-simulator
-    value:           1654AB8B-BF30-3EDC-A9D6-75EB142DA812
+    value:           6B65E30E-58D7-3658-927B-7A70BBF9B2C5
 install-name:    '/System/Library/PrivateFrameworks/PhotoVision.framework/PhotoVision'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

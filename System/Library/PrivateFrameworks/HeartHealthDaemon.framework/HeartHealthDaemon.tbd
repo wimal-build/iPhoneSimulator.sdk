@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2434E3C9-D4EC-30FE-BC5D-C40206700D19
+    value:           DFA3BA98-1F80-3F1E-88D5-D4E7E6C2FCEB
   - target:          arm64-ios-simulator
-    value:           645E729B-91C0-3D9D-A35E-8B7F9F66DDD8
+    value:           A8476058-27CF-32B8-AB6C-B87835692B4C
 install-name:    '/System/Library/PrivateFrameworks/HeartHealthDaemon.framework/HeartHealthDaemon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

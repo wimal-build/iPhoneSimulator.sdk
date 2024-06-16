@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A063F5EA-F9B5-3140-9A75-01FF8D5794F2
   - target:          x86_64-ios-simulator
-    value:           0F0184F9-DC06-3682-8F23-6A4EEF2D940D
+    value:           AE6F592E-BAE7-35F2-8A94-D2C0A7CCB540
   - target:          arm64-ios-simulator
-    value:           CD9475C5-746C-3810-B095-F370187AA785
+    value:           3D5A4C90-0B54-36BE-BF0F-E488708A8DD7
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/iWorkImport'
 exports:
   - targets:         [ i386-ios-simulator ]

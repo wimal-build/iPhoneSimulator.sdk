@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A7C05403-3CBC-3CFF-A34D-AA04BE446D03
   - target:          x86_64-ios-simulator
-    value:           06B4AC51-316A-3C2D-A148-B22B0BFC1A36
+    value:           0BB6749D-1810-3B54-A23C-E93193A2FC9E
   - target:          arm64-ios-simulator
-    value:           8419E0A0-1C75-3872-987C-23F072AED01F
+    value:           A198D498-1AE3-3ADE-ACB0-3213F34214B0
 install-name:    '/usr/lib/libAWDSupportFramework.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

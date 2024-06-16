@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4B030520-86E4-30BA-AC55-9255877A88D7
   - target:          x86_64-ios-simulator
-    value:           8B6261A3-53B3-399B-9A30-5A4359EF9D81
+    value:           414E6C98-2F2C-3C60-A9FA-E54D6A8C143B
   - target:          arm64-ios-simulator
-    value:           29D47716-976F-3D85-8E1D-D5175CFF1470
+    value:           972B8D84-404D-3E98-A48A-A408D5F9076D
 install-name:    '/System/Library/PrivateFrameworks/AOSKit.framework/AOSKit'
 current-version: 125.2
 exports:

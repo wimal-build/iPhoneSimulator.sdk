@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2833C85D-FE0F-3D51-92F8-B45AD7A2ECBE
   - target:          x86_64-ios-simulator
-    value:           0CB90F85-91EF-3189-9DB3-D33B5F7F4A4D
+    value:           4BE2E620-BCB1-3F12-A9D8-E38611D00DF8
   - target:          arm64-ios-simulator
-    value:           0A88384A-10A2-3F77-BF41-5F02D9FC9224
+    value:           2B3CC0F5-A729-34D1-8E88-F2B01E31E916
 install-name:    '/System/Library/PrivateFrameworks/Celestial.framework/Celestial'
 exports:
   - targets:         [ i386-ios-simulator ]

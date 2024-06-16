@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           321FB412-93F9-3B8F-B245-F720F2E33A5B
+    value:           995FFDE4-E454-3114-9E79-4821D9D0AA65
   - target:          arm64-ios-simulator
-    value:           A004187E-8E52-35D9-B920-5553876DFDF1
+    value:           B38EFF00-943C-3D75-882F-499934F3625C
 install-name:    '/System/Library/PrivateFrameworks/NetworkServiceProxy.framework/NetworkServiceProxy'
 exports:
   - targets:         [ x86_64-ios-simulator ]

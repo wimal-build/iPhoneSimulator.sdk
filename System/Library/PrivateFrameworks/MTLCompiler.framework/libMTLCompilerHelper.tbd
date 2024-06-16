@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           17F20AB6-65DB-3396-AC30-47DB429185B9
+    value:           323711AB-4AE9-3FC4-A17C-03368B4EF52B
   - target:          arm64-ios-simulator
-    value:           1B54D100-33A2-3FC1-8002-CC30B5ACD79D
+    value:           C07E4AE4-7FE7-339A-89A7-CB934EA60CA2
 install-name:    '/System/Library/PrivateFrameworks/MTLCompiler.framework/libMTLCompilerHelper.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator ]

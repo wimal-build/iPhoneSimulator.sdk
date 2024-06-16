@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           669E9AC7-319E-3CFD-B6FF-E2FE1B49D092
+    value:           19E0581F-1C1E-3156-B4E8-B8BBCEBE3EEC
   - target:          arm64-ios-simulator
-    value:           7CEB4DF3-FF23-37F6-861C-A75B506D119A
+    value:           502777D8-17DD-3880-8DFE-C1D168D48803
 install-name:    '/System/Library/PrivateFrameworks/RunningBoard.framework/RunningBoard'
 current-version: 505.0.12
 exports:

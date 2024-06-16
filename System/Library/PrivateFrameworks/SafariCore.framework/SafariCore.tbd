@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DB6F1930-E20F-3D91-BBEE-B23C3BAE6B5B
   - target:          x86_64-ios-simulator
-    value:           74A4BB68-6CE5-3777-87C8-C7179E5480A6
+    value:           231209CE-4687-340E-BFEF-D7F8A0C2F9A3
   - target:          arm64-ios-simulator
-    value:           ACAA5709-9309-3445-8B6E-8D28E0118EBC
+    value:           1EFF45DA-58EC-3E76-9D78-BD6E1FBCE0F6
 install-name:    '/System/Library/PrivateFrameworks/SafariCore.framework/SafariCore'
 current-version: 610.1.28
 compatibility-version: 0

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           64242260-F6B0-3230-B7A1-BDA2BDD18B5C
   - target:          x86_64-ios-simulator
-    value:           1CF1E1FC-9751-3E15-A272-AC946480A8CC
+    value:           E7861A9F-C361-3140-8106-46A0983ECB1C
   - target:          arm64-ios-simulator
-    value:           7C143655-4259-35A3-AF93-8F77F465914D
+    value:           6E3DD909-A30C-361A-921D-42D7F7737D5F
 install-name:    '/System/Library/PrivateFrameworks/DataAccessUI.framework/DataAccessUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

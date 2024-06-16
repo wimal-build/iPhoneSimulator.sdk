@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           92D3E382-91E9-3516-A0A4-706CB289FAD9
+    value:           14E3EEB2-8DEA-3190-A203-B7D78BD70E10
   - target:          arm64-ios-simulator
-    value:           F902EEC2-E8B5-311A-9AFC-DF37B5E0404E
+    value:           66DC350E-2B1E-3A0E-92E0-B29F1EC553EE
 install-name:    '/System/Library/PrivateFrameworks/ScreenReaderOutput.framework/ScreenReaderOutput'
 current-version: 390
 exports:

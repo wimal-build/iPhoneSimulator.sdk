@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           892F4381-80BD-3913-B49D-533A06F361A1
   - target:          x86_64-ios-simulator
-    value:           44F2286F-C642-3CF8-AB7A-61DB096AFA9C
+    value:           E091EF7C-7DB5-347D-9709-5E4B196D6777
   - target:          arm64-ios-simulator
-    value:           F60771D0-AED1-3F51-AC1A-E1CA99B527BC
+    value:           4944E9F1-C9E5-3B06-BE6F-52465E394310
 install-name:    '/System/Library/PrivateFrameworks/MobileAsset.framework/MobileAsset'
 exports:
   - targets:         [ i386-ios-simulator ]

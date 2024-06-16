@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4DF3C706-37E9-327C-BF9F-688576F01977
   - target:          x86_64-ios-simulator
-    value:           B9DFCA16-1A60-33ED-A416-30D9E0B15619
+    value:           1291F997-0098-3246-B480-5298814949F0
   - target:          arm64-ios-simulator
-    value:           C9EF7612-3B7B-3B6F-AA30-86EE4556FA41
+    value:           C2154286-98C9-3927-B28B-F3616A50683B
 install-name:    '/usr/lib/libexslt.0.dylib'
 current-version: 9.15
 compatibility-version: 9

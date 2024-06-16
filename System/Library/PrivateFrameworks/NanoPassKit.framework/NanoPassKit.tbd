@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9460AA72-64AC-3E99-B952-AC35DEE6AC0F
   - target:          x86_64-ios-simulator
-    value:           9C959D9E-D929-3170-BCF9-21FCB0DCB6C6
+    value:           B6720EA7-B773-33D7-A193-21FB741EF891
   - target:          arm64-ios-simulator
-    value:           4775F1B2-FF4A-3D5C-AE60-A07501821371
+    value:           24F45FCE-72CE-3F72-B2CA-4EC54C59EACE
 install-name:    '/System/Library/PrivateFrameworks/NanoPassKit.framework/NanoPassKit'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           02C8C25A-608B-3C37-AC09-A44142E49DAD
+    value:           F7A1967A-4338-3DF2-943D-A1FF26BAA918
   - target:          arm64-ios-simulator
-    value:           79C08EB4-FF31-3A22-9A7E-0FEBA7550EAE
+    value:           2B80A2DE-8457-37BB-9F8E-2CA8EE1D2686
 install-name:    '/System/Library/PrivateFrameworks/TVUIKit.framework/TVUIKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

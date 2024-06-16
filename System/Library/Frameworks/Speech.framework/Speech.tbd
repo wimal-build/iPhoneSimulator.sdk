@@ -5,17 +5,17 @@ uuids:
   - target:          i386-ios-simulator
     value:           B0084272-3A75-311F-8981-99DC1E781195
   - target:          x86_64-ios-simulator
-    value:           97D72D2C-6954-30E7-A821-7CBBDF74CA99
+    value:           B456700A-2B57-32B0-AC6A-7E4B6CDACADA
   - target:          arm64-ios-simulator
-    value:           B1C7E277-D780-32E0-BBDD-34942BE7F0C4
+    value:           68A03722-8DDE-3B9F-9F8D-6058EE62CB5C
 install-name:    '/System/Library/Frameworks/Speech.framework/Speech'
 exports:
   - targets:         [ i386-ios-simulator ]
     objc-classes:    [ SFSpeechRecordingRecognitionRequest ]
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     objc-classes:    [ SFAcousticFeature, SFSpeechAudioBufferRecognitionRequest, 
-                       SFSpeechLanguageModel, SFSpeechRecognitionRequest, SFSpeechRecognitionResult, 
-                       SFSpeechRecognitionTask, SFSpeechRecognizer, SFSpeechURLRecognitionRequest, 
-                       SFTranscription, SFTranscriptionSegment, SFVoiceAnalytics, 
-                       _SFSearchRequest, _SFSearchResult ]
+                       SFSpeechRecognitionRequest, SFSpeechRecognitionResult, SFSpeechRecognitionTask, 
+                       SFSpeechRecognizer, SFSpeechURLRecognitionRequest, SFTranscription, 
+                       SFTranscriptionSegment, SFVoiceAnalytics, _SFSearchRequest, 
+                       _SFSearchResult ]
 ...

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           45BAEF17-0C1D-3A5D-BB2D-D11D114C1EE0
   - target:          x86_64-ios-simulator
-    value:           28588E6C-DCA4-3DF4-8285-BBE85D2F8DCD
+    value:           5EA6C4BC-4A18-3B3C-9B5A-0C11E874482A
   - target:          arm64-ios-simulator
-    value:           87CF6DB9-B6C2-3FC4-AC9A-9E1A5C576885
+    value:           762D0443-97C3-3FC9-AE6A-0AE13ED819F1
 install-name:    '/System/Library/PrivateFrameworks/PairedSync.framework/PairedSync'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

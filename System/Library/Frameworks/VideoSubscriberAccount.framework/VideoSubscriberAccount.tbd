@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           96180D47-0669-3034-BD86-5579E9B1B436
   - target:          x86_64-ios-simulator
-    value:           07721573-8BA0-38DA-A13D-4A8A36D70BA1
+    value:           3EA3751B-7375-3982-8AEB-09ADAC77A92F
   - target:          arm64-ios-simulator
-    value:           3C7136A3-0608-30F2-A774-C129871BA772
+    value:           45FAC13D-A4F9-3AF6-9622-662A0476BFD8
 install-name:    '/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount'
 current-version: 364.0.3
 exports:

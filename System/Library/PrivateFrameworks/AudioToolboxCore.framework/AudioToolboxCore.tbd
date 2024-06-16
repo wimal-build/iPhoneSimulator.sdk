@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EBA76350-5E12-3973-B7CD-0BB319848F57
+    value:           92814302-69E7-358E-9D2B-6CEA7A38D221
   - target:          arm64-ios-simulator
-    value:           B178BAA6-3DF0-335A-B379-B5344B16CF81
+    value:           7185DD7F-B6C7-337E-9734-47B8819F7115
 install-name:    '/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore'
 exports:
   - targets:         [ x86_64-ios-simulator ]

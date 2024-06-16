@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B59D91AC-1FF3-35D3-A569-A335D5973F85
   - target:          x86_64-ios-simulator
-    value:           1AFE1684-E286-3DBD-8852-7633B253ACB2
+    value:           F21DA58C-2CC0-3123-8DA4-4A8D2B99C61C
   - target:          arm64-ios-simulator
-    value:           750A8218-81D6-3002-8200-75A95AFE4E80
+    value:           0D903C5C-9178-35FC-9342-C632682C1D87
 install-name:    '/usr/lib/swift/libswiftGLKit.dylib'
 current-version: 1.1
 swift-abi-version: 7

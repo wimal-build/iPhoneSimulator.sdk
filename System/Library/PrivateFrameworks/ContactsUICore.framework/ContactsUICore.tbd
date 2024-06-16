@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2FBC197A-E833-3370-85B5-4C4B091AC4C6
   - target:          x86_64-ios-simulator
-    value:           4DBB59CC-6655-3D1F-B5A1-DB078E8B2CA5
+    value:           E438631E-E649-3D1A-A149-7FB750438B33
   - target:          arm64-ios-simulator
-    value:           639C15F9-257F-3E69-8A66-86E91B29C509
+    value:           76BA0721-9292-3B39-B00B-FF66A14A24DC
 install-name:    '/System/Library/PrivateFrameworks/ContactsUICore.framework/ContactsUICore'
 exports:
   - targets:         [ i386-ios-simulator ]

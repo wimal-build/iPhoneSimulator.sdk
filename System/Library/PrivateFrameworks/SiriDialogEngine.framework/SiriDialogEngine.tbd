@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           69B747FA-2330-394E-80DB-C6E16CAAF047
+    value:           016D5C19-07B8-3102-8710-41FC08399B32
   - target:          arm64-ios-simulator
-    value:           5D0D381A-A6F9-35AD-B68D-836C40A1071C
+    value:           5602A418-CB78-39AD-8014-02D8551C5A57
 install-name:    '/System/Library/PrivateFrameworks/SiriDialogEngine.framework/SiriDialogEngine'
 swift-abi-version: 7
 exports:

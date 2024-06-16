@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9D0363BE-47A4-36E4-91E1-3F5BEF2F2050
+    value:           8B44CD3A-5DCD-3570-8339-EDEC70E546CA
   - target:          arm64-ios-simulator
-    value:           734DD357-4968-3C7B-9653-CF2A9B8AB3B4
+    value:           3068769C-853E-3F5C-8286-8790222935F8
 install-name:    '/System/Library/PrivateFrameworks/Silex.framework/Silex'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

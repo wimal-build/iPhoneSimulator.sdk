@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6B74A7BB-6A96-3924-96EC-52EE1425D9D4
   - target:          x86_64-ios-simulator
-    value:           6819F1F1-E054-3B73-B1A5-EBA7A4EE227B
+    value:           C9FC9591-D971-3DA9-A2C7-C24A43D403F8
   - target:          arm64-ios-simulator
-    value:           1BBD60BA-7A70-3B26-B1D0-6B1A672E901C
+    value:           5D3B5A15-CFEE-3B7B-A5CC-B092831EE1D6
 install-name:    '/System/Library/PrivateFrameworks/PrototypeTools.framework/PrototypeTools'
 exports:
   - targets:         [ i386-ios-simulator ]

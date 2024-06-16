@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C73F81FE-7C62-3FFB-AAA3-915196A7ABCC
+    value:           0FC8B873-CE1D-315F-822A-23BB054D4B67
   - target:          arm64-ios-simulator
-    value:           9E5E3956-7CC3-32DE-A77B-FF62AB77E5AC
+    value:           E7638081-0B83-39D4-B10D-89B0AFAB752A
 install-name:    '/System/Library/PrivateFrameworks/AppSSOCore.framework/AppSSOCore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           02A8BF66-8456-3578-B596-75D673C6E14F
+    value:           9613457C-50D8-3C4C-A48B-9B813A60C873
   - target:          arm64-ios-simulator
-    value:           138C6717-D722-36D9-8950-C8F6C76D6620
+    value:           B9B0D9D8-4832-3E8D-A75D-77E6143789E4
 install-name:    '/System/Library/Frameworks/ClassKit.framework/ClassKit'
 current-version: 146.0.70
 exports:

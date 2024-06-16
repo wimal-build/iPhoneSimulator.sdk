@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C76B0FD8-49B1-3DE1-8CAA-29E9B6EC6DC6
   - target:          x86_64-ios-simulator
-    value:           C4678F2F-2087-3630-997F-580CE79142E3
+    value:           ED93E95B-F79E-34E0-9ABC-9FAEEC3EE605
   - target:          arm64-ios-simulator
-    value:           275FD244-AD08-372B-A688-4A50930EA73B
+    value:           A9253801-3E68-3DB0-BEA7-D5314968B201
 install-name:    '/System/Library/Frameworks/MetalKit.framework/MetalKit'
 current-version: 147.1
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           015E5B2C-6AB9-3A3E-AEFE-10E1805CE3A8
+    value:           0DECA927-1EE4-3A3D-847A-3F7B45162433
   - target:          arm64-ios-simulator
-    value:           CD65083E-A00F-3146-89E2-E675C9E73D27
+    value:           022B49B8-7152-3526-9D0D-E628668016E2
 install-name:    '/System/Library/PrivateFrameworks/ShortcutUIKit.framework/ShortcutUIKit'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

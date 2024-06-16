@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9275C068-F516-38B9-80CE-7C85C102E3A1
+    value:           EF80F7BF-2E1E-3155-938F-AFCCCA95CF96
   - target:          arm64-ios-simulator
-    value:           522318E2-AD20-359F-98B9-825E98BEDFE8
+    value:           B138CB01-2BD4-3FE6-9C08-6F88ECB43E3D
 install-name:    '/System/Library/Frameworks/_HomeKit_SwiftUI.framework/_HomeKit_SwiftUI'
 swift-abi-version: 7
 exports:

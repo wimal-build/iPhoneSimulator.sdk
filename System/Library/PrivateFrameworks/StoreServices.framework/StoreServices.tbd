@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5CBB0695-CC7F-3711-8619-878061EA31DA
   - target:          x86_64-ios-simulator
-    value:           6AB870ED-4B2F-3C6D-8BFD-BBD393F868F8
+    value:           AA018B02-321E-304F-A4EF-C5C4726D379B
   - target:          arm64-ios-simulator
-    value:           8ACC2F77-E556-36B9-8319-7BE39CAD4BD8
+    value:           15AF7793-9E7A-3159-B16A-03DE0AEEC302
 install-name:    '/System/Library/PrivateFrameworks/StoreServices.framework/StoreServices'
 exports:
   - targets:         [ i386-ios-simulator ]

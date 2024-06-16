@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9FF8B0C3-24CA-3411-B48A-DF872BCEA8EE
+    value:           CD4A7657-6279-321B-99FB-1F26D8B3914D
   - target:          arm64-ios-simulator
-    value:           DAE9870F-5761-3E93-B033-E6D97E6C4944
+    value:           66B81A02-A5D7-30F1-8EF1-03FDC924B2C6
 install-name:    '/System/Library/PrivateFrameworks/AssetExplorer.framework/AssetExplorer'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

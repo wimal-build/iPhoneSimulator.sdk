@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           85413629-7A45-30B1-AED5-A89D06EE9C4B
+    value:           DF76BA4E-D258-33C1-8E4A-0BDD0B4AA3CD
   - target:          arm64-ios-simulator
-    value:           EC292590-4507-3A5F-9363-B419FE1B0068
+    value:           96C75784-7722-3089-BE9F-D987BF9D86ED
 install-name:    '/System/Library/PrivateFrameworks/RecapPerformanceTesting.framework/RecapPerformanceTesting'
 current-version: 17
 exports:

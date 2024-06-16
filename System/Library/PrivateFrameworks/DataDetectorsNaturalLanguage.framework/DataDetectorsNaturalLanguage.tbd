@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           89033CE5-615B-32CA-BB17-F2057942BD29
   - target:          x86_64-ios-simulator
-    value:           3366DA88-6C6C-33C1-AB5E-C26F94070A02
+    value:           B6DB1969-5B99-370C-9035-AAB7D2AF926F
   - target:          arm64-ios-simulator
-    value:           71BB6E0F-CF90-30BC-A567-A82A3367131E
+    value:           72EBD37D-0DDE-3C64-8E5A-BB2CFD640542
 install-name:    '/System/Library/PrivateFrameworks/DataDetectorsNaturalLanguage.framework/DataDetectorsNaturalLanguage'
 exports:
   - targets:         [ i386-ios-simulator ]

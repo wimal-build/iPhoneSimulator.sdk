@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           212DDFF7-6B6A-364A-BAF9-B05F5618FE92
   - target:          x86_64-ios-simulator
-    value:           FEA3C8FD-BE2D-3F5C-A312-3984354126A7
+    value:           9B9BAECA-B794-3CDA-A7E0-EFD959FC34C2
   - target:          arm64-ios-simulator
-    value:           E8F7A183-72D3-3278-A006-7ADD5D229C2B
+    value:           6F30C479-0193-3309-B99A-B5C7B04B7869
 install-name:    '/System/Library/PrivateFrameworks/CommunicationsSetupUI.framework/CommunicationsSetupUI'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C487E30C-8E60-36BC-80CE-C786D83C8FEB
+    value:           A9ABF92B-8C46-3C3E-8935-71AF8E9D980D
   - target:          arm64-ios-simulator
-    value:           1876BED9-94CB-3D06-8CBB-FC767EB68E1E
+    value:           E0E527F8-9284-385E-8F24-2DBFA22C29A8
 install-name:    '/System/Library/Frameworks/MetalPerformanceShaders.framework/Frameworks/MPSMatrix.framework/MPSMatrix'
-current-version: 124.0.27
+current-version: 124.0.29
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ MPSNDArray, MPSNeuralNetwork, MetalPerformanceShaders ]

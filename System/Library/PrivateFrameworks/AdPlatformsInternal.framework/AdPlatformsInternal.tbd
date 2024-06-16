@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CA44DFB3-4F35-3741-98D4-6D065F3A78EC
+    value:           424EFBF4-C499-3D18-ABAC-7474FFB9A149
   - target:          arm64-ios-simulator
-    value:           A1ED057D-1C9D-334F-A3DB-318A45082CE9
+    value:           CBE3A848-2535-3430-A117-8BAB18A1C53E
 install-name:    '/System/Library/PrivateFrameworks/AdPlatformsInternal.framework/AdPlatformsInternal'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

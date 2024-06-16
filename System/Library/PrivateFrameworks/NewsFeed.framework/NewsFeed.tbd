@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           ADA90B81-85CA-3AD5-8663-9878A6D19B54
+    value:           6DDAFBCA-B928-35DC-A81A-A222F81202B4
   - target:          arm64-ios-simulator
-    value:           D8ED4194-2610-3C7A-A156-2FB6B2BEBD9C
+    value:           8C2635DC-EDDE-3454-A2FF-BC8FAFF135F2
 install-name:    '/System/Library/PrivateFrameworks/NewsFeed.framework/NewsFeed'
 swift-abi-version: 7
 allowable-clients:

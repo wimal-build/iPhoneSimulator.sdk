@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2E88EC2B-F951-3D76-B114-F6CC635EFE8C
   - target:          x86_64-ios-simulator
-    value:           29F384D5-C3FA-3DB1-8AFD-FCEBF57221F3
+    value:           39BF92A8-B459-3064-A29F-015EC51C285D
   - target:          arm64-ios-simulator
-    value:           92F0E3AA-6B96-3113-AC90-88F4721E8183
+    value:           289EA534-61C3-320D-B99E-C140EC793D54
 install-name:    '/usr/lib/system/libcommonCrypto.dylib'
 current-version: 60178
 parent-umbrella:

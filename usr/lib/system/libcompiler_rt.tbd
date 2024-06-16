@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D8628B7C-7D84-38E0-A80E-E38B64402F1C
   - target:          x86_64-ios-simulator
-    value:           7E7A6F05-7796-3F91-AB7F-A5E5D4348225
+    value:           E9587C56-B503-3195-A8E7-EBD5A98260D6
   - target:          arm64-ios-simulator
-    value:           34FAA26E-CB87-34BC-91C5-967B7FAA605A
+    value:           8E831850-EEEE-32B3-A50E-BF46DC0F5C8D
 install-name:    '/usr/lib/system/libcompiler_rt.dylib'
 current-version: 102.3
 parent-umbrella:

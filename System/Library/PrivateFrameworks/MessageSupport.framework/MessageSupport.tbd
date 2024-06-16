@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           83521B94-5FA8-3F89-8449-B3263746DEA4
   - target:          x86_64-ios-simulator
-    value:           9AC42400-C85D-3F92-8D2F-DE3E9C562D05
+    value:           F54A97B0-8DCE-3E31-ABDF-6D3A8C4E7ED6
   - target:          arm64-ios-simulator
-    value:           A56D5C25-08FC-33E2-87C6-54F42859513F
+    value:           AC6DD597-F173-37C7-BA6E-CCFFCCE9D880
 install-name:    '/System/Library/PrivateFrameworks/MessageSupport.framework/MessageSupport'
-current-version: 3654.0.3
+current-version: 3654.10
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MFCarrierPreferenceDomain, _MFDeviceSupportsPerseus, _MFIsInternalDevice, 

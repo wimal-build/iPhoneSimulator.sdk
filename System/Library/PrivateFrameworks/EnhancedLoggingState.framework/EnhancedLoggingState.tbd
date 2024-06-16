@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2EA6D408-6804-3BF1-B7C4-CD0BAE5F54B9
+    value:           21AE45C0-61F8-37E6-9CF7-051EFEB86A5B
   - target:          arm64-ios-simulator
-    value:           8DEB70B0-A4A8-32DF-BFED-6A689A84684B
+    value:           D45FFDA9-FCBA-3FD9-BE0D-9087688FD024
 install-name:    '/System/Library/PrivateFrameworks/EnhancedLoggingState.framework/EnhancedLoggingState'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

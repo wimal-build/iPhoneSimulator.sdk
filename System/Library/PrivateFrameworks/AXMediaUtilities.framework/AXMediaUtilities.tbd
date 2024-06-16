@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           17B5A3F0-83DB-3F73-91EE-E4DD37F7C599
+    value:           696E54EB-AD91-3DCC-BB8C-DBC7A0F830B5
   - target:          arm64-ios-simulator
-    value:           BEA780EE-816F-3AC0-B59E-FBC20E995CE1
+    value:           3EFBB9D9-8808-38D6-9633-68A4A889A7A2
 install-name:    '/System/Library/PrivateFrameworks/AXMediaUtilities.framework/AXMediaUtilities'
 exports:
   - targets:         [ x86_64-ios-simulator ]

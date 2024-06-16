@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           35295C4C-226B-3E05-8CB7-0209991CE6B4
+    value:           9D44D53A-1A78-323D-A2FF-61A79EEFD155
   - target:          arm64-ios-simulator
-    value:           FD11414D-45C8-329D-B1F1-0C5593B42027
+    value:           A70B7C2A-C0D5-3136-952A-A92204CDBC57
 install-name:    '/System/Library/PrivateFrameworks/TouchML.framework/TouchML'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

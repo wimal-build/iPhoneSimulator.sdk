@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           765C3434-4914-3AB5-A6CF-2BE6C53BCEC0
+    value:           5913C3E0-345E-3A68-B67B-7F1D318EF19A
   - target:          arm64-ios-simulator
-    value:           13853F8D-A5C4-39B5-847C-E94BDCA6600D
+    value:           F1387B9F-77D1-3C4E-B053-3B028868014F
 install-name:    '/System/Library/PrivateFrameworks/PersonalizationPortraitInternals.framework/PersonalizationPortraitInternals'
 current-version: 1115
 exports:

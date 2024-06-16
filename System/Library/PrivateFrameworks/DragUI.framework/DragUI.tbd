@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8A5E8EA9-AF77-38D9-A7A0-DB384CC9EC13
+    value:           ED3A0834-4F7B-39B8-AE95-32870868EFE8
   - target:          arm64-ios-simulator
-    value:           430DC33F-5DA7-3E7C-8896-58B25F60AC82
+    value:           CD1F8A78-1663-30D3-ACEB-40932D1BAF72
 install-name:    '/System/Library/PrivateFrameworks/DragUI.framework/DragUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

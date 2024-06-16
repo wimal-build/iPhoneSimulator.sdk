@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4DCCD150-9E1C-3912-8CD7-47AC8BE9DCC1
   - target:          x86_64-ios-simulator
-    value:           87CF7110-44DE-37E4-AB2C-5DE561CF5BDC
+    value:           580E8A02-5098-3012-93CF-1CCC428947FC
   - target:          arm64-ios-simulator
-    value:           C1717A74-8C28-332F-9059-A6744244CB9F
+    value:           BFF24B02-D90C-38CD-9547-32DE7609A693
 install-name:    '/System/Library/PrivateFrameworks/KeychainCircle.framework/KeychainCircle'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

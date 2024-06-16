@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           063684CA-383B-38A1-B332-A9885EB3C3E1
   - target:          x86_64-ios-simulator
-    value:           8D711A32-645E-3E4E-818C-D64B96E5FE1B
+    value:           3077BF68-A6C7-300B-86AC-60222CC8513B
   - target:          arm64-ios-simulator
-    value:           2E2C4B72-8536-39CB-9E08-421345A5ECBE
+    value:           3FCC1D9F-117C-3135-B447-176D878D20E8
 install-name:    '/System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry'
 exports:
   - targets:         [ i386-ios-simulator ]

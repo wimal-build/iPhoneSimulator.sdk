@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A64482DB-F83F-30C7-8B98-D5929C56DE44
   - target:          x86_64-ios-simulator
-    value:           DEF74CF4-9D01-32B5-A284-D38CAF94430E
+    value:           67BEFD02-8F60-372C-B62B-83F97F83316E
   - target:          arm64-ios-simulator
-    value:           16DC634A-933A-3D9E-9A3D-99E8177341BF
+    value:           A06DFBCD-437A-33B0-9495-3A9FF1A80CC9
 install-name:    '/System/Library/PrivateFrameworks/IMSharedUtilities.framework/IMSharedUtilities'
 exports:
   - targets:         [ i386-ios-simulator ]

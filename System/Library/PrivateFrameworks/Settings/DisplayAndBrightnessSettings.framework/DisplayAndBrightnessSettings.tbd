@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           82AC38CE-FD8F-3890-8311-BDC5C08145AB
+    value:           758409A8-E300-3423-A264-179F689131C0
   - target:          arm64-ios-simulator
-    value:           95BFAFE9-08CB-3D81-9C7C-D12CECB4427F
+    value:           09DD963A-6565-3773-AE81-D61BF44E658D
 install-name:    '/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

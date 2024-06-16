@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C9A96756-D113-3A48-9C1E-A70FDE4D4E09
+    value:           BF98C983-EE3C-317A-B14C-D8B896FC40C7
   - target:          arm64-ios-simulator
-    value:           7631B761-A208-3AA5-B399-1FD087B968F2
+    value:           7A310EF0-2F94-3D28-9E70-3F36D59375D5
 install-name:    '/System/Library/PrivateFrameworks/NewsSubscription.framework/NewsSubscription'
 swift-abi-version: 7
 allowable-clients:

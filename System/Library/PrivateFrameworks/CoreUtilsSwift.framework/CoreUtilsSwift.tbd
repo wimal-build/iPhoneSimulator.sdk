@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9186A1B5-D1BA-32C9-8C9C-CEA4F5215158
+    value:           2E069C7F-172C-3E3A-A132-A90D5B7CA104
   - target:          arm64-ios-simulator
-    value:           2DF39DC2-7199-3970-B14B-CFA8C36DDC34
+    value:           522ABAB5-F2BF-339D-8379-8C51A819B869
 install-name:    '/System/Library/PrivateFrameworks/CoreUtilsSwift.framework/CoreUtilsSwift'
 current-version: 0
 compatibility-version: 0

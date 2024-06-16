@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           E1371C50-BFA5-334C-8566-6440EDB57CB3
   - target:          x86_64-ios-simulator
-    value:           3674371C-88B2-3E22-8F13-A50CAAA21BD6
+    value:           61F31A34-276A-3F63-A62E-6FAC26BA4F6B
   - target:          arm64-ios-simulator
-    value:           FC87DE2C-C204-39E4-A6C0-0D69140FDB93
+    value:           3B080735-5931-3A38-952B-6AD6B04620E5
 install-name:    '/System/Library/PrivateFrameworks/UserActivity.framework/UserActivity'
-current-version: 431
+current-version: 432
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _GetAuditSessionIDFromToken, _GetEGIDFromToken, _GetGIDFromToken, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A51ECBF5-B32C-3E99-8DD5-CA341F4EED9F
   - target:          x86_64-ios-simulator
-    value:           B49CD1FE-CCE2-35C1-A110-EEB625D82527
+    value:           4DB961A3-87EC-3B05-96A1-DD5F0117F166
   - target:          arm64-ios-simulator
-    value:           34875D05-8701-3690-948A-BE3B23256B00
+    value:           6FF54EE3-CE9E-32EB-9584-CF9A936CC7EB
 install-name:    '/System/Library/PrivateFrameworks/AppSupportUI.framework/AppSupportUI'
 exports:
   - targets:         [ i386-ios-simulator ]

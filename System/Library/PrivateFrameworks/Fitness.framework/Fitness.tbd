@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B0786EE7-A2DC-38F8-990E-AA4556F707BF
+    value:           1F6C77B8-679B-30E2-AD1D-510BEABF62CC
   - target:          arm64-ios-simulator
-    value:           4F930B78-1198-328B-A43D-DBE77B90277D
+    value:           0EA36487-5615-3FEF-8353-A8F4DA2B0F24
 install-name:    '/System/Library/PrivateFrameworks/Fitness.framework/Fitness'
 current-version: 0
 compatibility-version: 0

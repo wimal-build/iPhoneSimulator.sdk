@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A590A8AE-DDB2-3CA1-B147-1DCBD0192421
   - target:          x86_64-ios-simulator
-    value:           05FC4D76-9ABF-397F-B4BD-14A62041D94F
+    value:           C7A8C5D5-847F-3D82-A842-7E8E57EECAC3
   - target:          arm64-ios-simulator
-    value:           51C08194-646E-3C4F-9F0D-482F9671D4CD
+    value:           DA7022BF-F6EA-3A87-BE02-2E9FA171A40A
 install-name:    '/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit'
 exports:
   - targets:         [ i386-ios-simulator ]

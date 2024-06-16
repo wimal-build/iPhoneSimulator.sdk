@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           924CBD87-64BC-36D5-BC74-F5545FC74B43
+    value:           D9F53ACE-36A3-30BD-A664-C0EE574EB50E
   - target:          arm64-ios-simulator
-    value:           FD8EA9D8-F5DC-3B2C-9104-60B8F21E0954
+    value:           CCD0E9F1-A0DA-3B92-9174-A661F5DB3664
 install-name:    '/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework/ScreenTimeSettingsUI'
-current-version: 481
+current-version: 481.1
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ FamilyCircleUI, ScreenTimeAgent, ScreenTimeNotificationContentExtension, 

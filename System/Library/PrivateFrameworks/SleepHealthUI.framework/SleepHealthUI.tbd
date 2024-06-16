@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0AAA3A82-CA01-364E-9825-CD4147539A16
+    value:           428F35AB-A95C-3AE0-9B3F-DBFA3C676ABD
   - target:          arm64-ios-simulator
-    value:           E9116041-A49E-3DAE-8E14-6FF0936F57E6
+    value:           5B274961-8003-324A-B7CA-8335DA342B10
 install-name:    '/System/Library/PrivateFrameworks/SleepHealthUI.framework/SleepHealthUI'
 swift-abi-version: 7
 exports:

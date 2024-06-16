@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2B7A28EA-7531-3F40-8E2C-2DBC3053D791
   - target:          x86_64-ios-simulator
-    value:           6A1D2F88-0710-3BC4-B718-11864614DCFF
+    value:           012621BC-6770-36D6-8037-08D06C97FD68
   - target:          arm64-ios-simulator
-    value:           F8D323C7-1052-3A96-B49B-A9145C745299
+    value:           CA2673DA-3445-3EEE-A419-FDF7CA638ED7
 install-name:    '/System/Library/PrivateFrameworks/ResponseKit.framework/ResponseKit'
 current-version: 164
 exports:

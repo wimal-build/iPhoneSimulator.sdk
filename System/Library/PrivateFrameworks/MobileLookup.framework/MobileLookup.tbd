@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BD11BBF0-15ED-35DE-B00E-768051D1A14E
   - target:          x86_64-ios-simulator
-    value:           84FFEE0C-1F21-339F-81CE-981D89144794
+    value:           F31B7F61-2199-3551-8730-120141890BA2
   - target:          arm64-ios-simulator
-    value:           1773F17A-C032-386C-A985-1B0A8831BC7D
+    value:           669DC180-07AE-3F83-8AF7-6E6BB9C23FD4
 install-name:    '/System/Library/PrivateFrameworks/MobileLookup.framework/MobileLookup'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

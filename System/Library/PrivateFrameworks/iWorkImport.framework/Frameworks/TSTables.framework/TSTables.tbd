@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A7F348D9-61CB-30E2-B1E0-267265AED3E1
+    value:           596741D2-9028-3D74-A650-F23896C0DDA6
   - target:          arm64-ios-simulator
-    value:           E55CD0AD-2C1D-3F8A-BF77-B16E1EF1BE7D
+    value:           FADE158E-563D-36EE-A895-488C62D40FC9
 install-name:    '/System/Library/PrivateFrameworks/iWorkImport.framework/Frameworks/TSTables.framework/TSTables'
 swift-abi-version: 7
 exports:

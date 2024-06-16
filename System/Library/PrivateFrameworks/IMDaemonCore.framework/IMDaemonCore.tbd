@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           13F68608-AE1A-39B6-AC04-F102E3EC5CAB
   - target:          x86_64-ios-simulator
-    value:           7EECE540-CEC1-32FA-B360-49B8F21ABE5A
+    value:           DEA51E3E-986B-3023-AC85-7D0B69271E71
   - target:          arm64-ios-simulator
-    value:           040BDE1C-D466-39C0-9035-D1F652DC2F7F
+    value:           4FE5A0BF-A51F-3848-A86D-699BE2BF1280
 install-name:    '/System/Library/PrivateFrameworks/IMDaemonCore.framework/IMDaemonCore'
 current-version: 800
 exports:

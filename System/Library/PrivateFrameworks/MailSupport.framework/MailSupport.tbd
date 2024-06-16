@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A539B1D5-3676-3396-B7D9-CBEC8A23FC6F
   - target:          x86_64-ios-simulator
-    value:           25303DC7-142C-3C7B-BE3E-ADACF35C0723
+    value:           2D206576-2DE7-3CCA-936D-D4DB83FF5A3A
   - target:          arm64-ios-simulator
-    value:           A601CA2A-936C-3A59-B156-727E21196DFB
+    value:           4C12913F-B56C-3DC4-902B-DF14A9D136E7
 install-name:    '/System/Library/PrivateFrameworks/MailSupport.framework/MailSupport'
-current-version: 3654.0.3
+current-version: 3654.10
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     clients:         [ Mail, Message, MobileMail ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BD290625-ECAD-37A7-8A8C-A1A11154153D
   - target:          x86_64-ios-simulator
-    value:           CC16B8BE-5581-3A69-B2C6-92640C3142D6
+    value:           BB643230-64A6-32D5-A664-B15042B37947
   - target:          arm64-ios-simulator
-    value:           DF6A6E62-963E-3C2C-9E27-17F89623E130
+    value:           2AF043CB-BB8C-345E-8EC3-FB65698B71BD
 install-name:    '/usr/lib/libcoretls_cfhelpers.dylib'
 current-version: 169
 exports:

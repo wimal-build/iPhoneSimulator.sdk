@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           68A58DD4-2F8D-3814-A4BF-C711E1743DA5
+    value:           93AFCA63-FE98-3771-86F9-C7F3C7EF8B95
   - target:          arm64-ios-simulator
-    value:           75BC7A4C-15AA-3103-A651-A5C5FD8758CA
+    value:           BA308ACB-5559-3CD6-91C9-C2F49765273D
 install-name:    '/System/Library/PrivateFrameworks/Eyedropper.framework/Eyedropper'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

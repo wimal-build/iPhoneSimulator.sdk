@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5DD9EE5C-1958-3E0A-8034-D86A44629C40
+    value:           AF12F5CE-C0DB-36AA-84FD-F4DE1584CF3E
   - target:          arm64-ios-simulator
-    value:           E3649BD6-D5AF-3E48-9010-B2D3C30A12E3
+    value:           29906F41-DF4B-3D47-868C-4255D9477501
 install-name:    '/System/Library/PrivateFrameworks/ExchangeSync.framework/ExchangeSync'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

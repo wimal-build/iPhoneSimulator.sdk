@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6DB1822B-AC08-3483-AB3D-03F0D4F4AB11
   - target:          x86_64-ios-simulator
-    value:           92DBB0D5-6CF6-328F-B3E8-0E31CE033560
+    value:           722A258E-A4B4-3E1D-9261-8D8CD8B98DEF
   - target:          arm64-ios-simulator
-    value:           4FBEEE9A-0919-3FAA-9658-AA6FD599D449
+    value:           D6B9EBC6-BAED-3BAA-B6D5-FB74C6FED4F8
 install-name:    '/System/Library/PrivateFrameworks/AppleIDAuthSupport.framework/AppleIDAuthSupport'
 current-version: 98
 exports:

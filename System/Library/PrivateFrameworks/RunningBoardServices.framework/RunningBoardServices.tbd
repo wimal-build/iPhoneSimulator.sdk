@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DA9DC336-BDA9-348B-AAAB-4B97F1568F32
+    value:           6F90805C-3245-3499-94F1-74A27DC2F780
   - target:          arm64-ios-simulator
-    value:           0177319D-F14F-3D88-8E58-A3F109063175
+    value:           C0CB6A27-0226-3B5B-ABE3-908EB1CC4533
 install-name:    '/System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices'
 current-version: 505.0.12
 exports:

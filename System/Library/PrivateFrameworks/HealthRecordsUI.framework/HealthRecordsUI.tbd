@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           40C14893-22B9-3227-9872-BD659CA2F294
+    value:           65D06F13-B3B1-3617-9FA4-D701F9971FF6
   - target:          arm64-ios-simulator
-    value:           C27C98C5-00F5-3C39-9A12-01CC26812BEF
+    value:           7C292ADD-622F-3216-A2B0-6BCEA3A327FD
 install-name:    '/System/Library/PrivateFrameworks/HealthRecordsUI.framework/HealthRecordsUI'
 swift-abi-version: 7
 exports:

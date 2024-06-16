@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6238D5A4-BF29-37CD-A905-AFEF01E590FB
   - target:          x86_64-ios-simulator
-    value:           234FEFA1-A60F-35EB-81A6-4D264DAA2CE0
+    value:           D2626810-CC48-3960-8F80-E92F7E50DC77
   - target:          arm64-ios-simulator
-    value:           1A01987C-B4D9-382B-8610-9B230B41A557
+    value:           ABD3EEA4-A29C-371F-A16A-216E9D6BBC32
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

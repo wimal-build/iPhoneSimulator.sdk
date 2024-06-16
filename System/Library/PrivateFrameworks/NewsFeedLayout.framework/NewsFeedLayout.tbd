@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FD1A8DC8-20AC-39F4-8F41-0DCA64A63150
+    value:           D62E5F12-181D-3247-BB94-C56801EE4B70
   - target:          arm64-ios-simulator
-    value:           46108521-5768-30A1-BA2A-F0491E78B6DD
+    value:           13F00551-BFB2-3240-9855-312A02AF21B4
 install-name:    '/System/Library/PrivateFrameworks/NewsFeedLayout.framework/NewsFeedLayout'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

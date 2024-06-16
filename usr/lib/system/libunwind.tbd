@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D068AE39-AB92-3E79-8EB7-64D6760D685C
   - target:          x86_64-ios-simulator
-    value:           F084CB9A-C593-3256-B4B4-64F93D33D601
+    value:           C433A306-D862-3455-BF31-C2FD2AE39531
   - target:          arm64-ios-simulator
-    value:           020B3304-A727-3DC9-AF08-C6B2A53DDAED
+    value:           B311BAB3-5860-35A3-BDBE-A9CB8EEFAC7B
 install-name:    '/usr/lib/system/libunwind.dylib'
 current-version: 200.10
 parent-umbrella:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1A2CF8F0-A543-32ED-8FA5-BD908CE0791C
+    value:           FC1A2BA4-FE99-3CE3-B37B-12D08F51D09A
   - target:          arm64-ios-simulator
-    value:           505635B5-DD2A-3955-9F9D-524EF89F0B1E
+    value:           C40ED62C-1D7D-30AB-9A6D-4F8D134D095D
 install-name:    '/System/Library/PrivateFrameworks/CoreAutoLayout.framework/CoreAutoLayout'
 current-version: 11
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DE952E99-4C1F-3B02-B504-505367D0FB08
+    value:           0F009829-7EDD-3507-B36B-433B229E7F13
   - target:          arm64-ios-simulator
-    value:           68E06DA1-BD4D-3721-B1C7-E3684C3D148A
+    value:           8AA1ACF4-AA6C-3C81-B6CB-18E47AB73B2A
 install-name:    '/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -17,12 +17,13 @@ exports:
     symbols:         [ _AVAppleMakerNote_ARKitPhoto, _AVAppleMakerNote_AssetIdentifier, 
                        _AVAppleMakerNote_BurstUUID, _AVAppleMakerNote_ImageCaptureRequestIdentifier, 
                        _AVAppleMakerNote_ImageGroupIdentifier, _AVAppleMakerNote_LuminanceNoiseAmplitude, 
-                       _AVAppleMakerNote_OriginatingAppID, _AVAppleMakerNote_PhotoIdentifier, 
-                       _AVAppleMakerNote_PhotoProcessingFlags, _AVAppleMakerNote_PhotosAppFeatureFlags, 
-                       _AVAppleMakerNote_PhotosOriginatingSignature, _AVAppleMakerNote_PhotosRenderEffect, 
-                       _AVAppleMakerNote_PhotosRenderOriginatingSignature, _AVAppleMakerNote_SceneFlags, 
-                       _AVAppleMakerNote_SpatialOverCaptureGroupIdentifier, _AVAppleMakerNote_SpatialOverCaptureImageType, 
-                       _AVAppleMakerNote_StillImageProcessingHomography, _AVAppleMakerNote_iCloudServerSoftwareVersionForDynamicallyGeneratedMedia, 
+                       _AVAppleMakerNote_MeteorPlusGainMap, _AVAppleMakerNote_OriginatingAppID, 
+                       _AVAppleMakerNote_PhotoIdentifier, _AVAppleMakerNote_PhotoProcessingFlags, 
+                       _AVAppleMakerNote_PhotosAppFeatureFlags, _AVAppleMakerNote_PhotosOriginatingSignature, 
+                       _AVAppleMakerNote_PhotosRenderEffect, _AVAppleMakerNote_PhotosRenderOriginatingSignature, 
+                       _AVAppleMakerNote_SceneFlags, _AVAppleMakerNote_SpatialOverCaptureGroupIdentifier, 
+                       _AVAppleMakerNote_SpatialOverCaptureImageType, _AVAppleMakerNote_StillImageProcessingHomography, 
+                       _AVAppleMakerNote_iCloudServerSoftwareVersionForDynamicallyGeneratedMedia, 
                        _AVCaptureBravoCameraSelectionBehaviorEvaluatesContinuously, 
                        _AVCaptureBravoCameraSelectionBehaviorEvaluatesNever, _AVCaptureBravoCameraSelectionBehaviorEvaluatesOnZoomChange, 
                        _AVCaptureBravoCameraSelectionBehaviorUnsupported, _AVCaptureCancelPrewarm, 
@@ -101,8 +102,9 @@ exports:
                        _AVMetadataObjectTypeQRCode, _AVMetadataObjectTypeSaliencyHeatMap, 
                        _AVMetadataObjectTypeSalientObject, _AVMetadataObjectTypeTrackedFaces, 
                        _AVMetadataObjectTypeUPCECode, _AVMetadataObjectTypeVideoPreviewHistogram, 
-                       _AVSemanticSegmentationMatteTypeHair, _AVSemanticSegmentationMatteTypeSkin, 
-                       _AVSemanticSegmentationMatteTypeTeeth, _kAVFCaptureSCMVersion ]
+                       _AVSemanticSegmentationMatteTypeGlasses, _AVSemanticSegmentationMatteTypeHair, 
+                       _AVSemanticSegmentationMatteTypeSkin, _AVSemanticSegmentationMatteTypeTeeth, 
+                       _kAVFCaptureSCMVersion ]
     objc-classes:    [ AVApplePortraitMetadata, AVCameraCalibrationData, AVCaptureAudioChannel, 
                        AVCaptureAudioDataOutput, AVCaptureAutoExposureBracketedStillImageSettings, 
                        AVCaptureBracketedStillImageSettings, AVCaptureCameraCalibrationDataOutput, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BA43EB43-A746-3FE5-90D7-8BF0372BEF32
   - target:          x86_64-ios-simulator
-    value:           1B2A7351-096D-35F6-9C77-23399BF9E53B
+    value:           49C00750-FE74-38FD-B73B-7671EE4E6E80
   - target:          arm64-ios-simulator
-    value:           43796B6D-BEF6-384E-BC1D-D9F7F436AD78
+    value:           D4D2DFDC-ED36-3AAC-AAC1-117D152FBD9D
 install-name:    '/System/Library/Frameworks/WatchConnectivity.framework/WatchConnectivity'
 current-version: 198
 exports:

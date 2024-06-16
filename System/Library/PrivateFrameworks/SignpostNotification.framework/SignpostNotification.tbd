@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1038FE77-CA66-3C37-B03C-8311B9C4978A
+    value:           8E133AC2-15D5-3D2A-B3A6-83792F5D0D4A
   - target:          arm64-ios-simulator
-    value:           D425CAB2-BCF4-3DA6-946A-B75A5DA998E5
+    value:           D89F2F4A-F315-3667-8FF9-8EF257A86FD6
 install-name:    '/System/Library/PrivateFrameworks/SignpostNotification.framework/SignpostNotification'
 current-version: 53
 exports:

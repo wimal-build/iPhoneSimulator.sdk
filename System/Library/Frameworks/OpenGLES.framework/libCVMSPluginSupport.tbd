@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           951BEC52-65F0-3230-A6A8-0020FB2D0840
   - target:          x86_64-ios-simulator
-    value:           6134FC08-DF6F-3BA4-909E-38512151EA46
+    value:           EA59B703-2C23-338F-87BA-AF90B8DA6CD0
   - target:          arm64-ios-simulator
-    value:           B31A20DA-80F0-311B-9558-172EC08BEDCA
+    value:           12BD8F64-6C07-3B42-8547-258473884627
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/libCVMSPluginSupport.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

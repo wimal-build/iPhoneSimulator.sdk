@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           246F2973-226D-3FBD-9AFD-F3909A6638CA
+    value:           1CBB9447-59C6-3EDF-880F-5039436CD2E7
   - target:          arm64-ios-simulator
-    value:           4B9A113E-D251-3123-AA83-DC00C8FD2DAE
+    value:           EE6AA2D3-9A35-3A28-BA7C-6F883E4580F2
 install-name:    '/System/Library/PrivateFrameworks/Espresso.framework/Espresso'
 current-version: 0
 exports:
@@ -1371,6 +1371,7 @@ exports:
                        __ZN8Espresso27cpu_context_transfer_algo_t18create_net_info_irERKNSt3__16vectorINS1_10shared_ptrINS_6SerDes21generic_serdes_objectEEENS1_9allocatorIS6_EEEENS3_INS_16abstract_contextEEERKNS_13network_shapeENS_12compute_pathENS3_INS_13net_info_ir_tEEE, 
                        __ZN8Espresso27cpu_context_transfer_algo_t19compute_local_costsERKNSt3__16vectorINS1_10shared_ptrINS_16abstract_contextEEENS1_9allocatorIS5_EEEENS_12compute_pathENS3_INS_13net_info_ir_tEEERKNS2_INS3_INS_6SerDes21generic_serdes_objectEEENS6_ISG_EEEERNS2_IdNS6_IdEEEERNS2_IbNS6_IbEEEE, 
                        __ZN8Espresso27cpu_context_transfer_algo_t22compute_local_costs_v3ERKNSt3__16vectorINS1_10shared_ptrINS_16abstract_contextEEENS1_9allocatorIS5_EEEENS_12compute_pathENS3_INS_13net_info_ir_tEEERKNS2_INS3_INS_6SerDes21generic_serdes_objectEEENS6_ISG_EEEERNS2_IdNS6_IdEEEERNS2_IbNS6_IbEEEE, 
+                       __ZN8Espresso27cpu_context_transfer_algo_t22reorder_load_constantsENSt3__110shared_ptrINS_13net_info_ir_tEEERb, 
                        __ZN8Espresso27cpu_context_transfer_algo_t26assign_to_fallback_contextENSt3__110shared_ptrINS_16abstract_contextEEENS_12compute_pathENS2_INS_13net_info_ir_tEEE, 
                        __ZN8Espresso27cpu_context_transfer_algo_t27compute_graph_shortest_pathERKNSt3__16vectorINS1_10shared_ptrINS_16abstract_contextEEENS1_9allocatorIS5_EEEENS_12compute_pathENS3_INS_13net_info_ir_tEEERKNS2_IdNS6_IdEEEERKNS2_IbNS6_IbEEEERNS2_IiNS6_IiEEEE, 
                        __ZN8Espresso27cpu_context_transfer_algo_t28add_context_transfer_kernelsENSt3__110shared_ptrINS_3netEEEPKNS_13net_info_ir_tENS_12compute_pathEb, 

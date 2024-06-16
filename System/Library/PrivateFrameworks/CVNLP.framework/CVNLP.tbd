@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A228DAF7-44A9-3957-968B-BBF93F2A4F7B
+    value:           2664A21F-CDD2-3720-9D10-24AD866179F7
   - target:          arm64-ios-simulator
-    value:           A31A509B-A29F-3EE0-9DAE-6342CB36548C
+    value:           2ECD625D-A712-3427-8DCE-1CC48C6BFE18
 install-name:    '/System/Library/PrivateFrameworks/CVNLP.framework/CVNLP'
 current-version: 119
 exports:

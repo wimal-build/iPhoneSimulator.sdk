@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           18FFC829-C8C7-38B9-B759-F426321780CD
   - target:          x86_64-ios-simulator
-    value:           2EF7CF3B-80EC-3AEE-9227-6066067547F6
+    value:           9A9E77CC-F0E0-341E-A39F-1DE0B531F8C2
   - target:          arm64-ios-simulator
-    value:           546FD8E3-0FFE-3BB4-98F9-831637D6A580
+    value:           F0CD5D0C-A2CD-368F-8313-80DF0F47A0BB
 install-name:    '/System/Library/PrivateFrameworks/AppleIDSSOAuthentication.framework/AppleIDSSOAuthentication'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

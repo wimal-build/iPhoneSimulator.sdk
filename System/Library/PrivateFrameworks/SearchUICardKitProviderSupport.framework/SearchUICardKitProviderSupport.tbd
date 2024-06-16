@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8C39B2F0-AE68-33CD-9E17-8DC2D047C2C4
+    value:           DA1B2749-F42F-3A59-983E-0467B048AFBE
   - target:          arm64-ios-simulator
-    value:           E5518441-7D78-3272-B455-555DDEB03276
+    value:           C58D031E-189C-334E-A8DA-053A7A3DD88B
 install-name:    '/System/Library/PrivateFrameworks/SearchUICardKitProviderSupport.framework/SearchUICardKitProviderSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

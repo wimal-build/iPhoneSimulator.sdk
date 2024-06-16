@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DCB4DCFC-529E-3373-ACF2-0607E1D33900
   - target:          x86_64-ios-simulator
-    value:           F4FA6492-A5A3-3B64-BC3E-1EA552B17AA2
+    value:           7D19D3F7-AC45-31BF-9F11-C82624B85D2E
   - target:          arm64-ios-simulator
-    value:           01C5F8CC-44FC-3B9A-94D7-FF7899B7E603
+    value:           B8D2E951-A7E7-3D91-A607-7C403B6EB59B
 install-name:    '/System/Library/PrivateFrameworks/ContactsAutocomplete.framework/ContactsAutocomplete'
 exports:
   - targets:         [ i386-ios-simulator ]

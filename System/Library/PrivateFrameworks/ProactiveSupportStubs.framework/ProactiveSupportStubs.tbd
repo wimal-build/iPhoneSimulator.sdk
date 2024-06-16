@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0ABAA57C-ED54-3D65-AA4E-9B7127755530
   - target:          x86_64-ios-simulator
-    value:           7F0221AA-55BF-30DE-BF78-950F9E37CFAA
+    value:           7E2C0D09-375B-3824-AE31-FA6930541E4A
   - target:          arm64-ios-simulator
-    value:           2BD06A65-315D-3B76-86F6-B6AD8A2ABA35
+    value:           738402B1-5E6F-378D-A1D6-41E1D6B96065
 install-name:    '/System/Library/PrivateFrameworks/ProactiveSupportStubs.framework/ProactiveSupportStubs'
 current-version: 294.1
 exports:

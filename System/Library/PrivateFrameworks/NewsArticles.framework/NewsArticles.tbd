@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7C206648-B17A-3AE8-928A-55A80DA79C3C
+    value:           DEEB72E1-FB98-3B9A-92CC-012E0987286E
   - target:          arm64-ios-simulator
-    value:           A72C39D7-1184-3C79-A98E-4FB9DE399CC9
+    value:           B0051C93-12EC-3C3D-AE56-A81CA93E6826
 install-name:    '/System/Library/PrivateFrameworks/NewsArticles.framework/NewsArticles'
 swift-abi-version: 7
 allowable-clients:

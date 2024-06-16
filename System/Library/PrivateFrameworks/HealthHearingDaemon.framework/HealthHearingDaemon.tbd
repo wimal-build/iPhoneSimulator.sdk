@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2797F2A7-FD5F-3AB3-81A4-04EFC58EBBAF
+    value:           212164C0-E0FC-3D03-A32D-17135B400D7A
   - target:          arm64-ios-simulator
-    value:           02E97494-2ECA-3B98-B4CB-07B0625C4110
+    value:           9101C887-ED16-3C08-9BE8-5F13BB7ED767
 install-name:    '/System/Library/PrivateFrameworks/HealthHearingDaemon.framework/HealthHearingDaemon'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

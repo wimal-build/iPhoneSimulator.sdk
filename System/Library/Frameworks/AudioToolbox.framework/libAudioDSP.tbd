@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4E571BFD-E36C-3FBB-A0D8-C273A4E15B5A
   - target:          x86_64-ios-simulator
-    value:           8459A798-D22D-38E3-A28F-6B47F35AA095
+    value:           EEBC3BEC-FBF1-380D-B238-434D3C42C0E4
   - target:          arm64-ios-simulator
-    value:           E013D4C8-14E0-3D47-9B78-3B4CBB8B5FF7
+    value:           06C78535-7B05-32E9-B5AE-0412AF8A3056
 install-name:    '/System/Library/Frameworks/AudioToolbox.framework/libAudioDSP.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

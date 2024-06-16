@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3F569B77-348C-37E8-B9DA-C5827492685C
   - target:          x86_64-ios-simulator
-    value:           33C13490-4645-370A-847B-1C2EF221FF7C
+    value:           9C105556-450F-32D3-BC0F-64335A5DF309
   - target:          arm64-ios-simulator
-    value:           C383451F-955D-3B99-86AC-F0757730A0E6
+    value:           7C4BBD66-AD7A-3D4C-8C86-2B21A5AB4D77
 install-name:    '/System/Library/PrivateFrameworks/SDAPI.framework/SDAPI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           01998E39-2345-3431-9098-C685F77ECF6B
+    value:           147399B5-1469-3CCB-AF71-7AFF3D743568
   - target:          arm64-ios-simulator
-    value:           D7EDF9FE-8759-315D-93EC-FAED36EB0E43
+    value:           C82F54AE-286F-3BDB-8614-6F4D6B5C5FC5
 install-name:    '/System/Library/PrivateFrameworks/GPUCompiler.framework/Libraries/libComposeFilters.dylib'
-current-version: 31001.40
+current-version: 31001.41
 exports:
   - targets:         [ x86_64-ios-simulator ]
     weak-symbols:    [ __ZTINSt3__110__function6__baseIFbRKN4llvm11GlobalValueEEEE, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F58F0356-C6C5-3E27-B593-655715A23DFF
   - target:          x86_64-ios-simulator
-    value:           241826A8-3C84-300C-92E4-B84AB2343516
+    value:           E6A1F161-35D8-33B7-82DB-B084A8A972DC
   - target:          arm64-ios-simulator
-    value:           FBF1E960-0EC2-3BE8-A116-730C2320CB11
+    value:           68AAB7E9-912C-3EC1-BBF6-638BB5315580
 install-name:    '/System/Library/PrivateFrameworks/Search.framework/Search'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0F9AAAD3-EE66-386D-8A60-C1DC1286329D
+    value:           3669D797-9F8D-3229-AA55-8320EFB265C6
   - target:          arm64-ios-simulator
-    value:           CB371DA7-A7BF-3A6A-A192-2919B9E4A65F
+    value:           55190A7A-116D-393F-9C4E-2BB29B58D52A
 install-name:    '/System/Library/PrivateFrameworks/perfdata.framework/perfdata'
 current-version: 67.0.1
 compatibility-version: 0

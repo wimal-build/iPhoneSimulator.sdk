@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C8E8E9D1-31A8-38F1-AA82-F4322BE116FA
   - target:          x86_64-ios-simulator
-    value:           F2C00A93-404B-36E8-83BE-1972FC8F12AE
+    value:           B0271ADB-1F33-32FC-AD97-62ADC34D152A
   - target:          arm64-ios-simulator
-    value:           387C98CD-BE6F-3C38-8BB2-E628768D6B4F
+    value:           3031BF01-F998-3C37-8866-133D16D53D4A
 install-name:    '/System/Library/PrivateFrameworks/NanoTimeKitCompanion.framework/NanoTimeKitCompanion'
 exports:
   - targets:         [ i386-ios-simulator ]

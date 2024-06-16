@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           62159517-D9FC-37FA-B74B-ABE4B17CFBD6
   - target:          x86_64-ios-simulator
-    value:           BFE4C523-697F-3BD3-B1A5-A2E33DD771AB
+    value:           F2609D31-C8DB-3AE5-AD5F-C025C7BA117C
   - target:          arm64-ios-simulator
-    value:           3C9F7F04-DD25-3094-96DC-DA2A711E659E
+    value:           95BE0A01-FC30-3293-9EBB-81BC8C154AEB
 install-name:    '/System/Library/PrivateFrameworks/Weather.framework/Weather'
-current-version: 1667
+current-version: 1674
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _AirQualityCategoryKey, _AirQualityIdxKey, _BigIconKey, _CityCountryAbbrevKey, 

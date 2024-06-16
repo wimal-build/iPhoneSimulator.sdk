@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CD615EB0-FED5-3427-931D-393451804C50
   - target:          x86_64-ios-simulator
-    value:           62F5ADB6-4747-39FF-BEC8-4F48BEDC33EB
+    value:           31905B19-3050-3236-B000-AFC5AAE420FD
   - target:          arm64-ios-simulator
-    value:           24C332D2-5ABF-312A-A7BD-F6B93B07CA0A
+    value:           E8369F5A-7E2E-37AC-9093-5719B240187B
 install-name:    '/System/Library/PrivateFrameworks/CalendarFoundation.framework/CalendarFoundation'
 current-version: 1351
 exports:

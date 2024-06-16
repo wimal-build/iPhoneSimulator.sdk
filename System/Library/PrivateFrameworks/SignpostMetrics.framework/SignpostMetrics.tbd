@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C4EB013A-504E-3874-9E29-0E31D479E6D1
+    value:           4BC66312-21EB-353F-AD55-E5165E3B4F48
   - target:          arm64-ios-simulator
-    value:           473550F6-C678-32B1-AC75-CE561DB9F2F6
+    value:           04191B61-280A-34C8-8DA8-2806BD86A56D
 install-name:    '/System/Library/PrivateFrameworks/SignpostMetrics.framework/SignpostMetrics'
 current-version: 53
 exports:

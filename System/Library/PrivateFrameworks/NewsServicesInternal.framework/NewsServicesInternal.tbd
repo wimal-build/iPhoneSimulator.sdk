@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D495ED5D-BB35-32C3-A660-ADD8CCE47BFD
+    value:           7E7A4111-DA75-3AC0-A2D2-722C47949E1E
   - target:          arm64-ios-simulator
-    value:           F1CCF14F-1637-3E87-8044-58607AA8C57D
+    value:           263729F1-63C5-3537-B0E1-9FF41951E8E0
 install-name:    '/System/Library/PrivateFrameworks/NewsServicesInternal.framework/NewsServicesInternal'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

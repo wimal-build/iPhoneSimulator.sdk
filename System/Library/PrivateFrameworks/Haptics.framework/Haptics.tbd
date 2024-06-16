@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1816E4DA-2629-378E-9A93-F2351B4771A7
   - target:          x86_64-ios-simulator
-    value:           FC91755E-D6AC-339E-AEA0-85D0D65BE2BE
+    value:           B2B71779-64F9-3B40-9B8A-39C04260B3B5
   - target:          arm64-ios-simulator
-    value:           7A5F5F10-DB0E-31D0-BAA3-CB509EF477AD
+    value:           1488094F-EEC7-3014-8EE0-44E0697B4520
 install-name:    '/System/Library/PrivateFrameworks/Haptics.framework/Haptics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

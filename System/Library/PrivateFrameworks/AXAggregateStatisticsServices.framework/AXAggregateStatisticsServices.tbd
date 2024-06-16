@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           81FB6F9D-CAE2-3EB5-B4A4-2015E785BE82
+    value:           F6796F19-5399-32DB-B601-E7ECE1233782
   - target:          arm64-ios-simulator
-    value:           CED890C8-D25E-3985-B9F1-AD4F0F57A899
+    value:           26EF028E-FB79-31C4-8DB0-9A17C5A377E1
 install-name:    '/System/Library/PrivateFrameworks/AXAggregateStatisticsServices.framework/AXAggregateStatisticsServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

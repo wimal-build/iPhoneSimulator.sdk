@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F1073735-4271-3724-BE3B-8B34F54582A2
   - target:          x86_64-ios-simulator
-    value:           3C9FAF73-316E-3556-BF4B-03E7198D852A
+    value:           F3AE43FA-2C8A-3BC7-9451-E86B684AEC3C
   - target:          arm64-ios-simulator
-    value:           8F6B1CD9-E834-347D-BA83-E74DC9E8C107
+    value:           63A7A2C2-85D8-3B18-92AE-869EE2C3CCCD
 install-name:    '/System/Library/PrivateFrameworks/VideoSubscriberAccountUI.framework/VideoSubscriberAccountUI'
 current-version: 364.0.3
 allowable-clients:

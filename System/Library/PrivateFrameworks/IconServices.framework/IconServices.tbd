@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AE1AF135-7835-3EB3-AAB1-F08F9D4C4ACA
+    value:           4D915ED2-584E-31FF-9DB0-B037A6BE5013
   - target:          arm64-ios-simulator
-    value:           A202930A-AA46-35ED-A2D6-596C95CBD1EF
+    value:           BCB4235A-3A9D-3893-A9B5-C3BA919896B0
 install-name:    '/System/Library/PrivateFrameworks/IconServices.framework/IconServices'
 current-version: 440.23
 exports:

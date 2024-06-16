@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5C9BD890-5B23-3D79-A044-9CE2BD0423EC
   - target:          x86_64-ios-simulator
-    value:           FDA137B9-80A8-38DA-92B2-EC45A03B18A5
+    value:           E0B18A89-5611-3488-A80F-61CDC89B9401
   - target:          arm64-ios-simulator
-    value:           2076ECA1-53A4-3952-8DB3-F82714502279
+    value:           FAB129B3-CF9F-3C61-AE61-6DBAB1E57BA4
 install-name:    '/System/Library/PrivateFrameworks/NanoPreferencesSync.framework/NanoPreferencesSync'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

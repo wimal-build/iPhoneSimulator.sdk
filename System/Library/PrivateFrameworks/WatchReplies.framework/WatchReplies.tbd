@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E30A3303-B6C3-3F11-8743-4875E4DCE3AC
   - target:          x86_64-ios-simulator
-    value:           07E091D8-F1B7-3FEF-89C9-0FEDC4609B35
+    value:           058C4810-887F-3B60-AA7D-4742D08ED356
   - target:          arm64-ios-simulator
-    value:           D1DDE1D8-99F9-3712-B3B7-DBBC05A7FDB9
+    value:           670652E5-59F3-34AB-BE31-4A3B4A1DE333
 install-name:    '/System/Library/PrivateFrameworks/WatchReplies.framework/WatchReplies'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

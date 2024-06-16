@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           00D6E473-BFAF-3BB3-9472-80538AA1503E
+    value:           8C1E1C3C-C859-3318-BFA8-75A4D4D36C8F
   - target:          arm64-ios-simulator
-    value:           B3466588-C03F-3C00-A90C-13C17757EB3A
+    value:           7B84E2D5-4691-3078-9F33-4116031E947A
 install-name:    '/System/Library/PrivateFrameworks/MTLSimDriver.framework/MTLSimDriver'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

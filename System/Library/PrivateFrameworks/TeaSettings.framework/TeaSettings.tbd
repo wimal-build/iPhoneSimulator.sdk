@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EAF28BCF-52FC-3B0D-9EE2-B637287FB7E7
+    value:           24A30A1C-8A61-3162-A1A5-DC7EF21AE402
   - target:          arm64-ios-simulator
-    value:           7C5CB44F-0FA3-312F-A469-31ECDDC73171
+    value:           8EF0ABBF-AF24-3E87-8113-F3B2F0965E75
 install-name:    '/System/Library/PrivateFrameworks/TeaSettings.framework/TeaSettings'
 swift-abi-version: 7
 allowable-clients:

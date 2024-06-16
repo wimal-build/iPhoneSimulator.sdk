@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8C09D26C-7FC0-3F12-AC08-32BE28EBA373
+    value:           67156827-AD02-3FCC-9B4B-86D41650E82B
   - target:          arm64-ios-simulator
-    value:           BA6E5647-E0C3-30B7-A05C-DFD81260612E
+    value:           0D7D0D1C-50E8-342A-9754-777F20BCFCC7
 install-name:    '/System/Library/PrivateFrameworks/IntentsServices.framework/IntentsServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

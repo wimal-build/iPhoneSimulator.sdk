@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           63AC4881-61B6-3DCF-BB50-9E8B7080633F
   - target:          x86_64-ios-simulator
-    value:           A9B39106-4045-317A-88F3-0DB7BB9F98B7
+    value:           921DF709-002F-3D05-AA57-26F10A911A05
   - target:          arm64-ios-simulator
-    value:           B5CDF7D1-6D55-372E-96BF-C105203CCCED
+    value:           9643F0EC-9B3F-30D5-8BE3-89F47450E48F
 install-name:    '/System/Library/PrivateFrameworks/CloudPhotoLibrary.framework/CloudPhotoLibrary'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ __CPLLogSectionBegin, __CPLLogSectionEnd, __CPLLogSectionsClear, 

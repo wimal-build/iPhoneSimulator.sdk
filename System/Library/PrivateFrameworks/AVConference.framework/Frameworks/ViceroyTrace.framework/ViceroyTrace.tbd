@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           65724190-361A-3A16-A0B8-F2D9FD1833DD
+    value:           B4E3AFF8-B540-3934-9893-4F8B265F8589
   - target:          arm64-ios-simulator
-    value:           063E3C03-26FB-349A-9D55-5BAC7094B7A9
+    value:           419E1947-83C5-367D-A7DC-973104082387
 install-name:    '/System/Library/PrivateFrameworks/AVConference.framework/Frameworks/ViceroyTrace.framework/ViceroyTrace'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

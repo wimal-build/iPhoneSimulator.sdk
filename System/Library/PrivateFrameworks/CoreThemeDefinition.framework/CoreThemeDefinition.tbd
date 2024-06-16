@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3D787724-7815-3495-8870-B9926932FB19
   - target:          x86_64-ios-simulator
-    value:           74277B29-DDBD-302A-B7A7-F4372F3C549E
+    value:           AFC930C3-77CF-3DED-99A2-801420BF6FBA
   - target:          arm64-ios-simulator
-    value:           468067B0-E805-36A4-8F30-1FD15DECD774
+    value:           9F94ED86-BFE2-3D95-9CC1-0B60798C644E
 install-name:    '/System/Library/PrivateFrameworks/CoreThemeDefinition.framework/CoreThemeDefinition'
 current-version: 487
 exports:

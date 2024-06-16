@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5751E6CE-40A7-3BEE-B0F1-42DE17115F25
   - target:          x86_64-ios-simulator
-    value:           329016D2-2FBB-3E7C-926C-572E5AB95442
+    value:           251498B4-FD21-3797-8283-A43256315CA9
   - target:          arm64-ios-simulator
-    value:           0BD617BC-18EC-3118-B8A5-DF8B25E95922
+    value:           EF325027-5B72-38CF-AE94-0C9D25F90A53
 install-name:    '/System/Library/PrivateFrameworks/MaterialKit.framework/MaterialKit'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

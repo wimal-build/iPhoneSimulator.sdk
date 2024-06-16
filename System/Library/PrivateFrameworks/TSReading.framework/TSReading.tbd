@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2A4A5EE3-3911-3002-8786-8171111DD353
+    value:           9357C47B-237E-3488-87BB-D266DF379835
   - target:          arm64-ios-simulator
-    value:           8FA3F921-E0CC-36D3-8711-5D7494EA0A67
+    value:           5D54BE90-2DCD-36CB-83BE-44F095C0C76B
 install-name:    '/System/Library/PrivateFrameworks/TSReading.framework/TSReading'
 current-version: 378
 exports:

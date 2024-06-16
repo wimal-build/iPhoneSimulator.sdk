@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           964EC1F2-CF8D-3368-A06A-67A7B76B344A
+    value:           859CDADE-AC8C-3036-8B9C-ED4F83A128B6
   - target:          arm64-ios-simulator
-    value:           6C8DAD73-A2A2-380B-99CF-74EFFFEA21CC
+    value:           86CB6E32-9DD7-38A1-A605-28B9F4E3D197
 install-name:    '/System/Library/PrivateFrameworks/OSAServicesClient.framework/OSAServicesClient'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

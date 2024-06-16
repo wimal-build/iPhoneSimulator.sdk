@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3136A77B-92C1-3E2A-8901-7D435D3B7D43
+    value:           F766DDD8-4388-3430-8477-C895AC30BA53
   - target:          arm64-ios-simulator
-    value:           8EE478CB-76FA-3650-A76A-F543F8E59AE3
+    value:           467D13EE-2FD9-3096-A157-CE819DD0CA47
 install-name:    '/System/Library/PrivateFrameworks/AvatarUI.framework/AvatarUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

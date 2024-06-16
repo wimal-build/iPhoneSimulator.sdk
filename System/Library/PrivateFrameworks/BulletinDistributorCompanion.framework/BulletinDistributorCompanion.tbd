@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0F9656EC-B5B6-367B-A0C6-689FC4E2ACD5
   - target:          x86_64-ios-simulator
-    value:           69BFA025-74E2-3646-B9A3-F5E67E19CF82
+    value:           2C81BD09-9BD7-3A21-88EA-CC9D9B474015
   - target:          arm64-ios-simulator
-    value:           ED26C222-D381-3C0A-A17F-78E07619911A
+    value:           948628AE-3360-345B-991E-AD7C9A729EC8
 install-name:    '/System/Library/PrivateFrameworks/BulletinDistributorCompanion.framework/BulletinDistributorCompanion'
 exports:
   - targets:         [ i386-ios-simulator ]

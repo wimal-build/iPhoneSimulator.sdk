@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4185D96F-A2E6-314D-BB16-F451AB8ECB97
   - target:          x86_64-ios-simulator
-    value:           51098AA2-1DE7-335B-9125-ECD100BE8A3B
+    value:           7C5BDAA8-3A83-3693-BA73-F4426106722F
   - target:          arm64-ios-simulator
-    value:           AA2F6366-A80E-3419-B5FC-E446C5F91D19
+    value:           4AD95D6D-BC08-3F0F-ABC2-83513ABD21A8
 install-name:    '/System/Library/PrivateFrameworks/CalendarUIKit.framework/CalendarUIKit'
 current-version: 0
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           617777C0-68AA-32D4-B46B-A16299AD8745
   - target:          x86_64-ios-simulator
-    value:           317FEC23-0330-35E6-B033-6E138816C9EC
+    value:           A6341FF0-7E7A-342C-9270-DFA52166531A
   - target:          arm64-ios-simulator
-    value:           655490E2-9FC1-3DF4-8CBB-A0CF3A1E5F97
+    value:           DBD76C8F-2E8D-35C1-818D-38F40F1AE476
 install-name:    '/System/Library/PrivateFrameworks/MediaControlSender.framework/MediaControlSender'
 exports:
   - targets:         [ i386-ios-simulator ]

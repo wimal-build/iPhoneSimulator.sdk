@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           30679424-BC0E-3D92-BD9C-9C621A450B8B
+    value:           476D2BAC-7D16-3D7E-8C37-75C2C674BDA2
   - target:          arm64-ios-simulator
-    value:           C16DACE2-0E81-39A2-8059-A2B5C5415158
+    value:           6D7E94F5-BB6C-347F-8B06-5ECF8B9FF445
 install-name:    '/System/Library/PrivateFrameworks/AXIDSServices.framework/AXIDSServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D81F9D17-7F6A-313A-A458-B47E667EE122
+    value:           0A9EE9A4-685C-3467-A696-E2A04FA6AD08
   - target:          arm64-ios-simulator
-    value:           79D2C0CF-4750-3AE7-9ED2-32984B3FD80A
+    value:           01091AE2-5C36-3FB8-BBDE-7281BA8710F3
 install-name:    '/System/Library/PrivateFrameworks/CoreServicesStore.framework/CoreServicesStore'
-current-version: 1116.2
+current-version: 1116.2.2
 exports:
   - targets:         [ x86_64-ios-simulator ]
     symbols:         [ __ZN8CSStore222AttributedStringWriter19formatWithArgumentsEP8NSStringP13__va_list_tag, 

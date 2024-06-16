@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           652D729B-BAAE-3AB4-A10B-7C42DEB3185E
+    value:           27CE80D7-ED7B-3024-A231-0480297103BB
   - target:          arm64-ios-simulator
-    value:           2EB523B9-372D-37B4-B2B3-617B6B0820EA
+    value:           2DAD49CC-B921-324A-8F89-B772FEF64503
 install-name:    '/System/Library/PrivateFrameworks/SensorKitUI.framework/SensorKitUI'
 current-version: 0
 compatibility-version: 0

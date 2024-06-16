@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6870A97B-7F4E-3D8A-A4D7-BE0063E9ADB0
+    value:           E968E16E-B7D8-3872-9B92-CA4205860C26
   - target:          arm64-ios-simulator
-    value:           35FB43B2-A430-3E90-892B-06395A2DC798
+    value:           72B9CE1D-0B89-37FA-8145-76EE5937A086
 install-name:    '/System/Library/PrivateFrameworks/NeutrinoKit.framework/NeutrinoKit'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _NUBoundingRectForRotatedRect, _NUEdgeInsetsInsetRect, _NUFitScaleForImageRectInRect, 

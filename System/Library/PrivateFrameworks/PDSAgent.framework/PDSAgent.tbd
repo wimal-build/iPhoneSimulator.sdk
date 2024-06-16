@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           50425C9F-E7A6-3E16-B8C2-7718A7B8A5A5
+    value:           EF767EB0-8925-33DC-986A-F71C94AA1284
   - target:          arm64-ios-simulator
-    value:           BCC9C2EA-3151-3A81-9A14-B1474AED583B
+    value:           24EBCE8B-84CB-33C1-9FE9-223B2ABDD1CB
 install-name:    '/System/Library/PrivateFrameworks/PDSAgent.framework/PDSAgent'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FBB37E22-AE1F-3020-B319-7D325CEE2D2E
   - target:          x86_64-ios-simulator
-    value:           3D47E315-B386-3CE3-AB0B-80FDCA12571A
+    value:           D256DEF5-9640-3791-8F9B-099534E0BBA3
   - target:          arm64-ios-simulator
-    value:           342E1D66-84D2-350A-BC8D-3DA1D7530B6E
+    value:           2972D0D8-EBA9-34DE-A784-BA147520CFD4
 install-name:    '/usr/lib/system/libremovefile.dylib'
 current-version: 49.0.1
 parent-umbrella:

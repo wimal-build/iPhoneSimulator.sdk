@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DFD99248-82A4-3364-BB5F-C0A5D79608EE
+    value:           1AD96CD0-ABF8-37D2-94F3-84E4D6C03230
   - target:          arm64-ios-simulator
-    value:           32DFFE91-D1FB-316E-8078-14D84A481A7C
+    value:           DF76F954-06B7-3DFE-8F7C-7CC20E66A8DC
 install-name:    '/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

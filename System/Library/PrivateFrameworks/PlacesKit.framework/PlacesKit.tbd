@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           77570049-4F1B-3E77-B06B-BCC2755FDFB7
   - target:          x86_64-ios-simulator
-    value:           BC5C411F-28CA-39C1-BBF0-083E4AABD3FE
+    value:           6A143844-0BE0-30F1-9F77-F26B78402872
   - target:          arm64-ios-simulator
-    value:           F97D2801-07F8-3BCD-8750-27B65F0F2AF2
+    value:           06026962-A24F-35AA-892F-B9973C314C6D
 install-name:    '/System/Library/PrivateFrameworks/PlacesKit.framework/PlacesKit'
-current-version: 302.0.220
+current-version: 310.1.160
 exports:
   - targets:         [ i386-ios-simulator ]
     objc-classes:    [ PXPlacesMapDefaultLayoutDiffer, PXPlacesMapDefaultUpdatePlan ]

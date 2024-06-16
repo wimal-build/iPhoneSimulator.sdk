@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4821E73B-A96C-3B19-BEDF-94367157EBF7
   - target:          x86_64-ios-simulator
-    value:           B92B6CF3-3E68-324E-8632-E964551C5F62
+    value:           0E0623D3-41D2-3AC1-80F0-163033E687CD
   - target:          arm64-ios-simulator
-    value:           A5A20745-089C-3D29-B556-375715F181A4
+    value:           E46E996D-54E3-38CC-AB81-0F55C89FB01F
 install-name:    '/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore'
 current-version: 610.1.28
 exports:

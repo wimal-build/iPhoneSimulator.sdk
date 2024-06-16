@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CFDC8820-1361-3DBF-A2CE-DACECB0D6EE5
+    value:           46696B40-A0CE-3B69-BB85-7ACA98BE10D4
   - target:          arm64-ios-simulator
-    value:           D373EE24-A6F1-3475-9E08-C20E570BE044
+    value:           73D1CD36-C769-3BE8-947E-B85BE7BB0331
 install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
 current-version: 28.0.1
 parent-umbrella:

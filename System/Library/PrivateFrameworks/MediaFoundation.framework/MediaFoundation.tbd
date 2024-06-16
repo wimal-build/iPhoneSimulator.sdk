@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C1C77696-97E5-36CA-8F46-400DA4537F3B
+    value:           964FD35B-85A6-3A24-9C13-CFD6A047B56B
   - target:          arm64-ios-simulator
-    value:           65E79B60-D93F-3C01-A86B-A1B14BA58B40
+    value:           4A174393-0B6C-3C4F-B656-3E0EC36FBF32
 install-name:    '/System/Library/PrivateFrameworks/MediaFoundation.framework/MediaFoundation'
 swift-abi-version: 7
 allowable-clients:

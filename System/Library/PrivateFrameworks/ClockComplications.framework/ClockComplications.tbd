@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           11EA397E-DE4C-3F73-A674-144B0B1F4493
+    value:           26801223-E084-3CE9-B664-F047BDD7C41B
   - target:          arm64-ios-simulator
-    value:           86CC01F2-4B4E-3A1F-8F9B-F45DE51CAFF5
+    value:           33344DCE-9C87-307A-ABED-BD356B3A41F4
 install-name:    '/System/Library/PrivateFrameworks/ClockComplications.framework/ClockComplications'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

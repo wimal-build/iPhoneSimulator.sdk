@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AE7E8595-6469-3C6A-AC15-C38E62354564
+    value:           25F0CC08-0050-3B98-9B97-9A3A4296FC88
   - target:          arm64-ios-simulator
-    value:           82B6C823-548E-3CEC-8FB0-2626681CFCEC
+    value:           836CBF3C-3D8E-3C74-9640-7FE5CCFA6D5E
 install-name:    '/System/Library/PrivateFrameworks/SiriInference.framework/SiriInference'
 current-version: 0
 compatibility-version: 0

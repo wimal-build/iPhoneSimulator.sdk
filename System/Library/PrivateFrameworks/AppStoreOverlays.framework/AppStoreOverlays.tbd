@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           31E09406-D41D-3297-A8FD-EF9B29351D85
+    value:           4FB56967-40B6-3751-BA3F-1DA3579DC466
   - target:          arm64-ios-simulator
-    value:           DCAD30FF-72F8-3000-8FDD-363FA8724F4B
+    value:           6DF3E1A5-96A5-354F-82ED-A02CCD77BE82
 install-name:    '/System/Library/PrivateFrameworks/AppStoreOverlays.framework/AppStoreOverlays'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

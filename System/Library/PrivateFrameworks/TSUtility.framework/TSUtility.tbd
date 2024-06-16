@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9239FDAF-8EAD-309D-8237-4E7308C229E3
+    value:           FBB5F437-B77E-373A-B009-D88E9E561A11
   - target:          arm64-ios-simulator
-    value:           914021E7-CB81-3B94-8DDE-56989F305523
+    value:           3B1621F5-727E-32CD-880C-2A7E3BF0EC9E
 install-name:    '/System/Library/PrivateFrameworks/TSUtility.framework/TSUtility'
 current-version: 378
 exports:

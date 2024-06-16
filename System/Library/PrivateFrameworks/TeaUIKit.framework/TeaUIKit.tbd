@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F6EAB0DC-B1FD-3ED7-8746-6FFABC035D7E
+    value:           1497563F-A256-390B-BFFB-1A85F6B74535
   - target:          arm64-ios-simulator
-    value:           71B38B85-C473-3A91-98E1-19BB49246563
+    value:           7B8972D6-EBEF-3677-9F35-62D61052CDB6
 install-name:    '/System/Library/PrivateFrameworks/TeaUIKit.framework/TeaUIKit'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

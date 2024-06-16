@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           67A45B66-F314-3767-9C2C-032FB2CB4BFB
+    value:           FC308DEC-4C03-32FC-9121-64B3FDD5BE3C
   - target:          arm64-ios-simulator
-    value:           08C9C800-86C6-3742-9C7F-FB15AD689889
+    value:           FA4ABE90-8D1D-349F-B64D-E067F6623845
 install-name:    '/System/Library/PrivateFrameworks/SiriVOX.framework/SiriVOX'
 current-version: 0
 compatibility-version: 0
@@ -58,16 +58,19 @@ exports:
                        _SVXLocalizationKeyStoreDemoStyle1Stage1Version1, _SVXLocalizationKeyStoreDemoStyle1Stage1Version2, 
                        _SVXLocalizationKeyStoreDemoStyle1Stage2Version1, _SVXLocalizationKeyStoreDemoStyle1Stage2Version2, 
                        _SVXLocalizationKeyStoreDemoStyle1Stage3Version1, _SVXLocalizationKeyStoreDemoStyle1Stage3Version2, 
-                       _SVXLocalizationKeyStoreDemoStyle1Stage3Version3, _SVXLocalizationKeyWiFiError0, 
-                       _SVXLocalizationKeyWiFiError1, _SVXLocalizationTableClock, 
-                       _SVXLocalizationTableDefault, _SVXLocalizationTableDeviceSetup, 
-                       _SVXLocalizationTableErrors, _SVXLocalizationTableInterstitials, 
-                       _SVXLocalizationTableStoreDemo, _SVXPerformingOptionsGetFromNames, 
-                       _SVXPerformingOptionsGetNames, _SVXPerformingOptionsValidate, 
-                       _SVXPlatformDependencyTypeGetFromName, _SVXPlatformDependencyTypeGetIsValid, 
-                       _SVXPlatformDependencyTypeGetIsValidAndSpecified, _SVXPlatformDependencyTypeGetName, 
-                       _SVXSessionResignActiveOptionsGetNames, _SVXSessionStateGetFromName, 
-                       _SVXSessionStateGetIsValid, _SVXSessionStateGetIsValidAndSpecified, 
+                       _SVXLocalizationKeyStoreDemoStyle1Stage3Version3, _SVXLocalizationKeyStoreDemoStyle2IntroVersion1, 
+                       _SVXLocalizationKeyStoreDemoStyle2OutroVersion1, _SVXLocalizationKeyStoreDemoStyle2Stage1Version1, 
+                       _SVXLocalizationKeyStoreDemoStyle2Stage2Version1, _SVXLocalizationKeyStoreDemoStyle2Stage3Version1, 
+                       _SVXLocalizationKeyStoreDemoStyle2Stage3Version2, _SVXLocalizationKeyStoreDemoStyle2Stage3Version3, 
+                       _SVXLocalizationKeyWiFiError0, _SVXLocalizationKeyWiFiError1, 
+                       _SVXLocalizationTableClock, _SVXLocalizationTableDefault, 
+                       _SVXLocalizationTableDeviceSetup, _SVXLocalizationTableErrors, 
+                       _SVXLocalizationTableInterstitials, _SVXLocalizationTableStoreDemo, 
+                       _SVXPerformingOptionsGetFromNames, _SVXPerformingOptionsGetNames, 
+                       _SVXPerformingOptionsValidate, _SVXPlatformDependencyTypeGetFromName, 
+                       _SVXPlatformDependencyTypeGetIsValid, _SVXPlatformDependencyTypeGetIsValidAndSpecified, 
+                       _SVXPlatformDependencyTypeGetName, _SVXSessionResignActiveOptionsGetNames, 
+                       _SVXSessionStateGetFromName, _SVXSessionStateGetIsValid, _SVXSessionStateGetIsValidAndSpecified, 
                        _SVXSessionStateGetName, _SVXSoundIDGetFromName, _SVXSoundIDGetIsValid, 
                        _SVXSoundIDGetIsValidAndSpecified, _SVXSoundIDGetName, _SVXSpeechSynthesisCreateAudioFromUIAudioData, 
                        _SVXSpeechSynthesisCreateLocaleFromLanguageCode, _SVXSpeechSynthesisGenderGetFromName, 

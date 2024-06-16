@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0E854CA7-A236-3D8D-B5D9-90E8552D91F3
+    value:           0ED72CD7-E1FE-376F-AA48-5D0AEA2932D1
   - target:          arm64-ios-simulator
-    value:           8086E824-F792-33A6-89AF-893234E48CAE
+    value:           27474F3F-867A-33E4-97B0-E8BCD87D8707
 install-name:    '/System/Library/PrivateFrameworks/ActivitySharingUI.framework/ActivitySharingUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AE8563B4-B306-323F-A19C-46CF9608C58A
+    value:           B1EB71B1-3D35-3B13-B56C-C1DA4D7A9B04
   - target:          arm64-ios-simulator
-    value:           3D33FC15-C4BA-3DEF-816E-D7BE9368A8FC
+    value:           4A6ABDEF-8919-3355-83CC-A7AB6236E490
 install-name:    '/System/Library/PrivateFrameworks/BackBoardHIDEventFoundation.framework/BackBoardHIDEventFoundation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           39273D0F-D191-3D54-887D-EA2AB7B2889F
   - target:          x86_64-ios-simulator
-    value:           5B1F3F07-5BB4-342E-81EC-A2AD7B3964A2
+    value:           B7EED82B-01E4-393C-93C8-48D250C9DB5B
   - target:          arm64-ios-simulator
-    value:           DB3DFBDF-9240-331E-AE02-4CEB1D8B8C47
+    value:           B656D505-368D-361E-8E5A-391C0745B052
 install-name:    '/System/Library/PrivateFrameworks/Pegasus.framework/Pegasus'
 exports:
   - targets:         [ i386-ios-simulator ]

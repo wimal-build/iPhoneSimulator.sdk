@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E1D860AF-CBB8-3253-882C-873CF5572F07
   - target:          x86_64-ios-simulator
-    value:           EF563750-0912-3151-BE8B-C5BBD552E2F2
+    value:           3CCB65A9-5875-36E2-B0C7-4E3732A365E4
   - target:          arm64-ios-simulator
-    value:           621FBEFE-9500-3C4B-93FA-6C83EBDCEDD5
+    value:           D0845046-A7D6-3CB8-BCCF-6E3EE9CFD3CF
 install-name:    '/System/Library/PrivateFrameworks/SearchUI.framework/SearchUI'
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]

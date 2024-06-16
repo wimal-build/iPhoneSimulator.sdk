@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6697CA71-ACB1-3DC3-BB3C-B2B44B269839
   - target:          x86_64-ios-simulator
-    value:           60F77E68-D3EA-33FB-A303-CE1CE16F6279
+    value:           AACAAEDF-3437-3EAA-9DA4-15A6AA4A8E2C
   - target:          arm64-ios-simulator
-    value:           2A8FB16A-6862-3C2D-8DB5-2FBA410D6237
+    value:           9C470DDA-32BB-31AF-878C-40101F7A22E4
 install-name:    '/usr/lib/swift/libswiftVision.dylib'
 current-version: 1.3
 swift-abi-version: 7

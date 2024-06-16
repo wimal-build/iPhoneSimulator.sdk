@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           684682BB-4FA1-3FFD-87E7-6C4D3F52458D
+    value:           2C7E8F96-EFE8-386F-ADE8-54420A048ECD
   - target:          arm64-ios-simulator
-    value:           F8149FFB-6AD6-3D96-A17B-AF193631D513
+    value:           13DE4E9F-8E0E-347C-81E7-863ECF1D241E
 install-name:    '/System/Library/PrivateFrameworks/WorkflowUIServices.framework/WorkflowUIServices'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

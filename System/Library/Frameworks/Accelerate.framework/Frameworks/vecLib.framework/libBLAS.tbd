@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3182025A-E7D9-3F1D-9918-9FE8AEE6C9A6
   - target:          x86_64-ios-simulator
-    value:           BB9E76D8-3A2E-3616-AD9B-13224D13A5AA
+    value:           46117704-58E1-3AA9-B104-47C5BFF49DC8
   - target:          arm64-ios-simulator
-    value:           639BC2EE-3C8A-3456-85C3-28530BDF3BF1
+    value:           E585FA88-62A3-3462-9FBA-8B51A08F95EC
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

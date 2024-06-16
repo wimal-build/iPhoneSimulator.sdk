@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           66C62527-5B7F-3CE1-A326-961611EBECE5
   - target:          x86_64-ios-simulator
-    value:           1E5BDA6C-0289-3830-8F22-E704E0EC1A38
+    value:           32E87E4B-5A28-35D2-888C-588B1B8BD593
   - target:          arm64-ios-simulator
-    value:           7E6427AE-099C-3F24-A93E-DF8EB8FC945B
+    value:           0EB848BB-48FE-3CB5-9A12-B52F021B6571
 install-name:    '/usr/lib/swift/libswiftFoundation.dylib'
 current-version: 13.100
 swift-abi-version: 7

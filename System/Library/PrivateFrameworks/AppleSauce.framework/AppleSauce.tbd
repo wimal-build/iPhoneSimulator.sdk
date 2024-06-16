@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D52067C1-54C7-358F-9612-4A5AD5C343D5
   - target:          x86_64-ios-simulator
-    value:           54D238E7-88DD-3B49-A1A2-0E1E3955A2A9
+    value:           8F257096-3B0F-3611-846A-1D29A93843B5
   - target:          arm64-ios-simulator
-    value:           38AECBF8-86A0-3AFE-9726-701220C7EB9B
+    value:           EFDFC6CF-01F6-3219-B6F7-5BE88C1025DD
 install-name:    '/System/Library/PrivateFrameworks/AppleSauce.framework/AppleSauce'
 current-version: 0
 compatibility-version: 0

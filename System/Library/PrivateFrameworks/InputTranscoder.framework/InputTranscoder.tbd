@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EB1949AD-3B40-3D6C-B98C-2B5561149B64
+    value:           4AD36734-5F4F-31AA-AA10-4DE421DCF465
   - target:          arm64-ios-simulator
-    value:           88B851A3-4B26-31A6-A399-6FB0CED69C47
+    value:           D537C74B-651A-380A-B02E-283752D4394C
 install-name:    '/System/Library/PrivateFrameworks/InputTranscoder.framework/InputTranscoder'
 current-version: 55
 exports:

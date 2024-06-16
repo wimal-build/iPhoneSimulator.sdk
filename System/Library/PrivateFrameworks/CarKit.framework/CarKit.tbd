@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3A54E1D8-144B-374E-8A11-CC5A10CCC80C
   - target:          x86_64-ios-simulator
-    value:           CE4A0EA0-F037-38E3-B632-F839D68908B4
+    value:           7AB35EF4-82ED-317A-B0E0-1699510C570D
   - target:          arm64-ios-simulator
-    value:           54611BFC-DE91-3823-B516-981F60818A65
+    value:           01B18FBA-246F-3815-8A1E-E4B7649B6CAF
 install-name:    '/System/Library/PrivateFrameworks/CarKit.framework/CarKit'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FA8C6632-A495-31CC-8314-6EE802E693D9
+    value:           4CD003D7-82DE-310E-B0BC-D1B92975E8A6
   - target:          arm64-ios-simulator
-    value:           BFF6C91C-6813-3B09-B99F-4CD7EB94A74E
+    value:           6A2A33B2-B7D2-3C1D-ADE4-0A487776DDE5
 install-name:    '/System/Library/PrivateFrameworks/AdAnalytics.framework/AdAnalytics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F433E577-C1AE-3C98-8EAA-E6106FA36A02
+    value:           B4F8DFBE-88EC-3827-A4C4-ECF743CA981A
   - target:          arm64-ios-simulator
-    value:           53EEE4C7-4856-3003-963C-DB9556CFCB94
+    value:           1FAAF3DE-1ECA-3A2A-A15C-B82E952D4C4F
 install-name:    '/System/Library/PrivateFrameworks/DocumentManagerExecutables.framework/DocumentManagerExecutables'
-current-version: 200
+current-version: 200.1.255
 swift-abi-version: 7
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

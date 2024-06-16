@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6633765D-9DD3-34BD-83C9-D37DEE3F3411
   - target:          x86_64-ios-simulator
-    value:           E26FB381-C7B5-32B2-906B-DAB41621DB38
+    value:           8482BDEF-DE99-32BE-BAE1-49D752738A90
   - target:          arm64-ios-simulator
-    value:           8B750EDB-2C22-3D07-8898-9EF24CB4726E
+    value:           59B0E7A7-99B0-3DCD-A76D-9BBB1C57825D
 install-name:    '/System/Library/PrivateFrameworks/TextToSpeech.framework/TextToSpeech'
 exports:
   - targets:         [ i386-ios-simulator ]

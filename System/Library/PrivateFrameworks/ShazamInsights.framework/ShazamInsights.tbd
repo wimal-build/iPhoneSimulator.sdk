@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           36B1FDD8-BD15-36A9-B543-0D9E9D7A6F4B
+    value:           762157AA-59D0-3A96-AE5C-175ED7DC9EDD
   - target:          arm64-ios-simulator
-    value:           C6471C97-22C1-3BF8-906E-9CF423E78934
+    value:           4620D871-5267-3D81-AEBD-ECCFCAF382CD
 install-name:    '/System/Library/PrivateFrameworks/ShazamInsights.framework/ShazamInsights'
 current-version: 67
 compatibility-version: 0

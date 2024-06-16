@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DFFEA73A-0492-3232-8A96-9BB352AA02FF
+    value:           B8E95421-1839-3065-B596-E8D8C6DF6C10
   - target:          arm64-ios-simulator
-    value:           7F44AD5B-ECCD-3F16-862C-1A05E9E39113
+    value:           4A08BE05-B316-3A14-8C75-C217EAFCE725
 install-name:    '/System/Library/PrivateFrameworks/CameraEditKit.framework/CameraEditKit'
-current-version: 3702.18.150
+current-version: 3712.0.190
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     objc-ivars:      [ CEKLightingCubeAppearance._background, CEKLightingCubeAppearance._bottomFill, 

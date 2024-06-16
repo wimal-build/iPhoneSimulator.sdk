@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6DAABE91-4276-3C7D-8A7B-D25ABDD15799
+    value:           D6963E7A-28BB-3C56-849F-98142490A623
   - target:          arm64-ios-simulator
-    value:           04EEE53E-7A82-3CD0-BE18-9D3E8BECB4F2
+    value:           AECF10A6-8AA0-3972-BF16-93A64DA726C3
 install-name:    '/System/Library/PrivateFrameworks/SecurityFoundation.framework/SecurityFoundation'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

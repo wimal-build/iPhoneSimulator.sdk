@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7389DA46-A5E3-319B-86E3-8DEAEBC2E909
+    value:           64381941-7685-3A86-8EB7-873D06A75190
   - target:          arm64-ios-simulator
-    value:           ED89F31F-E707-3910-954B-36D490591B09
+    value:           9B7FE8EB-98B8-339F-92E4-CB4B0D77BF0A
 install-name:    '/System/Library/PrivateFrameworks/CoreSymbolication.framework/libCoreSymbolicationLTO.dylib'
 current-version: 64540.89.1
 allowable-clients:

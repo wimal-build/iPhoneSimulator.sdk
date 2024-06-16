@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D4C25B80-9A95-364F-A770-2FB01DF63BF3
+    value:           117D9458-AB39-3F8B-9791-ED2474E5A38F
   - target:          arm64-ios-simulator
-    value:           CBD333C1-0BFE-39F5-8603-88FEACA0C1DA
+    value:           044F777A-5DDF-3F6A-A737-F9E0F5261F70
 install-name:    '/System/Library/PrivateFrameworks/SchoolTimeSettingsUI.framework/SchoolTimeSettingsUI'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

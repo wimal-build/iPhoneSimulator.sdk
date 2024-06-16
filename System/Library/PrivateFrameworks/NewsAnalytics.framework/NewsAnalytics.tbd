@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           974A2DF3-7A0D-33A6-AE01-D4ABD92A91D2
+    value:           7275BBFC-AC1B-3488-8221-26468AB37234
   - target:          arm64-ios-simulator
-    value:           154725F2-AD0D-3462-961B-31C588695C62
+    value:           184DF7CD-D8D4-3D93-8A95-26317A664582
 install-name:    '/System/Library/PrivateFrameworks/NewsAnalytics.framework/NewsAnalytics'
 swift-abi-version: 7
 allowable-clients:

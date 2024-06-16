@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           57363F6B-518E-31F5-993B-6FEFA50B918C
+    value:           9759A3E6-CABF-3192-B97C-82CFF991D9BC
   - target:          arm64-ios-simulator
-    value:           A320F4D6-A59B-3510-8AC3-E608BB87600B
+    value:           1571E92F-A108-38E6-84C6-7868CA3BCF7A
 install-name:    '/System/Library/PrivateFrameworks/ChronoKit.framework/ChronoKit'
-current-version: 99.8.1
+current-version: 99.8.2
 swift-abi-version: 7
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
@@ -1195,18 +1195,8 @@ exports:
                        '_$s9ChronoKit33HostingControllerRenderStatisticsV20totalFramesSubmittedSivg', 
                        '_$s9ChronoKit33HostingControllerRenderStatisticsV20totalFramesSubmittedSivpMV', 
                        '_$s9ChronoKit33HostingControllerRenderStatisticsVMa', '_$s9ChronoKit33HostingControllerRenderStatisticsVMn', 
-                       '_$s9ChronoKit33HostingControllerRenderStatisticsVN', '_$s9ChronoKit33SignificantTimeChangeNotificationC7defaultACvgZ', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationC9publisher7Combine12AnyPublisherVyyts5NeverOGvg', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationC9publisher7Combine12AnyPublisherVyyts5NeverOGvpMV', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCACycfC', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCACycfCTj', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCACycfCTq', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCACycfc', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCMa', '_$s9ChronoKit33SignificantTimeChangeNotificationCMm', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCMn', '_$s9ChronoKit33SignificantTimeChangeNotificationCMo', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCMu', '_$s9ChronoKit33SignificantTimeChangeNotificationCN', 
-                       '_$s9ChronoKit33SignificantTimeChangeNotificationCfD', '_$s9ChronoKit33SignificantTimeChangeNotificationCfd', 
-                       '_$s9ChronoKit33TimelineFileCachingReloadStrategyMp', '_$s9ChronoKit33TimelineFileCachingReloadStrategyP12cacheManagerAA0C13CacheManaging_pvgTj', 
+                       '_$s9ChronoKit33HostingControllerRenderStatisticsVN', '_$s9ChronoKit33TimelineFileCachingReloadStrategyMp', 
+                       '_$s9ChronoKit33TimelineFileCachingReloadStrategyP12cacheManagerAA0C13CacheManaging_pvgTj', 
                        '_$s9ChronoKit33TimelineFileCachingReloadStrategyP12cacheManagerAA0C13CacheManaging_pvgTq', 
                        '_$s9ChronoKit33TimelineFileCachingReloadStrategyP18reloadWithoutCache7context13configuration10completionAA0F15TaskCancellableCSg7ContextQz_AA0F13ConfigurationVys6ResultOy7ContentQzSgs5Error_pGctFTj', 
                        '_$s9ChronoKit33TimelineFileCachingReloadStrategyP18reloadWithoutCache7context13configuration10completionAA0F15TaskCancellableCSg7ContextQz_AA0F13ConfigurationVys6ResultOy7ContentQzSgs5Error_pGctFTq', 

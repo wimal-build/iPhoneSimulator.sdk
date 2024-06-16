@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2DEE86F2-EE56-3E00-8033-326089A67933
+    value:           20FDE6B7-89EF-3D15-B496-D6BF4B727E7D
   - target:          arm64-ios-simulator
-    value:           72EA0043-8DD9-3011-90F2-FF4EF623D887
+    value:           A25E0212-02BE-340E-B0FD-7338C069027F
 install-name:    '/usr/lib/swift/libswiftRemoteMirror.dylib'
 current-version: 0
 exports:

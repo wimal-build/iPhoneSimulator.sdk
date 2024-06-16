@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0536DE41-6DD8-38AB-A857-5C40BBBAF615
   - target:          x86_64-ios-simulator
-    value:           D9336DA8-9995-365B-B992-40080A83000B
+    value:           89B98A81-9D33-3FEA-811E-532D1DB84159
   - target:          arm64-ios-simulator
-    value:           4EEA90BE-EB5F-3F19-83DA-55511E324C6E
+    value:           9197FBD7-1565-3D19-BB62-D60C0ACB5569
 install-name:    '/usr/lib/libgmalloc.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

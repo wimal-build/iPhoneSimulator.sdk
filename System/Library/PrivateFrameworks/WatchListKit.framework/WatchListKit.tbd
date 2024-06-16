@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FF4FED77-BD62-366D-9D4B-3A2247371689
   - target:          x86_64-ios-simulator
-    value:           20C51A47-1FB7-3178-8B83-7ED08A407706
+    value:           60235CC5-2F53-3364-A2C2-9BF2806ED921
   - target:          arm64-ios-simulator
-    value:           80FB4AD9-CE37-3793-B27E-35C4E3C8AAD1
+    value:           58655217-303F-37CA-ACD9-926A09ED9804
 install-name:    '/System/Library/PrivateFrameworks/WatchListKit.framework/WatchListKit'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           B2EB2A08-4388-32C1-BCE7-9E03818208B7
   - target:          x86_64-ios-simulator
-    value:           1F0C16FB-CBF0-3C48-97DA-013D8D9B4C44
+    value:           E5E4C124-3800-3049-AC4C-3D87D58AB9B7
   - target:          arm64-ios-simulator
-    value:           F2139281-B452-36A0-A31F-91CF683A013A
+    value:           567B62AA-8882-3183-A4C2-BFF50E2EF06D
 install-name:    '/System/Library/PrivateFrameworks/Sharing.framework/Sharing'
-current-version: 1564.6
+current-version: 1566.6
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _SFActivityTimeCompare, _SFActivityTimeToAbsoluteTime, _SFActivityTimeWithAbsoluteTime, 
@@ -291,15 +291,15 @@ exports:
                        _SFOperationGetTypeID, _SFOperationResume, _SFOperationSetClient, 
                        _SFOperationSetDispatchQueue, _SFOperationSetProperty, _SFPairedUnlockStateChangedNotification, 
                        _SFPasswordSharingAvailabilityNotification, _SFPlaygroundsAppAvailable, 
-                       _SFRTIDataPayloadForData, _SFRealpathForFileURL, _SFRemoteHotspotNetworkTypeHSDPA, 
-                       _SFRemoteTextInputPayloadFromLegacyAPI, _SFRemoteTextInputPayloadToLegacyAPI, 
-                       _SFRemovableSystemAppAvailable, _SFServiceIdentifierAirPlay, 
-                       _SFServiceIdentifierApplePay, _SFServiceIdentifierApplePayLegacy, 
-                       _SFServiceIdentifierAppleTVSetup, _SFServiceIdentifierAudioTuning, 
-                       _SFServiceIdentifierAuthenticateAccounts, _SFServiceIdentifierAutoUnlock, 
-                       _SFServiceIdentifierCompanionLinkProx, _SFServiceIdentifierConfigurator, 
-                       _SFServiceIdentifierContinuityRemote, _SFServiceIdentifierControl, 
-                       _SFServiceIdentifierDebug, _SFServiceIdentifierDeviceDiagnostics, 
+                       _SFRTIDataPayloadForData, _SFRealpathForFileURL, _SFRemoteDeviceCanConnectOn5GHz, 
+                       _SFRemoteHotspotNetworkTypeHSDPA, _SFRemoteTextInputPayloadFromLegacyAPI, 
+                       _SFRemoteTextInputPayloadToLegacyAPI, _SFRemovableSystemAppAvailable, 
+                       _SFServiceIdentifierAirPlay, _SFServiceIdentifierApplePay, 
+                       _SFServiceIdentifierApplePayLegacy, _SFServiceIdentifierAppleTVSetup, 
+                       _SFServiceIdentifierAudioTuning, _SFServiceIdentifierAuthenticateAccounts, 
+                       _SFServiceIdentifierAutoUnlock, _SFServiceIdentifierCompanionLinkProx, 
+                       _SFServiceIdentifierConfigurator, _SFServiceIdentifierContinuityRemote, 
+                       _SFServiceIdentifierControl, _SFServiceIdentifierDebug, _SFServiceIdentifierDeviceDiagnostics, 
                        _SFServiceIdentifierInternetRelay, _SFServiceIdentifierPINPair, 
                        _SFServiceIdentifierPasswordGranting, _SFServiceIdentifierPasswordSharing, 
                        _SFServiceIdentifierProxHandoff, _SFServiceIdentifierRemoteApp, 

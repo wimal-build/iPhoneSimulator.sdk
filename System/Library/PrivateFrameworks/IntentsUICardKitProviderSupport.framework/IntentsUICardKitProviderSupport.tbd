@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           542CE96E-F9A3-363D-82A0-D5B305BA25F1
+    value:           E4717F78-4086-34D6-A794-6283581CD74E
   - target:          arm64-ios-simulator
-    value:           44DE7BF6-69B0-3BAB-82B6-8DD89F16AAB0
+    value:           A061810D-0B82-38F9-8A27-65869C1374F0
 install-name:    '/System/Library/PrivateFrameworks/IntentsUICardKitProviderSupport.framework/IntentsUICardKitProviderSupport'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

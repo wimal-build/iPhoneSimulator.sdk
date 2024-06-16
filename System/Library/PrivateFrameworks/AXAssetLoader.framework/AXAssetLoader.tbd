@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6FB26847-8D34-3D52-AFCC-3A47FA71BD80
+    value:           E936C542-110A-337E-AF8C-63FE458B1667
   - target:          arm64-ios-simulator
-    value:           F7BB95C3-EBF8-30EB-9040-2ED47C493EAA
+    value:           6DF6D7E5-B9D9-33CA-A031-A30DD4E02E0F
 install-name:    '/System/Library/PrivateFrameworks/AXAssetLoader.framework/AXAssetLoader'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

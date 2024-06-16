@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8F4BE6D7-00AE-3E5D-8B4E-B78E12790FAD
   - target:          x86_64-ios-simulator
-    value:           C6DCB7FD-AD6F-3567-9E01-A8F3D736CAD2
+    value:           7370ABF5-738C-3B87-A0D0-79F8649EAC87
   - target:          arm64-ios-simulator
-    value:           612FD843-1497-39AA-B6B4-2C25A06B074A
+    value:           77199D4C-D33E-3610-812D-6C6AD9C223A4
 install-name:    '/System/Library/PrivateFrameworks/IMTranscoderAgent.framework/IMTranscoderAgent'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

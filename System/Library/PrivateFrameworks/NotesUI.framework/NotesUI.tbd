@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3CF6DD2E-AFEE-3B85-A648-55BEA5ECF075
+    value:           6D0C67DA-4EEF-3839-8A1A-8138E82FE5CF
   - target:          arm64-ios-simulator
-    value:           54CCBC1F-86E0-3239-AF95-D4523B8B5494
+    value:           98777334-276B-3114-91FF-6E6739922E93
 install-name:    '/System/Library/PrivateFrameworks/NotesUI.framework/NotesUI'
 current-version: 1759
 allowable-clients:

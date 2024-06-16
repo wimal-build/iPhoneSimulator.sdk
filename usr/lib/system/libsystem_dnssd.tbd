@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C29A298-C47F-3FED-89AB-B03FAB69787E
   - target:          x86_64-ios-simulator
-    value:           D1A44834-F6BE-3E8D-B4FE-35685EE1C690
+    value:           73EFA863-C297-3C67-9041-E4C12BDD6C1B
   - target:          arm64-ios-simulator
-    value:           69549209-7B17-335F-80A5-899D954D1ECE
+    value:           65353210-92E2-37D0-80DD-F5335C52DD36
 install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
-current-version: 1310.0.72
+current-version: 1310.11.1
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System

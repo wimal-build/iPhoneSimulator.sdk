@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           901F6481-50E2-32EF-A4AB-F3B9AB1DB54F
+    value:           351DB889-72C9-344C-8207-875E7D10641A
   - target:          arm64-ios-simulator
-    value:           DF5ED86B-536B-38EE-B8BC-2E68BEC7B99B
+    value:           6655C62C-D38C-310C-8F59-7535404DE9B5
 install-name:    '/System/Library/PrivateFrameworks/Timeline.framework/Timeline'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

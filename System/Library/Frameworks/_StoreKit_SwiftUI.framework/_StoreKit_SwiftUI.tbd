@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3D4FC7A0-F81F-3143-8C45-58D6C9BFDC6E
+    value:           6E7B015C-3389-387F-83B6-43B251B09D3B
   - target:          arm64-ios-simulator
-    value:           52CCFF23-9635-3B1A-9BA8-7B5354EED289
+    value:           FE596634-F583-36EF-8A91-69EB46743477
 install-name:    '/System/Library/Frameworks/_StoreKit_SwiftUI.framework/_StoreKit_SwiftUI'
 swift-abi-version: 7
 exports:

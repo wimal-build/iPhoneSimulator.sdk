@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           936CC94B-8CD8-3D2F-B02C-85CF2A3C4092
+    value:           FA716FEF-15E7-3903-95A5-19EB101E5260
   - target:          arm64-ios-simulator
-    value:           1FB9F845-9CE9-3196-B47C-AA5FF5A3EED3
+    value:           F041D40E-1210-3460-8CE8-BFA384B3DAF6
 install-name:    '/System/Library/PrivateFrameworks/VideoProcessing.framework/VideoProcessing'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

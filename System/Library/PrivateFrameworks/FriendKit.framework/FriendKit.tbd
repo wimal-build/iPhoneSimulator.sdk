@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2916F609-C364-3A01-A869-2247EE003983
   - target:          x86_64-ios-simulator
-    value:           EF5D3108-C1B2-3DE0-9339-1B98DAE4521F
+    value:           6711C197-ABB7-3696-9461-A27A162ECB84
   - target:          arm64-ios-simulator
-    value:           89EE780A-5795-36D5-A6A7-1BD934247464
+    value:           099D8772-5288-3546-92C6-2CD5A68954BA
 install-name:    '/System/Library/PrivateFrameworks/FriendKit.framework/FriendKit'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

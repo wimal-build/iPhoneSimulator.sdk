@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5A936286-9936-312F-887C-AA69E1740ABD
+    value:           D4F27CE0-C42A-33EF-8327-C7F95152F354
   - target:          arm64-ios-simulator
-    value:           2E9D8B51-4804-3AE6-B8AB-F9A4F6288AEF
+    value:           21B59A62-89D8-38DA-B045-BC7AF106E209
 install-name:    '/System/Library/PrivateFrameworks/AOPHaptics.framework/AOPHaptics'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           22D03BE9-EC8C-3035-BF92-7F1B7DFE0D04
+    value:           E97AEFC2-7451-3B31-8045-7628A2A6F974
   - target:          arm64-ios-simulator
-    value:           B5482139-DCAA-35BF-9515-A6AF1792A6B2
+    value:           2EA3CAE3-4858-393D-B50C-2B1FA0DFD9A2
 install-name:    '/System/Library/PrivateFrameworks/C2.framework/C2'
 current-version: 569
 exports:

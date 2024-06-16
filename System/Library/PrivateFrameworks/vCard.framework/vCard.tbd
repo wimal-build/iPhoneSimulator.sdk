@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5F3023D0-B298-3AE2-A784-6599F15B9105
   - target:          x86_64-ios-simulator
-    value:           1E5C77F9-3798-3D40-B022-D4215759AF77
+    value:           F94F095A-68FC-3A70-8F01-7747EECD16A1
   - target:          arm64-ios-simulator
-    value:           26654CF6-C1B4-3D64-BE80-3BA15C034F78
+    value:           B22753CF-1992-3FEA-B3F5-826DF00DF242
 install-name:    '/System/Library/PrivateFrameworks/vCard.framework/vCard'
 current-version: 0
 compatibility-version: 0

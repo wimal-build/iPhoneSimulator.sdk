@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2FF64C8A-7556-348C-96E0-3DF769AAD060
+    value:           D70AB4AC-AC4F-34E2-90E4-2F08F1DB53B0
   - target:          arm64-ios-simulator
-    value:           BEA93DB3-47BE-3BDC-BFB5-28F31C77EA06
+    value:           9640145A-E887-39BD-B19E-7568E67E9ED8
 install-name:    '/System/Library/PrivateFrameworks/ParsecModel.framework/ParsecModel'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

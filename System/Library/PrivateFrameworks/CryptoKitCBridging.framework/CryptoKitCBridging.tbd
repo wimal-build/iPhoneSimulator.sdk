@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           77196E28-AEEF-3535-8B48-668A5C9B387C
+    value:           59C54346-FEF2-3CD9-BE5E-6071C2B17127
   - target:          arm64-ios-simulator
-    value:           58353A9C-82E6-36E6-8E7F-26AAF76C58D3
+    value:           7142C357-65B7-32F6-AD89-AD896DF5ED6A
 install-name:    '/System/Library/PrivateFrameworks/CryptoKitCBridging.framework/CryptoKitCBridging'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

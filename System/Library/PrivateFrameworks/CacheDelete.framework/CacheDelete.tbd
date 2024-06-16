@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           993CDE1F-BA42-3C65-BBDB-7AD679D92FCB
   - target:          x86_64-ios-simulator
-    value:           1DDD165A-239F-3D29-A285-B3F9D7133B74
+    value:           213F463D-12C4-3528-B14F-3F7812231919
   - target:          arm64-ios-simulator
-    value:           FB5C3A27-C7F4-361E-AC61-AFD8BB1F1D22
+    value:           10E74476-54B9-38A3-BB37-E6EFDC0BF01C
 install-name:    '/System/Library/PrivateFrameworks/CacheDelete.framework/CacheDelete'
 exports:
   - targets:         [ i386-ios-simulator ]

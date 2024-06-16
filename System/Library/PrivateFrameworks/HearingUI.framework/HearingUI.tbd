@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F4F63044-A7FE-371F-8CB7-43629CDF00A6
+    value:           2D622EC4-4FFD-38FE-B4E0-CD7A2458EF58
   - target:          arm64-ios-simulator
-    value:           5198FEAF-84C5-3563-9EBD-7CF6108A0A10
+    value:           21671D7F-86FF-3BB6-93FE-5C94B9C927A9
 install-name:    '/System/Library/PrivateFrameworks/HearingUI.framework/HearingUI'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           24420F8A-0940-37ED-89DF-76B6243705A5
   - target:          x86_64-ios-simulator
-    value:           DC460776-CD5D-3510-8613-F78CC39A0ABA
+    value:           E1F7CB04-63FF-3AAA-8E24-45E86282D940
   - target:          arm64-ios-simulator
-    value:           6FED7D8F-82E1-36C9-AE0B-D8F8D7091B71
+    value:           78B2C740-18B3-32DF-B08C-E58D9E7BB74B
 install-name:    '/System/Library/PrivateFrameworks/MobileInstallation.framework/MobileInstallation'
 exports:
   - targets:         [ i386-ios-simulator ]
