@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           66C62527-5B7F-3CE1-A326-961611EBECE5
   - target:          x86_64-ios-simulator
-    value:           3043B740-D484-3CAB-BA38-7194CFC8EC7E
+    value:           DA0F3834-488B-390C-B379-C81FBB3D06E1
   - target:          arm64-ios-simulator
-    value:           41680EF3-938D-3E85-B8D6-65BAC5F929AF
+    value:           5BFC7F00-FB9E-3703-B258-E8471BE3BA45
 install-name:    '/usr/lib/swift/libswiftFoundation.dylib'
-current-version: 20
+current-version: 25.102
 swift-abi-version: 7
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -119,6 +119,8 @@ exports:
                        '_$s10Foundation10CocoaErrorV16coderReadCorruptAC4CodeVvgZ', 
                        '_$s10Foundation10CocoaErrorV16fileReadTooLargeAC4CodeVvgZ', 
                        '_$s10Foundation10CocoaErrorV16fileWriteUnknownAC4CodeVvgZ', 
+                       '_$s10Foundation10CocoaErrorV16underlyingErrorsSays0C0_pGvg', 
+                       '_$s10Foundation10CocoaErrorV16underlyingErrorsSays0C0_pGvpMV', 
                        '_$s10Foundation10CocoaErrorV17coderInvalidValueAC4CodeVvgZ', 
                        '_$s10Foundation10CocoaErrorV18coderValueNotFoundAC4CodeVvgZ', 
                        '_$s10Foundation10CocoaErrorV18featureUnsupportedAC4CodeVvgZ', 
@@ -435,7 +437,9 @@ exports:
                        '_$s10Foundation10URLRequestV19allHTTPHeaderFieldsSDyS2SGSgvg', 
                        '_$s10Foundation10URLRequestV19allHTTPHeaderFieldsSDyS2SGSgvpMV', 
                        '_$s10Foundation10URLRequestV19allHTTPHeaderFieldsSDyS2SGSgvs', 
-                       '_$s10Foundation10URLRequestV20allowsCellularAccessSbvM', 
+                       '_$s10Foundation10URLRequestV19assumesHTTP3CapableSbvM', '_$s10Foundation10URLRequestV19assumesHTTP3CapableSbvg', 
+                       '_$s10Foundation10URLRequestV19assumesHTTP3CapableSbvpMV', 
+                       '_$s10Foundation10URLRequestV19assumesHTTP3CapableSbvs', '_$s10Foundation10URLRequestV20allowsCellularAccessSbvM', 
                        '_$s10Foundation10URLRequestV20allowsCellularAccessSbvg', 
                        '_$s10Foundation10URLRequestV20allowsCellularAccessSbvpMV', 
                        '_$s10Foundation10URLRequestV20allowsCellularAccessSbvs', 
@@ -1301,6 +1305,10 @@ exports:
                        '_$s10Foundation17URLResourceValuesV31volumeSupportsAccessPermissionsSbSgvpMV', 
                        '_$s10Foundation17URLResourceValuesV31volumeSupportsExclusiveRenamingSbSgvg', 
                        '_$s10Foundation17URLResourceValuesV31volumeSupportsExclusiveRenamingSbSgvpMV', 
+                       '_$s10Foundation17URLResourceValuesV32ubiquitousItemIsExcludedFromSyncSbSgvM', 
+                       '_$s10Foundation17URLResourceValuesV32ubiquitousItemIsExcludedFromSyncSbSgvg', 
+                       '_$s10Foundation17URLResourceValuesV32ubiquitousItemIsExcludedFromSyncSbSgvpMV', 
+                       '_$s10Foundation17URLResourceValuesV32ubiquitousItemIsExcludedFromSyncSbSgvs', 
                        '_$s10Foundation17URLResourceValuesV32volumeLocalizedFormatDescriptionSSSgvg', 
                        '_$s10Foundation17URLResourceValuesV32volumeLocalizedFormatDescriptionSSSgvpMV', 
                        '_$s10Foundation17URLResourceValuesV32volumeSupportsCasePreservedNamesSbSgvg', 

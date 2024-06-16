@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           02B7A55B-3E00-3092-91BF-E20D37FAFD25
   - target:          x86_64-ios-simulator
-    value:           91CEF600-2D9F-3DAE-BB98-A41A8E45E5CC
+    value:           A3269F08-EBED-3677-B01E-AEC582AD9051
   - target:          arm64-ios-simulator
-    value:           C1BCC478-5DD3-3ECA-8DAC-EB62222B5F73
+    value:           BF99E33B-6B7E-3CF1-9AD5-1CF2705339F7
 install-name:    '/usr/lib/swift/libswiftHomeKit.dylib'
-current-version: 714.4.11
+current-version: 723.5.59
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

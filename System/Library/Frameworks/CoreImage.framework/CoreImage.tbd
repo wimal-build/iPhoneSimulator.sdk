@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BCF6EB5A-2DF3-379E-A189-05F560293468
   - target:          x86_64-ios-simulator
-    value:           28C257EE-3AA7-3188-BE52-200662343B98
+    value:           A7869FFE-A073-319D-8A03-E8ABC7DBC548
   - target:          arm64-ios-simulator
-    value:           7C9A3926-4EA2-3078-9EB3-F59B54B4D414
+    value:           F12F4EF3-C091-3DA1-984C-FE9FD60BF98E
 install-name:    '/System/Library/Frameworks/CoreImage.framework/CoreImage'
 current-version: 5
 exports:

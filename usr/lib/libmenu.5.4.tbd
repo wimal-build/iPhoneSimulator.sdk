@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ECFBA6EC-9FAE-3439-A6B3-C3591309A662
   - target:          x86_64-ios-simulator
-    value:           8D47C711-2ABF-3FA3-AB18-64DD57930868
+    value:           B3DFB7A2-14AC-397F-AFF2-D943B195E535
   - target:          arm64-ios-simulator
-    value:           F4F81048-483E-37C9-95D8-BCBF2E4316BF
+    value:           DBC62034-5D1C-37C4-8689-8B1B75AAB92B
 install-name:    '/usr/lib/libmenu.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4

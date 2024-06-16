@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9A456253-4C60-3010-8EC8-2F08AE02FA8B
+    value:           AADDE1C0-ADA5-337F-BE0A-61116806671A
   - target:          arm64-ios-simulator
-    value:           D28C8F43-0AD2-3F45-8346-8129AD9A314D
+    value:           6E1606B9-9DD7-3B99-9DF8-22807717341F
 install-name:    '/usr/lib/libSystem.B.dylib'
-current-version: 1292.60.1
+current-version: 1292.100.5
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/usr/lib/system/libcache.dylib', '/usr/lib/system/libcommonCrypto.dylib', 
@@ -49,9 +49,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D986B653-2714-3F3D-BB1D-0CAC9558252C
   - target:          x86_64-ios-simulator
-    value:           8D1CE534-EDB1-32EE-8991-8B37D7F49319
+    value:           D2A79B68-DA8F-3B0E-8F82-5DC6E7A186BD
   - target:          arm64-ios-simulator
-    value:           18E90C24-932D-3565-B8EE-A820EB0B6749
+    value:           77B8F941-FE63-3657-A9D9-7910C5A9E783
 install-name:    '/usr/lib/system/libcache.dylib'
 current-version: 83
 parent-umbrella:
@@ -79,11 +79,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           2E88EC2B-F951-3D76-B114-F6CC635EFE8C
   - target:          x86_64-ios-simulator
-    value:           FC16096D-0F84-3824-B851-109756A304CA
+    value:           A41E2620-D372-3E6E-AE70-149BE77A9DE8
   - target:          arm64-ios-simulator
-    value:           EF006A83-C61C-3326-AE5A-367029F84787
+    value:           59860EBB-DE2A-36FF-BC21-65514D95ED3B
 install-name:    '/usr/lib/system/libcommonCrypto.dylib'
-current-version: 60178.40.2
+current-version: 60178.100.1
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -173,9 +173,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D8628B7C-7D84-38E0-A80E-E38B64402F1C
   - target:          x86_64-ios-simulator
-    value:           AD0A190C-222F-3389-A995-3936429B9323
+    value:           648F868F-83C8-35AB-9DF1-310FA73B354E
   - target:          arm64-ios-simulator
-    value:           F5C99A29-222C-3A9E-AB2B-8E8C2E343506
+    value:           431F7191-67EC-33D9-AB51-308F7D8E7EA4
 install-name:    '/usr/lib/system/libcompiler_rt.dylib'
 current-version: 102.3
 parent-umbrella:
@@ -368,9 +368,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C26F1F85-E9E0-33E9-9005-F269F30AD13C
   - target:          x86_64-ios-simulator
-    value:           1EDC98D3-FECD-3B9C-A597-8BCBAB5769D4
+    value:           24DB7F96-E66D-3D9A-BD33-006D30665530
   - target:          arm64-ios-simulator
-    value:           9252ECEA-38B8-3B27-AD2D-D2E89ADFF1D7
+    value:           AA7DCEA3-CCFA-3670-AEB7-B272A41CC471
 install-name:    '/usr/lib/system/libcopyfile.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -389,11 +389,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1083CFDB-EBA8-3211-B488-CC549B5DDD4D
   - target:          x86_64-ios-simulator
-    value:           808EC1F0-29E1-3100-9B0C-41F13889C89E
+    value:           9E1D6EAE-94A3-37D0-9EBF-8C17B10FC076
   - target:          arm64-ios-simulator
-    value:           AE328CC5-A39C-3B3E-95B3-204A08632A98
+    value:           822426F6-CEEA-3CAE-A640-D2766ABC1765
 install-name:    '/usr/lib/system/libcorecrypto.dylib'
-current-version: 1000.80.5
+current-version: 1000.100.38
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -423,7 +423,7 @@ exports:
                        _ccaes_intel_xts_encrypt_aesni_mode, _ccaes_intel_xts_encrypt_opt_mode, 
                        _ccsha1_vng_intel_SupplementalSSE3_di, _ccsha224_vng_intel_SupplementalSSE3_di, 
                        _ccsha256_vng_intel_SupplementalSSE3_di ]
-  - targets:         [ arm64-ios-simulator, i386-ios-simulator ]
+  - targets:         [ arm64-ios-simulator ]
     symbols:         [ _ccaes_arm_cbc_decrypt_mode, _ccaes_arm_cbc_encrypt_mode, 
                        _ccaes_arm_cfb_decrypt_mode, _ccaes_arm_cfb_encrypt_mode, 
                        _ccaes_arm_ecb_decrypt_mode, _ccaes_arm_ecb_encrypt_mode, 
@@ -550,56 +550,57 @@ exports:
                        _cch2c_p384_sha384_sae_compat_info, _cch2c_p384_sha512_sswu_ro_info, 
                        _cch2c_p521_sha512_sswu_ro_info, _cchkdf, _cchkdf_expand, 
                        _cchkdf_extract, _cchmac, _cchmac_final, _cchmac_init, _cchmac_update, 
-                       _cchpke_initiator_encrypt, _cchpke_initiator_seal, _cchpke_initiator_setup, 
-                       _cchpke_kem_generate_key_pair, _cchpke_params_sizeof_aead_key, 
+                       _cchpke_initiator_encrypt, _cchpke_initiator_export, _cchpke_initiator_seal, 
+                       _cchpke_initiator_setup, _cchpke_kem_generate_key_pair, _cchpke_params_sizeof_aead_key, 
                        _cchpke_params_sizeof_aead_nonce, _cchpke_params_sizeof_aead_tag, 
                        _cchpke_params_sizeof_kdf_hash, _cchpke_params_sizeof_kem_enc, 
                        _cchpke_params_sizeof_kem_pk, _cchpke_params_sizeof_kem_pk_marshalled, 
-                       _cchpke_params_sizeof_kem_sk, _cchpke_params_sizeof_kem_zz, 
+                       _cchpke_params_sizeof_kem_shared_secret, _cchpke_params_sizeof_kem_sk, 
                        _cchpke_params_x25519_AESGCM128_HKDF_SHA256, _cchpke_responder_decrypt, 
-                       _cchpke_responder_open, _cchpke_responder_setup, _ccmd2_ltc_di, 
-                       _ccmd4_ltc_di, _ccmd5_di, _ccmd5_ltc_di, _ccmgf, _ccmode_factory_cbc_decrypt, 
-                       _ccmode_factory_cbc_encrypt, _ccmode_factory_ccm_decrypt, 
-                       _ccmode_factory_ccm_encrypt, _ccmode_factory_cfb8_decrypt, 
-                       _ccmode_factory_cfb8_encrypt, _ccmode_factory_cfb_decrypt, 
-                       _ccmode_factory_cfb_encrypt, _ccmode_factory_ctr_crypt, _ccmode_factory_gcm_decrypt, 
-                       _ccmode_factory_gcm_encrypt, _ccmode_factory_ofb_crypt, _ccmode_factory_omac_decrypt, 
-                       _ccmode_factory_omac_encrypt, _ccmode_factory_siv_decrypt, 
-                       _ccmode_factory_siv_encrypt, _ccmode_factory_xts_decrypt, 
-                       _ccmode_factory_xts_encrypt, _ccn_add, _ccn_add1, _ccn_addmul1, 
-                       _ccn_bitlen, _ccn_cmp, _ccn_cmpn, _ccn_div_euclid, _ccn_lprint, 
-                       _ccn_mul, _ccn_mul1, _ccn_n, _ccn_print, _ccn_random_bits, 
-                       _ccn_read_uint, _ccn_set, _ccn_shift_right, _ccn_sub, _ccn_sub1, 
-                       _ccn_write_int, _ccn_write_int_size, _ccn_write_uint, _ccn_write_uint_padded_ct, 
-                       _ccn_write_uint_size, _ccn_zero_multi, _ccnistkdf_ctr_cmac, 
-                       _ccnistkdf_ctr_cmac_fixed, _ccnistkdf_ctr_hmac, _ccnistkdf_ctr_hmac_fixed, 
-                       _ccnistkdf_fb_hmac, _ccnistkdf_fb_hmac_fixed, _ccpad_cts1_decrypt, 
-                       _ccpad_cts1_encrypt, _ccpad_cts2_decrypt, _ccpad_cts2_encrypt, 
-                       _ccpad_cts3_decrypt, _ccpad_cts3_encrypt, _ccpad_pkcs7_decode, 
-                       _ccpad_pkcs7_decrypt, _ccpad_pkcs7_ecb_decrypt, _ccpad_pkcs7_ecb_encrypt, 
-                       _ccpad_pkcs7_encrypt, _ccpad_xts_decrypt, _ccpad_xts_encrypt, 
-                       _ccpbkdf2_hmac, _ccpoly1305, _ccpoly1305_final, _ccpoly1305_init, 
-                       _ccpoly1305_update, _ccrc2_cbc_decrypt_mode, _ccrc2_cbc_encrypt_mode, 
-                       _ccrc2_cfb8_decrypt_mode, _ccrc2_cfb8_encrypt_mode, _ccrc2_cfb_decrypt_mode, 
-                       _ccrc2_cfb_encrypt_mode, _ccrc2_ctr_crypt_mode, _ccrc2_ecb_decrypt_mode, 
-                       _ccrc2_ecb_encrypt_mode, _ccrc2_ofb_crypt_mode, _ccrc4, _ccrc4_eay, 
-                       _ccrmd160_ltc_di, _ccrng, _ccrng_drbg_done, _ccrng_drbg_init, 
-                       _ccrng_drbg_init_withdrbg, _ccrng_drbg_reseed, _ccrng_ecfips_test_init, 
-                       _ccrng_pbkdf2_prng_init, _ccrng_rsafips_test_init, _ccrng_rsafips_test_set_next, 
-                       _ccrng_sequence_init, _ccrng_system_done, _ccrng_system_init, 
-                       _ccrng_test_done, _ccrng_test_init, _ccrng_uniform, _ccrsa_decrypt_eme_pkcs1v15, 
-                       _ccrsa_decrypt_eme_pkcs1v15_blinded, _ccrsa_decrypt_oaep, 
-                       _ccrsa_decrypt_oaep_blinded, _ccrsa_dump_full_key, _ccrsa_dump_public_key, 
-                       _ccrsa_eme_pkcs1v15_decode, _ccrsa_eme_pkcs1v15_encode, _ccrsa_emsa_pkcs1v15_encode, 
-                       _ccrsa_emsa_pkcs1v15_verify, _ccrsa_emsa_pss_decode, _ccrsa_emsa_pss_encode, 
-                       _ccrsa_encrypt_eme_pkcs1v15, _ccrsa_encrypt_oaep, _ccrsa_export_pub, 
-                       _ccrsa_generate_fips186_key, _ccrsa_generate_key, _ccrsa_get_fullkey_components, 
-                       _ccrsa_get_pubkey_components, _ccrsa_import_pub, _ccrsa_init_pub, 
-                       _ccrsa_make_priv, _ccrsa_make_pub, _ccrsa_oaep_decode_parameter, 
-                       _ccrsa_oaep_encode_parameter, _ccrsa_priv_crypt, _ccrsa_priv_crypt_blinded, 
-                       _ccrsa_pub_crypt, _ccrsa_pubkeylength, _ccrsa_recover_priv, 
-                       _ccrsa_sign_pkcs1v15, _ccrsa_sign_pkcs1v15_msg, _ccrsa_sign_pss, 
-                       _ccrsa_sign_pss_msg, _ccrsa_verify_pkcs1v15, _ccrsa_verify_pkcs1v15_allowshortsigs, 
+                       _cchpke_responder_export, _cchpke_responder_open, _cchpke_responder_setup, 
+                       _ccmd2_ltc_di, _ccmd4_ltc_di, _ccmd5_di, _ccmd5_ltc_di, _ccmgf, 
+                       _ccmode_factory_cbc_decrypt, _ccmode_factory_cbc_encrypt, 
+                       _ccmode_factory_ccm_decrypt, _ccmode_factory_ccm_encrypt, 
+                       _ccmode_factory_cfb8_decrypt, _ccmode_factory_cfb8_encrypt, 
+                       _ccmode_factory_cfb_decrypt, _ccmode_factory_cfb_encrypt, 
+                       _ccmode_factory_ctr_crypt, _ccmode_factory_gcm_decrypt, _ccmode_factory_gcm_encrypt, 
+                       _ccmode_factory_ofb_crypt, _ccmode_factory_omac_decrypt, _ccmode_factory_omac_encrypt, 
+                       _ccmode_factory_siv_decrypt, _ccmode_factory_siv_encrypt, 
+                       _ccmode_factory_xts_decrypt, _ccmode_factory_xts_encrypt, 
+                       _ccn_add, _ccn_add1, _ccn_addmul1, _ccn_bitlen, _ccn_cmp, 
+                       _ccn_cmpn, _ccn_div_euclid, _ccn_lprint, _ccn_mul, _ccn_mul1, 
+                       _ccn_n, _ccn_print, _ccn_random_bits, _ccn_read_uint, _ccn_set, 
+                       _ccn_shift_right, _ccn_sub, _ccn_sub1, _ccn_write_int, _ccn_write_int_size, 
+                       _ccn_write_uint, _ccn_write_uint_padded_ct, _ccn_write_uint_size, 
+                       _ccn_zero_multi, _ccnistkdf_ctr_cmac, _ccnistkdf_ctr_cmac_fixed, 
+                       _ccnistkdf_ctr_hmac, _ccnistkdf_ctr_hmac_fixed, _ccnistkdf_fb_hmac, 
+                       _ccnistkdf_fb_hmac_fixed, _ccpad_cts1_decrypt, _ccpad_cts1_encrypt, 
+                       _ccpad_cts2_decrypt, _ccpad_cts2_encrypt, _ccpad_cts3_decrypt, 
+                       _ccpad_cts3_encrypt, _ccpad_pkcs7_decode, _ccpad_pkcs7_decrypt, 
+                       _ccpad_pkcs7_ecb_decrypt, _ccpad_pkcs7_ecb_encrypt, _ccpad_pkcs7_encrypt, 
+                       _ccpad_xts_decrypt, _ccpad_xts_encrypt, _ccpbkdf2_hmac, _ccpoly1305, 
+                       _ccpoly1305_final, _ccpoly1305_init, _ccpoly1305_update, _ccrc2_cbc_decrypt_mode, 
+                       _ccrc2_cbc_encrypt_mode, _ccrc2_cfb8_decrypt_mode, _ccrc2_cfb8_encrypt_mode, 
+                       _ccrc2_cfb_decrypt_mode, _ccrc2_cfb_encrypt_mode, _ccrc2_ctr_crypt_mode, 
+                       _ccrc2_ecb_decrypt_mode, _ccrc2_ecb_encrypt_mode, _ccrc2_ofb_crypt_mode, 
+                       _ccrc4, _ccrc4_eay, _ccrmd160_ltc_di, _ccrng, _ccrng_drbg_done, 
+                       _ccrng_drbg_init, _ccrng_drbg_init_withdrbg, _ccrng_drbg_reseed, 
+                       _ccrng_ecfips_test_init, _ccrng_pbkdf2_prng_init, _ccrng_rsafips_test_init, 
+                       _ccrng_rsafips_test_set_next, _ccrng_sequence_init, _ccrng_system_done, 
+                       _ccrng_system_init, _ccrng_test_done, _ccrng_test_init, _ccrng_uniform, 
+                       _ccrsa_decrypt_eme_pkcs1v15, _ccrsa_decrypt_eme_pkcs1v15_blinded, 
+                       _ccrsa_decrypt_oaep, _ccrsa_decrypt_oaep_blinded, _ccrsa_dump_full_key, 
+                       _ccrsa_dump_public_key, _ccrsa_eme_pkcs1v15_decode, _ccrsa_eme_pkcs1v15_encode, 
+                       _ccrsa_emsa_pkcs1v15_encode, _ccrsa_emsa_pkcs1v15_verify, 
+                       _ccrsa_emsa_pss_decode, _ccrsa_emsa_pss_encode, _ccrsa_encrypt_eme_pkcs1v15, 
+                       _ccrsa_encrypt_oaep, _ccrsa_export_pub, _ccrsa_generate_fips186_key, 
+                       _ccrsa_generate_key, _ccrsa_get_fullkey_components, _ccrsa_get_pubkey_components, 
+                       _ccrsa_import_pub, _ccrsa_init_pub, _ccrsa_make_priv, _ccrsa_make_pub, 
+                       _ccrsa_oaep_decode_parameter, _ccrsa_oaep_encode_parameter, 
+                       _ccrsa_priv_crypt, _ccrsa_priv_crypt_blinded, _ccrsa_pub_crypt, 
+                       _ccrsa_pubkeylength, _ccrsa_recover_priv, _ccrsa_sign_pkcs1v15, 
+                       _ccrsa_sign_pkcs1v15_msg, _ccrsa_sign_pss, _ccrsa_sign_pss_msg, 
+                       _ccrsa_verify_pkcs1v15, _ccrsa_verify_pkcs1v15_allowshortsigs, 
                        _ccrsa_verify_pkcs1v15_digest, _ccrsa_verify_pkcs1v15_msg, 
                        _ccrsa_verify_pss, _ccrsa_verify_pss_digest, _ccrsa_verify_pss_msg, 
                        _ccscrypt, _ccscrypt_storage_size, _ccsha1_di, _ccsha1_eay_di, 
@@ -623,9 +624,11 @@ exports:
                        _ccsrp_test_calculations, _ccss_shamir_parameters_init, _ccss_shamir_parameters_maximum_secret_length, 
                        _ccss_shamir_share_bag_add_share, _ccss_shamir_share_bag_init, 
                        _ccss_shamir_share_bag_recover_secret, _ccss_shamir_share_export, 
-                       _ccss_shamir_share_generator_generate_share, _ccss_shamir_share_generator_init, 
+                       _ccss_shamir_share_generator_deserialize, _ccss_shamir_share_generator_generate_share, 
+                       _ccss_shamir_share_generator_init, _ccss_shamir_share_generator_serialize, 
                        _ccss_shamir_share_import, _ccss_shamir_share_init, _ccss_shamir_share_sizeof_y, 
-                       _ccvrf_derive_public_key, _ccvrf_factory_irtfdraft03, _ccvrf_factory_irtfdraft03_default, 
+                       _ccss_sizeof_shamir_share_generator_serialization, _ccvrf_derive_public_key, 
+                       _ccvrf_factory_irtfdraft03, _ccvrf_factory_irtfdraft03_default, 
                        _ccvrf_proof_to_hash, _ccvrf_prove, _ccvrf_sizeof_hash, _ccvrf_sizeof_proof, 
                        _ccvrf_sizeof_public_key, _ccvrf_sizeof_secret_key, _ccvrf_verify, 
                        _ccwrap_auth_decrypt, _ccwrap_auth_decrypt_withiv, _ccwrap_auth_encrypt, 
@@ -648,11 +651,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A291C67D-2E52-3E09-BCCE-D962EF8B51C6
   - target:          x86_64-ios-simulator
-    value:           81D9C4A5-38BF-33B4-A44C-D93FDFF11738
+    value:           36CBB11C-F0E3-3D0E-821F-1075F517E68A
   - target:          arm64-ios-simulator
-    value:           CC512A6B-AD10-3D1E-B3DB-7E14FE2A71F1
+    value:           6653E118-2D29-3A61-AC9A-EEC51251BF71
 install-name:    '/usr/lib/system/libdispatch.dylib'
-current-version: 1271.40.12
+current-version: 1271.100.5
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -811,11 +814,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           03523D41-C2CD-31EC-8B43-E76F84CD7466
   - target:          x86_64-ios-simulator
-    value:           B1C08128-9D5F-318A-904B-B17BAF875EA1
+    value:           75E049C1-6E0C-3015-ACBB-339FD1E79077
   - target:          arm64-ios-simulator
-    value:           C8D5373A-CDE2-3C78-BD09-154BA91EFBC2
+    value:           8C2C0C5D-B271-36C0-B303-F4CB0A757027
 install-name:    '/usr/lib/system/libdyld.dylib'
-current-version: 828.5
+current-version: 851.28
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -837,13 +840,13 @@ exports:
                        __dyld_has_fix_for_radar, __dyld_image_count, __dyld_images_for_addresses, 
                        __dyld_initializer, __dyld_is_memory_immutable, __dyld_is_objc_constant, 
                        __dyld_launch_mode, __dyld_missing_symbol_abort, __dyld_objc_notify_register, 
-                       __dyld_process_info_create, __dyld_process_info_for_each_aot_image, 
-                       __dyld_process_info_for_each_image, __dyld_process_info_for_each_segment, 
-                       __dyld_process_info_get_aot_cache, __dyld_process_info_get_cache, 
-                       __dyld_process_info_get_platform, __dyld_process_info_get_state, 
-                       __dyld_process_info_notify, __dyld_process_info_notify_main, 
-                       __dyld_process_info_notify_release, __dyld_process_info_notify_retain, 
-                       __dyld_process_info_release, __dyld_process_info_retain, __dyld_register_driverkit_main, 
+                       __dyld_process_info_create, __dyld_process_info_for_each_image, 
+                       __dyld_process_info_for_each_segment, __dyld_process_info_get_aot_cache, 
+                       __dyld_process_info_get_cache, __dyld_process_info_get_platform, 
+                       __dyld_process_info_get_state, __dyld_process_info_notify, 
+                       __dyld_process_info_notify_main, __dyld_process_info_notify_release, 
+                       __dyld_process_info_notify_retain, __dyld_process_info_release, 
+                       __dyld_process_info_retain, __dyld_register_driverkit_main, 
                        __dyld_register_for_bulk_image_loads, __dyld_register_for_image_loads, 
                        __dyld_register_func_for_add_image, __dyld_register_func_for_remove_image, 
                        __dyld_shared_cache_contains_path, __dyld_shared_cache_is_locally_built, 
@@ -867,11 +870,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           CBFD7F72-76F5-35CA-AB86-B21A64FE2CE6
   - target:          x86_64-ios-simulator
-    value:           6E881886-903F-3AA3-81FD-DB527B7C0C6F
+    value:           2532ACBB-8385-3F39-B037-D77CBEA57384
   - target:          arm64-ios-simulator
-    value:           FED12C41-B1F7-36E5-A48F-FC7015D6B911
+    value:           AC4AFA17-6593-3C8F-A6A1-E5F9DB78A60F
 install-name:    '/usr/lib/system/liblaunch.dylib'
-current-version: 2038.80.3
+current-version: 2038.100.48
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -925,11 +928,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           88D2A362-C296-3072-A2E5-F3F4994DA069
   - target:          x86_64-ios-simulator
-    value:           36A2C5E4-14C3-3094-B3F9-BC92FB08FE81
+    value:           3F0E2974-49CC-3BCC-9A41-D06BBBDD490C
   - target:          arm64-ios-simulator
-    value:           0F4FF214-52AA-311D-A3FA-02BBC9CD53E2
+    value:           0E5D7830-299C-3E10-A5FD-0E8800A60587
 install-name:    '/usr/lib/system/libmacho.dylib'
-current-version: 973.0.1
+current-version: 980
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -980,11 +983,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           FBB37E22-AE1F-3020-B319-7D325CEE2D2E
   - target:          x86_64-ios-simulator
-    value:           4872E337-D8C4-309A-981F-AAA35DE071FF
+    value:           E3FE1B0B-ADEC-35C4-9977-97C4C93D922F
   - target:          arm64-ios-simulator
-    value:           EECAFFD5-95BD-3DCE-96EB-9C328D5620F1
+    value:           359221A4-773F-30F6-9196-7615165CA275
 install-name:    '/usr/lib/system/libremovefile.dylib'
-current-version: 49.40.3
+current-version: 49.102.1
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1004,9 +1007,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E43914E6-C4F6-3750-BF7D-16CC4220B12A
   - target:          x86_64-ios-simulator
-    value:           7EBF5DE1-E543-3DF7-9EF3-1E451F6208CC
+    value:           442BF647-9220-3D1E-A741-F429A5E41632
   - target:          arm64-ios-simulator
-    value:           37AEE228-3052-3FF7-AFE1-CCEAFAB9E88E
+    value:           1C7117EB-5C9A-39D7-B27B-3756A50E1E11
 install-name:    '/usr/lib/system/libsystem_asl.dylib'
 current-version: 385
 parent-umbrella:
@@ -1091,9 +1094,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           35BCAF77-06DE-302B-A5CA-EC3E73F59412
   - target:          x86_64-ios-simulator
-    value:           4E249A31-40E0-3B80-8A07-D83E3ECDA85C
+    value:           D2E00ACF-14CB-3D4B-84AE-B2DD06873CAB
   - target:          arm64-ios-simulator
-    value:           3D54D5AD-BD7C-34B8-AEA9-116394978247
+    value:           3AA706E4-8A31-3CE7-9568-4E5006A52E71
 install-name:    '/usr/lib/system/libsystem_blocks.dylib'
 current-version: 78
 parent-umbrella:
@@ -1116,11 +1119,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           8402DF3A-C712-3D6B-B2E7-3C136E47B208
   - target:          x86_64-ios-simulator
-    value:           FC28ADCA-7122-38BC-ACE4-F089A58323F1
+    value:           BB1043FC-B4AF-33E4-A1F6-4904EC2E54F8
   - target:          arm64-ios-simulator
-    value:           4938532B-7D1E-3F50-8D39-F20AF6C5A5E5
+    value:           C2D117F6-C0DC-3920-80DE-91FEB3576BC5
 install-name:    '/usr/lib/system/libsystem_c.dylib'
-current-version: 1439.40.11
+current-version: 1439.100.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1131,10 +1134,10 @@ exports:
                        '$ld$weak$os10.11$_dirname_r', '$ld$weak$os10.11$_getentropy', 
                        '$ld$weak$os10.11$_mkostemp', '$ld$weak$os10.11$_mkostemps', 
                        '$ld$weak$os10.11$_timingsafe_bcmp', __NSSetProgramVars, ___cVersionNumber, 
-                       ___cVersionString, ___fdnlist, _kvm_close, _kvm_getargv, _kvm_getenvv, 
-                       _kvm_geterr, _kvm_getfiles, _kvm_getloadavg, _kvm_getprocs, 
-                       _kvm_nlist, _kvm_open, _kvm_openfiles, _kvm_read, _kvm_uread, 
-                       _kvm_write, _nlist, _wordexp, _wordfree ]
+                       ___cVersionString, ___fdnlist, __atexit_receipt, _kvm_close, 
+                       _kvm_getargv, _kvm_getenvv, _kvm_geterr, _kvm_getfiles, _kvm_getloadavg, 
+                       _kvm_getprocs, _kvm_nlist, _kvm_open, _kvm_openfiles, _kvm_read, 
+                       _kvm_uread, _kvm_write, _nlist, _wordexp, _wordfree ]
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ ___strtopx, mcount ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1187,24 +1190,24 @@ exports:
                        ___tens_D2A, ___tinytens_D2A, ___tolower, ___tolower_l, ___toupper, 
                        ___toupper_l, ___trailz_D2A, ___ulp_D2A, ___ungetc, ___ungetwc, 
                        ___vsnprintf_chk, ___vsprintf_chk, ___wcwidth, ___wcwidth_l, 
-                       __allocenvstate, __atexit_receipt, __c_locale, __cleanup, 
-                       __closeutx, __copyenv, __cthread_init_routine, __deallocenvstate, 
-                       __endutxent, __flockfile_debug_stub, __fseeko, __ftello, __fwalk, 
-                       __getenvp, __getutxent, __getutxid, __getutxline, __inet_aton_check, 
-                       __init_clock_port, __int_to_time, __libc_fork_child, __libc_initializer, 
-                       __long_to_time, __mkpath_np, __mktemp, __openutx, __os_assert_log, 
-                       __os_assert_log_ctx, __os_assumes_log, __os_assumes_log_ctx, 
-                       __os_avoid_tail_call, __os_crash, __os_crash_callback, __os_crash_fmt, 
-                       __os_debug_log, __os_debug_log_error_str, __putenvp, __pututxline, 
-                       __rand48_add, __rand48_mult, __rand48_seed, __readdir_unlocked, 
-                       __reclaim_telldir, __seekdir, __setenvp, __setutxent, __sigaction_nobind, 
-                       __sigintr, __signal_nobind, __sigvec_nobind, __sread, __sseek, 
-                       __subsystem_init, __swrite, __time32_to_time, __time64_to_time, 
-                       __time_to_int, __time_to_long, __time_to_time32, __time_to_time64, 
-                       __unsetenvp, __utmpxname, _a64l, _abort, _abort_report_np, 
-                       _abs, _acl_add_flag_np, _acl_add_perm, _acl_calc_mask, _acl_clear_flags_np, 
-                       _acl_clear_perms, _acl_copy_entry, _acl_copy_ext, _acl_copy_ext_native, 
-                       _acl_copy_int, _acl_copy_int_native, _acl_create_entry, _acl_create_entry_np, 
+                       __allocenvstate, __c_locale, __cleanup, __closeutx, __copyenv, 
+                       __cthread_init_routine, __deallocenvstate, __endutxent, __flockfile_debug_stub, 
+                       __fseeko, __ftello, __fwalk, __getenvp, __getutxent, __getutxid, 
+                       __getutxline, __inet_aton_check, __init_clock_port, __int_to_time, 
+                       __libc_fork_child, __libc_initializer, __long_to_time, __mkpath_np, 
+                       __mktemp, __openutx, __os_assert_log, __os_assert_log_ctx, 
+                       __os_assumes_log, __os_assumes_log_ctx, __os_avoid_tail_call, 
+                       __os_crash, __os_crash_callback, __os_crash_fmt, __os_debug_log, 
+                       __os_debug_log_error_str, __putenvp, __pututxline, __rand48_add, 
+                       __rand48_mult, __rand48_seed, __readdir_unlocked, __reclaim_telldir, 
+                       __seekdir, __setenvp, __setutxent, __sigaction_nobind, __sigintr, 
+                       __signal_nobind, __sigvec_nobind, __sread, __sseek, __subsystem_init, 
+                       __swrite, __time32_to_time, __time64_to_time, __time_to_int, 
+                       __time_to_long, __time_to_time32, __time_to_time64, __unsetenvp, 
+                       __utmpxname, _a64l, _abort, _abort_report_np, _abs, _acl_add_flag_np, 
+                       _acl_add_perm, _acl_calc_mask, _acl_clear_flags_np, _acl_clear_perms, 
+                       _acl_copy_entry, _acl_copy_ext, _acl_copy_ext_native, _acl_copy_int, 
+                       _acl_copy_int_native, _acl_create_entry, _acl_create_entry_np, 
                        _acl_delete_def_file, _acl_delete_entry, _acl_delete_fd_np, 
                        _acl_delete_file_np, _acl_delete_flag_np, _acl_delete_link_np, 
                        _acl_delete_perm, _acl_dup, _acl_free, _acl_from_text, _acl_get_entry, 
@@ -1410,13 +1413,13 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C19FECDC-EA07-3BC0-912C-DEBBA9F8B321
+    value:           12BCF738-F776-3DE1-9583-4F7A1A24AFD9
   - target:          arm64-ios-simulator
-    value:           7B8A423E-C1A8-3559-B253-1FE4ED9453C2
+    value:           9C4881FD-D124-37EB-8C7F-86E4CE2B6DF5
 install-name:    '/usr/lib/system/libsystem_collections.dylib'
-current-version: 1439.40.11
+current-version: 1439.100.3
 parent-umbrella:
-  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -1436,11 +1439,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           9E115698-B158-3A49-878B-680E4FE4D8FC
   - target:          x86_64-ios-simulator
-    value:           3E775779-41F9-3462-9503-C4D6FEE88ABA
+    value:           AD355D2A-1229-3C39-B5A1-2D9BD197442C
   - target:          arm64-ios-simulator
-    value:           16DB641E-78D0-3665-B414-BB81EF3DE4D5
+    value:           3A510F08-5496-37C2-825C-834DC4B87EA3
 install-name:    '/usr/lib/system/libsystem_configuration.dylib'
-current-version: 1109.60.2
+current-version: 1109.100.4
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1465,9 +1468,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7FE4AE9B-24C3-343B-A816-49226CB3E125
   - target:          x86_64-ios-simulator
-    value:           43B08607-1D78-32C5-A95D-B081F1C5CF2B
+    value:           A7517823-63C0-3B64-9583-776DBE880CFE
   - target:          arm64-ios-simulator
-    value:           4FB3D4A8-7B05-34A5-B476-AA0F398B5D8C
+    value:           13ED8A49-A235-3CA5-8EA8-72B596F76B4F
 install-name:    '/usr/lib/system/libsystem_containermanager.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1527,9 +1530,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           28CDC4DF-7A1A-33C4-A4C0-D7D9EF21C912
   - target:          x86_64-ios-simulator
-    value:           AB1242D5-6146-3360-80FD-966FE68750E7
+    value:           2CE0B684-9B04-33C8-AE8A-11ED2D7B1C0B
   - target:          arm64-ios-simulator
-    value:           0ECF1E5B-7396-3BBC-9CCF-4AF1B1F969CB
+    value:           00CB4757-8F96-36D2-B9D2-39078088E364
 install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
 current-version: 125.2
 parent-umbrella:
@@ -1551,12 +1554,12 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DD199ABA-4319-3B6E-9AC1-C68EAE4A3E23
+    value:           149AB288-45C4-3BD5-B5BB-958C202662E1
   - target:          arm64-ios-simulator
-    value:           D5FF0A4C-44D2-30C8-9072-FFC912E82148
+    value:           514BF5EC-E81A-3134-9BDC-63E51A9D9D13
 install-name:    '/usr/lib/system/libsystem_darwin.dylib'
 parent-umbrella:
-  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -1588,11 +1591,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C29A298-C47F-3FED-89AB-B03FAB69787E
   - target:          x86_64-ios-simulator
-    value:           7D9553F5-6E05-3B1F-A05E-90ECAFBB70E6
+    value:           5A0D5718-1019-3373-932B-4F79D8B179EA
   - target:          arm64-ios-simulator
-    value:           83038161-EAC9-350B-875B-AB732E8FBAF3
+    value:           193F6850-9C34-3CB6-A046-537A47A96614
 install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
-current-version: 1310.80.1
+current-version: 1310.100.10
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1625,13 +1628,13 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E1F96156-21DF-3EFE-B6DA-CDDC85979043
+    value:           CFA1634A-6D08-36E9-888C-A5E18553AA8A
   - target:          arm64-ios-simulator
-    value:           CD444FEF-740E-341E-8CE8-87C82F199CD3
+    value:           B29C6F26-DFCA-38E8-9AA5-4B55EB4BA680
 install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
 current-version: 28.60.1
 parent-umbrella:
-  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -1643,9 +1646,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DA29882D-3652-35B1-848B-93F2D4C871A4
   - target:          x86_64-ios-simulator
-    value:           38C4A56B-ABE3-3063-B8F8-E1E9AAB77FB0
+    value:           6A7F06A1-A681-3501-922B-2E53898A92D5
   - target:          arm64-ios-simulator
-    value:           4AC908CF-687E-39B7-B923-01DF25BBBEC1
+    value:           E7FC6CCB-518C-392A-84C9-5B86EB91B28F
 install-name:    '/usr/lib/system/libsystem_info.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1799,29 +1802,36 @@ exports:
                        _yp_next, _yp_order, _yp_unbind, _yperr_string, _ypprot_err ]
 --- !tapi-tbd
 tbd-version:     4
-targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst ]
+targets:         [ i386-macos, i386-maccatalyst, x86_64-macos, x86_64-maccatalyst, 
+                   arm64-macos, arm64-maccatalyst, arm64e-macos, arm64e-maccatalyst ]
 uuids:
   - target:          i386-macos
-    value:           1693856A-B4C9-37DD-9A85-3963B0C8DDC4
+    value:           095A8FFC-DD95-3B6A-8F79-B12FD4BFF22B
+  - target:          i386-maccatalyst
+    value:           095A8FFC-DD95-3B6A-8F79-B12FD4BFF22B
   - target:          x86_64-macos
-    value:           E2674B54-84EA-3B89-87D4-9B92488D335E
+    value:           8BC80F32-1A76-3DC9-AC37-56E487950289
   - target:          x86_64-maccatalyst
-    value:           E2674B54-84EA-3B89-87D4-9B92488D335E
+    value:           8BC80F32-1A76-3DC9-AC37-56E487950289
   - target:          arm64-macos
-    value:           00000000-0000-0000-0000-000000000000
+    value:           23759766-6CCC-3223-B61A-98D5796F51D4
   - target:          arm64-maccatalyst
-    value:           00000000-0000-0000-0000-000000000000
+    value:           23759766-6CCC-3223-B61A-98D5796F51D4
+  - target:          arm64e-macos
+    value:           C29AC9A3-9616-3614-873E-5A1AC449B7FF
+  - target:          arm64e-maccatalyst
+    value:           C29AC9A3-9616-3614-873E-5A1AC449B7FF
 install-name:    '/usr/lib/system/libsystem_kernel.dylib'
-current-version: 6153.11.26
+current-version: 7195.41.8
 parent-umbrella:
   - targets:         [ i386-macos, i386-maccatalyst, x86_64-macos, x86_64-maccatalyst, 
                        arm64-macos, arm64-maccatalyst, arm64e-macos, arm64e-maccatalyst ]
     umbrella:        System
 exports:
-  - targets:         [ i386-macos ]
+  - targets:         [ i386-maccatalyst, i386-macos ]
     symbols:         [ ___aio_suspend, ___close, ___fsync, ___msgrcv, ___msgsnd, 
-                       ___poll, ___pread, ___pwrite, ___read, ___readv, ___sem_wait, 
-                       ___waitid, ___write, ___writev, __mach_make_memory_entry, 
+                       ___poll, ___pread, ___preadv, ___pwrite, ___pwritev, ___read, 
+                       ___readv, ___sem_wait, ___waitid, ___write, ___writev, __mach_make_memory_entry, 
                        __sysenter_trap, '_accept$NOCANCEL$UNIX2003', '_accept$UNIX2003', 
                        '_aio_suspend$NOCANCEL$UNIX2003', '_aio_suspend$UNIX2003', 
                        '_bind$UNIX2003', '_chmod$UNIX2003', '_close$NOCANCEL$UNIX2003', 
@@ -1851,41 +1861,14 @@ exports:
                        '_waitid$UNIX2003', '_write$NOCANCEL$UNIX2003', '_write$UNIX2003', 
                        '_writev$NOCANCEL$UNIX2003', '_writev$UNIX2003', tramp_cerror, 
                        tramp_cerror_nocancel ]
-  - targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst ]
-    symbols:         [ __kernelrpc_mach_port_destroy_trap, '_fstat$INODE64', '_fstatat$INODE64', 
-                       '_fstatfs$INODE64', '_getfsstat$INODE64', _i386_get_ldt, _i386_set_ldt, 
-                       '_lstat$INODE64', _modwatch, '_stat$INODE64', '_statfs$INODE64', 
-                       _waitevent, _watchevent ]
-  - targets:         [ x86_64-macos, x86_64-maccatalyst ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos ]
     symbols:         [ '_pselect$1050', '_select$1050' ]
-  - targets:         [ arm64-macos, arm64-maccatalyst ]
-    symbols:         [ ___darwin_check_fd_set_overflow, ___fstat, ___fstatat, ___fstatfs, 
-                       ___getfsstat, ___libkernel_init_late, ___lstat, ___mach_eventlink_signal, 
-                       ___mach_eventlink_signal_wait_until, ___mach_eventlink_wait_until, 
-                       ___preadv_nocancel, ___proc_info_extended_id, ___pwritev_nocancel, 
-                       ___shared_region_map_and_slide_2_np, ___stat, ___statfs, ___ulock_wait2, 
-                       __current_pid, __kernelrpc_mach_port_kobject_description, 
-                       _mach_absolute_time_kernel, _mach_continuous_time_kernel, 
-                       _mach_eventlink_associate, _mach_eventlink_create, _mach_eventlink_destroy, 
-                       _mach_eventlink_disassociate, _mach_eventlink_signal, _mach_eventlink_signal_wait_until, 
-                       _mach_eventlink_wait_until, _mach_msg_priority_encode, _mach_msg_priority_is_pthread_priority, 
-                       _mach_msg_priority_overide_qos, _mach_msg_priority_qos, _mach_msg_priority_relpri, 
-                       _mach_port_kobject_description, _os_buflet_get_data_address, 
-                       _os_buflet_get_object_limit, _os_channel_buflet_alloc, _os_channel_buflet_free, 
-                       _os_packet_add_buflet, _os_packet_decrement_use_count, _os_packet_get_aggregation_type, 
-                       _os_packet_get_compression_generation_count, _os_packet_get_segment_count, 
-                       _os_packet_increment_use_count, _os_packet_set_compression_generation_count, 
-                       _os_proc_available_memory, _pivot_root, _posix_spawnattr_getarchpref_np, 
-                       _posix_spawnattr_set_platform_np, _posix_spawnattr_set_ptrauth_task_port_np, 
-                       _posix_spawnattr_set_subsystem_root_path_np, _posix_spawnattr_setarchpref_np, 
-                       _posix_spawnattr_setnosmt_np, _posix_spawnattr_setsuidcredport_np, 
-                       _preadv, '_preadv$NOCANCEL', _proc_pidpath_audittoken, _proc_set_no_smt, 
-                       _proc_setthread_no_smt, _processor_set_tasks_with_flavor, 
-                       _pwritev, '_pwritev$NOCANCEL', _stackshot_config_set_pagetable_mask, 
-                       _task_create_suid_cred, _task_inspect_for_pid, _task_read_for_pid, 
-                       _thread_convert_thread_state, _work_interval_get_flags_from_port ]
-  - targets:         [ arm64-macos, arm64-maccatalyst, i386-macos, x86_64-macos, 
-                       x86_64-maccatalyst ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos, i386-maccatalyst, i386-macos ]
+    symbols:         [ '_fstat$INODE64', '_fstatat$INODE64', '_fstatfs$INODE64', 
+                       '_getfsstat$INODE64', _i386_get_ldt, _i386_set_ldt, '_lstat$INODE64', 
+                       '_stat$INODE64', '_statfs$INODE64' ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos, i386-maccatalyst, i386-macos, 
+                       arm64-maccatalyst, arm64-macos, arm64e-maccatalyst, arm64e-macos ]
     symbols:         [ _NDR_record, _____old_semwait_signal_nocancel, _____sigwait_nocancel, 
                        ____kernelVersionNumber, ____kernelVersionString, ___abort_with_payload, 
                        ___accept, ___accept_nocancel, ___access_extended, ___aio_suspend_nocancel, 
@@ -1894,40 +1877,43 @@ exports:
                        ___channel_get_opt, ___channel_open, ___channel_set_opt, ___channel_sync, 
                        ___chmod, ___chmod_extended, ___close_nocancel, ___coalition, 
                        ___coalition_info, ___coalition_ledger, ___commpage_gettimeofday, 
-                       ___connect, ___connect_nocancel, ___copyfile, ___csrctl, ___delete, 
-                       ___disable_threadsignal, ___error, ___exit, ___fchmod, ___fchmod_extended, 
-                       ___fcntl, ___fcntl_nocancel, ___fork, ___fs_snapshot, ___fstat64_extended, 
-                       ___fstat_extended, ___fsync_nocancel, ___get_remove_counter, 
-                       ___getattrlist, ___getdirentries64, ___gethostuuid, ___getlogin, 
-                       ___getpeername, ___getpid, ___getrlimit, ___getsgroups, ___getsockname, 
-                       ___gettid, ___gettimeofday, ___getwgroups, ___guarded_open_dprotected_np, 
-                       ___guarded_open_np, ___identitysvc, ___inc_remove_counter, 
-                       ___initgroups, ___ioctl, ___iopolicysys, ___kdebug_trace, 
-                       ___kdebug_trace64, ___kdebug_trace_string, ___kdebug_typefilter, 
-                       ___kill, ___kqueue_workloop_ctl, ___lchown, ___libkernel_init, 
-                       ___libkernel_platform_init, ___libkernel_voucher_init, ___listen, 
-                       ___log_data, ___lseek, ___lstat64_extended, ___lstat_extended, 
-                       ___mac_execve, ___mac_get_fd, ___mac_get_file, ___mac_get_link, 
-                       ___mac_get_mount, ___mac_get_pid, ___mac_get_proc, ___mac_getfsstat, 
-                       ___mac_mount, ___mac_set_fd, ___mac_set_file, ___mac_set_link, 
-                       ___mac_set_proc, ___mac_syscall, ___mach_bridge_remote_time, 
-                       ___memorystatus_available_memory, ___microstackshot, ___mkdir_extended, 
-                       ___mkfifo_extended, ___mmap, ___mprotect, ___msgctl, ___msgrcv_nocancel, 
-                       ___msgsnd_nocancel, ___msgsys, ___msync, ___msync_nocancel, 
-                       ___munmap, ___nexus_create, ___nexus_deregister, ___nexus_destroy, 
-                       ___nexus_get_opt, ___nexus_open, ___nexus_register, ___nexus_set_opt, 
-                       ___old_semwait_signal, ___open, ___open_dprotected_np, ___open_extended, 
-                       ___open_nocancel, ___openat, ___openat_nocancel, ___os_nexus_flow_add, 
-                       ___os_nexus_flow_del, ___os_nexus_ifattach, ___os_nexus_ifdetach, 
-                       ___persona, ___pipe, ___poll_nocancel, ___posix_spawn, ___pread_nocancel, 
-                       ___proc_info, ___process_policy, ___pselect, ___pselect_nocancel, 
-                       ___psynch_cvbroad, ___psynch_cvclrprepost, ___psynch_cvsignal, 
-                       ___psynch_cvwait, ___psynch_mutexdrop, ___psynch_mutexwait, 
-                       ___psynch_rw_downgrade, ___psynch_rw_longrdlock, ___psynch_rw_rdlock, 
-                       ___psynch_rw_unlock, ___psynch_rw_unlock2, ___psynch_rw_upgrade, 
-                       ___psynch_rw_wrlock, ___psynch_rw_yieldwrlock, ___pthread_canceled, 
-                       ___pthread_chdir, ___pthread_fchdir, ___pthread_kill, ___pthread_markcancel, 
-                       ___pthread_sigmask, ___ptrace, ___pwrite_nocancel, ___read_nocancel, 
+                       ___connect, ___connect_nocancel, ___copyfile, ___csrctl, ___darwin_check_fd_set_overflow, 
+                       ___delete, ___disable_threadsignal, ___error, ___exit, ___fchmod, 
+                       ___fchmod_extended, ___fcntl, ___fcntl_nocancel, ___fork, 
+                       ___fs_snapshot, ___fstat64_extended, ___fstat_extended, ___fsync_nocancel, 
+                       ___get_remove_counter, ___getattrlist, ___getdirentries64, 
+                       ___gethostuuid, ___getlogin, ___getpeername, ___getpid, ___getrlimit, 
+                       ___getsgroups, ___getsockname, ___gettid, ___gettimeofday, 
+                       ___getwgroups, ___guarded_open_dprotected_np, ___guarded_open_np, 
+                       ___identitysvc, ___inc_remove_counter, ___initgroups, ___ioctl, 
+                       ___iopolicysys, ___kdebug_trace, ___kdebug_trace64, ___kdebug_trace_string, 
+                       ___kdebug_typefilter, ___kill, ___kqueue_workloop_ctl, ___lchown, 
+                       ___libkernel_init, ___libkernel_init_late, ___libkernel_platform_init, 
+                       ___libkernel_voucher_init, ___listen, ___log_data, ___lseek, 
+                       ___lstat64_extended, ___lstat_extended, ___mac_execve, ___mac_get_fd, 
+                       ___mac_get_file, ___mac_get_link, ___mac_get_mount, ___mac_get_pid, 
+                       ___mac_get_proc, ___mac_getfsstat, ___mac_mount, ___mac_set_fd, 
+                       ___mac_set_file, ___mac_set_link, ___mac_set_proc, ___mac_syscall, 
+                       ___mach_bridge_remote_time, ___mach_eventlink_signal, ___mach_eventlink_signal_wait_until, 
+                       ___mach_eventlink_wait_until, ___memorystatus_available_memory, 
+                       ___microstackshot, ___mkdir_extended, ___mkfifo_extended, 
+                       ___mmap, ___mprotect, ___msgctl, ___msgrcv_nocancel, ___msgsnd_nocancel, 
+                       ___msgsys, ___msync, ___msync_nocancel, ___munmap, ___nexus_create, 
+                       ___nexus_deregister, ___nexus_destroy, ___nexus_get_opt, ___nexus_open, 
+                       ___nexus_register, ___nexus_set_opt, ___old_semwait_signal, 
+                       ___open, ___open_dprotected_np, ___open_extended, ___open_nocancel, 
+                       ___openat, ___openat_nocancel, ___os_nexus_flow_add, ___os_nexus_flow_del, 
+                       ___os_nexus_ifattach, ___os_nexus_ifdetach, ___persona, ___pipe, 
+                       ___poll_nocancel, ___posix_spawn, ___pread_nocancel, ___preadv_nocancel, 
+                       ___proc_info, ___proc_info_extended_id, ___process_policy, 
+                       ___pselect, ___pselect_nocancel, ___psynch_cvbroad, ___psynch_cvclrprepost, 
+                       ___psynch_cvsignal, ___psynch_cvwait, ___psynch_mutexdrop, 
+                       ___psynch_mutexwait, ___psynch_rw_downgrade, ___psynch_rw_longrdlock, 
+                       ___psynch_rw_rdlock, ___psynch_rw_unlock, ___psynch_rw_unlock2, 
+                       ___psynch_rw_upgrade, ___psynch_rw_wrlock, ___psynch_rw_yieldwrlock, 
+                       ___pthread_canceled, ___pthread_chdir, ___pthread_fchdir, 
+                       ___pthread_kill, ___pthread_markcancel, ___pthread_sigmask, 
+                       ___ptrace, ___pwrite_nocancel, ___pwritev_nocancel, ___read_nocancel, 
                        ___readv_nocancel, ___reboot, ___recvfrom, ___recvfrom_nocancel, 
                        ___recvmsg, ___recvmsg_nocancel, ___rename, ___renameat, ___renameatx_np, 
                        ___rmdir, ___sandbox_me, ___sandbox_mm, ___sandbox_ms, ___sandbox_msp, 
@@ -1937,34 +1923,35 @@ exports:
                        ___setattrlist, ___setlogin, ___setpriority, ___setregid, 
                        ___setreuid, ___setrlimit, ___setsgroups, ___settid, ___settid_with_pid, 
                        ___settimeofday, ___setwgroups, ___sfi_ctl, ___sfi_pidctl, 
-                       ___shared_region_check_np, ___shared_region_map_and_slide_np, 
-                       ___shm_open, ___shmctl, ___shmsys, ___sigaction, ___sigaltstack, 
-                       ___sigreturn, ___sigsuspend, ___sigsuspend_nocancel, ___sigwait, 
-                       ___socketpair, ___stack_snapshot_with_config, ___stat64_extended, 
-                       ___stat_extended, ___syscall, ___syscall_logger, ___sysctl, 
-                       ___sysctlbyname, ___telemetry, ___terminate_with_payload, 
-                       ___thread_selfid, ___thread_selfusage, ___ulock_wait, ___ulock_wake, 
-                       ___umask_extended, ___unlink, ___unlinkat, ___vfork, ___wait4, 
-                       ___wait4_nocancel, ___waitid_nocancel, ___work_interval_ctl, 
-                       ___workq_kernreturn, ___workq_open, ___write_nocancel, ___writev_nocancel, 
-                       __cpu_capabilities, __cpu_has_altivec, __exit, __get_cpu_capabilities, 
-                       __getprivatesystemidentifier, __host_page_size, __init_cpu_capabilities, 
-                       __kernelrpc_host_create_mach_voucher, __kernelrpc_mach_port_allocate, 
-                       __kernelrpc_mach_port_allocate_full, __kernelrpc_mach_port_allocate_name, 
-                       __kernelrpc_mach_port_allocate_qos, __kernelrpc_mach_port_allocate_trap, 
-                       __kernelrpc_mach_port_construct, __kernelrpc_mach_port_construct_trap, 
-                       __kernelrpc_mach_port_deallocate, __kernelrpc_mach_port_deallocate_trap, 
-                       __kernelrpc_mach_port_destroy, __kernelrpc_mach_port_destruct, 
-                       __kernelrpc_mach_port_destruct_trap, __kernelrpc_mach_port_dnrequest_info, 
-                       __kernelrpc_mach_port_extract_member, __kernelrpc_mach_port_extract_member_trap, 
-                       __kernelrpc_mach_port_extract_right, __kernelrpc_mach_port_get_attributes, 
-                       __kernelrpc_mach_port_get_attributes_trap, __kernelrpc_mach_port_get_context, 
-                       __kernelrpc_mach_port_get_refs, __kernelrpc_mach_port_get_set_status, 
-                       __kernelrpc_mach_port_get_srights, __kernelrpc_mach_port_guard, 
-                       __kernelrpc_mach_port_guard_trap, __kernelrpc_mach_port_guard_with_flags, 
-                       __kernelrpc_mach_port_insert_member, __kernelrpc_mach_port_insert_member_trap, 
-                       __kernelrpc_mach_port_insert_right, __kernelrpc_mach_port_insert_right_trap, 
-                       __kernelrpc_mach_port_kernel_object, __kernelrpc_mach_port_kobject, 
+                       ___shared_region_check_np, ___shared_region_map_and_slide_2_np, 
+                       ___shared_region_map_and_slide_np, ___shm_open, ___shmctl, 
+                       ___shmsys, ___sigaction, ___sigaltstack, ___sigreturn, ___sigsuspend, 
+                       ___sigsuspend_nocancel, ___sigwait, ___socketpair, ___stack_snapshot_with_config, 
+                       ___stat64_extended, ___stat_extended, ___syscall, ___syscall_logger, 
+                       ___sysctl, ___sysctlbyname, ___telemetry, ___terminate_with_payload, 
+                       ___thread_selfid, ___thread_selfusage, ___ulock_wait, ___ulock_wait2, 
+                       ___ulock_wake, ___umask_extended, ___unlink, ___unlinkat, 
+                       ___vfork, ___wait4, ___wait4_nocancel, ___waitid_nocancel, 
+                       ___work_interval_ctl, ___workq_kernreturn, ___workq_open, 
+                       ___write_nocancel, ___writev_nocancel, __cpu_capabilities, 
+                       __cpu_has_altivec, __exit, __get_cpu_capabilities, __getprivatesystemidentifier, 
+                       __host_page_size, __init_cpu_capabilities, __kernelrpc_host_create_mach_voucher, 
+                       __kernelrpc_mach_port_allocate, __kernelrpc_mach_port_allocate_full, 
+                       __kernelrpc_mach_port_allocate_name, __kernelrpc_mach_port_allocate_qos, 
+                       __kernelrpc_mach_port_allocate_trap, __kernelrpc_mach_port_construct, 
+                       __kernelrpc_mach_port_construct_trap, __kernelrpc_mach_port_deallocate, 
+                       __kernelrpc_mach_port_deallocate_trap, __kernelrpc_mach_port_destroy, 
+                       __kernelrpc_mach_port_destruct, __kernelrpc_mach_port_destruct_trap, 
+                       __kernelrpc_mach_port_dnrequest_info, __kernelrpc_mach_port_extract_member, 
+                       __kernelrpc_mach_port_extract_member_trap, __kernelrpc_mach_port_extract_right, 
+                       __kernelrpc_mach_port_get_attributes, __kernelrpc_mach_port_get_attributes_trap, 
+                       __kernelrpc_mach_port_get_context, __kernelrpc_mach_port_get_refs, 
+                       __kernelrpc_mach_port_get_set_status, __kernelrpc_mach_port_get_srights, 
+                       __kernelrpc_mach_port_guard, __kernelrpc_mach_port_guard_trap, 
+                       __kernelrpc_mach_port_guard_with_flags, __kernelrpc_mach_port_insert_member, 
+                       __kernelrpc_mach_port_insert_member_trap, __kernelrpc_mach_port_insert_right, 
+                       __kernelrpc_mach_port_insert_right_trap, __kernelrpc_mach_port_kernel_object, 
+                       __kernelrpc_mach_port_kobject, __kernelrpc_mach_port_kobject_description, 
                        __kernelrpc_mach_port_mod_refs, __kernelrpc_mach_port_mod_refs_trap, 
                        __kernelrpc_mach_port_move_member, __kernelrpc_mach_port_move_member_trap, 
                        __kernelrpc_mach_port_names, __kernelrpc_mach_port_peek, __kernelrpc_mach_port_rename, 
@@ -2050,13 +2037,17 @@ exports:
                        _lstat, _lstat64, _mach_absolute_time, _mach_approximate_time, 
                        _mach_boottime_usec, _mach_continuous_approximate_time, _mach_continuous_time, 
                        _mach_error, _mach_error_full_diag, _mach_error_string, _mach_error_type, 
-                       _mach_generate_activity_id, _mach_get_times, _mach_host_self, 
-                       _mach_host_special_port_description, _mach_host_special_port_for_id, 
+                       _mach_eventlink_associate, _mach_eventlink_create, _mach_eventlink_destroy, 
+                       _mach_eventlink_disassociate, _mach_eventlink_signal, _mach_eventlink_signal_wait_until, 
+                       _mach_eventlink_wait_until, _mach_generate_activity_id, _mach_get_times, 
+                       _mach_host_self, _mach_host_special_port_description, _mach_host_special_port_for_id, 
                        _mach_init, _mach_make_memory_entry, _mach_make_memory_entry_64, 
                        _mach_memory_entry_access_tracking, _mach_memory_entry_ownership, 
                        _mach_memory_entry_purgable_control, _mach_memory_info, _mach_memory_object_memory_entry, 
                        _mach_memory_object_memory_entry_64, _mach_msg, _mach_msg_destroy, 
-                       _mach_msg_overwrite, _mach_msg_overwrite_trap, _mach_msg_receive, 
+                       _mach_msg_overwrite, _mach_msg_overwrite_trap, _mach_msg_priority_encode, 
+                       _mach_msg_priority_is_pthread_priority, _mach_msg_priority_overide_qos, 
+                       _mach_msg_priority_qos, _mach_msg_priority_relpri, _mach_msg_receive, 
                        _mach_msg_send, _mach_msg_server, _mach_msg_server_importance, 
                        _mach_msg_server_once, _mach_msg_trap, _mach_notify_dead_name, 
                        _mach_notify_no_senders, _mach_notify_port_deleted, _mach_notify_port_destroyed, 
@@ -2067,14 +2058,15 @@ exports:
                        _mach_port_get_attributes, _mach_port_get_context, _mach_port_get_refs, 
                        _mach_port_get_set_status, _mach_port_get_srights, _mach_port_guard, 
                        _mach_port_guard_with_flags, _mach_port_insert_member, _mach_port_insert_right, 
-                       _mach_port_kernel_object, _mach_port_kobject, _mach_port_mod_refs, 
-                       _mach_port_move_member, _mach_port_names, _mach_port_peek, 
-                       _mach_port_rename, _mach_port_request_notification, _mach_port_set_attributes, 
-                       _mach_port_set_context, _mach_port_set_mscount, _mach_port_set_seqno, 
-                       _mach_port_space_basic_info, _mach_port_space_info, _mach_port_swap_guard, 
-                       _mach_port_type, _mach_port_unguard, _mach_ports_lookup, _mach_ports_register, 
-                       _mach_reply_port, _mach_right_recv_construct, _mach_right_recv_destruct, 
-                       _mach_right_send_create, _mach_right_send_once_consume, _mach_right_send_once_create, 
+                       _mach_port_kernel_object, _mach_port_kobject, _mach_port_kobject_description, 
+                       _mach_port_mod_refs, _mach_port_move_member, _mach_port_names, 
+                       _mach_port_peek, _mach_port_rename, _mach_port_request_notification, 
+                       _mach_port_set_attributes, _mach_port_set_context, _mach_port_set_mscount, 
+                       _mach_port_set_seqno, _mach_port_space_basic_info, _mach_port_space_info, 
+                       _mach_port_swap_guard, _mach_port_type, _mach_port_unguard, 
+                       _mach_ports_lookup, _mach_ports_register, _mach_reply_port, 
+                       _mach_right_recv_construct, _mach_right_recv_destruct, _mach_right_send_create, 
+                       _mach_right_send_once_consume, _mach_right_send_once_create, 
                        _mach_right_send_release, _mach_right_send_retain, _mach_sync_ipc_link_monitoring_start, 
                        _mach_sync_ipc_link_monitoring_stop, _mach_task_self, _mach_task_self_, 
                        _mach_task_special_port_description, _mach_task_special_port_for_id, 
@@ -2106,12 +2098,13 @@ exports:
                        _netname_look_up, _netname_version, _nfsclnt, _nfssvc, _non_boost_assertion_token, 
                        _normal_boost_assertion_token, _ntp_adjtime, _ntp_gettime, 
                        _open, _open_dprotected_np, _openat, '_openat$NOCANCEL', _openbyid_np, 
-                       _os_buflet_get_data_length, _os_buflet_get_data_limit, _os_buflet_get_data_offset, 
-                       _os_buflet_get_object_address, _os_buflet_set_data_length, 
-                       _os_buflet_set_data_offset, _os_channel_advance_slot, _os_channel_attr_clone, 
-                       _os_channel_attr_create, _os_channel_attr_destroy, _os_channel_attr_get, 
-                       _os_channel_attr_get_key, _os_channel_attr_set, _os_channel_attr_set_key, 
-                       _os_channel_available_slot_count, _os_channel_configure_interface_advisory, 
+                       _os_buflet_get_data_address, _os_buflet_get_data_length, _os_buflet_get_data_limit, 
+                       _os_buflet_get_data_offset, _os_buflet_get_object_address, 
+                       _os_buflet_get_object_limit, _os_buflet_set_data_length, _os_buflet_set_data_offset, 
+                       _os_channel_advance_slot, _os_channel_attr_clone, _os_channel_attr_create, 
+                       _os_channel_attr_destroy, _os_channel_attr_get, _os_channel_attr_get_key, 
+                       _os_channel_attr_set, _os_channel_attr_set_key, _os_channel_available_slot_count, 
+                       _os_channel_buflet_alloc, _os_channel_buflet_free, _os_channel_configure_interface_advisory, 
                        _os_channel_create, _os_channel_create_extended, _os_channel_destroy, 
                        _os_channel_event_free, _os_channel_event_get_event_data, 
                        _os_channel_event_get_next_event, _os_channel_flow_admissible, 
@@ -2132,87 +2125,98 @@ exports:
                        _os_nexus_controller_deregister_provider, _os_nexus_controller_destroy, 
                        _os_nexus_controller_free_provider_instance, _os_nexus_controller_get_fd, 
                        _os_nexus_controller_read_provider_attr, _os_nexus_controller_register_provider, 
-                       _os_nexus_controller_unbind_provider_instance, _os_packet_clear_flow_uuid, 
-                       _os_packet_finalize, _os_packet_get_buflet_count, _os_packet_get_data_length, 
+                       _os_nexus_controller_unbind_provider_instance, _os_packet_add_buflet, 
+                       _os_packet_clear_flow_uuid, _os_packet_decrement_use_count, 
+                       _os_packet_finalize, _os_packet_get_aggregation_type, _os_packet_get_buflet_count, 
+                       _os_packet_get_compression_generation_count, _os_packet_get_data_length, 
                        _os_packet_get_expire_time, _os_packet_get_flow_uuid, _os_packet_get_group_end, 
                        _os_packet_get_group_start, _os_packet_get_headroom, _os_packet_get_inet_checksum, 
                        _os_packet_get_link_broadcast, _os_packet_get_link_ethfcs, 
                        _os_packet_get_link_header_length, _os_packet_get_link_multicast, 
-                       _os_packet_get_next_buflet, _os_packet_get_packetid, _os_packet_get_service_class, 
-                       _os_packet_get_token, _os_packet_get_traffic_class, _os_packet_get_transport_retransmit, 
-                       _os_packet_get_transport_traffic_background, _os_packet_get_transport_traffic_realtime, 
-                       _os_packet_get_truncated, _os_packet_get_vlan_id, _os_packet_get_vlan_priority, 
-                       _os_packet_get_vlan_tag, _os_packet_set_expire_time, _os_packet_set_flow_uuid, 
-                       _os_packet_set_group_end, _os_packet_set_group_start, _os_packet_set_headroom, 
-                       _os_packet_set_inet_checksum, _os_packet_set_link_broadcast, 
-                       _os_packet_set_link_ethfcs, _os_packet_set_link_header_length, 
-                       _os_packet_set_link_multicast, _os_packet_set_packetid, _os_packet_set_service_class, 
-                       _os_packet_set_token, _os_packet_set_traffic_class, _os_packet_set_transport_last_packet, 
+                       _os_packet_get_next_buflet, _os_packet_get_packetid, _os_packet_get_segment_count, 
+                       _os_packet_get_service_class, _os_packet_get_token, _os_packet_get_traffic_class, 
+                       _os_packet_get_transport_retransmit, _os_packet_get_transport_traffic_background, 
+                       _os_packet_get_transport_traffic_realtime, _os_packet_get_truncated, 
+                       _os_packet_get_vlan_id, _os_packet_get_vlan_priority, _os_packet_get_vlan_tag, 
+                       _os_packet_increment_use_count, _os_packet_set_compression_generation_count, 
+                       _os_packet_set_expire_time, _os_packet_set_flow_uuid, _os_packet_set_group_end, 
+                       _os_packet_set_group_start, _os_packet_set_headroom, _os_packet_set_inet_checksum, 
+                       _os_packet_set_link_broadcast, _os_packet_set_link_ethfcs, 
+                       _os_packet_set_link_header_length, _os_packet_set_link_multicast, 
+                       _os_packet_set_packetid, _os_packet_set_service_class, _os_packet_set_token, 
+                       _os_packet_set_traffic_class, _os_packet_set_transport_last_packet, 
                        _os_packet_set_transport_retransmit, _os_packet_set_transport_traffic_background, 
                        _os_packet_set_transport_traffic_realtime, _os_packet_set_vlan_tag, 
-                       _panic, _panic_init, _pathconf, _peeloff, _pid_for_task, _pid_hibernate, 
-                       _pid_resume, _pid_shutdown_networking, _pid_shutdown_sockets, 
-                       _pid_suspend, _pipe, _pkt_subtype_assert_fail, _pkt_type_assert_fail, 
-                       _poll, _port_obj_init, _port_obj_table, _port_obj_table_size, 
-                       _posix_madvise, _posix_spawn, _posix_spawn_file_actions_add_fileportdup2_np, 
+                       _os_proc_available_memory, _panic, _panic_init, _pathconf, 
+                       _peeloff, _pid_for_task, _pid_hibernate, _pid_resume, _pid_shutdown_networking, 
+                       _pid_shutdown_sockets, _pid_suspend, _pipe, _pivot_root, _pkt_subtype_assert_fail, 
+                       _pkt_type_assert_fail, _poll, _port_obj_init, _port_obj_table, 
+                       _port_obj_table_size, _posix_madvise, _posix_spawn, _posix_spawn_file_actions_add_fileportdup2_np, 
                        _posix_spawn_file_actions_addchdir_np, _posix_spawn_file_actions_addclose, 
                        _posix_spawn_file_actions_adddup2, _posix_spawn_file_actions_addfchdir_np, 
                        _posix_spawn_file_actions_addinherit_np, _posix_spawn_file_actions_addopen, 
                        _posix_spawn_file_actions_destroy, _posix_spawn_file_actions_init, 
-                       _posix_spawnattr_destroy, _posix_spawnattr_get_darwin_role_np, 
-                       _posix_spawnattr_get_qos_clamp_np, _posix_spawnattr_getbinpref_np, 
+                       _posix_spawnattr_destroy, _posix_spawnattr_disable_ptr_auth_a_keys_np, 
+                       _posix_spawnattr_get_darwin_role_np, _posix_spawnattr_get_qos_clamp_np, 
+                       _posix_spawnattr_getarchpref_np, _posix_spawnattr_getbinpref_np, 
                        _posix_spawnattr_getcpumonitor, _posix_spawnattr_getflags, 
                        _posix_spawnattr_getmacpolicyinfo_np, _posix_spawnattr_getpcontrol_np, 
                        _posix_spawnattr_getpgroup, _posix_spawnattr_getprocesstype_np, 
                        _posix_spawnattr_getsigdefault, _posix_spawnattr_getsigmask, 
-                       _posix_spawnattr_init, _posix_spawnattr_set_darwin_role_np, 
+                       _posix_spawnattr_init, _posix_spawnattr_set_csm_np, _posix_spawnattr_set_darwin_role_np, 
                        _posix_spawnattr_set_gid_np, _posix_spawnattr_set_groups_np, 
                        _posix_spawnattr_set_importancewatch_port_np, _posix_spawnattr_set_jetsam_ttr_np, 
                        _posix_spawnattr_set_login_np, _posix_spawnattr_set_max_addr_np, 
                        _posix_spawnattr_set_persona_gid_np, _posix_spawnattr_set_persona_groups_np, 
                        _posix_spawnattr_set_persona_np, _posix_spawnattr_set_persona_uid_np, 
+                       _posix_spawnattr_set_platform_np, _posix_spawnattr_set_ptrauth_task_port_np, 
                        _posix_spawnattr_set_qos_clamp_np, _posix_spawnattr_set_registered_ports_np, 
-                       _posix_spawnattr_set_threadlimit_ext, _posix_spawnattr_set_uid_np, 
+                       _posix_spawnattr_set_subsystem_root_path_np, _posix_spawnattr_set_threadlimit_ext, 
+                       _posix_spawnattr_set_uid_np, _posix_spawnattr_setarchpref_np, 
                        _posix_spawnattr_setauditsessionport_np, _posix_spawnattr_setbinpref_np, 
                        _posix_spawnattr_setcoalition_np, _posix_spawnattr_setcpumonitor, 
                        _posix_spawnattr_setcpumonitor_default, _posix_spawnattr_setexceptionports_np, 
                        _posix_spawnattr_setflags, _posix_spawnattr_setjetsam_ext, 
-                       _posix_spawnattr_setmacpolicyinfo_np, _posix_spawnattr_setpcontrol_np, 
-                       _posix_spawnattr_setpgroup, _posix_spawnattr_setprocesstype_np, 
-                       _posix_spawnattr_setsigdefault, _posix_spawnattr_setsigmask, 
-                       _posix_spawnattr_setspecialport_np, _pread, _proc_clear_cpulimits, 
-                       _proc_clear_delayidlesleep, _proc_clear_dirty, _proc_clear_vmpressure, 
-                       _proc_denap_assertion_begin_with_msg, _proc_denap_assertion_complete, 
-                       _proc_disable_apptype, _proc_disable_cpumon, _proc_disable_wakemon, 
-                       _proc_donate_importance_boost, _proc_enable_apptype, _proc_get_cpumon_params, 
-                       _proc_get_dirty, _proc_get_wakemon_params, _proc_importance_assertion_begin_with_msg, 
-                       _proc_importance_assertion_complete, _proc_kmsgbuf, _proc_libversion, 
-                       _proc_list_dynkqueueids, _proc_list_uptrs, _proc_listallpids, 
-                       _proc_listchildpids, _proc_listcoalitions, _proc_listpgrppids, 
-                       _proc_listpids, _proc_listpidspath, _proc_name, _proc_pid_rusage, 
-                       _proc_piddynkqueueinfo, _proc_pidfdinfo, _proc_pidfileportinfo, 
-                       _proc_pidinfo, _proc_pidoriginatorinfo, _proc_pidpath, _proc_regionfilename, 
+                       _posix_spawnattr_setmacpolicyinfo_np, _posix_spawnattr_setnosmt_np, 
+                       _posix_spawnattr_setpcontrol_np, _posix_spawnattr_setpgroup, 
+                       _posix_spawnattr_setprocesstype_np, _posix_spawnattr_setsigdefault, 
+                       _posix_spawnattr_setsigmask, _posix_spawnattr_setspecialport_np, 
+                       _posix_spawnattr_setsuidcredport_np, _pread, _preadv, '_preadv$NOCANCEL', 
+                       _proc_clear_cpulimits, _proc_clear_delayidlesleep, _proc_clear_dirty, 
+                       _proc_clear_vmpressure, _proc_denap_assertion_begin_with_msg, 
+                       _proc_denap_assertion_complete, _proc_disable_apptype, _proc_disable_cpumon, 
+                       _proc_disable_wakemon, _proc_donate_importance_boost, _proc_enable_apptype, 
+                       _proc_get_cpumon_params, _proc_get_dirty, _proc_get_wakemon_params, 
+                       _proc_importance_assertion_begin_with_msg, _proc_importance_assertion_complete, 
+                       _proc_kmsgbuf, _proc_libversion, _proc_list_dynkqueueids, 
+                       _proc_list_uptrs, _proc_listallpids, _proc_listchildpids, 
+                       _proc_listcoalitions, _proc_listpgrppids, _proc_listpids, 
+                       _proc_listpidspath, _proc_name, _proc_pid_rusage, _proc_piddynkqueueinfo, 
+                       _proc_pidfdinfo, _proc_pidfileportinfo, _proc_pidinfo, _proc_pidoriginatorinfo, 
+                       _proc_pidpath, _proc_pidpath_audittoken, _proc_regionfilename, 
                        _proc_reset_footprint_interval, _proc_resume_cpumon, _proc_rlimit_control, 
                        _proc_set_cpumon_defaults, _proc_set_cpumon_params, _proc_set_cpumon_params_fatal, 
-                       _proc_set_delayidlesleep, _proc_set_dirty, _proc_set_owner_vmpressure, 
-                       _proc_set_wakemon_defaults, _proc_set_wakemon_params, _proc_setcpu_percentage, 
-                       _proc_setpcontrol, _proc_setthread_cpupercent, _proc_suppress, 
-                       _proc_terminate, _proc_trace_log, _proc_track_dirty, _proc_udata_info, 
-                       _proc_uuid_policy, _processor_assign, _processor_control, 
+                       _proc_set_csm, _proc_set_delayidlesleep, _proc_set_dirty, 
+                       _proc_set_no_smt, _proc_set_owner_vmpressure, _proc_set_wakemon_defaults, 
+                       _proc_set_wakemon_params, _proc_setcpu_percentage, _proc_setpcontrol, 
+                       _proc_setthread_cpupercent, _proc_setthread_csm, _proc_setthread_no_smt, 
+                       _proc_suppress, _proc_terminate, _proc_trace_log, _proc_track_dirty, 
+                       _proc_udata_info, _proc_uuid_policy, _processor_assign, _processor_control, 
                        _processor_exit, _processor_get_assignment, _processor_info, 
                        _processor_set_create, _processor_set_default, _processor_set_destroy, 
                        _processor_set_info, _processor_set_max_priority, _processor_set_policy_control, 
                        _processor_set_policy_disable, _processor_set_policy_enable, 
                        _processor_set_stack_usage, _processor_set_statistics, _processor_set_tasks, 
-                       _processor_set_threads, _processor_start, _pselect, '_pselect$DARWIN_EXTSN', 
-                       '_pselect$DARWIN_EXTSN$NOCANCEL', _pthread_getugid_np, _pthread_setugid_np, 
-                       _ptrace, _pwrite, _quota, _quotactl, _read, _readlink, _readlinkat, 
-                       _readv, _reboot, _reboot_np, _recvfrom, _recvmsg, _recvmsg_x, 
-                       _removexattr, _rename, _rename_ext, _renameat, _renameatx_np, 
-                       _renamex_np, _revoke, _rmdir, _searchfs, _select, '_select$DARWIN_EXTSN', 
-                       '_select$DARWIN_EXTSN$NOCANCEL', _sem_close, _sem_destroy, 
-                       _sem_getvalue, _sem_init, _sem_open, _sem_post, _sem_trywait, 
-                       _sem_unlink, _sem_wait, _semaphore_create, _semaphore_destroy, 
+                       _processor_set_tasks_with_flavor, _processor_set_threads, 
+                       _processor_start, _pselect, '_pselect$DARWIN_EXTSN', '_pselect$DARWIN_EXTSN$NOCANCEL', 
+                       _pthread_getugid_np, _pthread_setugid_np, _ptrace, _pwrite, 
+                       _pwritev, '_pwritev$NOCANCEL', _quota, _quotactl, _read, _readlink, 
+                       _readlinkat, _readv, _reboot, _reboot_np, _recvfrom, _recvmsg, 
+                       _recvmsg_x, _removexattr, _rename, _rename_ext, _renameat, 
+                       _renameatx_np, _renamex_np, _revoke, _rmdir, _searchfs, _select, 
+                       '_select$DARWIN_EXTSN', '_select$DARWIN_EXTSN$NOCANCEL', _sem_close, 
+                       _sem_destroy, _sem_getvalue, _sem_init, _sem_open, _sem_post, 
+                       _sem_trywait, _sem_unlink, _sem_wait, _semaphore_create, _semaphore_destroy, 
                        _semaphore_signal, _semaphore_signal_all, _semaphore_signal_all_trap, 
                        _semaphore_signal_thread, _semaphore_signal_thread_trap, _semaphore_signal_trap, 
                        _semaphore_timedwait, _semaphore_timedwait_signal, _semaphore_timedwait_signal_trap, 
@@ -2231,17 +2235,18 @@ exports:
                        _stackshot_config_dealloc, _stackshot_config_dealloc_buffer, 
                        _stackshot_config_get_stackshot_buffer, _stackshot_config_get_stackshot_size, 
                        _stackshot_config_set_delta_timestamp, _stackshot_config_set_flags, 
-                       _stackshot_config_set_pid, _stackshot_config_set_size_hint, 
-                       _stat, _stat64, _statfs, _statfs64, _swapon, _swtch, _swtch_pri, 
-                       _symlink, _symlinkat, _sync, _syscall, _syscall_thread_switch, 
-                       _system_get_sfi_window, _system_override, _system_set_sfi_window, 
-                       _task_assign, _task_assign_default, _task_create, _task_for_pid, 
-                       _task_generate_corpse, _task_get_assignment, _task_get_dyld_image_infos, 
-                       _task_get_emulation_vector, _task_get_exc_guard_behavior, 
-                       _task_get_exception_ports, _task_get_mach_voucher, _task_get_special_port, 
-                       _task_get_state, _task_info, _task_inspect, _task_map_corpse_info, 
-                       _task_map_corpse_info_64, _task_name_for_pid, _task_policy, 
-                       _task_policy_get, _task_policy_set, _task_purgable_info, _task_register_dyld_get_process_state, 
+                       _stackshot_config_set_pagetable_mask, _stackshot_config_set_pid, 
+                       _stackshot_config_set_size_hint, _stat, _stat64, _statfs, 
+                       _statfs64, _swapon, _swtch, _swtch_pri, _symlink, _symlinkat, 
+                       _sync, _syscall, _syscall_thread_switch, _system_get_sfi_window, 
+                       _system_override, _system_set_sfi_window, _task_assign, _task_assign_default, 
+                       _task_create, _task_create_suid_cred, _task_for_pid, _task_generate_corpse, 
+                       _task_get_assignment, _task_get_dyld_image_infos, _task_get_emulation_vector, 
+                       _task_get_exc_guard_behavior, _task_get_exception_ports, _task_get_mach_voucher, 
+                       _task_get_special_port, _task_get_state, _task_info, _task_inspect, 
+                       _task_inspect_for_pid, _task_map_corpse_info, _task_map_corpse_info_64, 
+                       _task_name_for_pid, _task_policy, _task_policy_get, _task_policy_set, 
+                       _task_purgable_info, _task_read_for_pid, _task_register_dyld_get_process_state, 
                        _task_register_dyld_image_infos, _task_register_dyld_set_dyld_state, 
                        _task_register_dyld_shared_cache_image_info, _task_restartable_ranges_register, 
                        _task_restartable_ranges_synchronize, _task_resume, _task_resume2, 
@@ -2254,38 +2259,40 @@ exports:
                        _task_swap_mach_voucher, _task_terminate, _task_threads, _task_unregister_dyld_image_infos, 
                        _task_zone_info, _terminate_with_payload, _terminate_with_reason, 
                        _thread_abort, _thread_abort_safely, _thread_assign, _thread_assign_default, 
-                       _thread_create, _thread_create_running, _thread_depress_abort, 
-                       _thread_destruct_special_reply_port, _thread_get_assignment, 
-                       _thread_get_exception_ports, _thread_get_mach_voucher, _thread_get_register_pointer_values, 
-                       _thread_get_special_port, _thread_get_special_reply_port, 
-                       _thread_get_state, _thread_info, _thread_policy, _thread_policy_get, 
-                       _thread_policy_set, _thread_resume, _thread_sample, _thread_self_trap, 
-                       _thread_selfcounts, _thread_set_exception_ports, _thread_set_mach_voucher, 
-                       _thread_set_policy, _thread_set_special_port, _thread_set_state, 
-                       _thread_suspend, _thread_swap_exception_ports, _thread_swap_mach_voucher, 
-                       _thread_switch, _thread_terminate, _thread_wire, _truncate, 
-                       _umask, _undelete, _unlink, _unlinkat, _unmount, _usrctl, 
-                       _utimensat, _utimes, _vfork, _vfs_purge, _vm_allocate, _vm_allocate_cpm, 
-                       _vm_behavior_set, _vm_copy, _vm_deallocate, _vm_inherit, _vm_kernel_page_mask, 
-                       _vm_kernel_page_shift, _vm_kernel_page_size, _vm_machine_attribute, 
-                       _vm_map, _vm_map_page_query, _vm_msync, _vm_page_mask, _vm_page_shift, 
-                       _vm_page_size, _vm_pressure_monitor, _vm_protect, _vm_purgable_control, 
-                       _vm_read, _vm_read_list, _vm_read_overwrite, _vm_region_64, 
-                       _vm_region_recurse_64, _vm_remap, _vm_wire, _vm_write, _voucher_mach_msg_adopt, 
-                       _voucher_mach_msg_clear, _voucher_mach_msg_revert, _voucher_mach_msg_set, 
-                       _vprintf_stderr_func, _wait4, _waitid, _work_interval_copy_port, 
-                       _work_interval_create, _work_interval_destroy, _work_interval_instance_alloc, 
-                       _work_interval_instance_clear, _work_interval_instance_finish, 
-                       _work_interval_instance_free, _work_interval_instance_get_complexity, 
-                       _work_interval_instance_get_deadline, _work_interval_instance_get_finish, 
-                       _work_interval_instance_get_id, _work_interval_instance_get_start, 
-                       _work_interval_instance_set_complexity, _work_interval_instance_set_deadline, 
-                       _work_interval_instance_set_finish, _work_interval_instance_set_start, 
-                       _work_interval_instance_start, _work_interval_instance_update, 
-                       _work_interval_join, _work_interval_join_port, _work_interval_leave, 
-                       _work_interval_notify, _work_interval_notify_simple, _write, 
-                       _writev ]
-  - targets:         [ arm64-macos, arm64-maccatalyst, x86_64-macos, x86_64-maccatalyst ]
+                       _thread_convert_thread_state, _thread_create, _thread_create_running, 
+                       _thread_depress_abort, _thread_destruct_special_reply_port, 
+                       _thread_get_assignment, _thread_get_exception_ports, _thread_get_mach_voucher, 
+                       _thread_get_register_pointer_values, _thread_get_special_port, 
+                       _thread_get_special_reply_port, _thread_get_state, _thread_info, 
+                       _thread_policy, _thread_policy_get, _thread_policy_set, _thread_resume, 
+                       _thread_sample, _thread_self_trap, _thread_selfcounts, _thread_set_exception_ports, 
+                       _thread_set_mach_voucher, _thread_set_policy, _thread_set_special_port, 
+                       _thread_set_state, _thread_suspend, _thread_swap_exception_ports, 
+                       _thread_swap_mach_voucher, _thread_switch, _thread_terminate, 
+                       _thread_wire, _truncate, _umask, _undelete, _unlink, _unlinkat, 
+                       _unmount, _usrctl, _utimensat, _utimes, _vfork, _vfs_purge, 
+                       _vm_allocate, _vm_allocate_cpm, _vm_behavior_set, _vm_copy, 
+                       _vm_deallocate, _vm_inherit, _vm_kernel_page_mask, _vm_kernel_page_shift, 
+                       _vm_kernel_page_size, _vm_machine_attribute, _vm_map, _vm_map_page_query, 
+                       _vm_msync, _vm_page_mask, _vm_page_shift, _vm_page_size, _vm_pressure_monitor, 
+                       _vm_protect, _vm_purgable_control, _vm_read, _vm_read_list, 
+                       _vm_read_overwrite, _vm_region_64, _vm_region_recurse_64, 
+                       _vm_remap, _vm_wire, _vm_write, _voucher_mach_msg_adopt, _voucher_mach_msg_clear, 
+                       _voucher_mach_msg_revert, _voucher_mach_msg_set, _vprintf_stderr_func, 
+                       _wait4, _waitid, _work_interval_copy_port, _work_interval_create, 
+                       _work_interval_destroy, _work_interval_get_flags_from_port, 
+                       _work_interval_instance_alloc, _work_interval_instance_clear, 
+                       _work_interval_instance_finish, _work_interval_instance_free, 
+                       _work_interval_instance_get_complexity, _work_interval_instance_get_deadline, 
+                       _work_interval_instance_get_finish, _work_interval_instance_get_id, 
+                       _work_interval_instance_get_start, _work_interval_instance_set_complexity, 
+                       _work_interval_instance_set_deadline, _work_interval_instance_set_finish, 
+                       _work_interval_instance_set_start, _work_interval_instance_start, 
+                       _work_interval_instance_update, _work_interval_join, _work_interval_join_port, 
+                       _work_interval_leave, _work_interval_notify, _work_interval_notify_simple, 
+                       _write, _writev ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos, arm64-maccatalyst, arm64-macos, 
+                       arm64e-maccatalyst, arm64e-macos ]
     symbols:         [ '_accept$NOCANCEL', '_aio_suspend$NOCANCEL', '_close$NOCANCEL', 
                        '_connect$NOCANCEL', '_fcntl$NOCANCEL', '_fsync$NOCANCEL', 
                        _msgctl, '_msgrcv$NOCANCEL', '_msgsnd$NOCANCEL', '_msync$NOCANCEL', 
@@ -2295,6 +2302,10 @@ exports:
                        _semctl, '_sendmsg$NOCANCEL', '_sendto$NOCANCEL', _setregid, 
                        _setreuid, _shmctl, '_sigsuspend$NOCANCEL', '_waitid$NOCANCEL', 
                        '_write$NOCANCEL', '_writev$NOCANCEL' ]
+  - targets:         [ arm64-maccatalyst, arm64-macos, arm64e-maccatalyst, arm64e-macos ]
+    symbols:         [ ___fstat, ___fstatat, ___fstatfs, ___getfsstat, ___lstat, 
+                       ___stat, ___statfs, __current_pid, _mach_absolute_time_kernel, 
+                       _mach_continuous_time_kernel ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2302,11 +2313,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           6B90E2ED-9C95-36BD-A544-26C9332F4A50
   - target:          x86_64-ios-simulator
-    value:           201B462F-D179-3E66-9370-A30F843891C7
+    value:           0066159C-8A7D-3A1C-8177-39BEF8E416B5
   - target:          arm64-ios-simulator
-    value:           44E9EE27-1DDF-34AE-940A-C635CE7B290F
+    value:           51A440D3-4E1B-36CB-814C-3F6CC29A1ACE
 install-name:    '/usr/lib/system/libsystem_m.dylib'
-current-version: 3186.40.3
+current-version: 3186.100.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2314,7 +2325,7 @@ exports:
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __FE_DFL_DISABLE_SSE_DENORMS_ENV, ___cos_d4, ___cos_f8, ___sin_d4, 
                        ___sin_f8 ]
-  - targets:         [ arm64-ios-simulator, i386-ios-simulator ]
+  - targets:         [ arm64-ios-simulator ]
     symbols:         [ __FE_DFL_DISABLE_DENORMS_ENV ]
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ __FE_DFL_ENV, ___Libm_version, ___cos_d2, ___cos_f4, ___cospi, 
@@ -2399,11 +2410,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BC87C3F9-ACC0-314C-B2FF-00FB8BCC5BC3
   - target:          x86_64-ios-simulator
-    value:           02DA5B7D-F471-3B5C-B4CC-CF32D9E7C240
+    value:           2F7F62CD-2CA4-35C4-BBDC-1321906653DD
   - target:          arm64-ios-simulator
-    value:           E3FAEFF9-DE74-35CD-942E-977506B9084B
+    value:           DBB669FD-5BFB-3E56-B94F-24633C5C8D52
 install-name:    '/usr/lib/system/libsystem_malloc.dylib'
-current-version: 317.40.8
+current-version: 317.100.9
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2411,10 +2422,10 @@ exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ ___disk_stack_logging_log_stack, ___invalid_stack_id, ___libsystem_mallocVersionNumber, 
                        ___libsystem_mallocVersionString, ___stack_log_file_path__, 
-                       ___stack_logging_fork_child, ___stack_logging_fork_parent, 
-                       ___stack_logging_fork_prepare, _bitarray_create, _bitarray_first_set, 
-                       _bitarray_get, _bitarray_set, _bitarray_size, _bitarray_zap, 
-                       _bitarray_zap_first_set, _bitarray_zap_first_set_multiple, 
+                       ___stack_logging_early_finished, ___stack_logging_fork_child, 
+                       ___stack_logging_fork_parent, ___stack_logging_fork_prepare, 
+                       _bitarray_create, _bitarray_first_set, _bitarray_get, _bitarray_set, 
+                       _bitarray_size, _bitarray_zap, _bitarray_zap_first_set, _bitarray_zap_first_set_multiple, 
                        _is_stack_logging_lite_enabled, _malloc_debug_flags, _stack_logging_dontcompact, 
                        _stack_logging_finished_init, _stack_logging_lite_batch_free, 
                        _stack_logging_lite_batch_malloc, _stack_logging_mode, _stack_logging_postponed, 
@@ -2429,7 +2440,7 @@ exports:
                        ___mach_stack_logging_uniquing_table_read_stack, ___mach_stack_logging_uniquing_table_release, 
                        ___mach_stack_logging_uniquing_table_retain, ___mach_stack_logging_uniquing_table_serialize, 
                        ___mach_stack_logging_uniquing_table_sizeof, ___malloc_init, 
-                       ___stack_logging_early_finished, __malloc_fork_child, __malloc_fork_parent, 
+                       ___malloc_late_init, __malloc_fork_child, __malloc_fork_parent, 
                        __malloc_fork_prepare, __malloc_no_asl_log, __os_cpu_number_override, 
                        _aligned_alloc, _calloc, _free, _mag_set_thread_index, _malloc, 
                        _malloc_check_counter, _malloc_check_each, _malloc_check_start, 
@@ -2463,9 +2474,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ABD5F0CD-741B-3361-8438-879572813CFD
   - target:          x86_64-ios-simulator
-    value:           32EC8D22-2F3A-3A87-B0C6-3541E33375D0
+    value:           936FCB38-D4DC-39F3-B0E2-8DDBE939E53A
   - target:          arm64-ios-simulator
-    value:           F015B125-543A-39CE-83F5-B7C54E7AE306
+    value:           09A4412A-28AB-3F7A-BEF9-51559C1A1E77
 install-name:    '/usr/lib/system/libsystem_notify.dylib'
 current-version: 279.40.4
 exports:
@@ -2515,36 +2526,43 @@ exports:
                        _notify_simple_post, _notify_suspend, _notify_suspend_pid ]
 --- !tapi-tbd
 tbd-version:     4
-targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst ]
+targets:         [ i386-macos, i386-maccatalyst, x86_64-macos, x86_64-maccatalyst, 
+                   arm64-macos, arm64-maccatalyst, arm64e-macos, arm64e-maccatalyst ]
 uuids:
   - target:          i386-macos
-    value:           C30D0F0B-03E8-33DE-851D-82D8A240C1DE
+    value:           D02E40AA-3517-336C-95A6-D9122EBD9694
+  - target:          i386-maccatalyst
+    value:           D02E40AA-3517-336C-95A6-D9122EBD9694
   - target:          x86_64-macos
-    value:           90E508E4-46D8-33FF-8552-DDAA079977A0
+    value:           C189E308-FF76-3057-B9B9-BA80747FC95F
   - target:          x86_64-maccatalyst
-    value:           90E508E4-46D8-33FF-8552-DDAA079977A0
+    value:           C189E308-FF76-3057-B9B9-BA80747FC95F
   - target:          arm64-macos
-    value:           00000000-0000-0000-0000-000000000000
+    value:           151B257C-A868-31EF-9D8D-E8F4A7C6D7B2
   - target:          arm64-maccatalyst
-    value:           00000000-0000-0000-0000-000000000000
+    value:           151B257C-A868-31EF-9D8D-E8F4A7C6D7B2
+  - target:          arm64e-macos
+    value:           18A2EFD8-A8FA-3E2B-9850-C825E99D0654
+  - target:          arm64e-maccatalyst
+    value:           18A2EFD8-A8FA-3E2B-9850-C825E99D0654
 install-name:    '/usr/lib/system/libsystem_platform.dylib'
-current-version: 220
+current-version: 254.40.4
 parent-umbrella:
   - targets:         [ i386-macos, i386-maccatalyst, x86_64-macos, x86_64-maccatalyst, 
                        arm64-macos, arm64-maccatalyst, arm64e-macos, arm64e-maccatalyst ]
     umbrella:        System
 exports:
-  - targets:         [ i386-macos ]
-    symbols:         [ _MKGetTimeBaseInfo ]
-  - targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst ]
-    symbols:         [ __sigtramp, _longjmperror, _os_unfair_lock_lock_no_tsd_4libpthread, 
-                       _os_unfair_lock_lock_with_options_4Libc, _os_unfair_lock_unlock_4Libc, 
-                       _os_unfair_lock_unlock_no_tsd_4libpthread ]
-  - targets:         [ arm64-macos, arm64-maccatalyst ]
-    symbols:         [ __OSSpinLockLockSlow, __ctx_done, _os_unfair_lock_lock_no_tsd, 
-                       _os_unfair_lock_unlock_no_tsd ]
-  - targets:         [ arm64-macos, arm64-maccatalyst, i386-macos, x86_64-macos, 
-                       x86_64-maccatalyst ]
+  - targets:         [ i386-maccatalyst, i386-macos ]
+    symbols:         [ _MKGetTimeBaseInfo, _udiv10 ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos ]
+    symbols:         [ '_OSAtomicFifoDequeue$VARIANT$PFZ', '_OSAtomicFifoDequeue$VARIANT$UnfairLock', 
+                       '_OSAtomicFifoEnqueue$VARIANT$PFZ', '_OSAtomicFifoEnqueue$VARIANT$UnfairLock', 
+                       _bzero_sse_np, _memmove_sse_np, _memset_pattern16_sse_np, 
+                       _memset_pattern4_sse_np, _memset_pattern8_sse_np, _memset_sse_np ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos, i386-maccatalyst, i386-macos ]
+    symbols:         [ __sigtramp, _longjmperror ]
+  - targets:         [ x86_64-maccatalyst, x86_64-macos, i386-maccatalyst, i386-macos, 
+                       arm64-maccatalyst, arm64-macos, arm64e-maccatalyst, arm64e-macos ]
     symbols:         [ _OSAtomicAdd32, _OSAtomicAdd32Barrier, _OSAtomicAdd64, _OSAtomicAdd64Barrier, 
                        _OSAtomicAnd32, _OSAtomicAnd32Barrier, _OSAtomicAnd32Orig, 
                        _OSAtomicAnd32OrigBarrier, _OSAtomicCompareAndSwap32, _OSAtomicCompareAndSwap32Barrier, 
@@ -2560,8 +2578,8 @@ exports:
                        _OSAtomicTestAndClear, _OSAtomicTestAndClearBarrier, _OSAtomicTestAndSet, 
                        _OSAtomicTestAndSetBarrier, _OSAtomicXor32, _OSAtomicXor32Barrier, 
                        _OSAtomicXor32Orig, _OSAtomicXor32OrigBarrier, _OSMemoryBarrier, 
-                       _OSSpinLockLock, _OSSpinLockTry, _OSSpinLockUnlock, ___bzero, 
-                       ___libplatform_init, ___os_once_reset, ___platform_sigaction, 
+                       _OSSpinLockLock, _OSSpinLockTry, _OSSpinLockUnlock, __OSSpinLockLockSlow, 
+                       ___bzero, ___libplatform_init, ___os_once_reset, ___platform_sigaction, 
                        __longjmp, __os_alloc_once, __os_lock_type_eliding, __os_lock_type_handoff, 
                        __os_lock_type_nospin, __os_lock_type_spin, __os_lock_type_transactional, 
                        __os_lock_type_unfair, __os_nospin_lock_lock, __os_nospin_lock_trylock, 
@@ -2582,20 +2600,23 @@ exports:
                        __spin_unlock, _ffs, _ffsl, _ffsll, _fls, _flsl, _flsll, _getcontext, 
                        _longjmp, _makecontext, _os_lock_lock, _os_lock_trylock, _os_lock_unlock, 
                        _os_unfair_lock_assert_not_owner, _os_unfair_lock_assert_owner, 
-                       _os_unfair_lock_lock, _os_unfair_lock_lock_with_options, _os_unfair_lock_trylock, 
-                       _os_unfair_lock_unlock, _os_unfair_recursive_lock_lock_with_options, 
-                       _os_unfair_recursive_lock_owned, _os_unfair_recursive_lock_trylock, 
-                       _os_unfair_recursive_lock_tryunlock4objc, _os_unfair_recursive_lock_unlock, 
-                       _os_unfair_recursive_lock_unlock_forked_child, _platform_task_attach, 
-                       _platform_task_copy_next_thread, _platform_task_detach, _platform_task_is_64_bit, 
-                       _platform_task_perform, _platform_task_resume_threads, _platform_task_suspend_threads, 
-                       _platform_task_update_threads, _platform_thread_abort_safely, 
-                       _platform_thread_get_pthread, _platform_thread_get_state, 
-                       _platform_thread_get_unique_id, _platform_thread_info, _platform_thread_perform, 
-                       _platform_thread_release, _platform_thread_resume, _platform_thread_set_state, 
-                       _platform_thread_suspend, _setcontext, _setjmp, _siglongjmp, 
-                       _sigsetjmp, _spin_lock, _spin_lock_try, _spin_unlock, _swapcontext, 
-                       _sys_cache_control, _sys_dcache_flush, _sys_icache_invalidate ]
+                       _os_unfair_lock_lock, _os_unfair_lock_lock_no_tsd, _os_unfair_lock_lock_with_options, 
+                       _os_unfair_lock_trylock, _os_unfair_lock_unlock, _os_unfair_lock_unlock_no_tsd, 
+                       _os_unfair_recursive_lock_lock_with_options, _os_unfair_recursive_lock_owned, 
+                       _os_unfair_recursive_lock_trylock, _os_unfair_recursive_lock_tryunlock4objc, 
+                       _os_unfair_recursive_lock_unlock, _os_unfair_recursive_lock_unlock_forked_child, 
+                       _platform_task_attach, _platform_task_copy_next_thread, _platform_task_detach, 
+                       _platform_task_is_64_bit, _platform_task_perform, _platform_task_resume_threads, 
+                       _platform_task_suspend_threads, _platform_task_update_threads, 
+                       _platform_thread_abort_safely, _platform_thread_get_pthread, 
+                       _platform_thread_get_state, _platform_thread_get_unique_id, 
+                       _platform_thread_info, _platform_thread_perform, _platform_thread_release, 
+                       _platform_thread_resume, _platform_thread_set_state, _platform_thread_suspend, 
+                       _setcontext, _setjmp, _siglongjmp, _sigsetjmp, _spin_lock, 
+                       _spin_lock_try, _spin_unlock, _swapcontext, _sys_cache_control, 
+                       _sys_dcache_flush, _sys_icache_invalidate ]
+  - targets:         [ arm64-maccatalyst, arm64-macos, arm64e-maccatalyst, arm64e-macos ]
+    symbols:         [ __ctx_done ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2603,30 +2624,37 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A092A50A-C368-3A55-9C39-1FFADC2EC95E
+    value:           0CEDFB37-B468-335A-9DBC-BB158E2D2CC2
   - target:          arm64-ios-simulator
-    value:           2D57EA25-9ABB-3292-A93F-8494923187C0
+    value:           76639C7F-EF21-3A88-AE5F-14D0EB5D9972
 install-name:    '/usr/lib/system/libsystem_product_info_filter.dylib'
 current-version: 8.40.1
 parent-umbrella:
-  - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
+  - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
 --- !tapi-tbd
 tbd-version:     4
-targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst ]
+targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst, arm64-macos, arm64-maccatalyst, 
+                   arm64e-macos, arm64e-maccatalyst ]
 uuids:
   - target:          i386-macos
-    value:           198982C2-978B-3F3B-86CB-D9A9FA2307A3
+    value:           DCD6CAE9-C336-3D52-82D1-15A178D1E281
+  - target:          i386-maccatalyst
+    value:           DCD6CAE9-C336-3D52-82D1-15A178D1E281
   - target:          x86_64-macos
-    value:           2EA6F95F-F264-30B6-8AF2-24197B5AED84
+    value:           B00D3061-1558-35EE-A20B-9D8AFEE10DB1
   - target:          x86_64-maccatalyst
-    value:           2EA6F95F-F264-30B6-8AF2-24197B5AED84
+    value:           B00D3061-1558-35EE-A20B-9D8AFEE10DB1
   - target:          arm64-macos
-    value:           00000000-0000-0000-0000-000000000000
+    value:           FD7D4A1B-772F-3E4B-AA71-3D5E959DA868
   - target:          arm64-maccatalyst
     value:           00000000-0000-0000-0000-000000000000
+  - target:          arm64e-macos
+    value:           5B53BD62-67C9-342D-8B39-2E2320708B84
+  - target:          arm64e-maccatalyst
+    value:           5B53BD62-67C9-342D-8B39-2E2320708B84
 install-name:    '/usr/lib/system/libsystem_pthread.dylib'
-current-version: 416.11.1
+current-version: 454.40.3
 parent-umbrella:
   - targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst, arm64-macos, 
                        arm64-maccatalyst, arm64e-macos, arm64e-maccatalyst ]
@@ -2644,23 +2672,20 @@ exports:
                        '_pthread_setcancelstate$UNIX2003', '_pthread_setcanceltype$UNIX2003', 
                        '_pthread_sigmask$UNIX2003', '_pthread_testcancel$UNIX2003', 
                        '_sigwait$NOCANCEL$UNIX2003', '_sigwait$UNIX2003' ]
-  - targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst ]
-    symbols:         [ __pthread_joiner_wake, __pthread_testcancel ]
-  - targets:         [ arm64-macos, arm64-maccatalyst ]
-    symbols:         [ _pthread_introspection_getspecific_np, _pthread_introspection_setspecific_np, 
-                       _pthread_jit_write_protect_np, _pthread_jit_write_protect_supported_np, 
-                       _pthread_prefer_alternate_amx_self, _pthread_self_is_exiting_np ]
-  - targets:         [ arm64-macos, arm64-maccatalyst, i386-macos, x86_64-macos, 
-                       x86_64-maccatalyst ]
+  - targets:         [ i386-macos, x86_64-macos, x86_64-maccatalyst, arm64-macos, 
+                       arm64e-macos, arm64e-maccatalyst, arm64-maccatalyst ]
+    symbols:         [ __pthread_is_threaded, _cthread_yield ]
+  - targets:         [ arm64e-macos, x86_64-macos, arm64-macos, i386-macos, x86_64-maccatalyst, 
+                       arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ ____chkstk_darwin, ___is_threaded, ___pthread_init, ___pthread_workqueue_setkill, 
                        ___unix_conforming, __pthread_atfork_child, __pthread_atfork_child_handlers, 
                        __pthread_atfork_parent, __pthread_atfork_parent_handlers, 
                        __pthread_atfork_prepare, __pthread_atfork_prepare_handlers, 
                        __pthread_clear_qos_tsd, __pthread_exit_if_canceled, __pthread_fork_child, 
                        __pthread_fork_child_postinit, __pthread_fork_parent, __pthread_fork_prepare, 
-                       __pthread_is_threaded, __pthread_mutex_enable_legacy_mode, 
-                       __pthread_override_qos_class_end_direct, __pthread_override_qos_class_start_direct, 
-                       __pthread_qos_class_decode, __pthread_qos_class_encode, __pthread_qos_class_encode_workqueue, 
+                       __pthread_mutex_enable_legacy_mode, __pthread_override_qos_class_end_direct, 
+                       __pthread_override_qos_class_start_direct, __pthread_qos_class_decode, 
+                       __pthread_qos_class_encode, __pthread_qos_class_encode_workqueue, 
                        __pthread_qos_override_end_direct, __pthread_qos_override_start_direct, 
                        __pthread_self, __pthread_set_properties_self, __pthread_set_self, 
                        __pthread_setspecific_static, __pthread_start, __pthread_workloop_create, 
@@ -2671,46 +2696,49 @@ exports:
                        __pthread_workqueue_override_reset, __pthread_workqueue_override_start_direct, 
                        __pthread_workqueue_override_start_direct_check_owner, __pthread_workqueue_set_event_manager_priority, 
                        __pthread_workqueue_should_narrow, __pthread_workqueue_supported, 
-                       __pthread_wqthread, _cthread_yield, _posix_spawnattr_get_qos_class_np, 
-                       _posix_spawnattr_set_qos_class_np, _pthread_atfork, _pthread_attr_destroy, 
-                       _pthread_attr_get_qos_class_np, _pthread_attr_getdetachstate, 
-                       _pthread_attr_getguardsize, _pthread_attr_getinheritsched, 
-                       _pthread_attr_getschedparam, _pthread_attr_getschedpolicy, 
-                       _pthread_attr_getscope, _pthread_attr_getstack, _pthread_attr_getstackaddr, 
-                       _pthread_attr_getstacksize, _pthread_attr_init, _pthread_attr_set_qos_class_np, 
-                       _pthread_attr_setcpupercent_np, _pthread_attr_setdetachstate, 
-                       _pthread_attr_setguardsize, _pthread_attr_setinheritsched, 
-                       _pthread_attr_setschedparam, _pthread_attr_setschedpolicy, 
-                       _pthread_attr_setscope, _pthread_attr_setstack, _pthread_attr_setstackaddr, 
-                       _pthread_attr_setstacksize, _pthread_cancel, _pthread_chdir_np, 
-                       _pthread_cond_broadcast, _pthread_cond_destroy, _pthread_cond_init, 
-                       _pthread_cond_signal, _pthread_cond_signal_thread_np, _pthread_cond_timedwait, 
-                       _pthread_cond_timedwait_relative_np, _pthread_cond_wait, _pthread_condattr_destroy, 
-                       _pthread_condattr_getpshared, _pthread_condattr_init, _pthread_condattr_setpshared, 
+                       __pthread_wqthread, _posix_spawnattr_get_qos_class_np, _posix_spawnattr_set_qos_class_np, 
+                       _pthread_atfork, _pthread_attr_destroy, _pthread_attr_get_qos_class_np, 
+                       _pthread_attr_getdetachstate, _pthread_attr_getguardsize, 
+                       _pthread_attr_getinheritsched, _pthread_attr_getschedparam, 
+                       _pthread_attr_getschedpolicy, _pthread_attr_getscope, _pthread_attr_getstack, 
+                       _pthread_attr_getstackaddr, _pthread_attr_getstacksize, _pthread_attr_init, 
+                       _pthread_attr_set_qos_class_np, _pthread_attr_setcpupercent_np, 
+                       _pthread_attr_setdetachstate, _pthread_attr_setguardsize, 
+                       _pthread_attr_setinheritsched, _pthread_attr_setschedparam, 
+                       _pthread_attr_setschedpolicy, _pthread_attr_setscope, _pthread_attr_setstack, 
+                       _pthread_attr_setstackaddr, _pthread_attr_setstacksize, _pthread_cancel, 
+                       _pthread_chdir_np, _pthread_cond_broadcast, _pthread_cond_destroy, 
+                       _pthread_cond_init, _pthread_cond_signal, _pthread_cond_signal_thread_np, 
+                       _pthread_cond_timedwait, _pthread_cond_timedwait_relative_np, 
+                       _pthread_cond_wait, _pthread_condattr_destroy, _pthread_condattr_getpshared, 
+                       _pthread_condattr_init, _pthread_condattr_setpshared, _pthread_cpu_number_np, 
                        _pthread_create, _pthread_create_from_mach_thread, _pthread_create_suspended_np, 
                        _pthread_current_stack_contains_np, _pthread_dependency_fulfill_np, 
                        _pthread_dependency_init_np, _pthread_dependency_wait_np, 
                        _pthread_detach, _pthread_equal, _pthread_exit, _pthread_fchdir_np, 
                        _pthread_from_mach_thread_np, _pthread_get_qos_class_np, _pthread_get_stackaddr_np, 
                        _pthread_get_stacksize_np, _pthread_getconcurrency, _pthread_getname_np, 
-                       _pthread_getschedparam, _pthread_getspecific, _pthread_introspection_hook_install, 
-                       _pthread_is_threaded_np, _pthread_join, _pthread_key_create, 
-                       _pthread_key_delete, _pthread_key_init_np, _pthread_kill, 
-                       _pthread_layout_offsets, _pthread_mach_thread_np, _pthread_main_np, 
-                       _pthread_main_thread_np, _pthread_mutex_destroy, _pthread_mutex_getprioceiling, 
-                       _pthread_mutex_init, _pthread_mutex_lock, _pthread_mutex_setprioceiling, 
-                       _pthread_mutex_trylock, _pthread_mutex_unlock, _pthread_mutexattr_destroy, 
-                       _pthread_mutexattr_getpolicy_np, _pthread_mutexattr_getprioceiling, 
-                       _pthread_mutexattr_getprotocol, _pthread_mutexattr_getpshared, 
-                       _pthread_mutexattr_gettype, _pthread_mutexattr_init, _pthread_mutexattr_setpolicy_np, 
+                       _pthread_getschedparam, _pthread_getspecific, _pthread_introspection_getspecific_np, 
+                       _pthread_introspection_hook_install, _pthread_introspection_setspecific_np, 
+                       _pthread_is_threaded_np, _pthread_jit_write_protect_np, _pthread_jit_write_protect_supported_np, 
+                       _pthread_join, _pthread_key_create, _pthread_key_delete, _pthread_key_init_np, 
+                       _pthread_kill, _pthread_layout_offsets, _pthread_mach_thread_np, 
+                       _pthread_main_np, _pthread_main_thread_np, _pthread_mutex_destroy, 
+                       _pthread_mutex_getprioceiling, _pthread_mutex_init, _pthread_mutex_lock, 
+                       _pthread_mutex_setprioceiling, _pthread_mutex_trylock, _pthread_mutex_unlock, 
+                       _pthread_mutexattr_destroy, _pthread_mutexattr_getpolicy_np, 
+                       _pthread_mutexattr_getprioceiling, _pthread_mutexattr_getprotocol, 
+                       _pthread_mutexattr_getpshared, _pthread_mutexattr_gettype, 
+                       _pthread_mutexattr_init, _pthread_mutexattr_setpolicy_np, 
                        _pthread_mutexattr_setprioceiling, _pthread_mutexattr_setprotocol, 
                        _pthread_mutexattr_setpshared, _pthread_mutexattr_settype, 
                        _pthread_once, _pthread_override_qos_class_end_np, _pthread_override_qos_class_start_np, 
-                       _pthread_qos_max_parallelism, _pthread_rwlock_destroy, _pthread_rwlock_init, 
-                       _pthread_rwlock_rdlock, _pthread_rwlock_tryrdlock, _pthread_rwlock_trywrlock, 
-                       _pthread_rwlock_unlock, _pthread_rwlock_wrlock, _pthread_rwlockattr_destroy, 
-                       _pthread_rwlockattr_getpshared, _pthread_rwlockattr_init, 
-                       _pthread_rwlockattr_setpshared, _pthread_self, _pthread_set_fixedpriority_self, 
+                       _pthread_prefer_alternate_amx_self, _pthread_qos_max_parallelism, 
+                       _pthread_rwlock_destroy, _pthread_rwlock_init, _pthread_rwlock_rdlock, 
+                       _pthread_rwlock_tryrdlock, _pthread_rwlock_trywrlock, _pthread_rwlock_unlock, 
+                       _pthread_rwlock_wrlock, _pthread_rwlockattr_destroy, _pthread_rwlockattr_getpshared, 
+                       _pthread_rwlockattr_init, _pthread_rwlockattr_setpshared, 
+                       _pthread_self, _pthread_self_is_exiting_np, _pthread_set_fixedpriority_self, 
                        _pthread_set_qos_class_np, _pthread_set_qos_class_self_np, 
                        _pthread_set_timeshare_self, _pthread_setcancelstate, _pthread_setcanceltype, 
                        _pthread_setconcurrency, _pthread_setname_np, _pthread_setschedparam, 
@@ -2721,7 +2749,8 @@ exports:
                        _pthread_yield_np, _qos_class_main, _qos_class_self, _sched_get_priority_max, 
                        _sched_get_priority_min, _sched_yield, _sigwait, _start_wqthread, 
                        _thread_chkstk_darwin, _thread_start ]
-  - targets:         [ arm64-macos, arm64-maccatalyst, x86_64-macos, x86_64-maccatalyst ]
+  - targets:         [ arm64e-macos, x86_64-macos, arm64-macos, x86_64-maccatalyst, 
+                       arm64e-maccatalyst, arm64-maccatalyst ]
     symbols:         [ '_pthread_cond_timedwait$NOCANCEL', '_pthread_cond_wait$NOCANCEL', 
                        '_pthread_join$NOCANCEL', '_sigwait$NOCANCEL' ]
 --- !tapi-tbd
@@ -2731,11 +2760,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1DA9DE88-C4BF-3F97-AA1B-A46EA5B3AFCD
   - target:          x86_64-ios-simulator
-    value:           3ECAE2FE-F674-37BA-B8B1-735145689046
+    value:           D59614A3-B2A7-3E8C-9A1A-0B99A0D84474
   - target:          arm64-ios-simulator
-    value:           738191BF-2715-3435-98BB-E9A0C4764C2A
+    value:           009140E2-280C-351B-9198-524A17173E62
 install-name:    '/usr/lib/system/libsystem_sandbox.dylib'
-current-version: 1441.60.4
+current-version: 1441.102.1
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2803,11 +2832,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           6E681669-56A1-3BCF-A79F-84D0A847C923
   - target:          x86_64-ios-simulator
-    value:           141DB3FA-199E-3751-814B-8F7BFAD32563
+    value:           578CEA54-D770-375B-950B-2D35EF7E6CE8
   - target:          arm64-ios-simulator
-    value:           6B476E2A-B0C7-31BB-8620-1A9E6A71BAF2
+    value:           B9CAF266-294A-3902-907A-2F73BCD00057
 install-name:    '/usr/lib/system/libsystem_sim_kernel.dylib'
-current-version: 227.40.3
+current-version: 227.100.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2844,10 +2873,8 @@ exports:
     symbols:         [ _fstat, _fstatat, _fstatfs, _getfsstat, _lstat, _pselect, 
                        _select, _stat, _statfs ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ ___darwin_check_fd_set_overflow, ___init_libsystem_sim_kernel, 
-                       __sim_load_entitlements_blob, _csops, _csops_audittoken, _os_proc_available_memory, 
-                       _posix_spawnattr_getarchpref_np, _posix_spawnattr_setarchpref_np, 
-                       _preadv, _proc_pidpath_audittoken, _pwritev ]
+    symbols:         [ ___init_libsystem_sim_kernel, __sim_load_entitlements_blob, 
+                       _csops, _csops_audittoken ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2855,11 +2882,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1B395C10-C2B5-331C-876D-EAB9EB1B2640
   - target:          x86_64-ios-simulator
-    value:           B40F4E9A-9B20-3A29-B6A8-D69BF31AC86B
+    value:           348EE060-5BBD-3E64-B9D5-02485537D257
   - target:          arm64-ios-simulator
-    value:           8CEB52A3-16CC-3BC0-B8A4-F5EF0EB1D371
+    value:           8BF8989F-9469-30A8-93DD-FEFF5560332E
 install-name:    '/usr/lib/system/libsystem_sim_kernel_host.dylib'
-current-version: 227.40.3
+current-version: 227.100.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2885,12 +2912,7 @@ exports:
                        ___interposition_sim_system_terminate_with_reason, ___libsystem_sim_kernel_hostVersionNumber, 
                        ___libsystem_sim_kernel_hostVersionString ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ ___interposition_sim_system___darwin_check_fd_set_overflow, 
-                       ___interposition_sim_system_csops, ___interposition_sim_system_csops_audittoken, 
-                       ___interposition_sim_system_os_proc_available_memory, ___interposition_sim_system_posix_spawnattr_getarchpref_np, 
-                       ___interposition_sim_system_posix_spawnattr_setarchpref_np, 
-                       ___interposition_sim_system_preadv, ___interposition_sim_system_proc_pidpath_audittoken, 
-                       ___interposition_sim_system_pwritev ]
+    symbols:         [ ___interposition_sim_system_csops, ___interposition_sim_system_csops_audittoken ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2898,11 +2920,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           361A3DC9-02CA-3986-B517-F32D5464335E
   - target:          x86_64-ios-simulator
-    value:           E02A5656-7970-374D-87D4-37CC78A54F30
+    value:           2B4DFA3F-E350-3A4E-8199-85A35C642C5D
   - target:          arm64-ios-simulator
-    value:           721113E5-71F9-3796-9578-307F732406EC
+    value:           1E493002-B34F-3CD6-A703-C84DBC3F5C15
 install-name:    '/usr/lib/system/libsystem_sim_platform.dylib'
-current-version: 227.40.3
+current-version: 227.100.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2929,11 +2951,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           90AC4286-1A17-3F5F-8854-B35B03AE5C04
   - target:          x86_64-ios-simulator
-    value:           72721056-049E-3A30-9FBB-50506E08BA67
+    value:           CBA21F2A-FC4D-39CB-B8AA-C90FCF399B59
   - target:          arm64-ios-simulator
-    value:           D6812601-F041-3B15-836D-CA7F6E8D1C2F
+    value:           DB27F10F-5BD4-397D-8983-814390036F97
 install-name:    '/usr/lib/system/libsystem_sim_platform_host.dylib'
-current-version: 227.40.3
+current-version: 227.100.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2965,11 +2987,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           043CEEB1-9F77-3DFF-8FFD-B52EAFEAC20E
   - target:          x86_64-ios-simulator
-    value:           2F45AEAD-2B07-397A-8D12-E4CE7A52F25C
+    value:           AA2DDD04-01FE-3884-A992-6A268849C0E8
   - target:          arm64-ios-simulator
-    value:           956D2DDE-9C81-3E6B-9379-2BBA69199704
+    value:           A6AC1CA0-19B7-3CA9-A32E-C3B9E88BE398
 install-name:    '/usr/lib/system/libsystem_sim_pthread.dylib'
-current-version: 227.40.3
+current-version: 227.100.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2992,7 +3014,7 @@ exports:
                        _pthread_setcancelstate, _pthread_setcanceltype, _pthread_sigmask, 
                        _pthread_testcancel, _sigwait, '_sigwait$NOCANCEL' ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ ___init_libsystem_sim_pthread, _pthread_prefer_alternate_amx_self ]
+    symbols:         [ ___init_libsystem_sim_pthread, _pthread_cpu_number_np ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -3000,11 +3022,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4D9AF813-6727-322C-8FE4-292A16A6920E
   - target:          x86_64-ios-simulator
-    value:           DA48DADE-C86C-39C0-AF2C-A96CD1D404A9
+    value:           40764C89-3271-3DC1-BC4B-1F3D2FCEC6F6
   - target:          arm64-ios-simulator
-    value:           3704631A-F817-333D-A55A-CBAD603E1C59
+    value:           9776E9C6-4215-31B0-B793-6A9FEB705B09
 install-name:    '/usr/lib/system/libsystem_sim_pthread_host.dylib'
-current-version: 227.40.3
+current-version: 227.100.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3021,7 +3043,7 @@ exports:
                        ___interposition_sim_system__pthread_setspecific_static, ___interposition_sim_system__pthread_workqueue_override_start_direct_check_owner, 
                        ___libsystem_sim_pthread_hostVersionNumber, ___libsystem_sim_pthread_hostVersionString ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ ___interposition_sim_system_pthread_prefer_alternate_amx_self ]
+    symbols:         [ ___interposition_sim_system_pthread_cpu_number_np ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -3029,11 +3051,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           C390410C-E91C-3A65-A63B-E19B68186F03
   - target:          x86_64-ios-simulator
-    value:           457CDC70-9044-3B95-9909-0B2E8931309B
+    value:           7211EB09-AAE2-32DE-984E-13595ECB9409
   - target:          arm64-ios-simulator
-    value:           C770CE0E-66D4-3C62-A376-5346A656C15B
+    value:           D32E0D01-8B59-3E25-B733-626121307588
 install-name:    '/usr/lib/system/libsystem_trace.dylib'
-current-version: 1277.80.2
+current-version: 1277.100.21
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3099,11 +3121,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           D068AE39-AB92-3E79-8EB7-64D6760D685C
   - target:          x86_64-ios-simulator
-    value:           F9A8A037-17D1-36C9-BA57-C90AE9426734
+    value:           8E1CB200-3A8F-3BD7-A068-7BB9152B3946
   - target:          arm64-ios-simulator
-    value:           BA855B72-6D64-36BB-9A37-1EA29EBBC044
+    value:           E2412EB2-A63C-35EE-B44E-03A6634D71BA
 install-name:    '/usr/lib/system/libunwind.dylib'
-current-version: 200.10
+current-version: 201
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3163,11 +3185,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           F175CC10-3583-37BF-A648-1E78235C2F05
   - target:          x86_64-ios-simulator
-    value:           26B6416F-496E-32F6-AC9D-FFCD86331B43
+    value:           454053CA-B690-3B99-BE31-2369B04EA493
   - target:          arm64-ios-simulator
-    value:           8BD68285-9242-37A5-8076-FD0A38393FAC
+    value:           A4A026A9-5D49-3D7F-AC00-12D679BDC80E
 install-name:    '/usr/lib/system/libxpc.dylib'
-current-version: 2038.80.3
+current-version: 2038.100.48
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3198,10 +3220,11 @@ exports:
                        _XPC_ACTIVITY_MOTION_STATE_AUTOMOTIVE, _XPC_ACTIVITY_MOTION_STATE_AUTOMOTIVE_MOVING, 
                        _XPC_ACTIVITY_MOTION_STATE_AUTOMOTIVE_STATIONARY, _XPC_ACTIVITY_MOTION_STATE_CYCLING, 
                        _XPC_ACTIVITY_MOTION_STATE_RUNNING, _XPC_ACTIVITY_MOTION_STATE_STATIONARY, 
-                       _XPC_ACTIVITY_MOTION_STATE_WALKING, _XPC_ACTIVITY_NETWORK_TRANSFER_BIDIRECTIONAL, 
-                       _XPC_ACTIVITY_NETWORK_TRANSFER_DIRECTION, _XPC_ACTIVITY_NETWORK_TRANSFER_DIRECTION_DOWNLOAD, 
-                       _XPC_ACTIVITY_NETWORK_TRANSFER_DIRECTION_UPLOAD, _XPC_ACTIVITY_NETWORK_TRANSFER_ENDPOINT, 
-                       _XPC_ACTIVITY_NETWORK_TRANSFER_PARAMETERS, _XPC_ACTIVITY_NETWORK_TRANSFER_SIZE, 
+                       _XPC_ACTIVITY_MOTION_STATE_WALKING, _XPC_ACTIVITY_NETWORK_DOWNLOAD_SIZE, 
+                       _XPC_ACTIVITY_NETWORK_TRANSFER_BIDIRECTIONAL, _XPC_ACTIVITY_NETWORK_TRANSFER_DIRECTION, 
+                       _XPC_ACTIVITY_NETWORK_TRANSFER_DIRECTION_DOWNLOAD, _XPC_ACTIVITY_NETWORK_TRANSFER_DIRECTION_UPLOAD, 
+                       _XPC_ACTIVITY_NETWORK_TRANSFER_ENDPOINT, _XPC_ACTIVITY_NETWORK_TRANSFER_PARAMETERS, 
+                       _XPC_ACTIVITY_NETWORK_TRANSFER_SIZE, _XPC_ACTIVITY_NETWORK_UPLOAD_SIZE, 
                        _XPC_ACTIVITY_POST_INSTALL, _XPC_ACTIVITY_POWER_NAP, _XPC_ACTIVITY_PRIORITY, 
                        _XPC_ACTIVITY_PRIORITY_MAINTENANCE, _XPC_ACTIVITY_PRIORITY_UTILITY, 
                        _XPC_ACTIVITY_RANDOM_INITIAL_DELAY, _XPC_ACTIVITY_REPEATING, 
@@ -3287,16 +3310,17 @@ exports:
                        _launch_msg, _launch_path_for_user_service_4coresim, _launch_perfcheck_property_endpoint_active, 
                        _launch_perfcheck_property_endpoint_event, _launch_perfcheck_property_endpoint_name, 
                        _launch_perfcheck_property_endpoint_needs_activation, _launch_perfcheck_property_endpoints, 
-                       _launch_remove_external_service, _launch_service_instance_create, 
-                       _launch_service_instance_remove, _launch_service_stats_disable_4ppse, 
-                       _launch_service_stats_enable_4ppse, _launch_service_stats_is_enabled_4ppse, 
-                       _launch_set_service_enabled, _launch_set_system_service_enabled, 
-                       _launch_socket_service_check_in, _launch_version_for_user_service_4coresim, 
-                       _launch_wait, _launchd_close, _launchd_fdopen, _launchd_getfd, 
-                       _launchd_msg_recv, _launchd_msg_send, _load_launchd_jobs_at_loginwindow_prompt, 
-                       _mpm_uncork_fork, _mpm_wait, _os_system_version_get_current_version, 
-                       _os_system_version_sim_get_current_host_version, _os_transaction_copy_description, 
-                       _os_transaction_create, _os_transaction_get_timestamp, _os_transaction_needs_more_time, 
+                       _launch_remove_external_service, _launch_service_instance_copy_uuids, 
+                       _launch_service_instance_create, _launch_service_instance_remove, 
+                       _launch_service_stats_disable_4ppse, _launch_service_stats_enable_4ppse, 
+                       _launch_service_stats_is_enabled_4ppse, _launch_set_service_enabled, 
+                       _launch_set_system_service_enabled, _launch_socket_service_check_in, 
+                       _launch_version_for_user_service_4coresim, _launch_wait, _launchd_close, 
+                       _launchd_fdopen, _launchd_getfd, _launchd_msg_recv, _launchd_msg_send, 
+                       _load_launchd_jobs_at_loginwindow_prompt, _mpm_uncork_fork, 
+                       _mpm_wait, _os_system_version_get_current_version, _os_system_version_sim_get_current_host_version, 
+                       _os_transaction_copy_description, _os_transaction_create, 
+                       _os_transaction_get_timestamp, _os_transaction_needs_more_time, 
                        _place_hold_on_real_loginwindow, _reboot2, _reboot3, _vproc_release, 
                        _vproc_retain, _vproc_standby_begin, _vproc_standby_end, _vproc_swap_complex, 
                        _vproc_swap_integer, _vproc_swap_string, _vproc_transaction_begin, 

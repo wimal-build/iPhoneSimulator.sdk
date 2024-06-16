@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           ED706F93-D4A7-3331-B2AF-C53BFD638950
   - target:          x86_64-ios-simulator
-    value:           589EA18C-4DC5-3818-BBF5-ECB929309586
+    value:           F6EA372F-8B79-3004-A8C6-B1B83BA59334
   - target:          arm64-ios-simulator
-    value:           20295DAC-B120-3E1F-86DA-486A6DE5928F
+    value:           C93965E4-583B-3785-8DA9-B895ACCB9E0F
 install-name:    '/System/Library/Frameworks/CoreMotion.framework/CoreMotion'
-current-version: 2420.12.16
+current-version: 2420.16.24
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CMCaptureModeData, _CMWorkoutKeyEventDate, _CMWorkoutKeyLocation, 
@@ -41,15 +41,16 @@ exports:
                        _CLClientCreateIso6709Notation, _CLClientGetDistanceCoordinates, 
                        _CLClientGetDistanceHighPrecision, _CLCopyAppsUsingLocation, 
                        _CLCopyGnssBandsInUse, _CLCopyNearbyAssetSettings, _CLCopyNearbyAssetSettingsOfAccessoryFile, 
-                       _CLCopyTechnologiesInUse, _CLDaemonStartedNotification, _CLDeleteCurrentEmergencyLocationAsset, 
-                       _CLGetAccessoryMotionSensorLogs, _CLGetAccessoryTypeBitSet, 
-                       _CLGetArchivedAuthorizationDecisions, _CLGetClientTransientAuthorizationInfo, 
-                       _CLGetControlPlaneStatusReport, _CLGetEmergencyLocationSettingsVersionInfo, 
-                       _CLGetLocationDefault, _CLGetMotionSensorLogs, _CLGetPipelinedCache, 
-                       _CLGetStatusBarIconState, _CLGnssBandsChangedNotification, 
-                       _CLInternalPerformMigration, _CLMotionSyncStoreLastUpdate, 
-                       _CLPassKitNotifyPayment, _CLPingDaemon, _CLSetClientTransientAuthorizationInfo, 
-                       _CLSetLocationDefault, _CLSetMapMatchingRouteHint, _CLSetRouteHintsForMapMatching, 
+                       _CLCopyTechnologiesInUse, _CLCopyZaxisStats, _CLDaemonStartedNotification, 
+                       _CLDeleteCurrentEmergencyLocationAsset, _CLGetAccessoryMotionSensorLogs, 
+                       _CLGetAccessoryTypeBitSet, _CLGetArchivedAuthorizationDecisions, 
+                       _CLGetClientTransientAuthorizationInfo, _CLGetControlPlaneStatusReport, 
+                       _CLGetEmergencyLocationSettingsVersionInfo, _CLGetLocationDefault, 
+                       _CLGetMotionSensorLogs, _CLGetPipelinedCache, _CLGetStatusBarIconState, 
+                       _CLGnssBandsChangedNotification, _CLInternalPerformMigration, 
+                       _CLMotionSyncStoreLastUpdate, _CLPassKitNotifyPayment, _CLPingDaemon, 
+                       _CLSetClientTransientAuthorizationInfo, _CLSetLocationDefault, 
+                       _CLSetMapMatchingRouteHint, _CLSetRouteHintsForMapMatching, 
                        _CLShouldDisplayEEDUI, _CLShouldDisplayStatusBarIconChangedNotification, 
                        _CLStartStopAdvertisingBeacon, _CLTechStatusChangedNotification, 
                        _CLWeatherNotifyForecast, _CMAbsoluteAltitudeKey, _CMActivityData, 
@@ -97,12 +98,13 @@ exports:
                        _CMFilteredElevationKeySample, _CMFitnessMachineDataRecord, 
                        _CMHealthAssessmentFromDateKey, _CMHealthAssessmentToDateKey, 
                        _CMIndoorOutdoorStateKey, _CMKappaCmdKey, _CMKappaConfigAccel, 
-                       _CMKappaConfigDeviceMotion, _CMKappaConfigFastAccel, _CMKappaConfigPressure, 
-                       _CMKappaConfigTimeout, _CMKappaDataObject, _CMKappaGetStateKey, 
-                       _CMKappaStateKey, _CMMetMinutesArray, _CMMotionActivityData, 
-                       _CMMotionActivityDataArray, _CMMotionActivityStartTime, _CMMotionActivityStopTime, 
-                       _CMMotionAlarmKey, _CMMotionStateSim, _CMMotionStateSimResult, 
-                       _CMMotionStateSimState, _CMMovementDisorderLastProcessedKey, 
+                       _CMKappaConfigAudio, _CMKappaConfigDeviceMotion, _CMKappaConfigFastAccel, 
+                       _CMKappaConfigPressure, _CMKappaConfigTimeout, _CMKappaDataObject, 
+                       _CMKappaGetStateKey, _CMKappaStateKey, _CMKappaStatsNameOfCurrentFile, 
+                       _CMKappaStatsSetConfig, _CMKappaStatsSizeOfCurrentFile, _CMMetMinutesArray, 
+                       _CMMotionActivityData, _CMMotionActivityDataArray, _CMMotionActivityStartTime, 
+                       _CMMotionActivityStopTime, _CMMotionAlarmKey, _CMMotionStateSim, 
+                       _CMMotionStateSimResult, _CMMotionStateSimState, _CMMovementDisorderLastProcessedKey, 
                        _CMMovementDisorderMonitorKinesiasExpirationKey, _CMNatalimeterSetUserAgeYr, 
                        _CMNatalimeterSetUserBetaBlockerUse, _CMNatalimeterSetUserBiologicalSex, 
                        _CMNatalimeterSetUserCondition, _CMNatalimeterSetUserHeightMeter, 

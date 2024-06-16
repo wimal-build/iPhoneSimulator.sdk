@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           118472FC-3540-3FE1-9CB2-627A18B9EB7E
   - target:          x86_64-ios-simulator
-    value:           F05B32F8-E113-35C1-A5B9-460385EBC3DD
+    value:           3C3F9669-9BA2-33DF-8794-26C80416905B
   - target:          arm64-ios-simulator
-    value:           C8DC9A34-0BC6-37F6-BFDE-459515ED6661
+    value:           A862CCD1-4F9E-3287-AFD1-91153ECE3760
 install-name:    '/System/Library/Frameworks/CoreText.framework/CoreText'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -114,13 +114,13 @@ exports:
                        _CTFontCreateWithGraphicsFont, _CTFontCreateWithName, _CTFontCreateWithNameAndOptions, 
                        _CTFontDescriptorCanCreateWithTextStyle, _CTFontDescriptorCopyAttribute, 
                        _CTFontDescriptorCopyAttributes, _CTFontDescriptorCopyDownloadableFontAttributesForRequests, 
-                       _CTFontDescriptorCopyLocalizedAttribute, _CTFontDescriptorCopyNameForSystemFontOfWeight, 
-                       _CTFontDescriptorCreateCopyWithAttributes, _CTFontDescriptorCreateCopyWithFamily, 
-                       _CTFontDescriptorCreateCopyWithFeature, _CTFontDescriptorCreateCopyWithSymbolicTraits, 
-                       _CTFontDescriptorCreateCopyWithVariation, _CTFontDescriptorCreateForCSSFamily, 
-                       _CTFontDescriptorCreateForUIType, _CTFontDescriptorCreateLastResort, 
-                       _CTFontDescriptorCreateMatchingFontDescriptor, _CTFontDescriptorCreateMatchingFontDescriptors, 
-                       _CTFontDescriptorCreateMatchingFontDescriptorsWithOptions, 
+                       _CTFontDescriptorCopyLocalizedAttribute, _CTFontDescriptorCopyName, 
+                       _CTFontDescriptorCopyNameForSystemFontOfWeight, _CTFontDescriptorCreateCopyWithAttributes, 
+                       _CTFontDescriptorCreateCopyWithFamily, _CTFontDescriptorCreateCopyWithFeature, 
+                       _CTFontDescriptorCreateCopyWithSymbolicTraits, _CTFontDescriptorCreateCopyWithVariation, 
+                       _CTFontDescriptorCreateForCSSFamily, _CTFontDescriptorCreateForUIType, 
+                       _CTFontDescriptorCreateLastResort, _CTFontDescriptorCreateMatchingFontDescriptor, 
+                       _CTFontDescriptorCreateMatchingFontDescriptors, _CTFontDescriptorCreateMatchingFontDescriptorsWithOptions, 
                        _CTFontDescriptorCreateWithAttributes, _CTFontDescriptorCreateWithAttributesAndOptions, 
                        _CTFontDescriptorCreateWithNameAndSize, _CTFontDescriptorCreateWithTextStyle, 
                        _CTFontDescriptorCreateWithTextStyleAndAttributes, _CTFontDescriptorGetClientObject, 
@@ -307,17 +307,17 @@ exports:
                        _kCTFontRegistrationUserInfoAttribute, _kCTFontSampleTextNameKey, 
                        _kCTFontSearchDomainAttribute, _kCTFontSizeAttribute, _kCTFontSizeCategoryAttribute, 
                        _kCTFontSlantTrait, _kCTFontStyleNameAttribute, _kCTFontStyleNameKey, 
-                       _kCTFontSubFamilyNameKey, _kCTFontSymbolicTrait, _kCTFontSyntheticNameKey, 
-                       _kCTFontSystemAlternate, _kCTFontSystemAlternateBlack, _kCTFontSystemAlternateBlackItalic, 
-                       _kCTFontSystemAlternateBold, _kCTFontSystemAlternateBoldItalic, 
-                       _kCTFontSystemAlternateDemi, _kCTFontSystemAlternateDemiItalic, 
-                       _kCTFontSystemAlternateHeavy, _kCTFontSystemAlternateHeavyItalic, 
-                       _kCTFontSystemAlternateItalic, _kCTFontSystemAlternateLight, 
-                       _kCTFontSystemAlternateLightItalic, _kCTFontSystemAlternateMedium, 
-                       _kCTFontSystemAlternateMediumItalic, _kCTFontSystemAlternateThin, 
-                       _kCTFontSystemAlternateThinItalic, _kCTFontSystemAlternateUltraLight, 
-                       _kCTFontSystemAlternateUltraLightItalic, _kCTFontSystemCondensed, 
-                       _kCTFontSystemCondensedBlack, _kCTFontSystemCondensedBold, 
+                       _kCTFontSubFamilyNameKey, _kCTFontSymbolicTrait, _kCTFontSyntheticFamilyNameKey, 
+                       _kCTFontSyntheticNameKey, _kCTFontSystemAlternate, _kCTFontSystemAlternateBlack, 
+                       _kCTFontSystemAlternateBlackItalic, _kCTFontSystemAlternateBold, 
+                       _kCTFontSystemAlternateBoldItalic, _kCTFontSystemAlternateDemi, 
+                       _kCTFontSystemAlternateDemiItalic, _kCTFontSystemAlternateHeavy, 
+                       _kCTFontSystemAlternateHeavyItalic, _kCTFontSystemAlternateItalic, 
+                       _kCTFontSystemAlternateLight, _kCTFontSystemAlternateLightItalic, 
+                       _kCTFontSystemAlternateMedium, _kCTFontSystemAlternateMediumItalic, 
+                       _kCTFontSystemAlternateThin, _kCTFontSystemAlternateThinItalic, 
+                       _kCTFontSystemAlternateUltraLight, _kCTFontSystemAlternateUltraLightItalic, 
+                       _kCTFontSystemCondensed, _kCTFontSystemCondensedBlack, _kCTFontSystemCondensedBold, 
                        _kCTFontSystemCondensedDemi, _kCTFontSystemCondensedHeavy, 
                        _kCTFontSystemCondensedLight, _kCTFontSystemCondensedMedium, 
                        _kCTFontSystemCondensedThin, _kCTFontSystemCondensedUltraLight, 

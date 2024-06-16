@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B7282C99-50CC-3CF7-A462-44291DDD8E2B
   - target:          x86_64-ios-simulator
-    value:           F90EB707-1BA1-36B2-B03B-B3A2E33BB534
+    value:           34F365FE-B2BF-3031-803C-F10B79CDB67B
   - target:          arm64-ios-simulator
-    value:           4A8CC652-77BF-3542-95A4-E45E228FA1DE
+    value:           2BD66122-5EA0-3464-AB75-96C0C1D2141B
 install-name:    '/usr/lib/libcmph.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

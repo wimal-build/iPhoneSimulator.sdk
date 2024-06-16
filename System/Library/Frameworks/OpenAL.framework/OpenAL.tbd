@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A99C589F-FD6F-3933-BB1E-A225366470C4
   - target:          x86_64-ios-simulator
-    value:           A89439B8-2F33-341B-AC1E-C27C9F347024
+    value:           CD1B43D6-3B3F-3DBA-9C3D-F61791EFD78E
   - target:          arm64-ios-simulator
-    value:           F7613137-0EC6-303D-AFC7-FE708391ECE8
+    value:           DF0ABD31-06AA-3656-BC8D-3B2511156BA8
 install-name:    '/System/Library/Frameworks/OpenAL.framework/OpenAL'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BB765594-BEB8-3637-AB9E-A1124D8138A4
   - target:          x86_64-ios-simulator
-    value:           C1058C52-29AF-320D-A505-C98C8CE9DCAA
+    value:           BBB6452D-B286-3E37-963A-68302711B9B9
   - target:          arm64-ios-simulator
-    value:           45474E9E-F000-3DAC-92C8-5821E650BC96
+    value:           99CC8BDB-AEBF-3AD6-9F02-55C7DC8261D0
 install-name:    '/usr/lib/libmecabra.dylib'
-current-version: 927
+current-version: 929.9
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MecabraAnalysisContextAddCandidate, _MecabraAnalysisContextAdjust, 

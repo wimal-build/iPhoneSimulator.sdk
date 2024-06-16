@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           ED115D90-1F37-3A0F-9A48-0463B1544420
   - target:          x86_64-ios-simulator
-    value:           0A3ECF8B-6039-33D0-B85B-7B5CB0A32687
+    value:           C481DE33-EE36-36E6-99C5-FE99103C9B5F
   - target:          arm64-ios-simulator
-    value:           E4D1ABFD-B7C8-312A-A027-144D2EA24E75
+    value:           6825E5EC-DA7D-3765-879C-916738A4CF4A
 install-name:    '/System/Library/Frameworks/SceneKit.framework/SceneKit'
-current-version: 557.1
+current-version: 557.53
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _C3DAnimationManagerContainsSceneTimeBasedAnimation, _C3DAnimationManagerIsEmpty, 

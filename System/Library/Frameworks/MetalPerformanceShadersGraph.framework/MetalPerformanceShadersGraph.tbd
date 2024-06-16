@@ -5,16 +5,17 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2CEAC78C-200D-353C-8BC8-AF30DFA4A52F
+    value:           1ADB8EDF-0027-37C8-9ECC-C344E08FB785
   - target:          arm64-ios-simulator
-    value:           C3D75A52-E752-31A2-A894-3B20F2AE2E4B
+    value:           F927B321-25A0-3EBF-96CC-93919372340C
 install-name:    '/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     objc-classes:    [ MPSGraph, MPSGraphAdamOptimizer, MPSGraphConvolution2DOpDescriptor, 
                        MPSGraphDepthwiseConvolution2DOpDescriptor, MPSGraphDevice, 
-                       MPSGraphExecutable, MPSGraphExecutionDescriptor, MPSGraphOperation, 
-                       MPSGraphOptimizer, MPSGraphPooling2DOpDescriptor, MPSGraphShapedType, 
-                       MPSGraphStochasticGradientDescentOptimizer, MPSGraphTensor, 
-                       MPSGraphTensorData, MPSGraphVariableInitializer, MPSGraphVariableOp ]
+                       MPSGraphExecutable, MPSGraphExecutableDescriptor, MPSGraphExecutableExecutionDescriptor, 
+                       MPSGraphExecutionDescriptor, MPSGraphOperation, MPSGraphOptimizer, 
+                       MPSGraphPooling2DOpDescriptor, MPSGraphShapedType, MPSGraphStochasticGradientDescentOptimizer, 
+                       MPSGraphTensor, MPSGraphTensorData, MPSGraphVariableInitializer, 
+                       MPSGraphVariableOp ]
 ...

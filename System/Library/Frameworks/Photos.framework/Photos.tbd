@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           38E6A5D0-1955-328F-9927-AE05EF1FD2B2
   - target:          x86_64-ios-simulator
-    value:           C53FBC94-FB22-3B9A-BEC9-F4A5FE782665
+    value:           A4BE3390-3383-3D8E-8CD0-242B12472E58
   - target:          arm64-ios-simulator
-    value:           D0567DB5-9A73-3EA9-9090-15BF7C0E261E
+    value:           2FA2BBAF-2087-3E15-8EDF-5D565A107D56
 install-name:    '/System/Library/Frameworks/Photos.framework/Photos'
-current-version: 330.0.150
+current-version: 340.0.220
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _PHAdjustmentDataOpaqueFormatIdentifier, _PHAssertPredicateContainsNoManagedObjects, 

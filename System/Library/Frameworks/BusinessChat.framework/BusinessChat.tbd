@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1487EFD7-9F13-33F2-B95D-754A71447152
+    value:           0BC2D084-E98C-343B-A941-B3F48B3B3BC6
   - target:          arm64-ios-simulator
-    value:           271EAD50-3B9E-3E3A-8173-410551967391
+    value:           BED1BD98-5554-3E7F-95DA-B66221487D3E
 install-name:    '/System/Library/Frameworks/BusinessChat.framework/BusinessChat'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -24,9 +24,9 @@ exports:
                        _BCMessageRootAuthenticateKey, _BCMessageRootContentKey, _BCMessageRootErrorKey, 
                        _BCMessageRootEventKey, _BCMessageRootInternalAuthenticateKey, 
                        _BCMessageRootJITAppKitKey, _BCMessageRootListPickerKey, _BCMessageRootPaymentKey, 
-                       _BCMessageRootUnknownKey, _BCOAuthRedirectURI, _BCParameterNameBody, 
-                       _BCParameterNameGroup, _BCParameterNameIntent, _kAuthenticationErrorDomain, 
-                       _kCryptorErrorDomain ]
+                       _BCMessageRootQuickReplyKey, _BCMessageRootUnknownKey, _BCOAuthRedirectURI, 
+                       _BCParameterNameBody, _BCParameterNameGroup, _BCParameterNameIntent, 
+                       _kAuthenticationErrorDomain, _kCryptorErrorDomain ]
     objc-classes:    [ BCApplePayManager, BCAuthenticationLabels, BCAuthenticationManager, 
                        BCAuthenticationRequest, BCAuthenticationResponse, BCChatAction, 
                        BCChatButton, BCConstants, BCCryptor, BCError, BCFeatureFlag, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A4A5325F-E813-3493-BAC8-76379097756A
   - target:          x86_64-ios-simulator
-    value:           8A33D5D2-8E8B-3292-9F90-2D45CFC87696
+    value:           C2A18288-4AA2-3189-A1C6-5963E370DE4C
   - target:          arm64-ios-simulator
-    value:           FE5723F3-D1FB-35B2-A280-8ED717E62030
+    value:           81DE1BE5-83FA-310A-9FB3-CF39C14CA977
 install-name:    '/System/Library/Frameworks/Foundation.framework/Foundation'
-current-version: 1774.101
+current-version: 1775.118.101
 compatibility-version: 300
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -552,6 +552,14 @@ exports:
                        '$ld$hide$os9.1$_OBJC_METACLASS_$_NSURLSessionStreamTask', 
                        '$ld$hide$os9.1$_OBJC_METACLASS_$_NSURLSessionTaskMetrics', 
                        '$ld$hide$os9.1$_OBJC_METACLASS_$_NSURLSessionTaskTransactionMetrics', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$1$10.9$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$2$7.0$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$3$9.0$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$4$2.0$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$6$13.0$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$7$7.0$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$8$9.0$999$_NSDetailedErrorsKey$', 
+                       '$ld$previous$/System/Library/Frameworks/CoreData.framework/CoreData$$9$2.0$999$_NSDetailedErrorsKey$', 
                        _NSAMPMDesignation, _NSAffineTransformStructIdentity, _NSAllHashTableObjects, 
                        _NSAllMapTableKeys, _NSAllMapTableValues, _NSAllocateCollectable, 
                        _NSAllocateMemoryPages, _NSAllocateObject, _NSAllocateObjectArray, 
@@ -580,12 +588,12 @@ exports:
                        _NSDecimalPower, _NSDecimalRound, _NSDecimalSeparator, _NSDecimalString, 
                        _NSDecimalSubtract, _NSDecrementExtraRefCountWasZero, _NSDefaultMallocZone, 
                        _NSDescriptionErrorKey, _NSDestinationFilePathErrorKey, _NSDestinationInvalidException, 
-                       _NSDidBecomeSingleThreadedNotification, _NSDistinctUnionOfArraysKeyValueOperator, 
-                       _NSDistinctUnionOfObjectsKeyValueOperator, _NSDistinctUnionOfSetsKeyValueOperator, 
-                       _NSDivideRect, _NSEarlierTimeDesignations, _NSEdgeInsetsEqual, 
-                       _NSEdgeInsetsZero, _NSEndHashTableEnumeration, _NSEndMapTableEnumeration, 
-                       _NSEnumerateHashTable, _NSEnumerateMapTable, _NSEqualPoints, 
-                       _NSEqualRects, _NSEqualSizes, _NSErrorFailingURLStringKey, 
+                       _NSDetailedErrorsKey, _NSDidBecomeSingleThreadedNotification, 
+                       _NSDistinctUnionOfArraysKeyValueOperator, _NSDistinctUnionOfObjectsKeyValueOperator, 
+                       _NSDistinctUnionOfSetsKeyValueOperator, _NSDivideRect, _NSEarlierTimeDesignations, 
+                       _NSEdgeInsetsEqual, _NSEdgeInsetsZero, _NSEndHashTableEnumeration, 
+                       _NSEndMapTableEnumeration, _NSEnumerateHashTable, _NSEnumerateMapTable, 
+                       _NSEqualPoints, _NSEqualRects, _NSEqualSizes, _NSErrorFailingURLStringKey, 
                        _NSExtensionAdditionalServiceName, _NSExtensionContainingAppName, 
                        _NSExtensionErrorDomain, _NSExtensionHostDidBecomeActiveNotification, 
                        _NSExtensionHostDidEnterBackgroundNotification, _NSExtensionHostWillEnterForegroundNotification, 
@@ -702,15 +710,15 @@ exports:
                        _NSMetadataUbiquitousSharedItemReadWritePermissions, _NSMetadataUbiquitousSharedItemRoleKey, 
                        _NSMetadataUbiquitousSharedItemRoleOwner, _NSMetadataUbiquitousSharedItemRoleParticipant, 
                        _NSMinimumKeyValueOperator, _NSMinimumValidValueErrorKey, 
-                       _NSMonthNameArray, _NSMouseInRect, _NSNeXTRootDirectory, _NSNegateBooleanTransformerName, 
-                       _NSNegativeCurrencyFormatString, _NSNetServicesErrorCode, 
-                       _NSNetServicesErrorDomain, _NSNextDayDesignations, _NSNextHashEnumeratorItem, 
-                       _NSNextMapEnumeratorPair, _NSNextNextDayDesignations, _NSNonOwnedPointerHashCallBacks, 
-                       _NSNonOwnedPointerMapKeyCallBacks, _NSNonOwnedPointerMapValueCallBacks, 
-                       _NSNonOwnedPointerOrNullMapKeyCallBacks, _NSNonRetainedObjectHashCallBacks, 
-                       _NSNonRetainedObjectMapKeyCallBacks, _NSNonRetainedObjectMapValueCallBacks, 
-                       _NSNotFoundRange, _NSOSStatusErrorDomain, _NSObjectHashCallBacks, 
-                       _NSObjectInaccessibleException, _NSObjectMapKeyCallBacks, 
+                       _NSMonthNameArray, _NSMouseInRect, _NSMultipleUnderlyingErrorsKey, 
+                       _NSNeXTRootDirectory, _NSNegateBooleanTransformerName, _NSNegativeCurrencyFormatString, 
+                       _NSNetServicesErrorCode, _NSNetServicesErrorDomain, _NSNextDayDesignations, 
+                       _NSNextHashEnumeratorItem, _NSNextMapEnumeratorPair, _NSNextNextDayDesignations, 
+                       _NSNonOwnedPointerHashCallBacks, _NSNonOwnedPointerMapKeyCallBacks, 
+                       _NSNonOwnedPointerMapValueCallBacks, _NSNonOwnedPointerOrNullMapKeyCallBacks, 
+                       _NSNonRetainedObjectHashCallBacks, _NSNonRetainedObjectMapKeyCallBacks, 
+                       _NSNonRetainedObjectMapValueCallBacks, _NSNotFoundRange, _NSOSStatusErrorDomain, 
+                       _NSObjectHashCallBacks, _NSObjectInaccessibleException, _NSObjectMapKeyCallBacks, 
                        _NSObjectMapValueCallBacks, _NSObjectNotAvailableException, 
                        _NSOffsetRect, _NSOldStyleException, _NSOpenStepDirectoryForUser, 
                        _NSOpenStepRootDirectory, _NSOrthographyAllLanguagesForFlags, 

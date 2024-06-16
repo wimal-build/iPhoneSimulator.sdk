@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FFCB938F-6844-3BFD-96A0-15CA7403ACB3
+    value:           5F936733-80C6-34ED-947D-8014D277E7E4
   - target:          arm64-ios-simulator
-    value:           ABEFE09C-7C4D-35BE-B0AA-23FC3FA7F989
+    value:           931A51E1-78F4-3564-B5F1-98E3DF46FFAA
 install-name:    '/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers'
-current-version: 632
+current-version: 636.8
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _UTTagClassFilenameExtension, _UTTagClassMIMEType, _UTType3DContent, 
@@ -54,15 +54,15 @@ exports:
                        __UTIdentifierGetCanonicalRepresentation, __UTIdentifierGetHashCode, 
                        __UTIdentifiersAreEqual, __UTPrintModelCodesForCurrentDevice, 
                        __UTSetRuntimeIssueCatcher, __UTTagClassDeviceModelCode, __UTTaggedTypeCreate, 
-                       __UTTypeAppleDevice, __UTTypeAppleTV, __UTTypeAppleWatch, 
-                       __UTTypeBlockSpecial, __UTTypeCharacterSpecial, __UTTypeComputer, 
-                       __UTTypeDevice, __UTTypeDisplay, __UTTypeGenericPC, __UTTypeHEIFStandard, 
-                       __UTTypeHomePod, __UTTypeMac, __UTTypeMacBook, __UTTypeMacBookAir, 
-                       __UTTypeMacBookPro, __UTTypeMacLaptop, __UTTypeMacMini, __UTTypeMacPro, 
-                       __UTTypeNamedPipeOrFIFO, __UTTypePassBundle, __UTTypePassData, 
-                       __UTTypeSocket, __UTTypeSpeaker, __UTTypeiMac, __UTTypeiOSDevice, 
-                       __UTTypeiOSSimulator, __UTTypeiPad, __UTTypeiPhone, __UTTypeiPodTouch, 
-                       ___UNIFORM_TYPE_IDENTIFIER_WAS_NOT_DECLARED_IN_INFO_PLIST_OF_BUNDLE__, 
+                       __UTTypeAppleDevice, __UTTypeAppleEncryptedArchive, __UTTypeAppleTV, 
+                       __UTTypeAppleWatch, __UTTypeBlockSpecial, __UTTypeCharacterSpecial, 
+                       __UTTypeComputer, __UTTypeDevice, __UTTypeDisplay, __UTTypeGenericPC, 
+                       __UTTypeHEIFStandard, __UTTypeHomePod, __UTTypeMac, __UTTypeMacBook, 
+                       __UTTypeMacBookAir, __UTTypeMacBookPro, __UTTypeMacLaptop, 
+                       __UTTypeMacMini, __UTTypeMacPro, __UTTypeNamedPipeOrFIFO, 
+                       __UTTypePassBundle, __UTTypePassData, __UTTypeSocket, __UTTypeSpeaker, 
+                       __UTTypeiMac, __UTTypeiOSDevice, __UTTypeiOSSimulator, __UTTypeiPad, 
+                       __UTTypeiPhone, __UTTypeiPodTouch, ___UNIFORM_TYPE_IDENTIFIER_WAS_NOT_DECLARED_IN_INFO_PLIST_OF_BUNDLE__, 
                        ___UTFindCoreTypesConstantWithIdentifier ]
     objc-classes:    [ UTType ]
 ...

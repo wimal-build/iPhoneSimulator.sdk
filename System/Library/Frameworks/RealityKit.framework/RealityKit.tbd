@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0EEBEC94-B2F9-3571-AB4B-50CCB27AC60D
+    value:           A2D12B79-F960-3E7F-B0E6-5DD76D31A6DA
   - target:          arm64-ios-simulator
-    value:           AB3568CE-3716-3318-BBB5-FD17F7554AF6
+    value:           1B2EA54B-A187-34D3-931E-34EC2151075A
 install-name:    '/System/Library/Frameworks/RealityKit.framework/RealityKit'
-current-version: 60.45
+current-version: 60.48.5
 swift-abi-version: 7
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
@@ -780,6 +780,7 @@ exports:
                        '_$s10RealityKit15__SceneResourceCMn', '_$s10RealityKit15__SceneResourceCMo', 
                        '_$s10RealityKit15__SceneResourceCMu', '_$s10RealityKit15__SceneResourceCN', 
                        '_$s10RealityKit15__SceneResourceCfD', '_$s10RealityKit15__SceneResourceCfd', 
+                       '_$s10RealityKit15__VideoResourceC10__fromCoreyACXDAA10__AssetRefVFZ', 
                        '_$s10RealityKit15__VideoResourceC4load5named2inACSS_So8NSBundleCSgtKFZ', 
                        '_$s10RealityKit15__VideoResourceCAA0D0AAMc', '_$s10RealityKit15__VideoResourceCAA0D0AAWP', 
                        '_$s10RealityKit15__VideoResourceCMa', '_$s10RealityKit15__VideoResourceCMm', 

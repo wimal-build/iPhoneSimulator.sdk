@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           329C169E-5D6A-3819-A088-8C66566893B9
   - target:          x86_64-ios-simulator
-    value:           434A842D-C339-3F23-B060-132821136626
+    value:           86CF4FAB-4692-3061-B2A9-0F3A6949E6B5
   - target:          arm64-ios-simulator
-    value:           951CEE63-D95A-3582-8830-E68B4EF6F935
+    value:           A61292F7-0CB0-3850-BB92-F4B43F1FEADC
 install-name:    '/usr/lib/libarchive.2.dylib'
 current-version: 9.2
 compatibility-version: 9

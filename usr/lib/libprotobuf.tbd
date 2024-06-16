@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B8ECA00A-1FD3-3598-B003-B978F49164E8
   - target:          x86_64-ios-simulator
-    value:           2A7A49CC-8DE1-38A5-8E5F-BF8AB12A3176
+    value:           F696B070-FCDA-32FF-B980-F704F908000C
   - target:          arm64-ios-simulator
-    value:           B5B9166B-BB81-303A-8FE3-57D245F8CB3C
+    value:           FA04DB2D-4427-3CC1-9838-DB2FB73DA72B
 install-name:    '/usr/lib/libprotobuf.dylib'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

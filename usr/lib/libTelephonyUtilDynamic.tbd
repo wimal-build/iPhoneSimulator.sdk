@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           961EC9C2-0BED-39C2-A53E-B65433CA149A
   - target:          x86_64-ios-simulator
-    value:           6F8AB1DC-CFCE-351F-92D9-672ABB8DFA90
+    value:           B11CF7B6-6564-323D-B5AD-3A2ED708C3C7
   - target:          arm64-ios-simulator
-    value:           DBB4E2BB-1FCC-31DE-9187-4480B5184E61
+    value:           2123E9AD-D544-3141-B515-914895550E87
 install-name:    '/usr/lib/libTelephonyUtilDynamic.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -58,16 +58,23 @@ exports:
                        __ZN3ctu16LogMessageBuffer7vprintfEPKcP13__va_list_tag ]
     weak-symbols:    [ __ZTIN3ctu4rest17RestConnectorSinkINS_20RestDispatchListenerEEE, 
                        __ZTIN3ctu4rest21RestConnectorDelegateINS_15RestModuleStateEEE, 
+                       __ZTIN3ctu9SingletonINS_7GestaltES1_NS_23PthreadMutexGuardPolicyIS1_EEEE, 
+                       __ZTINSt3__110__function6__baseIFvN3xpc6objectEEEE, __ZTINSt3__110__function6__baseIFvN3xpc6objectENS_10shared_ptrIS3_EEEEE, 
+                       __ZTINSt3__110__function6__baseIFvRKN3ctu22RestResourceConnectionEEEE, 
                        __ZTINSt3__123enable_shared_from_thisIN3ctu15RestXpcListenerEEE, 
                        __ZTINSt3__123enable_shared_from_thisIN3ctu20RestDispatchListenerEEE, 
                        __ZTINSt3__123enable_shared_from_thisIN3ctu4rest16RestXpcConnectorEEE, 
                        __ZTINSt3__123enable_shared_from_thisIN3ctu4rest21RestDispatchConnectorEEE, 
                        __ZTSN3ctu4rest17RestConnectorSinkINS_20RestDispatchListenerEEE, 
                        __ZTSN3ctu4rest21RestConnectorDelegateINS_15RestModuleStateEEE, 
-                       __ZTSNSt3__114default_deleteIN3ctu15RestXpcListenerEEE, __ZTSNSt3__114default_deleteIN3ctu18XpcJetsamAssertionEEE, 
-                       __ZTSNSt3__114default_deleteIN3ctu20RestDispatchListenerEEE, 
-                       __ZTSNSt3__114default_deleteIN3ctu4rest16RestXpcConnectorEEE, 
-                       __ZTSNSt3__114default_deleteIN3ctu4rest21RestDispatchConnectorEEE, 
+                       __ZTSN3ctu9SingletonINS_7GestaltES1_NS_23PthreadMutexGuardPolicyIS1_EEEE, 
+                       __ZTSNSt3__110__function6__baseIFvN3xpc6objectEEEE, __ZTSNSt3__110__function6__baseIFvN3xpc6objectENS_10shared_ptrIS3_EEEEE, 
+                       __ZTSNSt3__110__function6__baseIFvRKN3ctu22RestResourceConnectionEEEE, 
+                       __ZTSNSt3__110shared_ptrIN3ctu15RestXpcListenerEE27__shared_ptr_default_deleteIS2_S2_EE, 
+                       __ZTSNSt3__110shared_ptrIN3ctu18XpcJetsamAssertionEE27__shared_ptr_default_deleteIS2_S2_EE, 
+                       __ZTSNSt3__110shared_ptrIN3ctu20RestDispatchListenerEE27__shared_ptr_default_deleteIS2_S2_EE, 
+                       __ZTSNSt3__110shared_ptrIN3ctu4rest16RestXpcConnectorEE27__shared_ptr_default_deleteIS3_S3_EE, 
+                       __ZTSNSt3__110shared_ptrIN3ctu4rest21RestDispatchConnectorEE27__shared_ptr_default_deleteIS3_S3_EE, 
                        __ZTSNSt3__123enable_shared_from_thisIN3ctu15RestXpcListenerEEE, 
                        __ZTSNSt3__123enable_shared_from_thisIN3ctu20RestDispatchListenerEEE, 
                        __ZTSNSt3__123enable_shared_from_thisIN3ctu4rest16RestXpcConnectorEEE, 
@@ -210,7 +217,9 @@ exports:
                        __ZNK3ctu4rest27WatchableRestResourceHelper17hasActiveWatchersEv, 
                        __ZNK3ctu4rest27WatchableRestResourceHelper3mapENSt3__18functionIFvRKNS_22RestResourceConnectionEEEE, 
                        __ZNK3ctu4rest9data_view4dataEv, __ZNK3ctu4rest9data_view4sizeEv, 
-                       __ZNK3ctu4rest9data_viewcvbEv, __ZNK3ctu9LogServer10getEnabledEv, 
+                       __ZNK3ctu4rest9data_viewcvbEv, __ZNK3ctu7Gestalt17getSysctlAsStringEPKc, 
+                       __ZNK3ctu7Gestalt5isMacEv, __ZNK3ctu7Gestalt6isIPadEv, __ZNK3ctu7Gestalt7isWatchEv, 
+                       __ZNK3ctu7Gestalt8isIPhoneEv, __ZNK3ctu9LogServer10getEnabledEv, 
                        __ZTIN3ctu12RestListenerE, __ZTIN3ctu12StaticLoggerE, __ZTIN3ctu15RestXpcListenerE, 
                        __ZTIN3ctu20RestDispatchListenerE, __ZTIN3ctu24RestListenerDelegateBaseE, 
                        __ZTIN3ctu30DispatchRestResourceConnectionE, __ZTIN3ctu32ReplyCallbackRestResourceContextE, 

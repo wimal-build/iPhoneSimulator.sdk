@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           594AB6A6-70ED-3039-8F02-6B404A7E061D
   - target:          x86_64-ios-simulator
-    value:           201A67B4-472D-3F2D-BFE2-6E8537267F5B
+    value:           485A5272-89F2-39B8-ACCC-15AD33FA0C07
   - target:          arm64-ios-simulator
-    value:           A5C1B552-8F71-342D-B901-285062579093
+    value:           E798A94D-7948-369F-8108-47652E00A665
 install-name:    '/usr/lib/swift/libswiftQuartzCore.dylib'
 swift-abi-version: 7
 exports:

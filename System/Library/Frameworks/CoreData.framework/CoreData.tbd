@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           3B993C66-F6C4-36EE-8C2E-A6BA9F883FC8
   - target:          x86_64-ios-simulator
-    value:           D705C63B-1A3A-3199-9EA2-00AC0B9CB1A8
+    value:           C1876A44-6F06-35AE-8C76-819D35DE8EE7
   - target:          arm64-ios-simulator
-    value:           6B4AF541-0C5E-34E0-A425-DD3F528018D1
+    value:           8201FBB6-E365-31D3-ACD5-4618F4128FAE
 install-name:    '/System/Library/Frameworks/CoreData.framework/CoreData'
-current-version: 1044.3
+current-version: 1048
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _NSAutomaticMigrationUseDocumentDestinationOption, _NSPersistentStoreCoordinatorDidImportExternalRecordsNotification, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           49C742B2-32B6-35A7-837A-735B63E24C9F
+    value:           B5AE2C42-8231-3307-BC08-3FE10289781E
   - target:          arm64-ios-simulator
-    value:           4367058C-153E-3176-BC55-7DE9633C5C09
+    value:           8C3C2DB9-E1CF-3DC0-BCAD-EDF9302BC862
 install-name:    '/usr/lib/swift/libswiftCoreML.dylib'
-current-version: 1006.40.39
+current-version: 1006.100.21
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

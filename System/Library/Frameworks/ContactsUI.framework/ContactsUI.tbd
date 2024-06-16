@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           FEA222FA-F050-357F-BB75-AD98D03E7833
   - target:          x86_64-ios-simulator
-    value:           5EF6E0BF-A2A1-337B-80C1-1900F05B6393
+    value:           6C32DF17-FE01-3B64-A4A8-4682B645D04A
   - target:          arm64-ios-simulator
-    value:           42AA4A40-E79F-33A6-A546-A348F31598A7
+    value:           D0DCE8CB-96B0-338A-9F7D-4226A0668A5B
 install-name:    '/System/Library/Frameworks/ContactsUI.framework/ContactsUI'
-current-version: 1109.1.2
+current-version: 1109.1.5
 exports:
   - targets:         [ i386-ios-simulator ]
     objc-classes:    [ CNContactActionsViewController, CNStyleProvider, CNTabletStyleProvider ]

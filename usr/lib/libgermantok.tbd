@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7BBC6353-31D3-3C06-9456-70CF083D4400
   - target:          x86_64-ios-simulator
-    value:           2C5B3078-B288-325D-BE07-E5B2C3F3733D
+    value:           0CC7FEE9-F6C7-3786-B3E2-22DDDB565D26
   - target:          arm64-ios-simulator
-    value:           53EC084C-04E3-32AA-8C8C-4079F3D889B7
+    value:           76222336-2134-3AD8-8A0C-D7757F141720
 install-name:    '/usr/lib/libgermantok.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

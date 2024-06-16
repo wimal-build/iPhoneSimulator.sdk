@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3AA5907C-4816-3749-8429-69D631ECCF91
   - target:          x86_64-ios-simulator
-    value:           B27CE0A0-93C3-3EBF-BCE1-40BB7389BA29
+    value:           0CD67FF3-75EB-3425-9524-7AC91C0B003C
   - target:          arm64-ios-simulator
-    value:           66EED960-3346-39DD-807D-F2BCB09F37BA
+    value:           F96E4113-DE70-36B9-92C8-511E4E5BBDCE
 install-name:    '/usr/lib/swift/libswiftsimd.dylib'
 current-version: 1.3
 swift-abi-version: 7

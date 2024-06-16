@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4A5D6D81-0524-3040-9373-261E8D743658
+    value:           F19BDD51-8CF1-3CEB-B433-CC481131532E
   - target:          arm64-ios-simulator
-    value:           218F9078-4474-34C6-9479-1C2F4CF13D9D
+    value:           F8321EC7-7D35-3A1E-9417-D26FA30AF6DC
 install-name:    '/usr/lib/swift/libswiftCompression.dylib'
 swift-abi-version: 7
 exports:

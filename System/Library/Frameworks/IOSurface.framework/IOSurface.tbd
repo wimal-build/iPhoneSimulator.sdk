@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F442EED1-48C4-3604-8257-AC5288E2F82C
+    value:           2BFF260C-9C68-3C37-939A-5AE6F3BD0943
   - target:          arm64-ios-simulator
-    value:           068FCF54-A648-3998-B640-13D732904B62
+    value:           B10C3F21-B5F7-346E-953C-CF3C23160F33
 install-name:    '/System/Library/Frameworks/IOSurface.framework/IOSurface'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]
@@ -42,8 +42,9 @@ exports:
                        _IOSurfaceLookup, _IOSurfaceLookupFromMachPort, _IOSurfaceLookupFromXPCObject, 
                        _IOSurfaceNeedsBindAccel, _IOSurfaceNeedsBindAccelOnPlane, 
                        _IOSurfaceNotifierCreate, _IOSurfaceNotifierGetMachPort, _IOSurfaceNotifierGetRunLoopSource, 
-                       _IOSurfaceNotifierGetTypeID, _IOSurfaceNotifierSetDispatchQueue, 
-                       _IOSurfacePrefetchPages, _IOSurfacePropertyAllocSizeKey, _IOSurfacePropertyKeyAllocSize, 
+                       _IOSurfaceNotifierGetTypeID, _IOSurfaceNotifierInvalidate, 
+                       _IOSurfaceNotifierSetDispatchQueue, _IOSurfacePrefetchPages, 
+                       _IOSurfacePropertyAllocSizeKey, _IOSurfacePropertyKeyAllocSize, 
                        _IOSurfacePropertyKeyBytesPerElement, _IOSurfacePropertyKeyBytesPerRow, 
                        _IOSurfacePropertyKeyCacheMode, _IOSurfacePropertyKeyElementHeight, 
                        _IOSurfacePropertyKeyElementWidth, _IOSurfacePropertyKeyHeight, 

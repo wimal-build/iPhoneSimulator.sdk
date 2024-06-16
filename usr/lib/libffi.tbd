@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           14CE79AE-FFA3-3571-98F8-3A463B18A5E6
+    value:           FB164C46-2480-33D6-A1FE-3708AAAD34E4
   - target:          arm64-ios-simulator
-    value:           CE2D23D6-2BEE-3CED-9C51-AF16BDC69228
+    value:           126AE1A2-BDBE-3DAB-A1FF-72775F9443A8
 install-name:    '/usr/lib/libffi.dylib'
 current-version: 27
 exports:

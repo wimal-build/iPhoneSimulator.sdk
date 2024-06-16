@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           304B5BF8-7BEB-3C03-9D9C-4CC1541DD6F1
+    value:           45EBBFE6-5715-3E91-A0EF-02C9A77A96BF
   - target:          arm64-ios-simulator
-    value:           F96C333D-332E-3C3F-B9FE-424E0D67C6ED
+    value:           4E09C0FB-CBA4-36A9-AE4A-5A8CEB18063C
 install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction'
 current-version: 0
 compatibility-version: 0
@@ -16,8 +16,9 @@ exports:
     symbols:         [ _NIErrorDomain, _NINearbyObjectAzimuthNotAvailable, _NINearbyObjectDirectionNotAvailable, 
                        _NINearbyObjectDirectionNotAvailable_Private, _NINearbyObjectDistanceNotAvailable, 
                        _NINearbyObjectDistanceNotAvailable_Private, _NINearbyObjectElevationNotAvailable, 
-                       _NINearbyObjectQuaternionNotAvailable ]
-    objc-classes:    [ NIConfiguration, NIDiscoveryToken, NIHomeDeviceConfiguration, 
-                       NINearbyObject, NINearbyPeerConfiguration, NIRegionPredicate, 
-                       NISession, _NIWiFiRangingTestConfiguration ]
+                       _NINearbyObjectQuaternionNotAvailable, _NINotifySystemShutdownWithReason, 
+                       _kNISystemShutdownCompletionTimeoutSeconds ]
+    objc-classes:    [ NICarKeyConfiguration, NIConfiguration, NIDiscoveryToken, 
+                       NIHomeDeviceConfiguration, NINearbyObject, NINearbyPeerConfiguration, 
+                       NIRegionPredicate, NISession, _NIWiFiRangingTestConfiguration ]
 ...

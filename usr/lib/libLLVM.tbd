@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           711FBE5F-5D39-33A1-9320-451B4CA59FD0
   - target:          x86_64-ios-simulator
-    value:           8943541C-90D2-35CA-8C28-6825F94FC30F
+    value:           640887F2-915D-3FDB-A904-736032EE874B
   - target:          arm64-ios-simulator
-    value:           F9183498-0CB4-3DE9-862C-E9C6C3B45237
+    value:           34E002B9-14FD-3815-AF54-D8E9FF9E3796
 install-name:    '/usr/lib/libLLVM.dylib'
-current-version: 31001.50
+current-version: 31001.144.1
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _ConvertUTF16toUTF32, _ConvertUTF16toUTF8, _ConvertUTF32toUTF16, 
@@ -2424,7 +2424,7 @@ exports:
                        __ZTINSt3__120__packaged_task_baseIFvvEEE, __ZTINSt3__120__packaged_task_funcINS_8functionIFvvEEENS_9allocatorIS3_EES2_EE, 
                        __ZTINSt3__120__shared_ptr_emplaceIN4llvm13BitCodeAbbrevENS_9allocatorIS2_EEEE, 
                        __ZTINSt3__120__shared_ptr_emplaceIN4llvm3sys2fs6detail12DirIterStateENS_9allocatorIS5_EEEE, 
-                       __ZTINSt3__120__shared_ptr_pointerIPNS_13__empty_stateIcEENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE, 
+                       __ZTINSt3__120__shared_ptr_pointerIPNS_13__empty_stateIcEENS_10shared_ptrIS2_E27__shared_ptr_default_deleteIS2_S2_EENS_9allocatorIS2_EEEE, 
                        __ZTINSt3__121__empty_non_own_stateIcEE, __ZTINSt3__123__match_any_but_newlineIcEE, 
                        __ZTINSt3__126__end_marked_subexpressionIcEE, __ZTINSt3__128__begin_marked_subexpressionIcEE, 
                        __ZTINSt3__16__bindIRFPN4llvm12FunctionPassEbEJbEEE, __ZTINSt3__16__loopIcEE, 
@@ -2584,14 +2584,14 @@ exports:
                        __ZTSNSt3__110__function6__funcIPFN4llvm19TargetTransformInfoERKNS2_8FunctionEENS_9allocatorIS8_EES7_EE, 
                        __ZTSNSt3__110__function6__funcIPFPN4llvm13ImmutablePassEvENS_9allocatorIS6_EEFPNS2_4PassEvEEE, 
                        __ZTSNSt3__110__l_anchorIcEE, __ZTSNSt3__110__r_anchorIcEE, 
+                       __ZTSNSt3__110shared_ptrINS_13__empty_stateIcEEE27__shared_ptr_default_deleteIS2_S2_EE, 
                        __ZTSNSt3__111__alternateIcEE, __ZTSNSt3__111__end_stateIcEE, 
                        __ZTSNSt3__111__lookaheadIcNS_12regex_traitsIcEEEE, __ZTSNSt3__111__match_anyIcEE, 
                        __ZTSNSt3__112__match_charIcEE, __ZTSNSt3__113__empty_stateIcEE, 
-                       __ZTSNSt3__114default_deleteINS_13__empty_stateIcEEEE, __ZTSNSt3__114unary_functionIbPN4llvm12FunctionPassEEE, 
-                       __ZTSNSt3__115__has_one_stateIcEE, __ZTSNSt3__115__word_boundaryIcNS_12regex_traitsIcEEEE, 
-                       __ZTSNSt3__116__back_ref_icaseIcNS_12regex_traitsIcEEEE, __ZTSNSt3__116__owns_one_stateIcEE, 
-                       __ZTSNSt3__117__owns_two_statesIcEE, __ZTSNSt3__117__repeat_one_loopIcEE, 
-                       __ZTSNSt3__118__back_ref_collateIcNS_12regex_traitsIcEEEE, 
+                       __ZTSNSt3__114unary_functionIbPN4llvm12FunctionPassEEE, __ZTSNSt3__115__has_one_stateIcEE, 
+                       __ZTSNSt3__115__word_boundaryIcNS_12regex_traitsIcEEEE, __ZTSNSt3__116__back_ref_icaseIcNS_12regex_traitsIcEEEE, 
+                       __ZTSNSt3__116__owns_one_stateIcEE, __ZTSNSt3__117__owns_two_statesIcEE, 
+                       __ZTSNSt3__117__repeat_one_loopIcEE, __ZTSNSt3__118__back_ref_collateIcNS_12regex_traitsIcEEEE, 
                        __ZTSNSt3__118__match_char_icaseIcNS_12regex_traitsIcEEEE, 
                        __ZTSNSt3__118__weak_result_typeIPFPN4llvm12FunctionPassEbEEE, 
                        __ZTSNSt3__120__bracket_expressionIcNS_12regex_traitsIcEEEE, 
@@ -2599,7 +2599,7 @@ exports:
                        __ZTSNSt3__120__packaged_task_baseIFvvEEE, __ZTSNSt3__120__packaged_task_funcINS_8functionIFvvEEENS_9allocatorIS3_EES2_EE, 
                        __ZTSNSt3__120__shared_ptr_emplaceIN4llvm13BitCodeAbbrevENS_9allocatorIS2_EEEE, 
                        __ZTSNSt3__120__shared_ptr_emplaceIN4llvm3sys2fs6detail12DirIterStateENS_9allocatorIS5_EEEE, 
-                       __ZTSNSt3__120__shared_ptr_pointerIPNS_13__empty_stateIcEENS_14default_deleteIS2_EENS_9allocatorIS2_EEEE, 
+                       __ZTSNSt3__120__shared_ptr_pointerIPNS_13__empty_stateIcEENS_10shared_ptrIS2_E27__shared_ptr_default_deleteIS2_S2_EENS_9allocatorIS2_EEEE, 
                        __ZTSNSt3__121__empty_non_own_stateIcEE, __ZTSNSt3__123__match_any_but_newlineIcEE, 
                        __ZTSNSt3__126__end_marked_subexpressionIcEE, __ZTSNSt3__128__begin_marked_subexpressionIcEE, 
                        __ZTSNSt3__16__bindIRFPN4llvm12FunctionPassEbEJbEEE, __ZTSNSt3__16__loopIcEE, 
@@ -3516,6 +3516,7 @@ exports:
                        __ZN4llvm14isKnownNonZeroEPKNS_5ValueERKNS_10DataLayoutEjPNS_15AssumptionCacheEPKNS_11InstructionEPKNS_13DominatorTreeE, 
                        __ZN4llvm14lowertypetests13BitSetBuilder5buildEv, __ZN4llvm14lowertypetests16ByteArrayBuilder8allocateERKNSt3__13setIyNS2_4lessIyEENS2_9allocatorIyEEEEyRyRh, 
                        __ZN4llvm14lowertypetests19GlobalLayoutBuilder11addFragmentERKNSt3__13setIyNS2_4lessIyEENS2_9allocatorIyEEEE, 
+                       __ZN4llvm14makeNamedTimerENS_9StringRefES0_PNS_10TimerGroupE, 
                        __ZN4llvm14printLowerCaseENS_9StringRefERNS_11raw_ostreamE, 
                        __ZN4llvm14raw_fd_ostream6anchorEv, __ZN4llvm14raw_fd_ostreamC1ENS_9StringRefERNSt3__110error_codeE, 
                        __ZN4llvm14raw_fd_ostreamC1ENS_9StringRefERNSt3__110error_codeENS_3sys2fs10FileAccessE, 
@@ -4428,7 +4429,7 @@ exports:
                        __ZN4llvm19haveNoCommonBitsSetEPKNS_5ValueES2_RKNS_10DataLayoutEPNS_15AssumptionCacheEPKNS_11InstructionEPKNS_13DominatorTreeE, 
                        __ZN4llvm19isBitcodeWriterPassEPNS_4PassE, __ZN4llvm19isConsecutiveAccessEPNS_5ValueES1_RKNS_10DataLayoutERNS_15ScalarEvolutionEb, 
                        __ZN4llvm19isLegalUTF8SequenceEPKhS1_, __ZN4llvm19lowerObjectSizeCallEPNS_13IntrinsicInstERKNS_10DataLayoutEPKNS_17TargetLibraryInfoEb, 
-                       __ZN4llvm19parseAssemblyStringENS_9StringRefERNS_12SMDiagnosticERNS_11LLVMContextEPNS_11SlotMappingEbS0_, 
+                       __ZN4llvm19makeNamedTimerGroupENS_9StringRefES0_, __ZN4llvm19parseAssemblyStringENS_9StringRefERNS_12SMDiagnosticERNS_11LLVMContextEPNS_11SlotMappingEbS0_, 
                        __ZN4llvm19skipDebugIntrinsicsENS_14ilist_iteratorINS_12ilist_detail12node_optionsINS_11InstructionELb0ELb0EvEELb0ELb0EEE, 
                        __ZN4llvm20AAResultsWrapperPass13runOnFunctionERNS_8FunctionE, 
                        __ZN4llvm20AAResultsWrapperPass2IDE, __ZN4llvm20AAResultsWrapperPassC1Ev, 
@@ -5967,8 +5968,8 @@ exports:
                        __ZN4llvm9Intrinsic24getIntrinsicForMSBuiltinEPKcNS_9StringRefE, 
                        __ZN4llvm9Intrinsic25getIntrinsicForGCCBuiltinEPKcNS_9StringRefE, 
                        __ZN4llvm9Intrinsic25remangleIntrinsicFunctionEPNS_8FunctionE, 
-                       __ZN4llvm9Intrinsic7getNameENS0_2IDE, __ZN4llvm9KnownBits16computeForAddSubEbbRKS0_S0_, 
-                       __ZN4llvm9LCSSAPass3runERNS_8FunctionERNS_15AnalysisManagerIS1_JEEE, 
+                       __ZN4llvm9Intrinsic7getNameENS0_2IDE, __ZN4llvm9KnownBits13computeForMulERKS0_S2_, 
+                       __ZN4llvm9KnownBits16computeForAddSubEbbRKS0_S0_, __ZN4llvm9LCSSAPass3runERNS_8FunctionERNS_15AnalysisManagerIS1_JEEE, 
                        __ZN4llvm9MCContext11reportErrorENS_5SMLocERKNS_5TwineE, __ZN4llvm9MCContext12getCVContextEv, 
                        __ZN4llvm9MCContext12getDwarfFileENS_9StringRefES1_jPNS_3MD59MD5ResultENS_8OptionalIS1_EEj, 
                        __ZN4llvm9MCContext13getELFSectionERKNS_5TwineEjjjPKNS_11MCSymbolELFEjS6_, 
@@ -6564,14 +6565,14 @@ exports:
                        __ZNK4llvm6Module20getOperandBundleTagsERNS_15SmallVectorImplINS_9StringRefEEE, 
                        __ZNK4llvm6Module26getTargetVariantSDKVersionEv, __ZNK4llvm6Module27getNumberRegisterParametersEv, 
                        __ZNK4llvm6Module28debug_compile_units_iteratordeEv, __ZNK4llvm6Module28debug_compile_units_iteratorptEv, 
-                       __ZNK4llvm6Triple14isLittleEndianEv, __ZNK4llvm6Triple16isCompatibleWithERKS0_, 
-                       __ZNK4llvm6Triple17getWatchOSVersionERjS1_S1_, __ZNK4llvm6Triple17isMacOSXVersionLTEjjj, 
-                       __ZNK4llvm6Triple18getBridgeOSVersionERjS1_S1_, __ZNK4llvm6Triple19getDriverKitVersionERjS1_S1_, 
-                       __ZNK4llvm6Triple28getMinimumSupportedOSVersionEv, __ZNK4llvm6Triple5mergeERKS0_, 
-                       __ZNK4llvm6detail13DoubleAPFloat10isDenormalEv, __ZNK4llvm6detail13DoubleAPFloat10isNegativeEv, 
-                       __ZNK4llvm6detail13DoubleAPFloat10isSmallestEv, __ZNK4llvm6detail13DoubleAPFloat11getCategoryEv, 
-                       __ZNK4llvm6detail13DoubleAPFloat14bitcastToAPIntEv, __ZNK4llvm6detail13DoubleAPFloat14bitwiseIsEqualERKS1_, 
-                       __ZNK4llvm6detail13DoubleAPFloat15getExactInverseEPNS_7APFloatE, 
+                       __ZNK4llvm6Triple13getAIRVersionEv, __ZNK4llvm6Triple14isLittleEndianEv, 
+                       __ZNK4llvm6Triple16isCompatibleWithERKS0_, __ZNK4llvm6Triple17getWatchOSVersionERjS1_S1_, 
+                       __ZNK4llvm6Triple17isMacOSXVersionLTEjjj, __ZNK4llvm6Triple18getBridgeOSVersionERjS1_S1_, 
+                       __ZNK4llvm6Triple19getDriverKitVersionERjS1_S1_, __ZNK4llvm6Triple28getMinimumSupportedOSVersionEv, 
+                       __ZNK4llvm6Triple5mergeERKS0_, __ZNK4llvm6detail13DoubleAPFloat10isDenormalEv, 
+                       __ZNK4llvm6detail13DoubleAPFloat10isNegativeEv, __ZNK4llvm6detail13DoubleAPFloat10isSmallestEv, 
+                       __ZNK4llvm6detail13DoubleAPFloat11getCategoryEv, __ZNK4llvm6detail13DoubleAPFloat14bitcastToAPIntEv, 
+                       __ZNK4llvm6detail13DoubleAPFloat14bitwiseIsEqualERKS1_, __ZNK4llvm6detail13DoubleAPFloat15getExactInverseEPNS_7APFloatE, 
                        __ZNK4llvm6detail13DoubleAPFloat16convertToIntegerENS_15MutableArrayRefIyEEjbNS_11APFloatBase12roundingModeEPb, 
                        __ZNK4llvm6detail13DoubleAPFloat18convertToHexStringEPcjbNS_11APFloatBase12roundingModeE, 
                        __ZNK4llvm6detail13DoubleAPFloat20compareAbsoluteValueERKS1_, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           49C20216-64F4-3157-8B18-460C173BE876
   - target:          x86_64-ios-simulator
-    value:           36040F11-E1CE-31BF-9782-58A6F0268E14
+    value:           875BEFCE-D2A2-3D08-AE05-E5B8872C4BF6
   - target:          arm64-ios-simulator
-    value:           A023C8B4-2F96-30B7-952B-DDC2C23AF197
+    value:           9FED8B3B-6860-3281-AD62-851F068527CC
 install-name:    '/usr/lib/swift/libswiftDarwin.dylib'
 current-version: 0
 swift-abi-version: 7

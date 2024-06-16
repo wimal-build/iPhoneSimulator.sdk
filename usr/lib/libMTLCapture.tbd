@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D96EE007-B7B3-3FD4-A7B8-AC7E513E9BE8
+    value:           4E5B8207-343F-31E4-AAC8-3CEB5FDDB01C
   - target:          arm64-ios-simulator
-    value:           280EF10D-6315-3BF0-B542-7CEE9C4013CE
+    value:           7D8E4734-F43A-37CE-8A67-15AA363F0039
 install-name:    '/usr/lib/libMTLCapture.dylib'
-current-version: 205.16
+current-version: 207.18
 compatibility-version: 1.1
 exports:
   - targets:         [ x86_64-ios-simulator ]

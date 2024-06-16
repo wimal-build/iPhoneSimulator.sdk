@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           92FD7DF6-A48E-3A2B-B571-2F781F525EED
+    value:           FA243B98-CC7F-31E2-BAC8-EC3C06B91053
   - target:          arm64-ios-simulator
-    value:           F13DF14D-6EB4-3BBB-8077-C0A5F5A5D096
+    value:           E8D45206-413D-35B4-A5ED-D48C8EA95536
 install-name:    '/usr/lib/libobjc-trampolines.dylib'
 current-version: 228
 exports:

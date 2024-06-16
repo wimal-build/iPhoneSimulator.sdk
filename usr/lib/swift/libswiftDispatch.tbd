@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           67FCF36D-CDB4-3516-A246-47E18A05FA51
   - target:          x86_64-ios-simulator
-    value:           32459084-2660-362B-9758-0B29A13AB39C
+    value:           A1DBC32F-3F9B-3308-9C6A-8332F21842D0
   - target:          arm64-ios-simulator
-    value:           806D2A8B-F463-36F1-8BC7-153514F3B5B5
+    value:           F2437472-15E5-3B43-ABD5-895A120991AA
 install-name:    '/usr/lib/swift/libswiftDispatch.dylib'
-current-version: 4.40.2
+current-version: 4.100.1
 swift-abi-version: 7
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -127,6 +127,10 @@ exports:
                        '_$s8Dispatch0A8WorkItemC4wait7timeoutAA0A13TimeoutResultOAA0A4TimeV_tFTj', 
                        '_$s8Dispatch0A8WorkItemC4wait7timeoutAA0A13TimeoutResultOAA0A4TimeV_tFTq', 
                        '_$s8Dispatch0A8WorkItemC4waityyFTj', '_$s8Dispatch0A8WorkItemC4waityyFTq', 
+                       '_$s8Dispatch0A8WorkItemC5flags5blockAcA0abC5FlagsV_yyXBtcfC', 
+                       '_$s8Dispatch0A8WorkItemC5flags5blockAcA0abC5FlagsV_yyXBtcfCTj', 
+                       '_$s8Dispatch0A8WorkItemC5flags5blockAcA0abC5FlagsV_yyXBtcfCTq', 
+                       '_$s8Dispatch0A8WorkItemC5flags5blockAcA0abC5FlagsV_yyXBtcfc', 
                        '_$s8Dispatch0A8WorkItemC6cancelyyFTj', '_$s8Dispatch0A8WorkItemC6cancelyyFTq', 
                        '_$s8Dispatch0A8WorkItemC6notify3qos5flags5queue7executeyAA0A3QoSV_AA0abC5FlagsVSo012OS_dispatch_G0CyyXBtFTj', 
                        '_$s8Dispatch0A8WorkItemC6notify3qos5flags5queue7executeyAA0A3QoSV_AA0abC5FlagsVSo012OS_dispatch_G0CyyXBtFTq', 

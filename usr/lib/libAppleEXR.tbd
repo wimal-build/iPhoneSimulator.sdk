@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           76C4E3DF-E21D-35B5-9269-CB4827D93661
+    value:           3D1BE541-FD4A-319E-8E21-F795C8755EE4
   - target:          arm64-ios-simulator
-    value:           98008A51-137F-32C6-8B1A-6510273B30E8
+    value:           E4FF9D1E-C48E-3CA4-B127-8801327A5CBF
 install-name:    '/usr/lib/libAppleEXR.dylib'
-current-version: 1.3.1
+current-version: 1.3.4
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _axr_channel_type_get_name, _axr_compression_get_name, _axr_data_create, 

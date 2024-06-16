@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2FFF4B9D-6BA9-3C76-85E2-B2233B90F50A
+    value:           B7DA583A-EF20-35AF-B34A-9BB531C22D24
   - target:          arm64-ios-simulator
-    value:           D75B74E1-BC3A-3E6D-81E1-0667097874C2
+    value:           1D2DE9A0-65F9-33BB-99F4-BEC8DEAC4539
 install-name:    '/usr/lib/libapple_nghttp2.dylib'
 current-version: 1.41
 exports:

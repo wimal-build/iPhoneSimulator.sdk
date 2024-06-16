@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           25DCE3F6-1B79-3F69-9DC8-7F9EC82652AB
+    value:           A9B2968E-DDBC-3B50-B21D-5C67C7C0209F
   - target:          arm64-ios-simulator
-    value:           A6AB5866-B0FC-33CC-BB7D-F5D88982362D
+    value:           37B4C3E2-7167-3191-91BC-7C673B61E034
 install-name:    '/usr/lib/libAppleArchive.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -56,13 +56,19 @@ exports:
                        _AAHeaderGetKeyIndex, _AAHeaderGetPayloadSize, _AAHeaderRemoveField, 
                        _AAHeaderSetFieldBlob, _AAHeaderSetFieldFlag, _AAHeaderSetFieldHash, 
                        _AAHeaderSetFieldString, _AAHeaderSetFieldTimespec, _AAHeaderSetFieldUInt, 
-                       _AAMemoryInputStreamOpen, _AAPathListCreateWithDirectoryContents, 
-                       _AAPathListDestroy, _AAPathListNodeFirst, _AAPathListNodeGetPath, 
-                       _AAPathListNodeNext, _AASharedBufferPipeOpen, _AATempFileStreamOpen, 
-                       _AAThreadErrorContextEnter, _AAThreadErrorContextLeave, _AEAContextCreateWithEncryptedStream, 
+                       _AAMemoryInputStreamOpen, _AAPathListCreate, _AAPathListCreateWithDirectoryContents, 
+                       _AAPathListDestroy, _AAPathListMerge, _AAPathListNodeFirst, 
+                       _AAPathListNodeGetPath, _AAPathListNodeNext, _AASharedBufferPipeOpen, 
+                       _AATempFileStreamOpen, _AAThreadErrorContextEnter, _AAThreadErrorContextLeave, 
+                       _AEAAuthDataAppendEntry, _AEAAuthDataClear, _AEAAuthDataCreate, 
+                       _AEAAuthDataCreateWithContext, _AEAAuthDataDestroy, _AEAAuthDataGetEncodedData, 
+                       _AEAAuthDataGetEncodedSize, _AEAAuthDataGetEntry, _AEAAuthDataGetEntryCount, 
+                       _AEAAuthDataRemoveEntry, _AEAAuthDataSetEntry, _AEAContextCreateWithEncryptedStream, 
                        _AEAContextCreateWithProfile, _AEAContextDestroy, _AEAContextGetFieldBlob, 
                        _AEAContextGetFieldUInt, _AEAContextSetFieldBlob, _AEAContextSetFieldCallback, 
                        _AEAContextSetFieldUInt, _AEADecryptToFile, _AEADecryptionInputStreamOpen, 
-                       _AEADecryptionRandomAccessInputStreamOpen, _AEAEncryptionOutputStreamOpen, 
-                       _AEAEncryptionOutputStreamOpenExisting, _AEAStreamSign ]
+                       _AEADecryptionRandomAccessInputStreamOpen, _AEAEncryptionOutputStreamCloseAndUpdateContext, 
+                       _AEAEncryptionOutputStreamOpen, _AEAEncryptionOutputStreamOpenExisting, 
+                       _AEAKeychainGenerateItem, _AEAKeychainHasItem, _AEAKeychainLoadItem, 
+                       _AEAKeychainRemoveItem, _AEAKeychainStoreItem, _AEAStreamSign ]
 ...

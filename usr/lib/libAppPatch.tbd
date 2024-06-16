@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A69CDC78-0F06-3283-BE28-F4AFD1BA701A
   - target:          x86_64-ios-simulator
-    value:           4DA38B4B-8011-38D5-B2D7-B37065671BAF
+    value:           244E807F-D8C3-3257-94DE-7DAF2E0A85E1
   - target:          arm64-ios-simulator
-    value:           A1877A1B-D6CA-30C7-9DE2-68C4CB916CA7
+    value:           EF6BB386-3003-3D3B-A634-B84D7EEF452A
 install-name:    '/usr/lib/libAppPatch.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

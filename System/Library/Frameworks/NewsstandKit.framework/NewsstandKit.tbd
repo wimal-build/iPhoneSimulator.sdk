@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F9FAF96F-1CEF-3CB7-BDC9-50304DF21012
   - target:          x86_64-ios-simulator
-    value:           4B24FD31-BC7C-3197-8153-FC406C225A3F
+    value:           AE8641F5-9D54-3674-AD66-C090524D51CC
   - target:          arm64-ios-simulator
-    value:           9F5F76DC-0ECB-3883-8B56-3D977F7FD300
+    value:           1DD2F5E3-BACB-31AD-9D18-9C6C28D4511A
 install-name:    '/System/Library/Frameworks/NewsstandKit.framework/NewsstandKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E675C84F-08F3-307C-8859-FA9122D56871
   - target:          x86_64-ios-simulator
-    value:           17806FEF-135F-3AEB-88AD-233EF5C784B5
+    value:           583E6742-DE52-3E41-863C-CDC43AA76767
   - target:          arm64-ios-simulator
-    value:           75E53C9A-F01E-39E0-BC5A-F529D1526EC7
+    value:           C247E444-304C-399C-AF10-6A1090BBF2AC
 install-name:    '/usr/lib/libobjc.A.dylib'
 current-version: 228
 exports:
@@ -38,7 +38,7 @@ exports:
                        _objc_msgSend_fp2ret_fixup, _objc_msgSend_fpret_fixup, _objc_msgSend_stret_fixup ]
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _objc_msgLookup_fpret, _objc_msgSend_fpret, _objc_msgSend_fpret_debug ]
-  - targets:         [ arm64-ios-simulator, i386-ios-simulator ]
+  - targets:         [ arm64-ios-simulator ]
     symbols:         [ __objc_has_weak_formation_callout, _objc_absolute_packed_isa_class_mask, 
                        _objc_debug_tag60_permutations ]
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]
@@ -155,7 +155,7 @@ exports:
                        _protocol_copyPropertyList, _protocol_copyPropertyList2, _protocol_copyProtocolList, 
                        _protocol_getMethodDescription, _protocol_getName, _protocol_getProperty, 
                        _protocol_isEqual, _sel_getName, _sel_getUid, _sel_hash, _sel_isEqual, 
-                       _sel_isMapped, _sel_registerName ]
+                       _sel_isMapped, _sel_lookUpByName, _sel_registerName ]
     objc-classes:    [ NSObject, Object, Protocol ]
     objc-ivars:      [ NSObject.isa, Object.isa ]
 ...

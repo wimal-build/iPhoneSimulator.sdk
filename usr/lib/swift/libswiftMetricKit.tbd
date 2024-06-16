@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           76C20ABD-508F-3ADD-905E-F9ED5F03CA48
+    value:           8E74AE3C-F9E7-37A7-975D-89D5E4A5FC8C
   - target:          arm64-ios-simulator
-    value:           F7D6E056-0383-346B-96F1-4C62FDBCA706
+    value:           28F0DBE6-0422-39A0-8095-279573396BAD
 install-name:    '/usr/lib/swift/libswiftMetricKit.dylib'
 current-version: 3
 swift-abi-version: 7

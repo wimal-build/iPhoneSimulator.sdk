@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           413609CC-83C6-3BD3-B872-BA61486B4734
   - target:          x86_64-ios-simulator
-    value:           5845DB03-8062-3884-804D-99C37A62B0D4
+    value:           AEE490D5-963B-3B3A-9F49-4ED73795AEB9
   - target:          arm64-ios-simulator
-    value:           66658F7B-E741-393F-8A75-84EEEB2F582E
+    value:           56634261-F4D0-3912-BEA8-17E29581C3C2
 install-name:    '/System/Library/Frameworks/CloudKit.framework/CloudKit'
-current-version: 970
+current-version: 982
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CKActivitySharingContainerIdentifier, _CKBackupContainerIdentifierPrefix, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AF1D8177-60D8-39AC-8E3A-5DF2741D6E0C
+    value:           1C6099BA-8ED4-34BF-AD65-F1080010D96E
   - target:          arm64-ios-simulator
-    value:           7B77B5C2-0FB7-38BA-BA46-A5F2EC604A73
+    value:           401D194B-A396-3872-8706-C36D7A1BB0A8
 install-name:    '/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib'
-current-version: 632
+current-version: 636.8
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -115,6 +115,8 @@ exports:
                        '_$s22UniformTypeIdentifiers6UTTypeV15x509CertificateACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV15xmlPropertyListACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16_deviceModelCode14enclosureColorACSgSS_AA010UTHardwareI0OSgtcfC', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV16_enclosureColorsSayAA15UTHardwareColorOGvg', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV16_enclosureColorsSayAA15UTHardwareColorOGvpMV', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16_namedPipeOrFIFOACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16compositeContentACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16debugDescriptionSSvg', 
@@ -144,8 +146,11 @@ exports:
                        '_$s22UniformTypeIdentifiers6UTTypeV21_kindStringDictionarySDyS2SGvpMV', 
                        '_$s22UniformTypeIdentifiers6UTTypeV21_localizedDescription5usingSSSgSaySSG_tF', 
                        '_$s22UniformTypeIdentifiers6UTTypeV21systemPreferencesPaneACvgZ', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV22_appleEncryptedArchiveACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV22assemblyLanguageSourceACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV22utf16ExternalPlainTextACvgZ', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV24_preferredEnclosureColorAA010UTHardwareG0OSgvg', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV24_preferredEnclosureColorAA010UTHardwareG0OSgvpMV', 
                        '_$s22UniformTypeIdentifiers6UTTypeV24appleProtectedMPEG4AudioACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV24appleProtectedMPEG4VideoACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV24objectiveCPlusPlusSourceACvgZ', 

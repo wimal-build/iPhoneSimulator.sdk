@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           C76B0FD8-49B1-3DE1-8CAA-29E9B6EC6DC6
   - target:          x86_64-ios-simulator
-    value:           F3BF7EF2-359C-3F0B-94F8-869B359BD220
+    value:           73E5D26F-9DC8-3377-8A35-54C447B83AA9
   - target:          arm64-ios-simulator
-    value:           EDF81FBC-98F7-3979-8E74-14595A4E2871
+    value:           F90CBB14-4800-3EED-B380-CA960D5F8C8F
 install-name:    '/System/Library/Frameworks/MetalKit.framework/MetalKit'
-current-version: 147.1
+current-version: 148.1
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MTKTextureLoaderOptionCubeFromVerticalTexture, _MetalKitVersionNumber, 

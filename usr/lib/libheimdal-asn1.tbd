@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7F6EABD4-299B-3381-8B5B-00DBFE7BF13E
   - target:          x86_64-ios-simulator
-    value:           032D33F6-5F5C-3670-B029-5EE37F4E2A51
+    value:           314D13FE-66C0-3002-ACBE-123F359130C9
   - target:          arm64-ios-simulator
-    value:           7F561652-4846-3776-96FA-F59EA9C0034A
+    value:           8A08A092-1052-3A1A-96D9-1E8EF42A52F7
 install-name:    '/usr/lib/libheimdal-asn1.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

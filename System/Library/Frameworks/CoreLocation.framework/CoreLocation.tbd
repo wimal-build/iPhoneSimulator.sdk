@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           947360CF-8080-387A-9FE9-6334FD6C2A93
   - target:          x86_64-ios-simulator
-    value:           91A28FF2-A113-3067-B618-6FE343965DBB
+    value:           C3C1D0C0-482D-37B9-920B-429D222F427E
   - target:          arm64-ios-simulator
-    value:           F94D1F57-86D5-3A82-8F2B-80A9AEAC0308
+    value:           27E25B9D-DC1E-309E-A07E-513D5095EE6C
 install-name:    '/System/Library/Frameworks/CoreLocation.framework/CoreLocation'
-current-version: 2420.12.16
+current-version: 2420.16.24
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CLClientClearNvramData, _CLClientCreate, _CLClientEnableNmeaOutput, 
@@ -63,16 +63,17 @@ exports:
                        _CLClientUpdateARSessionState, _CLClientUpdateVIOEstimation, 
                        _CLClientUpdateVLLocalizationResult, _CLCopyAppsUsingLocation, 
                        _CLCopyGnssBandsInUse, _CLCopyNearbyAssetSettings, _CLCopyNearbyAssetSettingsOfAccessoryFile, 
-                       _CLCopyTechnologiesInUse, _CLDaemonStartedNotification, _CLDeleteCurrentEmergencyLocationAsset, 
-                       _CLGenerateRoadSegmentId, _CLGetAccessoryMotionSensorLogs, 
-                       _CLGetAccessoryTypeBitSet, _CLGetArchivedAuthorizationDecisions, 
-                       _CLGetClientTransientAuthorizationInfo, _CLGetControlPlaneStatusReport, 
-                       _CLGetEmergencyLocationSettingsVersionInfo, _CLGetLocationDefault, 
-                       _CLGetMotionSensorLogs, _CLGetPipelinedCache, _CLGetStatusBarIconState, 
-                       _CLGnssBandsChangedNotification, _CLInternalPerformMigration, 
-                       _CLLocationCoordinate2DGetDistanceFrom, _CLLocationCoordinate2DIsValid, 
-                       _CLLocationCoordinate2DMake, _CLLocationDistanceMax, _CLPassKitNotifyPayment, 
-                       _CLPingDaemon, _CLSetClientTransientAuthorizationInfo, _CLSetLocationDefault, 
+                       _CLCopyTechnologiesInUse, _CLCopyZaxisStats, _CLDaemonStartedNotification, 
+                       _CLDeleteCurrentEmergencyLocationAsset, _CLGenerateRoadSegmentId, 
+                       _CLGetAccessoryMotionSensorLogs, _CLGetAccessoryTypeBitSet, 
+                       _CLGetArchivedAuthorizationDecisions, _CLGetClientTransientAuthorizationInfo, 
+                       _CLGetControlPlaneStatusReport, _CLGetEmergencyLocationSettingsVersionInfo, 
+                       _CLGetLocationDefault, _CLGetMotionSensorLogs, _CLGetPipelinedCache, 
+                       _CLGetStatusBarIconState, _CLGnssBandsChangedNotification, 
+                       _CLInternalPerformMigration, _CLLocationCoordinate2DGetDistanceFrom, 
+                       _CLLocationCoordinate2DIsValid, _CLLocationCoordinate2DMake, 
+                       _CLLocationDistanceMax, _CLPassKitNotifyPayment, _CLPingDaemon, 
+                       _CLSetClientTransientAuthorizationInfo, _CLSetLocationDefault, 
                        _CLSetMapMatchingRouteHint, _CLSetRouteHintsForMapMatching, 
                        _CLShouldDisplayEEDUI, _CLShouldDisplayStatusBarIconChangedNotification, 
                        _CLStartStopAdvertisingBeacon, _CLTechStatusChangedNotification, 

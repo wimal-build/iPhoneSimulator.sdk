@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A88B1658-D378-3BE2-B6B3-2C2F2BB0B522
+    value:           54838260-4E04-3658-A089-33B9A5CCC08E
   - target:          arm64-ios-simulator
-    value:           28B4A9F0-934E-37D5-9A00-AEF03D600475
+    value:           6E5AD11B-BBBA-3671-B084-291267058B9E
 install-name:    '/usr/lib/swift/libswiftSystem.dylib'
-current-version: 9
+current-version: 11
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

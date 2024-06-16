@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           88ADEDD2-6139-32E9-A763-D01862999F23
   - target:          x86_64-ios-simulator
-    value:           40CEB8BC-597A-3347-9328-9E6E2A02D288
+    value:           E42E105C-F86E-35E7-A6F0-612473AE6C90
   - target:          arm64-ios-simulator
-    value:           1C675229-7190-30D5-8DC0-C3AA31169D05
+    value:           23027778-9F36-3008-AEFD-9F56A06EFD0E
 install-name:    '/System/Library/Frameworks/AVKit.framework/AVKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

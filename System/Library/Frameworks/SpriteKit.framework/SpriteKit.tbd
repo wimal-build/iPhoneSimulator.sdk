@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           AD98A976-1FC5-326E-B1EC-8702CEAEDF51
   - target:          x86_64-ios-simulator
-    value:           BE36070F-9611-362C-A6BA-50850BBAD181
+    value:           556D82E7-CEAC-3BBF-BB29-14E6549E675E
   - target:          arm64-ios-simulator
-    value:           6B076D03-6120-3188-BC53-C46CC10B6EDC
+    value:           3C6DB5A1-826F-3194-954B-03DC3D96D001
 install-name:    '/System/Library/Frameworks/SpriteKit.framework/SpriteKit'
-current-version: 43
+current-version: 45
 exports:
   - targets:         [ i386-ios-simulator ]
     objc-classes:    [ SKTwoSidedNode ]

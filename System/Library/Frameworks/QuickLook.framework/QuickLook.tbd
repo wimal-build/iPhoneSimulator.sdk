@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           F8E6AA25-F7EC-38D8-B190-70386DF6E370
   - target:          x86_64-ios-simulator
-    value:           7E506454-E860-3AB8-A5CB-8E4C295B9344
+    value:           D31294CD-8D09-37FE-93DD-186A2EC4FD68
   - target:          arm64-ios-simulator
-    value:           589E7866-32BB-3CAB-9B8F-0B13DCE1CA77
+    value:           5032C127-6E7F-3045-84D1-3E15B8D6C88E
 install-name:    '/System/Library/Frameworks/QuickLook.framework/QuickLook'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5310C182-2FE4-32D0-A04C-8402F902C3DF
   - target:          x86_64-ios-simulator
-    value:           1E6BEBBA-F832-3DC1-A4D6-A75AA78BF118
+    value:           9905DBEE-3A4C-325D-8708-450CDF008CE6
   - target:          arm64-ios-simulator
-    value:           A5570AD4-913B-3BC0-9F04-879CC3B8B7EB
+    value:           C685F162-9429-31F7-938D-53F6ECE6C192
 install-name:    '/usr/lib/libcoreroutine.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

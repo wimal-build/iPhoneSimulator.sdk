@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0D808FEF-7A83-354F-A37C-0408E8FDF944
+    value:           B0092168-2580-3E8C-9F79-72E2CC495B31
   - target:          arm64-ios-simulator
-    value:           D12BE4CF-BD87-3381-991F-9EF7505F6478
+    value:           FC847C31-60BB-3B23-8D99-32A930A3C22B
 install-name:    '/System/Library/Frameworks/_MapKit_SwiftUI.framework/_MapKit_SwiftUI'
 swift-abi-version: 7
 exports:

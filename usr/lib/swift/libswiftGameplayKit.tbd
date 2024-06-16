@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           80878385-62FA-3D97-A7C0-B12370FC5A2E
   - target:          x86_64-ios-simulator
-    value:           E415899B-DA7C-339E-8670-A7DE043CD4C3
+    value:           87298C70-9278-328A-B3B5-1EB59655A1C1
   - target:          arm64-ios-simulator
-    value:           44C2290F-2AB3-30CE-B4F8-81A8A14BF38A
+    value:           5E63380B-A08D-39F9-A60B-C78441C9FE0E
 install-name:    '/usr/lib/swift/libswiftGameplayKit.dylib'
 swift-abi-version: 7
 exports:

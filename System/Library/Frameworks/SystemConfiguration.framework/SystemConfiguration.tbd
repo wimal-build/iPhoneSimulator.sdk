@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           3012A817-94FA-3E86-9327-7D683BC4302F
   - target:          x86_64-ios-simulator
-    value:           BD156C04-7C12-3752-A877-6959E415E737
+    value:           6A33FE21-2659-39B6-8446-861BEF9182EE
   - target:          arm64-ios-simulator
-    value:           827C94A5-F7B8-3CD9-9BAA-A742DA64B0D2
+    value:           4E3E1AB9-CED8-3A31-986E-5BC68FAACF58
 install-name:    '/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration'
-current-version: 1109.60.2
+current-version: 1109.100.4
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _SCDynamicStoreCopyLocation, _SCDynamicStoreNotifySignal, 
@@ -376,7 +376,10 @@ exports:
                        _kSCPropNetProxiesScoped, _kSCPropNetProxiesServiceSpecific, 
                        _kSCPropNetProxiesServices, _kSCPropNetProxiesSupplemental, 
                        _kSCPropNetProxiesSupplementalMatchDomain, _kSCPropNetProxiesSupplementalMatchDomains, 
-                       _kSCPropNetProxiesSupplementalMatchOrders, _kSCPropNetQoSMarkingAppleAudioVideoCalls, 
+                       _kSCPropNetProxiesSupplementalMatchOrders, _kSCPropNetProxiesTransportConverterEnable, 
+                       _kSCPropNetProxiesTransportConverterFallBackAllowed, _kSCPropNetProxiesTransportConverterMultipathServiceType, 
+                       _kSCPropNetProxiesTransportConverterPort, _kSCPropNetProxiesTransportConverterProxy, 
+                       _kSCPropNetProxiesTransportConverterTFOMode, _kSCPropNetQoSMarkingAppleAudioVideoCalls, 
                        _kSCPropNetQoSMarkingEnabled, _kSCPropNetQoSMarkingWhitelistedAppIdentifiers, 
                        _kSCPropNetServiceOrder, _kSCPropNetServicePrimaryRank, _kSCPropNetServiceServiceIndex, 
                        _kSCPropNetServiceUserDefinedName, _kSCPropNetVPNAppRules, 

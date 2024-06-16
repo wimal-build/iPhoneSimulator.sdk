@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C61275AA-86E2-3C43-9D26-4C18928D41A9
+    value:           F4EDDB59-163A-3FD8-9D4F-3BDD88D7C028
   - target:          arm64-ios-simulator
-    value:           3E2E2F0F-C15B-393D-838F-A9A2F74998E8
+    value:           6D2E6D26-F3FE-3951-9C50-946ECB0997FC
 install-name:    '/usr/lib/libMaxEnt.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]

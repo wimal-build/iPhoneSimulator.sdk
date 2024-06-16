@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           756733B1-5F8D-3485-A944-B6E3904301AA
   - target:          x86_64-ios-simulator
-    value:           DC3C5570-AB50-3354-8A15-1C0964CFC877
+    value:           15A37899-B327-3936-AD4F-01B5BFB4563C
   - target:          arm64-ios-simulator
-    value:           32939A03-5A67-3901-94B9-09C42C81B88C
+    value:           30731897-CA95-3C77-A701-A74273436EA2
 install-name:    '/usr/lib/swift/libswiftCallKit.dylib'
 current-version: 2
 swift-abi-version: 7

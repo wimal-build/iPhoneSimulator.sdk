@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B8E822D5-C093-351C-B81E-9C72BA1C080A
+    value:           FB687B46-3A4C-3B99-B404-963A2C744731
   - target:          arm64-ios-simulator
-    value:           7590611B-1A77-367D-83B0-74F3588ADB20
+    value:           469A3FC0-BEA5-3E2C-A70C-D32B954AE3D5
 install-name:    '/System/Library/Frameworks/CoreServices.framework/CoreServices'
-current-version: 1116.3.7
+current-version: 1122.33
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices', 
@@ -118,8 +118,8 @@ exports:
                        __LSBindingSetLogFile, __LSBindingSetReasonTrackingEnabled, 
                        __LSCompareHashedBytesFromAdvertisingStrings, __LSCopyActivityTypesClaimedHashedAdvertisingStrings, 
                        __LSCopyAdvertisementStringForTeamIdentifierAndActivityType, 
-                       __LSCopyClaimedActivityIdentifiersAndDomains, __LSCopyModelCodesForCurrentDevice, 
-                       __LSCopyUserActivityDomainNamesForBundleID, __LSCreateDatabaseLookupStringFromHashedBytesForAdvertising, 
+                       __LSCopyClaimedActivityIdentifiersAndDomains, __LSCopyUserActivityDomainNamesForBundleID, 
+                       __LSCreateDatabaseLookupStringFromHashedBytesForAdvertising, 
                        __LSCreateDeviceTypeIdentifierWithModelCode, __LSCreateDeviceTypeIdentifierWithModelCodeAndColorComponents, 
                        __LSCreateHashedBytesForAdvertisingFromString, __LSCreatePackageExtensionsArray, 
                        __LSDatabaseContextSetDetachProxyObjects, __LSDatabaseCopyURLForUser, 

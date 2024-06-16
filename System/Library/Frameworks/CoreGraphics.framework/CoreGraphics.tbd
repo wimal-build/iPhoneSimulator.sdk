@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           9F32E2F6-41F8-3395-8420-9B09FE258357
   - target:          x86_64-ios-simulator
-    value:           0D96EB2E-7C85-3CFE-83AA-9215ADA0EC83
+    value:           637E36CA-822D-3E77-A4A2-7F062E32B74E
   - target:          arm64-ios-simulator
-    value:           0982BCE5-79D3-3E4B-A5BE-FD9B6D37D6F2
+    value:           AC7987F8-90A2-3D34-9F32-A7236CF0851E
 install-name:    '/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics'
-current-version: 1463.3.2
+current-version: 1463.4.1
 compatibility-version: 64
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1222,10 +1222,10 @@ exports:
                        _CGPDFContextBeginTag, _CGPDFContextClose, _CGPDFContextCreate, 
                        _CGPDFContextCreateWithFilename, _CGPDFContextCreateWithURL, 
                        _CGPDFContextEndDrawingHiddenText, _CGPDFContextEndPage, _CGPDFContextEndTag, 
-                       _CGPDFContextSetDestinationForRect, _CGPDFContextSetImageTag, 
-                       _CGPDFContextSetOutline, _CGPDFContextSetOutputIntent, _CGPDFContextSetRedactionPath, 
-                       _CGPDFContextSetShouldDeflate, _CGPDFContextSetURLForRect, 
-                       _CGPDFDictionaryApplyBlock, _CGPDFDictionaryApplyFunction, 
+                       _CGPDFContextIsValidPassword, _CGPDFContextSetDestinationForRect, 
+                       _CGPDFContextSetImageTag, _CGPDFContextSetOutline, _CGPDFContextSetOutputIntent, 
+                       _CGPDFContextSetRedactionPath, _CGPDFContextSetShouldDeflate, 
+                       _CGPDFContextSetURLForRect, _CGPDFDictionaryApplyBlock, _CGPDFDictionaryApplyFunction, 
                        _CGPDFDictionaryApplyFunctionRaw, _CGPDFDictionaryGetArray, 
                        _CGPDFDictionaryGetBoolean, _CGPDFDictionaryGetBooleans, _CGPDFDictionaryGetCount, 
                        _CGPDFDictionaryGetDictionary, _CGPDFDictionaryGetInteger, 
@@ -1283,10 +1283,10 @@ exports:
                        _CGPDFGetNameVectorForBaseEncoding, _CGPDFGetUnicharGuessForCID, 
                        _CGPDFGetUnicharGuessForGlyphName, _CGPDFGetUnicharVectorForBaseEncoding, 
                        _CGPDFGetUnicharsForGlyphName, _CGPDFLayoutCreate, _CGPDFNameCreate, 
-                       _CGPDFNameGetString, _CGPDFNameTypeID, _CGPDFObjectGetType, 
-                       _CGPDFObjectGetValue, _CGPDFObjectPrint, _CGPDFOperatorTableCreate, 
-                       _CGPDFOperatorTableRelease, _CGPDFOperatorTableRetain, _CGPDFOperatorTableSetCallback, 
-                       _CGPDFPageAddAnnotation, _CGPDFPageContainsWideGamutContent, 
+                       _CGPDFNameGetString, _CGPDFNameTreeGetValue, _CGPDFNameTypeID, 
+                       _CGPDFObjectGetType, _CGPDFObjectGetValue, _CGPDFObjectPrint, 
+                       _CGPDFOperatorTableCreate, _CGPDFOperatorTableRelease, _CGPDFOperatorTableRetain, 
+                       _CGPDFOperatorTableSetCallback, _CGPDFPageAddAnnotation, _CGPDFPageContainsWideGamutContent, 
                        _CGPDFPageCopyPageLabel, _CGPDFPageCopyTextString, _CGPDFPageCopyTextStringWithGlyphs, 
                        _CGPDFPageCopyThumbnail, _CGPDFPageCreate, _CGPDFPageCreateThumbnail, 
                        _CGPDFPageCreateWithImage, _CGPDFPageEnumerateAnnotations, 

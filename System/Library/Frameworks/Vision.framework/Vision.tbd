@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DE8A1BC0-86E5-3F1C-8E26-304E67995EF5
+    value:           0B4D86C9-2A2F-3E18-A507-B1378108F636
   - target:          arm64-ios-simulator
-    value:           40C9356E-8E70-3318-89E6-E126E1DC0A5C
+    value:           DB3136AF-D2FC-3B6E-B504-68EDAB862511
 install-name:    '/System/Library/Frameworks/Vision.framework/Vision'
-current-version: 4.1.2
+current-version: 4.2.6
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CCRectLowLevel, _VN0af6454e97767772ce64a19ddaf61f0c, _VN1HsiXmKrxTsH8TYOuN5s7G3uHSP75iYS, 
@@ -148,15 +148,17 @@ exports:
                        _VNNormalizedImageRectForNormalizedRegionOfInterestRect, _VNNormalizedPointForImagePoint, 
                        _VNNormalizedRectForImageRect, _VNNormalizedRectIsIdentityRect, 
                        _VNPdH78Lr962vQvRIq2JApX2QJZtbR3fvi, _VNPersonsModelErrorDomain, 
-                       _VNPotentialLandmarkIdentifier, _VNRecognizedPointGroupKeyAll, 
-                       _VNRequestHandlerCleanupOption_AllPipelines, _VNRequestHandlerCleanupOption_FacePipeline, 
-                       _VNRequestHandlerCleanupOption_ImageBuffers, _VNRequestHandlerCleanupOption_JunkPipeline, 
-                       _VNRequestHandlerCleanupOption_ScenePipeline, _VNRequestHandlerCleanupOption_SmartCamPipeline, 
-                       _VNRequestWarningBlinkDetectionFailure, _VNRequestWarningImageMinimumLongDimension, 
-                       _VNRequestWarningImageMinimumShortDimension, _VNRequestWarningImageTooSmall, 
-                       _VNRequestWarningImageTooSmallForFaceObservations, _VNSY8t4EoTztuqIL02g8uVA0, 
-                       _VNScenePrintsFromPixelBuffers, _VNScenePrintsFromPixelBuffersUsesCPUOnly, 
-                       _VNScenePrintsFromURL, _VNScenePrintsFromURLUsesCPUOnly, _VNSceneprintSupportedRevisions, 
+                       _VNPotentialLandmarkIdentifier, _VNRecognizeDocumentElementIdentifierAppCode, 
+                       _VNRecognizeDocumentElementIdentifierQRCode, _VNRecognizeDocumentElementIdentifierText, 
+                       _VNRecognizedPointGroupKeyAll, _VNRequestHandlerCleanupOption_AllPipelines, 
+                       _VNRequestHandlerCleanupOption_FacePipeline, _VNRequestHandlerCleanupOption_ImageBuffers, 
+                       _VNRequestHandlerCleanupOption_JunkPipeline, _VNRequestHandlerCleanupOption_ScenePipeline, 
+                       _VNRequestHandlerCleanupOption_SmartCamPipeline, _VNRequestWarningBlinkDetectionFailure, 
+                       _VNRequestWarningImageMinimumLongDimension, _VNRequestWarningImageMinimumShortDimension, 
+                       _VNRequestWarningImageTooSmall, _VNRequestWarningImageTooSmallForFaceObservations, 
+                       _VNSY8t4EoTztuqIL02g8uVA0, _VNScenePrintsFromPixelBuffers, 
+                       _VNScenePrintsFromPixelBuffersUsesCPUOnly, _VNScenePrintsFromURL, 
+                       _VNScenePrintsFromURLUsesCPUOnly, _VNSceneprintSupportedRevisions, 
                        _VNSequenceRequestHandlerOption_LoggingCallback, _VNTextRecognitionOptionASCIICharacterSet, 
                        _VNTextRecognitionOptionDanishCharacterSet, _VNTextRecognitionOptionDutchCharacterSet, 
                        _VNTextRecognitionOptionEnglishCharacterSet, _VNTextRecognitionOptionFrenchCharacterSet, 
@@ -214,7 +216,8 @@ exports:
                        VNNOPRequest, VNObservation, VNPersonsModel, VNPersonsModelConfiguration, 
                        VNPersonsModelInformation, VNPersonsModelPrediction, VNPersonsModelReadOptions, 
                        VNPersonsModelWriteOptions, VNPhotosRequestHandler, VNPixelBufferObservation, 
-                       VNPoint, VNProcessingDevice, VNRecognizeAnimalsRequest, VNRecognizeFoodAndDrinkRequest, 
+                       VNPoint, VNProcessingDevice, VNRecognizeAnimalsRequest, VNRecognizeDocumentElementsRequest, 
+                       VNRecognizeDocumentElementsRequestElementConfiguration, VNRecognizeFoodAndDrinkRequest, 
                        VNRecognizeObjectsRequest, VNRecognizeTextRequest, VNRecognizedObjectObservation, 
                        VNRecognizedPoint, VNRecognizedPointsObservation, VNRecognizedText, 
                        VNRecognizedTextObservation, VNRectangleObservation, VNRequest, 

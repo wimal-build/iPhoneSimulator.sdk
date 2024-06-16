@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FC317946-E3E3-357D-A89D-7DD7661497AE
   - target:          x86_64-ios-simulator
-    value:           B4F5B685-7E47-3122-8D0F-4A7C7097CE2A
+    value:           BBD5C06B-8F0D-3DAB-A44A-36156B454719
   - target:          arm64-ios-simulator
-    value:           7172252D-11CE-34B4-B3E4-7C7E6032048E
+    value:           31F4A3FB-F766-36DE-86BD-D12B0656AFE0
 install-name:    '/usr/lib/libAWDSupport.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -201,10 +201,8 @@ exports:
                        __ZTSNSt3__120__shared_ptr_emplaceIN10awdprofile8MetadataENS_9allocatorIS2_EEEE ]
   - targets:         [ x86_64-ios-simulator ]
     weak-symbols:    [ __ZTI17AwdMetadataLoader, __ZTINSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                       __ZTINSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
                        __ZTINSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
                        __ZTS17AwdMetadataLoader, __ZTSNSt3__115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
-                       __ZTSNSt3__118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE, 
                        __ZTSNSt3__119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     symbols:         [ __Z14sGetMetricNameRKNSt3__110shared_ptrI17AwdMetadataLoaderEEj, 

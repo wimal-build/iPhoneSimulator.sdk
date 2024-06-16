@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           EA0CD531-C0F0-3E84-BF9D-65D8A4A3F96E
   - target:          x86_64-ios-simulator
-    value:           DB7D3E84-C136-32B5-8464-76381082F27E
+    value:           C4CD344C-C4CA-3DFC-9CE5-5254C53D4B06
   - target:          arm64-ios-simulator
-    value:           F93DE271-58E8-334E-9A31-49538664FE99
+    value:           71589727-622A-3AC9-B5A6-0346D51B393A
 install-name:    '/usr/lib/swift/libswiftPhotos.dylib'
-current-version: 330.0.150
+current-version: 340.0.220
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

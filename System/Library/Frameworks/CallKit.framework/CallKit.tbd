@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4CFCAAA7-16A5-3836-9934-CE6A0FF9FFB4
   - target:          x86_64-ios-simulator
-    value:           719BDF8E-D458-36D5-83DB-5AB2F19DB456
+    value:           50F3B11A-F3AA-3E71-9B1B-49E732042847
   - target:          arm64-ios-simulator
-    value:           1C8114DF-F579-30CF-B681-D27EAE7425E3
+    value:           9D71104E-7FDA-31F7-8B5E-0DD54F47DE3D
 install-name:    '/System/Library/Frameworks/CallKit.framework/CallKit'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -20,7 +20,8 @@ exports:
                        _CXCallDirectoryManagerIdentificationEntriesChangedNotification, 
                        _CXCallDirectoryStoreExtensionsChangedNotification, _CXCallDirectoryStoreMigratorLatestSchemaVersion, 
                        _CXErrorDomain, _CXErrorDomainCallDirectoryManager, _CXErrorDomainCallDirectoryStore, 
-                       _CXErrorDomainIncomingCall, _CXErrorDomainRequestTransaction ]
+                       _CXErrorDomainIncomingCall, _CXErrorDomainNotificationServiceExtension, 
+                       _CXErrorDomainRequestTransaction ]
     objc-classes:    [ CXAbstractProvider, CXAccount, CXAction, CXAnswerCallAction, 
                        CXCall, CXCallAction, CXCallController, CXCallControllerHost, 
                        CXCallDirectoryExtension, CXCallDirectoryExtensionContext, 
@@ -35,7 +36,8 @@ exports:
                        CXCallUpdate, CXEndCallAction, CXExtensionCallSource, CXExtensionProvider, 
                        CXHandle, CXHandoffContext, CXInProcessCallSource, CXInProcessProvider, 
                        CXJoinCallAction, CXLabeledHandle, CXNetworkExtensionMessageController, 
-                       CXNetworkExtensionMessageControllerHost, CXPlayDTMFCallAction, 
+                       CXNetworkExtensionMessageControllerHost, CXNotificationServiceExtensionVoIPXPCClient, 
+                       CXNotificationServiceExtensionVoIPXPCHost, CXPlayDTMFCallAction, 
                        CXProvider, CXProviderConfiguration, CXProviderExtensionContext, 
                        CXProviderExtensionHostContext, CXProviderExtensionVendorContext, 
                        CXPullCallAction, CXRemoveVoicemailAction, CXSandboxExtendedURL, 

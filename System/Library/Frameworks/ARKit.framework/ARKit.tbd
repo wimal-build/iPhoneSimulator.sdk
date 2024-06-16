@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           41F225AF-3EC4-3B13-99F8-7EA800606927
+    value:           C10AF03C-E161-368A-BA2D-5E19AA06CB6C
   - target:          arm64-ios-simulator
-    value:           3FCBFC44-7B80-35A2-B2BB-9280757E7B55
+    value:           AE583C41-75CD-397C-964F-DB9C6BC7BC70
 install-name:    '/System/Library/Frameworks/ARKit.framework/ARKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           95803EA1-6E91-3418-9479-0EA6FD322DE5
   - target:          x86_64-ios-simulator
-    value:           DD6FED9C-339E-306A-AA9B-C268577EAFE3
+    value:           C0EE625F-C54C-3300-8102-8494707D1287
   - target:          arm64-ios-simulator
-    value:           CB1521AD-81A6-388E-8983-90868B58E534
+    value:           BED8A207-4B15-3620-878F-D0C19BFF716F
 install-name:    '/usr/lib/swift/libswiftSwiftOnoneSupport.dylib'
-current-version: 1200.2.41
+current-version: 1205.0.24
 swift-abi-version: 7
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

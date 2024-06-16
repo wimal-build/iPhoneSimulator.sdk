@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           809E7E68-509A-36C8-A39F-803C61535934
+    value:           52112200-ACD6-3A9F-9550-C2794A3CF518
   - target:          arm64-ios-simulator
-    value:           3A24E7FA-2F41-379C-8A26-C0DF25D51AF8
+    value:           27D7C130-5A09-385E-85EA-93069DAA0D70
 install-name:    '/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation'
-current-version: 146.8
+current-version: 146.22
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting' ]
@@ -31,8 +31,9 @@ exports:
                        LPLinkHTMLTextGenerator, LPLinkMetadata, LPLinkMetadataObserver, 
                        LPLinkMetadataPresentationTransformer, LPLinkMetadataPreviewTransformer, 
                        LPLinkMetadataStatusTransformer, LPLinkMetadataStoreTransformer, 
-                       LPLinkView, LPMIMETypeRegistry, LPMapCollectionMetadata, LPMapCollectionPublisherMetadata, 
-                       LPMapMetadata, LPMessagesPayload, LPMetadataProvider, LPMultipleMetadataPresentationTransformer, 
+                       LPLinkView, LPLyricExcerptMetadata, LPMIMETypeRegistry, LPMapCollectionMetadata, 
+                       LPMapCollectionPublisherMetadata, LPMapMetadata, LPMessagesPayload, 
+                       LPMetadataProvider, LPMultipleMetadataPresentationTransformer, 
                        LPPresentationSpecializations, LPSharingMetadataWrapper, LPSharingStatusMetadata, 
                        LPSpecializationMetadata, LPStreamingAudioPlayer, LPSummarizedLinkMetadata, 
                        LPTestingOverrides, LPVideo, LPVideoAttachmentSubstitute, 
@@ -54,11 +55,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DF74BF3C-A6AB-3449-BFC7-722294FB0443
+    value:           1840BB21-A6E5-36CC-B29D-EAC06C9B8535
   - target:          arm64-ios-simulator
-    value:           67301345-C133-3645-A588-7C70A1B4898B
+    value:           F8943AA8-0529-3E85-B42E-6C9C50729AA3
 install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
-current-version: 146.8
+current-version: 146.22
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     objc-classes:    [ URLFormattingTestingOverrides ]

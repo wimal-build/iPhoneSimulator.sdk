@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           380E2753-50A2-3C5F-B8B4-F83A5536255B
   - target:          x86_64-ios-simulator
-    value:           AE3DEEF3-AC9B-3FC2-9549-67FB2E10465A
+    value:           D3E5D2C4-C3A8-3EEE-B7B3-32364645E4A2
   - target:          arm64-ios-simulator
-    value:           EAF8783E-D100-3B8A-A5BD-5AFE4F1BDD63
+    value:           2B11041C-514E-361E-8303-A920DCF041CF
 install-name:    '/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox'
 current-version: 1000
 reexported-libraries:
@@ -135,7 +135,8 @@ exports:
                        _AUGraphIsOpen, _AUGraphIsRunning, _AUGraphNodeInfo, _AUGraphOpen, 
                        _AUGraphRemoveNode, _AUGraphRemoveRenderNotify, _AUGraphSetNodeInputCallback, 
                        _AUGraphStart, _AUGraphStop, _AUGraphUninitialize, _AUGraphUpdate, 
-                       _AudioGetDeviceSpatializationCapabilities, _AudioGetSimulatorDeviceUID, 
+                       _AudioGetDeviceSpatialPreferencesForContentType, _AudioGetDeviceSpatializationCapabilities, 
+                       _AudioGetDeviceSpatializationCapabilitiesWithSize, _AudioGetSimulatorDeviceUID, 
                        _AudioQueueAddPropertyListener, _AudioQueueAllocateBuffer, 
                        _AudioQueueAllocateBufferWithMemory, _AudioQueueAllocateBufferWithPacketDescriptions, 
                        _AudioQueueAllocateBufferWithPacketDescriptionsWithMemory, 
@@ -172,14 +173,14 @@ exports:
                        _AudioSessionAddPropertyListener_Priv, _AudioSessionCheckActive, 
                        _AudioSessionCopyCMSessionForSessionID, _AudioSessionCopyProperty_Priv, 
                        _AudioSessionCreateCMSession, _AudioSessionCreateForID, _AudioSessionCreateForPID, 
-                       _AudioSessionCreatePrimarySession_Priv, _AudioSessionCreateSession_Priv, 
-                       _AudioSessionDeactivateAndSetPriority_Priv, _AudioSessionDestroyCMSession, 
-                       _AudioSessionDestroySession_Priv, _AudioSessionGetCMSessionForPID, 
-                       _AudioSessionGetPrimarySessionIDForPID, _AudioSessionGetProperty, 
-                       _AudioSessionGetPropertySize, _AudioSessionInitialize, _AudioSessionRemovePropertyListener, 
-                       _AudioSessionRemovePropertyListenerWithUserData, _AudioSessionRemovePropertyListener_Priv, 
-                       _AudioSessionRequestRecordPermission, _AudioSessionSetActive, 
-                       _AudioSessionSetActiveWithFlags, _AudioSessionSetActive_Priv, 
+                       _AudioSessionCreatePrimarySession_Priv, _AudioSessionCreateSessionWithIdentifier_Priv, 
+                       _AudioSessionCreateSession_Priv, _AudioSessionDeactivateAndSetPriority_Priv, 
+                       _AudioSessionDestroyCMSession, _AudioSessionDestroySession_Priv, 
+                       _AudioSessionGetCMSessionForPID, _AudioSessionGetPrimarySessionIDForPID, 
+                       _AudioSessionGetProperty, _AudioSessionGetPropertySize, _AudioSessionInitialize, 
+                       _AudioSessionRemovePropertyListener, _AudioSessionRemovePropertyListenerWithUserData, 
+                       _AudioSessionRemovePropertyListener_Priv, _AudioSessionRequestRecordPermission, 
+                       _AudioSessionSetActive, _AudioSessionSetActiveWithFlags, _AudioSessionSetActive_Priv, 
                        _AudioSessionSetCMProperty, _AudioSessionSetInterruptionListener_Priv, 
                        _AudioSessionSetProperty, _AudioSessionSetProperty_Priv, _AudioSessionSilenceOutput, 
                        _AudioSessionSilenceOutput2, _AudioSessionSilenceOutputWithFlags, 
@@ -258,13 +259,13 @@ exports:
                        _kAudioSession_DataSourceDescriptionKey_MicrophoneRegion, 
                        _kAudioSession_DataSourceDescriptionKey_Name, _kAudioSession_DataSourceDescriptionKey_SelectedMicrophonePolarPattern, 
                        _kAudioSession_InputSourceKey_Description, _kAudioSession_InputSourceKey_ID, 
-                       _kAudioSession_InterruptionInfoKey_InterruptorName, _kAudioSession_InterruptionInfoKey_State, 
-                       _kAudioSession_InterruptionInfoKey_Type, _kAudioSession_InterruptionInfoKey_WasSuspended, 
-                       _kAudioSession_OutputDestinationKey_Description, _kAudioSession_OutputDestinationKey_ID, 
-                       _kAudioSession_RouteAttributesKey_ID, _kAudioSession_RouteAttributesKey_Sources, 
-                       _kAudioSession_RouteAttributesKey_Type, _kAudioSession_RouteChangeKey_Reason, 
-                       _kAudioSession_RouteGroupDescriptionKey_ID, _kAudioSession_RouteGroupDescriptionKey_Routes, 
-                       _readHapticCommand ]
+                       _kAudioSession_InterruptionInfoKey_InterruptionReason, _kAudioSession_InterruptionInfoKey_InterruptorName, 
+                       _kAudioSession_InterruptionInfoKey_State, _kAudioSession_InterruptionInfoKey_Type, 
+                       _kAudioSession_InterruptionInfoKey_WasSuspended, _kAudioSession_OutputDestinationKey_Description, 
+                       _kAudioSession_OutputDestinationKey_ID, _kAudioSession_RouteAttributesKey_ID, 
+                       _kAudioSession_RouteAttributesKey_Sources, _kAudioSession_RouteAttributesKey_Type, 
+                       _kAudioSession_RouteChangeKey_Reason, _kAudioSession_RouteGroupDescriptionKey_ID, 
+                       _kAudioSession_RouteGroupDescriptionKey_Routes, _readHapticCommand ]
     objc-classes:    [ ATDefaultDeviceAggregate, AVHapticEvent, AVHapticParameterCurveValue, 
                        AVHapticPlayer, AVHapticPlayerChannel, AVHapticPlayerParameterCurve, 
                        AVHapticPlayerParameterCurveControlPoint, AVHapticSequence ]
@@ -275,9 +276,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D070B822-5447-3979-8379-2BD1ABD93B9A
+    value:           3534B5A4-9811-3A0D-970D-96073A875472
   - target:          arm64-ios-simulator
-    value:           5E1ADA03-E82A-3148-ADB1-44FC3FAA6A7C
+    value:           3BC0EE9F-37E2-384E-96CF-FF6E12101BB4
 install-name:    '/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore'
 exports:
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
@@ -291,7 +292,7 @@ exports:
                        _SwapInt16ToFloat32_X86, _SwapInt24ToFloat32_X86, _SwapInt32ToFloat32_X86, 
                        _SwapPCM16_X86, _SwapPCM32_X86, _UpmixMonoToStereoInterleaved16_X86, 
                        _UpmixMonoToStereoInterleaved32_X86 ]
-  - targets:         [ arm64-ios-simulator, i386-ios-simulator ]
+  - targets:         [ arm64-ios-simulator ]
     symbols:         [ _DownmixStereoInterleavedInt16ToMono_ARM, _Float32ToNativeInt16Scaled_ARM, 
                        _Float32ToNativeInt32Scaled_ARM, _Float32ToNativeLowAlignedInt32_ARM, 
                        _Float32ToNativeLowAlignedInt64_ARM, _MultiChannelInterleaveFloat32ToNativeLowAlignedInt32_ARM, 

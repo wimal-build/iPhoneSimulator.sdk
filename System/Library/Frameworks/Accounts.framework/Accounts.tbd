@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           08910649-3E29-3D2D-BB3E-8B28E5915E35
   - target:          x86_64-ios-simulator
-    value:           74E1E867-7B00-3ACB-A339-8E8A8C324D3C
+    value:           BE0E5CA9-CACB-3ADD-9313-98B812A80617
   - target:          arm64-ios-simulator
-    value:           8D241E8F-20EC-3DB3-B209-F2A247721BEC
+    value:           96760D22-C888-3119-999B-733B962FC9F6
 install-name:    '/System/Library/Frameworks/Accounts.framework/Accounts'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -24,9 +24,9 @@ exports:
                        _ACAccountDataclassCloudPhotos, _ACAccountDataclassContacts, 
                        _ACAccountDataclassContactsSearch, _ACAccountDataclassContent, 
                        _ACAccountDataclassCoreRoutine, _ACAccountDataclassDeviceLocator, 
-                       _ACAccountDataclassHealth, _ACAccountDataclassHome, _ACAccountDataclassKeyValue, 
-                       _ACAccountDataclassKeychainSync, _ACAccountDataclassMail, 
-                       _ACAccountDataclassMediaStream, _ACAccountDataclassMessages, 
+                       _ACAccountDataclassFitnessPlus, _ACAccountDataclassHealth, 
+                       _ACAccountDataclassHome, _ACAccountDataclassKeyValue, _ACAccountDataclassKeychainSync, 
+                       _ACAccountDataclassMail, _ACAccountDataclassMediaStream, _ACAccountDataclassMessages, 
                        _ACAccountDataclassNetworkVPN, _ACAccountDataclassNews, _ACAccountDataclassNotes, 
                        _ACAccountDataclassNotifications, _ACAccountDataclassPhotos, 
                        _ACAccountDataclassProtectedCloudStorage, _ACAccountDataclassReminders, 

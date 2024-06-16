@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BD290625-ECAD-37A7-8A8C-A1A11154153D
   - target:          x86_64-ios-simulator
-    value:           8FE5FE7E-E1D7-3121-9945-119A05366D3F
+    value:           7E082732-D36F-3914-8875-C86FEF9B46EB
   - target:          arm64-ios-simulator
-    value:           B1D44F58-3F26-3CCF-88AF-15BAE6BB114E
+    value:           79F82B7C-806D-3652-8672-02B5E1B93766
 install-name:    '/usr/lib/libcoretls_cfhelpers.dylib'
-current-version: 169
+current-version: 169.100.1
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _SSLAllocBuffer, _SSLAllocCopyBuffer, _SSLCopyBuffer, _SSLCopyBufferFromData, 

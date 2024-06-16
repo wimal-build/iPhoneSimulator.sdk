@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1E66054E-F3DB-31E3-9644-7B5A7523E9DE
+    value:           CD54F9F2-B793-3A3F-AE29-BE62D21EBF44
   - target:          arm64-ios-simulator
-    value:           ACEEE4FC-D5E5-300B-8A57-9F4EE3D6B3B8
+    value:           B2B552DF-8B01-3AF8-B7A0-FA8FDF3F5218
 install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
 current-version: 0
 compatibility-version: 0
@@ -24,9 +24,9 @@ exports:
                        _ENRPIKDerive, _ENRPIMetadataDeserialize, _ENRPIMetadataSerialize, 
                        _ENTEKGenerate, _ENTestResultErrorDomain, _ENUICreateRemotePresentationController, 
                        _ENUIHostViewControllerInterface, _ENUIRemoteViewControllerInterface, 
-                       _ENWriteTemporaryExposureKeysCSV, _ENXPCDecodeSecureObject, 
-                       _ENXPCDecodeSecureObjectIfPresent, _ENXPCEncodeSecureObject, 
-                       _ENXPCGetNextClientID ]
+                       _ENValidateRegionCodeISO, _ENWriteTemporaryExposureKeysCSV, 
+                       _ENXPCDecodeSecureObject, _ENXPCDecodeSecureObjectIfPresent, 
+                       _ENXPCEncodeSecureObject, _ENXPCGetNextClientID ]
     objc-classes:    [ ENArchive, ENEntity, ENExposureClassification, ENExposureConfiguration, 
                        ENExposureDaySummary, ENExposureDetectionClientSession, ENExposureDetectionHistoryCheck, 
                        ENExposureDetectionHistoryFile, ENExposureDetectionHistorySession, 
@@ -39,6 +39,6 @@ exports:
                        ENRegionServerExposureConfiguration, ENRegionServerNKDConfiguration, 
                        ENRegionTravelerServerDownloadConfiguration, ENRegionUserConsent, 
                        ENRegionVisit, ENRemotePresentationRequest, ENScanInstance, 
-                       ENSignature, ENSignatureFile, ENTemporaryExposureKey, ENUserAlert, 
-                       ENUserAuthorization, ENXPCServiceClient ]
+                       ENSignature, ENSignatureFile, ENTemporaryExposureKey, ENTextMessage, 
+                       ENUserAlert, ENUserAuthorization, ENXPCServiceClient ]
 ...
