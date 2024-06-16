@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           67FCF36D-CDB4-3516-A246-47E18A05FA51
   - target:          x86_64-ios-simulator
-    value:           B254EE12-434F-3731-A1FC-815C042B2AFF
+    value:           32459084-2660-362B-9758-0B29A13AB39C
   - target:          arm64-ios-simulator
-    value:           AB2E9E72-6ED9-38BC-B575-0EC59A436DE2
+    value:           806D2A8B-F463-36F1-8BC7-153514F3B5B5
 install-name:    '/usr/lib/swift/libswiftDispatch.dylib'
 current-version: 4.40.2
 swift-abi-version: 7

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3B993C66-F6C4-36EE-8C2E-A6BA9F883FC8
   - target:          x86_64-ios-simulator
-    value:           C72CBBBF-5FF7-3179-80B5-164C17B5CFB2
+    value:           D705C63B-1A3A-3199-9EA2-00AC0B9CB1A8
   - target:          arm64-ios-simulator
-    value:           DBF68588-41F6-385F-BAA0-B3A0D5437DD7
+    value:           6B4AF541-0C5E-34E0-A425-DD3F528018D1
 install-name:    '/System/Library/Frameworks/CoreData.framework/CoreData'
 current-version: 1044.3
 exports:

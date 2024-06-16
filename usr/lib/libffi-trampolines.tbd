@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EEA94895-7320-3254-A934-930E68B582D8
+    value:           581F1994-5D2D-335D-A175-2B932EAC2243
   - target:          arm64-ios-simulator
-    value:           289EF5F4-8E31-399C-91CF-B861C49B8308
+    value:           CE59E980-851C-3673-83FA-842CB7F855C9
 install-name:    '/usr/lib/libffi-trampolines.dylib'
 current-version: 27
 allowable-clients:

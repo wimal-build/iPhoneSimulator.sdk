@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2A6269D7-1AEE-340A-AABE-80C64D145602
   - target:          x86_64-ios-simulator
-    value:           D00F6D1D-1A0F-35F2-B8D0-0CA3C9277CD8
+    value:           BB956540-F196-3B5E-A520-5E8600CC0DEA
   - target:          arm64-ios-simulator
-    value:           E91575CB-591A-3E69-92CC-ABA0174E3233
+    value:           8B0135D3-E117-371B-AB57-7C6A08A7E555
 install-name:    '/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices'
 current-version: 1116.3.7
 reexported-libraries:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4CFCAAA7-16A5-3836-9934-CE6A0FF9FFB4
   - target:          x86_64-ios-simulator
-    value:           1243F472-753A-31A4-AB0C-1C879977E531
+    value:           719BDF8E-D458-36D5-83DB-5AB2F19DB456
   - target:          arm64-ios-simulator
-    value:           26F99714-B902-3DE7-A6B3-5FE5791EC772
+    value:           1C8114DF-F579-30CF-B681-D27EAE7425E3
 install-name:    '/System/Library/Frameworks/CallKit.framework/CallKit'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5AD11B18-4AF5-3CC4-9612-9C6B338B87BC
   - target:          x86_64-ios-simulator
-    value:           08DBC220-64A6-3D52-9B36-309B5A106BBA
+    value:           9A9F4EDB-808D-359F-B2CB-CFCF4EFF59C1
   - target:          arm64-ios-simulator
-    value:           AA40ED27-2548-3586-9C65-075BA3B78F4D
+    value:           17448C7A-2EEC-3B44-BBA0-04347F747B98
 install-name:    '/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

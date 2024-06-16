@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           711FBE5F-5D39-33A1-9320-451B4CA59FD0
   - target:          x86_64-ios-simulator
-    value:           C5AEE891-5BE7-3D9F-90AB-2886632560CE
+    value:           8943541C-90D2-35CA-8C28-6825F94FC30F
   - target:          arm64-ios-simulator
-    value:           534E0DF6-07B1-3DE7-94A5-B52A6FE9C0F6
+    value:           F9183498-0CB4-3DE9-862C-E9C6C3B45237
 install-name:    '/usr/lib/libLLVM.dylib'
 current-version: 31001.50
 exports:

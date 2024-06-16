@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DF65E0DB-9F07-3A33-94C1-D6F0D589B040
   - target:          x86_64-ios-simulator
-    value:           3B59B606-9423-307F-850B-3A0E2469F89B
+    value:           DBE551C7-8BB0-36C1-B2B8-417541FF60D0
   - target:          arm64-ios-simulator
-    value:           5C05EDEB-262F-3556-9B2B-543BCFA17F3A
+    value:           60776D5C-B433-3A3A-A839-248E4EDE4BB3
 install-name:    '/System/Library/Frameworks/SafariServices.framework/SafariServices'
 exports:
   - targets:         [ i386-ios-simulator ]

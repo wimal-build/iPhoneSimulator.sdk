@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1777470C-55DA-3C5B-A43D-49C0E16524F5
   - target:          x86_64-ios-simulator
-    value:           B75567A1-1676-32A4-AD95-6525B91DFCF5
+    value:           4A77FB71-CD98-3555-9AD7-4ED7D7E9518A
   - target:          arm64-ios-simulator
-    value:           4AA11861-4B0B-3F1E-9B33-DBFD68102084
+    value:           235DEDDE-D381-3D1A-865D-F64EFE9920EF
 install-name:    '/System/Library/Frameworks/NotificationCenter.framework/NotificationCenter'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           27DB2BC1-4803-37EB-954C-6676EB20CA54
   - target:          x86_64-ios-simulator
-    value:           72067AA1-B72D-3BBA-8E7D-5CC18C7163DB
+    value:           5985BE73-BD9C-3D6C-A066-9CE1224EC5AA
   - target:          arm64-ios-simulator
-    value:           875081A2-27A5-3198-AD57-D7F2C2413DC1
+    value:           1A229806-5E66-354D-860F-6DFD40DBF867
 install-name:    '/usr/lib/swift/libswiftCloudKit.dylib'
-current-version: 962
+current-version: 970
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

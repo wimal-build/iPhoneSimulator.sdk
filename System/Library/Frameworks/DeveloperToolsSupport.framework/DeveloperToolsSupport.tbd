@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EF116EAD-2DE2-3DF0-B55B-A1B9713B094B
+    value:           5197ED03-B6DF-3DBD-9838-AF2BABD785F7
   - target:          arm64-ios-simulator
-    value:           23737393-1475-3511-8043-FC6A39A5F217
+    value:           2BC32B5C-D972-3785-AC99-C68D0440AE39
 install-name:    '/System/Library/Frameworks/DeveloperToolsSupport.framework/DeveloperToolsSupport'
 current-version: 8
 swift-abi-version: 7

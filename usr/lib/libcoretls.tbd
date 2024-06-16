@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7E73970B-71F6-332B-90EA-A2251018C19E
   - target:          x86_64-ios-simulator
-    value:           F918C721-8505-3E55-A46E-18AF5B62815A
+    value:           9574DCE5-FAC1-371C-A3E6-27135542BD2A
   - target:          arm64-ios-simulator
-    value:           C7883689-5E0F-363C-99C3-A22163DE82BA
+    value:           A84A0DE7-E516-3F39-9EFB-7583FB9ED20B
 install-name:    '/usr/lib/libcoretls.dylib'
 current-version: 169
 exports:

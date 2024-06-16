@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6A0D3D05-60C8-3790-9CBF-AD4E7555B7C8
+    value:           1E66054E-F3DB-31E3-9644-7B5A7523E9DE
   - target:          arm64-ios-simulator
-    value:           435AA0AF-F6DC-3EF5-BF3B-23929716AEB4
+    value:           ACEEE4FC-D5E5-300B-8A57-9F4EE3D6B3B8
 install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
 current-version: 0
 compatibility-version: 0
@@ -40,5 +40,5 @@ exports:
                        ENRegionTravelerServerDownloadConfiguration, ENRegionUserConsent, 
                        ENRegionVisit, ENRemotePresentationRequest, ENScanInstance, 
                        ENSignature, ENSignatureFile, ENTemporaryExposureKey, ENUserAlert, 
-                       ENXPCServiceClient ]
+                       ENUserAuthorization, ENXPCServiceClient ]
 ...

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2C42AB1F-7F05-3110-B250-5CC22355864C
   - target:          x86_64-ios-simulator
-    value:           D3ED166F-2F9A-35BA-B37D-DE7C681C08E8
+    value:           5C8BBCA9-EDFB-3010-834C-C56090BD01F5
   - target:          arm64-ios-simulator
-    value:           63796ADD-C493-3077-B43B-AE645EF0C477
+    value:           CCB6CDCA-CABF-3B48-BCDA-C779C40899D8
 install-name:    '/usr/lib/libAccessibility.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

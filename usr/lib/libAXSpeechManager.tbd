@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CB423C3A-08FF-385B-A8C9-9AD0D16D65C5
   - target:          x86_64-ios-simulator
-    value:           31BD69C1-847F-3F3D-8A76-7F72729824C3
+    value:           5158DEB8-B752-39B2-9FC7-F99B48A9D727
   - target:          arm64-ios-simulator
-    value:           F53A3D52-9E74-3FF2-ABF1-D88DCB87D81C
+    value:           5CF11495-7369-395D-A011-9AF865FD2505
 install-name:    '/usr/lib/libAXSpeechManager.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

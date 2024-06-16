@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           34BD1257-DB4C-3FCD-9C56-3B1134CB1CB7
+    value:           974DA0EF-CCFD-34D2-A884-E37222170C8B
   - target:          arm64-ios-simulator
-    value:           1312ACA1-8856-3C15-BA0A-A4BADC2AC2C7
+    value:           6CBACE2C-A60E-3758-B568-6C09F2FE313F
 install-name:    '/usr/lib/swift/libswiftWebKit.dylib'
-current-version: 610.3.7
+current-version: 610.4.3
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

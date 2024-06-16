@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B2529A94-A3DC-3298-BAED-0AC0F940E5D9
   - target:          x86_64-ios-simulator
-    value:           8980E303-214F-367F-8648-3E972D3C3CD8
+    value:           7157B039-47A9-3CD5-B23D-2C0B2306C0BE
   - target:          arm64-ios-simulator
-    value:           5F6C70B5-4072-3901-B0F2-0DF398060E7B
+    value:           5454D4C8-ACB0-3E96-A0E2-942FE2E424BD
 install-name:    '/usr/lib/libBacktraceRecording.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

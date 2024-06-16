@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           45270B07-3B60-3E77-BAB8-A2B20030FEEE
+    value:           B8E822D5-C093-351C-B81E-9C72BA1C080A
   - target:          arm64-ios-simulator
-    value:           D172B8B8-1704-32A2-86AA-D4104C79627E
+    value:           7590611B-1A77-367D-83B0-74F3588ADB20
 install-name:    '/System/Library/Frameworks/CoreServices.framework/CoreServices'
 current-version: 1116.3.7
 exports:

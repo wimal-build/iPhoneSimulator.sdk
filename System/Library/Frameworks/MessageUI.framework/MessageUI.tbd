@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           90443F25-09DB-36CD-87C2-EE47201995DA
   - target:          x86_64-ios-simulator
-    value:           EE7B9DF6-A6B9-3DDE-914D-4C5F56D3AD89
+    value:           9DAEECF5-D47F-388A-A6C7-C4F11D8EB3A5
   - target:          arm64-ios-simulator
-    value:           047E0EC7-E504-3CC4-92A7-33C4390F2C5D
+    value:           2646144D-116C-329A-8506-27AC7872CB50
 install-name:    '/System/Library/Frameworks/MessageUI.framework/MessageUI'
-current-version: 3654.40
+current-version: 3654.60
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MFABPropertyForRecentsKind, _MFAccessibilityLargeTextEnabled, 

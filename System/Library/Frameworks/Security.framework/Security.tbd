@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           25E0C67F-F0FD-3C0C-B62A-A631BCB7F967
   - target:          x86_64-ios-simulator
-    value:           A2A9383E-A277-3961-945C-F6C224AF703F
+    value:           57513651-8047-3BAF-AFD9-23415C08450D
   - target:          arm64-ios-simulator
-    value:           63B4E7B5-FDD6-333D-A79D-DED883BA6B31
+    value:           2147D92E-BFF2-38AD-B0C5-5DB4934F9129
 install-name:    '/System/Library/Frameworks/Security.framework/Security'
-current-version: 59754.62.1
+current-version: 59754.80.3
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _DERDecodeItem, _DEROidCompare, _SOSAccountPeerGotInSync, 

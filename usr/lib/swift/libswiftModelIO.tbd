@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           12BABBCC-2F11-3DFB-BBA6-6442C479B1E5
   - target:          x86_64-ios-simulator
-    value:           E4BFA466-AC23-38DE-87C1-F7F2CFE83F5D
+    value:           EE75613D-D545-3583-B1EE-D160F31A9896
   - target:          arm64-ios-simulator
-    value:           63D44E7F-6031-31FD-8EBF-0EFE898FD836
+    value:           48D293CA-CA5E-372F-A91E-EFF2B436A460
 install-name:    '/usr/lib/swift/libswiftModelIO.dylib'
 swift-abi-version: 7
 exports:

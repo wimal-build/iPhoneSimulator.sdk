@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           F6ECFAE3-695E-3839-A1B6-CBACA1E888E1
   - target:          x86_64-ios-simulator
-    value:           A45A2511-1E4F-398B-9BEF-37E895D46FD6
+    value:           6A6413CD-DF35-33CC-8654-546B1222E194
   - target:          arm64-ios-simulator
-    value:           9604408D-B0AD-3DD4-9CB6-0A64B8EF4093
+    value:           674977D2-674B-3D32-808D-1A12680AD597
 install-name:    '/System/Library/Frameworks/HomeKit.framework/HomeKit'
-current-version: 714.3.28
+current-version: 714.4.11
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _HMBridgePutAccessoryInAssociateMode, _HMBridgePutAccessoryInDisassociateMode, 
@@ -579,6 +579,7 @@ exports:
                        _HMSoftwareUpdateControllerFetchMessage, _HMSoftwareUpdateControllerStartUpdateMessage, 
                        _HMSoftwareUpdateControllerUpdateDocumentationPathKey, _HMSoftwareUpdateControllerUpdateMessageKey, 
                        _HMSoftwareUpdateControllerUpdatePathKey, _HMSoftwareUpdateControllerUpdateSourceKey, 
+                       _HMSoftwareUpdateControllerUpdateUserInitiatedStagingKey, 
                        _HMSoftwareUpdateDocumentationCodingKey, _HMSoftwareUpdateDocumentationMessageKey, 
                        _HMSoftwareUpdateDocumentationMetadataCodingKey, _HMSoftwareUpdateDocumentationMetadataMessageKey, 
                        _HMSoftwareUpdateDocumentationUpdatedMessage, _HMSoftwareUpdateDownloadSizeCodingKey, 
@@ -644,7 +645,8 @@ exports:
                        _getNumberValueForKey, _granularityForEventType, _initializeMappingsAndPaths, 
                        _isAllowedCharType, _isEqualAllowingNil, _isEqualDeepCompare, 
                        _isPresenceAuthorizationValid, _isRestoreSupportedForCharacteristic, 
-                       _isValidPresenceType, _kAccessAllowedWhenLockedKey, _kAccessAllowedWhenLockedUpdatedNotificationKey, 
+                       _isValidHMSoftwareUpdateAssetSourceString, _isValidPresenceType, 
+                       _kAccessAllowedWhenLockedKey, _kAccessAllowedWhenLockedUpdatedNotificationKey, 
                        _kAccessoriesConfiguredStatusKey, _kAccessoryIsSuspendCapableCodingKey, 
                        _kAccessoryPairingStateChangedNotification, _kAccessoryReachableTransportsCodingKey, 
                        _kAccessoryReprovisionStateUpdateNotificationKey, _kAccessoryReprovisionedNotificationKey, 
@@ -688,8 +690,9 @@ exports:
                        _localizedWiFiStringKey, _mapInternalCameraErrorCodes, _playbackStateAsString, 
                        _pluralLocalizationKeyForAccessoryCategoryType, _presenceTypeForEventTypeAndGranularity, 
                        _removeHomeKitCacheDirectory, _resolveConfigurationsCacheDirectory, 
-                       _resolveHomeKitCacheDirectory, _runOnMainQueue, _userConsentAsString, 
-                       _userTypeForPresenceTypeAndGranularity, _usersListApplicable ]
+                       _resolveHomeKitCacheDirectory, _runOnMainQueue, _stringToHMSoftwareUpdateAssetSource, 
+                       _userConsentAsString, _userTypeForPresenceTypeAndGranularity, 
+                       _usersListApplicable, _validHMSoftwareUpdateAssetSourceStrings ]
     objc-classes:    [ HMAccessControl, HMAccessory, HMAccessoryAdvertisementInfo, 
                        HMAccessoryAllowedHost, HMAccessoryBrowser, HMAccessoryCategory, 
                        HMAccessoryCollectionSetting, HMAccessoryCollectionSettingItem, 

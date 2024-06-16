@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           624600E1-D0B1-3903-8680-EFD03A70CF57
+    value:           0EAC980E-7AEF-31DB-AAE0-1706E75B7ACA
   - target:          arm64-ios-simulator
-    value:           2C328362-65BB-31C0-B483-9FB00C806D2A
+    value:           68262FEE-EAE8-32FC-ACA1-B5CA2F278B7B
 install-name:    '/usr/lib/libate.dylib'
 current-version: 3.0.4
 exports:

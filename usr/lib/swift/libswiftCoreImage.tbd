@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           832EF493-3957-356C-8ADB-E303B45817D8
   - target:          x86_64-ios-simulator
-    value:           9A6C6E3B-AB38-3F43-BA4C-E9AEC29981AB
+    value:           BE6141F4-F11E-396B-BEF9-F5A33AE30F44
   - target:          arm64-ios-simulator
-    value:           84B1328F-234B-3C15-9CA0-FDE2BF8DEF0E
+    value:           83621EA4-F0AB-34C6-A34E-56EAB66BDCEB
 install-name:    '/usr/lib/swift/libswiftCoreImage.dylib'
 swift-abi-version: 7
 exports:

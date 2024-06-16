@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           634F3456-8053-3C9C-9A33-49AF3D39F9F9
+    value:           9A456253-4C60-3010-8EC8-2F08AE02FA8B
   - target:          arm64-ios-simulator
-    value:           028D187C-AAF0-3AE0-9C1C-46FF8D198D45
+    value:           D28C8F43-0AD2-3F45-8346-8129AD9A314D
 install-name:    '/usr/lib/libSystem.B.dylib'
 current-version: 1292.60.1
 reexported-libraries:
@@ -49,9 +49,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D986B653-2714-3F3D-BB1D-0CAC9558252C
   - target:          x86_64-ios-simulator
-    value:           7E5F6D5F-A4D6-3FEC-92CF-9C6E60CD60E0
+    value:           8D1CE534-EDB1-32EE-8991-8B37D7F49319
   - target:          arm64-ios-simulator
-    value:           1CE7FA26-4D67-39D9-88BD-3555A9252103
+    value:           18E90C24-932D-3565-B8EE-A820EB0B6749
 install-name:    '/usr/lib/system/libcache.dylib'
 current-version: 83
 parent-umbrella:
@@ -79,9 +79,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2E88EC2B-F951-3D76-B114-F6CC635EFE8C
   - target:          x86_64-ios-simulator
-    value:           1D071F9D-3665-3BFB-989B-7DA562342C06
+    value:           FC16096D-0F84-3824-B851-109756A304CA
   - target:          arm64-ios-simulator
-    value:           C29D5DD1-CA0A-3421-AB00-AA20C98DB81F
+    value:           EF006A83-C61C-3326-AE5A-367029F84787
 install-name:    '/usr/lib/system/libcommonCrypto.dylib'
 current-version: 60178.40.2
 parent-umbrella:
@@ -173,9 +173,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D8628B7C-7D84-38E0-A80E-E38B64402F1C
   - target:          x86_64-ios-simulator
-    value:           938E8FEC-2E1F-3D27-82A4-0560EE304EA6
+    value:           AD0A190C-222F-3389-A995-3936429B9323
   - target:          arm64-ios-simulator
-    value:           A5F58B8C-E1BA-3281-844A-DA544440857B
+    value:           F5C99A29-222C-3A9E-AB2B-8E8C2E343506
 install-name:    '/usr/lib/system/libcompiler_rt.dylib'
 current-version: 102.3
 parent-umbrella:
@@ -368,9 +368,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C26F1F85-E9E0-33E9-9005-F269F30AD13C
   - target:          x86_64-ios-simulator
-    value:           6D3DEC3A-B577-385D-B66C-07564DB59DF7
+    value:           1EDC98D3-FECD-3B9C-A597-8BCBAB5769D4
   - target:          arm64-ios-simulator
-    value:           1438EF02-FAA3-3273-837B-60D22D3C237D
+    value:           9252ECEA-38B8-3B27-AD2D-D2E89ADFF1D7
 install-name:    '/usr/lib/system/libcopyfile.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -389,11 +389,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1083CFDB-EBA8-3211-B488-CC549B5DDD4D
   - target:          x86_64-ios-simulator
-    value:           25E16F39-097C-3021-B870-32A874830B27
+    value:           808EC1F0-29E1-3100-9B0C-41F13889C89E
   - target:          arm64-ios-simulator
-    value:           0BD813C4-3337-371D-B250-4A95D0C883C6
+    value:           AE328CC5-A39C-3B3E-95B3-204A08632A98
 install-name:    '/usr/lib/system/libcorecrypto.dylib'
-current-version: 1000.62.3
+current-version: 1000.80.5
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -648,9 +648,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A291C67D-2E52-3E09-BCCE-D962EF8B51C6
   - target:          x86_64-ios-simulator
-    value:           2C984A9A-A741-3290-AD4B-D63C512A9DEB
+    value:           81D9C4A5-38BF-33B4-A44C-D93FDFF11738
   - target:          arm64-ios-simulator
-    value:           C8E633FD-12EA-341E-987C-9DF49D6F44E9
+    value:           CC512A6B-AD10-3D1E-B3DB-7E14FE2A71F1
 install-name:    '/usr/lib/system/libdispatch.dylib'
 current-version: 1271.40.12
 parent-umbrella:
@@ -811,9 +811,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           03523D41-C2CD-31EC-8B43-E76F84CD7466
   - target:          x86_64-ios-simulator
-    value:           78F65EE7-1659-3B52-9FE5-FDD6C61BDCAA
+    value:           B1C08128-9D5F-318A-904B-B17BAF875EA1
   - target:          arm64-ios-simulator
-    value:           0D1AAA22-928B-3A1A-8A2F-089E1259AC0E
+    value:           C8D5373A-CDE2-3C78-BD09-154BA91EFBC2
 install-name:    '/usr/lib/system/libdyld.dylib'
 current-version: 828.5
 parent-umbrella:
@@ -867,11 +867,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           CBFD7F72-76F5-35CA-AB86-B21A64FE2CE6
   - target:          x86_64-ios-simulator
-    value:           E7325ADF-FA50-34FD-9CA6-062A3D2E2138
+    value:           6E881886-903F-3AA3-81FD-DB527B7C0C6F
   - target:          arm64-ios-simulator
-    value:           DEFE3539-41C8-3430-B431-22BD1E4E35E5
+    value:           FED12C41-B1F7-36E5-A48F-FC7015D6B911
 install-name:    '/usr/lib/system/liblaunch.dylib'
-current-version: 2038.40.38
+current-version: 2038.80.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -925,9 +925,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           88D2A362-C296-3072-A2E5-F3F4994DA069
   - target:          x86_64-ios-simulator
-    value:           D818B78F-4AED-3DD0-8269-46547ADE9C71
+    value:           36A2C5E4-14C3-3094-B3F9-BC92FB08FE81
   - target:          arm64-ios-simulator
-    value:           B0C782DF-C556-37B8-9DB7-428C954EF7A5
+    value:           0F4FF214-52AA-311D-A3FA-02BBC9CD53E2
 install-name:    '/usr/lib/system/libmacho.dylib'
 current-version: 973.0.1
 parent-umbrella:
@@ -980,9 +980,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FBB37E22-AE1F-3020-B319-7D325CEE2D2E
   - target:          x86_64-ios-simulator
-    value:           435A52E7-3E0D-3FFB-9850-067E5526C7F0
+    value:           4872E337-D8C4-309A-981F-AAA35DE071FF
   - target:          arm64-ios-simulator
-    value:           582B51AF-A8E9-3BC7-B842-6E2D1386AB29
+    value:           EECAFFD5-95BD-3DCE-96EB-9C328D5620F1
 install-name:    '/usr/lib/system/libremovefile.dylib'
 current-version: 49.40.3
 parent-umbrella:
@@ -1004,9 +1004,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E43914E6-C4F6-3750-BF7D-16CC4220B12A
   - target:          x86_64-ios-simulator
-    value:           67091372-5C80-33BE-AAE4-6C9591F69AC6
+    value:           7EBF5DE1-E543-3DF7-9EF3-1E451F6208CC
   - target:          arm64-ios-simulator
-    value:           3A3A1C22-64D2-3AEB-90F8-248F3E10A8CC
+    value:           37AEE228-3052-3FF7-AFE1-CCEAFAB9E88E
 install-name:    '/usr/lib/system/libsystem_asl.dylib'
 current-version: 385
 parent-umbrella:
@@ -1091,9 +1091,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           35BCAF77-06DE-302B-A5CA-EC3E73F59412
   - target:          x86_64-ios-simulator
-    value:           9448B17F-2643-359F-BB50-BEBC6E74A94B
+    value:           4E249A31-40E0-3B80-8A07-D83E3ECDA85C
   - target:          arm64-ios-simulator
-    value:           5E358F6A-0BD0-3FB8-B9DC-C4BF5EE31867
+    value:           3D54D5AD-BD7C-34B8-AEA9-116394978247
 install-name:    '/usr/lib/system/libsystem_blocks.dylib'
 current-version: 78
 parent-umbrella:
@@ -1116,9 +1116,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8402DF3A-C712-3D6B-B2E7-3C136E47B208
   - target:          x86_64-ios-simulator
-    value:           7164B51E-0AD5-3D1C-8B86-22391CA6109F
+    value:           FC28ADCA-7122-38BC-ACE4-F089A58323F1
   - target:          arm64-ios-simulator
-    value:           1BBF4DD0-89D9-373F-B71A-25F74C01DD74
+    value:           4938532B-7D1E-3F50-8D39-F20AF6C5A5E5
 install-name:    '/usr/lib/system/libsystem_c.dylib'
 current-version: 1439.40.11
 parent-umbrella:
@@ -1410,9 +1410,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0E0558D9-872B-3B80-BCAD-2C89976C1BB6
+    value:           C19FECDC-EA07-3BC0-912C-DEBBA9F8B321
   - target:          arm64-ios-simulator
-    value:           E7D8598A-D2EF-3E85-AABF-3E75D4FE3FB8
+    value:           7B8A423E-C1A8-3559-B253-1FE4ED9453C2
 install-name:    '/usr/lib/system/libsystem_collections.dylib'
 current-version: 1439.40.11
 parent-umbrella:
@@ -1436,9 +1436,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9E115698-B158-3A49-878B-680E4FE4D8FC
   - target:          x86_64-ios-simulator
-    value:           E3BAA746-D739-3025-9543-F8AE64319F0B
+    value:           3E775779-41F9-3462-9503-C4D6FEE88ABA
   - target:          arm64-ios-simulator
-    value:           9ADD202E-C395-31C0-9AD0-09751FFE1E57
+    value:           16DB641E-78D0-3665-B414-BB81EF3DE4D5
 install-name:    '/usr/lib/system/libsystem_configuration.dylib'
 current-version: 1109.60.2
 parent-umbrella:
@@ -1465,9 +1465,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7FE4AE9B-24C3-343B-A816-49226CB3E125
   - target:          x86_64-ios-simulator
-    value:           78B08136-68EC-3751-B28C-D767793B1708
+    value:           43B08607-1D78-32C5-A95D-B081F1C5CF2B
   - target:          arm64-ios-simulator
-    value:           BFD191EA-EF1A-30E7-88E7-C4CB742FF608
+    value:           4FB3D4A8-7B05-34A5-B476-AA0F398B5D8C
 install-name:    '/usr/lib/system/libsystem_containermanager.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1527,9 +1527,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           28CDC4DF-7A1A-33C4-A4C0-D7D9EF21C912
   - target:          x86_64-ios-simulator
-    value:           B774C709-A8B8-3440-A41F-573983296FDC
+    value:           AB1242D5-6146-3360-80FD-966FE68750E7
   - target:          arm64-ios-simulator
-    value:           108A2110-A656-3D98-9983-B9A1D327018E
+    value:           0ECF1E5B-7396-3BBC-9CCF-4AF1B1F969CB
 install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
 current-version: 125.2
 parent-umbrella:
@@ -1551,9 +1551,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           A53EB635-8E4C-343D-83C0-D71CFA8333A2
+    value:           DD199ABA-4319-3B6E-9AC1-C68EAE4A3E23
   - target:          arm64-ios-simulator
-    value:           FD811BDF-6E6A-3D77-90CE-D5756DF91BCF
+    value:           D5FF0A4C-44D2-30C8-9072-FFC912E82148
 install-name:    '/usr/lib/system/libsystem_darwin.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1588,11 +1588,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C29A298-C47F-3FED-89AB-B03FAB69787E
   - target:          x86_64-ios-simulator
-    value:           0E830FA0-4669-320A-8021-85C15354162A
+    value:           7D9553F5-6E05-3B1F-A05E-90ECAFBB70E6
   - target:          arm64-ios-simulator
-    value:           E5E33C9A-933F-32B5-9CA7-E5EAA59BD2BC
+    value:           83038161-EAC9-350B-875B-AB732E8FBAF3
 install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
-current-version: 1310.60.3
+current-version: 1310.80.1
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1625,9 +1625,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CF510C71-F0E6-390F-9A77-9A18CF821E23
+    value:           E1F96156-21DF-3EFE-B6DA-CDDC85979043
   - target:          arm64-ios-simulator
-    value:           C6438353-4AFD-30E2-85C0-1DE915616084
+    value:           CD444FEF-740E-341E-8CE8-87C82F199CD3
 install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
 current-version: 28.60.1
 parent-umbrella:
@@ -1643,9 +1643,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DA29882D-3652-35B1-848B-93F2D4C871A4
   - target:          x86_64-ios-simulator
-    value:           DF78C5EF-C607-324B-AE67-AA1024F3E17C
+    value:           38C4A56B-ABE3-3063-B8F8-E1E9AAB77FB0
   - target:          arm64-ios-simulator
-    value:           FDB295BB-689F-3BEB-AE5E-ADF59E97910C
+    value:           4AC908CF-687E-39B7-B923-01DF25BBBEC1
 install-name:    '/usr/lib/system/libsystem_info.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2302,9 +2302,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6B90E2ED-9C95-36BD-A544-26C9332F4A50
   - target:          x86_64-ios-simulator
-    value:           E9BD0AD6-1A18-3AB4-8785-BA2C6DE41305
+    value:           201B462F-D179-3E66-9370-A30F843891C7
   - target:          arm64-ios-simulator
-    value:           6358F6D4-7D38-3C71-ABFA-06F5F8FA3103
+    value:           44E9EE27-1DDF-34AE-940A-C635CE7B290F
 install-name:    '/usr/lib/system/libsystem_m.dylib'
 current-version: 3186.40.3
 parent-umbrella:
@@ -2399,9 +2399,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BC87C3F9-ACC0-314C-B2FF-00FB8BCC5BC3
   - target:          x86_64-ios-simulator
-    value:           181A64AD-768F-39A0-A4BA-7217E8D77F70
+    value:           02DA5B7D-F471-3B5C-B4CC-CF32D9E7C240
   - target:          arm64-ios-simulator
-    value:           85328CC6-28BF-342B-A1E5-C4B8DBE8FD91
+    value:           E3FAEFF9-DE74-35CD-942E-977506B9084B
 install-name:    '/usr/lib/system/libsystem_malloc.dylib'
 current-version: 317.40.8
 parent-umbrella:
@@ -2463,9 +2463,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ABD5F0CD-741B-3361-8438-879572813CFD
   - target:          x86_64-ios-simulator
-    value:           2D7D1EBF-4B54-3DD3-9623-1495DC8B8EB8
+    value:           32EC8D22-2F3A-3A87-B0C6-3541E33375D0
   - target:          arm64-ios-simulator
-    value:           067B9622-0538-39D1-8080-3B449715F5B2
+    value:           F015B125-543A-39CE-83F5-B7C54E7AE306
 install-name:    '/usr/lib/system/libsystem_notify.dylib'
 current-version: 279.40.4
 exports:
@@ -2603,9 +2603,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3AAFE909-FE24-3688-A053-12789120D7D1
+    value:           A092A50A-C368-3A55-9C39-1FFADC2EC95E
   - target:          arm64-ios-simulator
-    value:           4FE2D632-AD4D-35B1-925C-07363B6C6A22
+    value:           2D57EA25-9ABB-3292-A93F-8494923187C0
 install-name:    '/usr/lib/system/libsystem_product_info_filter.dylib'
 current-version: 8.40.1
 parent-umbrella:
@@ -2731,9 +2731,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1DA9DE88-C4BF-3F97-AA1B-A46EA5B3AFCD
   - target:          x86_64-ios-simulator
-    value:           D8D82412-C98E-3AD6-84AC-6299923FCCB5
+    value:           3ECAE2FE-F674-37BA-B8B1-735145689046
   - target:          arm64-ios-simulator
-    value:           37DC9011-ECA0-37FD-8EC9-A6CCA8AC5AC0
+    value:           738191BF-2715-3435-98BB-E9A0C4764C2A
 install-name:    '/usr/lib/system/libsystem_sandbox.dylib'
 current-version: 1441.60.4
 parent-umbrella:
@@ -2803,9 +2803,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6E681669-56A1-3BCF-A79F-84D0A847C923
   - target:          x86_64-ios-simulator
-    value:           CB6852C4-5180-3362-A110-F8854E1D1613
+    value:           141DB3FA-199E-3751-814B-8F7BFAD32563
   - target:          arm64-ios-simulator
-    value:           9044C72D-0A05-3388-9F60-F5D2CAEC8A4F
+    value:           6B476E2A-B0C7-31BB-8620-1A9E6A71BAF2
 install-name:    '/usr/lib/system/libsystem_sim_kernel.dylib'
 current-version: 227.40.3
 parent-umbrella:
@@ -2855,9 +2855,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1B395C10-C2B5-331C-876D-EAB9EB1B2640
   - target:          x86_64-ios-simulator
-    value:           FF88A648-AE24-34BF-8EAE-BCA8A37D5842
+    value:           B40F4E9A-9B20-3A29-B6A8-D69BF31AC86B
   - target:          arm64-ios-simulator
-    value:           3964DCE5-3B25-3CD0-8693-13026387A9FB
+    value:           8CEB52A3-16CC-3BC0-B8A4-F5EF0EB1D371
 install-name:    '/usr/lib/system/libsystem_sim_kernel_host.dylib'
 current-version: 227.40.3
 parent-umbrella:
@@ -2898,9 +2898,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           361A3DC9-02CA-3986-B517-F32D5464335E
   - target:          x86_64-ios-simulator
-    value:           F5BB308D-C548-3216-84D0-4FBABA7E9BFA
+    value:           E02A5656-7970-374D-87D4-37CC78A54F30
   - target:          arm64-ios-simulator
-    value:           59698104-5945-38D7-9922-A2EA29C8F25D
+    value:           721113E5-71F9-3796-9578-307F732406EC
 install-name:    '/usr/lib/system/libsystem_sim_platform.dylib'
 current-version: 227.40.3
 parent-umbrella:
@@ -2929,9 +2929,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           90AC4286-1A17-3F5F-8854-B35B03AE5C04
   - target:          x86_64-ios-simulator
-    value:           CC931358-2735-38E4-B0A0-051FEA631F7E
+    value:           72721056-049E-3A30-9FBB-50506E08BA67
   - target:          arm64-ios-simulator
-    value:           89A9662C-A8DD-3537-8938-86C425779FE5
+    value:           D6812601-F041-3B15-836D-CA7F6E8D1C2F
 install-name:    '/usr/lib/system/libsystem_sim_platform_host.dylib'
 current-version: 227.40.3
 parent-umbrella:
@@ -2965,9 +2965,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           043CEEB1-9F77-3DFF-8FFD-B52EAFEAC20E
   - target:          x86_64-ios-simulator
-    value:           7547E0F7-2225-359D-80B5-32D97A166ACE
+    value:           2F45AEAD-2B07-397A-8D12-E4CE7A52F25C
   - target:          arm64-ios-simulator
-    value:           547BDEA1-4962-38D6-A7EC-453422542FC4
+    value:           956D2DDE-9C81-3E6B-9379-2BBA69199704
 install-name:    '/usr/lib/system/libsystem_sim_pthread.dylib'
 current-version: 227.40.3
 parent-umbrella:
@@ -3000,9 +3000,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4D9AF813-6727-322C-8FE4-292A16A6920E
   - target:          x86_64-ios-simulator
-    value:           EEC097E0-98C0-3940-BDAF-20AE78C07059
+    value:           DA48DADE-C86C-39C0-AF2C-A96CD1D404A9
   - target:          arm64-ios-simulator
-    value:           0B56A7CE-34C1-312B-8667-D7EB570AB72C
+    value:           3704631A-F817-333D-A55A-CBAD603E1C59
 install-name:    '/usr/lib/system/libsystem_sim_pthread_host.dylib'
 current-version: 227.40.3
 parent-umbrella:
@@ -3029,11 +3029,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           C390410C-E91C-3A65-A63B-E19B68186F03
   - target:          x86_64-ios-simulator
-    value:           068B05B3-3780-3CFE-BF0D-BAE986659BD5
+    value:           457CDC70-9044-3B95-9909-0B2E8931309B
   - target:          arm64-ios-simulator
-    value:           27F67F60-2C72-35DB-B200-83CD40DCBC05
+    value:           C770CE0E-66D4-3C62-A376-5346A656C15B
 install-name:    '/usr/lib/system/libsystem_trace.dylib'
-current-version: 1277.40.18
+current-version: 1277.80.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3099,9 +3099,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D068AE39-AB92-3E79-8EB7-64D6760D685C
   - target:          x86_64-ios-simulator
-    value:           531850BB-8754-390F-87F6-3B2C00F2588B
+    value:           F9A8A037-17D1-36C9-BA57-C90AE9426734
   - target:          arm64-ios-simulator
-    value:           893361EE-2DAC-3A10-94FA-1BBE9504BFE2
+    value:           BA855B72-6D64-36BB-9A37-1EA29EBBC044
 install-name:    '/usr/lib/system/libunwind.dylib'
 current-version: 200.10
 parent-umbrella:
@@ -3163,11 +3163,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           F175CC10-3583-37BF-A648-1E78235C2F05
   - target:          x86_64-ios-simulator
-    value:           056A9371-1C2C-385B-BB06-F099DE20E73A
+    value:           26B6416F-496E-32F6-AC9D-FFCD86331B43
   - target:          arm64-ios-simulator
-    value:           EDE51710-C1BB-37EE-B400-5157B843F738
+    value:           8BD68285-9242-37A5-8076-FD0A38393FAC
 install-name:    '/usr/lib/system/libxpc.dylib'
-current-version: 2038.40.38
+current-version: 2038.80.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System

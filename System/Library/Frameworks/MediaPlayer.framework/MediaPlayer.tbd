@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3E0D1EDE-44FD-3E79-93C4-A1AF7A22E40E
   - target:          x86_64-ios-simulator
-    value:           3FB7AD78-ACB8-3925-B2A2-0C9CCBA651C0
+    value:           43FEB353-A2EE-3115-A723-C41BF85157F7
   - target:          arm64-ios-simulator
-    value:           A38AD821-61A6-3A83-8A9C-F717C0070FC0
+    value:           8C704241-16B8-38AE-8204-8DBF8B72D6B0
 install-name:    '/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -229,17 +229,17 @@ exports:
                        _MPAVRoutingDataSourceRouteUserInfoKey, _MPAVRoutingDataSourceRoutesDidChangeNotification, 
                        _MPAVRoutingDataSourceVolumeControlAvailabilityDidChangeNotification, 
                        _MPAVRoutingDataSourceVolumeControlAvailabilityUserInfoKey, 
-                       _MPAVRoutingViewItemActionIdentifierShareAudio, _MPAlternateTextOutputNativeSampleBuffers, 
-                       _MPAlternateTextOutputStrings, _MPAlternateTextOutputTime, 
-                       _MPAlternateTextTrackDidOutputNotification, _MPAlternateTextTrackWillChangeNotification, 
-                       _MPArtworkCatalogEffectOptionColorAnalyzerAlgorithm, _MPArtworkCatalogErrorDomain, 
-                       _MPArtworkCatalogOriginalSize, _MPArtworkRepresentationBestSizeMatchingSize, 
-                       _MPArtworkSortSizes, _MPChangeDetailOperationDescription, 
-                       _MPChangeDetailOperationGenerate, _MPChangeDetailOperationGenerateEx, 
-                       _MPChangeDetailOperationMaximumElementCount, _MPChangeDetailOperationMaximumSegmentCount, 
-                       _MPChangeDetailOperationsCopyDescription, _MPChangeLanguageOptionSettingFromMediaRemote, 
-                       _MPChangeLanguageOptionSettingToMediaRemote, _MPClientRadioControllerGetXPCInterface, 
-                       _MPCloudControllerCanShowCloudDownloadButtonsDidChangeNotification, 
+                       _MPAVRoutingViewItemActionIdentifierShareAudio, _MPAbstractNetworkArtworkDataSourceErrorDomain, 
+                       _MPAlternateTextOutputNativeSampleBuffers, _MPAlternateTextOutputStrings, 
+                       _MPAlternateTextOutputTime, _MPAlternateTextTrackDidOutputNotification, 
+                       _MPAlternateTextTrackWillChangeNotification, _MPArtworkCatalogEffectOptionColorAnalyzerAlgorithm, 
+                       _MPArtworkCatalogErrorDomain, _MPArtworkCatalogOriginalSize, 
+                       _MPArtworkRepresentationBestSizeMatchingSize, _MPArtworkSortSizes, 
+                       _MPChangeDetailOperationDescription, _MPChangeDetailOperationGenerate, 
+                       _MPChangeDetailOperationGenerateEx, _MPChangeDetailOperationMaximumElementCount, 
+                       _MPChangeDetailOperationMaximumSegmentCount, _MPChangeDetailOperationsCopyDescription, 
+                       _MPChangeLanguageOptionSettingFromMediaRemote, _MPChangeLanguageOptionSettingToMediaRemote, 
+                       _MPClientRadioControllerGetXPCInterface, _MPCloudControllerCanShowCloudDownloadButtonsDidChangeNotification, 
                        _MPCloudControllerCanShowCloudTracksDidChangeNotification, 
                        _MPCloudControllerCloudAddToPlaylistBehaviorDidChangeNotification, 
                        _MPCloudControllerCloudLibraryFailureDidChangeNotification, 

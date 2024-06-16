@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BA06859C-7A93-3E6F-9410-B4FBB45355AB
   - target:          x86_64-ios-simulator
-    value:           DDD1AA6A-8AFA-33B4-8240-8839FFA7389E
+    value:           1EDBE529-1AE5-3B99-8727-4ABDCC5144CC
   - target:          arm64-ios-simulator
-    value:           634CD4DD-3EEC-336A-9B0B-2E434948E16C
+    value:           49E3B8F0-825F-3C62-9145-F71505DEF8BC
 install-name:    '/usr/lib/libxslt.1.dylib'
 current-version: 3.26
 compatibility-version: 3

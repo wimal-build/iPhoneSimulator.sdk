@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9757D367-7F14-32C9-8702-50B8BCD91E5D
+    value:           1621E53D-1141-3232-9702-CEBF2A9863B6
   - target:          arm64-ios-simulator
-    value:           9EEAFE82-4E76-3D4A-B8C3-2D5CC88471D4
+    value:           5F53F670-2DB0-33D2-82B3-C0B4076842DA
 install-name:    '/System/Library/Frameworks/IdentityLookup.framework/IdentityLookup'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

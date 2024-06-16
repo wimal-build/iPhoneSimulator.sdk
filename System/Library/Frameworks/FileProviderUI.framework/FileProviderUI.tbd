@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C6FFCCD9-84D9-3ED5-A15E-BE9820F5C451
+    value:           7A05B334-1F7A-33D9-9A83-FB57B0A230F4
   - target:          arm64-ios-simulator
-    value:           816261A5-EE25-3006-A32A-96A23F7879AE
+    value:           260A0D56-071F-3612-A288-8483FA05F43F
 install-name:    '/System/Library/Frameworks/FileProviderUI.framework/FileProviderUI'
 current-version: 35
 exports:

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C47A8111-DC20-35A7-AB66-355F1F8EBEDE
+    value:           61C39432-57E4-3093-9A1D-2372B04FD031
   - target:          arm64-ios-simulator
-    value:           FE7D2FA0-EA4E-338E-881F-F8D561E2BAD9
+    value:           8C4F715F-B9AA-3B0B-B108-20D1D6125FB1
 install-name:    '/System/Library/Frameworks/WidgetKit.framework/WidgetKit'
-current-version: 104.9.5
+current-version: 104.9.7
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

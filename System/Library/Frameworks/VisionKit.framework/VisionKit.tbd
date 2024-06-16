@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           74DA38F4-04C2-341A-8171-AF6A84AFFACE
+    value:           052F18CA-6A2D-3A7E-9AB2-C1BF00AAE05A
   - target:          arm64-ios-simulator
-    value:           CFBCE2A1-0E68-3558-B1D6-AA3EE77CD033
+    value:           D7D799FD-45F5-3D40-BE28-9813DB6F1FE6
 install-name:    '/System/Library/Frameworks/VisionKit.framework/VisionKit'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -19,9 +19,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           42EA660C-9A9E-3FF5-A03B-38004E9CD851
+    value:           C518A8C7-3C0F-3F96-9D6F-A97407204707
   - target:          arm64-ios-simulator
-    value:           76FDB6E7-F946-3131-9665-751601FFF13E
+    value:           93C6A1B2-843A-3826-82FF-1446C19D5954
 install-name:    '/System/Library/PrivateFrameworks/DocumentCamera.framework/DocumentCamera'
 current-version: 74
 exports:

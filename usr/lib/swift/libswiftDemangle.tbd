@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           BEF06625-D6DB-34FF-819E-4CE6F3F0BF99
+    value:           A3EC0609-CB21-3235-B9D6-45EDBFB79C4F
   - target:          arm64-ios-simulator
-    value:           ED665AE3-A3A5-393B-B8EA-98E56B32EF76
+    value:           CCB73CA3-4116-35B4-8B83-CC50285F7766
 install-name:    '/usr/lib/swift/libswiftDemangle.dylib'
 current-version: 0
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6AE9E2FF-8AD7-3B5F-BDFB-3B4680D00159
+    value:           DB804F0C-49DD-307D-BEF5-9990EF74780E
   - target:          arm64-ios-simulator
-    value:           DF03DC86-B5C1-3660-AD0E-620A7C6B9A42
+    value:           2A0CAAF5-6BCB-342A-A2B5-210603198B6C
 install-name:    '/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing'
 current-version: 0
 exports:

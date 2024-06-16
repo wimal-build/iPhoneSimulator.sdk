@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DC7E3628-617C-33A1-86FC-3288A057CC34
   - target:          x86_64-ios-simulator
-    value:           167C828E-EB0E-3380-9D7A-8FF1319F8977
+    value:           772217F3-810B-3219-AA76-F94FDB92C8FE
   - target:          arm64-ios-simulator
-    value:           CFE74BF7-D8D3-336A-92CF-2E9EC5EA8861
+    value:           0E778F4C-E79D-3FD9-B75C-54CE69678C2D
 install-name:    '/System/Library/Frameworks/AddressBook.framework/AddressBook'
 exports:
   - targets:         [ i386-ios-simulator ]

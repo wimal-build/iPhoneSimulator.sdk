@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FC51E5F1-1AF8-3DD1-BD08-66FC329216E0
+    value:           66653D37-65EE-3FFB-AA5E-A8A13239B1DE
   - target:          arm64-ios-simulator
-    value:           9C8837BA-30FA-3000-AC61-43CF8C8E32C1
+    value:           F719AEB0-FE17-33E7-8D3E-3FF5A095EADE
 install-name:    '/usr/lib/libAudioToolboxUtility.dylib'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

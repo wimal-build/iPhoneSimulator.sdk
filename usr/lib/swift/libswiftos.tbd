@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ECE971BA-0DD1-34CE-B86C-FE36DDD26974
   - target:          x86_64-ios-simulator
-    value:           C8F10335-1F66-3285-9964-6A1D396DA6BF
+    value:           70C3C85D-EAC8-38FE-B0A7-E2BF48E239D2
   - target:          arm64-ios-simulator
-    value:           8AFF6EEE-CE4D-386C-A2B3-4AB1781C8A15
+    value:           E9D3BEC5-8A17-3265-91F5-EB34BF75AA92
 install-name:    '/usr/lib/swift/libswiftos.dylib'
 current-version: 1000.40.4
 swift-abi-version: 7

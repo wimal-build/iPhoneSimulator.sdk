@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D8A571A4-6E65-3DEC-994F-7A34869F88A5
   - target:          x86_64-ios-simulator
-    value:           B81824F6-8BB8-39DD-B3B8-2BA0D2ADED23
+    value:           9FE2A158-368C-306B-9CE4-6C3A0FD06B74
   - target:          arm64-ios-simulator
-    value:           80859EE5-75DC-39E5-8178-0FFC5812FF6D
+    value:           8BE86B78-5CB9-3599-AA8E-52E0073CD28B
 install-name:    '/System/Library/Frameworks/Contacts.framework/Contacts'
 current-version: 3498.2
 compatibility-version: 0

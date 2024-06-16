@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A279125B-F62B-33AA-9416-9F7585FB588E
   - target:          x86_64-ios-simulator
-    value:           CCF19507-CBC2-3DB9-8AAD-05FA29959E70
+    value:           85F315EC-92A4-3DFE-A7B5-BA772576814C
   - target:          arm64-ios-simulator
-    value:           F75B22B0-2E9F-3DDD-8C13-8DDBAD15BE81
+    value:           75BA8134-5B2F-39E0-8863-7205A1E078B3
 install-name:    '/usr/lib/libnetwork.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1141,24 +1141,24 @@ exports:
                        _nw_setting_tcp_disable_info_logs, _nw_setting_tcp_disable_slab_allocator, 
                        _nw_setting_tcp_enable_auto_tfo, _nw_setting_tcp_input_batch_size, 
                        _nw_setting_tcp_input_max_aggregate, _nw_setting_tcp_slab_buffer_size, 
-                       _nw_setting_tcp_timer_disable_qos_override, _nw_setting_tcpconn_disable_simulate_crash, 
-                       _nw_setting_tcpconn_disable_tls13, _nw_setting_tcpconn_disable_tls_experiment_sampling, 
-                       _nw_setting_tcpconn_enable_tls_esni, _nw_setting_tcpconn_enable_tls_experiments, 
-                       _nw_setting_tcpconn_enable_tls_keylog, _nw_setting_tcpconn_enable_tls_tickets, 
-                       _nw_setting_tcpconn_fallback_delay_cap_ms, _nw_setting_tcpconn_fallback_post_transport_timeout, 
-                       _nw_setting_tcpconn_fallback_usage_cap_interval, _nw_setting_tcpconn_fallback_wifi_advantage_per_rtt_ms, 
-                       _nw_setting_tcpconn_first_address_family_count, _nw_setting_tcpconn_ipv4_delay, 
-                       _nw_setting_tcpconn_ipv6_delay, _nw_setting_tcpconn_keepalive_cnt, 
-                       _nw_setting_tcpconn_keepalive_time, _nw_setting_tcpconn_max_delay, 
-                       _nw_setting_tcpconn_min_delay, _nw_setting_tcpconn_no_fallback_full_stack, 
-                       _nw_setting_tcpconn_probe_denominator, _nw_setting_tcpconn_probe_numerator, 
-                       _nw_setting_tcpconn_rtt_leeway, _nw_setting_tcpconn_rtt_leeway_small, 
-                       _nw_setting_tcpconn_strong_fallback_delay, _nw_setting_tcpconn_trigger_agent_delay, 
-                       _nw_setting_tcpconn_v6_head_start, _nw_setting_tcpconn_weak_fallback_delay, 
-                       _nw_settings_carrier_settings, _nw_settings_managed_settings, 
-                       _nw_settings_register_boringssl_log_debug_updates, _nw_settings_register_networkd_privileged, 
-                       _nw_settings_register_quic_log_debug_updates, _nw_settings_setup_atfork, 
-                       _nw_shoes_server_cancel, _nw_shoes_server_copy_parameters, 
+                       _nw_setting_tcp_timer_disable_qos_override, _nw_setting_tcp_timerlist_max_offset, 
+                       _nw_setting_tcpconn_disable_simulate_crash, _nw_setting_tcpconn_disable_tls13, 
+                       _nw_setting_tcpconn_disable_tls_experiment_sampling, _nw_setting_tcpconn_enable_tls_esni, 
+                       _nw_setting_tcpconn_enable_tls_experiments, _nw_setting_tcpconn_enable_tls_keylog, 
+                       _nw_setting_tcpconn_enable_tls_tickets, _nw_setting_tcpconn_fallback_delay_cap_ms, 
+                       _nw_setting_tcpconn_fallback_post_transport_timeout, _nw_setting_tcpconn_fallback_usage_cap_interval, 
+                       _nw_setting_tcpconn_fallback_wifi_advantage_per_rtt_ms, _nw_setting_tcpconn_first_address_family_count, 
+                       _nw_setting_tcpconn_ipv4_delay, _nw_setting_tcpconn_ipv6_delay, 
+                       _nw_setting_tcpconn_keepalive_cnt, _nw_setting_tcpconn_keepalive_time, 
+                       _nw_setting_tcpconn_max_delay, _nw_setting_tcpconn_min_delay, 
+                       _nw_setting_tcpconn_no_fallback_full_stack, _nw_setting_tcpconn_probe_denominator, 
+                       _nw_setting_tcpconn_probe_numerator, _nw_setting_tcpconn_rtt_leeway, 
+                       _nw_setting_tcpconn_rtt_leeway_small, _nw_setting_tcpconn_strong_fallback_delay, 
+                       _nw_setting_tcpconn_trigger_agent_delay, _nw_setting_tcpconn_v6_head_start, 
+                       _nw_setting_tcpconn_weak_fallback_delay, _nw_settings_carrier_settings, 
+                       _nw_settings_managed_settings, _nw_settings_register_boringssl_log_debug_updates, 
+                       _nw_settings_register_networkd_privileged, _nw_settings_register_quic_log_debug_updates, 
+                       _nw_settings_setup_atfork, _nw_shoes_server_cancel, _nw_shoes_server_copy_parameters, 
                        _nw_shoes_server_create, _nw_shoes_server_fillout_statistics, 
                        _nw_shoes_server_get_port, _nw_shoes_server_set_error_handler, 
                        _nw_shoes_server_set_state_changed_handler, _nw_shoes_server_start, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           B765B89B-2277-3D37-83CC-E61B97617015
   - target:          x86_64-ios-simulator
-    value:           43F6691C-FDCC-3B10-BBEC-FB1EB8A5B2DD
+    value:           9B1E9D7B-2C49-37AE-9122-4B02B3ACB9A0
   - target:          arm64-ios-simulator
-    value:           889B1DF9-F1B3-34FA-8160-9BA708D77B07
+    value:           98E29C81-AF0D-37B1-BC30-B7B7029D7F10
 install-name:    '/System/Library/Frameworks/PhotosUI.framework/PhotosUI'
-current-version: 322.0.100
+current-version: 330.0.150
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _PLActivityTypePublishToTudou, _PLActivityTypePublishToYouTube, 

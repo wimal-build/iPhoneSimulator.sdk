@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A0CE5F93-DB50-3D60-93D7-3F276F66501F
   - target:          x86_64-ios-simulator
-    value:           2B15B189-5B6A-31A1-B024-7341CD5A8509
+    value:           5E4CE849-E791-3EAF-B638-8128E98FA1F9
   - target:          arm64-ios-simulator
-    value:           8C1AFFBD-2C93-374B-B5D4-E3FC623DCC7A
+    value:           4DC71530-BCB0-3480-87D1-A9312E41E840
 install-name:    '/usr/lib/libc++abi.dylib'
 current-version: 904.4
 exports:

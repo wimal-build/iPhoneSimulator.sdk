@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C4F3404A-D41F-3C25-BEE5-A4ECCC9E4903
+    value:           921471EB-07E1-3F6B-87A9-9742DD55ADBC
   - target:          arm64-ios-simulator
-    value:           750C225B-FCE9-3126-B57B-BEA0C54E4BB2
+    value:           82ACD610-4DAA-3F71-AE35-DB84A93D6738
 install-name:    '/usr/lib/swift/libswiftCoreNFC.dylib'
 current-version: 2
 swift-abi-version: 7

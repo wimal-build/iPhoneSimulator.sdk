@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1675EBB4-1D5D-3452-A0E7-E89C9193CE06
   - target:          x86_64-ios-simulator
-    value:           772E501D-B206-31A9-85A7-6F29555E0481
+    value:           2D14E83D-07F5-3F92-B5BD-9546E871F6FC
   - target:          arm64-ios-simulator
-    value:           50B6D37D-B34B-3794-86A9-DAB2A016859E
+    value:           C8F9B19D-FBEE-3DB9-ABF7-2FE49A388CE5
 install-name:    '/System/Library/Frameworks/GameKit.framework/GameKit'
 current-version: 775.14.1
 reexported-libraries:
@@ -34,9 +34,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D53C6FE2-BF4E-34A0-A114-91DC121B4598
   - target:          x86_64-ios-simulator
-    value:           A024D386-F27B-30BA-8F32-382A397A51B4
+    value:           5750B301-2342-3BF5-93EC-CBE80E5CDD41
   - target:          arm64-ios-simulator
-    value:           E1128B2A-BA52-3C25-8F49-BCB8B45A5EEB
+    value:           BC6E49B5-87DC-320B-A500-53BCCFF267A1
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -500,9 +500,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           24113072-C57A-397E-886A-B5360CFCACF2
   - target:          x86_64-ios-simulator
-    value:           2180B721-6F9E-31CA-9A5E-CBCFC9545C1A
+    value:           73128BEB-4808-32D3-B2C6-8476B9AF90C2
   - target:          arm64-ios-simulator
-    value:           11815A43-BBB0-33CD-A7C7-965B5AFA77AE
+    value:           A8B21443-8E70-3390-AB81-C3B47BDA3DBE
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 swift-abi-version: 7
 exports:
@@ -2197,9 +2197,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E7B851C3-2D61-3A3F-9D65-F6ACA79CEFF1
+    value:           770BEBAF-6429-3D6C-A9EA-57F383D5BF93
   - target:          arm64-ios-simulator
-    value:           18A19EDD-835B-3E9B-A809-2FEE0BD7F057
+    value:           686A4B7D-E77F-3BEE-B22E-42310CDDD178
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUICore.framework/GameCenterUICore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2232,9 +2232,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           13633383-8373-3563-BD1F-5B6A93A5A890
   - target:          x86_64-ios-simulator
-    value:           15B82F4F-3078-31E7-8D1D-428481A3B217
+    value:           6BC58F28-5487-3D20-9DF8-8C123C54069F
   - target:          arm64-ios-simulator
-    value:           56266700-D741-387A-B496-3D0E9C14C6EC
+    value:           7979CFEE-A9D2-3A98-B688-714A9AD4C7E5
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:
   - targets:         [ i386-ios-simulator ]

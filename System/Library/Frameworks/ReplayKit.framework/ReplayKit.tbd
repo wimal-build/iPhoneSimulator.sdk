@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A3C53C12-0C5E-32A8-B077-F7EE2946E309
   - target:          x86_64-ios-simulator
-    value:           B50D4323-FC13-331E-9944-2D34E3A5D9E6
+    value:           9CF0DBDE-187F-3498-9472-01D7EB08D7AB
   - target:          arm64-ios-simulator
-    value:           3432D043-6AE4-33B1-A6BB-B1A50AED1C4B
+    value:           EFB5D765-E253-3743-8BE3-C4D44554A291
 install-name:    '/System/Library/Frameworks/ReplayKit.framework/ReplayKit'
 exports:
   - targets:         [ i386-ios-simulator ]

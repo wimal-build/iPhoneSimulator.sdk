@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           50DC6F6C-750F-3D07-ACA0-FD7F9F8C6F25
+    value:           304B5BF8-7BEB-3C03-9D9C-4CC1541DD6F1
   - target:          arm64-ios-simulator
-    value:           D5EAD9CE-806D-35EB-8173-60460C30C3F1
+    value:           F96C333D-332E-3C3F-B9FE-424E0D67C6ED
 install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction'
 current-version: 0
 compatibility-version: 0

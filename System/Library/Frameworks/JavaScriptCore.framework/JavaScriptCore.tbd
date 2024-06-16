@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4821E73B-A96C-3B19-BEDF-94367157EBF7
   - target:          x86_64-ios-simulator
-    value:           A00C0AD6-336E-3C35-A056-A1A88DA517EF
+    value:           C99F141C-4082-36BC-8051-3D88FCAC8E44
   - target:          arm64-ios-simulator
-    value:           151F163C-B683-3DCE-8DA0-6593A3197057
+    value:           6BB91D61-E4F3-37CA-8934-1A0C005591AD
 install-name:    '/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore'
-current-version: 610.3.7
+current-version: 610.4.3
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _WTFInstallReportBacktraceOnCrashHook, _WTFSetCrashHook, _WebCoreWebThreadRunSync, 

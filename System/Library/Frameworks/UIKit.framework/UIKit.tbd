@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BDCBC9FA-3AD2-36A3-A960-E7A2037D307F
   - target:          x86_64-ios-simulator
-    value:           FAC7C5E5-63B6-3144-9AB7-83DDB9DE0F70
+    value:           93328993-07EE-30C1-9086-6BABA9C06369
   - target:          arm64-ios-simulator
-    value:           AAEE6BCE-98AC-39D9-A9F1-0E97FC094AD2
+    value:           F8676A36-3D59-37C6-A1DC-0050DA2C82C6
 install-name:    '/System/Library/Frameworks/UIKit.framework/UIKit'
-current-version: 4003.1.101
+current-version: 4006
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]
@@ -1420,11 +1420,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           46A8836E-43C7-3325-B47B-65DEACF4CE0B
+    value:           7CFDCA14-3463-317E-9B3B-58FE4CED8CF7
   - target:          arm64-ios-simulator
-    value:           5B369872-646D-36B2-B3E5-70C52936D851
+    value:           D73982CA-4329-328C-852E-41E3844EFF6E
 install-name:    '/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager'
-current-version: 200.3.1
+current-version: 200.4.1
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _DOCAdaptSizeToRect, _DOCAlertItemIsNotReadable, _DOCAlertUserTheNetworkIsNotReachable, 
@@ -1507,11 +1507,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EA5D0427-7AF0-3EED-B6A8-9BD5DA8FFB20
+    value:           9090C3BC-CA3B-3555-8296-3695157F8595
   - target:          arm64-ios-simulator
-    value:           FD1AE3C1-C60E-38EE-A42E-000E099B295F
+    value:           13694BA9-198A-3147-9220-8DD6B3AA5F5A
 install-name:    '/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet'
-current-version: 1575
+current-version: 1579
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SUIActivityTypeShare, _UIActivityTypeAddToReadingList, _UIActivityTypeAirDrop, 
@@ -1568,11 +1568,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C4CE84E-9340-3389-898D-2887BD90B6D2
   - target:          x86_64-ios-simulator
-    value:           30A206CF-7FB6-3B9C-BAC5-D01540A1FD47
+    value:           55EE67EC-28F1-3979-86D0-34369229353C
   - target:          arm64-ios-simulator
-    value:           459DB334-D45E-3B28-AF79-90069B0DD6D5
+    value:           CAC4DA79-9651-309E-B4BA-D222F16C64FC
 install-name:    '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation'
-current-version: 726.4.1
+current-version: 727.2
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _NSFileExtendedAttributes, _UIFoundationErrorDomain, _UIGraphicsSetShadow, 
@@ -1761,8 +1761,9 @@ exports:
                        __NSStringHasRightToLeftBaseWritingDirectionAtIndex, __NSStringHasRightToLeftCharactersInRange, 
                        __NSStringImputedBaseWritingDirectionAtIndex, __NSXMLEncoding, 
                        __UIFoundationRoundedInverseTextScalingFactor, __UIFoundationRoundedTextScalingFactor, 
-                       __UISystemFontName, ___CTFontGetExtraData, ___NSTokenizerLanguageSet, 
-                       _kUIFoundationUIFoundationVersionNumber, _kUIFoundationUIFoundationVersionString ]
+                       __UISystemFontName, ___CTFontGetExtraData, ___NSTextLayoutManagerLinearLayoutFragmentsDump, 
+                       ___NSTokenizerLanguageSet, _kUIFoundationUIFoundationVersionNumber, 
+                       _kUIFoundationUIFoundationVersionString ]
     objc-classes:    [ NSATSGlyphStorage, NSATSLineFragment, NSATSTypesetter, NSAttributeDictionary, 
                        NSAttributeDictionaryEnumerator, NSCIDGlyphInfo, NSCTGlyphInfo, 
                        NSConcreteNotifyingMutableAttributedString, NSConcreteTextStorage, 
@@ -1850,11 +1851,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           984E55B9-03C9-3D2A-95DC-3A5F434A4A71
+    value:           823D8723-4310-3D2B-8C9E-0D40D5683F22
   - target:          arm64-ios-simulator
-    value:           DF4D06E3-ADA1-33C1-9EBA-7A94304FF314
+    value:           5EE25F2B-20E7-31E7-82DD-EEF1418C25B7
 install-name:    '/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore'
-current-version: 4003.1.101
+current-version: 4006
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]
@@ -2932,10 +2933,11 @@ exports:
                        _UIMenuSubstitutionOptions, _UIMenuSubstitutions, _UIMenuSubstitutionsPanel, 
                        _UIMenuText, _UIMenuTextColor, _UIMenuTextSize, _UIMenuTextStyle, 
                        _UIMenuTextStylePasteboard, _UIMenuToolbar, _UIMenuTransformations, 
-                       _UIMenuUndoRedo, _UIMenuView, _UIMenuWindow, _UIMenuWritingDirection, 
-                       _UIMidPointBetweenPoints, _UIMinimumKeepAliveTimeout, _UIMinutelessTimeFormat, 
-                       _UIMonthDayFormat, _UIMonthYearFormat, _UINamedLayerFocusDirectionKey, 
-                       _UINavBarButtonFont, _UINavigationControllerDidCollapseNavigationViewNotification, 
+                       _UIMenuUndoRedo, _UIMenuView, _UIMenuViewOrientation, _UIMenuViewSizing, 
+                       _UIMenuWindow, _UIMenuWritingDirection, _UIMidPointBetweenPoints, 
+                       _UIMinimumKeepAliveTimeout, _UIMinutelessTimeFormat, _UIMonthDayFormat, 
+                       _UIMonthYearFormat, _UINamedLayerFocusDirectionKey, _UINavBarButtonFont, 
+                       _UINavigationControllerDidCollapseNavigationViewNotification, 
                        _UINavigationControllerDidExpandNavigationViewNotification, 
                        _UINavigationControllerHideShowBarDuration, _UINavigationControllerWillCollapseNavigationViewNotification, 
                        _UINavigationControllerWillExpandNavigationViewNotification, 

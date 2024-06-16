@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6B078F5F-D1B1-34E7-B8C4-1A2ED289331A
   - target:          x86_64-ios-simulator
-    value:           27268C24-C2B2-3735-A839-C352470091F4
+    value:           92FB1401-5F76-30C0-A270-F10E8DE37B83
   - target:          arm64-ios-simulator
-    value:           CD824B11-EBD8-322C-9B69-ED7386D0ECC0
+    value:           FD1811C8-91C5-3A26-B46B-BD83041BF1DB
 install-name:    '/System/Library/Frameworks/iAd.framework/iAd'
 exports:
   - targets:         [ i386-ios-simulator ]

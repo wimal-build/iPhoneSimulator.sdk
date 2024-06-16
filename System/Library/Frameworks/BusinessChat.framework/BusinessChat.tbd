@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2B04FD3C-4CB2-3039-84E8-89A3FF0144DB
+    value:           1487EFD7-9F13-33F2-B95D-754A71447152
   - target:          arm64-ios-simulator
-    value:           BA7F90DC-987D-3FEF-9E5E-381C4A5470AB
+    value:           271EAD50-3B9E-3E3A-8173-410551967391
 install-name:    '/System/Library/Frameworks/BusinessChat.framework/BusinessChat'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

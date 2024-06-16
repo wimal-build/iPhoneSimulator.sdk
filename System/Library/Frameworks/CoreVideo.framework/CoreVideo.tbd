@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5A07E537-F8E9-3695-9F2E-700295475A60
   - target:          x86_64-ios-simulator
-    value:           2546DFE3-B8DC-37A7-9C4B-0B86215E2DE8
+    value:           6982F9BF-269C-37D5-8989-022E7D69F0AC
   - target:          arm64-ios-simulator
-    value:           5CFF8284-730D-37BC-8973-01F266A83B56
+    value:           F86065DC-4295-3212-A89B-0C3EE66AAEE2
 install-name:    '/System/Library/Frameworks/CoreVideo.framework/CoreVideo'
 current-version: 1.5
 compatibility-version: 1.2

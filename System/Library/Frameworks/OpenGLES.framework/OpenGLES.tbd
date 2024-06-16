@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5E8890CC-DEAE-3C90-8DB5-79E1592E2259
   - target:          x86_64-ios-simulator
-    value:           327FD9E3-8FC0-34BA-998E-BE8EC8C8F41D
+    value:           20BD9AF7-FBD6-3F82-BB16-8AB3044DD3E7
   - target:          arm64-ios-simulator
-    value:           6AC6537E-DA08-324B-98AE-D07D7B779187
+    value:           EB4C3CB1-8483-3062-BFAA-E71677164F56
 install-name:    '/System/Library/Frameworks/OpenGLES.framework/OpenGLES'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

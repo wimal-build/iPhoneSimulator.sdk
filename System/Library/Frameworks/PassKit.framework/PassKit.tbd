@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           635A05C4-DAC5-3723-9E19-9FA94D66B44D
   - target:          x86_64-ios-simulator
-    value:           8E37C9F5-D653-36BC-94B9-7387FC76F5FC
+    value:           0F2B4DD5-A056-35CB-8CB5-29CC35FD00AD
   - target:          arm64-ios-simulator
-    value:           F21A210F-C3C5-3B79-8E63-1671F75775EF
+    value:           86BDD298-3665-3079-A0FF-6E06A355FCB1
 install-name:    '/System/Library/Frameworks/PassKit.framework/PassKit'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -36,9 +36,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AD493693-E7C1-3C61-AF8B-BA943501FABC
   - target:          x86_64-ios-simulator
-    value:           A124CB3C-0654-3CB5-95F5-EAEC8B391DCB
+    value:           2E115E0E-7034-3BC6-B61B-FC54F324A37E
   - target:          arm64-ios-simulator
-    value:           14947D47-BAD1-3ED0-99F1-ECAB011990AC
+    value:           6403FF61-6F05-3E62-8BE6-6515FE41BD26
 install-name:    '/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -2176,9 +2176,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           30535D76-4AE7-330F-822F-ED3CE633467A
   - target:          x86_64-ios-simulator
-    value:           0D00A690-2CD2-39C5-8F13-81926978EC28
+    value:           29F4FF82-8C51-3ED8-9281-C4B1AFFBAA5E
   - target:          arm64-ios-simulator
-    value:           AAF9CDC0-30C6-3638-BAD8-25C66F6BBC2D
+    value:           DBABE9B1-8F5F-30E0-99F2-F0EEB5E37E3E
 install-name:    '/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI'
 exports:
   - targets:         [ i386-ios-simulator ]

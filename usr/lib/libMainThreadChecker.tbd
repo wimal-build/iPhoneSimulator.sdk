@@ -5,8 +5,8 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           11458946-2AFC-3520-8751-4DE70C246304
+    value:           92344424-1C4D-31A8-88CE-FE6F44C8DA0B
   - target:          arm64-ios-simulator
-    value:           5BBBF532-6DBE-3105-B112-8AC61E5C47E8
+    value:           C3E8E6F4-AC02-33F0-87CE-5C1E9D2B9333
 install-name:    '/usr/lib/libMainThreadChecker.dylib'
 ...

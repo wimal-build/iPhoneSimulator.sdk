@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CBE4F6DF-4342-3A0D-9183-9F0D11970DB5
   - target:          x86_64-ios-simulator
-    value:           F6681159-FFE2-34B0-938B-FC5A05A599F6
+    value:           582A599D-EF20-3F59-9000-8C103E386F1A
   - target:          arm64-ios-simulator
-    value:           D8F73C08-C97B-34C1-9032-6CF60606A391
+    value:           10F4BF21-178B-3901-BBFB-9795F330B8D3
 install-name:    '/usr/lib/libCRFSuite.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2FB5C88B-8675-3E30-87A8-BA4E870BC152
   - target:          x86_64-ios-simulator
-    value:           C5D51FB6-0365-30DB-AE14-323A6FCD6F61
+    value:           9DD44F3D-8FB7-36C3-894B-4138DB245514
   - target:          arm64-ios-simulator
-    value:           42C043CC-F4B3-3181-990F-4D4533B8EA2C
+    value:           84899306-DDD4-3C43-A4B5-F1D02857622F
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/AVFoundation'
 current-version: 2
 reexported-libraries:
@@ -1391,9 +1391,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           15A1E568-1F9B-3CDB-993D-07117F7C056C
   - target:          x86_64-ios-simulator
-    value:           48396922-0657-30FF-BC28-D60FAA1B0527
+    value:           892B484D-29F1-3133-B792-3E5B54819BCF
   - target:          arm64-ios-simulator
-    value:           1396FFAD-EC47-3239-B491-3C9592EC0422
+    value:           40C06BD8-9704-3ABA-883E-6AABB9D8D625
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1507,9 +1507,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1EA20A77-0324-3103-B0F8-2251B715026C
+    value:           E6876978-B21D-3144-9749-43DE8D5E8BD5
   - target:          arm64-ios-simulator
-    value:           2696BEA8-0F61-33EF-8463-88780442CEF3
+    value:           7DCD6887-764B-3FD9-ACC2-1CF79CB3DE74
 install-name:    '/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1640,10 +1640,6 @@ targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator
 uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
-  - target:          x86_64-ios-simulator
-    value:           D6EBC480-69FB-32CB-B3A6-0073CAB74BC7
-  - target:          arm64-ios-simulator
-    value:           3F478745-9FDD-36F6-8A9B-BA1B8A685AAF
 install-name:    '/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1684,8 +1680,8 @@ exports:
                        _AVAssetDownloadSessioniTunesStoreContentPurchasedMediaKindKey, 
                        _AVAssetDownloadSessioniTunesStoreContentTypeKey, _AVAssetDownloadSessioniTunesStoreContentUserAgentKey, 
                        _AVAssetDownloadTaskAllowHighDynamicRangeKey, _AVAssetDownloadTaskClientIsCatalyst, 
-                       _AVAssetDownloadTaskDestinationURLKey, _AVAssetDownloadTaskMediaSelectionKey, 
-                       _AVAssetDownloadTaskMediaSelectionPrefersMultichannelForMostPreferredLanguageOnlyKey, 
+                       _AVAssetDownloadTaskClientIsIOSAppOnMac, _AVAssetDownloadTaskDestinationURLKey, 
+                       _AVAssetDownloadTaskMediaSelectionKey, _AVAssetDownloadTaskMediaSelectionPrefersMultichannelForMostPreferredLanguageOnlyKey, 
                        _AVAssetDownloadTaskMediaSelectionPrefersMultichannelKey, 
                        _AVAssetDownloadTaskMediaSelectionsForMultichannelKey, _AVAssetDownloadTaskMinimumRequiredMediaBitrateForHEVCKey, 
                        _AVAssetDownloadTaskMinimumRequiredMediaBitrateKey, _AVAssetDownloadTaskMinimumRequiredPresentationSizeKey, 
@@ -1731,9 +1727,10 @@ exports:
                        _AVAudioSessionMediaPlayerOnlyModeSpokenAudio, _AVAudioSessionPickableRoutesDidChangeNotification, 
                        _AVAudioTimePitchAlgorithmLowQualityZeroLatency, _AVAudioTimePitchAlgorithmSpectral, 
                        _AVAudioTimePitchAlgorithmTimeDomain, _AVAudioTimePitchAlgorithmVarispeed, 
-                       _AVCGPointFromNSValue, _AVCGRectFromNSValue, _AVCGSizeFromNSValue, 
-                       _AVContentAuthorizationInfoPlayInfoKey, _AVContentAuthorizationInfoSessionIDKey, 
-                       _AVContentKeyRequestProtocolVersionsKey, _AVContentKeyRequestRequiresValidationDataInSecureTokenKey, 
+                       _AVBacktraceAsString, _AVCGPointFromNSValue, _AVCGRectFromNSValue, 
+                       _AVCGSizeFromNSValue, _AVContentAuthorizationInfoPlayInfoKey, 
+                       _AVContentAuthorizationInfoSessionIDKey, _AVContentKeyRequestProtocolVersionsKey, 
+                       _AVContentKeyRequestRequiresValidationDataInSecureTokenKey, 
                        _AVContentKeyRequestRetryReasonReceivedObsoleteContentKey, 
                        _AVContentKeyRequestRetryReasonReceivedResponseWithExpiredLease, 
                        _AVContentKeyRequestRetryReasonTimedOut, _AVContentKeySessionServerPlaybackContextOptionProtocolVersions, 

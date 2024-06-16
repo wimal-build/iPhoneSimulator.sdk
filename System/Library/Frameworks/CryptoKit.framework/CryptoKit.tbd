@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5D167EA1-7F30-3544-939E-0BA08C1EC070
+    value:           21238182-A5E9-3870-8D38-FC8F4C1DBF67
   - target:          arm64-ios-simulator
-    value:           59DD5C8F-1D09-3CDB-891D-6FE3F2761C61
+    value:           096D40D4-C4F3-3A82-8030-652484C7E963
 install-name:    '/System/Library/Frameworks/CryptoKit.framework/CryptoKit'
 swift-abi-version: 7
 exports:

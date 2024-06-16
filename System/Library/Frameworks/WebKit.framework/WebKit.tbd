@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A1EAA690-97F1-316E-9F64-9C00641E28E0
   - target:          x86_64-ios-simulator
-    value:           71BE1DE3-F3B5-3FF5-AC61-0AACD3652FD6
+    value:           DB1091B3-FBF2-3DD3-9DF7-5D3151D58FF1
   - target:          arm64-ios-simulator
-    value:           8DE18D13-7763-39CC-9F2D-88AA17EAC55A
+    value:           F19E03DD-1AD5-324E-B749-47484154C9B5
 install-name:    '/System/Library/Frameworks/WebKit.framework/WebKit'
-current-version: 610.3.7
+current-version: 610.4.3
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy' ]
@@ -950,11 +950,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           55F9442F-D123-35F5-8533-87DB7A40DE6C
   - target:          x86_64-ios-simulator
-    value:           2824CF05-ECF9-3DF6-A1B0-262408B7B663
+    value:           79BFB760-78A1-3D6D-B507-D99EA0BC8B4C
   - target:          arm64-ios-simulator
-    value:           28EA4068-C45D-3C80-93DB-24D92FEC4E4E
+    value:           464FA1CF-0575-36D8-8683-8E29666833B5
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
-current-version: 610.3.7
+current-version: 610.4.3
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZN6WebKit13MemoryMeasure10taskMemoryEv, __ZN6WebKit13MemoryMeasure13enableLoggingEb, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           83143887-B736-35EC-A60C-1C7A57175930
   - target:          x86_64-ios-simulator
-    value:           AE6E9D9F-E07F-35A6-B797-59C6DB9AC387
+    value:           14532403-DFC0-3D99-A9C7-6A7A636C9203
   - target:          arm64-ios-simulator
-    value:           8453B4F6-0D75-3714-A5E7-E07607ECD4CC
+    value:           E04D8416-1FF0-3EDB-8300-6D2951722D60
 install-name:    '/System/Library/Frameworks/ImageIO.framework/ImageIO'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3B2AB505-72C1-32DC-A3E7-59A06C3DFBD8
   - target:          x86_64-ios-simulator
-    value:           4F29C887-540B-38C1-B4B3-4503E0B5C8A8
+    value:           C305D49F-9866-3BDD-AD59-65808625A25F
   - target:          arm64-ios-simulator
-    value:           0CFA363A-3EE3-37C5-809E-F9455C5E8C4C
+    value:           A83073D0-662D-38DD-8420-A6CD29AA9EAC
 install-name:    '/usr/lib/swift/libswiftMetalKit.dylib'
 current-version: 1.2
 swift-abi-version: 7

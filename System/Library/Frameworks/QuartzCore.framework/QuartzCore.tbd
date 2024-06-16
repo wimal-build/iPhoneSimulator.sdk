@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A3662550-9964-3A2B-ADC8-3CAE706B4C62
   - target:          x86_64-ios-simulator
-    value:           F4B9695E-E30E-30CE-9480-27BDFE75CDBA
+    value:           C9231CA6-7962-3C23-A1BC-2016F370FD34
   - target:          arm64-ios-simulator
-    value:           8C78ED39-0E95-3673-A5FC-BBA528D26320
+    value:           050F7D61-68EF-3D3E-B883-658784D410AF
 install-name:    '/System/Library/Frameworks/QuartzCore.framework/QuartzCore'
 current-version: 1.11
 compatibility-version: 1.2

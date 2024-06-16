@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E8FEF114-877D-31F0-8613-FE2306DF8C37
   - target:          x86_64-ios-simulator
-    value:           D2D6A792-1C27-3BE6-BA27-60F604198B26
+    value:           2F324FB2-C056-3196-B054-3CA1E6BA5951
   - target:          arm64-ios-simulator
-    value:           79FE9AF7-8D7B-3FE0-B29D-CA13F2139F3C
+    value:           D3F564AD-709B-336A-AAC6-090C4B281B84
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Accelerate'
 current-version: 4
 reexported-libraries:
@@ -23,11 +23,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           403DDAFD-578A-31CB-88AD-F62A88732854
   - target:          x86_64-ios-simulator
-    value:           57A7D605-E96C-3AD1-81E0-E45C7D2261F6
+    value:           FC6AF1B1-2693-3204-855D-D569E2151C85
   - target:          arm64-ios-simulator
-    value:           547A9AC0-1B6A-36D9-844D-98FD43437B9E
+    value:           F50E56F1-80C3-3F15-8AAD-75B0F6EE2EFA
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage'
-current-version: 544
+current-version: 544.2
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _Init_vImage, _SetvImageThreadCount, _SetvImageThreadState, 
@@ -337,9 +337,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3182025A-E7D9-3F1D-9918-9FE8AEE6C9A6
   - target:          x86_64-ios-simulator
-    value:           69241EE4-8591-32D9-B7E4-BCBF3F7A2C19
+    value:           376939E1-9BE8-3B49-846B-DEE1C92B9437
   - target:          arm64-ios-simulator
-    value:           B2394E9B-538B-3132-BAF9-84D57A9BEBEA
+    value:           7ABA5C97-AE63-3947-84EF-70959213E90E
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBLAS.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -424,9 +424,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B3D70DEF-1C75-3930-8556-EBC018FA4AA6
   - target:          x86_64-ios-simulator
-    value:           CF857650-A798-3B21-A427-64554714BF1C
+    value:           2F567477-1BE5-3A8A-AF42-57EFFCD28FB1
   - target:          arm64-ios-simulator
-    value:           A549C35B-F4F9-3EF7-9BCC-464F34617488
+    value:           3307929C-5289-3D0A-86E3-0722519A4335
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libBNNS.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -477,9 +477,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6238D5A4-BF29-37CD-A905-AFEF01E590FB
   - target:          x86_64-ios-simulator
-    value:           C9523306-38AE-3CCE-8D72-02CA704F6102
+    value:           AEFAE456-3E74-32DC-9A2A-C12D0A0DFE66
   - target:          arm64-ios-simulator
-    value:           AA27E6CB-72B0-3CAB-8105-00045A51D7C2
+    value:           004DF262-ED39-3190-9523-32FEF58805F1
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLAPACK.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -734,9 +734,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           269B55A9-70E6-3A6E-B666-3D4D20E78158
   - target:          x86_64-ios-simulator
-    value:           F9852A47-263A-3C23-8F0A-136EC90C4916
+    value:           C8C3B782-7BB5-3CAC-8013-62CCB32FACF3
   - target:          arm64-ios-simulator
-    value:           D6E62213-2DCC-3F6E-9795-C54A6167B672
+    value:           963E9B26-6662-394A-B124-8A4B41799828
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libLinearAlgebra.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -764,9 +764,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           315528E4-01A7-389A-849E-19653593C903
   - target:          x86_64-ios-simulator
-    value:           3F01F2FE-BE10-3B8E-9A79-581692569C74
+    value:           D6C81C75-6524-3249-98EB-C984C7AA1C59
   - target:          arm64-ios-simulator
-    value:           CF29BE3C-DF1C-3FEF-9B72-741DD2DF5508
+    value:           933E615E-8106-3B17-B4D7-15A2F137C28C
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libQuadrature.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -781,9 +781,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1D97E583-08D8-3202-937D-8C4594A571BA
+    value:           7A31FB0D-6212-3C10-987B-311360319663
   - target:          arm64-ios-simulator
-    value:           BFC8D778-78D5-31C4-B34A-1D11EEBBF48F
+    value:           67D6D001-EA8B-3606-88D4-4F043F162BBC
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparse.dylib'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -954,9 +954,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           98B5AF62-E37E-35BC-9142-35571AB878EC
   - target:          x86_64-ios-simulator
-    value:           BD7B8A9C-D93F-3229-ACCC-3078429FA832
+    value:           0996A6FE-79CE-3BB9-BC2D-9B7A669E1B4A
   - target:          arm64-ios-simulator
-    value:           1BC7D3C5-79AB-3AD4-8429-AC1160BEDC73
+    value:           0FD2EB3A-6BB5-3F42-B988-BA489D0E8274
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libSparseBLAS.dylib'
 allowable-clients:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1001,9 +1001,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0F7FC3DF-29F5-327B-AF6B-445EBCCE2F00
   - target:          x86_64-ios-simulator
-    value:           963F2AA0-98DE-36D2-8938-2DD8E61FFD98
+    value:           6EA663E0-0487-3123-BE34-4ADBC9697E24
   - target:          arm64-ios-simulator
-    value:           DDB72F08-2226-388F-BCB6-6AD53CAE4B1E
+    value:           68C0A369-F8C4-3411-AA82-24AA6C9612F0
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvDSP.dylib'
 current-version: 760.40.6
 exports:
@@ -1145,9 +1145,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           59B48FF4-7823-3A3E-8EB5-DBD159F23CB6
   - target:          x86_64-ios-simulator
-    value:           285B72E1-449E-3FC8-A7C9-AFD2FA49ABBC
+    value:           4C05B415-D678-32ED-B323-5FA3BCA96BDF
   - target:          arm64-ios-simulator
-    value:           68346080-7C98-3CE4-B4A8-4130EEBE6188
+    value:           6AE4AA82-BCAD-34D4-89CD-8003BF8275E9
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/libvMisc.dylib'
 current-version: 760.40.6
 exports:
@@ -1223,9 +1223,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           718827AE-4833-305A-832B-55A1300E716D
   - target:          x86_64-ios-simulator
-    value:           00FDE9BE-637C-3E36-8115-E92915139F42
+    value:           F737550F-5977-30E2-A52F-0AA8DFD6298F
   - target:          arm64-ios-simulator
-    value:           04123A21-6213-367B-99CA-0E5AA067ABCF
+    value:           9C948284-4D1C-3008-9FC4-A03D8FB42DA4
 install-name:    '/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/vecLib'
 current-version: 760.40.6
 allowable-clients:

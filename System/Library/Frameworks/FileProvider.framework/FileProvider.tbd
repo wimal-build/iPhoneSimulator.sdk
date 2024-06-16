@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           73188AEF-504C-3D2A-9951-A84746602C8E
+    value:           AE8BEC6B-2C83-3822-B8E0-E30F520418C1
   - target:          arm64-ios-simulator
-    value:           5B7D2128-22D3-3D22-A09D-088583F8D165
+    value:           928F26FB-76D8-3969-B687-FF6E1DF3EFFB
 install-name:    '/System/Library/Frameworks/FileProvider.framework/FileProvider'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator ]

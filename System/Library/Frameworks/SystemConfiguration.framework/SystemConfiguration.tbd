@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3012A817-94FA-3E86-9327-7D683BC4302F
   - target:          x86_64-ios-simulator
-    value:           6662A473-A79B-39FD-9384-2B54DAAA674B
+    value:           BD156C04-7C12-3752-A877-6959E415E737
   - target:          arm64-ios-simulator
-    value:           0F28E7AD-952B-3000-BA4B-02F4D83E8F61
+    value:           827C94A5-F7B8-3CD9-9BAA-A742DA64B0D2
 install-name:    '/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration'
 current-version: 1109.60.2
 exports:

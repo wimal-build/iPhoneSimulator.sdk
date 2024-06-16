@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1419D97C-4C54-387A-872E-D0F9220EA4C2
   - target:          x86_64-ios-simulator
-    value:           C5764D51-4D00-3347-8B6C-BAAE07AD22E7
+    value:           3E2EC19C-F02A-30B6-9588-0A4C02ABE649
   - target:          arm64-ios-simulator
-    value:           676E80C3-9546-3DB5-88DF-53F9F79E13C6
+    value:           5023C9EF-CD2E-3EA3-BC35-BBACA16C3214
 install-name:    '/System/Library/Frameworks/GameController.framework/GameController'
 exports:
   - targets:         [ i386-ios-simulator ]

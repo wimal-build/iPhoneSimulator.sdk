@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4030D552-A800-3402-9093-FAF6F0EAB3FB
   - target:          x86_64-ios-simulator
-    value:           A049B41B-EDB0-3CD8-BA41-8B253F7D87AD
+    value:           98FFE7A2-32E2-396B-8DCF-5996F0A0E41E
   - target:          arm64-ios-simulator
-    value:           B2D86841-720E-3646-81C5-9E92DA5CA541
+    value:           2B7ACBD3-2BA9-3528-A326-74F3AA19441C
 install-name:    '/System/Library/Frameworks/ExternalAccessory.framework/ExternalAccessory'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]

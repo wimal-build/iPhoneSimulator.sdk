@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           407FE0CF-74D8-32F4-AA63-FACB6302F707
+    value:           D89A8363-F987-3C4F-9FA0-EF6E27A9D476
   - target:          arm64-ios-simulator
-    value:           25CE172B-130C-3CCF-ACD5-43D669FFE2D1
+    value:           A20308E6-64AA-3E5A-9576-DD5385C1F030
 install-name:    '/System/Library/Frameworks/AdServices.framework/AdServices'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

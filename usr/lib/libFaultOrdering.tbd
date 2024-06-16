@@ -5,8 +5,8 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6B39E5E3-86D4-3DA8-8107-05E5095BED47
+    value:           1684478E-4CBD-3472-8FCF-EA850E6DE85C
   - target:          arm64-ios-simulator
-    value:           FF96810D-B98C-35F8-96B6-95E9DC399BE9
+    value:           CAA38F70-F085-3CA8-A906-C8943993E75B
 install-name:    '/usr/lib/libFaultOrdering.dylib'
 ...

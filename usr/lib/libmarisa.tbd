@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           6CEC5881-87F0-3786-830A-F52D56370020
   - target:          x86_64-ios-simulator
-    value:           3270EB41-5EB9-3EA0-BCAF-BD141D6789AF
+    value:           E0965F34-E7E7-3DC9-98AF-5D4186813A43
   - target:          arm64-ios-simulator
-    value:           9380AE94-C484-327D-A842-C53E9221EB2B
+    value:           2CD79688-EC2D-3F3A-984B-564A9E17738C
 install-name:    '/usr/lib/libmarisa.dylib'
 current-version: 19
 exports:

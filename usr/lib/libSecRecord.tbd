@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F4E475B0-DEF4-31E0-984C-DEB5032703BD
+    value:           84C44EE8-8C07-36EA-B7F1-C0DFAD6240D9
   - target:          arm64-ios-simulator
-    value:           AE093E86-C66E-3770-B147-FD9D165C1767
+    value:           8F29F2D9-26EC-3933-B8E0-4C04B6F2A9F8
 install-name:    '/usr/lib/libSecRecord.dylib'
 current-version: 0
 compatibility-version: 0
