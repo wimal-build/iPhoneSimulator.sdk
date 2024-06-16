@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 78725214-D868-3979-8F69-A13C19AE9C3C', 'x86_64: 4A5A0ED4-276B-39BA-B1AF-EE3E8B38A4E3' ]
+uuids:           [ 'i386: 78725214-D868-3979-8F69-A13C19AE9C3C', 'x86_64: A02624FF-4BD9-3B5E-BE85-B3BAF8EBA76D' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftNaturalLanguage.dylib'
 current-version: 0

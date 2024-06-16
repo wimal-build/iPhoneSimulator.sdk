@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8169BD98-4943-3913-81B7-3DB422B921E0' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 186A08B8-B847-38B9-A6BC-B23948AF23B7' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ImageCaptureCore.framework/ImageCaptureCore'
 exports:         

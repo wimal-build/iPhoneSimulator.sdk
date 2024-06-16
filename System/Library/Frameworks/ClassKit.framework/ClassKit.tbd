@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2168248E-E5F1-31F2-ABE3-09D7A19BE696' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CFA0DDB6-A651-3495-AD5F-E16C8AA786B6' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ClassKit.framework/ClassKit'
 current-version: 145.6.1

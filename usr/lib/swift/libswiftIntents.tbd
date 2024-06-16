@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B0019174-19D9-330E-A8BC-6D886F81BBF6', 'x86_64: 56E611D8-CD98-3A18-AD7C-08C62FECADA3' ]
+uuids:           [ 'i386: B0019174-19D9-330E-A8BC-6D886F81BBF6', 'x86_64: C508B670-6ACE-30BE-8F19-9DB92D8D40EE' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftIntents.dylib'
 current-version: 0

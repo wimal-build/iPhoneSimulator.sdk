@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C2E8F113-7D01-38C6-A141-E4E8AF1B0675', 'x86_64: FCCCF856-65C7-3B85-81B3-EDF99C327739' ]
+uuids:           [ 'i386: C2E8F113-7D01-38C6-A141-E4E8AF1B0675', 'x86_64: E8D32B56-849C-3903-8478-8FF230F22D3A' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary'
 exports:         

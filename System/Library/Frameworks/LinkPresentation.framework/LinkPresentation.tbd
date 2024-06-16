@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2832D478-2029-3811-BE3D-40EDE271AC78' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2C216B1B-78C5-3EE1-B32C-DF80B6818298' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation'
 current-version: 119.18
@@ -38,7 +38,7 @@ exports:
                        LPiTunesMediaTVSeasonMetadata ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 221CF2A8-3477-3DAC-A4D6-7E28FFE17D98' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 728EECA6-B2C3-3B14-B168-505E2AFF5304' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
 current-version: 119.18

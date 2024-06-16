@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 14DA1CEA-B9F2-3B6A-A32D-D8C0D36AA4AC', 'x86_64: E0AFE637-7E27-3164-B121-954B866620A8' ]
+uuids:           [ 'i386: 14DA1CEA-B9F2-3B6A-A32D-D8C0D36AA4AC', 'x86_64: E6E1D14C-3F31-374A-8774-3B6802EBE6F8' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftAVFoundation.dylib'
 current-version: 0

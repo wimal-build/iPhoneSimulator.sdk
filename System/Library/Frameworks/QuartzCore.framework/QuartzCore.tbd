@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: 36DDE400-70B9-3E9C-979C-2DB9AAAD67C9' ]
+uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: 35AA0FBE-A359-32E1-BFEF-108A6D83E0BE' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuartzCore.framework/QuartzCore'
 current-version: 1.11

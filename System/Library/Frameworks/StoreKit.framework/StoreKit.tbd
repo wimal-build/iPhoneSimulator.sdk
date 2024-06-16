@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A822546-7A13-35FA-B601-0266C225765F', 'x86_64: 19BB8BA9-4ECA-3A1F-85A3-014656AD9CF7' ]
+uuids:           [ 'i386: 2A822546-7A13-35FA-B601-0266C225765F', 'x86_64: 4D712414-44FA-3109-A8E4-93EDA1E16662' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/StoreKit.framework/StoreKit'
 exports:         

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: 23D18578-E7B8-364D-9B65-9A5314A3B59F' ]
+uuids:           [ 'i386: C1773212-1021-37B8-9C88-5188FC410D8D', 'x86_64: C343A2BB-6959-332B-A63C-2403B2CE45C3' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AddressBook.framework/AddressBook'
 exports:         

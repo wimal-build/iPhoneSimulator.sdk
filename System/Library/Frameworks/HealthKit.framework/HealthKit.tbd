@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 68017FAA-DCE1-31DE-B07D-193E528607D5', 'x86_64: B23229C3-F4A0-3E28-A301-99A155FDEBBC' ]
+uuids:           [ 'i386: 68017FAA-DCE1-31DE-B07D-193E528607D5', 'x86_64: 30A89749-F207-3F45-B105-A98FA58A979B' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/HealthKit.framework/HealthKit'
 exports:         

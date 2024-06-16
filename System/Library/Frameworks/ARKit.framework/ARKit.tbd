@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F3AEF6D0-33E8-3FC7-9C3D-79F3F18E3CE4' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9AB0B680-75B5-30FE-ADD0-4A32DECB3A6D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ARKit.framework/ARKit'
 exports:         

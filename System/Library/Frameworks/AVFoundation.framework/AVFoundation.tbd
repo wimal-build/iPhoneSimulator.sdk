@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 722403D4-66C6-3B91-88D2-5EE7D4A1DE68' ]
+uuids:           [ 'i386: F97347E5-B1F3-36B0-BF04-C7FC9FB136AA', 'x86_64: 4091CCCA-0729-328B-8FB4-D6C515A8D71C' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/AVFoundation'
 current-version: 2
@@ -1560,7 +1560,7 @@ exports:
                        AVMutableMetadataItem._mutablePriv ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: 66B9E7CC-B252-3FD9-BEF4-C1E6224A0674' ]
+uuids:           [ 'i386: 2C85FEAD-008A-3F4D-882F-52DC7FF2542C', 'x86_64: 021E95D1-5AFA-3CBD-A4FA-2871D68A874E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio'
 exports:         

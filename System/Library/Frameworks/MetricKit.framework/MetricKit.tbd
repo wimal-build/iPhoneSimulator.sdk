@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 86CB183C-8C9B-37BB-880F-DFB0F8052D60' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0D09C8F9-F3D0-3F0C-92CC-9D6D9A392AD4' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MetricKit.framework/MetricKit'
 exports:         

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F75C7F43-1432-3849-8E35-E16B236A7D93', 'x86_64: CAEA71D4-00EA-3746-B074-08922E55ABE1' ]
+uuids:           [ 'i386: F75C7F43-1432-3849-8E35-E16B236A7D93', 'x86_64: 5BE3871C-C679-3FD2-A1D9-B90FD5B03019' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftARKit.dylib'
 current-version: 0

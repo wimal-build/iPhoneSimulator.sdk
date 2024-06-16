@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EC7A9888-AE65-3D41-8D0F-ADDDDC574BF0' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 0200A6F6-7230-3B3E-9A8E-158DF35CE77C' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCoreNFC.dylib'
 current-version: 0

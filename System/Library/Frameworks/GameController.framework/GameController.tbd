@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: 941FD183-D5B3-3F97-8F70-93403367581A' ]
+uuids:           [ 'i386: B01DDE11-FE19-39F3-9A51-08A06D6A9239', 'x86_64: 8075D22E-4025-3FB6-9B3F-278F6BC6DC45' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GameController.framework/GameController'
 exports:         

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 72CF924B-7F5D-3CF6-BA3C-4EFB338E5EBE', 'x86_64: C27D9F8A-1D7C-31CB-8772-A6F373CCE5B5' ]
+uuids:           [ 'i386: 72CF924B-7F5D-3CF6-BA3C-4EFB338E5EBE', 'x86_64: CD63C940-1D4B-3F0F-98A8-7B5C87D32C45' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libJapaneseConverter.dylib'
 current-version: 76

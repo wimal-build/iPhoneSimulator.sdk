@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 14809522-F179-3E8B-9300-859EA44A0F85', 'x86_64: 0D190029-B075-315D-801B-79AACCF1489D' ]
+uuids:           [ 'i386: 14809522-F179-3E8B-9300-859EA44A0F85', 'x86_64: BD7B424B-60FD-30AC-8C1F-72954D7DE9A9' ]
 platform:        ios
 install-name:    '/usr/lib/libThaiTokenizer.dylib'
 exports:         

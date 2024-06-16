@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 22F2471A-A6D5-3ABC-AD7B-B3BFC343ADE9', 'x86_64: E33CC51B-3314-361E-A9B9-B2F4F6AE4D43' ]
+uuids:           [ 'i386: 22F2471A-A6D5-3ABC-AD7B-B3BFC343ADE9', 'x86_64: F5C020B2-0B30-39A1-BF31-EB45F5E334AD' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MapKit.framework/MapKit'
 current-version: 14

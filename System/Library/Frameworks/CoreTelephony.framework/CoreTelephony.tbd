@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: DF73425C-6876-3347-9359-77900FBA1F08', 'x86_64: 70335D8C-50B8-3656-87AA-74774F48BF23' ]
+uuids:           [ 'i386: DF73425C-6876-3347-9359-77900FBA1F08', 'x86_64: DF09CBDA-2DBB-36A9-B430-231D227F8E06' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony'
 current-version: 0

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FF300334-6967-3105-B558-E470B2DAF748', 'x86_64: 7C094A97-6F81-3070-BFBA-AFC7A4FA56B2' ]
+uuids:           [ 'i386: FF300334-6967-3105-B558-E470B2DAF748', 'x86_64: BF770125-9F9C-37A6-A4B4-82437DE1D88E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth'
 exports:         

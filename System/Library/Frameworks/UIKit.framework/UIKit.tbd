@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: 8083B2C6-00A5-323D-87F2-F6CD0C4BF111' ]
+uuids:           [ 'i386: 85055929-ACAA-3220-8C92-3D93A3E9F1E2', 'x86_64: CA578A2E-0596-3168-98B1-DD6A7E1EA1E7' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/UIKit.framework/UIKit'
 current-version: 61000
@@ -1407,7 +1407,7 @@ exports:
                        '/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore' ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 03B1719F-2851-3719-8038-6A2732F917EA' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 35F12CAC-FC15-33CF-9F8D-BD78BB3FEADA' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager'
 current-version: 171.6
@@ -1490,7 +1490,7 @@ exports:
                        UIDocumentBrowserTransitionController, UIDocumentBrowserViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F0CBBEC2-8D25-329E-AD7D-B88A246A0AB8' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: BF1B1586-E069-35BB-B865-4258BEF8DA78' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet'
 current-version: 1526.37
@@ -1592,7 +1592,7 @@ exports:
                        _UIUserDefaultsActivityPresentableViewController, _UIUserDefaultsActivityProxy ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: F90B48EF-072D-3396-8DA9-C0DACC8BEAC1' ]
+uuids:           [ 'i386: A27AEB0E-70E4-306A-9EBC-8502993B92E4', 'x86_64: AED3CD6C-7534-3B50-93F2-6382AB0F2DC5' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation'
 current-version: 661.2
@@ -1863,7 +1863,7 @@ exports:
                        _NSCachedAttributedString._runs ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D06E00A4-EEC9-3F4C-AF8E-40CF6220C10A' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F8A9CF5A-092F-3AA9-817D-F0A83D9A28B1' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore'
 current-version: 61000

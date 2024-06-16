@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 63464E71-1298-3B54-BB0F-33D8D75CF0BD', 'x86_64: 6A49EA4F-243A-3DEA-B297-0F86A2BB86FC' ]
+uuids:           [ 'i386: 63464E71-1298-3B54-BB0F-33D8D75CF0BD', 'x86_64: 6973BCC2-AD63-3977-906E-010B50EAABDF' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/PassKit.framework/PassKit'
 exports:         
@@ -23,7 +23,7 @@ exports:
                        PKRemotePaymentSetupViewController ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 212C8780-5900-32AE-A315-E84983326FC0', 'x86_64: 7D85DEF8-442A-3F7E-B257-5CE9819C3050' ]
+uuids:           [ 'i386: 212C8780-5900-32AE-A315-E84983326FC0', 'x86_64: A8787ADC-BDBD-3989-9C78-83E846A1D2A7' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/PassKitCore.framework/PassKitCore'
 exports:         
@@ -1875,7 +1875,7 @@ exports:
                        PKPassField._value ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4053637A-A2C4-3255-B0B7-9055930436C5', 'x86_64: C19B0534-26DF-3277-AEB7-163289890B33' ]
+uuids:           [ 'i386: 4053637A-A2C4-3255-B0B7-9055930436C5', 'x86_64: 32B9130A-CC09-3545-832B-923FEAB59F4B' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/PassKitUI.framework/PassKitUI'
 exports:         

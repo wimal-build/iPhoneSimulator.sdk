@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: FB3E76E1-1E84-3771-81EF-81DDEEF54B0C', 'x86_64: F6DC6BDB-F18B-3558-BF6B-6528DE0B4ADC' ]
+uuids:           [ 'i386: FB3E76E1-1E84-3771-81EF-81DDEEF54B0C', 'x86_64: 4D555CB3-5619-3113-9991-03B630516636' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Accounts.framework/Accounts'
 exports:         

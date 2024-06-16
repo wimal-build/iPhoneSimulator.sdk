@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C7531B11-8F27-3378-96E4-6B29B36CE9CE' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D7AE146E-1F1E-37F6-B105-8B080AB863DD' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices'
 current-version: 609.3.5

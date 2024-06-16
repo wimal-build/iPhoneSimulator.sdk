@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D44661EC-8DB0-383D-9240-787977BB29BB' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C5C0B583-997C-3CE1-99A6-0501E4224AE6' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SoundAnalysis.framework/SoundAnalysis'
 exports:         

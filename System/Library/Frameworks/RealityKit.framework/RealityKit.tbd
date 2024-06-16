@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: CDD85999-5EEB-33CB-ABAD-13936EF551D5' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 707766D3-469B-3E27-A7A4-E37A6B2C7F74' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/RealityKit.framework/RealityKit'
 current-version: 31.255

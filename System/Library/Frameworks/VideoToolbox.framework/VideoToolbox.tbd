@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E220ADF4-2F6A-38FD-978F-2C38CCB68641', 'x86_64: 26DCA920-3E9A-3233-99D4-5CB1D73B2717' ]
+uuids:           [ 'i386: E220ADF4-2F6A-38FD-978F-2C38CCB68641', 'x86_64: FF11D12C-73B8-3665-94C8-4AD71D67B0DB' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox'
 exports:         

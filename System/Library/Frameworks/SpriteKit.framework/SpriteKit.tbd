@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8D4B395B-77BC-3FF0-AC6D-828A619404FE', 'x86_64: DA2AEC48-0B39-3FAA-82F1-0A712D85192D' ]
+uuids:           [ 'i386: 8D4B395B-77BC-3FF0-AC6D-828A619404FE', 'x86_64: 748BD34F-6918-3C0D-AA73-EF8E6CDAC67D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SpriteKit.framework/SpriteKit'
 current-version: 25.36

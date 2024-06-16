@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0F9967FF-92F9-3268-A88F-5C66150379F1', 'x86_64: 7DA7ABBD-F69C-3E82-B610-E8D6FF1B0DA0' ]
+uuids:           [ 'i386: 0F9967FF-92F9-3268-A88F-5C66150379F1', 'x86_64: 2E2F8360-BF65-3EE7-B21C-9E335C9CDB99' ]
 platform:        ios
 install-name:    '/usr/lib/libexslt.0.dylib'
 current-version: 9.15

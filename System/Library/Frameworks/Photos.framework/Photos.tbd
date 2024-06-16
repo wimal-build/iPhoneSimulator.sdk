@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 2EF7E1CC-2174-338B-B8EE-05128E0C4855' ]
+uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 7C418BA9-0D14-3741-88DE-F04514182363' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Photos.framework/Photos'
 current-version: 3662.0.110
