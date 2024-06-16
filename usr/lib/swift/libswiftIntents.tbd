@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           B0019174-19D9-330E-A8BC-6D886F81BBF6
   - target:          x86_64-ios-simulator
-    value:           6E04FC14-C52C-3368-9469-F4F66120BD26
+    value:           E3183C85-3A48-3060-97FA-5362F6543E65
   - target:          arm64-ios-simulator
-    value:           4707FA22-E946-366F-8F91-91C86C9C6F30
+    value:           BC9DB284-2196-3B1A-817F-79128F3A4AF4
 install-name:    '/usr/lib/swift/libswiftIntents.dylib'
-current-version: 7
+current-version: 8
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -59,7 +59,9 @@ exports:
                        '_$s7Intents18INMediaDestinationOSQAAMc', '_$s7Intents18INMediaDestinationOs21_ObjectiveCBridgeableAAMc', 
                        '_$s7Intents18INMediaDestinationOs23CustomStringConvertibleAAMc', 
                        '_$s7Intents18INMediaDestinationOs28CustomDebugStringConvertibleAAMc', 
-                       '_$s7Intents24_INIntentSetImageKeyPathMp', '_$s7Intents24_INIntentSetImageKeyPathPAAE03setD0_17forParameterNamedySo7INImageCSg_s0eF0Cyxqd__GtlF', 
+                       '_$s7Intents23INIntentSetImageKeyPathMp', '_$s7Intents23INIntentSetImageKeyPathPAA01_bcdeF0Tb', 
+                       '_$s7Intents23INIntentSetImageKeyPathTL', '_$s7Intents24_INIntentSetImageKeyPathMp', 
+                       '_$s7Intents24_INIntentSetImageKeyPathPAAE03setD0_17forParameterNamedySo7INImageCSg_s0eF0Cyxqd__GtlF', 
                        '_$s7Intents24_INIntentSetImageKeyPathPAAE5image17forParameterNamedSo7INImageCSgs0eF0Cyxqd__G_tlF', 
                        '_$s7Intents24_INIntentSetImageKeyPathTL', '_$sSo11INParameterC7IntentsE7keyPathABSgs03KeyD0Cyxq_G_tcr0_lufC', 
                        '_$sSo11INParameterC7IntentsE7keyPathABSgs03KeyD0Cyxq_G_tcr0_lufc', 
@@ -235,6 +237,7 @@ exports:
                        '_$sSo38INGetCarPowerLevelStatusIntentResponseC7IntentsE8chargingSbSgvpMV', 
                        '_$sSo38INGetCarPowerLevelStatusIntentResponseC7IntentsE8chargingSbSgvs', 
                        '_$sSo8INIntentC7Intents01_A15SetImageKeyPathACMc', '_$sSo8INIntentC7Intents01_A15SetImageKeyPathACWP', 
+                       '_$sSo8INIntentC7Intents0A15SetImageKeyPathACMc', '_$sSo8INIntentC7Intents0A15SetImageKeyPathACWP', 
                        '_$sSo8NSStringC7IntentsE017deferredLocalizedB6String4with5table9argumentsABSS_SSs14CVaListPointerVtFZ', 
                        '_$sSo8NSStringC7IntentsE017deferredLocalizedB6String4with5table_ABSS_SSs7CVarArg_pdtFZ', 
                        '_$sSo8NSStringC7IntentsE017deferredLocalizedB6String4with_ABSS_s7CVarArg_pdtFZ', 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CFA2FFA8-C4DF-3F8A-9B8B-DBE34B916A76
   - target:          x86_64-ios-simulator
-    value:           CDCFC5E3-3EDA-3730-A286-B8135A15BFD6
+    value:           554A107F-5C3B-3738-844E-C095723E54A1
   - target:          arm64-ios-simulator
-    value:           7A9C6C51-F7AC-33CE-BA16-C6932511216C
+    value:           EC2B0D6A-FDD7-313E-A66F-F25D493C2ED7
 install-name:    '/System/Library/Frameworks/GameplayKit.framework/GameplayKit'
 current-version: 95
 exports:

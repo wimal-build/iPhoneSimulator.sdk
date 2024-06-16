@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           375689B5-29B8-34D7-AC98-59ED5B1CEBA4
   - target:          x86_64-ios-simulator
-    value:           8856273E-8435-370F-B518-36DC8F4AAC73
+    value:           98789572-0967-3733-8EE5-4FB7A51C818F
   - target:          arm64-ios-simulator
-    value:           E97A26E6-2FA5-3D07-BA03-69F5421660A3
+    value:           FFE3940F-A07B-3DAF-85C7-70CF5437D119
 install-name:    '/System/Library/Frameworks/HealthKitUI.framework/HealthKitUI'
 exports:
   - targets:         [ i386-ios-simulator ]

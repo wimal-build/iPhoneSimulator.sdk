@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           770B4DFC-5EDD-353E-A6F8-5E34347FF371
   - target:          x86_64-ios-simulator
-    value:           DF0BE3F8-88F1-3C82-AFE4-D192D5BCEDD8
+    value:           27B30807-A961-30FE-BDB0-8F4467BA6496
   - target:          arm64-ios-simulator
-    value:           0DC0C3D7-B059-3017-9045-DB6824B9CADC
+    value:           79AF0904-5763-3A2E-B0CE-4DA42E41426D
 install-name:    '/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

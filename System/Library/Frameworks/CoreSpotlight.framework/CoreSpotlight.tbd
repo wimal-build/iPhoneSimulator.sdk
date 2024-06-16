@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7E24DD7A-6654-344F-AC13-9ABA4D59A224
   - target:          x86_64-ios-simulator
-    value:           D8695619-0477-3C15-A46D-D7C9566A7DBA
+    value:           A86CD543-12C3-30A9-BDBF-07F7C340980C
   - target:          arm64-ios-simulator
-    value:           101BE98F-F41F-3145-94E9-189EFF5B78F3
+    value:           53C47C29-639A-3758-9EFD-1B8AED0E0561
 install-name:    '/System/Library/Frameworks/CoreSpotlight.framework/CoreSpotlight'
 exports:
   - targets:         [ i386-ios-simulator ]

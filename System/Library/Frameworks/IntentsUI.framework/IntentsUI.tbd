@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B1063DBA-B32F-3A50-807A-81060F5343DE
   - target:          x86_64-ios-simulator
-    value:           429FE9CC-6715-3AD7-9CF3-FCEEF5FDEBB7
+    value:           4410466E-3565-3F18-9A85-697E6DBE6DBB
   - target:          arm64-ios-simulator
-    value:           13377293-C5D5-3D6E-9C3E-C8ABA7D67D82
+    value:           2D2B95D1-96D6-3936-9376-5E07A1DD9C38
 install-name:    '/System/Library/Frameworks/IntentsUI.framework/IntentsUI'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

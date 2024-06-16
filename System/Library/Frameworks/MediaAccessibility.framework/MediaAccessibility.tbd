@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CAA83DF7-5285-3081-B8C0-A23A71E55674
   - target:          x86_64-ios-simulator
-    value:           E64BFA74-9043-315B-9BDD-B690F049355F
+    value:           066A52F4-4A91-3BFD-AE39-FCCC9421740C
   - target:          arm64-ios-simulator
-    value:           ADA55685-386A-383B-9F6A-56F1654E1490
+    value:           47E82F86-24DE-33C4-B53A-DCF7A780C71A
 install-name:    '/System/Library/Frameworks/MediaAccessibility.framework/MediaAccessibility'
 current-version: 62
 exports:

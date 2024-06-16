@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CB0E94D7-951F-39D3-B4C2-B2BFDA406FAF
+    value:           6EDBDC6B-6688-38C6-B48F-3BBB18231319
   - target:          arm64-ios-simulator
-    value:           27DE94DD-F6D8-36DC-854B-16BC86014CA0
+    value:           400453AD-12D3-38BD-9859-B788C10EED32
 install-name:    '/usr/lib/libParallelCompression.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

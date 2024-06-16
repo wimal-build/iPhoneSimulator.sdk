@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0C5F6382-A66A-3625-82D6-11855DA1B4A6
+    value:           E89FED35-870F-3D2C-BDC7-56B82772D90E
   - target:          arm64-ios-simulator
-    value:           EE3192BF-6E0D-3101-859B-5199F10708F4
+    value:           23B70019-3601-3AA7-AE2E-50686FF10644
 install-name:    '/System/Library/Frameworks/ARKit.framework/ARKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -45,10 +45,10 @@ exports:
                        _ARSkeletonJointNameLeftShoulder, _ARSkeletonJointNameRightFoot, 
                        _ARSkeletonJointNameRightHand, _ARSkeletonJointNameRightShoulder, 
                        _ARSkeletonJointNameRoot ]
-    objc-classes:    [ ARAccelerometerData, ARAnchor, ARBody2D, ARBodyAnchor, ARBodyTrackingConfiguration, 
-                       ARCamera, ARCoachingOverlayView, ARCollaborationData, ARConfiguration, 
-                       ARDepthData, ARDirectionalLightEstimate, AREnvironmentProbeAnchor, 
-                       ARFaceAnchor, ARFaceGeometry, ARFaceTrackingConfiguration, 
+    objc-classes:    [ ARAccelerometerData, ARAnchor, ARAppClipCodeAnchor, ARBody2D, 
+                       ARBodyAnchor, ARBodyTrackingConfiguration, ARCamera, ARCoachingOverlayView, 
+                       ARCollaborationData, ARConfiguration, ARDepthData, ARDirectionalLightEstimate, 
+                       AREnvironmentProbeAnchor, ARFaceAnchor, ARFaceGeometry, ARFaceTrackingConfiguration, 
                        ARFrame, ARGeoAnchor, ARGeoTrackingConfiguration, ARGeoTrackingStatus, 
                        ARGeometryElement, ARGeometrySource, ARHitTestResult, ARIOMotionSensor, 
                        ARImageAnchor, ARImageTrackingConfiguration, ARLightEstimate, 

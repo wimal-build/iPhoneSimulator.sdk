@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E3466CF4-79DC-38C4-9CDD-0A174631C16F
   - target:          x86_64-ios-simulator
-    value:           2BA2FC39-ED89-3817-A210-E9D818AD0CE0
+    value:           6B9338E9-5305-3C96-904A-08FE380ED4F5
   - target:          arm64-ios-simulator
-    value:           54EF291F-700A-354C-AF48-C2FBA62152A7
+    value:           44E8DC21-0577-336D-A407-B295AA51866A
 install-name:    '/usr/lib/libChineseTokenizer.dylib'
 current-version: 37
 exports:

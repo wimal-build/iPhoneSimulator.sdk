@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9D20371C-9551-3A4F-8EB4-BA412A52B31E
   - target:          x86_64-ios-simulator
-    value:           016E0A9B-A136-3B62-8988-4C4E2D0D60ED
+    value:           1C5A1984-9722-385D-A9DB-91988DFF3825
   - target:          arm64-ios-simulator
-    value:           3F298B52-0489-38B6-8D6C-3CCEAC7BA6A5
+    value:           8DE7FB2B-A320-3243-92A9-76390C0AEFF8
 install-name:    '/usr/lib/libiconv.2.dylib'
 current-version: 7
 compatibility-version: 7

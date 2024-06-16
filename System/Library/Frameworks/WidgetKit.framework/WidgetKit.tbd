@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           9DC2F667-B6CA-33E4-852B-85945E43CB22
+    value:           C47A8111-DC20-35A7-AB66-355F1F8EBEDE
   - target:          arm64-ios-simulator
-    value:           C72051F8-4453-3866-98B7-0E8DEAB220E6
+    value:           FE7D2FA0-EA4E-338E-881F-F8D561E2BAD9
 install-name:    '/System/Library/Frameworks/WidgetKit.framework/WidgetKit'
-current-version: 104.4.3
+current-version: 104.9.5
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -117,10 +117,8 @@ exports:
                        '_$s9WidgetKit0A10DescriptorV05entryC0yAA05EntryC0VSo9CHSWidgetCcvs', 
                        '_$s9WidgetKit0A10DescriptorV10intentTypeSSSgvM', '_$s9WidgetKit0A10DescriptorV10intentTypeSSSgvg', 
                        '_$s9WidgetKit0A10DescriptorV10intentTypeSSSgvpMV', '_$s9WidgetKit0A10DescriptorV10intentTypeSSSgvs', 
-                       '_$s9WidgetKit0A10DescriptorV11displayNameSo20CHSLocalizableStringCSgvM', 
-                       '_$s9WidgetKit0A10DescriptorV11displayNameSo20CHSLocalizableStringCSgvg', 
-                       '_$s9WidgetKit0A10DescriptorV11displayNameSo20CHSLocalizableStringCSgvpMV', 
-                       '_$s9WidgetKit0A10DescriptorV11displayNameSo20CHSLocalizableStringCSgvs', 
+                       '_$s9WidgetKit0A10DescriptorV11displayNameSSSgvM', '_$s9WidgetKit0A10DescriptorV11displayNameSSSgvg', 
+                       '_$s9WidgetKit0A10DescriptorV11displayNameSSSgvpMV', '_$s9WidgetKit0A10DescriptorV11displayNameSSSgvs', 
                        '_$s9WidgetKit0A10DescriptorV16widgetVisibilitySo09CHSWidgetE0VvM', 
                        '_$s9WidgetKit0A10DescriptorV16widgetVisibilitySo09CHSWidgetE0Vvg', 
                        '_$s9WidgetKit0A10DescriptorV16widgetVisibilitySo09CHSWidgetE0VvpMV', 
@@ -129,11 +127,9 @@ exports:
                        '_$s9WidgetKit0A10DescriptorV17supportedFamiliesSayAA08InternalA6FamilyOGvg', 
                        '_$s9WidgetKit0A10DescriptorV17supportedFamiliesSayAA08InternalA6FamilyOGvpMV', 
                        '_$s9WidgetKit0A10DescriptorV17supportedFamiliesSayAA08InternalA6FamilyOGvs', 
-                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSo20CHSLocalizableStringCSgvM', 
-                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSo20CHSLocalizableStringCSgvg', 
-                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSo20CHSLocalizableStringCSgvpMV', 
-                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSo20CHSLocalizableStringCSgvs', 
-                       '_$s9WidgetKit0A10DescriptorV32onURLSessionEventsConfigurationsSayAA0aE18EventConfigurationVGvM', 
+                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSSSgvM', '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSSSgvg', 
+                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSSSgvpMV', 
+                       '_$s9WidgetKit0A10DescriptorV17widgetDescriptionSSSgvs', '_$s9WidgetKit0A10DescriptorV32onURLSessionEventsConfigurationsSayAA0aE18EventConfigurationVGvM', 
                        '_$s9WidgetKit0A10DescriptorV32onURLSessionEventsConfigurationsSayAA0aE18EventConfigurationVGvg', 
                        '_$s9WidgetKit0A10DescriptorV32onURLSessionEventsConfigurationsSayAA0aE18EventConfigurationVGvpMV', 
                        '_$s9WidgetKit0A10DescriptorV32onURLSessionEventsConfigurationsSayAA0aE18EventConfigurationVGvs', 
@@ -779,8 +775,6 @@ exports:
                        '_$sSo19CHSWidgetFamilyMaskV9WidgetKitE18avocadoSizeClassesSayAC08InternaldB0OGvg', 
                        '_$sSo19CHSWidgetFamilyMaskV9WidgetKitE18avocadoSizeClassesSayAC08InternaldB0OGvpMV', 
                        '_$sSo19CHSWidgetFamilyMaskV9WidgetKitEyABSo0aB0VcfC', '_$sSo19CHSWidgetFamilyMaskV9WidgetKitEyABxcSTRzSo0aB0V7ElementRtzlufC', 
-                       '_$sSo20CHSLocalizableStringC9WidgetKitE_9tableName10bundlePath10isVerbatimABSS_SSSgAGSbtcfC', 
-                       '_$sSo20CHSLocalizableStringC9WidgetKitE_9tableName10bundlePath10isVerbatimABSS_SSSgAGSbtcfc', 
                        '_$sSo20CHSWidgetPersonalityP9WidgetKitE14logDescriptionSSvg', 
                        '_$sSo20CHSWidgetPersonalityP9WidgetKitE14logDescriptionSSvpMV', 
                        '_$sSo7NSErrorC9WidgetKitE4code15underlyingError16debugDescription6__file6__lineAbC12CKCErrorCodeO_s0F0_pSgSSSgs12StaticStringVSitcfC', 

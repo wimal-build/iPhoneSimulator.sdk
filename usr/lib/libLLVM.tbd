@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           711FBE5F-5D39-33A1-9320-451B4CA59FD0
   - target:          x86_64-ios-simulator
-    value:           BEBCEF84-F43C-3559-B95B-E8BA4D46B243
+    value:           C5AEE891-5BE7-3D9F-90AB-2886632560CE
   - target:          arm64-ios-simulator
-    value:           E401C251-603C-30D8-B79E-2272C4BB412F
+    value:           534E0DF6-07B1-3DE7-94A5-B52A6FE9C0F6
 install-name:    '/usr/lib/libLLVM.dylib'
-current-version: 31001.43
+current-version: 31001.50
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _ConvertUTF16toUTF32, _ConvertUTF16toUTF8, _ConvertUTF32toUTF16, 

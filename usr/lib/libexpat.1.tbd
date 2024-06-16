@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F2724900-42E6-37CA-A815-27BC339D4E33
+    value:           ED8BEA83-3935-3BA5-9817-88D7BC4C557B
   - target:          arm64-ios-simulator
-    value:           0E865721-9A31-36D4-9B86-2215EBF8BBC1
+    value:           87BC2FB0-DF5B-39F5-BF43-E60E2C4CF2FC
 install-name:    '/usr/lib/libexpat.1.dylib'
 current-version: 8
 compatibility-version: 7

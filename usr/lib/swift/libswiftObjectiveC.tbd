@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22
   - target:          x86_64-ios-simulator
-    value:           E2B04A4B-CA85-3BF7-A2C0-829373E117E4
+    value:           24AFAF45-4169-3A73-AE16-CD8B75B1E373
   - target:          arm64-ios-simulator
-    value:           D83C8D93-69A5-3115-9942-A71ECF99EDBE
+    value:           08290428-3C4D-31DE-8FA7-4A03C8170E97
 install-name:    '/usr/lib/swift/libswiftObjectiveC.dylib'
 swift-abi-version: 7
 exports:

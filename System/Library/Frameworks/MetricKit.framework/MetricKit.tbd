@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AA054CCF-79D1-33B4-BF2C-9B2A7592E715
+    value:           C574B807-970A-3B8A-819E-C6F8A468E0F8
   - target:          arm64-ios-simulator
-    value:           92E96041-077A-3DC9-9989-E485676D1140
+    value:           70031DE0-0293-33EE-A740-72AF51370AC5
 install-name:    '/System/Library/Frameworks/MetricKit.framework/MetricKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           2615AB5E-81EC-349E-9C68-D8741AFB0AB4
+    value:           AD921940-D7EF-336C-B566-94D8C75C7A43
   - target:          arm64-ios-simulator
-    value:           DA449F1A-1896-33D0-9697-FAB5D19E1EA1
+    value:           CAF884CC-4CDD-3D77-9065-6EF28496EABF
 install-name:    '/System/Library/Frameworks/Vision.framework/Vision'
-current-version: 4.0.90
+current-version: 4.1.2
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CCRectLowLevel, _VN0af6454e97767772ce64a19ddaf61f0c, _VN1HsiXmKrxTsH8TYOuN5s7G3uHSP75iYS, 
@@ -171,9 +171,11 @@ exports:
                        _VNbe5c67b06e95370f5a7b67b13e73637c, _VNeeab04670e53ebeb25150a31963a1aa6, 
                        _VNmNJnu0xlW8CZXt6hJ7Rpb0, _createPerMeshForFFTSIZE, _horizonDetectionFFT, 
                        _horizonDetectionFFTAngles, _initializePerMesh ]
-    objc-classes:    [ VN5kJNH3eYuyaLxNpZr5Z7zi, VN6Mb1ME89lyW3HpahkEygIG, VNAlignFaceRectangleRequest, 
-                       VNAppendBurstSequenceFrameRequest, VNBarcodeObservation, VNBurstObservation, 
-                       VNCanceller, VNCircle, VNClassificationCustomHierarchy, VNClassificationObservation, 
+    objc-classes:    [ VN3XKGTKNBvy6h4RFtpxLyW, VN5kJNH3eYuyaLxNpZr5Z7zi, VN6Ac6Cyl5O5oK19HboyMBR, 
+                       VN6B8mkraBUpwUqskMYPtS3, VN6Mb1ME89lyW3HpahkEygIG, VN6kBnCOr2mZlSV6yV1dLwB, 
+                       VNAlignFaceRectangleRequest, VNAppendBurstSequenceFrameRequest, 
+                       VNBarcodeObservation, VNBurstObservation, VNCanceller, VNCircle, 
+                       VNClassificationCustomHierarchy, VNClassificationObservation, 
                        VNClassifyFaceAttributesRequest, VNClassifyImageAestheticsRequest, 
                        VNClassifyImageRequest, VNClassifyJunkImageRequest, VNClassifyPotentialLandmarkRequest, 
                        VNCluster, VNClusterObservation, VNClustererBuilder, VNClustererBuilderOptions, 
@@ -181,12 +183,12 @@ exports:
                        VNContour, VNContoursObservation, VNCoreMLFeatureValueObservation, 
                        VNCoreMLModel, VNCoreMLRequest, VNCreateDetectionprintRequest, 
                        VNCreateFaceRegionMapRequest, VNCreateFaceTorsoprintRequest, 
-                       VNCreateFaceprintRequest, VNCreateImageprintRequest, VNCreateSceneprintRequest, 
-                       VNCreateSmartCamprintRequest, VNCreateTorsoprintRequest, VNDetectBarcodesRequest, 
-                       VNDetectContoursRequest, VNDetectFace3DLandmarksRequest, VNDetectFaceCaptureQualityRequest, 
-                       VNDetectFaceExpressionsRequest, VNDetectFaceLandmarksRequest, 
-                       VNDetectFacePoseRequest, VNDetectFaceRectanglesRequest, VNDetectHorizonRequest, 
-                       VNDetectHumanBodyPoseRequest, VNDetectHumanHandPoseRequest, 
+                       VNCreateFaceprintRequest, VNCreateImageprintRequest, VNCreateNeuralHashprintRequest, 
+                       VNCreateSceneprintRequest, VNCreateSmartCamprintRequest, VNCreateTorsoprintRequest, 
+                       VNDetectBarcodesRequest, VNDetectContoursRequest, VNDetectFace3DLandmarksRequest, 
+                       VNDetectFaceCaptureQualityRequest, VNDetectFaceExpressionsRequest, 
+                       VNDetectFaceLandmarksRequest, VNDetectFacePoseRequest, VNDetectFaceRectanglesRequest, 
+                       VNDetectHorizonRequest, VNDetectHumanBodyPoseRequest, VNDetectHumanHandPoseRequest, 
                        VNDetectHumanHeadRectanglesRequest, VNDetectHumanRectanglesRequest, 
                        VNDetectRectanglesRequest, VNDetectTextRectanglesRequest, 
                        VNDetectTrajectoriesRequest, VNDetectedObjectObservation, 
@@ -205,24 +207,25 @@ exports:
                        VNImageAestheticsObservation, VNImageAlignmentObservation, 
                        VNImageBasedRequest, VNImageBlurObservation, VNImageBlurScoreRequest, 
                        VNImageBrightnessObservation, VNImageBuffer, VNImageExposureScoreRequest, 
-                       VNImageHomographicAlignmentObservation, VNImageRegistrationRequest, 
-                       VNImageRequestHandler, VNImageSaliencyObservation, VNImageScoreObservation, 
-                       VNImageTranslationAlignmentObservation, VNImageprint, VNImageprintObservation, 
-                       VNMutablePersonsModel, VNNOPRequest, VNObservation, VNPersonsModel, 
-                       VNPersonsModelConfiguration, VNPersonsModelInformation, VNPersonsModelPrediction, 
-                       VNPersonsModelReadOptions, VNPersonsModelWriteOptions, VNPhotosRequestHandler, 
-                       VNPixelBufferObservation, VNPoint, VNProcessingDevice, VNRecognizeAnimalsRequest, 
-                       VNRecognizeFoodAndDrinkRequest, VNRecognizeObjectsRequest, 
-                       VNRecognizeTextRequest, VNRecognizedObjectObservation, VNRecognizedPoint, 
-                       VNRecognizedPointsObservation, VNRecognizedText, VNRecognizedTextObservation, 
-                       VNRectangleObservation, VNRequest, VNRequestForensics, VNSaliencyImageObservation, 
-                       VNSceneClassificationRequest, VNSceneFeaturePrint, VNSceneObservation, 
-                       VNSceneprint, VNSequenceRequestHandler, VNSession, VNSizeRange, 
-                       VNSmartCamObservation, VNSmartCamprint, VNStatefulRequest, 
-                       VNSupportedImageSize, VNTargetedImageRequest, VNTextObservation, 
-                       VNTorsoprint, VNTrackLegacyFaceCoreObjectRequest, VNTrackObjectRequest, 
-                       VNTrackRectangleRequest, VNTrackingRequest, VNTrajectoryObservation, 
-                       VNTranslationalImageRegistrationRequest, VNVYvzEtX1JlUdu8xx5qhDI, 
-                       VNVector, VNVideoProcessor, VNVideoProcessorCadence, VNVideoProcessorFrameRateCadence, 
-                       VNVideoProcessorRequestProcessingOptions, VNVideoProcessorTimeIntervalCadence ]
+                       VNImageHomographicAlignmentObservation, VNImageNeuralHashprintObservation, 
+                       VNImageRegistrationRequest, VNImageRequestHandler, VNImageSaliencyObservation, 
+                       VNImageScoreObservation, VNImageTranslationAlignmentObservation, 
+                       VNImageprint, VNImageprintObservation, VNMutablePersonsModel, 
+                       VNNOPRequest, VNObservation, VNPersonsModel, VNPersonsModelConfiguration, 
+                       VNPersonsModelInformation, VNPersonsModelPrediction, VNPersonsModelReadOptions, 
+                       VNPersonsModelWriteOptions, VNPhotosRequestHandler, VNPixelBufferObservation, 
+                       VNPoint, VNProcessingDevice, VNRecognizeAnimalsRequest, VNRecognizeFoodAndDrinkRequest, 
+                       VNRecognizeObjectsRequest, VNRecognizeTextRequest, VNRecognizedObjectObservation, 
+                       VNRecognizedPoint, VNRecognizedPointsObservation, VNRecognizedText, 
+                       VNRecognizedTextObservation, VNRectangleObservation, VNRequest, 
+                       VNRequestForensics, VNSaliencyImageObservation, VNSceneClassificationRequest, 
+                       VNSceneFeaturePrint, VNSceneObservation, VNSceneprint, VNSequenceRequestHandler, 
+                       VNSession, VNSizeRange, VNSmartCamObservation, VNSmartCamprint, 
+                       VNStatefulRequest, VNSupportedImageSize, VNTargetedImageRequest, 
+                       VNTextObservation, VNTorsoprint, VNTrackLegacyFaceCoreObjectRequest, 
+                       VNTrackObjectRequest, VNTrackRectangleRequest, VNTrackingRequest, 
+                       VNTrajectoryObservation, VNTranslationalImageRegistrationRequest, 
+                       VNVYvzEtX1JlUdu8xx5qhDI, VNVector, VNVideoProcessor, VNVideoProcessorCadence, 
+                       VNVideoProcessorFrameRateCadence, VNVideoProcessorRequestProcessingOptions, 
+                       VNVideoProcessorTimeIntervalCadence ]
 ...

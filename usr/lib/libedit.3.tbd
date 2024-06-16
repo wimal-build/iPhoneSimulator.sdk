@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AE5FC0DC-9F24-37FD-805C-F48D151F48A0
   - target:          x86_64-ios-simulator
-    value:           7BA6161E-4D8F-377D-A232-74368597F38A
+    value:           F098A50F-6E7C-32CC-A6C8-F3B8A078C0AF
   - target:          arm64-ios-simulator
-    value:           B45AA21A-01F6-3161-B8BB-C4BBB7EBAB26
+    value:           F3CB8B85-8DC6-314E-B5AB-D8DD2FF63B09
 install-name:    '/usr/lib/libedit.3.dylib'
 current-version: 3
 compatibility-version: 2

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           971A5217-0F97-37D7-BEB7-286FB018D430
+    value:           7A37C6DA-702C-3FF2-91E2-24595ADA2AF1
   - target:          arm64-ios-simulator
-    value:           911F7828-10B5-3D3E-A6D9-84FCA3183067
+    value:           E47C2B0C-08D1-33E7-A2E2-21F16EAC947A
 install-name:    '/usr/lib/libnfshared.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

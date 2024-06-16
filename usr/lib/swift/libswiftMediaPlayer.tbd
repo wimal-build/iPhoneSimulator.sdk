@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           58AFC9B5-8E99-3012-BC17-2A8560794EA9
   - target:          x86_64-ios-simulator
-    value:           8C914586-51F9-3DA0-9194-3F948F20722F
+    value:           0F870C8B-A61E-3575-A835-1730501CEB5A
   - target:          arm64-ios-simulator
-    value:           A1B9EB17-65D9-3C85-A7BE-B8E490AFD8B6
+    value:           956D024F-6FC4-3A77-9147-C6BB8694495D
 install-name:    '/usr/lib/swift/libswiftMediaPlayer.dylib'
 current-version: 1.1
 swift-abi-version: 7

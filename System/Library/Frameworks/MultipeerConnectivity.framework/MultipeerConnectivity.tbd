@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           8F2BCB1F-4BA9-30CA-83B6-C9969D107788
   - target:          x86_64-ios-simulator
-    value:           41C75F61-FEA1-32E9-85E2-754E59098266
+    value:           89279FB2-EF59-376C-83FF-53820FD99C78
   - target:          arm64-ios-simulator
-    value:           A06C3B40-E84C-3B8D-BAF7-B92777F36FBF
+    value:           C3C9ECDF-8D29-337B-B5C8-9278BD041D0C
 install-name:    '/System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity'
 current-version: 172
 exports:

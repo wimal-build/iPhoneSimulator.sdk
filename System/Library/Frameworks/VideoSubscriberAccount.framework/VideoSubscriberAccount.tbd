@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           96180D47-0669-3034-BD86-5579E9B1B436
   - target:          x86_64-ios-simulator
-    value:           8A00B9B3-A3C7-37E7-9D71-F74F405A1B46
+    value:           52321E9D-351E-39F1-9D4F-D8746438340F
   - target:          arm64-ios-simulator
-    value:           E53E6C93-D557-3CFF-87F4-D4F818955039
+    value:           92E268EC-431B-3A47-A8BE-4BCEBFA903CC
 install-name:    '/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount'
-current-version: 364.10.10
+current-version: 364.20.8
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _VSEntitlementNameBulletinService, _VSStoreProviderResponseKeyAppStoreIdentifier, 
@@ -38,12 +38,12 @@ exports:
                        _VSErrorInfoKeySAMLResponseStatus, _VSErrorInfoKeyUnsupportedProviderIdentifier, 
                        _VSErrorIsPrivateError, _VSErrorIsPublicError, _VSErrorLogObject, 
                        _VSHTTPMethodNameGET, _VSHTTPMethodNamePOST, _VSIdentityProviderAvailabilityDidChangeNotification, 
-                       _VSInvalidVerificationTokenError, _VSJSErrorDomain, _VSJSONDataValueTransformerName, 
-                       _VSLoadInterfaceFramework, _VSMainConcurrencyBindingOptions, 
-                       _VSMainThreadOperationWithBlock, _VSMetricClickTargetContinue, 
-                       _VSMetricClickTargetFindMoreApps, _VSMetricClickTargetIdentityProvider, 
-                       _VSMetricClickTargetInstallApp, _VSMetricClickTargetNotNow, 
-                       _VSMetricClickTargetOpenApp, _VSMetricClickTargetSTBOptOut, 
+                       _VSIdentityProviderInfoDidChangeNotification, _VSInvalidVerificationTokenError, 
+                       _VSJSErrorDomain, _VSJSONDataValueTransformerName, _VSLoadInterfaceFramework, 
+                       _VSMainConcurrencyBindingOptions, _VSMainThreadOperationWithBlock, 
+                       _VSMetricClickTargetContinue, _VSMetricClickTargetFindMoreApps, 
+                       _VSMetricClickTargetIdentityProvider, _VSMetricClickTargetInstallApp, 
+                       _VSMetricClickTargetNotNow, _VSMetricClickTargetOpenApp, _VSMetricClickTargetSTBOptOut, 
                        _VSMetricClickTargetSignIn, _VSMetricClickTargetSignOut, _VSMetricPageBuddyMain, 
                        _VSMetricPageBuddySingleProvider, _VSMetricPageBuddyZSO, _VSMetricPageSettingsAccountInfo, 
                        _VSMetricPageSettingsHome, _VSMetricPageSettingsPicker, _VSMetricPageTypeBuddy, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A1EAA690-97F1-316E-9F64-9C00641E28E0
   - target:          x86_64-ios-simulator
-    value:           D9EF0892-C5F3-34E3-A2BF-C6CE85B25FE0
+    value:           71BE1DE3-F3B5-3FF5-AC61-0AACD3652FD6
   - target:          arm64-ios-simulator
-    value:           94FD6885-5EE4-3298-9454-169CD184B4C6
+    value:           8DE18D13-7763-39CC-9F2D-88AA17EAC55A
 install-name:    '/System/Library/Frameworks/WebKit.framework/WebKit'
-current-version: 610.2.11
+current-version: 610.3.7
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy' ]
@@ -472,8 +472,9 @@ exports:
                        _WKPageSetEnableVerticalRubberBanding, _WKPageSetFixedLayoutSize, 
                        _WKPageSetFullscreenDelegate, _WKPageSetGapBetweenPages, _WKPageSetIgnoresViewportScaleLimits, 
                        _WKPageSetMaintainsInactiveSelection, _WKPageSetMayStartMediaWhenInWindow, 
-                       _WKPageSetMediaCaptureEnabled, _WKPageSetMediaVolume, _WKPageSetMockCameraOrientation, 
-                       _WKPageSetMuted, _WKPageSetPageAndTextZoomFactors, _WKPageSetPageContextMenuClient, 
+                       _WKPageSetMediaCaptureEnabled, _WKPageSetMediaCaptureReportingDelayForTesting, 
+                       _WKPageSetMediaVolume, _WKPageSetMockCameraOrientation, _WKPageSetMuted, 
+                       _WKPageSetPageAndTextZoomFactors, _WKPageSetPageContextMenuClient, 
                        _WKPageSetPageDiagnosticLoggingClient, _WKPageSetPageFindClient, 
                        _WKPageSetPageFindMatchesClient, _WKPageSetPageFormClient, 
                        _WKPageSetPageInjectedBundleClient, _WKPageSetPageLength, 
@@ -949,11 +950,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           55F9442F-D123-35F5-8533-87DB7A40DE6C
   - target:          x86_64-ios-simulator
-    value:           69F88FF0-AB9C-38B2-BADF-5FD326CA11B0
+    value:           2824CF05-ECF9-3DF6-A1B0-262408B7B663
   - target:          arm64-ios-simulator
-    value:           7FF889EC-D9A7-394B-A2D9-D2E71C8BEED1
+    value:           28EA4068-C45D-3C80-93DB-24D92FEC4E4E
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
-current-version: 610.2.11
+current-version: 610.3.7
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZN6WebKit13MemoryMeasure10taskMemoryEv, __ZN6WebKit13MemoryMeasure13enableLoggingEb, 

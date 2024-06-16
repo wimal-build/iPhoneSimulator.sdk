@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           78725214-D868-3979-8F69-A13C19AE9C3C
   - target:          x86_64-ios-simulator
-    value:           579BFBCB-FAD2-3903-AF3B-81632C41CC57
+    value:           7C9C3C85-2967-392B-89AE-9ED09D980B5D
   - target:          arm64-ios-simulator
-    value:           4839FC66-B905-3578-9A41-87A441E485C8
+    value:           8D359126-186E-3957-84FF-E3F6B3520E6D
 install-name:    '/usr/lib/swift/libswiftNaturalLanguage.dylib'
 current-version: 2
 swift-abi-version: 7

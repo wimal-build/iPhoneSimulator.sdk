@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7E1F5F72-0280-3E63-8D7A-558CB8832D83
+    value:           606F36B0-95EC-337B-90BA-0750AE5212C1
   - target:          arm64-ios-simulator
-    value:           DE92753F-F46D-3FBD-B4CC-3502FF429A49
+    value:           3CD91645-D72D-3B1E-BC44-B0BB0ABB0919
 install-name:    '/System/Library/Frameworks/RealityKit.framework/RealityKit'
 current-version: 60.45
 swift-abi-version: 7

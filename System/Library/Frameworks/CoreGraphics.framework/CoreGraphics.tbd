@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           9F32E2F6-41F8-3395-8420-9B09FE258357
   - target:          x86_64-ios-simulator
-    value:           B22B332D-7856-329F-9E73-C69000D8F0CE
+    value:           E658D689-13ED-3CC5-9230-4B6B9C55D0B0
   - target:          arm64-ios-simulator
-    value:           CAE3E73E-5306-32DE-9E8E-6B5BBEE456D7
+    value:           F0551A94-3E93-39EC-B22D-1D1C5A639591
 install-name:    '/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics'
-current-version: 1463
+current-version: 1463.2.1
 compatibility-version: 64
 exports:
   - targets:         [ i386-ios-simulator ]

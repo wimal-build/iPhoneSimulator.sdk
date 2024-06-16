@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           88ADEDD2-6139-32E9-A763-D01862999F23
   - target:          x86_64-ios-simulator
-    value:           63D24A8B-19ED-3EBA-BABA-48417D4896B2
+    value:           40E3F66A-D3FD-3C23-B53E-196A87208534
   - target:          arm64-ios-simulator
-    value:           E8B86FA5-0586-3F1F-9F65-B77142481FFE
+    value:           13C9ED4F-1B71-3C12-BD4E-44A8ED384E30
 install-name:    '/System/Library/Frameworks/AVKit.framework/AVKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -29,6 +29,7 @@ exports:
                        AVPictureInPictureIndicatorView, AVPictureInPicturePlayerLayerView, 
                        AVPictureInPicturePrerollAttributes, AVPlayerController, AVPlayerControllerTimeResolver, 
                        AVPlayerViewController, AVPlayerViewControllerCustomControlsView, 
-                       AVRoutePickerView, AVTimecode, AVTimecodeController, AVTimer, 
-                       AVValueTiming, __AVPlayerLayerView ]
+                       AVRoutePickerView, AVSeymourBehavior, AVSeymourBehaviorContext, 
+                       AVTimecode, AVTimecodeController, AVTimer, AVValueTiming, 
+                       __AVPlayerLayerView ]
 ...

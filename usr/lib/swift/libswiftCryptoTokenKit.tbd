@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           526E0A3A-96DC-36B5-9B88-377C294377B3
+    value:           2BEDA6BC-1FDF-38AA-B399-98EDFFAD695F
   - target:          arm64-ios-simulator
-    value:           3FE094A3-DAB7-34CF-B317-F9042E0C6D97
+    value:           79DDF875-036B-3E3D-91DA-3F9332E19F71
 install-name:    '/usr/lib/swift/libswiftCryptoTokenKit.dylib'
-current-version: 487.40.9
+current-version: 487.60.1
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

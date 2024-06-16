@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           165DD180-EF67-329A-9235-6B165DF45F37
+    value:           417F6928-93B2-3AD4-B34A-F2708D032B28
   - target:          arm64-ios-simulator
-    value:           5E0D048A-BE3B-3339-99AD-6A28240C1FB5
+    value:           820AE3FA-574D-3C6C-B9AB-2DF125E0C2F1
 install-name:    '/System/Library/Frameworks/MetalPerformanceShadersGraph.framework/MetalPerformanceShadersGraph'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

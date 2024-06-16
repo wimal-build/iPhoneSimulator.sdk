@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A2AD5B8C-3C38-34CA-A118-51601F272AFF
   - target:          x86_64-ios-simulator
-    value:           F978331D-A6FE-394B-A6FA-43596095AF01
+    value:           BDA91CC8-CB2A-368D-89DD-BC7A277253FC
   - target:          arm64-ios-simulator
-    value:           369CCD49-EE40-3291-A748-5BEE3CE81189
+    value:           ED3309BE-643C-3573-9FA2-3390A6F6094C
 install-name:    '/usr/lib/libMobileGestalt.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0602CBDC-D446-3E1A-B806-D45AA8698E4A
   - target:          x86_64-ios-simulator
-    value:           8E420F5A-7288-31A1-8596-E229BB332BBF
+    value:           B6A8FBBD-576D-31CE-8C07-739904E8CFD7
   - target:          arm64-ios-simulator
-    value:           E590DBED-BAC9-3F02-A647-510FB2133FC3
+    value:           DF003803-547D-3CA4-9594-EC3118157D17
 install-name:    '/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI'
 current-version: 33
 reexported-libraries:

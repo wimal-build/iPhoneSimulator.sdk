@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           EF5427CC-1A6E-3417-940C-9291E148C51D
   - target:          x86_64-ios-simulator
-    value:           CC01B23E-4ECB-3C8E-AB93-B4E1938A895F
+    value:           7EEA37A5-CDA2-3F21-AEA1-7DE91841BB8C
   - target:          arm64-ios-simulator
-    value:           2A986A81-196F-3DCA-9F2A-61AB8CD5A8E0
+    value:           ACBE9EE8-C375-3DDB-BE00-AFA168EFBCD6
 install-name:    '/usr/lib/libbsm.0.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

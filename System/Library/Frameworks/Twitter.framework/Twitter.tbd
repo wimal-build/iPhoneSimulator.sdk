@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E9750E98-1BD6-391B-A7AF-093E5C32841C
   - target:          x86_64-ios-simulator
-    value:           D474AB05-5476-3417-A65B-894182C2B504
+    value:           7F8F41CD-B0C8-3E32-BC53-5FB3FDF3935D
   - target:          arm64-ios-simulator
-    value:           A9BACDF5-12FD-37B9-9025-D875A280B71E
+    value:           63223A79-803D-3126-B977-2B6EB6C2602C
 install-name:    '/System/Library/Frameworks/Twitter.framework/Twitter'
 current-version: 164
 exports:

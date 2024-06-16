@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4FED54F9-C90F-3B2C-9699-AC8FEA09194B
+    value:           08B9B1E9-9E47-3486-BFB5-B73931275167
   - target:          arm64-ios-simulator
-    value:           D4B4412F-BCA2-3D72-B0B9-B6939D32B317
+    value:           50A44D29-7B05-3D66-979B-52FCE3172C85
 install-name:    '/usr/lib/swift/libswiftPencilKit.dylib'
 current-version: 5
 swift-abi-version: 7

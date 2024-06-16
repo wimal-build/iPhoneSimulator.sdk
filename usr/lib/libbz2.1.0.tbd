@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           71E5F8AF-ABFD-309A-BEAD-A944023AE254
   - target:          x86_64-ios-simulator
-    value:           0941A110-993D-3B37-81CE-9E86140324AB
+    value:           B8F3DE6D-E262-3559-9F7A-28912326DA1D
   - target:          arm64-ios-simulator
-    value:           0DFFD105-ED8A-3D95-8E84-1C04E2151D53
+    value:           00628F30-0A57-3782-932B-217674AC9110
 install-name:    '/usr/lib/libbz2.1.0.dylib'
 current-version: 1.0.5
 exports:

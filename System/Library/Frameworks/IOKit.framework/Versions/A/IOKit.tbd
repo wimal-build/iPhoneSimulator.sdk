@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           06B7F8D6-9E76-37B5-A9E1-B9939577F56E
   - target:          x86_64-ios-simulator
-    value:           01835142-F743-343C-B974-957086C444F2
+    value:           01D07933-6AAD-348F-B9F3-090D13916717
   - target:          arm64-ios-simulator
-    value:           027AFD07-1900-3025-B494-DBCA38F51766
+    value:           D71D6445-9B09-3A46-84AF-ADDC45E737A9
 install-name:    '/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit'
 current-version: 275
 exports:

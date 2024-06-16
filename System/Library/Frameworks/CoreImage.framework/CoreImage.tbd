@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           BCF6EB5A-2DF3-379E-A189-05F560293468
   - target:          x86_64-ios-simulator
-    value:           721A0272-A447-3414-8A10-ACD3D5CC43E5
+    value:           C10951B7-05E4-3B2B-84D5-18BB8C78CCE6
   - target:          arm64-ios-simulator
-    value:           D558D85D-19D4-3FB2-B3E5-9B1ABBB190F6
+    value:           042F8BDA-5B8F-37A5-8D66-3D6763F3429C
 install-name:    '/System/Library/Frameworks/CoreImage.framework/CoreImage'
 current-version: 5
 exports:
@@ -139,19 +139,20 @@ exports:
                        _kCIImageAuxiliaryDepth, _kCIImageAuxiliaryDisparity, _kCIImageAuxiliaryHDRGainMap, 
                        _kCIImageAuxiliaryPortraitEffectsMatte, _kCIImageAuxiliarySemanticSegmentationGlassesMatte, 
                        _kCIImageAuxiliarySemanticSegmentationHairMatte, _kCIImageAuxiliarySemanticSegmentationSkinMatte, 
-                       _kCIImageAuxiliarySemanticSegmentationTeethMatte, _kCIImageCacheHint, 
-                       _kCIImageCacheImmediately, _kCIImageClampToEdge, _kCIImageColorSpace, 
-                       _kCIImageEdgeRepeat, _kCIImageEdgesAreClear, _kCIImageFlipped, 
-                       _kCIImageNearestSampling, _kCIImagePremultiplied, _kCIImageProcessorAllowPartialOutputRegion, 
-                       _kCIImageProcessorSynchronizeInputs, _kCIImageProperties, 
-                       _kCIImageProviderContentDigest, _kCIImageProviderName, _kCIImageProviderTileSize, 
-                       _kCIImageProviderUserInfo, _kCIImageRepresentationAVDepthData, 
+                       _kCIImageAuxiliarySemanticSegmentationSkyMatte, _kCIImageAuxiliarySemanticSegmentationTeethMatte, 
+                       _kCIImageCacheHint, _kCIImageCacheImmediately, _kCIImageClampToEdge, 
+                       _kCIImageColorSpace, _kCIImageEdgeRepeat, _kCIImageEdgesAreClear, 
+                       _kCIImageFlipped, _kCIImageNearestSampling, _kCIImagePremultiplied, 
+                       _kCIImageProcessorAllowPartialOutputRegion, _kCIImageProcessorSynchronizeInputs, 
+                       _kCIImageProperties, _kCIImageProviderContentDigest, _kCIImageProviderName, 
+                       _kCIImageProviderTileSize, _kCIImageProviderUserInfo, _kCIImageRepresentationAVDepthData, 
                        _kCIImageRepresentationAVPortraitEffectsMatte, _kCIImageRepresentationAVSemanticSegmentationMattes, 
                        _kCIImageRepresentationDepthImage, _kCIImageRepresentationDisparityImage, 
                        _kCIImageRepresentationHDRGainMapImage, _kCIImageRepresentationPortraitEffectsMatteImage, 
                        _kCIImageRepresentationSemanticSegmentationGlassesMatteImage, 
                        _kCIImageRepresentationSemanticSegmentationHairMatteImage, 
                        _kCIImageRepresentationSemanticSegmentationSkinMatteImage, 
+                       _kCIImageRepresentationSemanticSegmentationSkyMatteImage, 
                        _kCIImageRepresentationSemanticSegmentationTeethMatteImage, 
                        _kCIImageTextScaleFactor, _kCIImageToneMapHDRtoSDR, _kCIImageYCCMatrix, 
                        _kCIInputAllowDraftModeKey, _kCIInputAmountKey, _kCIInputAngleKey, 
@@ -164,11 +165,11 @@ exports:
                        _kCIInputEnableEDRModeKey, _kCIInputEnableSharpeningKey, _kCIInputEnableVendorLensCorrectionKey, 
                        _kCIInputExtentKey, _kCIInputGradientImageKey, _kCIInputIgnoreImageOrientationKey, 
                        _kCIInputImageKey, _kCIInputImageOrientationKey, _kCIInputIntensityKey, 
-                       _kCIInputLinearSpaceFilter, _kCIInputLuminanceNoiseReductionAmountKey, 
-                       _kCIInputMaskImageKey, _kCIInputMatteImageKey, _kCIInputMoireAmountKey, 
-                       _kCIInputNeutralChromaticityXKey, _kCIInputNeutralChromaticityYKey, 
-                       _kCIInputNeutralLocationKey, _kCIInputNeutralTemperatureKey, 
-                       _kCIInputNeutralTintKey, _kCIInputNoiseReductionAmountKey, 
+                       _kCIInputLinearSpaceFilter, _kCIInputLocalToneMapAmountKey, 
+                       _kCIInputLuminanceNoiseReductionAmountKey, _kCIInputMaskImageKey, 
+                       _kCIInputMatteImageKey, _kCIInputMoireAmountKey, _kCIInputNeutralChromaticityXKey, 
+                       _kCIInputNeutralChromaticityYKey, _kCIInputNeutralLocationKey, 
+                       _kCIInputNeutralTemperatureKey, _kCIInputNeutralTintKey, _kCIInputNoiseReductionAmountKey, 
                        _kCIInputNoiseReductionContrastAmountKey, _kCIInputNoiseReductionDetailAmountKey, 
                        _kCIInputNoiseReductionSharpnessAmountKey, _kCIInputRadiusKey, 
                        _kCIInputRefractionKey, _kCIInputSaturationKey, _kCIInputScaleFactorKey, 

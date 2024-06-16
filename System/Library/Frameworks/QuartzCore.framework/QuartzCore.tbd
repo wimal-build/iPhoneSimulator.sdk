@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A3662550-9964-3A2B-ADC8-3CAE706B4C62
   - target:          x86_64-ios-simulator
-    value:           70B73AD6-084E-33CE-A385-2AFF18FA7C05
+    value:           F4B9695E-E30E-30CE-9480-27BDFE75CDBA
   - target:          arm64-ios-simulator
-    value:           9DB39506-DE74-30A1-A9DE-BCAC56254E26
+    value:           8C78ED39-0E95-3673-A5FC-BBA528D26320
 install-name:    '/System/Library/Frameworks/QuartzCore.framework/QuartzCore'
 current-version: 1.11
 compatibility-version: 1.2
@@ -319,8 +319,8 @@ exports:
                        _kCASnapshotDisplayName, _kCASnapshotEnforceSecureMode, _kCASnapshotFormatOpaque, 
                        _kCASnapshotFormatWideGamut, _kCASnapshotIgnoreDisableUpdateMasks, 
                        _kCASnapshotIgnoreLayerFixup, _kCASnapshotIgnoreRootAccessibilityFilters, 
-                       _kCASnapshotIgnoreSublayers, _kCASnapshotLayerId, _kCASnapshotMode, 
-                       _kCASnapshotModeDisplay, _kCASnapshotModeExcludeContextList, 
+                       _kCASnapshotIgnoreSublayers, _kCASnapshotLayerId, _kCASnapshotMapCacheAttribute, 
+                       _kCASnapshotMode, _kCASnapshotModeDisplay, _kCASnapshotModeExcludeContextList, 
                        _kCASnapshotModeIncludeContextList, _kCASnapshotModeLayer, 
                        _kCASnapshotModeStopAfterContextList, _kCASnapshotOriginX, 
                        _kCASnapshotOriginY, _kCASnapshotReuseBackdropContents, _kCASnapshotSizeHeight, 

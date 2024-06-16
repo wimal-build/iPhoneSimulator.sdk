@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           118472FC-3540-3FE1-9CB2-627A18B9EB7E
   - target:          x86_64-ios-simulator
-    value:           4FAC69BC-F71B-3B60-BDCC-B385FFF87F26
+    value:           FE659C2A-940F-3838-A7DF-AA9D5C1C0DA0
   - target:          arm64-ios-simulator
-    value:           36A89B8B-004E-3F8E-9F54-D0615FC513D7
+    value:           96C145E2-C33F-3DCD-8D6E-F91C80807FC5
 install-name:    '/System/Library/Frameworks/CoreText.framework/CoreText'
 exports:
   - targets:         [ i386-ios-simulator ]

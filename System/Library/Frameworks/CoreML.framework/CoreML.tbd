@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           77142DF5-56E9-38A4-B56B-88870197C197
+    value:           39342819-B787-3B7A-B5EF-E8031266FF76
   - target:          arm64-ios-simulator
-    value:           D356DC0F-509F-32AA-8A95-86E66E4B5995
+    value:           ACDE8C3D-17F5-3A77-A640-0551BA0A906F
 install-name:    '/System/Library/Frameworks/CoreML.framework/CoreML'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           AB79E3D5-7FB2-3FEC-BE5E-1834B641BE82
+    value:           F3F89E8E-50E6-3516-98D5-5144A3DA6212
   - target:          arm64-ios-simulator
-    value:           1A31FEDA-01C7-3617-AF28-1C2F9401DA36
+    value:           5008F98D-9BA1-3ED1-9019-21D94A5C24AB
 install-name:    '/usr/lib/swift/libswiftSpeech.dylib'
 swift-abi-version: 7
 exports:

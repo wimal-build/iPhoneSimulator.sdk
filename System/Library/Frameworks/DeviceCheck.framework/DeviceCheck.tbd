@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           01F040C8-D916-3B5A-B4D0-5EBBFEEF9D9F
+    value:           5CD25799-126E-3094-B254-3221786CF048
   - target:          arm64-ios-simulator
-    value:           6FF2846E-72BB-3828-AD7C-5AB189C0B46C
+    value:           C8CAEC5A-D01B-3219-AC99-4122066C57CB
 install-name:    '/System/Library/Frameworks/DeviceCheck.framework/DeviceCheck'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

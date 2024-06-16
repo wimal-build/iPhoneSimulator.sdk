@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           E0C99227-913E-3144-B9EC-1DCD9084891B
+    value:           80DC3C9D-8626-30C2-8783-F96C198E9767
   - target:          arm64-ios-simulator
-    value:           9B48005D-A007-3E91-9741-381EECF6AF2F
+    value:           4FBED7DE-9366-348F-87AA-951B6E600EE0
 install-name:    '/System/Library/Frameworks/_QuickLook_SwiftUI.framework/_QuickLook_SwiftUI'
 swift-abi-version: 7
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CAFD4171-6A07-36DE-9EC8-40BC61161AD0
   - target:          x86_64-ios-simulator
-    value:           8DC6049C-674A-373C-8511-1ACEE05E50BD
+    value:           7394DEB3-BBA1-377B-8D7C-C567C4F40ADB
   - target:          arm64-ios-simulator
-    value:           7CC8D582-D375-36A5-BBC4-04CE5FF4D961
+    value:           19D4E31D-C603-3555-92A0-D93987755D80
 install-name:    '/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -310,6 +310,7 @@ exports:
                        _kVTPixelTransferMostRecentConversionValue_HardwareAndSoftware, 
                        _kVTPixelTransferMostRecentConversionValue_Metal, _kVTPixelTransferMostRecentConversionValue_Software, 
                        _kVTPixelTransferPropertyKey_AllowLowQualityScaling, _kVTPixelTransferPropertyKey_ClientPID, 
+                       _kVTPixelTransferPropertyKey_Convert10BitHDRToSDRFor8BitDestinationWithUnspecifiedColorProperties, 
                        _kVTPixelTransferPropertyKey_DestinationCleanAperture, _kVTPixelTransferPropertyKey_DestinationColorPrimaries, 
                        _kVTPixelTransferPropertyKey_DestinationCropRectangle, _kVTPixelTransferPropertyKey_DestinationICCProfile, 
                        _kVTPixelTransferPropertyKey_DestinationPixelAspectRatio, 

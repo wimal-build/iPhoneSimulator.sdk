@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           1AE98DCD-F643-335B-8DCA-C8429A22C420
+    value:           82AB2393-8ED2-3403-869C-C531147BB40F
   - target:          arm64-ios-simulator
-    value:           3C664FDA-8C26-3A48-ABAA-1C5EF330D2FB
+    value:           411E9318-7652-3DA7-892C-22EDBD85F07A
 install-name:    '/System/Library/Frameworks/OSLog.framework/OSLog'
 current-version: 1277.40.18
 exports:

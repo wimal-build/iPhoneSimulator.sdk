@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           ED1160A6-04E0-3E2C-A37F-B90111FD08DD
   - target:          x86_64-ios-simulator
-    value:           F519562C-E1F8-3D6E-B6C0-3AA9278FAE02
+    value:           20C14BB8-8D2F-3A28-BE6F-2FFACB8EBA58
   - target:          arm64-ios-simulator
-    value:           3931FF2C-0D0E-3EB7-8C07-8C952C4A99C9
+    value:           02725F87-6A6B-37CC-A732-7C0C0913D0B2
 install-name:    '/System/Library/Frameworks/GSS.framework/GSS'
 exports:
   - targets:         [ i386-ios-simulator ]

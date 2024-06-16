@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0D34B010-C782-3F68-A6F5-0244471ACE19
+    value:           FF6A9882-9E4E-3C90-99A2-265CABB68D4F
   - target:          arm64-ios-simulator
-    value:           9144D3F1-44B4-32F2-BA34-BE1414BE9674
+    value:           F4D75997-F432-336A-B27C-A07783529D13
 install-name:    '/usr/lib/libAppleArchive.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

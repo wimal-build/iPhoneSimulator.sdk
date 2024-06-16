@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           C19CCDC6-BCB9-35B1-B277-A507A3AD7207
+    value:           4D79F246-94BA-3208-930E-FF7BE1A2BE5E
   - target:          arm64-ios-simulator
-    value:           AD994DBF-A4DD-3900-B1DD-2CCC8070153C
+    value:           81F17115-63ED-31EA-B182-0A5EF86FA92D
 install-name:    '/usr/lib/libusrtcp.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

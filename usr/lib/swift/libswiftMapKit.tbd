@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C9D271D-EA92-312E-9028-EEC6C3C41C8E
   - target:          x86_64-ios-simulator
-    value:           DC617B7D-1A3D-39A2-A672-DCF216054357
+    value:           83A3F2D5-9D03-3502-9874-184A625DD010
   - target:          arm64-ios-simulator
-    value:           0FE705E0-C407-3CBC-86FC-9CF92E0CBBD6
+    value:           7F81CEDB-D667-3425-BC62-4DB06E23F883
 install-name:    '/usr/lib/swift/libswiftMapKit.dylib'
 current-version: 2
 swift-abi-version: 7

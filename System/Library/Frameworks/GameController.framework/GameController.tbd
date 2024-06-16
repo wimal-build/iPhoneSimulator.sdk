@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1419D97C-4C54-387A-872E-D0F9220EA4C2
   - target:          x86_64-ios-simulator
-    value:           F40AE1F4-EBC8-33D6-AEFD-82331D76DBE9
+    value:           C5764D51-4D00-3347-8B6C-BAAE07AD22E7
   - target:          arm64-ios-simulator
-    value:           428610A8-3F5B-3E2C-933B-8CB62023CE18
+    value:           676E80C3-9546-3DB5-88DF-53F9F79E13C6
 install-name:    '/System/Library/Frameworks/GameController.framework/GameController'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -124,8 +124,9 @@ exports:
                        _getGCDLogger, _getGCHIDLogger, _getGCHapticsLogger, _getGCLogger, 
                        _getGCSettingsLogger, _getInterfaceNumberForDevice, _hexStringFromByteArray, 
                        _isDeviceAppleB239Digitizer, _isDeviceAppleControlCenterRemote, 
-                       _isDeviceAppleEmbeddedBluetoothButtons, _isDeviceAppleSiriRemote, 
-                       _isDeviceDualShock4, _isDeviceKeyboard, _isDeviceMFiAuthenticated, 
+                       _isDeviceAppleDirectionalRemote, _isDeviceAppleEmbeddedBluetoothButtons, 
+                       _isDeviceAppleSiriRemote, _isDeviceDualSense, _isDeviceDualShock4, 
+                       _isDeviceKeyboard, _isDeviceLuna, _isDeviceMFiAuthenticated, 
                        _isDeviceMFiGamepadCompliantForDeviceRef, _isDeviceMFiGamepadCompliantForServiceClientRef, 
                        _isDeviceMotionLite, _isDeviceMouse, _isDeviceXboxOne, _isPartnerSupportEnabled, 
                        _kGCControllerSettingsMetaSettingsExistKey, _kGCSettingsCustomizedElementsKey, 
@@ -141,8 +142,9 @@ exports:
                        GCControllerElement, GCControllerElementSettings, GCControllerMBDelegate, 
                        GCControllerSFDelegate, GCControllerSettings, GCControllerTouchpad, 
                        GCDeviceBattery, GCDeviceConfigurationEvaluator, GCDeviceCursor, 
-                       GCDeviceHaptics, GCDeviceLight, GCDualShockGamepad, GCEventViewController, 
-                       GCExtendedGamepad, GCExtendedGamepadSnapshot, GCFrontmostApplicationObserver, 
+                       GCDeviceHaptics, GCDeviceLight, GCDirectionalGamepad, GCDualSenseGamepad, 
+                       GCDualShockGamepad, GCEventViewController, GCExtendedGamepad, 
+                       GCExtendedGamepadSnapshot, GCFrontmostApplicationObserver, 
                        GCGamepad, GCGamepadSnapshot, GCHIDInformation, GCHapticActuator, 
                        GCHapticCapabilities, GCHapticCapabilityGraph, GCHapticCapabilityGraphNode, 
                        GCKeyboard, GCKeyboardAndMouseEventObserver, GCKeyboardAndMouseManager, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5AD11B18-4AF5-3CC4-9612-9C6B338B87BC
   - target:          x86_64-ios-simulator
-    value:           A7050126-4283-3A49-8393-D9210580DDE4
+    value:           08DBC220-64A6-3D52-9B36-309B5A106BBA
   - target:          arm64-ios-simulator
-    value:           37FEE3AC-6E45-3ADA-90C0-03AAAABAC8A3
+    value:           AA40ED27-2548-3586-9C65-075BA3B78F4D
 install-name:    '/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -132,9 +132,9 @@ exports:
                        _CBUUIDUARPDataControlPointCharacteristicString, _CBUUIDUnifiedAccessoryRestoreProtocolServiceString, 
                        _CBXPCGetNextClientID, _gCBDaemonServer ]
     objc-classes:    [ BTDevicePicker, CBATTRequest, CBAttribute, CBCentral, CBCentralManager, 
-                       CBCharacteristic, CBConnection, CBController, CBDescriptor, 
-                       CBDevice, CBDiscovery, CBIdentity, CBL2CAPChannel, CBManager, 
-                       CBMutableCharacteristic, CBMutableDescriptor, CBMutableService, 
+                       CBCharacteristic, CBConnection, CBController, CBControllerInfo, 
+                       CBDescriptor, CBDevice, CBDiscovery, CBIdentity, CBL2CAPChannel, 
+                       CBManager, CBMutableCharacteristic, CBMutableDescriptor, CBMutableService, 
                        CBPairingAgent, CBPeer, CBPeripheral, CBPeripheralManager, 
                        CBReadRequest, CBScalablePipe, CBScalablePipeManager, CBServer, 
                        CBService, CBSpatialInteractionSession, CBSpatialMeasurement, 

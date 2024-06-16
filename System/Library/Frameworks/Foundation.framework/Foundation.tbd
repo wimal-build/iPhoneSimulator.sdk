@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A4A5325F-E813-3493-BAC8-76379097756A
   - target:          x86_64-ios-simulator
-    value:           16ECBE10-D485-35C2-B9F2-DF9DC8B17D1E
+    value:           5716A8B8-2769-3484-9FD8-196630050F5B
   - target:          arm64-ios-simulator
-    value:           B8B41ECB-4D6C-37D6-AFBC-C30D1294C530
+    value:           C4C602C1-BD0F-3040-AA7E-A581703F6B6E
 install-name:    '/System/Library/Frameworks/Foundation.framework/Foundation'
-current-version: 1770.106
+current-version: 1770.255
 compatibility-version: 300
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           165183F9-B9FA-3FDF-AD4D-C943DD63F4C7
   - target:          x86_64-ios-simulator
-    value:           E499BBC1-B4A7-3F94-80ED-2FC56B91BAC6
+    value:           4C04BFF6-3E2B-35A4-AF92-79410A32AF4F
   - target:          arm64-ios-simulator
-    value:           1F75E735-BB17-3DF6-A4AF-4D383C51ED0C
+    value:           042B0C9B-8731-3C59-A8EB-3AB4A84EE4A2
 install-name:    '/System/Library/Frameworks/UserNotificationsUI.framework/UserNotificationsUI'
 exports:
   - targets:         [ i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           66657BEE-5897-346A-8E98-AFA042EF2BB8
   - target:          x86_64-ios-simulator
-    value:           1A384604-07B9-32F7-BD51-352B21F4F0F0
+    value:           937BAE35-6A8B-3824-A141-859612C98924
   - target:          arm64-ios-simulator
-    value:           F32F7791-6080-347E-9363-1BA3B2FEBF0B
+    value:           AC09D7BF-CA12-3589-9148-B8EE3BC8AFB9
 install-name:    '/usr/lib/libsqlite3.dylib'
 current-version: 321.1
 compatibility-version: 9

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FC3B7688-465A-3458-98C6-2D52ED911D0B
+    value:           4F6032BF-740E-32D1-A245-68A994197CB0
   - target:          arm64-ios-simulator
-    value:           F1387F40-F8B5-3EBE-B295-EA820D31A9BC
+    value:           C36FF114-334F-324A-AD0E-1EA4B560D1C8
 install-name:    '/System/Library/Frameworks/PDFKit.framework/PDFKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A2F69256-3804-38B7-9102-E4CCB9C4182A
   - target:          x86_64-ios-simulator
-    value:           2A8BA5D2-9E7A-3634-97F0-5A5050B2106D
+    value:           7BA8FE6A-B01C-3938-8297-A5641679ECEE
   - target:          arm64-ios-simulator
-    value:           9C0920EA-D990-3986-8DD9-19DC780CA3BA
+    value:           1BBE7013-F119-3070-B6F3-F92E2A99BF7C
 install-name:    '/usr/lib/libutil.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

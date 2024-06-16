@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           47B2B545-F10F-3FEA-BFB7-0A52EC1F9F5F
   - target:          x86_64-ios-simulator
-    value:           38BD7C4A-9A5C-33C7-A2EA-D4596C295530
+    value:           EFB66993-985B-32C1-9948-D70FCBE7039A
   - target:          arm64-ios-simulator
-    value:           0E00FC6B-7328-34FE-9A76-F32AF36A389C
+    value:           C272B36F-E823-3F33-9B35-6F81B070FE1F
 install-name:    '/System/Library/Frameworks/Network.framework/Network'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]

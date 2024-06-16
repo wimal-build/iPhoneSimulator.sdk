@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C3395947-17EA-325E-914D-CE00C5AF37FE
   - target:          x86_64-ios-simulator
-    value:           A0D6E882-ECF1-33F4-B1DB-2607F06BB912
+    value:           FC8DE3D7-3344-30C0-B392-E6E81DD812CA
   - target:          arm64-ios-simulator
-    value:           858B4A20-9A32-3513-A569-AC4A63C3AAA1
+    value:           DBDCF143-803D-3B7F-BA8D-5F41169EE229
 install-name:    '/System/Library/Frameworks/GLKit.framework/GLKit'
 current-version: 124
 exports:

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CE51C30C-711C-3B59-8C3F-B3B5F25888E6
+    value:           8100CF00-9266-31B1-B4CA-A8366D645033
   - target:          arm64-ios-simulator
-    value:           73C65E22-3B98-3997-8347-E4AF894002F4
+    value:           BC0DC9FD-8955-391B-95A2-306CEEF1DC37
 install-name:    '/usr/lib/libAudioStatistics.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

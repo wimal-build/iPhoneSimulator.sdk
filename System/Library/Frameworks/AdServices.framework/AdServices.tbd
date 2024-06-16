@@ -1,0 +1,16 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
+uuids:
+  - target:          i386-ios-simulator
+    value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           407FE0CF-74D8-32F4-AA63-FACB6302F707
+  - target:          arm64-ios-simulator
+    value:           25CE172B-130C-3CCF-ACD5-43D669FFE2D1
+install-name:    '/System/Library/Frameworks/AdServices.framework/AdServices'
+exports:
+  - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
+    symbols:         [ _AAAttributionErrorDomain, _kAAAttributionXPCMachServiceName ]
+    objc-classes:    [ AAAttribution ]
+...

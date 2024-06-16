@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4480BC0E-D3DF-3613-9D87-6B92EF931419
   - target:          x86_64-ios-simulator
-    value:           1D111B23-D855-3E48-87E2-92E4DCBA038E
+    value:           E1877BA2-FA13-3C37-8D63-95ED17A6655A
   - target:          arm64-ios-simulator
-    value:           2D15936B-59F7-34D9-8E7A-2B55A2C508CB
+    value:           3C02E647-62B3-3284-A762-3DB9CAB3D891
 install-name:    '/usr/lib/libform.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4

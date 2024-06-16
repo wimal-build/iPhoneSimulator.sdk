@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           284A9AAC-3FEB-3902-BD98-7AE4DA354E35
+    value:           34DB3886-19E7-35D2-81E3-1C5C35733C16
   - target:          arm64-ios-simulator
-    value:           AF6E8EF4-1B61-3164-9450-94986DAB418E
+    value:           D52CF443-CA81-34F7-8D48-8A2711E172C2
 install-name:    '/System/Library/Frameworks/AppClip.framework/AppClip'
 current-version: 20.20
 exports:

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           629D91CF-011D-3BCB-A9DB-63E0CC983D2F
+    value:           56909DDF-FDA2-3A36-B475-588F9E82F168
   - target:          arm64-ios-simulator
-    value:           A85536D6-E6BE-37EA-BF89-331EBE4043D8
+    value:           6D23B8C1-4861-39DF-9A67-2329F61C06B2
 install-name:    '/System/Library/Frameworks/UniformTypeIdentifiers.framework/UniformTypeIdentifiers'
-current-version: 631.7
+current-version: 632
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _UTTagClassFilenameExtension, _UTTagClassMIMEType, _UTType3DContent, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           25CE11E8-9BA8-33F4-8D4A-D6335126EA41
+    value:           11011E17-D8F0-3255-95CF-E0F8264E7728
   - target:          arm64-ios-simulator
-    value:           B62A969A-F020-3E95-935E-4421AECBB941
+    value:           2E61C2F5-3C63-3C27-A3B5-30E876248397
 install-name:    '/usr/lib/libmecab.dylib'
 current-version: 927
 exports:

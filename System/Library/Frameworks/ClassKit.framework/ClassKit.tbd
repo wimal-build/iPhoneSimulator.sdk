@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           EF691640-376C-3C1D-B46E-7FFB4C3E380D
+    value:           7D2EE9C8-37C0-3885-82DE-84C2A27AFFE3
   - target:          arm64-ios-simulator
-    value:           355300BA-AB40-3F26-A65F-DB16F368823C
+    value:           6839B0C6-2671-3550-96B4-2377C22D18E7
 install-name:    '/System/Library/Frameworks/ClassKit.framework/ClassKit'
-current-version: 146.1.11
+current-version: 146.2
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CLSAdoptPersonaUniqueIdentifier, _CLSAppleContactsPrivateEntitlement, 

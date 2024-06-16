@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           5BD826CD-B643-3087-8B05-C4FF2E1F7498
+    value:           D9D25DC2-6EDF-3DB3-8E13-91B3E196AE60
   - target:          arm64-ios-simulator
-    value:           BCD33897-086A-340E-A797-42863F2F6773
+    value:           CF7CACCC-A267-3D6E-AD4E-47FD7BAB195A
 install-name:    '/System/Library/Frameworks/_AuthenticationServices_SwiftUI.framework/_AuthenticationServices_SwiftUI'
-current-version: 610.2.11
+current-version: 610.3.7
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

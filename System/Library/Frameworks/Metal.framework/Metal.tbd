@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1E374812-7389-35B0-A071-AA675FB0F78B
   - target:          x86_64-ios-simulator
-    value:           21A0AD9C-3A97-371D-8CD5-AAEA8F9F3EDD
+    value:           C347E578-119B-3652-ABE4-69115E606E81
   - target:          arm64-ios-simulator
-    value:           A8C69682-EDA2-3317-BE04-50021AF09B64
+    value:           8DE7A5FF-A5BE-3B01-9E5B-C000A0D04352
 install-name:    '/System/Library/Frameworks/Metal.framework/Metal'
 current-version: 244.40.1
 exports:

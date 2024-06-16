@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5310C182-2FE4-32D0-A04C-8402F902C3DF
   - target:          x86_64-ios-simulator
-    value:           12166E34-EDC5-373C-B169-D43DACDE65B2
+    value:           8A6F8C03-2CA1-3E87-9F64-6BA50CD37BD9
   - target:          arm64-ios-simulator
-    value:           19BD8BF9-EBCB-34D6-BE32-C2E6915D6584
+    value:           21C484E0-A032-3F9A-A01F-60AB6C6B97EE
 install-name:    '/usr/lib/libcoreroutine.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -199,9 +199,10 @@ exports:
                        _RTPersistentStoreMetadataLastVacuumDateKey, _RTPersistentStoreMetadataStoreCorruptKey, 
                        _RTPersistentStoreMetadataStoreImportKey, _RTPersistentStoreMetadataStoreTransactionHistorySizeExceededKey, 
                        _RTPlaceDataMetricsEventCharging, _RTPlaceDataMetricsEventScreenLock, 
-                       _RTPlaceDataMetricsEventStaticMotion, _RTPlaceDataMetricsLabelHome, 
-                       _RTPlaceDataMetricsLabelOthers, _RTPlaceDataMetricsLabelUnknown, 
-                       _RTPlaceDataMetricsLabelWork, _RTRelabelerErrorDomain, _RTRelabelerPersisterErrorDomain, 
+                       _RTPlaceDataMetricsEventStaticMotion, _RTPlaceDataMetricsEventWiFiConnection, 
+                       _RTPlaceDataMetricsLabelHome, _RTPlaceDataMetricsLabelOthers, 
+                       _RTPlaceDataMetricsLabelUnknown, _RTPlaceDataMetricsLabelWork, 
+                       _RTRelabelerErrorDomain, _RTRelabelerPersisterErrorDomain, 
                        _RTStateModelLegacyControllerErrorDomain, _RTXPCEntitlementCloudSync, 
                        _RTXPCEntitlementHint, _RTXPCEntitlementInternal, _RTXPCEntitlementLocationOfInterest, 
                        _RTXPCEntitlementLocationOfInterestDelete, _RTXPCEntitlementLocationOfInterestExtendLifetime, 
@@ -389,7 +390,7 @@ exports:
                        RTReachabilityManager, RTReachabilityMonitorNotificationReachabilityChanged, 
                        RTRelabeler, RTRelabelerMetrics, RTRelabelerParameters, RTRelabelerPersister, 
                        RTRelabelerPersisterMetrics, RTRelabelerPersisterParameters, 
-                       RTRuntime, RTScenarioTriggerManager, RTScenarioTriggerManagerNotificationSettled, 
+                       RTReviewedPlace, RTRuntime, RTScenarioTriggerManager, RTScenarioTriggerManagerNotificationSettled, 
                        RTScenarioTriggerManagerNotificationUnsettled, RTScenarioTriggerNotification, 
                        RTService, RTSettledStateMetrics, RTSettledStateTransition, 
                        RTSettledStateTransitionMO, RTSettledStateTransitionStore, 
