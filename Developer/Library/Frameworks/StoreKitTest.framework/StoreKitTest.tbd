@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           428DCD4B-C91B-3AF5-967A-D58E8D42FA40
+    value:           EAF7ACC7-01A0-3F63-8740-26FFC72D92A7
   - target:          arm64-ios-simulator
-    value:           FA75FE29-971D-3AF1-8747-9C81996CBEC4
+    value:           D2C27B80-155B-3880-8184-2367E650105A
 install-name:    '/Developer/Library/Frameworks/StoreKitTest.framework/StoreKitTest'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

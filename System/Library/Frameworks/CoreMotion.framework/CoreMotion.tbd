@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           ED706F93-D4A7-3331-B2AF-C53BFD638950
   - target:          x86_64-ios-simulator
-    value:           93BCD061-F7BB-3724-A5D1-358F1AAF4EBF
+    value:           EFD8D3E2-7204-3ED5-95BD-33159D7AF6F8
   - target:          arm64-ios-simulator
-    value:           D6F388A0-1002-3E14-845D-1A653EFF5B75
+    value:           27652126-D85B-3CEF-AC75-675BA5EE85AB
 install-name:    '/System/Library/Frameworks/CoreMotion.framework/CoreMotion'
-current-version: 2420.4.7
+current-version: 2420.8.11
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CMCaptureModeData, _CMWorkoutKeyEventDate, _CMWorkoutKeyLocation, 
@@ -81,7 +81,7 @@ exports:
                        _CMFallImpactLoggingStatsThreshold, _CMFallInternalMetricState, 
                        _CMFallInternalNotifierState, _CMFallLastReplyAopTimestamp, 
                        _CMFallOptInsAndProfiles, _CMFallOptInsAndProfiles_fallAdditionalProfileLoggingEnabled, 
-                       _CMFallOptInsAndProfiles_isBackgroundSensorDataLoggingAllowed, 
+                       _CMFallOptInsAndProfiles_isAnyFallDataCollectionEnabled, _CMFallOptInsAndProfiles_isBackgroundSensorDataLoggingAllowed, 
                        _CMFallOptInsAndProfiles_isImproveHealthAndFitnessOptInEnabled, 
                        _CMFallOptInsAndProfiles_isTapToRadarFallSubmissionAllowed, 
                        _CMFallOptInsAndProfiles_isTapToRadarNearFallSubmissionAllowed, 

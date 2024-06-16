@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D965F2AC-12CA-3138-A7AF-AD1508992AFB
   - target:          x86_64-ios-simulator
-    value:           D8A2C77D-64D8-3BEC-B2F5-FAD4BF1D7FCC
+    value:           6BC8CD35-FC2A-352A-B15F-FF62F3F4C26B
   - target:          arm64-ios-simulator
-    value:           2ABA5E5C-DF71-3C42-9510-B2F7A9309D83
+    value:           F1D57544-577B-333C-ADAE-D0ED5151C554
 install-name:    '/usr/lib/libThaiTokenizer.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

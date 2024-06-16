@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CEB556DB-B425-343A-9569-3C1FB857F35F
+    value:           075609B4-CD48-36E1-8691-AAA0402199FB
   - target:          arm64-ios-simulator
-    value:           E1E72136-A67E-3B02-9D5E-C71B8E83050A
+    value:           3BF07407-639C-3FF3-B376-5C96E94AB663
 install-name:    '/System/Library/Frameworks/_SpriteKit_SwiftUI.framework/_SpriteKit_SwiftUI'
 swift-abi-version: 7
 exports:

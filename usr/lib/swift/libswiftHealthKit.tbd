@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           770B1F9D-278B-3B45-9265-8658A76E4AE6
+    value:           E016C900-F0A1-3B51-A84A-2B7BA7FB415E
   - target:          arm64-ios-simulator
-    value:           1396FD86-C62D-3A57-8095-9491F241D0C7
+    value:           BC4C3231-B189-3F5E-B53C-03E0D30D51D3
 install-name:    '/usr/lib/swift/libswiftHealthKit.dylib'
-current-version: 1774.1.6
+current-version: 1774.2.1
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

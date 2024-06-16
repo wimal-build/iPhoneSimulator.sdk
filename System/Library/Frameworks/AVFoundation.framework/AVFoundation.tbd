@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2FB5C88B-8675-3E30-87A8-BA4E870BC152
   - target:          x86_64-ios-simulator
-    value:           046BFFBB-FC88-3223-9A0B-D365F6B09B23
+    value:           6BF55860-52E7-3788-86CE-031B5BD6215C
   - target:          arm64-ios-simulator
-    value:           C23CE3B8-00B1-3F00-AFB5-89666FED797B
+    value:           88BEB479-30BE-3F10-8DC9-57FD3864A28D
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/AVFoundation'
 current-version: 2
 reexported-libraries:
@@ -1391,9 +1391,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           15A1E568-1F9B-3CDB-993D-07117F7C056C
   - target:          x86_64-ios-simulator
-    value:           FFEAC4C7-4177-3ED4-B5DD-0B2DBB9B708C
+    value:           F0ABDC15-CFE7-38CF-99AF-5EB8885778F0
   - target:          arm64-ios-simulator
-    value:           297633FE-7E64-30B9-BA23-35F08EBBF33C
+    value:           3086AC04-9C92-34A0-AC0C-5972C99EAC7D
 install-name:    '/System/Library/Frameworks/AVFoundation.framework/Frameworks/AVFAudio.framework/AVFAudio'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -1425,9 +1425,9 @@ exports:
                        _AVAudioSessionModeDefault, _AVAudioSessionModeEmergencyAlert, 
                        _AVAudioSessionModeGameChat, _AVAudioSessionModeHapticsConstantVolume, 
                        _AVAudioSessionModeHearingAccessibility, _AVAudioSessionModeLivePhoto, 
-                       _AVAudioSessionModeLocatePhone, _AVAudioSessionModeMeasurement, 
-                       _AVAudioSessionModeMoviePlayback, _AVAudioSessionModeRaw, 
-                       _AVAudioSessionModeSOS, _AVAudioSessionModeSpatialRecording, 
+                       _AVAudioSessionModeLocatePhone, _AVAudioSessionModeLowLatency, 
+                       _AVAudioSessionModeMeasurement, _AVAudioSessionModeMoviePlayback, 
+                       _AVAudioSessionModeRaw, _AVAudioSessionModeSOS, _AVAudioSessionModeSpatialRecording, 
                        _AVAudioSessionModeSpeechRecognition, _AVAudioSessionModeSpokenAudio, 
                        _AVAudioSessionModeVideoChat, _AVAudioSessionModeVideoChatForMedia, 
                        _AVAudioSessionModeVideoRecording, _AVAudioSessionModeVoiceChat, 
@@ -1507,9 +1507,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0F009829-7EDD-3507-B36B-433B229E7F13
+    value:           624D59AF-76CC-339E-801B-A7BADEB2FD0A
   - target:          arm64-ios-simulator
-    value:           8AA1ACF4-AA6C-3C81-B6CB-18E47AB73B2A
+    value:           09E7DEDD-E342-3121-B76D-A4DC15ECE99E
 install-name:    '/System/Library/PrivateFrameworks/AVFCapture.framework/AVFCapture'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1640,6 +1640,10 @@ targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator
 uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
+  - target:          x86_64-ios-simulator
+    value:           60E41716-B83B-3C7E-B733-0A36E96327AF
+  - target:          arm64-ios-simulator
+    value:           78C83916-FC83-3174-941D-99721BF1C636
 install-name:    '/System/Library/PrivateFrameworks/AVFCore.framework/AVFCore'
 allowable-clients:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2111,8 +2115,10 @@ exports:
                        _AVOutputContextAddOutputDeviceOptionInitiator, _AVOutputContextCanSetVolumeDidChangeNotification, 
                        _AVOutputContextCommunicationChannelControlTypeDirect, _AVOutputContextCommunicationChannelControlTypeRelayed, 
                        _AVOutputContextCommunicationChannelOptionControlType, _AVOutputContextDestinationChangeCancellationReasonAuthorizationSkipped, 
-                       _AVOutputContextDestinationChangeInitiatedNotification, _AVOutputContextDestinationChangeInitiatorKey, 
-                       _AVOutputContextDestinationChangeKey, _AVOutputContextDeviceConnectionFailureReasonDeviceInUse, 
+                       _AVOutputContextDestinationChangeDeviceIDKey, _AVOutputContextDestinationChangeInitiatedNotification, 
+                       _AVOutputContextDestinationChangeInitiatorKey, _AVOutputContextDestinationChangeKey, 
+                       _AVOutputContextDestinationChangePreviousDeviceIDsKey, _AVOutputContextDestinationChangeReasonIdleDisconnect, 
+                       _AVOutputContextDestinationChangeReasonKey, _AVOutputContextDeviceConnectionFailureReasonDeviceInUse, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceNotConnectedToInternet, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceNotMFiCertified, 
                        _AVOutputContextDeviceConnectionFailureReasonDeviceOutOfRange, 
@@ -2235,12 +2241,13 @@ exports:
                        _AVURLAssetLoggingIdentifier, _AVURLAssetMaxSizeAllowedForCellularAccessKey, 
                        _AVURLAssetNetworkLatencyMitigationKeyPodcastsOnly, _AVURLAssetNetworkProbeRequestDisabledKey, 
                        _AVURLAssetOptimizeAccessForLinearMoviePlaybackKey, _AVURLAssetOutOfBandAlternateTracksKey, 
-                       _AVURLAssetOutOfBandMIMETypeKey, _AVURLAssetPreferLargeResourceRequests, 
-                       _AVURLAssetPreferPreciseDurationAndTimingKey, _AVURLAssetPreloadDurationWhenNextItemKey, 
-                       _AVURLAssetProtectedContentSupportStorageURLKey, _AVURLAssetPurchaseBundleKey, 
-                       _AVURLAssetReadAheadOnByteStreamCreationEnabledKey, _AVURLAssetReferenceRestrictionsKey, 
-                       _AVURLAssetRemoteCustomURLHandlerContextKey, _AVURLAssetRequiresCustomURLLoadingKey, 
-                       _AVURLAssetSSLPropertiesKey, _AVURLAssetShouldMatchDataInCacheByURLPathComponentOnlyKey, 
+                       _AVURLAssetOutOfBandMIMETypeKey, _AVURLAssetParentNetworkActivityKey, 
+                       _AVURLAssetPreferLargeResourceRequests, _AVURLAssetPreferPreciseDurationAndTimingKey, 
+                       _AVURLAssetPreloadDurationWhenNextItemKey, _AVURLAssetProtectedContentSupportStorageURLKey, 
+                       _AVURLAssetPurchaseBundleKey, _AVURLAssetReadAheadOnByteStreamCreationEnabledKey, 
+                       _AVURLAssetReferenceRestrictionsKey, _AVURLAssetRemoteCustomURLHandlerContextKey, 
+                       _AVURLAssetRequiresCustomURLLoadingKey, _AVURLAssetSSLPropertiesKey, 
+                       _AVURLAssetShouldMatchDataInCacheByURLPathComponentOnlyKey, 
                        _AVURLAssetShouldMatchDataInCacheByURLWithoutQueryComponentKey, 
                        _AVURLAssetTypeKey, _AVURLAssetUnitTestOptions, _AVURLAssetUseAppleWirelessDirectLinkKey, 
                        _AVURLAssetUseClientURLLoadingExclusively, _AVURLAssetUsesNoPersistentCacheKey, 

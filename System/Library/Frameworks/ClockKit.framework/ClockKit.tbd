@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D245055B-B64E-3DF9-B3E7-17C496B4095F
+    value:           90A5738C-4452-316A-BD01-1575EF1E6D14
   - target:          arm64-ios-simulator
-    value:           5B7A9B77-7CCC-368C-99D5-3C08B354EF71
+    value:           E3A7AE6A-86D0-3C0C-B6F3-A2CBA26AE13A
 install-name:    '/System/Library/Frameworks/ClockKit.framework/ClockKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -61,7 +61,8 @@ exports:
                        _CLKInterpolateBetweenPoints, _CLKInterpolateBetweenRects, 
                        _CLKInterpolateBetweenRectsUnclipped, _CLKInterpolateBetweenSizes, 
                        _CLKInterpolateBetweenTransform, _CLKInterpolateBetweenVectors, 
-                       _CLKIsBeingDebugged, _CLKIsClockFaceApp, _CLKIsComplicationFamilySupportedOnDevice, 
+                       _CLKInterpolateShortestPathBetweenAnglesClipped, _CLKInterpolateShortestPathBetweenAnglesUnclipped, 
+                       _CLKIsBeingDebugged, _CLKIsBridge, _CLKIsClockFaceApp, _CLKIsComplicationFamilySupportedOnDevice, 
                        _CLKIsCurrentLocaleCJK, _CLKIsCurrentLocaleNonLatin, _CLKIsDaemon, 
                        _CLKIsDateAfter5PM, _CLKIsFaceSnapshotService, _CLKIsUVPreviewApp, 
                        _CLKIsValidComplicationColumnAlignment, _CLKIsValidComplicationDynamicFontSize, 

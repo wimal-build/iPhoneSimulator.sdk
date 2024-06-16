@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           11F52E90-2024-31DE-A41E-F8BE16C47CA2
+    value:           A4BCBBE1-7BC4-3BF9-8EE5-BCD04328D910
   - target:          arm64-ios-simulator
-    value:           8912293B-ACB0-3CBA-9ED0-4CA6A71CB18D
+    value:           A5FD0312-D614-35EC-8D30-8DF955AF68F8
 install-name:    '/System/Library/Frameworks/CoreServices.framework/CoreServices'
-current-version: 1116.2.2
+current-version: 1116.2.4
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
     symbols:         [ '$ld$install_name$os10.0$/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices', 

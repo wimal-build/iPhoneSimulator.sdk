@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           94A5B7D6-C388-3871-86C7-46BBC5B7BC9B
+    value:           0B62DE5E-B828-357D-AA34-0B3FACAC7F3E
   - target:          arm64-ios-simulator
-    value:           4B5A87C5-AFC6-39BE-BED0-8C3C2C48C85C
+    value:           3625678B-4388-3829-8315-6E6953C744A6
 install-name:    '/System/Library/Frameworks/_AVKit_SwiftUI.framework/_AVKit_SwiftUI'
 swift-abi-version: 7
 exports:

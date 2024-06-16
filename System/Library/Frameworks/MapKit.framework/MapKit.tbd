@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B88CB1EF-4A48-3C67-B747-24D09C2CCF4F
   - target:          x86_64-ios-simulator
-    value:           2123DE48-D231-39E6-A36B-C2FE92A7F15A
+    value:           02B82F5F-0CDB-3AD2-8BB0-7378E60DFA42
   - target:          arm64-ios-simulator
-    value:           2C7B52D2-C400-32D9-AA69-1C36BE1FA7A0
+    value:           F8B8F48E-3BF2-3FCB-9BB1-D4CA77F23D0F
 install-name:    '/System/Library/Frameworks/MapKit.framework/MapKit'
 current-version: 14
 exports:
@@ -221,7 +221,8 @@ exports:
                        _MapKitConfig_MKCollectionCoverPhotoCacheDiskCapacity, _MapKitConfig_MKCollectionCoverPhotoCacheMemoryCapacity, 
                        _MapKitConfig_MKHasUserGivenInformedConsentToAddContributions, 
                        _MapKitConfig_MKLocalSearchCompleter_MaxConcurrentRequests, 
-                       _MapKitConfig_MKLocalSearchMaxResultsCountDefault, _MapKitConfig_MapTextSize, 
+                       _MapKitConfig_MKLocalSearchMaxResultsCountDefault, _MapKitConfig_MKWebContentDefaultHeight, 
+                       _MapKitConfig_MKWebContentMaxHeight, _MapKitConfig_MapTextSize, 
                        _MapKitConfig_MapViewProcessShouldForceManifestUpdate, _MapKitConfig_MapsLaunchShouldForceManifestUpdate, 
                        _MapKitConfig_MapsSuggestionsPredictorConnectionLeewayInSecondsKey, 
                        _MapKitConfig_MapsSuggestionsPredictorConnectionTimeoutInSecondsKey, 

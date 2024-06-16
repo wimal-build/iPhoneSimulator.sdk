@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           47B2B545-F10F-3FEA-BFB7-0A52EC1F9F5F
   - target:          x86_64-ios-simulator
-    value:           1DC67F60-2B43-343E-AFE2-8FBD09622866
+    value:           38BD7C4A-9A5C-33C7-A2EA-D4596C295530
   - target:          arm64-ios-simulator
-    value:           DDFB8A59-1BE2-3382-8579-A87BF0199521
+    value:           0E00FC6B-7328-34FE-9A76-F32AF36A389C
 install-name:    '/System/Library/Frameworks/Network.framework/Network'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -41,7 +41,7 @@ exports:
                        _NWUtilsCreateNSStringFromSockaddr, _NWUtilsCreateXPCDictionaryFromNSDictionary, 
                        _NWUtilsStringMatchesPattern, __NWConnectionWriteCompletionIdempotent, 
                        _updateOSLogPlistFromLevel ]
-    objc-classes:    [ NWAccumulation, NWAccumulator, NWActivityEmptyTrigger, NWActivityEpilogueStatistics, 
+    objc-classes:    [ NWAccumulator, NWActivityEmptyTrigger, NWActivityEpilogueStatistics, 
                        NWActivityStatistics, NWAddressEndpoint, NWAdvertiseDescriptor, 
                        NWBonjourBrowseDescriptor, NWBonjourServiceEndpoint, NWBrowseDescriptor, 
                        NWBrowser, NWCandidatePathMonitor, NWConnection, NWConnectionStatistics, 

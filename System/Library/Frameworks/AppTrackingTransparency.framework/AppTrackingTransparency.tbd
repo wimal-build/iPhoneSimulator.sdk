@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           95A44105-FB45-34F5-A8B3-BC0116396A97
+    value:           9092C1EC-168F-39EB-B93D-B5D473657DB9
   - target:          arm64-ios-simulator
-    value:           09C246B6-E283-3956-AC50-9D183D91504C
+    value:           EE6CF6B0-643E-3A97-9497-43A2AAB9BA3E
 install-name:    '/System/Library/Frameworks/AppTrackingTransparency.framework/AppTrackingTransparency'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

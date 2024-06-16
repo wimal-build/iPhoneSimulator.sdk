@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6E34C14A-1B73-3739-B24D-702B355402D3
+    value:           56496093-74A5-386D-AB0D-CF3989CFC246
   - target:          arm64-ios-simulator
-    value:           9BFA10B2-AD93-3A42-96C9-98BB517AFF18
+    value:           F3E00AA0-4810-34BF-BA47-02F9F40E05C5
 install-name:    '/usr/lib/libSystem.B.dylib'
 current-version: 1292
 reexported-libraries:
@@ -49,9 +49,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D986B653-2714-3F3D-BB1D-0CAC9558252C
   - target:          x86_64-ios-simulator
-    value:           C7C5D3F3-0E15-3DC6-B92D-3C101FD3DE35
+    value:           07EA6AA1-58A7-3D1D-A43C-1F9114DABD0D
   - target:          arm64-ios-simulator
-    value:           653C6A63-9AFA-3C2D-AE52-7CECBA81715B
+    value:           A1DB34B1-C71B-35CD-8F7A-4FE88380AB42
 install-name:    '/usr/lib/system/libcache.dylib'
 current-version: 83
 parent-umbrella:
@@ -79,19 +79,20 @@ uuids:
   - target:          i386-ios-simulator
     value:           2E88EC2B-F951-3D76-B114-F6CC635EFE8C
   - target:          x86_64-ios-simulator
-    value:           39BF92A8-B459-3064-A29F-015EC51C285D
+    value:           59157B86-C073-374A-B213-7E3F71C531E3
   - target:          arm64-ios-simulator
-    value:           289EA534-61C3-320D-B99E-C140EC793D54
+    value:           6803663B-DEBD-3BD5-8F5E-3AA0852CA528
 install-name:    '/usr/lib/system/libcommonCrypto.dylib'
-current-version: 60178
+current-version: 60178.40.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
 exports:
   - targets:         [ i386-ios-simulator ]
-    symbols:         [ _CCBigNumDiv2, _CCBigNumGCD, _CCBigNumIsOdd, _CCBigNumLCM, 
-                       _CCBigNumMontgomeryNormalization, _CCBigNumMontgomeryReduce, 
-                       _CCBigNumMontgomerySetup, _CCRNGCreate, _CCRNGRelease, _CCRSACryptorCreatePairFromData, 
+    symbols:         [ _CCBigNumDiv2, _CCBigNumGCD, _CCBigNumInverseMod, _CCBigNumIsOdd, 
+                       _CCBigNumLCM, _CCBigNumMontgomeryNormalization, _CCBigNumMontgomeryReduce, 
+                       _CCBigNumMontgomerySetup, _CCBigNumSquare, _CCBigNumSquareMod, 
+                       _CCRNGCreate, _CCRNGRelease, _CCRSACryptorCreatePairFromData, 
                        _CC_RC4, _CC_RC4_set_key ]
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CCAESCmac, _CCAESCmacCreate, _CCAESCmacDestroy, _CCAESCmacFinal, 
@@ -99,11 +100,10 @@ exports:
                        _CCBigNumAddI, _CCBigNumBitCount, _CCBigNumByteCount, _CCBigNumClear, 
                        _CCBigNumCompare, _CCBigNumCompareI, _CCBigNumCopy, _CCBigNumCreateRandom, 
                        _CCBigNumDiv, _CCBigNumFree, _CCBigNumFromData, _CCBigNumFromDecimalString, 
-                       _CCBigNumFromHexString, _CCBigNumGetI, _CCBigNumInverseMod, 
-                       _CCBigNumIsNegative, _CCBigNumIsPrime, _CCBigNumIsZero, _CCBigNumLeftShift, 
-                       _CCBigNumMod, _CCBigNumModExp, _CCBigNumModI, _CCBigNumMul, 
-                       _CCBigNumMulI, _CCBigNumMulMod, _CCBigNumRightShift, _CCBigNumSetI, 
-                       _CCBigNumSetNegative, _CCBigNumSquare, _CCBigNumSquareMod, 
+                       _CCBigNumFromHexString, _CCBigNumGetI, _CCBigNumIsNegative, 
+                       _CCBigNumIsPrime, _CCBigNumIsZero, _CCBigNumLeftShift, _CCBigNumMod, 
+                       _CCBigNumModExp, _CCBigNumModI, _CCBigNumMul, _CCBigNumMulI, 
+                       _CCBigNumMulMod, _CCBigNumRightShift, _CCBigNumSetI, _CCBigNumSetNegative, 
                        _CCBigNumSub, _CCBigNumSubI, _CCBigNumToData, _CCBigNumToDecimalString, 
                        _CCBigNumToHexString, _CCBigNumZeroLSBCount, _CCCKGContributorCommit, 
                        _CCCKGContributorCreate, _CCCKGContributorDestroy, _CCCKGContributorFinish, 
@@ -173,9 +173,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D8628B7C-7D84-38E0-A80E-E38B64402F1C
   - target:          x86_64-ios-simulator
-    value:           E9587C56-B503-3195-A8E7-EBD5A98260D6
+    value:           E80E864B-7DF2-32BD-86DB-C96E193D1F0C
   - target:          arm64-ios-simulator
-    value:           8E831850-EEEE-32B3-A50E-BF46DC0F5C8D
+    value:           4168B58A-DA72-382E-AB10-808800146D59
 install-name:    '/usr/lib/system/libcompiler_rt.dylib'
 current-version: 102.3
 parent-umbrella:
@@ -368,9 +368,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           C26F1F85-E9E0-33E9-9005-F269F30AD13C
   - target:          x86_64-ios-simulator
-    value:           AB7442DE-0149-37D1-97E8-95037B0E6C0B
+    value:           8EE17C80-E264-3363-B141-BCF6B89679C7
   - target:          arm64-ios-simulator
-    value:           07A78E42-9B6D-3CD8-91A7-D0023553BF39
+    value:           EC770B74-BE81-3ED2-BD5A-0F367048C909
 install-name:    '/usr/lib/system/libcopyfile.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -389,11 +389,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1083CFDB-EBA8-3211-B488-CC549B5DDD4D
   - target:          x86_64-ios-simulator
-    value:           516F1B2A-3762-3A87-9215-BED0CE878161
+    value:           32F2A5CF-2FAC-3AF1-BC39-41E20B0205C5
   - target:          arm64-ios-simulator
-    value:           BBD0BF97-20B0-30F1-A33C-68130B798081
+    value:           94D5FFF5-0DD7-3911-B681-4E8C55FAA25B
 install-name:    '/usr/lib/system/libcorecrypto.dylib'
-current-version: 1000.0.5
+current-version: 1000.40.21
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -406,12 +406,14 @@ exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _DYLIB_FIPS_POST, _cc_is_compiled_with_tu, _cc_mux2p, _ccn_div_equal_size, 
                        _ccprime_rabin_miller, _ccrmd128_ltc_di, _ccrmd256_ltc_di, 
-                       _ccrmd320_ltc_di, _ccrsa_crt_makekey, _ccrsa_sign_pkcs1v15_blinded, 
-                       _ccrsa_sign_pss_blinded, _ccz_gcd, _ccz_lcm, _ccz_lprint, 
-                       _ccz_print, _cczp_inv_field, _cczp_inv_odd, _cczp_mod, _cczp_modn, 
-                       _cczp_mul, _vng_aes_decrypt_aesni, _vng_aes_decrypt_aesni_cbc, 
-                       _vng_aes_decrypt_opt, _vng_aes_decrypt_opt_cbc, _vng_aes_encrypt_aesni, 
-                       _vng_aes_encrypt_aesni_cbc, _vng_aes_encrypt_opt, _vng_aes_encrypt_opt_cbc ]
+                       _ccrmd320_ltc_di, _ccrsa_crt_makekey, _ccrsa_generate_fips186_key_trace, 
+                       _ccrsa_make_fips186_key, _ccrsa_make_fips186_key_trace, _ccrsa_sign_pkcs1v15_blinded, 
+                       _ccrsa_sign_pss_blinded, _ccz_gcd, _ccz_invmod, _ccz_lcm, 
+                       _ccz_lprint, _ccz_print, _ccz_sqr, _ccz_sqrmod, _cczp_inv, 
+                       _cczp_inv_field, _cczp_inv_odd, _cczp_mod, _cczp_modn, _cczp_mul, 
+                       _vng_aes_decrypt_aesni, _vng_aes_decrypt_aesni_cbc, _vng_aes_decrypt_opt, 
+                       _vng_aes_decrypt_opt_cbc, _vng_aes_encrypt_aesni, _vng_aes_encrypt_aesni_cbc, 
+                       _vng_aes_encrypt_opt, _vng_aes_encrypt_opt_cbc ]
   - targets:         [ x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ccaes_intel_cbc_decrypt_aesni_mode, _ccaes_intel_cbc_decrypt_opt_mode, 
                        _ccaes_intel_cbc_encrypt_aesni_mode, _ccaes_intel_cbc_encrypt_opt_mode, 
@@ -586,15 +588,13 @@ exports:
                        _ccrsa_eme_pkcs1v15_decode, _ccrsa_eme_pkcs1v15_encode, _ccrsa_emsa_pkcs1v15_encode, 
                        _ccrsa_emsa_pkcs1v15_verify, _ccrsa_emsa_pss_decode, _ccrsa_emsa_pss_encode, 
                        _ccrsa_encrypt_eme_pkcs1v15, _ccrsa_encrypt_oaep, _ccrsa_export_pub, 
-                       _ccrsa_generate_fips186_key, _ccrsa_generate_fips186_key_trace, 
-                       _ccrsa_generate_key, _ccrsa_get_fullkey_components, _ccrsa_get_pubkey_components, 
-                       _ccrsa_import_pub, _ccrsa_init_pub, _ccrsa_make_fips186_key, 
-                       _ccrsa_make_fips186_key_trace, _ccrsa_make_priv, _ccrsa_make_pub, 
-                       _ccrsa_oaep_decode_parameter, _ccrsa_oaep_encode_parameter, 
-                       _ccrsa_priv_crypt, _ccrsa_priv_crypt_blinded, _ccrsa_pub_crypt, 
-                       _ccrsa_pubkeylength, _ccrsa_recover_priv, _ccrsa_sign_pkcs1v15, 
-                       _ccrsa_sign_pkcs1v15_msg, _ccrsa_sign_pss, _ccrsa_sign_pss_msg, 
-                       _ccrsa_verify_pkcs1v15, _ccrsa_verify_pkcs1v15_allowshortsigs, 
+                       _ccrsa_generate_fips186_key, _ccrsa_generate_key, _ccrsa_get_fullkey_components, 
+                       _ccrsa_get_pubkey_components, _ccrsa_import_pub, _ccrsa_init_pub, 
+                       _ccrsa_make_priv, _ccrsa_make_pub, _ccrsa_oaep_decode_parameter, 
+                       _ccrsa_oaep_encode_parameter, _ccrsa_priv_crypt, _ccrsa_priv_crypt_blinded, 
+                       _ccrsa_pub_crypt, _ccrsa_pubkeylength, _ccrsa_recover_priv, 
+                       _ccrsa_sign_pkcs1v15, _ccrsa_sign_pkcs1v15_msg, _ccrsa_sign_pss, 
+                       _ccrsa_sign_pss_msg, _ccrsa_verify_pkcs1v15, _ccrsa_verify_pkcs1v15_allowshortsigs, 
                        _ccrsa_verify_pkcs1v15_digest, _ccrsa_verify_pkcs1v15_msg, 
                        _ccrsa_verify_pss, _ccrsa_verify_pss_digest, _ccrsa_verify_pss_msg, 
                        _ccscrypt, _ccscrypt_storage_size, _ccsha1_di, _ccsha1_eay_di, 
@@ -627,15 +627,15 @@ exports:
                        _ccwrap_auth_encrypt_withiv, _ccwrap_unwrapped_size, _ccwrap_wrapped_size, 
                        _ccxts_one_shot, _ccz_add, _ccz_addi, _ccz_bit, _ccz_bitlen, 
                        _ccz_cmp, _ccz_cmpi, _ccz_divmod, _ccz_expmod, _ccz_free, 
-                       _ccz_init, _ccz_invmod, _ccz_is_negative, _ccz_is_one, _ccz_is_prime, 
-                       _ccz_is_zero, _ccz_lsl, _ccz_lsr, _ccz_mod, _ccz_mul, _ccz_muli, 
-                       _ccz_mulmod, _ccz_neg, _ccz_random_bits, _ccz_read_radix, 
-                       _ccz_read_uint, _ccz_set, _ccz_set_bit, _ccz_seti, _ccz_size, 
-                       _ccz_sqr, _ccz_sqrmod, _ccz_sub, _ccz_subi, _ccz_trailing_zeros, 
-                       _ccz_write_int, _ccz_write_int_size, _ccz_write_radix, _ccz_write_radix_size, 
-                       _ccz_write_uint, _ccz_write_uint_size, _ccz_zero, _cczp_init, 
-                       _cczp_init_with_recip, _cczp_inv, _cczp_power, _csss_shamir_share_bag_can_recover_secret, 
-                       _fipspost_post, _fipspost_trace_vtable ]
+                       _ccz_init, _ccz_is_negative, _ccz_is_one, _ccz_is_prime, _ccz_is_zero, 
+                       _ccz_lsl, _ccz_lsr, _ccz_mod, _ccz_mul, _ccz_muli, _ccz_mulmod, 
+                       _ccz_neg, _ccz_random_bits, _ccz_read_radix, _ccz_read_uint, 
+                       _ccz_set, _ccz_set_bit, _ccz_seti, _ccz_size, _ccz_sub, _ccz_subi, 
+                       _ccz_trailing_zeros, _ccz_write_int, _ccz_write_int_size, 
+                       _ccz_write_radix, _ccz_write_radix_size, _ccz_write_uint, 
+                       _ccz_write_uint_size, _ccz_zero, _cczp_init, _cczp_init_with_recip, 
+                       _cczp_power, _csss_shamir_share_bag_can_recover_secret, _fipspost_post, 
+                       _fipspost_trace_vtable ]
 --- !tapi-tbd
 tbd-version:     4
 targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -643,11 +643,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A291C67D-2E52-3E09-BCCE-D962EF8B51C6
   - target:          x86_64-ios-simulator
-    value:           8CB0A417-48E2-3A67-9B93-3930705EC30E
+    value:           9D44EA94-6806-3870-B375-9AEC0C159DA4
   - target:          arm64-ios-simulator
-    value:           E2B54FC5-F974-327D-AAB8-258D4AC9C7F6
+    value:           F52E8F5F-4472-337B-94E0-189AD767537B
 install-name:    '/usr/lib/system/libdispatch.dylib'
-current-version: 1271.0.4
+current-version: 1271.40.12
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -806,9 +806,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           03523D41-C2CD-31EC-8B43-E76F84CD7466
   - target:          x86_64-ios-simulator
-    value:           5BD6D5EC-1AEB-3CC9-AA5E-5E1DB4AC2A49
+    value:           5E7C90FB-DD12-3748-87E1-9F91C2D5A70F
   - target:          arm64-ios-simulator
-    value:           0049093D-D75F-3D1F-9C16-7FD13A262FDA
+    value:           C3145031-9A25-3F2A-B7C9-C795D5CE0CA4
 install-name:    '/usr/lib/system/libdyld.dylib'
 current-version: 828.5
 parent-umbrella:
@@ -862,11 +862,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           CBFD7F72-76F5-35CA-AB86-B21A64FE2CE6
   - target:          x86_64-ios-simulator
-    value:           F2426EB2-539C-3595-9C05-89B846B589C1
+    value:           DD0F3E22-C953-31FD-8011-6D251FAAA05A
   - target:          arm64-ios-simulator
-    value:           B0E231CE-63BC-3646-99DC-0A9D2D7ECA2D
+    value:           A8D77B47-80DB-3AFA-95F5-1F3677211A60
 install-name:    '/usr/lib/system/liblaunch.dylib'
-current-version: 2038.0.15
+current-version: 2038.40.38
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -920,9 +920,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           88D2A362-C296-3072-A2E5-F3F4994DA069
   - target:          x86_64-ios-simulator
-    value:           20FFF494-10BE-37D4-A86B-8E597A8A47F8
+    value:           AE5114C9-02FE-3A4F-BDDE-507C85195FEF
   - target:          arm64-ios-simulator
-    value:           070BE017-1FDC-341A-BCA2-CF70A643CE46
+    value:           2F6BCABE-F115-3E16-8C23-78631FFEC52F
 install-name:    '/usr/lib/system/libmacho.dylib'
 current-version: 973.0.1
 parent-umbrella:
@@ -975,11 +975,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           FBB37E22-AE1F-3020-B319-7D325CEE2D2E
   - target:          x86_64-ios-simulator
-    value:           D256DEF5-9640-3791-8F9B-099534E0BBA3
+    value:           2F59D524-A4D8-39ED-BB88-CEF1321DC7CA
   - target:          arm64-ios-simulator
-    value:           2972D0D8-EBA9-34DE-A784-BA147520CFD4
+    value:           69E9CA25-A7E3-3B63-8A54-043020CD4857
 install-name:    '/usr/lib/system/libremovefile.dylib'
-current-version: 49.0.1
+current-version: 49.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -999,9 +999,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E43914E6-C4F6-3750-BF7D-16CC4220B12A
   - target:          x86_64-ios-simulator
-    value:           2F8C98B3-F73A-3EA4-9F4E-C02C6E21EA41
+    value:           1E0EE86E-C056-3F7C-B7E5-FF70050F240D
   - target:          arm64-ios-simulator
-    value:           D7DA4A2D-1C51-3F48-B675-AEB3A4700391
+    value:           370350AC-1780-3254-8537-C87B0225421B
 install-name:    '/usr/lib/system/libsystem_asl.dylib'
 current-version: 385
 parent-umbrella:
@@ -1086,9 +1086,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           35BCAF77-06DE-302B-A5CA-EC3E73F59412
   - target:          x86_64-ios-simulator
-    value:           94AE3CD7-9EA1-3BDA-8B71-740DD76109D6
+    value:           92E02106-AB52-3C0A-90E2-9AA5F35FD8F3
   - target:          arm64-ios-simulator
-    value:           D2222830-8B88-39A0-965D-B34E2F04B3FB
+    value:           6AF5B3D8-6295-3608-B2FE-C7205453E943
 install-name:    '/usr/lib/system/libsystem_blocks.dylib'
 current-version: 78
 parent-umbrella:
@@ -1111,11 +1111,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           8402DF3A-C712-3D6B-B2E7-3C136E47B208
   - target:          x86_64-ios-simulator
-    value:           81EF6166-64BE-38B5-A10D-41E8B1280B74
+    value:           555E5E98-1EB5-33B9-BA34-2AFCB06A9C21
   - target:          arm64-ios-simulator
-    value:           284AFBD4-C26B-38A1-A41F-0DD123803D17
+    value:           F63B824A-1DAC-3218-AF5A-EDFEC02E06D5
 install-name:    '/usr/lib/system/libsystem_c.dylib'
-current-version: 1439.0.3
+current-version: 1439.40.11
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1405,11 +1405,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           469C6D04-FE3E-3C7F-A3A7-289B2B102E9A
+    value:           6FA21215-5CE1-3AEB-ABF6-CF3C3518BE2B
   - target:          arm64-ios-simulator
-    value:           278F8A95-3CFD-3929-A8D6-6F61CFD60281
+    value:           F68C3435-BCAF-385A-A58B-886924D9A70B
 install-name:    '/usr/lib/system/libsystem_collections.dylib'
-current-version: 1439.0.3
+current-version: 1439.40.11
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1431,11 +1431,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           9E115698-B158-3A49-878B-680E4FE4D8FC
   - target:          x86_64-ios-simulator
-    value:           B7E12274-F010-31BB-AD13-41DE4FDDC32A
+    value:           9F02F335-5D46-3FDA-B79F-75CFEB27BB57
   - target:          arm64-ios-simulator
-    value:           61944F27-1FF3-3056-B045-79049ADDAC87
+    value:           4C65B922-D6DA-3A66-A626-E4CF16D33A33
 install-name:    '/usr/lib/system/libsystem_configuration.dylib'
-current-version: 1109.0.4
+current-version: 1109.40.9
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1460,9 +1460,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7FE4AE9B-24C3-343B-A816-49226CB3E125
   - target:          x86_64-ios-simulator
-    value:           4E4B9CA0-E69A-31F6-A45E-0B26462D0319
+    value:           68E1E451-973F-32AB-A809-62ABAABA3C9D
   - target:          arm64-ios-simulator
-    value:           A298A575-E1B7-3D12-8DD2-2441B7D1C046
+    value:           91DAE6F6-0D50-3B15-91EC-AA638D8C4D64
 install-name:    '/usr/lib/system/libsystem_containermanager.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1488,7 +1488,9 @@ exports:
                        _container_create_or_lookup, _container_create_or_lookup_app_group_path_by_app_group_identifier, 
                        _container_create_or_lookup_app_group_paths, _container_create_or_lookup_app_group_paths_for_current_user, 
                        _container_create_or_lookup_app_group_paths_for_platform, 
-                       _container_create_or_lookup_for_current_user, _container_create_or_lookup_group_container_paths_for_current_user, 
+                       _container_create_or_lookup_app_group_paths_from_entitlements, 
+                       _container_create_or_lookup_for_current_user, _container_create_or_lookup_for_platform, 
+                       _container_create_or_lookup_group_container_paths_for_current_user, 
                        _container_create_or_lookup_path, _container_create_or_lookup_path_for_current_user, 
                        _container_create_or_lookup_path_for_platform, _container_create_or_lookup_system_group_paths, 
                        _container_create_or_lookup_user_managed_assets_path, _container_create_or_lookup_user_managed_assets_relative_path, 
@@ -1497,10 +1499,11 @@ exports:
                        _container_delete_array_of_containers, _container_delete_user_managed_assets, 
                        _container_delete_with_class_and_identifier_for_current_user, 
                        _container_delete_with_uid_class_and_identifier, _container_disk_usage, 
-                       _container_flush_container_cache, _container_flush_persona_cache, 
-                       _container_free_array_of_containers, _container_free_client, 
-                       _container_free_object, _container_get_all_with_class, _container_get_all_with_class_for_current_user, 
-                       _container_get_class, _container_get_error_description, _container_get_identifier, 
+                       _container_error_is_fatal, _container_flush_container_cache, 
+                       _container_flush_persona_cache, _container_free_array_of_containers, 
+                       _container_free_client, _container_free_object, _container_get_all_with_class, 
+                       _container_get_all_with_class_for_current_user, _container_get_class, 
+                       _container_get_error_description, _container_get_identifier, 
                        _container_get_persona_unique_string, _container_get_unique_path_component, 
                        _container_group_container_identifiers_for_current_user, _container_invalidate_code_signing_cache, 
                        _container_is_transient, _container_perform_data_migration, 
@@ -1519,9 +1522,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           28CDC4DF-7A1A-33C4-A4C0-D7D9EF21C912
   - target:          x86_64-ios-simulator
-    value:           7BA84C0B-E09E-3CFF-825B-CEC833C5F093
+    value:           51D84290-D1AB-3E12-A594-8317A1C2810D
   - target:          arm64-ios-simulator
-    value:           6EA53AF2-D8E1-34F4-ABA0-E05E1DC73152
+    value:           C12F378F-6CDF-3548-A071-141A0449152A
 install-name:    '/usr/lib/system/libsystem_coreservices.dylib'
 current-version: 125.2
 parent-umbrella:
@@ -1543,9 +1546,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           83E822C2-0E09-3728-8ECB-41ED3C68E407
+    value:           D82E5BEA-45C1-34FC-8C7E-083B24A9F77B
   - target:          arm64-ios-simulator
-    value:           56C0BADC-92AF-31E9-BBA8-7D277480E65E
+    value:           5ECC60EE-EAFA-37AF-B4BE-4FCE9C6347C3
 install-name:    '/usr/lib/system/libsystem_darwin.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -1580,11 +1583,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C29A298-C47F-3FED-89AB-B03FAB69787E
   - target:          x86_64-ios-simulator
-    value:           73EFA863-C297-3C67-9041-E4C12BDD6C1B
+    value:           95249F79-87E2-3A87-94F8-9D25C9D4A005
   - target:          arm64-ios-simulator
-    value:           65353210-92E2-37D0-80DD-F5335C52DD36
+    value:           A66B4592-AC0E-3287-A8E8-8770A9518972
 install-name:    '/usr/lib/system/libsystem_dnssd.dylib'
-current-version: 1310.11.1
+current-version: 1310.40.42
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1617,11 +1620,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           46696B40-A0CE-3B69-BB85-7ACA98BE10D4
+    value:           B94572B5-71DB-30A7-A0E7-949B919EB231
   - target:          arm64-ios-simulator
-    value:           73D1CD36-C769-3BE8-947E-B85BE7BB0331
+    value:           ABB5298D-6C96-3E6F-9626-A2489E51CD87
 install-name:    '/usr/lib/system/libsystem_featureflags.dylib'
-current-version: 28.0.1
+current-version: 28.40.2
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -1635,9 +1638,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DA29882D-3652-35B1-848B-93F2D4C871A4
   - target:          x86_64-ios-simulator
-    value:           D1C43C01-FE21-3B2C-8CF8-9005D343D6C0
+    value:           AB7D99DF-4868-37EA-AD2A-B1F352B37A66
   - target:          arm64-ios-simulator
-    value:           480A076E-38DA-3BF0-ABC3-F18E83191D68
+    value:           7A40B832-F3F5-31D1-9417-3CA17B0C75A8
 install-name:    '/usr/lib/system/libsystem_info.dylib'
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2294,11 +2297,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           6B90E2ED-9C95-36BD-A544-26C9332F4A50
   - target:          x86_64-ios-simulator
-    value:           04432947-8852-366C-A0A2-5FF0328EA85D
+    value:           B43DA127-83BC-3E98-A0D7-5633AF9724CB
   - target:          arm64-ios-simulator
-    value:           C3E11EBD-393E-3643-8A81-32B0F2E3DDEA
+    value:           D620ED67-A114-3BD1-9353-9AFD3F4DAD08
 install-name:    '/usr/lib/system/libsystem_m.dylib'
-current-version: 3186.0.3
+current-version: 3186.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2391,11 +2394,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BC87C3F9-ACC0-314C-B2FF-00FB8BCC5BC3
   - target:          x86_64-ios-simulator
-    value:           5AFFD379-4770-3E70-A6B1-D9385E3831C2
+    value:           5F513433-D707-31FD-8E77-4A5BC1759363
   - target:          arm64-ios-simulator
-    value:           FD7E5C66-2BC6-366C-8BDB-FA8E7283DDD4
+    value:           57954868-22AA-3185-B2C8-F56186983C27
 install-name:    '/usr/lib/system/libsystem_malloc.dylib'
-current-version: 317.0.1
+current-version: 317.40.8
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2442,7 +2445,7 @@ exports:
                        _malloc_zone_memalign, _malloc_zone_pressure_relief, _malloc_zone_print, 
                        _malloc_zone_print_ptr_info, _malloc_zone_realloc, _malloc_zone_register, 
                        _malloc_zone_statistics, _malloc_zone_unregister, _malloc_zone_valloc, 
-                       _malloc_zones, _mstats, _pguard_diagnose_fault_from_crash_reporter, 
+                       _malloc_zones, _mstats, _pgm_diagnose_fault_from_crash_reporter, 
                        _posix_memalign, _realloc, '_reallocarray$DARWIN_EXTSN', '_reallocarrayf$DARWIN_EXTSN', 
                        _scalable_zone_info, _scalable_zone_statistics, _set_malloc_singlethreaded, 
                        _stack_logging_enable_logging, _szone_check_counter, _szone_check_modulo, 
@@ -2455,11 +2458,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           ABD5F0CD-741B-3361-8438-879572813CFD
   - target:          x86_64-ios-simulator
-    value:           EA84AC20-C7D2-34B8-B989-E7D6002EE312
+    value:           C11E632E-E533-3E76-B47C-6BCAF73E9D2F
   - target:          arm64-ios-simulator
-    value:           7309F095-0D19-39C6-8A6B-91BD0E9EA301
+    value:           C04ECD6C-5EB4-3A35-80A7-EDF9FDA649BC
 install-name:    '/usr/lib/system/libsystem_notify.dylib'
-current-version: 279.0.2
+current-version: 279.40.4
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ ___libsystem_notifyVersionNumber, ___libsystem_notifyVersionString, 
@@ -2595,11 +2598,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F978B262-C102-3A42-ADCC-C9C079EFFC8B
+    value:           7824995B-DEA2-3A1C-976A-EBAD32F351FA
   - target:          arm64-ios-simulator
-    value:           17690CA6-DFF2-3C07-91C1-0E7E68995820
+    value:           672BDA58-370A-3E78-97B0-E04D415F273C
 install-name:    '/usr/lib/system/libsystem_product_info_filter.dylib'
-current-version: 8.0.1
+current-version: 8.40.1
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2723,11 +2726,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1DA9DE88-C4BF-3F97-AA1B-A46EA5B3AFCD
   - target:          x86_64-ios-simulator
-    value:           B35C392E-00F0-3241-AE77-EEE216C3AEB8
+    value:           F9B8BAB0-0B7E-39BE-8594-6DC7FE72C474
   - target:          arm64-ios-simulator
-    value:           C451C5B5-48F5-3724-B9A6-18E4431FA48A
+    value:           CECD2BCE-E92D-3E6F-AFCC-683A03B3BC52
 install-name:    '/usr/lib/system/libsystem_sandbox.dylib'
-current-version: 1441.0.4
+current-version: 1441.40.38
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2795,11 +2798,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           6E681669-56A1-3BCF-A79F-84D0A847C923
   - target:          x86_64-ios-simulator
-    value:           38931110-B28B-348B-8BA6-62E9E89117B3
+    value:           7D3FC7C5-A6B1-3AAF-ADB7-363B79A94EFD
   - target:          arm64-ios-simulator
-    value:           ACCB63FF-FCC3-3D3B-8C96-504557AC1743
+    value:           4C12160C-1212-3B16-9308-17D7432ECBB3
 install-name:    '/usr/lib/system/libsystem_sim_kernel.dylib'
-current-version: 227.0.1
+current-version: 227.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2847,11 +2850,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1B395C10-C2B5-331C-876D-EAB9EB1B2640
   - target:          x86_64-ios-simulator
-    value:           92EBE71E-0ACC-3F0C-B39A-AB155F09FD34
+    value:           19AF472C-565B-3B88-962C-06BBC73BF42C
   - target:          arm64-ios-simulator
-    value:           880B1C0D-41A3-348A-9C9E-A6FEE638554B
+    value:           E41E47D1-F70E-396C-A091-FA1205943CDC
 install-name:    '/usr/lib/system/libsystem_sim_kernel_host.dylib'
-current-version: 227.0.1
+current-version: 227.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2890,11 +2893,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           361A3DC9-02CA-3986-B517-F32D5464335E
   - target:          x86_64-ios-simulator
-    value:           EEF3C8F1-E072-3159-A466-6EE601DE5C43
+    value:           25179979-EA74-3418-A01E-818F0D2A9906
   - target:          arm64-ios-simulator
-    value:           A0981536-EC66-35EC-8BD6-D2C406A3E0B1
+    value:           16417054-E0B5-36DD-A89B-7CDA8A0CC616
 install-name:    '/usr/lib/system/libsystem_sim_platform.dylib'
-current-version: 227.0.1
+current-version: 227.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2921,11 +2924,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           90AC4286-1A17-3F5F-8854-B35B03AE5C04
   - target:          x86_64-ios-simulator
-    value:           40FF96EF-0882-38A4-B7A0-DCB5C2BADD1D
+    value:           2E940813-78C3-3DD6-9B31-EA0B39541E1F
   - target:          arm64-ios-simulator
-    value:           AA9C7A79-2F77-3EF9-9093-1EAC13E95E83
+    value:           036A6622-A2B3-3258-8176-E606A9945219
 install-name:    '/usr/lib/system/libsystem_sim_platform_host.dylib'
-current-version: 227.0.1
+current-version: 227.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2957,11 +2960,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           043CEEB1-9F77-3DFF-8FFD-B52EAFEAC20E
   - target:          x86_64-ios-simulator
-    value:           071D64F6-007B-3F03-B4AC-9276A6906B33
+    value:           3D717F21-33BF-32CD-A2E8-A19BA30E43DF
   - target:          arm64-ios-simulator
-    value:           71CBA296-6A4F-333A-8939-785E11F3893E
+    value:           3C2932D2-083C-3F1C-8648-A12A61214876
 install-name:    '/usr/lib/system/libsystem_sim_pthread.dylib'
-current-version: 227.0.1
+current-version: 227.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -2992,11 +2995,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4D9AF813-6727-322C-8FE4-292A16A6920E
   - target:          x86_64-ios-simulator
-    value:           FA3119E4-8830-3562-80ED-F3278C6BBF0E
+    value:           55A5EE99-79E3-3E48-A8D6-9755BB699F71
   - target:          arm64-ios-simulator
-    value:           7BD64CCC-A0D1-3344-B74B-4DAFF0E9DBDE
+    value:           F6DB123F-C018-3E19-8687-E2C9BD118943
 install-name:    '/usr/lib/system/libsystem_sim_pthread_host.dylib'
-current-version: 227.0.1
+current-version: 227.40.3
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3021,11 +3024,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           C390410C-E91C-3A65-A63B-E19B68186F03
   - target:          x86_64-ios-simulator
-    value:           8EBB37F2-6ECA-30B8-BD2E-EAA26150A21B
+    value:           7FE9B462-AC91-34A8-B116-879CA0070A6E
   - target:          arm64-ios-simulator
-    value:           4187AC35-E3D3-399B-BE6D-17F4A88E8772
+    value:           04E4763C-569E-3691-9172-97C8DEF20EC5
 install-name:    '/usr/lib/system/libsystem_trace.dylib'
-current-version: 1277.0.9
+current-version: 1277.40.18
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3050,10 +3053,10 @@ exports:
                        __os_signpost_pack_fill, __os_signpost_pack_send, __os_state_request_for_pidlist, 
                        __os_trace_atm_diagnostic_config, __os_trace_calloc, __os_trace_commpage_compute, 
                        __os_trace_fdscandir_b, __os_trace_get_boot_uuid, __os_trace_get_image_info, 
-                       __os_trace_get_times_now, __os_trace_intprefsdir_path, __os_trace_is_development_build, 
-                       __os_trace_log_simple, __os_trace_macho_for_each_slice, __os_trace_malloc, 
-                       __os_trace_memdup, __os_trace_mmap, __os_trace_mmap_at, __os_trace_mmap_offset, 
-                       __os_trace_mode_match_4tests, __os_trace_prefs_latest_version_4tests, 
+                       __os_trace_get_times_now, __os_trace_getxattr_at, __os_trace_intprefsdir_path, 
+                       __os_trace_is_development_build, __os_trace_log_simple, __os_trace_macho_for_each_slice, 
+                       __os_trace_malloc, __os_trace_memdup, __os_trace_mmap, __os_trace_mmap_at, 
+                       __os_trace_mmap_offset, __os_trace_mode_match_4tests, __os_trace_prefs_latest_version_4tests, 
                        __os_trace_prefsdir_path, __os_trace_read_file_at, __os_trace_read_plist_at, 
                        __os_trace_realloc, __os_trace_scandir_free_namelist, __os_trace_set_diagnostic_flags, 
                        __os_trace_strdup, __os_trace_sysprefsdir_path, __os_trace_update_with_datavolume_4launchd, 
@@ -3091,9 +3094,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D068AE39-AB92-3E79-8EB7-64D6760D685C
   - target:          x86_64-ios-simulator
-    value:           C433A306-D862-3455-BF31-C2FD2AE39531
+    value:           CFAF8B5B-315D-31CF-8445-721D753237F8
   - target:          arm64-ios-simulator
-    value:           B311BAB3-5860-35A3-BDBE-A9CB8EEFAC7B
+    value:           BE9F44B4-F3D1-3E9C-AB66-95E439223231
 install-name:    '/usr/lib/system/libunwind.dylib'
 current-version: 200.10
 parent-umbrella:
@@ -3155,11 +3158,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           F175CC10-3583-37BF-A648-1E78235C2F05
   - target:          x86_64-ios-simulator
-    value:           5B766255-3DAE-3096-A090-3974BE256194
+    value:           BDCDB527-0E34-3346-8444-E8CEEF0377ED
   - target:          arm64-ios-simulator
-    value:           5F12A051-C1B4-300E-8139-AA14C65D09C7
+    value:           3663619C-A7D5-305E-B478-3AC0D2A8DCCE
 install-name:    '/usr/lib/system/libxpc.dylib'
-current-version: 2038.0.15
+current-version: 2038.40.38
 parent-umbrella:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
     umbrella:        System
@@ -3314,10 +3317,11 @@ exports:
                        _xpc_array_set_pointer, _xpc_array_set_string, _xpc_array_set_uint64, 
                        _xpc_array_set_uuid, _xpc_array_set_value, _xpc_atfork_child, 
                        _xpc_atfork_parent, _xpc_atfork_prepare, _xpc_binprefs_add, 
-                       _xpc_binprefs_alloc, _xpc_binprefs_copy, _xpc_binprefs_count, 
-                       _xpc_binprefs_cpu_subtype, _xpc_binprefs_cpu_type, _xpc_binprefs_init, 
-                       _xpc_binprefs_is_noop, _xpc_binprefs_set_psattr, _xpc_bool_create, 
-                       _xpc_bool_get_value, _xpc_bundle_copy_info_dictionary, _xpc_bundle_copy_resource_path, 
+                       _xpc_binprefs_alloc, _xpc_binprefs_copy, _xpc_binprefs_copy_description, 
+                       _xpc_binprefs_count, _xpc_binprefs_cpu_subtype, _xpc_binprefs_cpu_type, 
+                       _xpc_binprefs_equal, _xpc_binprefs_init, _xpc_binprefs_is_noop, 
+                       _xpc_binprefs_set_psattr, _xpc_bool_create, _xpc_bool_get_value, 
+                       _xpc_bundle_copy_info_dictionary, _xpc_bundle_copy_resource_path, 
                        _xpc_bundle_copy_services, _xpc_bundle_create, _xpc_bundle_create_from_origin, 
                        _xpc_bundle_create_main, _xpc_bundle_get_error, _xpc_bundle_get_executable_path, 
                        _xpc_bundle_get_info_dictionary, _xpc_bundle_get_path, _xpc_bundle_get_property, 
@@ -3339,17 +3343,17 @@ exports:
                        _xpc_connection_set_bs_type, _xpc_connection_set_context, 
                        _xpc_connection_set_event_channel, _xpc_connection_set_event_handler, 
                        _xpc_connection_set_finalizer_f, _xpc_connection_set_instance, 
-                       _xpc_connection_set_legacy, _xpc_connection_set_non_launching, 
-                       _xpc_connection_set_oneshot_instance, _xpc_connection_set_privileged, 
-                       _xpc_connection_set_qos_class_fallback, _xpc_connection_set_qos_class_floor, 
-                       _xpc_connection_set_target_queue, _xpc_connection_set_target_uid, 
-                       _xpc_connection_suspend, _xpc_copy, _xpc_copy_bootstrap, _xpc_copy_clean_description, 
-                       _xpc_copy_code_signing_identity_for_token, _xpc_copy_debug_description, 
-                       _xpc_copy_description, _xpc_copy_domain, _xpc_copy_entitlement_for_self, 
-                       _xpc_copy_entitlement_for_token, _xpc_copy_entitlements_data_for_token, 
-                       _xpc_copy_entitlements_for_pid, _xpc_copy_entitlements_for_self, 
-                       _xpc_copy_event, _xpc_copy_event_entitlements, _xpc_copy_short_description, 
-                       _xpc_create_from_plist, _xpc_create_from_plist_descriptor, 
+                       _xpc_connection_set_instance_binpref, _xpc_connection_set_legacy, 
+                       _xpc_connection_set_non_launching, _xpc_connection_set_oneshot_instance, 
+                       _xpc_connection_set_privileged, _xpc_connection_set_qos_class_fallback, 
+                       _xpc_connection_set_qos_class_floor, _xpc_connection_set_target_queue, 
+                       _xpc_connection_set_target_uid, _xpc_connection_suspend, _xpc_copy, 
+                       _xpc_copy_bootstrap, _xpc_copy_clean_description, _xpc_copy_code_signing_identity_for_token, 
+                       _xpc_copy_debug_description, _xpc_copy_description, _xpc_copy_domain, 
+                       _xpc_copy_entitlement_for_self, _xpc_copy_entitlement_for_token, 
+                       _xpc_copy_entitlements_data_for_token, _xpc_copy_entitlements_for_pid, 
+                       _xpc_copy_entitlements_for_self, _xpc_copy_event, _xpc_copy_event_entitlements, 
+                       _xpc_copy_short_description, _xpc_create_from_plist, _xpc_create_from_plist_descriptor, 
                        _xpc_create_from_serialization, _xpc_create_from_serialization_with_ool, 
                        _xpc_create_reply_with_format, _xpc_create_reply_with_format_and_arguments, 
                        _xpc_create_with_format, _xpc_create_with_format_and_arguments, 

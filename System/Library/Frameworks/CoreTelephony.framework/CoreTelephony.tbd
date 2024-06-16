@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B7BE9B71-705D-358E-8106-A588BEEF3FE1
   - target:          x86_64-ios-simulator
-    value:           C063D404-AEBC-3A56-805D-3093A00BCB20
+    value:           740EA461-90A0-3024-9442-25F018D386BF
   - target:          arm64-ios-simulator
-    value:           3BC15A04-1246-38F1-A453-E263105281A3
+    value:           A7843013-207D-3971-9F8B-7639666C745D
 install-name:    '/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony'
 current-version: 0
 exports:

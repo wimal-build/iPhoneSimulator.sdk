@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           770B4DFC-5EDD-353E-A6F8-5E34347FF371
   - target:          x86_64-ios-simulator
-    value:           888CEE8E-8D7E-358B-872B-FC3D144704AC
+    value:           DF0BE3F8-88F1-3C82-AFE4-D192D5BCEDD8
   - target:          arm64-ios-simulator
-    value:           0ED2BF5F-C691-3885-A24F-D52DFA5DE080
+    value:           0DC0C3D7-B059-3017-9045-DB6824B9CADC
 install-name:    '/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension'
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
@@ -672,10 +672,10 @@ exports:
                        NEProfilePayloadBase, NEProfilePayloadContentFilter, NEProvider, 
                        NEProviderServer, NEProxyConfigurationNetworkAgent, NEProxyServer, 
                        NEProxySettings, NETransparentProxyManager, NETransparentProxyNetworkSettings, 
-                       NETunnelNetworkSettings, NETunnelProvider, NETunnelProviderManager, 
-                       NETunnelProviderProtocol, NETunnelProviderSession, NEUserNotification, 
-                       NEUtilConfigurationClient, NEVPN, NEVPNApp, NEVPNConnection, 
-                       NEVPNIKEv1ProposalParameters, NEVPNIKEv2SecurityAssociationParameters, 
+                       NETransparentProxyProvider, NETunnelNetworkSettings, NETunnelProvider, 
+                       NETunnelProviderManager, NETunnelProviderProtocol, NETunnelProviderSession, 
+                       NEUserNotification, NEUtilConfigurationClient, NEVPN, NEVPNApp, 
+                       NEVPNConnection, NEVPNIKEv1ProposalParameters, NEVPNIKEv2SecurityAssociationParameters, 
                        NEVPNManager, NEVPNNetworkAgent, NEVPNProtocol, NEVPNProtocolIKEv2, 
                        NEVPNProtocolIPSec, NEVPNProtocolL2TP, NEVPNProtocolPPP, NEVPNProtocolPPTP, 
                        NEVPNProtocolPlugin, NWTLSParameters ]

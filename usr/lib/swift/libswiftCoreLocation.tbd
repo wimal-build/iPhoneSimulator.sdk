@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           A7588E0F-8DBC-3F35-9397-040F11B5B063
   - target:          x86_64-ios-simulator
-    value:           6E576290-B1DD-330E-9FC9-40BC35C97321
+    value:           200E928B-D78D-3D32-A583-39AF3690EBF0
   - target:          arm64-ios-simulator
-    value:           8373EF37-5C51-3216-95AD-9556A420CBFE
+    value:           A916F7BD-50E9-3563-A413-E810A5D578B8
 install-name:    '/usr/lib/swift/libswiftCoreLocation.dylib'
 current-version: 5
 swift-abi-version: 7

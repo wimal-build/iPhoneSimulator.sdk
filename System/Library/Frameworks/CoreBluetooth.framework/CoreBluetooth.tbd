@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           5AD11B18-4AF5-3CC4-9612-9C6B338B87BC
   - target:          x86_64-ios-simulator
-    value:           C7D599FB-5A23-3D96-8414-A7A460D17337
+    value:           A7050126-4283-3A49-8393-D9210580DDE4
   - target:          arm64-ios-simulator
-    value:           038368C1-6D1E-3F4A-B3D2-AC3728D9CCBE
+    value:           37FEE3AC-6E45-3ADA-90C0-03AAAABAC8A3
 install-name:    '/System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -129,13 +129,14 @@ exports:
                        _CBUUIDServiceChangedString, _CBUUIDSoftwareRevisionStringCharacteristicString, 
                        _CBUUIDStartStreamingCharacteristicString, _CBUUIDStopStreamingCharacteristicString, 
                        _CBUUIDSupportedCodecsCharacteristicString, _CBUUIDSystemIDCharacteristicString, 
-                       _CBXPCDecodeNSArrayOfNSData, _CBXPCEncodeNSArrayOfNSData, 
-                       _CBXPCGetNextClientID, _gCBDaemon ]
+                       _CBUUIDUARPDataControlPointCharacteristicString, _CBUUIDUnifiedAccessoryRestoreProtocolServiceString, 
+                       _CBXPCGetNextClientID, _gCBDaemonServer ]
     objc-classes:    [ BTDevicePicker, CBATTRequest, CBAttribute, CBCentral, CBCentralManager, 
                        CBCharacteristic, CBConnection, CBController, CBDescriptor, 
                        CBDevice, CBDiscovery, CBIdentity, CBL2CAPChannel, CBManager, 
                        CBMutableCharacteristic, CBMutableDescriptor, CBMutableService, 
                        CBPairingAgent, CBPeer, CBPeripheral, CBPeripheralManager, 
                        CBReadRequest, CBScalablePipe, CBScalablePipeManager, CBServer, 
-                       CBService, CBSpatialInteractionSession, CBUUID, CBWriteRequest ]
+                       CBService, CBSpatialInteractionSession, CBSpatialMeasurement, 
+                       CBUUID, CBWriteRequest ]
 ...

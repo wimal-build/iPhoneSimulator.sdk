@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           596CF1B2-A35F-36EB-91E3-70C3C8385731
+    value:           E4B7309D-2284-360E-A33D-4E7701FBDA5E
   - target:          arm64-ios-simulator
-    value:           A9ACA831-7667-34B0-8D3E-A17A1C7D36FE
+    value:           2AACBE3A-EADE-3EAE-81A4-51A3DFB99660
 install-name:    '/System/Library/Frameworks/AutomaticAssessmentConfiguration.framework/AutomaticAssessmentConfiguration'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

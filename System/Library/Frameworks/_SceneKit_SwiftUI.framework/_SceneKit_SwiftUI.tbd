@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8CE93C09-F935-3039-9D10-2B6F37BE6C9C
+    value:           47BBB4F5-E7DA-3723-89C5-8FC5469889F6
   - target:          arm64-ios-simulator
-    value:           FE032BCD-3E36-35F1-9556-CB4B91A8D414
+    value:           77EA57DF-FA40-3423-9C7D-0F18917108D0
 install-name:    '/System/Library/Frameworks/_SceneKit_SwiftUI.framework/_SceneKit_SwiftUI'
 swift-abi-version: 7
 exports:

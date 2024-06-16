@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           2A013C6E-E53F-3E50-B935-EA897A6E2263
   - target:          x86_64-ios-simulator
-    value:           098EBF78-25B7-3594-8523-53D5B169596C
+    value:           2EF6A4A0-D7D4-36C7-9932-5D622B51082C
   - target:          arm64-ios-simulator
-    value:           D245D347-C01B-3C5E-8418-8B23AFBDC5B0
+    value:           E4CA32D5-F751-381F-A0FE-550CBCC3CFC4
 install-name:    '/usr/lib/swift/libswiftNetwork.dylib'
-current-version: 2288.0.26
+current-version: 2288.40.53
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -1343,6 +1343,17 @@ exports:
                        '_$s7Network6NWPathV14remoteEndpointAA10NWEndpointOSgvg', 
                        '_$s7Network6NWPathV14remoteEndpointAA10NWEndpointOSgvpMV', 
                        '_$s7Network6NWPathV16debugDescriptionSSvg', '_$s7Network6NWPathV16debugDescriptionSSvpMV', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO05localA6DeniedyA2EmFWC', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO10wifiDeniedyA2EmFWC', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO12notAvailableyA2EmFWC', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO14cellularDeniedyA2EmFWC', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO2eeoiySbAE_AEtFZ', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO4hash4intoys6HasherVz_tF', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonO9hashValueSivg', '_$s7Network6NWPathV17UnsatisfiedReasonO9hashValueSivpMV', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonOMa', '_$s7Network6NWPathV17UnsatisfiedReasonOMn', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonON', '_$s7Network6NWPathV17UnsatisfiedReasonOSHAAMc', 
+                       '_$s7Network6NWPathV17UnsatisfiedReasonOSQAAMc', '_$s7Network6NWPathV17unsatisfiedReasonAC011UnsatisfiedD0Ovg', 
+                       '_$s7Network6NWPathV17unsatisfiedReasonAC011UnsatisfiedD0OvpMV', 
                        '_$s7Network6NWPathV17usesInterfaceTypeySbAA11NWInterfaceV0dE0OF', 
                        '_$s7Network6NWPathV19availableInterfacesSayAA11NWInterfaceVGvg', 
                        '_$s7Network6NWPathV19availableInterfacesSayAA11NWInterfaceVGvpMV', 

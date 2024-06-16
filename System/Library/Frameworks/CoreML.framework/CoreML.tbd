@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           45DA1DC2-EE9A-3C54-BA34-93527A38D2F7
+    value:           77142DF5-56E9-38A4-B56B-88870197C197
   - target:          arm64-ios-simulator
-    value:           13230D17-810C-3B52-884D-CE4FAA5C6342
+    value:           D356DC0F-509F-32AA-8A95-86E66E4B5995
 install-name:    '/System/Library/Frameworks/CoreML.framework/CoreML'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -22,13 +22,14 @@ exports:
                        _MLVGGishFrontendProcessingModelName, _kMLLayerComputeUnitHintFallbackFromCPU, 
                        _kMLLayerComputeUnitHintFallbackFromGPU, _kMLLayerComputeUnitHintFallbackFromNE, 
                        _kMLModelKeyInfoIV, _kMLModelKeyInfoKey, _kMLModelKeyInfoKeyIdentifier, 
-                       _kMLModelKeyInfoSINF, _kMLModelKeyInfoVersion, _libsvm_version, 
-                       _svm_check_parameter, _svm_check_probability_model, _svm_cross_validation, 
-                       _svm_destroy_param, _svm_free_and_destroy_model, _svm_free_model_content, 
-                       _svm_get_labels, _svm_get_nr_class, _svm_get_nr_sv, _svm_get_sv_indices, 
-                       _svm_get_svm_type, _svm_get_svr_probability, _svm_load_model, 
-                       _svm_predict, _svm_predict_probability, _svm_predict_values, 
-                       _svm_save_model, _svm_set_print_string_function, _svm_train ]
+                       _kMLModelKeyInfoSINF, _kMLModelKeyInfoUsesCodeSigningIdentityForEncryption, 
+                       _kMLModelKeyInfoVersion, _libsvm_version, _svm_check_parameter, 
+                       _svm_check_probability_model, _svm_cross_validation, _svm_destroy_param, 
+                       _svm_free_and_destroy_model, _svm_free_model_content, _svm_get_labels, 
+                       _svm_get_nr_class, _svm_get_nr_sv, _svm_get_sv_indices, _svm_get_svm_type, 
+                       _svm_get_svr_probability, _svm_load_model, _svm_predict, _svm_predict_probability, 
+                       _svm_predict_values, _svm_save_model, _svm_set_print_string_function, 
+                       _svm_train ]
     objc-classes:    [ CoreMLModelSecurityServiceToClient, CoreMLVersion, MLAppleGazetteer, 
                        MLAppleGazetteerParameters, MLAppleImageFeatureExtractor, 
                        MLAppleImageFeatureExtractorObjectPrintParameters, MLAppleImageFeatureExtractorParameters, 

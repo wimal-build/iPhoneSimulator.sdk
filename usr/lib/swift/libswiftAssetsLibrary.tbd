@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           F47997EE-7B9D-3BB3-9E62-CB4D8BC99878
   - target:          x86_64-ios-simulator
-    value:           784C53F7-1568-388F-91EF-272568769E7E
+    value:           C0E759E8-2C36-3ED2-A8BE-E8835B4F6B98
   - target:          arm64-ios-simulator
-    value:           CEDFA4E4-B045-3B53-8B8E-3FCBF2842FE2
+    value:           B91304BF-D67B-3477-AB09-D577E3143DFC
 install-name:    '/usr/lib/swift/libswiftAssetsLibrary.dylib'
-current-version: 310.1.160
+current-version: 310.2.210
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

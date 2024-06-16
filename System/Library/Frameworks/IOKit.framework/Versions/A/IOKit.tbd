@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           06B7F8D6-9E76-37B5-A9E1-B9939577F56E
   - target:          x86_64-ios-simulator
-    value:           038C0700-7ED3-3FDA-BDB5-321CE9D816AA
+    value:           01835142-F743-343C-B974-957086C444F2
   - target:          arm64-ios-simulator
-    value:           767E2648-C4F9-39DE-83AD-E88AB6359A65
+    value:           027AFD07-1900-3025-B494-DBCA38F51766
 install-name:    '/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit'
 current-version: 275
 exports:
@@ -267,8 +267,8 @@ exports:
                        _IOHIDServiceFilterSchedule, _IOHIDServiceFilterSetCancelHandler, 
                        _IOHIDServiceFilterSetEventCallback, _IOHIDServiceFilterSetOutputEvent, 
                        _IOHIDServiceFilterSetPropertyForClient, _IOHIDServiceFilterUnschedule, 
-                       _IOHIDServiceGetProperty, _IOHIDServiceGetRegistryID, _IOHIDServiceGetTypeID, 
-                       _IOHIDServiceMatchPropertyTable, _IOHIDServiceSetElementValue, 
+                       _IOHIDServiceGetProperty, _IOHIDServiceGetRegistryID, _IOHIDServiceGetService, 
+                       _IOHIDServiceGetTypeID, _IOHIDServiceMatchPropertyTable, _IOHIDServiceSetElementValue, 
                        _IOHIDServiceSetOutputEvent, _IOHIDServiceSetProperty, _IOHIDSessionAddService, 
                        _IOHIDSessionClose, _IOHIDSessionCopyEvent, _IOHIDSessionCreate, 
                        _IOHIDSessionFilterClose, _IOHIDSessionFilterCopyEvent, _IOHIDSessionFilterCreate, 

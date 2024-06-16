@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           3012A817-94FA-3E86-9327-7D683BC4302F
   - target:          x86_64-ios-simulator
-    value:           8C94CA30-935C-31D6-9066-C5CF9BF0AEF5
+    value:           E3A92967-1D68-397C-A227-259BC2A6837B
   - target:          arm64-ios-simulator
-    value:           17B86C69-8FEE-3385-9E7C-DF681EB9C59C
+    value:           06DDCCBB-E346-3D40-B15B-FA861D5C808B
 install-name:    '/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration'
-current-version: 1109.0.4
+current-version: 1109.40.9
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _SCDynamicStoreCopyLocation, _SCDynamicStoreNotifySignal, 

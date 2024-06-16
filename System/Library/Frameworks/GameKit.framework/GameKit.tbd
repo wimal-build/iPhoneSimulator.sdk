@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1675EBB4-1D5D-3452-A0E7-E89C9193CE06
   - target:          x86_64-ios-simulator
-    value:           A37E302C-1739-3B0F-9692-45C1687C0753
+    value:           2A940776-702A-3A3A-A55D-3D85CE81AAF2
   - target:          arm64-ios-simulator
-    value:           43121A98-E205-319C-AFAA-347D8B7970E7
+    value:           E7E00126-8767-35E9-B9EC-DA651400F586
 install-name:    '/System/Library/Frameworks/GameKit.framework/GameKit'
-current-version: 767.1.2
+current-version: 770.13.1
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
     libraries:       [ '/System/Library/Frameworks/UIKit.framework/UIKit', '/System/Library/PrivateFrameworks/GameCenter.framework/GameCenter' ]
@@ -34,9 +34,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D53C6FE2-BF4E-34A0-A114-91DC121B4598
   - target:          x86_64-ios-simulator
-    value:           1BDDC854-7D32-37DE-BF2B-E1DBE8B403F3
+    value:           053E2A89-902C-3C96-97BC-8C7D3E6CBFAA
   - target:          arm64-ios-simulator
-    value:           CA8E8F31-612B-3DB9-9859-FAD503EF5C16
+    value:           82C9F25A-5446-3C4E-BDBB-DC0D38073113
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -285,9 +285,11 @@ exports:
                        _GKRejectFriendRequestIDs, _GKRelayNotification, _GKRemoteUIAuthorizeAccountURLKey, 
                        _GKRemoteUIChangePasswordURLKey, _GKRemoteUIEditAccountURLKey, 
                        _GKRemoteUIGCTermsURLKey, _GKRemoteUILinkAccountsURLKey, _GKRemoteUIReportProblemURLKey, 
-                       _GKReportProblemURLKey, _GKReporterChallengeAbort, _GKReporterChallengeIssue, 
-                       _GKReporterDomainChallenge, _GKReporterDomainCustomTournamentAction, 
-                       _GKReporterDomainCustomTournamentResponse, _GKReporterDomainDashboard, 
+                       _GKReportProblemURLKey, _GKReporterAccessPointButtonTapped, 
+                       _GKReporterAccessPointDisabled, _GKReporterAccessPointEnabled, 
+                       _GKReporterChallengeAbort, _GKReporterChallengeIssue, _GKReporterDomainChallenge, 
+                       _GKReporterDomainCustomTournamentAction, _GKReporterDomainCustomTournamentResponse, 
+                       _GKReporterDomainDashboard, _GKReporterDomainDashboardAccessPoint, 
                        _GKReporterDomainGameDetail, _GKReporterDomainGameLayerDashboard, 
                        _GKReporterDomainInvite, _GKReporterDomainInviteFlow, _GKReporterDomainInviteInitiateType, 
                        _GKReporterDomainInviteNearbyResponse, _GKReporterDomainInviteParticipantStatusUpdate, 
@@ -298,7 +300,8 @@ exports:
                        _GKReporterDomainRTMultiplayerConnectionResult, _GKReporterDomainRTMultiplayerConnectionType, 
                        _GKReporterDomainRelay, _GKReporterDomainSettings, _GKReporterDomainTournamentAction, 
                        _GKReporterDomainTournamentView, _GKReporterDomainTurnBased, 
-                       _GKReporterGameDetailShowStorePage, _GKReporterInviteAcceptApp, 
+                       _GKReporterGameDetailShowStorePage, _GKReporterHighlightedAccessPointDisplayed, 
+                       _GKReporterHighlightedAccessPointTapped, _GKReporterInviteAcceptApp, 
                        _GKReporterInviteAcceptNearby, _GKReporterInviteAcceptUser, 
                        _GKReporterInviteCancel, _GKReporterInviteCancelNearby, _GKReporterInviteDeclineCantConnect, 
                        _GKReporterInviteDeclineDoNotDisturb, _GKReporterInviteDeclineIncompatible, 
@@ -485,9 +488,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           24113072-C57A-397E-886A-B5360CFCACF2
   - target:          x86_64-ios-simulator
-    value:           026F6709-BE76-335F-AFB2-BB2EBD48060D
+    value:           8E744334-90D1-3EFF-9A82-CEBB17327DFF
   - target:          arm64-ios-simulator
-    value:           854F5677-9588-395D-9352-9415C5C7CC68
+    value:           2E94E965-4A0A-3353-B261-5D58061DF263
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 swift-abi-version: 7
 exports:
@@ -548,8 +551,8 @@ exports:
                        '_$s12GameCenterUI03AnyA18LayerComponentCellP25wantsCompactLayoutMetricsSbvgTq', 
                        '_$s12GameCenterUI03AnyA18LayerComponentCellP25wantsCompactLayoutMetricsSbvsTj', 
                        '_$s12GameCenterUI03AnyA18LayerComponentCellP25wantsCompactLayoutMetricsSbvsTq', 
-                       '_$s12GameCenterUI03AnyA18LayerComponentCellP5apply10contentsOf4with06asPartJ0y9JetEngine12DiffableLensVyAH0F5Model_pG_AH05StateQ0Vys5NeverOGAA11ObjectGraphCtFTj', 
-                       '_$s12GameCenterUI03AnyA18LayerComponentCellP5apply10contentsOf4with06asPartJ0y9JetEngine12DiffableLensVyAH0F5Model_pG_AH05StateQ0Vys5NeverOGAA11ObjectGraphCtFTq', 
+                       '_$s12GameCenterUI03AnyA18LayerComponentCellP5apply10contentsOf2in4with06asPartJ0y9JetEngine12DiffableLensVyAI0F5Model_pG_AA8PageGridCAI05StateR0Vys5NeverOGAA11ObjectGraphCtFTj', 
+                       '_$s12GameCenterUI03AnyA18LayerComponentCellP5apply10contentsOf2in4with06asPartJ0y9JetEngine12DiffableLensVyAI0F5Model_pG_AA8PageGridCAI05StateR0Vys5NeverOGAA11ObjectGraphCtFTq', 
                        '_$s12GameCenterUI03AnyA18LayerComponentCellP9didSelect10contentsOf4with06asPartK0y9JetEngine12DiffableLensVyAH0F5Model_pG_AH013WritableStateR0Vys5NeverOGAA11ObjectGraphCtFTj', 
                        '_$s12GameCenterUI03AnyA18LayerComponentCellP9didSelect10contentsOf4with06asPartK0y9JetEngine12DiffableLensVyAH0F5Model_pG_AH013WritableStateR0Vys5NeverOGAA11ObjectGraphCtFTq', 
                        '_$s12GameCenterUI03AnyA18LayerComponentCellTL', '_$s12GameCenterUI0A12LayerSectionV17impressionMetrics9JetEngine010ImpressionG0VSgvM', 
@@ -573,8 +576,8 @@ exports:
                        '_$s12GameCenterUI0A18LayerComponentCellP12shouldSelect10contentsOf4with06asPartJ0Sb9JetEngine12DiffableLensVy0E0QzG_AH05StateQ0Vy0R0QzGAA11ObjectGraphCtFTj', 
                        '_$s12GameCenterUI0A18LayerComponentCellP12shouldSelect10contentsOf4with06asPartJ0Sb9JetEngine12DiffableLensVy0E0QzG_AH05StateQ0Vy0R0QzGAA11ObjectGraphCtFTq', 
                        '_$s12GameCenterUI0A18LayerComponentCellP5StateAC_9JetEngine8StatefulTn', 
-                       '_$s12GameCenterUI0A18LayerComponentCellP5apply10contentsOf4with06asPartI0y9JetEngine12DiffableLensVy0E0QzG_AH05StateP0Vy0Q0QzGAA11ObjectGraphCtFTj', 
-                       '_$s12GameCenterUI0A18LayerComponentCellP5apply10contentsOf4with06asPartI0y9JetEngine12DiffableLensVy0E0QzG_AH05StateP0Vy0Q0QzGAA11ObjectGraphCtFTq', 
+                       '_$s12GameCenterUI0A18LayerComponentCellP5apply10contentsOf2in4with06asPartI0y9JetEngine12DiffableLensVy0E0QzG_AA8PageGridCAI05StateQ0Vy0T0QzGAA11ObjectGraphCtFTj', 
+                       '_$s12GameCenterUI0A18LayerComponentCellP5apply10contentsOf2in4with06asPartI0y9JetEngine12DiffableLensVy0E0QzG_AA8PageGridCAI05StateQ0Vy0T0QzGAA11ObjectGraphCtFTq', 
                        '_$s12GameCenterUI0A18LayerComponentCellP9didSelect10contentsOf4with06asPartJ0y9JetEngine12DiffableLensVy0E0QzG_AH013WritableStateQ0Vy0S0QzGAA11ObjectGraphCtFTj', 
                        '_$s12GameCenterUI0A18LayerComponentCellP9didSelect10contentsOf4with06asPartJ0y9JetEngine12DiffableLensVy0E0QzG_AH013WritableStateQ0Vy0S0QzGAA11ObjectGraphCtFTq', 
                        '_$s12GameCenterUI0A18LayerComponentCellPAA03AnyadeF0Tb', 
@@ -588,7 +591,7 @@ exports:
                        '_$s12GameCenterUI0A18LayerComponentCellPAAE25wantsCompactLayoutMetricsSbvg', 
                        '_$s12GameCenterUI0A18LayerComponentCellPAAE25wantsCompactLayoutMetricsSbvpMV', 
                        '_$s12GameCenterUI0A18LayerComponentCellPAAE25wantsCompactLayoutMetricsSbvs', 
-                       '_$s12GameCenterUI0A18LayerComponentCellPAAE5apply10contentsOf4with06asPartI0y9JetEngine12DiffableLensVyAH0E5Model_pG_AH05StateP0Vys5NeverOGAA11ObjectGraphCtF', 
+                       '_$s12GameCenterUI0A18LayerComponentCellPAAE5apply10contentsOf2in4with06asPartI0y9JetEngine12DiffableLensVyAI0E5Model_pG_AA8PageGridCAI05StateQ0Vys5NeverOGAA11ObjectGraphCtF', 
                        '_$s12GameCenterUI0A18LayerComponentCellPAAE9didSelect10contentsOf4with06asPartJ0y9JetEngine12DiffableLensVy0E0QzG_AH013WritableStateQ0Vy0S0QzGAA11ObjectGraphCtF', 
                        '_$s12GameCenterUI0A18LayerComponentCellPAAE9didSelect10contentsOf4with06asPartJ0y9JetEngine12DiffableLensVyAH0E5Model_pG_AH013WritableStateQ0Vys5NeverOGAA11ObjectGraphCtF', 
                        '_$s12GameCenterUI0A18LayerComponentCellTL', '_$s12GameCenterUI0A18LayerLayoutBuilderMp', 
@@ -644,6 +647,7 @@ exports:
                        '_$s12GameCenterUI0A31LayerAchievementsViewControllerC15scrollDirectionAA0e10ListScrollI0Ovs', 
                        '_$s12GameCenterUI0A31LayerAchievementsViewControllerC16viewDidDisappearyySbF', 
                        '_$s12GameCenterUI0A31LayerAchievementsViewControllerC17viewWillDisappearyySbF', 
+                       '_$s12GameCenterUI0A31LayerAchievementsViewControllerC18viewWillTransition2to4withySo6CGSizeV_So06UIViewgJ11Coordinator_ptF', 
                        '_$s12GameCenterUI0A31LayerAchievementsViewControllerC23didReceiveMemoryWarningyyF', 
                        '_$s12GameCenterUI0A31LayerAchievementsViewControllerC24traitCollectionDidChangeyySo07UITraitI0CSgF', 
                        '_$s12GameCenterUI0A31LayerAchievementsViewControllerC5themeAA0E5ThemeOvM', 
@@ -850,6 +854,30 @@ exports:
                        '_$s12GameCenterUI15AchievementCardCMa', '_$s12GameCenterUI15AchievementCardCMn', 
                        '_$s12GameCenterUI15AchievementCardCMo', '_$s12GameCenterUI15AchievementCardCMu', 
                        '_$s12GameCenterUI15AchievementCardCN', '_$s12GameCenterUI15AchievementCardCfD', 
+                       '_$s12GameCenterUI15AlignmentLayoutV03JetC00E0AAMc', '_$s12GameCenterUI15AlignmentLayoutV03JetC010MeasurableAAMc', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0O2eeoiySbAE_AEtFZ', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0O4hash4intoys6HasherVz_tF', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0O6centeryA2EmFWC', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0O7leadingyA2EmFWC', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0O8trailingyA2EmFWC', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0O9hashValueSivg', '_$s12GameCenterUI15AlignmentLayoutV0D0O9hashValueSivpMV', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0OMa', '_$s12GameCenterUI15AlignmentLayoutV0D0OMn', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0ON', '_$s12GameCenterUI15AlignmentLayoutV0D0OSHAAMc', 
+                       '_$s12GameCenterUI15AlignmentLayoutV0D0OSQAAMc', '_$s12GameCenterUI15AlignmentLayoutV10horizontalAC0D0OvM', 
+                       '_$s12GameCenterUI15AlignmentLayoutV10horizontalAC0D0Ovg', 
+                       '_$s12GameCenterUI15AlignmentLayoutV10horizontalAC0D0OvpMV', 
+                       '_$s12GameCenterUI15AlignmentLayoutV10horizontalAC0D0Ovs', 
+                       '_$s12GameCenterUI15AlignmentLayoutV12measurements7fitting2inSo14JUMeasurementsVSo6CGSizeV_So18UITraitEnvironment_ptF', 
+                       '_$s12GameCenterUI15AlignmentLayoutV13placeChildren10relativeTo2in03JetC00E4RectVSo6CGRectV_So18UITraitEnvironment_ptF', 
+                       '_$s12GameCenterUI15AlignmentLayoutV4view03JetC00E4View_pvM', 
+                       '_$s12GameCenterUI15AlignmentLayoutV4view03JetC00E4View_pvg', 
+                       '_$s12GameCenterUI15AlignmentLayoutV4view03JetC00E4View_pvpMV', 
+                       '_$s12GameCenterUI15AlignmentLayoutV4view03JetC00E4View_pvs', 
+                       '_$s12GameCenterUI15AlignmentLayoutV4view10horizontal8verticalAC03JetC00E4View_p_AC0D0OAJtcfC', 
+                       '_$s12GameCenterUI15AlignmentLayoutV8verticalAC0D0OvM', '_$s12GameCenterUI15AlignmentLayoutV8verticalAC0D0Ovg', 
+                       '_$s12GameCenterUI15AlignmentLayoutV8verticalAC0D0OvpMV', 
+                       '_$s12GameCenterUI15AlignmentLayoutV8verticalAC0D0Ovs', '_$s12GameCenterUI15AlignmentLayoutVMa', 
+                       '_$s12GameCenterUI15AlignmentLayoutVMn', '_$s12GameCenterUI15AlignmentLayoutVN', 
                        '_$s12GameCenterUI15GKVisualEffectsV19viewBackgroundStyleAA04ViewgH0Ovg', 
                        '_$s12GameCenterUI15GKVisualEffectsV19viewBackgroundStyleAA04ViewgH0OvpMV', 
                        '_$s12GameCenterUI15GKVisualEffectsV7applyTo4viewySo18UIVisualEffectViewC_tF', 
@@ -1579,7 +1607,7 @@ exports:
                        '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC12sizeThatFitsySo6CGSizeVAFF', 
                        '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC14layoutSubviewsyyF', 
                        '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC16canBecomeFocusedSbvg', 
-                       '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC5apply10contentsOf4with06asPartL0y9JetEngine12DiffableLensVyAA0deF0VG_AH05StateS0VyAH03NilT0VGAA11ObjectGraphCtF', 
+                       '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC5apply10contentsOf2in4with06asPartL0y9JetEngine12DiffableLensVyAA0deF0VG_AA8PageGridCAI05StateT0VyAI03NilW0VGAA11ObjectGraphCtF', 
                        '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC5frameACSo6CGRectV_tcfC', 
                        '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellC5frameACSo6CGRectV_tcfc', 
                        '_$s12GameCenterUI37TitleWithHighlightsCollectionViewCellCAA03Anya14LayerComponentI0AAMc', 
@@ -1596,7 +1624,7 @@ exports:
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC12sizeThatFitsySo6CGSizeVAFF', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC14layoutSubviewsyyF', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC16canBecomeFocusedSbvg', 
-                       '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC5apply10contentsOf4with06asPartK0y9JetEngine12DiffableLensVyAA0dE0VG_AH05StateR0VyAH03NilS0VGAA11ObjectGraphCtF', 
+                       '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC5apply10contentsOf2in4with06asPartK0y9JetEngine12DiffableLensVyAA0dE0VG_AA8PageGridCAI05StateS0VyAI03NilV0VGAA11ObjectGraphCtF', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC5frameACSo6CGRectV_tcfC', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellC5frameACSo6CGRectV_tcfc', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellCAA03Anya14LayerComponentH0AAMc', 
@@ -1608,6 +1636,14 @@ exports:
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellCMo', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellCN', 
                        '_$s12GameCenterUI38AchievementHighlightCollectionViewCellCfD', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellC10itemHeight7fitting2in12CoreGraphics7CGFloatVSo6CGSizeV_So18UITraitEnvironment_ptFZ', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellC12measurements7fitting2inSo14JUMeasurementsVSo6CGSizeV_So18UITraitEnvironment_ptF', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellC14layoutSubviewsyyF', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellCMa', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellCMn', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellCMo', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellCN', 
+                       '_$s12GameCenterUI40GKMultiplayerPickerNearbyInstructionCellCfD', 
                        '_$s12GameCenterUI42GKMultiplayerPickerAddFriendsSupplementaryC03addG7HandleryycSgvM', 
                        '_$s12GameCenterUI42GKMultiplayerPickerAddFriendsSupplementaryC03addG7HandleryycSgvg', 
                        '_$s12GameCenterUI42GKMultiplayerPickerAddFriendsSupplementaryC03addG7HandleryycSgvpMV', 
@@ -1733,6 +1769,8 @@ exports:
                        '_$s12GameCenterUI7ArtworkCfd', '_$s12GameCenterUI8PageGridC11columnCountSivg', 
                        '_$s12GameCenterUI8PageGridC11columnCountSivpMV', '_$s12GameCenterUI8PageGridC11columnWidth12CoreGraphics7CGFloatVvg', 
                        '_$s12GameCenterUI8PageGridC11columnWidth12CoreGraphics7CGFloatVvpMV', 
+                       '_$s12GameCenterUI8PageGridC13containerSize15traitCollectionACSo6CGSizeV_So07UITraitI0CtcfC', 
+                       '_$s12GameCenterUI8PageGridC13containerSize15traitCollectionACSo6CGSizeV_So07UITraitI0Ctcfc', 
                        '_$s12GameCenterUI8PageGridC13minimumInsetsSo06UIEdgeG0Vvg', 
                        '_$s12GameCenterUI8PageGridC13minimumInsetsSo06UIEdgeG0VvpMV', 
                        '_$s12GameCenterUI8PageGridC15centeringInsetsSo06UIEdgeG0Vvg', 
@@ -1989,8 +2027,7 @@ exports:
                        GKMessageUtilities, GKMetricData, GKMobileGestalt, GKMoreExistSectionFooterView, 
                        GKMultiplayerCustomInviteMessageViewController, GKMultiplayerDataSource, 
                        GKMultiplayerP2PViewController, GKMultiplayerParticipant, 
-                       GKMultiplayerPickerNearbyInstructionCell, GKMultiplayerViewController, 
-                       GKNavigationController, GKNavigationControllerDeferredTransitionInfo, 
+                       GKMultiplayerViewController, GKNavigationController, GKNavigationControllerDeferredTransitionInfo, 
                        GKNetworkActivityIndicatorDelegate, GKNicknameController, 
                        GKNoContentView, GKNotificationBanner, GKNotificationBannerView, 
                        GKNotificationBannerViewController, GKNotificationBannerWindow, 
@@ -2036,6 +2073,7 @@ exports:
                        _TtC12GameCenterUI32GKMultiplayerPickerNoFriendsCell, _TtC12GameCenterUI33GKMultiplayerViewControllerLayout, 
                        _TtC12GameCenterUI37TitleWithHighlightsCollectionViewCell, 
                        _TtC12GameCenterUI38AchievementHighlightCollectionViewCell, 
+                       _TtC12GameCenterUI40GKMultiplayerPickerNearbyInstructionCell, 
                        _TtC12GameCenterUI42GKMultiplayerPickerAddFriendsSupplementary ]
 --- !tapi-tbd
 tbd-version:     4
@@ -2044,9 +2082,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B8E478F6-6D5A-37B8-9CE9-2E7E6EA46A6F
+    value:           7EC0BCA7-7BD5-3607-AA79-752348B1D0A0
   - target:          arm64-ios-simulator
-    value:           9E305089-841C-3BED-9129-650AFFC12AF7
+    value:           E588F380-A057-3AF9-8E5F-54EA43F27F02
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUICore.framework/GameCenterUICore'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator ]
@@ -2058,9 +2096,9 @@ exports:
                        GKLocalPlayerAuthenticator._username, GKLoginAlertView._passwordFieldIndex, 
                        GKLoginAlertView._username, GKUITheme._resourceCache ]
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ _GKIsAvatarEditingSupported, _GKRectDivideYIntoThreeConsumingMiddle, 
+    symbols:         [ _GKCurrentMedusaMode, _GKIsAvatarEditingSupported, _GKRectDivideYIntoThreeConsumingMiddle, 
                        _GKRectEnforceMinimumHeight, _GKRectsCenterXInRect, _GKRectsCenterYInRect, 
-                       __GKIsClientAppUsingRTL, __GKIsRemoteUIUsingPadIdiom ]
+                       _GKShouldLayoutRTL, __GKIsClientAppUsingRTL, __GKIsRemoteUIUsingPadIdiom ]
     objc-classes:    [ GKAvatarImage, GKAvatarImageBrush, GKBackgroundTileImageView, 
                        GKBrush, GKBrushList, GKCircleImageBrush, GKColorPalette, 
                        GKComposedImageBrush, GKConditionBrush, GKDebugHighlightView, 
@@ -2079,9 +2117,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           13633383-8373-3563-BD1F-5B6A93A5A890
   - target:          x86_64-ios-simulator
-    value:           25E2EBA2-5B24-362D-A065-3709040B328A
+    value:           747F8B65-74C7-368C-B5D7-1F3A6B8B85CB
   - target:          arm64-ios-simulator
-    value:           FD60F204-4CAB-363D-9629-74A8741DCFED
+    value:           C71FF7D4-6721-3DEB-8EE4-8EE119DE06C6
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:
   - targets:         [ i386-ios-simulator ]

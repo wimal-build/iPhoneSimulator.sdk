@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           0E6FFB32-6C43-3021-BF14-1900BA8BBA9F
   - target:          x86_64-ios-simulator
-    value:           14B92661-BBD9-312F-8C70-CF10056035E9
+    value:           05267ED7-73EC-3597-9A20-3DBC18E1B051
   - target:          arm64-ios-simulator
-    value:           E015D201-56EC-3774-AE1F-216E507C73FB
+    value:           7DF67999-1BB4-380D-921F-91DDD542096B
 install-name:    '/usr/lib/libcharset.1.dylib'
 current-version: 2
 compatibility-version: 2

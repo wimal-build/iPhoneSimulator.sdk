@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           4B1258D6-63B4-303C-9979-B76DD332DA43
   - target:          x86_64-ios-simulator
-    value:           48F8521B-3B81-37AC-A068-F489B9301F98
+    value:           A55A46A4-9422-3EF0-97C5-F7697CE8CE01
   - target:          arm64-ios-simulator
-    value:           845290E8-1BC1-3725-89EB-863A21FB5FA0
+    value:           2D709DE0-212E-3634-8291-0EA81D096A2D
 install-name:    '/usr/lib/swift/libswiftContacts.dylib'
 swift-abi-version: 7
 exports:

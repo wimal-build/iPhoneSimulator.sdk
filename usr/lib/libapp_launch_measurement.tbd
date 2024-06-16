@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           14A888A3-3EC1-31C3-8CB3-C3AE8B48A0EA
+    value:           23A6E7FA-88AF-3DB5-8826-63E9C460F75D
   - target:          arm64-ios-simulator
-    value:           AFE5F010-7D5E-32C2-9DAB-C54EBBF45105
+    value:           47C7DC6B-DA60-3196-8212-C173C7DDDDDB
 install-name:    '/usr/lib/libapp_launch_measurement.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

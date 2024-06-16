@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1E374812-7389-35B0-A071-AA675FB0F78B
   - target:          x86_64-ios-simulator
-    value:           AF4F646D-2438-3A30-885C-BA864FFF1E3F
+    value:           21A0AD9C-3A97-371D-8CD5-AAEA8F9F3EDD
   - target:          arm64-ios-simulator
-    value:           900BE48A-6915-3FBE-84B4-8AF6BA361BFC
+    value:           A8C69682-EDA2-3317-BE04-50021AF09B64
 install-name:    '/System/Library/Frameworks/Metal.framework/Metal'
-current-version: 244.27
+current-version: 244.40.1
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MTLAddDeviceClass, _MTLCopyAllDevices, _MTLUseInterpose, 

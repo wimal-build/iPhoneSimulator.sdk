@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           90282660-B52F-3123-AFEC-9AE4CC4669B8
   - target:          x86_64-ios-simulator
-    value:           564DA3DB-95B6-3AAC-80FA-B22F2228A449
+    value:           AEC6DF69-11D8-344A-BF94-9B0AC4BF0C06
   - target:          arm64-ios-simulator
-    value:           BB981A70-C404-35A5-ACC6-27A56F18E323
+    value:           1F9539D3-CCE4-3D17-9393-1AFAB2D71FB7
 install-name:    '/usr/lib/libncurses.5.4.dylib'
 current-version: 5.4
 compatibility-version: 5.4

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B0019174-19D9-330E-A8BC-6D886F81BBF6
   - target:          x86_64-ios-simulator
-    value:           E0C21B1F-DF48-3DD2-99BF-2D0A367E082D
+    value:           6E04FC14-C52C-3368-9469-F4F66120BD26
   - target:          arm64-ios-simulator
-    value:           F5809288-46D1-3593-8BF2-862C472A3AA5
+    value:           4707FA22-E946-366F-8F91-91C86C9C6F30
 install-name:    '/usr/lib/swift/libswiftIntents.dylib'
 current-version: 7
 swift-abi-version: 7

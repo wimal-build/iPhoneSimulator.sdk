@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           BDCBC9FA-3AD2-36A3-A960-E7A2037D307F
   - target:          x86_64-ios-simulator
-    value:           FB5D6B2A-07B3-360E-9143-C6118E2E4016
+    value:           246D7C9E-4D5E-3D3D-850F-5A713EF6444D
   - target:          arm64-ios-simulator
-    value:           1AF977EF-B3CE-3D4E-B6F4-F2D2A6671907
+    value:           FCB4DEDB-2329-32B4-BED1-E67B92C5162E
 install-name:    '/System/Library/Frameworks/UIKit.framework/UIKit'
-current-version: 3987.9
+current-version: 3999.1.102
 reexported-libraries:
   - targets:         [ i386-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]
@@ -1420,11 +1420,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           DF05CF91-6A29-3928-84D6-2A86E91C481A
+    value:           AD666685-C0A9-3A4E-8FB5-2A2F55B74AC0
   - target:          arm64-ios-simulator
-    value:           63417C63-FF93-3B7E-941E-3AC33E4DF29B
+    value:           0431FD8F-D475-3228-88A6-456E78779210
 install-name:    '/System/Library/PrivateFrameworks/DocumentManager.framework/DocumentManager'
-current-version: 200.1.255
+current-version: 200.2.4
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _DOCAdaptSizeToRect, _DOCAlertItemIsNotReadable, _DOCAlertUserTheNetworkIsNotReachable, 
@@ -1507,11 +1507,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           6556600C-92B0-3AE4-B092-D872F6025CFC
+    value:           D593022C-2740-3E09-977C-2C36037A6548
   - target:          arm64-ios-simulator
-    value:           E1C1D9FC-6236-3E29-9206-5A9AFF0514F6
+    value:           1B7EC9B0-8BB0-36F8-86C6-A049784E4463
 install-name:    '/System/Library/PrivateFrameworks/ShareSheet.framework/ShareSheet'
-current-version: 1566.6
+current-version: 1570.7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _SUIActivityTypeShare, _UIActivityTypeAddToReadingList, _UIActivityTypeAirDrop, 
@@ -1568,11 +1568,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           4C4CE84E-9340-3389-898D-2887BD90B6D2
   - target:          x86_64-ios-simulator
-    value:           A5CD52C1-D885-35F8-8BB1-38EFD4366BA2
+    value:           89434FFB-1D92-390C-974E-A5B09C78C83B
   - target:          arm64-ios-simulator
-    value:           3C79C4C9-032B-3D8E-A9F1-64548EE7E3AA
+    value:           D5A1D5D4-94FC-370D-BBCA-0DEA4C12DE04
 install-name:    '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation'
-current-version: 717
+current-version: 725
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _NSFileExtendedAttributes, _UIFoundationErrorDomain, _UIGraphicsSetShadow, 
@@ -1850,11 +1850,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           CF8C062B-079E-3DA6-BFE2-3366C11A1F29
+    value:           1EF2FD00-F088-3730-A020-5D54496FEDFD
   - target:          arm64-ios-simulator
-    value:           7933EC3B-DA5A-31C7-8A72-21132DA95F97
+    value:           075AACB8-B23E-36C7-B4DD-0564CB9972D2
 install-name:    '/System/Library/PrivateFrameworks/UIKitCore.framework/UIKitCore'
-current-version: 3987.9
+current-version: 3999.1.102
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation' ]
@@ -2928,9 +2928,9 @@ exports:
                        _UIMenuOpenRecent, _UIMenuPreferences, _UIMenuPrint, _UIMenuQuit, 
                        _UIMenuReplace, _UIMenuRoot, _UIMenuServices, _UIMenuShare, 
                        _UIMenuSpeech, _UIMenuSpelling, _UIMenuSpellingOptions, _UIMenuSpellingPanel, 
-                       _UIMenuStandardEdit, _UIMenuSubstitutionOptions, _UIMenuSubstitutions, 
-                       _UIMenuSubstitutionsPanel, _UIMenuText, _UIMenuTextColor, 
-                       _UIMenuTextSize, _UIMenuTextStyle, _UIMenuTextStylePasteboard, 
+                       _UIMenuStandardEdit, _UIMenuSubstitutionInSelection, _UIMenuSubstitutionOptions, 
+                       _UIMenuSubstitutions, _UIMenuSubstitutionsPanel, _UIMenuText, 
+                       _UIMenuTextColor, _UIMenuTextSize, _UIMenuTextStyle, _UIMenuTextStylePasteboard, 
                        _UIMenuToolbar, _UIMenuTransformations, _UIMenuUndoRedo, _UIMenuView, 
                        _UIMenuWindow, _UIMenuWritingDirection, _UIMidPointBetweenPoints, 
                        _UIMinimumKeepAliveTimeout, _UIMinutelessTimeFormat, _UIMonthDayFormat, 
@@ -3152,9 +3152,9 @@ exports:
                        __UIAccessibilitySetFocusedElementCallback, __UIAccessibilitySingleSystemColor, 
                        __UIAccessibilityStartedWithInitialization, __UIAccessibilityUseDarkerKeyboard, 
                        __UIAccessibilityZoomTouchEnabled, __UIActivityItemsConfigurationInteractionServicesMenu, 
-                       __UIAdaptLocalizedStringForView, __UIAddObjectToStateRestorationRoots, 
-                       __UIAlertDidDisappearNotification, __UIAlertWillAppearNotification, 
-                       __UIAngleInRadiansForRotationBetweenAngleAndAngleInDirection, 
+                       __UIActivityItemsConfigurationInteractionShare, __UIAdaptLocalizedStringForView, 
+                       __UIAddObjectToStateRestorationRoots, __UIAlertDidDisappearNotification, 
+                       __UIAlertWillAppearNotification, __UIAngleInRadiansForRotationBetweenAngleAndAngleInDirection, 
                        __UIAppActiveInterfaceOrientationDidChangeNotification, __UIAppActiveInterfaceOrientationRotateAnimatedUserInfoKey, 
                        __UIAppEffectiveUserInterfaceStyle, __UIAppSetEffectiveUserInterfaceStyle, 
                        __UIAppSetStatusBarHeight, __UIAppSetStatusBarOrientation, 
@@ -3774,7 +3774,7 @@ exports:
                        _UIDirectionalRotationView, _UIDiscreteFeedback, _UIDocumentPickerAuxiliaryOption, 
                        _UIDocumentPickerNSURLWrapper, _UIDocumentPickerRemoteViewController, 
                        _UIDragBadge, _UIDragFeedbackGenerator, _UIDragFeedbackGeneratorConfiguration, 
-                       _UIDragSetDownAnimation, _UIDragSnappingFeedbackGenerator, 
+                       _UIDragInteractionDriver, _UIDragSetDownAnimation, _UIDragSnappingFeedbackGenerator, 
                        _UIDragSnappingFeedbackGeneratorConfiguration, _UIDynamicAnimation, 
                        _UIDynamicAnimationActiveValue, _UIDynamicAnimationGroup, 
                        _UIDynamicSlider, _UIDynamicValueAnimation, _UIEdgeFeedbackGenerator, 

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D28595D5-D4DA-3057-B68C-227E9EA1FB50
+    value:           6E971149-0E9A-3BD9-8AA1-451D649346D7
   - target:          arm64-ios-simulator
-    value:           2545CAB2-6604-3738-BE50-8EF4A2B81B11
+    value:           9D7BF904-E14C-357A-BC9B-E9BB0C1C2B71
 install-name:    '/System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction'
 current-version: 0
 compatibility-version: 0
@@ -17,6 +17,7 @@ exports:
                        _NINearbyObjectDirectionNotAvailable_Private, _NINearbyObjectDistanceNotAvailable, 
                        _NINearbyObjectDistanceNotAvailable_Private, _NINearbyObjectElevationNotAvailable, 
                        _NINearbyObjectQuaternionNotAvailable ]
-    objc-classes:    [ NIConfiguration, NIDiscoveryToken, NINearbyObject, NINearbyPeerConfiguration, 
-                       NISession ]
+    objc-classes:    [ NIConfiguration, NIDiscoveryToken, NIHomeDeviceConfiguration, 
+                       NINearbyObject, NINearbyPeerConfiguration, NIRegionPredicate, 
+                       NISession, _NIWiFiRangingTestConfiguration ]
 ...

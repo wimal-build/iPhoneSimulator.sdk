@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           8457A824-903A-3913-A781-9DF54776D714
+    value:           06F2999E-AFF8-3A67-A07B-DA5F9889830C
   - target:          arm64-ios-simulator
-    value:           BD623249-C195-3155-8B55-BC7464060B4B
+    value:           DDCA8DF2-68D9-3F7B-99FD-9924658D5233
 install-name:    '/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

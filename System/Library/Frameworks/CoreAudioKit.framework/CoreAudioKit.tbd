@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AA66445E-86D9-39C8-9026-D19F37FA60D7
   - target:          x86_64-ios-simulator
-    value:           B3718EE6-8E20-3427-9891-431097AA0479
+    value:           2501AD85-01BA-3526-9E7B-FA2825342675
   - target:          arm64-ios-simulator
-    value:           F1BEE149-585E-3271-B499-DC4D888A66C5
+    value:           F2BF11AE-3BFB-37CC-B133-C502D1C2D12A
 install-name:    '/System/Library/Frameworks/CoreAudioKit.framework/CoreAudioKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

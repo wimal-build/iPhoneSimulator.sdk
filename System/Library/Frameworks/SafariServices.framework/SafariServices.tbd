@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           DF65E0DB-9F07-3A33-94C1-D6F0D589B040
   - target:          x86_64-ios-simulator
-    value:           0BB278AE-9D35-3382-9FF9-2E2F3BC91CBF
+    value:           B767097F-20B4-3B67-BC03-5DF6EE8FC83E
   - target:          arm64-ios-simulator
-    value:           B59BD0D2-2011-313F-BCDF-F44C9FB3D7C8
+    value:           CD7B0960-DA35-31E9-AB6A-BB6F20F92E28
 install-name:    '/System/Library/Frameworks/SafariServices.framework/SafariServices'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -56,15 +56,14 @@ exports:
                        __SFDataOwnerForWebViewInteraction, __SFDebugContentDispositionHeaderStartsDownloadsKey, 
                        __SFDebugDownloadAttributeForcesDownloadsKey, __SFDebugEnableDownloadsInSubframesKey, 
                        __SFDebugPromptForDownloadsOnNavigationResponseKey, __SFDefaultLayoutMargins, 
-                       __SFDemoSiriSuggestionsKey, __SFDeveloperPreferencesDidChangeNotification, 
-                       __SFDeviceAlertStyle, __SFDeviceHasHomeButton, __SFDeviceHasRectangularScreen, 
-                       __SFDeviceIsPad, __SFDeviceRegionCodeIsChina, __SFDeviceStatusBarHasNonTransparentBackground, 
-                       __SFDeviceSupportsDesktopSitesByDefault, __SFDeviceSupportsHighQualityGraphics, 
-                       __SFDisableICECandidateFiltering, __SFDownloadDidChangeCompletedURLNotification, 
-                       __SFDownloadDidChangeNotification, __SFDownloadDidStartNotification, 
-                       __SFDownloadDidStopNotification, __SFDownloadExpirationIntervalDefaultsKey, 
-                       __SFDownloadManagerDidFinishLastDownloadNotification, __SFDownloadManagerTotalProgressDidChangeNotification, 
-                       __SFDownloadStorageUsageMonitorDidChangeUsageNotification, 
+                       __SFDemoSiriSuggestionsKey, __SFDeviceAlertStyle, __SFDeviceHasHomeButton, 
+                       __SFDeviceHasRectangularScreen, __SFDeviceIsPad, __SFDeviceRegionCodeIsChina, 
+                       __SFDeviceStatusBarHasNonTransparentBackground, __SFDeviceSupportsDesktopSitesByDefault, 
+                       __SFDeviceSupportsHighQualityGraphics, __SFDisableICECandidateFiltering, 
+                       __SFDownloadDidChangeCompletedURLNotification, __SFDownloadDidChangeNotification, 
+                       __SFDownloadDidStartNotification, __SFDownloadDidStopNotification, 
+                       __SFDownloadExpirationIntervalDefaultsKey, __SFDownloadManagerDidFinishLastDownloadNotification, 
+                       __SFDownloadManagerTotalProgressDidChangeNotification, __SFDownloadStorageUsageMonitorDidChangeUsageNotification, 
                        __SFDownloadingFileTypeFromUTIAndMIMEType, __SFDownloadsDidChangeNotification, 
                        __SFEnableDownloadImport, __SFEnableEnumeratingAllNetworkInterfaces, 
                        __SFEnableMediaCapture, __SFEnableMockCaptureDevices, __SFEnablePasswordManagerDemoModeKey, 
@@ -123,10 +122,10 @@ exports:
                        __SFShouldShowChineseFeatures, __SFShouldShowLinkPreviews, 
                        __SFShouldShowRussianFeatures, __SFSizeClassForWidth, __SFStandardSecurityRecommendationCellReuseIdentifier, 
                        __SFStringForTintStyle, __SFTabStateSessionStateKey, __SFTabStateShowingReaderKey, 
-                       __SFTypeIsExtractableArchive, __SFUIActionForToggleShowLinkPreviews, 
-                       __SFUserAgentDefaultsKey, __SFVideoPlaybackRequiresUserActionKey, 
-                       __SFWarnAboutFraudulentWebsitesDefaultsKey, __SFWebArchiveErrorDomain, 
-                       __SFWebArchiveMIMEType, __SFWebAuthenticationLocalAuthenticatorDefaultsKey, 
+                       __SFToolbarContentSizeCategoryForPreferredCategory, __SFTypeIsExtractableArchive, 
+                       __SFUIActionForToggleShowLinkPreviews, __SFUserAgentDefaultsKey, 
+                       __SFVideoPlaybackRequiresUserActionKey, __SFWarnAboutFraudulentWebsitesDefaultsKey, 
+                       __SFWebArchiveErrorDomain, __SFWebArchiveMIMEType, __SFWebAuthenticationLocalAuthenticatorDefaultsKey, 
                        __SFWebKitShowLinkPreviewsDefaultsKey, __SFWebKitSiteSpecificHacksEnabledKey, 
                        __SFWebKitWebAuthenticationDefaultsKey, __SFWidthIsCompactSizeClass ]
     objc-classes:    [ SFAuthenticationSession, SFBlockBasedCAAnimationDelegate, 

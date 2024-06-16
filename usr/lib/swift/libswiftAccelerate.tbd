@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           139F2C9B-FC40-3BF0-A7F8-E62C0943B72B
   - target:          x86_64-ios-simulator
-    value:           090C829D-7BD4-3611-B220-AA506C2C5C52
+    value:           A36CEEAA-045A-3F47-BFF2-261597C7A9AF
   - target:          arm64-ios-simulator
-    value:           AFB2108B-7A3E-3339-9CE5-5FEE9A4C20C8
+    value:           DB6029EF-FBF4-3133-BCEE-B56E741BAEFF
 install-name:    '/usr/lib/swift/libswiftAccelerate.dylib'
-current-version: 10
+current-version: 10.40.1
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -1236,6 +1236,10 @@ exports:
                        '_$s10Accelerate6vForceO3exp_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO3expySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 
                        '_$s10Accelerate6vForceO3expySaySfGxAA0A6BufferRzSf7ElementRtzlFZ', 
+                       '_$s10Accelerate6vForceO3log_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sd7ElementRtzSdAHRt_r0_lFZ', 
+                       '_$s10Accelerate6vForceO3log_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
+                       '_$s10Accelerate6vForceO3logySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 
+                       '_$s10Accelerate6vForceO3logySaySfGxAA0A6BufferRzSf7ElementRtzlFZ', 
                        '_$s10Accelerate6vForceO3pow5bases9exponents6resultyx_q_q0_ztAA0A6BufferRzAaHR_AA0a7MutableG0R0_Sd7ElementRtzSdAJRt_SdAJRt0_r1_lFZ', 
                        '_$s10Accelerate6vForceO3pow5bases9exponents6resultyx_q_q0_ztAA0A6BufferRzAaHR_AA0a7MutableG0R0_Sf7ElementRtzSfAJRt_SfAJRt0_r1_lFZ', 
                        '_$s10Accelerate6vForceO3pow5bases9exponentsSaySdGx_q_tAA0A6BufferRzAA0a7MutableF0R_Sd7ElementRtzSdAJRt_r0_lFZ', 
@@ -1300,6 +1304,10 @@ exports:
                        '_$s10Accelerate6vForceO5asinh_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5asinhySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 
                        '_$s10Accelerate6vForceO5asinhySaySfGxAA0A6BufferRzSf7ElementRtzlFZ', 
+                       '_$s10Accelerate6vForceO5atan21x1y6resultyx_q_q0_ztAA0A6BufferRzAaHR_AA0a7MutableE0R0_Sd7ElementRtzSdAJRt_SdAJRt0_r1_lFZ', 
+                       '_$s10Accelerate6vForceO5atan21x1y6resultyx_q_q0_ztAA0A6BufferRzAaHR_AA0a7MutableE0R0_Sf7ElementRtzSfAJRt_SfAJRt0_r1_lFZ', 
+                       '_$s10Accelerate6vForceO5atan21x1ySaySdGx_q_tAA0A6BufferRzAA0a7MutableD0R_Sd7ElementRtzSdAJRt_r0_lFZ', 
+                       '_$s10Accelerate6vForceO5atan21x1ySaySfGx_q_tAA0A6BufferRzAA0a7MutableD0R_Sf7ElementRtzSfAJRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5atanh_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sd7ElementRtzSdAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5atanh_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5atanhySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 
@@ -1320,6 +1328,10 @@ exports:
                        '_$s10Accelerate6vForceO5log10_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5log10ySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 
                        '_$s10Accelerate6vForceO5log10ySaySfGxAA0A6BufferRzSf7ElementRtzlFZ', 
+                       '_$s10Accelerate6vForceO5log1p_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sd7ElementRtzSdAHRt_r0_lFZ', 
+                       '_$s10Accelerate6vForceO5log1p_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
+                       '_$s10Accelerate6vForceO5log1pySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 
+                       '_$s10Accelerate6vForceO5log1pySaySfGxAA0A6BufferRzSf7ElementRtzlFZ', 
                        '_$s10Accelerate6vForceO5rsqrt_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sd7ElementRtzSdAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5rsqrt_6resultyx_q_ztAA0A6BufferRzAA0a7MutableE0R_Sf7ElementRtzSfAHRt_r0_lFZ', 
                        '_$s10Accelerate6vForceO5rsqrtySaySdGxAA0A6BufferRzSd7ElementRtzlFZ', 

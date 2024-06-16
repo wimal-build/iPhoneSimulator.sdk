@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           E1EE0EAC-0786-3983-9834-161F13BD9E5B
   - target:          x86_64-ios-simulator
-    value:           DBE33FEF-61CB-377C-97D9-0E70F1F39488
+    value:           6D8428CD-5573-331C-BD70-C40FDD8931A2
   - target:          arm64-ios-simulator
-    value:           51FE2EB8-228D-3CB6-AAD2-5267F2462652
+    value:           59FFDF82-2A1C-3A06-8690-E64BF95FA79C
 install-name:    '/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary'
 exports:
   - targets:         [ i386-ios-simulator ]

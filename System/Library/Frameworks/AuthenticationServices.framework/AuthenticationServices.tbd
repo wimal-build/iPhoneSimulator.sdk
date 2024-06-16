@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           98F252F0-BC90-3D02-ACB5-AA44E1A82DE3
+    value:           54BEA80F-A0DF-3298-879D-61D861FC2C4A
   - target:          arm64-ios-simulator
-    value:           F71E81B2-7111-3C09-BAE0-3C23888B957A
+    value:           D18C293F-88C0-32FD-B084-5C4DA3480A22
 install-name:    '/System/Library/Frameworks/AuthenticationServices.framework/AuthenticationServices'
-current-version: 610.1.28
+current-version: 610.2.11
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _ASAuthorizationAppleIDProviderCredentialRevokedNotification, 

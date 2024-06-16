@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           3BB2CA2C-C28A-3496-9216-E803BB433B8C
+    value:           442CB1D1-C2B5-3AEF-92EF-009F3C5DE4FC
   - target:          arm64-ios-simulator
-    value:           506933C9-241C-3266-AEE8-A11CBB8112F8
+    value:           AD32B3F0-02A4-3E8C-A685-A393B7AD8777
 install-name:    '/System/Library/Frameworks/CoreNFC.framework/CoreNFC'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

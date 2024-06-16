@@ -5,15 +5,16 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4AA3A385-ECB6-30AC-842E-50AD2CDD1F9D
+    value:           DE157326-7472-3A2A-96A3-ED66DA0F8F96
   - target:          arm64-ios-simulator
-    value:           D2A82460-EB77-306A-B231-91848CEF06C8
+    value:           9DB85B81-40D3-390B-A309-0B671870B572
 install-name:    '/System/Library/Frameworks/ExposureNotification.framework/ExposureNotification'
 current-version: 0
 compatibility-version: 0
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
-    symbols:         [ _ENAEMCrypt, _ENAEMKDerive, _ENCompareDiagnosisReportTypes, 
+    symbols:         [ _ENAEMCrypt, _ENAEMKDerive, _ENCloneFileToTemporaryDirectory, 
+                       _ENCompareDiagnosisReportTypes, _ENCopyPublicKeyFromBase64String, 
                        _ENDaemonBundle, _ENDataVaultPath, _ENDataVaultURL, _ENDefaultExpirationDate, 
                        _ENDiagnosisMetadataKeyDiagnosisReportType, _ENDiagnosisMetadataKeyHasSymptoms, 
                        _ENDiagnosisMetadataKeyIncludeTravelerStatus, _ENDiagnosisMetadataKeySymptomOnsetDate, 
@@ -31,11 +32,12 @@ exports:
                        ENExposureDetectionHistoryFile, ENExposureDetectionHistorySession, 
                        ENExposureDetectionSession, ENExposureDetectionSummary, ENExposureInfo, 
                        ENExposureNotification, ENExposureSummaryItem, ENExposureWindow, 
-                       ENFile, ENManager, ENProtobufCoder, ENRegion, ENRegionConfiguration, 
-                       ENRegionServerAgencyConfiguration, ENRegionServerAgencyExposureNotificationConfiguration, 
-                       ENRegionServerAgencyLocalizedConfiguration, ENRegionServerConfiguration, 
-                       ENRegionServerExposureClassificationCriteria, ENRegionServerExposureConfiguration, 
-                       ENRegionServerNKDConfiguration, ENRegionUserConsent, ENRegionVisit, 
-                       ENRemotePresentationRequest, ENScanInstance, ENSignature, 
-                       ENSignatureFile, ENTemporaryExposureKey, ENUserAlert ]
+                       ENFile, ENFileSession, ENManager, ENProtobufCoder, ENRegion, 
+                       ENRegionConfiguration, ENRegionServerAgencyConfiguration, 
+                       ENRegionServerAgencyExposureNotificationConfiguration, ENRegionServerAgencyLocalizedConfiguration, 
+                       ENRegionServerConfiguration, ENRegionServerExposureClassificationCriteria, 
+                       ENRegionServerExposureConfiguration, ENRegionServerNKDConfiguration, 
+                       ENRegionUserConsent, ENRegionVisit, ENRemotePresentationRequest, 
+                       ENScanInstance, ENSignature, ENSignatureFile, ENTemporaryExposureKey, 
+                       ENUserAlert, ENXPCServiceClient ]
 ...

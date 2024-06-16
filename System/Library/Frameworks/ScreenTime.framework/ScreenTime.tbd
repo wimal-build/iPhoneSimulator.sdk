@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           909A6095-C0FB-33CA-96AE-DC8691E4FE4E
+    value:           67CBD8DA-33BF-3D80-8E15-953006A7EE96
   - target:          arm64-ios-simulator
-    value:           56D413FB-45D7-368F-B122-5F8F4C032F4B
+    value:           F3394DE5-A731-3415-A155-4387A9ADFBFD
 install-name:    '/System/Library/Frameworks/ScreenTime.framework/ScreenTime'
-current-version: 481.1
+current-version: 494
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _STMachServiceNameScreenTime ]

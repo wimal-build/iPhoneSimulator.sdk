@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           90443F25-09DB-36CD-87C2-EE47201995DA
   - target:          x86_64-ios-simulator
-    value:           BCDA8FCD-F630-35FF-B18A-ABEC4F7280ED
+    value:           C8A579DF-C41A-3471-9E81-7D45A7026A08
   - target:          arm64-ios-simulator
-    value:           F10860B7-4474-3494-A253-48C6BC46A3E4
+    value:           A7E577E6-278A-3762-9C6E-A8DF7CD2BC00
 install-name:    '/System/Library/Frameworks/MessageUI.framework/MessageUI'
-current-version: 3654.10
+current-version: 3654.20
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _MFABPropertyForRecentsKind, _MFAccessibilityLargeTextEnabled, 
@@ -162,13 +162,13 @@ exports:
                        _MFImageGlyphComposeUnencrypted, _MFImageGlyphDecreaseIndent, 
                        _MFImageGlyphDecreaseQuoteLevel, _MFImageGlyphFiles, _MFImageGlyphFilesEllipsis, 
                        _MFImageGlyphFilterDisabled, _MFImageGlyphFilterEnabled, _MFImageGlyphFlag, 
-                       _MFImageGlyphFlagColor, _MFImageGlyphFlagged, _MFImageGlyphFontSize, 
-                       _MFImageGlyphFormat, _MFImageGlyphForward, _MFImageGlyphForwardFill, 
-                       _MFImageGlyphImportant, _MFImageGlyphIncreaseIndent, _MFImageGlyphIncreaseQuoteLevel, 
-                       _MFImageGlyphInfo, _MFImageGlyphInsertDrawing, _MFImageGlyphInviteToCalendar, 
-                       _MFImageGlyphItalic, _MFImageGlyphJunk, _MFImageGlyphList, 
-                       _MFImageGlyphListBullet, _MFImageGlyphListNumber, _MFImageGlyphLock, 
-                       _MFImageGlyphMailDropDownload, _MFImageGlyphMailDropDownloaded, 
+                       _MFImageGlyphFlagColor, _MFImageGlyphFlagged, _MFImageGlyphFontSizeLarger, 
+                       _MFImageGlyphFontSizeSmaller, _MFImageGlyphFormat, _MFImageGlyphForward, 
+                       _MFImageGlyphForwardFill, _MFImageGlyphImportant, _MFImageGlyphIncreaseIndent, 
+                       _MFImageGlyphIncreaseQuoteLevel, _MFImageGlyphInfo, _MFImageGlyphInsertDrawing, 
+                       _MFImageGlyphInviteToCalendar, _MFImageGlyphItalic, _MFImageGlyphJunk, 
+                       _MFImageGlyphList, _MFImageGlyphListBullet, _MFImageGlyphListNumber, 
+                       _MFImageGlyphLock, _MFImageGlyphMailDropDownload, _MFImageGlyphMailDropDownloaded, 
                        _MFImageGlyphMailDropExpired, _MFImageGlyphMarkElipsis, _MFImageGlyphMarkup, 
                        _MFImageGlyphMessageListChevronSingle, _MFImageGlyphMessageListChevronThread, 
                        _MFImageGlyphMessageListFilter, _MFImageGlyphMessageListFilterEnabled, 

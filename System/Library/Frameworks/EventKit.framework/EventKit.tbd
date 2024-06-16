@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           F3D6D747-5DC3-3912-960F-7AD3192930F3
   - target:          x86_64-ios-simulator
-    value:           CB8FBE08-7001-303B-8D03-D1FD164D9372
+    value:           C6315451-E57A-342E-89E0-050141498404
   - target:          arm64-ios-simulator
-    value:           14095FFE-4195-3313-84DC-EE5BC57FB724
+    value:           972933AD-4D3F-3C06-9F67-D0D28BA4CAD8
 install-name:    '/System/Library/Frameworks/EventKit.framework/EventKit'
-current-version: 1586
+current-version: 1586.2.2
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _CurrentLocaleExpectsMultipleFamilyNames, _CurrentLocaleExpectsSurnameFirst, 

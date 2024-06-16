@@ -5,8 +5,8 @@ uuids:
   - target:          i386-ios-simulator
     value:           44E2AEA4-A257-33EC-8604-C1260C92178C
   - target:          x86_64-ios-simulator
-    value:           4865DDDE-DC73-302B-B403-C4EAFBED3EF4
+    value:           B707E337-E663-31D6-B788-2AC7C1AEA5B9
   - target:          arm64-ios-simulator
-    value:           03F6D753-EF64-3D83-88F5-50128C3D7893
+    value:           A500F9AD-C5A4-384C-8343-9F1D6A70892A
 install-name:    '/usr/lib/libLeaksAtExit.dylib'
 ...

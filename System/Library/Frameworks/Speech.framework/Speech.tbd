@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B0084272-3A75-311F-8981-99DC1E781195
   - target:          x86_64-ios-simulator
-    value:           B456700A-2B57-32B0-AC6A-7E4B6CDACADA
+    value:           CA9C6DE2-CE55-3D08-B18D-B7152577A38B
   - target:          arm64-ios-simulator
-    value:           68A03722-8DDE-3B9F-9F8D-6058EE62CB5C
+    value:           D75EFFAB-2CC3-3F51-931C-2E19E3CD5D83
 install-name:    '/System/Library/Frameworks/Speech.framework/Speech'
 exports:
   - targets:         [ i386-ios-simulator ]

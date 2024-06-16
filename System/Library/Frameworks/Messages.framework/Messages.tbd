@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           D4F550E6-A665-3991-827E-C7D4B9B96FBD
   - target:          x86_64-ios-simulator
-    value:           083D42D2-5FA1-300B-92A5-37885BCD6398
+    value:           2BBB188F-5593-3BD9-970E-3FEFE9B746C4
   - target:          arm64-ios-simulator
-    value:           1BCC81A7-DBCE-34C5-A9F4-6822834AF5E1
+    value:           49E8B4B0-A433-3C89-BEB4-A970BE11F2EF
 install-name:    '/System/Library/Frameworks/Messages.framework/Messages'
 exports:
   - targets:         [ i386-ios-simulator ]

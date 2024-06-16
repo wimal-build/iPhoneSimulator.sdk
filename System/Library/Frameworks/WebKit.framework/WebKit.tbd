@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           A1EAA690-97F1-316E-9F64-9C00641E28E0
   - target:          x86_64-ios-simulator
-    value:           7EE8607B-E0D0-3438-A321-46C8BB3D08C0
+    value:           D9EF0892-C5F3-34E3-A2BF-C6CE85B25FE0
   - target:          arm64-ios-simulator
-    value:           9897C6D8-361D-36C7-A900-F1136D51D4AB
+    value:           94FD6885-5EE4-3298-9454-169CD184B4C6
 install-name:    '/System/Library/Frameworks/WebKit.framework/WebKit'
-current-version: 610.1.28
+current-version: 610.2.11
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy' ]
@@ -397,7 +397,7 @@ exports:
                        _WKPageBackgroundExtendsBeyondPage, _WKPageBeginPrinting, 
                        _WKPageCallAfterNextPresentationUpdate, _WKPageCanDelete, 
                        _WKPageCanGoBack, _WKPageCanGoForward, _WKPageCenterSelectionInVisibleArea, 
-                       _WKPageClearAdClickAttribution, _WKPageClearLoadedThirdPartyDomains, 
+                       _WKPageClearAdClickAttribution, _WKPageClearLoadedSubresourceDomains, 
                        _WKPageClearUserMediaState, _WKPageClearWheelEventTestMonitor, 
                        _WKPageClose, _WKPageComputePagesForPrinting, _WKPageConfigurationCreate, 
                        _WKPageConfigurationGetContext, _WKPageConfigurationGetPageGroup, 
@@ -450,7 +450,7 @@ exports:
                        _WKPageLoadURL, _WKPageLoadURLRequest, _WKPageLoadURLRequestReturningNavigation, 
                        _WKPageLoadURLRequestWithUserData, _WKPageLoadURLWithShouldOpenExternalURLsPolicy, 
                        _WKPageLoadURLWithUserData, _WKPageLoadWebArchiveData, _WKPageLoadWebArchiveDataWithUserData, 
-                       _WKPageLoadedThirdPartyDomains, _WKPageLookUpFrameFromHandle, 
+                       _WKPageLoadedSubresourceDomains, _WKPageLookUpFrameFromHandle, 
                        _WKPageMarkAdClickAttributionsAsExpiredForTesting, _WKPagePostMessageToInjectedBundle, 
                        _WKPageReload, _WKPageReloadExpiredOnly, _WKPageReloadFromOrigin, 
                        _WKPageReloadWithoutContentBlockers, _WKPageRenderTreeExternalRepresentation, 
@@ -846,10 +846,12 @@ exports:
                        _WKWebsiteDataStoreResetQuota, _WKWebsiteDataStoreSetAppBoundDomainsForTesting, 
                        _WKWebsiteDataStoreSetCacheModelSynchronouslyForTesting, _WKWebsiteDataStoreSetPerOriginStorageQuota, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsDebugMode, _WKWebsiteDataStoreSetResourceLoadStatisticsDebugModeWithCompletionHandler, 
-                       _WKWebsiteDataStoreSetResourceLoadStatisticsEnabled, _WKWebsiteDataStoreSetResourceLoadStatisticsFirstPartyWebsiteDataRemovalModeForTesting, 
+                       _WKWebsiteDataStoreSetResourceLoadStatisticsEnabled, _WKWebsiteDataStoreSetResourceLoadStatisticsFirstPartyHostCNAMEDomainForTesting, 
+                       _WKWebsiteDataStoreSetResourceLoadStatisticsFirstPartyWebsiteDataRemovalModeForTesting, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsPrevalentResourceForDebugMode, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsShouldBlockThirdPartyCookiesForTesting, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsShouldDowngradeReferrerForTesting, 
+                       _WKWebsiteDataStoreSetResourceLoadStatisticsThirdPartyCNAMEDomainForTesting, 
                        _WKWebsiteDataStoreSetResourceLoadStatisticsToSameSiteStrictCookiesForTesting, 
                        _WKWebsiteDataStoreSetStatisticsCacheMaxAgeCap, _WKWebsiteDataStoreSetStatisticsCrossSiteLoadWithLinkDecoration, 
                        _WKWebsiteDataStoreSetStatisticsExpiredStatistic, _WKWebsiteDataStoreSetStatisticsGrandfathered, 
@@ -947,11 +949,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           55F9442F-D123-35F5-8533-87DB7A40DE6C
   - target:          x86_64-ios-simulator
-    value:           4B34C64E-1432-3FEA-873C-B5C866EA2A2E
+    value:           69F88FF0-AB9C-38B2-BADF-5FD326CA11B0
   - target:          arm64-ios-simulator
-    value:           1B79914D-574E-3E3A-930F-62111AD64D2C
+    value:           7FF889EC-D9A7-394B-A2D9-D2E71C8BEED1
 install-name:    '/System/Library/PrivateFrameworks/WebKitLegacy.framework/WebKitLegacy'
-current-version: 610.1.28
+current-version: 610.2.11
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ __ZN6WebKit13MemoryMeasure10taskMemoryEv, __ZN6WebKit13MemoryMeasure13enableLoggingEb, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           7655A3F4-2A37-38F3-BDDE-0C0318A329FA
+    value:           2615AB5E-81EC-349E-9C68-D8741AFB0AB4
   - target:          arm64-ios-simulator
-    value:           38E824E0-8C7D-3266-A78C-13D98850FDA1
+    value:           DA449F1A-1896-33D0-9697-FAB5D19E1EA1
 install-name:    '/System/Library/Frameworks/Vision.framework/Vision'
-current-version: 4.0.70
+current-version: 4.0.90
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     symbols:         [ _CCRectLowLevel, _VN0af6454e97767772ce64a19ddaf61f0c, _VN1HsiXmKrxTsH8TYOuN5s7G3uHSP75iYS, 

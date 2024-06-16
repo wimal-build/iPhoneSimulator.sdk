@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           1419D97C-4C54-387A-872E-D0F9220EA4C2
   - target:          x86_64-ios-simulator
-    value:           FD8D471B-102F-3F9A-A624-CF0B370D1614
+    value:           F40AE1F4-EBC8-33D6-AEFD-82331D76DBE9
   - target:          arm64-ios-simulator
-    value:           9399E244-58E2-3894-8668-6CCD485E603F
+    value:           428610A8-3F5B-3E2C-933B-8CB62023CE18
 install-name:    '/System/Library/Frameworks/GameController.framework/GameController'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -127,14 +127,15 @@ exports:
                        _isDeviceAppleEmbeddedBluetoothButtons, _isDeviceAppleSiriRemote, 
                        _isDeviceDualShock4, _isDeviceKeyboard, _isDeviceMFiAuthenticated, 
                        _isDeviceMFiGamepadCompliantForDeviceRef, _isDeviceMFiGamepadCompliantForServiceClientRef, 
-                       _isDeviceMotionLite, _isDeviceMouse, _isDeviceXboxOne, _kGCControllerSettingsMetaSettingsExistKey, 
-                       _kGCSettingsCustomizedElementsKey, _kGCSettingsDefaultBundleIdentifier, 
-                       _kGCSettingsElementInvertHorizontallyKey, _kGCSettingsElementInvertSwapAxesKey, 
-                       _kGCSettingsElementInvertVerticallyKey, _kGCSettingsElementMappingKeyKey, 
-                       _kGCSettingsMetaSettingsExistKey, _kGCSettingsMetaSuiteSuffix, 
-                       _loadNSDictionaryFromJSON, _nameForKeyCode, _s_cbDelegate, 
-                       _s_cbDelegateQueue, _s_mbDelegate, _s_sfDelegate, _serviceMatchesUsageAndUsagePage, 
-                       _setGCHIDLoggerCategory, _threadRunLoopSourceCallback ]
+                       _isDeviceMotionLite, _isDeviceMouse, _isDeviceXboxOne, _isPartnerSupportEnabled, 
+                       _kGCControllerSettingsMetaSettingsExistKey, _kGCSettingsCustomizedElementsKey, 
+                       _kGCSettingsDefaultBundleIdentifier, _kGCSettingsElementInvertHorizontallyKey, 
+                       _kGCSettingsElementInvertSwapAxesKey, _kGCSettingsElementInvertVerticallyKey, 
+                       _kGCSettingsElementMappingKeyKey, _kGCSettingsMetaSettingsExistKey, 
+                       _kGCSettingsMetaSuiteSuffix, _loadNSDictionaryFromJSON, _nameForKeyCode, 
+                       _s_cbDelegate, _s_cbDelegateQueue, _s_mbDelegate, _s_sfDelegate, 
+                       _serviceMatchesUsageAndUsagePage, _setGCHIDLoggerCategory, 
+                       _threadRunLoopSourceCallback ]
     objc-classes:    [ GCAnalytics, GCColor, GCController, GCControllerAxisInput, 
                        GCControllerButtonInput, GCControllerCBDelegate, GCControllerDirectionPad, 
                        GCControllerElement, GCControllerElementSettings, GCControllerMBDelegate, 
@@ -142,12 +143,12 @@ exports:
                        GCDeviceBattery, GCDeviceConfigurationEvaluator, GCDeviceCursor, 
                        GCDeviceHaptics, GCDeviceLight, GCDualShockGamepad, GCEventViewController, 
                        GCExtendedGamepad, GCExtendedGamepadSnapshot, GCFrontmostApplicationObserver, 
-                       GCGamepad, GCGamepadSnapshot, GCGamepadUserDefaults, GCHapticActuator, 
+                       GCGamepad, GCGamepadSnapshot, GCHIDInformation, GCHapticActuator, 
                        GCHapticCapabilities, GCHapticCapabilityGraph, GCHapticCapabilityGraphNode, 
                        GCKeyboard, GCKeyboardAndMouseEventObserver, GCKeyboardAndMouseManager, 
-                       GCKeyboardEventObserver, GCKeyboardInput, GCLightbarColor, 
-                       GCLocalPlayerIndicator, GCMicroGamepad, GCMicroGamepadSnapshot, 
-                       GCMotion, GCMouse, GCMouseEventObserver, GCMouseInput, GCNotificationManager, 
+                       GCKeyboardEventObserver, GCKeyboardInput, GCLocalPlayerIndicator, 
+                       GCMicroGamepad, GCMicroGamepadSnapshot, GCMotion, GCMouse, 
+                       GCMouseEventObserver, GCMouseInput, GCNotificationManager, 
                        GCNotificationOptions, GCPhysicalInputProfile, GCProductInformation, 
                        GCReplayNotificationOptions, GCXboxGamepad, _GCAppClientConnection, 
                        _GCAppClientProxy, _GCAppServerConnection, _GCCControllerHIDServiceInfo, 

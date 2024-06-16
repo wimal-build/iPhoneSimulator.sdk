@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           2C42AB1F-7F05-3110-B250-5CC22355864C
   - target:          x86_64-ios-simulator
-    value:           392A6C9D-C12B-3327-A9A3-C5625E650F94
+    value:           7D2CEA42-1EF5-3702-AC05-384B22491426
   - target:          arm64-ios-simulator
-    value:           BB4CCDEF-C211-3FF3-A01A-C7142B0CD271
+    value:           30065E7B-193F-372E-8051-D2CC659846EC
 install-name:    '/usr/lib/libAccessibility.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -157,7 +157,8 @@ exports:
                        __AXSPointerStrokeColorWidth, __AXSPointerVoiceOverCursorOption, 
                        __AXSPreferredFontSize, __AXSPreferredFontSizeSetSize, __AXSProcessDrawsAssistiveUI, 
                        __AXSQuickSpeakCopyPreferredLocalesForLanguages, __AXSQuickSpeakEnabled, 
-                       __AXSQuickSpeakSetEnabled, __AXSQuickSpeakSetPreferredLocaleForLanguage, 
+                       __AXSQuickSpeakHighlightTextEnabled, __AXSQuickSpeakSetEnabled, 
+                       __AXSQuickSpeakSetHighlightTextEnabled, __AXSQuickSpeakSetPreferredLocaleForLanguage, 
                        __AXSQuickTypePredictionFeedbackEnabled, __AXSRedGreenFilterEnabled, 
                        __AXSRedGreenFilterSetEnabled, __AXSReduceMotionAutoplayMessagesEffectsEnabled, 
                        __AXSReduceMotionAutoplayVideoPreviewsEnabled, __AXSReduceMotionEnabled, 
@@ -202,6 +203,7 @@ exports:
                        __AXSSingleSystemColorValues, __AXSSiriSemanticContextEnabled, 
                        __AXSSlowKeysAcceptanceDelay, __AXSSlowKeysEnabled, __AXSSoftwareTTYEnabled, 
                        __AXSSoftwareTTYSetEnabled, __AXSSoundDetectionRunning, __AXSSpeakThisEnabled, 
+                       __AXSSpeakThisHighlightVisible, __AXSSpeakThisSetHighlightVisible, 
                        __AXSSpeechSettingsDisabledByManagedConfiguration, __AXSSpeechSettingsSetDisabledByManagedConfiguration, 
                        __AXSSwitchControlEnabledAndNeedsCameraOnLockScreen, __AXSSwitchControlExtendedKeyboardPredictionsEnabled, 
                        __AXSSwitchControlExtendedKeyboardPredictionsSetEnabled, __AXSTripleClickAddOption, 
@@ -303,6 +305,7 @@ exports:
                        _kAXSPreLoadInvertColorsEnabledNotification, _kAXSPreferredFontSizeChangedNotification, 
                        _kAXSPreferredFontSizeDisabled, _kAXSPreferredFontSizePreference, 
                        _kAXSQuickSpeakEnabledNotification, _kAXSQuickSpeakEnabledPreference, 
+                       _kAXSQuickSpeakHighlightTextEnabledNotification, _kAXSQuickSpeakHighlightTextEnabledPreference, 
                        _kAXSQuickSpeakLocaleForLanguageNotification, _kAXSQuickSpeakLocaleForLanguagePreference, 
                        _kAXSQuickSpeakPreferenceDomain, _kAXSQuickTypePredictionFeedbackEnabledNotification, 
                        _kAXSReduceMotionAutoplayMessagesEffectsChangedNotification, 

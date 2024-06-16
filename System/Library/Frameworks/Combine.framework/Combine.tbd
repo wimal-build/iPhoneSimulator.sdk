@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           FF814E33-9430-3522-826F-839A079CD9C8
+    value:           FF9B0370-72D6-3901-B4D1-A71B31ED0AF7
   - target:          arm64-ios-simulator
-    value:           2CFD9153-7580-38D7-9FEB-941510146A6F
+    value:           6D36E6E6-B9A4-3E59-A4F5-C52D5A567FEC
 install-name:    '/System/Library/Frameworks/Combine.framework/Combine'
-current-version: 235.101
+current-version: 252.100
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

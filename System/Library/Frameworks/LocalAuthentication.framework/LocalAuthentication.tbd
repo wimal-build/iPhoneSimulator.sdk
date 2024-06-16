@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           1F073184-B5E7-3DE5-BC89-95CBF7CAA755
   - target:          x86_64-ios-simulator
-    value:           8E712C2B-1D7E-36AA-A36D-72B2906B0C23
+    value:           91AE6F5E-CB05-3748-9193-DCBFB779AC72
   - target:          arm64-ios-simulator
-    value:           E6C0DBC5-7D6F-3F68-9B36-CBAD1EC8ABB5
+    value:           61D7CB4E-FA57-3FA7-A2B9-72E50CE4D8B5
 install-name:    '/System/Library/Frameworks/LocalAuthentication.framework/LocalAuthentication'
-current-version: 827.11.2
+current-version: 827.40.37
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _LAFingerDatabaseHash, _LocalAuthenticationVersionNumber, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           96180D47-0669-3034-BD86-5579E9B1B436
   - target:          x86_64-ios-simulator
-    value:           3EA3751B-7375-3982-8AEB-09ADAC77A92F
+    value:           8A00B9B3-A3C7-37E7-9D71-F74F405A1B46
   - target:          arm64-ios-simulator
-    value:           45FAC13D-A4F9-3AF6-9622-662A0476BFD8
+    value:           E53E6C93-D557-3CFF-87F4-D4F818955039
 install-name:    '/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount'
-current-version: 364.0.3
+current-version: 364.10.10
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _VSEntitlementNameBulletinService, _VSStoreProviderResponseKeyAppStoreIdentifier, 
@@ -83,11 +83,12 @@ exports:
                        _VSValueTransformerBindingOption, _VSValueTypeCopyWithZone, 
                        _VSValueTypeDescription, _VSValueTypeEncodeWithCoder, _VSValueTypeHash, 
                        _VSValueTypeInit, _VSValueTypeInitWithCoder, _VSValueTypeIsEqual ]
-    objc-classes:    [ VSAccount, VSAccountChannels, VSAccountChannelsCenter, VSAccountChannelsSaveOperation, 
-                       VSAccountManager, VSAccountManagerResult, VSAccountMetadata, 
-                       VSAccountMetadataRequest, VSAccountProviderResponse, VSAccountSaveOperation, 
-                       VSAccountSerializationCenter, VSAccountStore, VSAppChannelsFilter, 
-                       VSAppInstallationInfoCenter, VSAppInstallationOperation, VSApplicationBootURLOperation, 
+    objc-classes:    [ VSAccount, VSAccountApplicationProvider, VSAccountChannels, 
+                       VSAccountChannelsCenter, VSAccountChannelsSaveOperation, VSAccountManager, 
+                       VSAccountManagerResult, VSAccountMetadata, VSAccountMetadataRequest, 
+                       VSAccountProviderResponse, VSAccountSaveOperation, VSAccountSerializationCenter, 
+                       VSAccountStore, VSAppChannelsFilter, VSAppInstallationInfoCenter, 
+                       VSAppInstallationOperation, VSApplicationBootURLOperation, 
                        VSAsyncOperation, VSAuditToken, VSBackgroundTask, VSBlockBasedValueTransformer, 
                        VSCasePreservingString, VSCompoundValueTransformer, VSDelayOperation, 
                        VSDeveloperIdentityProviderChangeOperation, VSDeveloperIdentityProviderFetchAllOperation, 

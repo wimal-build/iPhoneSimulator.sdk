@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           7B08755D-542C-3EE9-A3B2-21335320D189
   - target:          x86_64-ios-simulator
-    value:           C71BCF38-B9A6-31DA-B711-A40B9C17F64D
+    value:           23FCB2DF-D01D-3583-BDCA-3359E1CF5801
   - target:          arm64-ios-simulator
-    value:           B0381EF5-557F-3B57-B969-E530BAB4C605
+    value:           21632431-CF2B-3014-828A-A2A4831951BA
 install-name:    '/System/Library/Frameworks/PushKit.framework/PushKit'
 exports:
   - targets:         [ i386-ios-simulator ]

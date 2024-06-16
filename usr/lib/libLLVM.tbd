@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           711FBE5F-5D39-33A1-9320-451B4CA59FD0
   - target:          x86_64-ios-simulator
-    value:           AEE8AF25-98A4-3375-8553-E38106EC99FD
+    value:           BEBCEF84-F43C-3559-B95B-E8BA4D46B243
   - target:          arm64-ios-simulator
-    value:           6EE8AAF8-B06C-3016-A80D-20BEDF06A409
+    value:           E401C251-603C-30D8-B79E-2272C4BB412F
 install-name:    '/usr/lib/libLLVM.dylib'
-current-version: 31001.41
+current-version: 31001.43
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _ConvertUTF16toUTF32, _ConvertUTF16toUTF8, _ConvertUTF32toUTF16, 
@@ -5169,7 +5169,8 @@ exports:
                        __ZN4llvm3AGX11AGXCompiler17createCompilePlanENS0_12PipelineTypeENS0_8OptimizeENS0_7LoggingENS0_10GlobalISelENS0_10RelocModelENS0_13CodeGenOutputE, 
                        __ZN4llvm3AGX11AGXCompiler17createCompilePlanENS0_12PipelineTypeENS0_8OptimizeENS0_7LoggingENS0_10GlobalISelENS0_13CodeGenOutputE, 
                        __ZN4llvm3AGX11AGXCompiler18createAssemblePlanENS0_10RelocModelE, 
-                       __ZN4llvm3AGX12CompileReply15takeDiagnosticsEv, __ZN4llvm3AGX14AGXCompilePlanC1ERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERNS_13TargetMachineERNS0_17DiagnosticManagerENS0_12PipelineTypeENS0_13CodeGenOutputENS0_8OptimizeENS0_7LoggingENS0_10GlobalISelE, 
+                       __ZN4llvm3AGX12CompileReply15takeDiagnosticsEv, __ZN4llvm3AGX14AGXCompilePlan20collectConfigurationERNS0_14CompileRequestE, 
+                       __ZN4llvm3AGX14AGXCompilePlanC1ERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERNS_13TargetMachineERNS0_17DiagnosticManagerENS0_12PipelineTypeENS0_13CodeGenOutputENS0_8OptimizeENS0_7LoggingENS0_10GlobalISelE, 
                        __ZN4llvm3AGX14AGXCompilePlanC2ERKNSt3__112basic_stringIcNS2_11char_traitsIcEENS2_9allocatorIcEEEERNS_13TargetMachineERNS0_17DiagnosticManagerENS0_12PipelineTypeENS0_13CodeGenOutputENS0_8OptimizeENS0_7LoggingENS0_10GlobalISelE, 
                        __ZN4llvm3AGX14CompileRequest11addSegmentsENS_8ArrayRefINSt3__112basic_stringIcNS3_11char_traitsIcEENS3_9allocatorIcEEEEEE, 
                        __ZN4llvm3AGX14CompileRequestC1ERNS_6ModuleENS0_14CodeGenOptionsENSt3__112basic_stringIcNS5_11char_traitsIcEENS5_9allocatorIcEEEEiPNS0_18TelemetryCollectorE, 

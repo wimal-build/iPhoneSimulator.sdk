@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           54B31E00-DDB9-329F-A5D4-6C9BDE42B7A3
+    value:           36E1451D-76AA-3FEB-8186-127FD21B5D08
   - target:          arm64-ios-simulator
-    value:           6B3AAE14-C49B-33A0-990E-427B080EA9A9
+    value:           F95EFA96-F6B7-3910-A856-3CF1E48965F9
 install-name:    '/System/Library/Frameworks/LinkPresentation.framework/LinkPresentation'
-current-version: 145.2
+current-version: 146.5
 reexported-libraries:
   - targets:         [ i386-ios-simulator, x86_64-ios-simulator, arm64-ios-simulator ]
     libraries:       [ '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting' ]
@@ -54,11 +54,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4743C8B4-1ED0-3DFC-903F-B50E7134DEAD
+    value:           4F81C8B7-EAE9-3130-856D-9D7BD0CBB0C0
   - target:          arm64-ios-simulator
-    value:           9FC046E0-5305-32C3-A534-D09FE7DA2965
+    value:           A99C942C-458C-3D04-9491-1A30C01FAC47
 install-name:    '/System/Library/PrivateFrameworks/URLFormatting.framework/URLFormatting'
-current-version: 145.2
+current-version: 146.5
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
     objc-classes:    [ URLFormattingTestingOverrides ]

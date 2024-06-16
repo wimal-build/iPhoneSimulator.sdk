@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           B0C200B7-D7B9-333B-86C5-590C9CF30B53
+    value:           F9B7C78D-5BCF-3C4A-94BB-66AF98E5B39F
   - target:          arm64-ios-simulator
-    value:           22A46992-96E3-3484-9F57-D9F1A5EA3D0E
+    value:           29D0F913-03BB-3FD4-94C8-E6BE5F0CEE8A
 install-name:    '/System/Library/Frameworks/PencilKit.framework/PencilKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           3AE6837A-543C-342F-B6E3-1FEBC363B4B0
   - target:          x86_64-ios-simulator
-    value:           856214CD-30AB-3619-8FD6-E357EDD86E78
+    value:           AC96075B-5C00-3500-9229-27FB4C30324B
   - target:          arm64-ios-simulator
-    value:           824C9105-FBF7-3B3C-885B-C94C32BF05CD
+    value:           82600269-6192-3C11-9D71-69D5BBA28C73
 install-name:    '/System/Library/Frameworks/CoreMIDI.framework/CoreMIDI'
 current-version: 69
 exports:

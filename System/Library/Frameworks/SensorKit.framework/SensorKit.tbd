@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           58942105-2CF1-38E3-95AB-AA679DD5FB55
+    value:           D723B0D2-CCBC-30C6-AE7C-A7D2A5B606D4
   - target:          arm64-ios-simulator
-    value:           50BE6A74-D8EA-3557-A9ED-61655EEEDB46
+    value:           72BBEF90-5C7C-36F3-BD2C-E8C7DB42F4F5
 install-name:    '/System/Library/Frameworks/SensorKit.framework/SensorKit'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

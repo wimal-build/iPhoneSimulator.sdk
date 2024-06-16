@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           FCC03C24-CC9F-3FBF-ACC4-A34474DD2D71
   - target:          x86_64-ios-simulator
-    value:           3B5F9FBB-BE6B-3AC6-AD01-F75726052E7E
+    value:           AEAB96ED-C638-3F3D-93E8-EEC7DBD63489
   - target:          arm64-ios-simulator
-    value:           2D2BDAD6-71B8-30E0-96B0-76EB2F77F0CB
+    value:           B70A7CA5-42FF-3AEC-B001-47D175376691
 install-name:    '/usr/lib/libxml2.2.dylib'
 current-version: 10.9
 compatibility-version: 10

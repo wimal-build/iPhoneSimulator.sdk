@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           8F2BCB1F-4BA9-30CA-83B6-C9969D107788
   - target:          x86_64-ios-simulator
-    value:           80D7A62B-6859-330E-A603-EBBA35938157
+    value:           41C75F61-FEA1-32E9-85E2-754E59098266
   - target:          arm64-ios-simulator
-    value:           17C2672E-5D6E-33B5-B2DE-EBD590CF7CC5
+    value:           A06C3B40-E84C-3B8D-BAF7-B92777F36FBF
 install-name:    '/System/Library/Frameworks/MultipeerConnectivity.framework/MultipeerConnectivity'
-current-version: 171
+current-version: 172
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ _AGPSessionCopyDetailedDescription, _AGPSessionCreate, _AGPSessionEvent, 

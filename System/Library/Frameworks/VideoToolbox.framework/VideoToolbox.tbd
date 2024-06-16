@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           CAFD4171-6A07-36DE-9EC8-40BC61161AD0
   - target:          x86_64-ios-simulator
-    value:           6145696B-B85E-396C-AF56-D45ADAA48430
+    value:           8DC6049C-674A-373C-8511-1ACEE05E50BD
   - target:          arm64-ios-simulator
-    value:           285AC908-36C1-36BC-BB15-F89F924B04C8
+    value:           7CC8D582-D375-36A5-BBC4-04CE5FF4D961
 install-name:    '/System/Library/Frameworks/VideoToolbox.framework/VideoToolbox'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -418,7 +418,7 @@ exports:
                        _kVTVideoEncoderList_IsHardwareAccelerated, _kVTVideoEncoderList_PerformanceRating, 
                        _kVTVideoEncoderList_QualityRating, _kVTVideoEncoderList_RevealHardwareAcceleratedEncoders, 
                        _kVTVideoEncoderList_RevealHiddenEncoders, _kVTVideoEncoderList_SupportedSelectionProperties, 
-                       _kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder, 
+                       _kVTVideoEncoderList_SupportsFrameReordering, _kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder, 
                        _kVTVideoEncoderSpecification_EncoderID, _kVTVideoEncoderSpecification_InhibitCompressedBufferUse, 
                        _kVTVideoEncoderSpecification_PreferredEncoderGPURegistryID, 
                        _kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder, 

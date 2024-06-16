@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           61DF913B-E90D-3EFD-8642-44B9F17B6DEB
   - target:          x86_64-ios-simulator
-    value:           E05B29BD-8D28-3E66-A7BB-B71CB1911898
+    value:           6CCBADD2-25C4-3FD3-9CA5-2D5AE308C5F7
   - target:          arm64-ios-simulator
-    value:           4418E3A5-EBE9-3E24-959D-0ABEE431470E
+    value:           C69D7A7E-3A09-3C72-BAEC-A1FADDF1DE7E
 install-name:    '/System/Library/Frameworks/CFNetwork.framework/CFNetwork'
-current-version: 1197
+current-version: 1206
 exports:
   - targets:         [ i386-ios-simulator ]
     symbols:         [ '$ld$hide$os4.3$_NSHTTPCookieComment', '$ld$hide$os4.3$_NSHTTPCookieCommentURL', 

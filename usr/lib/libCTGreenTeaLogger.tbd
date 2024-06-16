@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           F54CAF4A-A413-33AF-8889-A7CAD1D4FBBD
+    value:           8745710B-9898-36D8-A094-93D44A39B209
   - target:          arm64-ios-simulator
-    value:           AAF0826D-3F08-31DC-8EDE-28C226D094DA
+    value:           23083181-8251-30BC-8E68-3DB221DACA42
 install-name:    '/usr/lib/libCTGreenTeaLogger.dylib'
 exports:
   - targets:         [ x86_64-ios-simulator, arm64-ios-simulator, i386-ios-simulator ]

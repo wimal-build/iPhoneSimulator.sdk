@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           EA2FA6C5-F555-374F-9E14-936D0B6B0049
   - target:          x86_64-ios-simulator
-    value:           0AA89230-D533-39FE-AE00-4B9B1A876203
+    value:           9259E04C-ED0E-38F3-BA2E-ABFCE6B025BD
   - target:          arm64-ios-simulator
-    value:           9B9E8F4E-F237-3590-A1C5-4960C76840C3
+    value:           BCBE0317-B433-3F6E-8283-15A2FC3F7D45
 install-name:    '/usr/lib/libtidy.A.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

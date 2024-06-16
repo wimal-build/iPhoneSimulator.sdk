@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           B7587CD6-C08E-3740-942A-498AEA6A51D3
   - target:          x86_64-ios-simulator
-    value:           D889E294-D009-3A83-A6BF-1108ADB03FF6
+    value:           0D3637F3-FD33-332D-A8E7-EF8FBE38D85C
   - target:          arm64-ios-simulator
-    value:           1394AB2D-D426-3B94-90C6-D546DA33F7D3
+    value:           55EFEC0E-6C69-3841-A5CD-B5CD8D1460D5
 install-name:    '/usr/lib/liblangid.dylib'
 exports:
   - targets:         [ i386-ios-simulator ]

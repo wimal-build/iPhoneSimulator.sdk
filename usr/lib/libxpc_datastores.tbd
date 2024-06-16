@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           4D26FECA-2C0B-3386-9779-718019FB5F1B
+    value:           D5C5534A-8146-371E-B0FB-05FC9F95073B
   - target:          arm64-ios-simulator
-    value:           63456D87-6681-3684-AB4B-43A9D11EA939
+    value:           1F67C2F5-BF10-3D7F-8894-485188A8BD4A
 install-name:    '/usr/lib/libxpc_datastores.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

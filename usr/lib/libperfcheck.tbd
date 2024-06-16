@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           D5958B90-0403-3694-BFC5-C0C878E0BF07
+    value:           7A8E5974-E1A7-3AC5-AFAB-25E9C13DCB08
   - target:          arm64-ios-simulator
-    value:           16E017B3-58A8-3A99-8F7F-3717DC269392
+    value:           2E526086-5982-31EE-AE35-7BF1523496C9
 install-name:    '/usr/lib/libperfcheck.dylib'
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           0E7F0B00-BADF-3CB9-B431-4FD08C0579B0
+    value:           60F3892B-0610-3577-89D7-F4663434B4F2
   - target:          arm64-ios-simulator
-    value:           43A64BE3-F86D-3E61-8954-01F3E4E6D53F
+    value:           A519F39E-7017-3F9A-B455-0946E9D4162D
 install-name:    '/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib'
-current-version: 631
+current-version: 631.7
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]
@@ -37,30 +37,19 @@ exports:
                        '_$s22UniformTypeIdentifiers10UTTagClassVSYAAMc', '_$s22UniformTypeIdentifiers10UTTagClassVSeAAMc', 
                        '_$s22UniformTypeIdentifiers10UTTagClassVs23CustomStringConvertibleAAMc', 
                        '_$s22UniformTypeIdentifiers10UTTagClassVs28CustomDebugStringConvertibleAAMc', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1bs5UInt8VvM', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1bs5UInt8Vvg', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1bs5UInt8VvpMV', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1bs5UInt8Vvs', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1gs5UInt8VvM', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1gs5UInt8Vvg', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1gs5UInt8VvpMV', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1gs5UInt8Vvs', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1r1g1bACs5UInt8V_A2HtcfC', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1rs5UInt8VvM', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1rs5UInt8Vvg', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1rs5UInt8VvpMV', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV1rs5UInt8Vvs', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV2eeoiySbAC_ACtFZ', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV4fromACs7Decoder_p_tKcfC', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV4hash4intoys6HasherVz_tF', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV6encode2toys7Encoder_p_tKF', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV9hashValueSivg', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorV9hashValueSivpMV', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorVACycfC', '_$s22UniformTypeIdentifiers15UTHardwareColorVMa', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorVMn', '_$s22UniformTypeIdentifiers15UTHardwareColorVN', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorVSEAAMc', '_$s22UniformTypeIdentifiers15UTHardwareColorVSHAAMc', 
-                       '_$s22UniformTypeIdentifiers15UTHardwareColorVSQAAMc', '_$s22UniformTypeIdentifiers15UTHardwareColorVSeAAMc', 
-                       '_$s22UniformTypeIdentifiers6UTTypeV04mimeB012conformingToACSgSS_ACtcfC', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO016currentEnclosureE0ACSgvgZ', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO2eeoiySbAC_ACtFZ', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO3rgbyACs5UInt8V_A2FtcACmFWC', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO4fromACs7Decoder_p_tKcfC', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO4hash4intoys6HasherVz_tF', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO6encode2toys7Encoder_p_tKF', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO7indexedyACs5Int32VcACmFWC', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO9hashValueSivg', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorO9hashValueSivpMV', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorOMa', '_$s22UniformTypeIdentifiers15UTHardwareColorOMn', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorON', '_$s22UniformTypeIdentifiers15UTHardwareColorOSEAAMc', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorOSHAAMc', '_$s22UniformTypeIdentifiers15UTHardwareColorOSQAAMc', 
+                       '_$s22UniformTypeIdentifiers15UTHardwareColorOSeAAMc', '_$s22UniformTypeIdentifiers6UTTypeV04mimeB012conformingToACSgSS_ACtcfC', 
                        '_$s22UniformTypeIdentifiers6UTTypeV05cPlusE6HeaderACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV05cPlusE6SourceACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV07_isCoreB0Sbvg', '_$s22UniformTypeIdentifiers6UTTypeV07_isCoreB0SbvpMV', 
@@ -119,13 +108,13 @@ exports:
                        '_$s22UniformTypeIdentifiers6UTTypeV14quickTimeMovieACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV14unixExecutableACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV14utf16PlainTextACvgZ', 
-                       '_$s22UniformTypeIdentifiers6UTTypeV15_enclosureColorAA010UTHardwareF0VSgvg', 
-                       '_$s22UniformTypeIdentifiers6UTTypeV15_enclosureColorAA010UTHardwareF0VSgvpMV', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV15_enclosureColorAA010UTHardwareF0OSgvg', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV15_enclosureColorAA010UTHardwareF0OSgvpMV', 
                        '_$s22UniformTypeIdentifiers6UTTypeV15osaScriptBundleACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV15urlBookmarkDataACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV15x509CertificateACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV15xmlPropertyListACvgZ', 
-                       '_$s22UniformTypeIdentifiers6UTTypeV16_deviceModelCode14enclosureColorACSgSS_AA010UTHardwareI0VSgtcfC', 
+                       '_$s22UniformTypeIdentifiers6UTTypeV16_deviceModelCode14enclosureColorACSgSS_AA010UTHardwareI0OSgtcfC', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16_namedPipeOrFIFOACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16compositeContentACvgZ', 
                        '_$s22UniformTypeIdentifiers6UTTypeV16debugDescriptionSSvg', 

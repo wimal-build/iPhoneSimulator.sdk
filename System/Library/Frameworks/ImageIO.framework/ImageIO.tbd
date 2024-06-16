@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           83143887-B736-35EC-A60C-1C7A57175930
   - target:          x86_64-ios-simulator
-    value:           96593391-64DC-32EA-871A-DE45C36AA1AB
+    value:           3397775A-A8EA-323F-91F9-A8ECEC5774EC
   - target:          arm64-ios-simulator
-    value:           251C9372-0C0C-3992-8060-6382C84BCA52
+    value:           683DDF91-D660-3EE2-AA5F-CE9A18954BA6
 install-name:    '/System/Library/Frameworks/ImageIO.framework/ImageIO'
 exports:
   - targets:         [ i386-ios-simulator ]
@@ -474,10 +474,10 @@ exports:
                        _kCGImageSourceCreateThumbnailFromImageProxy, _kCGImageSourceCreateThumbnailWithTransform, 
                        _kCGImageSourceDisableParallelDecode, _kCGImageSourceDoNotCacheImageBlocks, 
                        _kCGImageSourceDrawAnnotations, _kCGImageSourceEnableMosquitoNoiseFiltering, 
-                       _kCGImageSourceForCoreImage, _kCGImageSourceJPEGInterchangeFormat, 
-                       _kCGImageSourceJPEGInterchangeFormatLength, _kCGImageSourceMemoryMapAsShared, 
-                       _kCGImageSourceMethodCurrentVersion, _kCGImageSourceNeutralX, 
-                       _kCGImageSourceNeutralY, _kCGImageSourceNoiseTransitionEnabled, 
+                       _kCGImageSourceForCoreImage, _kCGImageSourceIgnoreJPEGAuxImages, 
+                       _kCGImageSourceJPEGInterchangeFormat, _kCGImageSourceJPEGInterchangeFormatLength, 
+                       _kCGImageSourceMemoryMapAsShared, _kCGImageSourceMethodCurrentVersion, 
+                       _kCGImageSourceNeutralX, _kCGImageSourceNeutralY, _kCGImageSourceNoiseTransitionEnabled, 
                        _kCGImageSourcePreferHEIFCollection, _kCGImageSourcePreferredThreadCount, 
                        _kCGImageSourceRasterizationDPI, _kCGImageSourceRawReconstructionDefaults, 
                        _kCGImageSourceRawReconstructionMethodVersions, _kCGImageSourceRawReconstructionOptions, 

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           00000000-0000-0000-0000-000000000000
   - target:          x86_64-ios-simulator
-    value:           965B820C-52D0-3830-84DE-2D6E99A96297
+    value:           8F264AA9-5E00-377C-88D4-DEC459F578CF
   - target:          arm64-ios-simulator
-    value:           942AE18F-3F99-34B4-AABF-E9404F7C2BF0
+    value:           1EDE59FF-9B20-3D04-ADC9-31F59FAE6FA4
 install-name:    '/usr/lib/swift/libswiftNearbyInteraction.dylib'
-current-version: 205.0.10
+current-version: 207.0.8
 swift-abi-version: 7
 exports:
   - targets:         [ arm64-ios-simulator, x86_64-ios-simulator, i386-ios-simulator ]

@@ -5,11 +5,11 @@ uuids:
   - target:          i386-ios-simulator
     value:           66C62527-5B7F-3CE1-A326-961611EBECE5
   - target:          x86_64-ios-simulator
-    value:           32E87E4B-5A28-35D2-888C-588B1B8BD593
+    value:           A3A0455E-D0C7-3927-A01E-0652B81D9E42
   - target:          arm64-ios-simulator
-    value:           0EB848BB-48FE-3CB5-9A12-B52F021B6571
+    value:           07FCFB8D-BF57-35BE-BF5D-8F8E15B9FCA2
 install-name:    '/usr/lib/swift/libswiftFoundation.dylib'
-current-version: 13.100
+current-version: 20
 swift-abi-version: 7
 exports:
   - targets:         [ i386-ios-simulator ]

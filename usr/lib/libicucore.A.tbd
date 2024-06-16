@@ -5,9 +5,9 @@ uuids:
   - target:          i386-ios-simulator
     value:           AEDD97EA-D1F0-3AC3-9BB6-3D6F2A4467C1
   - target:          x86_64-ios-simulator
-    value:           FFA97F95-4FD1-33B0-9B76-35E3C7E2614A
+    value:           316361F6-63B9-36CA-AA94-469F29B4F49E
   - target:          arm64-ios-simulator
-    value:           5B65F347-CE87-32FA-B2FC-9CF58546EA72
+    value:           D50E18EA-C1E4-3E6C-894F-75B9795BA170
 install-name:    '/usr/lib/libicucore.A.dylib'
 current-version: 66.1
 exports:
@@ -604,7 +604,7 @@ exports:
                        __ZN3icu16ReorderingBufferC2ERKNS_15Normalizer2ImplERNS_13UnicodeStringER10UErrorCode, 
                        __ZN3icu16SimpleDateFormat12isSyntaxCharEDs, __ZN3icu16SimpleDateFormat16getLevelFromCharEDs, 
                        __ZN3icu16SimpleDateFormat16getPatternStringEiP15UResourceBundleRNS_13UnicodeStringER10UErrorCode, 
-                       __ZN3icu16SimpleDateFormat22getPatternForDateStyleENS_10DateFormat6EStyleEP15UResourceBundleS4_aRNS_13UnicodeStringER10UErrorCode, 
+                       __ZN3icu16SimpleDateFormat22getPatternForDateStyleENS_10DateFormat6EStyleEP15UResourceBundleS4_RaRNS_13UnicodeStringER10UErrorCode, 
                        __ZN3icu16SimpleDateFormat22getPatternForTimeStyleENS_10DateFormat6EStyleERKNS_6LocaleEP15UResourceBundleRNS_13UnicodeStringER10UErrorCode, 
                        __ZN3icu16SimpleDateFormat24freeFastNumberFormattersEv, __ZN3icu16SimpleDateFormat24initFastNumberFormattersER10UErrorCode, 
                        __ZN3icu16SimpleDateFormat9isNumericEDsi, __ZN3icu17CanonicalIterator15getEquivalents2EPNS_9HashtableEPKDsiR10UErrorCode, 
