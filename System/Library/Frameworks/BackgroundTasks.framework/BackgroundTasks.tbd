@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 6A160A92-4C19-3E22-AB56-954FA75B3812' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 1208BC2C-C497-34AA-915B-2A59E62EE9BC' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/BackgroundTasks.framework/BackgroundTasks'
 exports:         

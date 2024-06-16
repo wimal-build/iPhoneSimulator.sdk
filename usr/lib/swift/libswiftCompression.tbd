@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 26733539-1210-3D55-BB02-099CC95F1AD6' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 03A30956-AD20-3A17-B135-79DDF4B38EDA' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCompression.dylib'
 current-version: 0

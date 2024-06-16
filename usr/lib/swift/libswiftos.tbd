@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: ECE971BA-0DD1-34CE-B86C-FE36DDD26974', 'x86_64: CA8FF03F-B615-3574-A9F1-3F3B188F80DF' ]
+uuids:           [ 'i386: ECE971BA-0DD1-34CE-B86C-FE36DDD26974', 'x86_64: E569C290-570A-3CDB-849A-B6125033ECCE' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftos.dylib'
 current-version: 0

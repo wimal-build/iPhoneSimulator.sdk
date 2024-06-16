@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 28B7E15A-3DDB-3034-8F9D-7365749A437B', 'x86_64: 4B5DBB8D-6BC5-3579-9460-E5765B25D7C6' ]
+uuids:           [ 'i386: 28B7E15A-3DDB-3034-8F9D-7365749A437B', 'x86_64: E0F91C63-2CA6-33CB-83FE-54041CF2FECF' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuickLook.framework/QuickLook'
 exports:         

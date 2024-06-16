@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A1BAAD46-AD87-302E-847E-CAEB64661B3F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 061C0933-623F-3CB1-B162-82AAB0B32EB8' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreHaptics.framework/CoreHaptics'
 exports:         

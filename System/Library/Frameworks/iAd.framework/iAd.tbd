@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: D7C396A4-787B-33D1-8E7E-5A5B74161757', 'x86_64: 8527811C-D3F9-3467-A1CE-41F00EF06DA8' ]
+uuids:           [ 'i386: D7C396A4-787B-33D1-8E7E-5A5B74161757', 'x86_64: A7B8B2DD-565D-36B3-9E45-C52609C086E9' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/iAd.framework/iAd'
 exports:         

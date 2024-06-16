@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: CCAC73EE-E9BD-3A11-B1C2-B831BC5FA632' ]
+uuids:           [ 'i386: 11935023-754B-3951-8D68-A58AFEC1E3BA', 'x86_64: FCE13AA4-33B8-3249-BF23-D5BEAB7A74AB' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreLocation.framework/CoreLocation'
-current-version: 2394.0.25
+current-version: 2394.0.31
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _CLClientClearNvramData, _CLClientCreate, _CLClientEnableNmeaOutput, 
@@ -62,15 +62,15 @@ exports:
                        _CLLocationCoordinate2DIsValid, _CLLocationCoordinate2DMake, 
                        _CLLocationDistanceMax, _CLPassKitNotifyPayment, _CLPingDaemon, 
                        _CLSetLocationDefault, _CLSetMapMatchingRouteHint, _CLSetRouteHintsForMapMatching, 
-                       _CLShouldDisplayStatusBarIconChangedNotification, _CLStartStopAdvertisingBeacon, 
-                       _CLTechStatusChangedNotification, _CLTimeIntervalMax, _CLWeatherNotifyForecast, 
-                       _kCLClientDistanceFilterNone, _kCLClientHeadingFilterNone, 
-                       _kCLCommonLocationAlwaysAndWhenInUseUsageDescriptionKey, _kCLCommonLocationAlwaysUsageDescriptionKey, 
-                       _kCLCommonLocationUsageDescriptionKey, _kCLCommonLocationWhenInUseUsageDescriptionKey, 
-                       _kCLCommonWKRunsIndependentlyOfCompanionAppKey, _kCLCommonWKWatchOnlyKey, 
-                       _kCLDistanceFilterNone, _kCLErrorDomain, _kCLErrorDomainPrivate, 
-                       _kCLErrorUserInfoAlternateRegionKey, _kCLHeadingFilterNone, 
-                       _kCLLocationAccuracyBest, _kCLLocationAccuracyBestForNavigation, 
+                       _CLShouldDisplayEEDUI, _CLShouldDisplayStatusBarIconChangedNotification, 
+                       _CLStartStopAdvertisingBeacon, _CLTechStatusChangedNotification, 
+                       _CLTimeIntervalMax, _CLWeatherNotifyForecast, _kCLClientDistanceFilterNone, 
+                       _kCLClientHeadingFilterNone, _kCLCommonLocationAlwaysAndWhenInUseUsageDescriptionKey, 
+                       _kCLCommonLocationAlwaysUsageDescriptionKey, _kCLCommonLocationUsageDescriptionKey, 
+                       _kCLCommonLocationWhenInUseUsageDescriptionKey, _kCLCommonWKRunsIndependentlyOfCompanionAppKey, 
+                       _kCLCommonWKWatchOnlyKey, _kCLDistanceFilterNone, _kCLErrorDomain, 
+                       _kCLErrorDomainPrivate, _kCLErrorUserInfoAlternateRegionKey, 
+                       _kCLHeadingFilterNone, _kCLLocationAccuracyBest, _kCLLocationAccuracyBestForNavigation, 
                        _kCLLocationAccuracyBystander, _kCLLocationAccuracyE911CallInviteHigh, 
                        _kCLLocationAccuracyE911CallInviteLow, _kCLLocationAccuracyHundredMeters, 
                        _kCLLocationAccuracyKilometer, _kCLLocationAccuracyLeech, 

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: C3EAABDE-B19A-3422-A612-7EDEB2B83654' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: D5CCA26A-C62F-348A-8B90-CE422D792D5E' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuickLookThumbnailing.framework/QuickLookThumbnailing'
 current-version: 0

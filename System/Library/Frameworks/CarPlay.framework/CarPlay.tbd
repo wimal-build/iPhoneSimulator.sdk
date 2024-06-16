@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: BE2E9F9A-6BFC-3F6D-9E09-237CD2CE399E' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 5E945F18-07D0-3C52-A177-562ABF6715D2' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CarPlay.framework/CarPlay'
 exports:         

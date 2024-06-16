@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8FB62468-1148-380E-9BFC-4380B4E7203A', 'x86_64: A2DE1986-2D12-3DE7-A7B5-30C5BCDD3B12' ]
+uuids:           [ 'i386: 8FB62468-1148-380E-9BFC-4380B4E7203A', 'x86_64: C94D923F-4781-39F1-BC92-9FF7DE6AF9A7' ]
 platform:        ios
 install-name:    '/System/Library/CoreServices/Encodings/libLatin2Converter.dylib'
 current-version: 76

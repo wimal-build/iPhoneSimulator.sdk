@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: FE53535E-D39F-31CB-B7E6-1C62D46BB425' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: AB1E5296-545B-3715-9A1A-F256A1B24B0D' ]
 platform:        ios
 install-name:    '/usr/lib/libnetworkextension.dylib'
 exports:         

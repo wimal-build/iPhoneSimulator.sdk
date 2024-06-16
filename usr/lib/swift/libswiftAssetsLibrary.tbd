@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F47997EE-7B9D-3BB3-9E62-CB4D8BC99878', 'x86_64: B39D10BC-6C18-3570-B1C4-68BE8B298AA0' ]
+uuids:           [ 'i386: F47997EE-7B9D-3BB3-9E62-CB4D8BC99878', 'x86_64: 14B452C2-B434-302E-9873-160E3C7075BF' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftAssetsLibrary.dylib'
 current-version: 0

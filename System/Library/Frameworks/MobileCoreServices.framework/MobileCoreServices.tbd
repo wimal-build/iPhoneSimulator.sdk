@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 3DE0E92C-0A96-3FFA-9534-FC12B21DAFB6', 'x86_64: C544E2DD-F012-3623-86C1-6AA3E58005AC' ]
+uuids:           [ 'i386: 3DE0E92C-0A96-3FFA-9534-FC12B21DAFB6', 'x86_64: B8AF072F-AF44-3F14-82DE-8CE7F393D0CA' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices'
-current-version: 1069.17
+current-version: 1069.25
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _CSIdentityAuthorityCopyLocalizedName, _CSIdentityAuthorityGetTypeID, 

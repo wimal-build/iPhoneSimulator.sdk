@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: BE478210-BB4D-38A7-B843-3D51C12A2B65' ]
+uuids:           [ 'i386: E7AD9E9E-DBE4-3B8B-8161-0A3F33077640', 'x86_64: 2BAE597C-29F5-38EA-9A58-86466B51D744' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/VideoSubscriberAccount.framework/VideoSubscriberAccount'
-current-version: 331.50.16
+current-version: 331.60.4
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _VSEntitlementNameBulletinService, _VSStoreProviderResponseKeyAppStoreIdentifier, 

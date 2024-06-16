@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C476129C-F286-3F0B-89A4-1A808775E4DE', 'x86_64: 1B642797-CC74-3125-B3CB-E39B624A7295' ]
+uuids:           [ 'i386: C476129C-F286-3F0B-89A4-1A808775E4DE', 'x86_64: 3E71DDDB-A1E0-387E-BEBC-9FBB884A8A46' ]
 platform:        ios
 install-name:    '/usr/lib/libAXSpeechManager.dylib'
 exports:         

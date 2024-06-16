@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 8C4EA2AB-65F8-3B2C-A4DA-A0C5A4407AE1', 'x86_64: B4617A25-E8BC-3439-A935-656E467DD942' ]
+uuids:           [ 'i386: 8C4EA2AB-65F8-3B2C-A4DA-A0C5A4407AE1', 'x86_64: 456B5ACE-6A46-3FD3-8FF4-6D5E7A94643D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit'
 current-version: 275

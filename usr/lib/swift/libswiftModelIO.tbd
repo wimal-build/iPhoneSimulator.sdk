@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 12BABBCC-2F11-3DFB-BBA6-6442C479B1E5', 'x86_64: A25C108A-787F-309F-B1FC-E8AC0520A3D5' ]
+uuids:           [ 'i386: 12BABBCC-2F11-3DFB-BBA6-6442C479B1E5', 'x86_64: 7553B9DD-051F-3646-AE1E-80CED9B2641A' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftModelIO.dylib'
 current-version: 0

@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4587C846-B51C-3F7D-9570-4F144158B372', 'x86_64: 1F187CC1-7460-3D5E-9FE8-5B891DFF09C3' ]
+uuids:           [ 'i386: 4587C846-B51C-3F7D-9570-4F144158B372', 'x86_64: AA5D2EC5-8F50-3CDF-9F10-6C10415D4260' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/PhotosUI.framework/PhotosUI'
-current-version: 3642.30.210
+current-version: 3652.30.210
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _PLActivityTypePublishToTudou, _PLActivityTypePublishToYouTube, 

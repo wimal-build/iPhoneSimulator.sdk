@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: EABF1802-E827-3D9C-B174-8076A2BB2C37' ]
+uuids:           [ 'i386: 611F649D-FAF7-374A-A585-BFC70265D2B3', 'x86_64: 96D08194-3737-3883-B49D-17E3C00CAAB0' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/NetworkExtension.framework/NetworkExtension'
 exports:         
@@ -328,16 +328,17 @@ exports:
                        _kIKEv2ExchangeTypeMapping, _kIKEv2IDTypeMapping, _kIKEv2IntegrityAlgorithmMapping, 
                        _kIKEv2NotifyTypeMapping, _kIKEv2PRFAlgorithmMapping, _kIKEv2PayloadTypeMapping, 
                        _kIKEv2ProposalProtocolMapping, _kIKEv2RedirectServerTypeMapping, 
-                       _kIKEv2TrafficSelectorTypeMapping, _kNEAppPathKey, _kNEAuthMethodExtendedValue, 
-                       _kNEAuthProtocolEAPValue, _kNEIPConfigLinkLocalValue, _kNEIdentityCertificateKey, 
-                       _kNENoDivertDNSKey, _kNEPolicyConditionsMapping, _kNEPolicyResultsMapping, 
-                       _kNEPolicyRouteRuleActionMapping, _kNEPolicyRouteRuleTypeMapping, 
-                       _kNEPolicySecondaryResultsMapping, _kNEPolicySessionPrioritiesMapping, 
-                       _kNEProviderBundleIdentifierKey, _kNESafariDomainKey, _kNEWebKitNetworkingIdentifier, 
-                       _kNEWebKitNetworkingPath, _kNEWebKitNetworkingRequirement, 
-                       _kNEWebappDomainKey, _ne_options_set_debug_logging, _ne_session_agent_get_advisory, 
-                       _ne_session_agent_get_advisory_interface_index, _ne_session_always_on_vpn_configs_present, 
-                       _ne_session_app_vpn_configs_present, _ne_session_cancel, _ne_session_copy_app_data_from_flow_divert_socket, 
+                       _kIKEv2TrafficSelectorTypeMapping, _kNEAppPathKey, _kNEApplicationCreatedKey, 
+                       _kNEAuthMethodExtendedValue, _kNEAuthProtocolEAPValue, _kNEIPConfigLinkLocalValue, 
+                       _kNEIdentityCertificateKey, _kNENoDivertDNSKey, _kNEPolicyConditionsMapping, 
+                       _kNEPolicyResultsMapping, _kNEPolicyRouteRuleActionMapping, 
+                       _kNEPolicyRouteRuleTypeMapping, _kNEPolicySecondaryResultsMapping, 
+                       _kNEPolicySessionPrioritiesMapping, _kNEProviderBundleIdentifierKey, 
+                       _kNESafariDomainKey, _kNEWebKitNetworkingIdentifier, _kNEWebKitNetworkingPath, 
+                       _kNEWebKitNetworkingRequirement, _kNEWebappDomainKey, _ne_options_set_debug_logging, 
+                       _ne_session_agent_get_advisory, _ne_session_agent_get_advisory_interface_index, 
+                       _ne_session_always_on_vpn_configs_present, _ne_session_app_vpn_configs_present, 
+                       _ne_session_cancel, _ne_session_copy_app_data_from_flow_divert_socket, 
                        _ne_session_copy_app_data_from_flow_divert_token, _ne_session_copy_policy_match, 
                        _ne_session_copy_security_session_info, _ne_session_copy_socket_attributes, 
                        _ne_session_create, _ne_session_enable_on_demand, _ne_session_establish_ipc, 
@@ -502,9 +503,9 @@ exports:
                        _kNEActionDropValue, _kNEActionKey, _kNEActiveVPNKey, _kNEAllowAllCaptiveNetworkPluginsKey, 
                        _kNEAllowCaptiveWebSheetKey, _kNEAllowCellularDataKey, _kNEAllowRoamingCellularDataKey, 
                        _kNEAllowedCaptiveNetworkPluginsKey, _kNEAlwaysOnKey, _kNEAppIdentifierMatchesKey, 
-                       _kNEAppRules, _kNEApplicationCreatedKey, _kNEApplicationRulesKey, 
-                       _kNEAuthEAPPluginsKey, _kNEAuthMethodCertificateValue, _kNEAuthMethodNoneValue, 
-                       _kNEAuthMethodPasswordValue, _kNEAuthMethodPromptValue, _kNEAuthMethodSharedSecretValue, 
+                       _kNEAppRules, _kNEApplicationRulesKey, _kNEAuthEAPPluginsKey, 
+                       _kNEAuthMethodCertificateValue, _kNEAuthMethodNoneValue, _kNEAuthMethodPasswordValue, 
+                       _kNEAuthMethodPromptValue, _kNEAuthMethodSharedSecretValue, 
                        _kNEAuthNameKey, _kNEAuthPasswordKey, _kNEAuthPasswordPluginTypeKey, 
                        _kNEAuthProtocolEAPKRBValue, _kNEAuthProtocolEAPRSAValue, 
                        _kNEAuthProtocolEAPTLSValue, _kNEAuthProtocolKey, _kNEAuthProtocolTokenCard, 

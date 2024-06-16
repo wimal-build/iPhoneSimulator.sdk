@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: F2D1DB98-7D6B-3FBB-A813-A550A020D17F' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 8999D0DD-4CA7-3268-843E-B960F29578B2' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CryptoKit.framework/CryptoKit'
 exports:         

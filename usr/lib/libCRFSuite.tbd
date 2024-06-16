@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2A1D58B1-37E3-31F8-89E4-3D7380FEB623', 'x86_64: 6C94DBBF-5FA7-3B29-9764-D240248E122B' ]
+uuids:           [ 'i386: 2A1D58B1-37E3-31F8-89E4-3D7380FEB623', 'x86_64: 7CEB4E1C-EB4D-302E-A088-115188DBB53C' ]
 platform:        ios
 install-name:    '/usr/lib/libCRFSuite.dylib'
 exports:         

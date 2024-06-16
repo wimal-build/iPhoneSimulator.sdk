@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: CCA156DC-B3CA-3C28-9075-3440AA5BD73A' ]
+uuids:           [ 'i386: C4663CCF-691E-37A8-86D7-525D92853062', 'x86_64: 9DE11B67-E38B-3EF9-A353-7A3D6B862E1D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/JavaScriptCore.framework/JavaScriptCore'
-current-version: 609.1.20
+current-version: 609.2.9
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _WTFInstallReportBacktraceOnCrashHook, _WTFSetCrashHook, _WebCoreWebThreadRunSync, 
@@ -1737,10 +1737,11 @@ exports:
                        __ZN3WTF21MemoryPressureHandler28beginSimulatedMemoryPressureEv, 
                        __ZN3WTF21MemoryPressureHandler33setShouldUsePeriodicMemoryMonitorEb, 
                        __ZN3WTF21MemoryPressureHandler7installEv, __ZN3WTF21MemoryPressureHandler9singletonEv, 
-                       __ZN3WTF21URLByRemovingUserInfoEP5NSURL, __ZN3WTF21bootSessionUUIDStringEv, 
-                       __ZN3WTF21createCFURLFromBufferEPKcmPK7__CFURL, __ZN3WTF21processHasEntitlementEPKc, 
-                       __ZN3WTF22CrossThreadTaskHandler13postTaskReplyEONS_15CrossThreadTaskE, 
-                       __ZN3WTF22CrossThreadTaskHandler14suspendAndWaitEv, __ZN3WTF22CrossThreadTaskHandler6resumeEv, 
+                       __ZN3WTF21URLByRemovingUserInfoEP5NSURL, __ZN3WTF21applicationSDKVersionEv, 
+                       __ZN3WTF21bootSessionUUIDStringEv, __ZN3WTF21createCFURLFromBufferEPKcmPK7__CFURL, 
+                       __ZN3WTF21processHasEntitlementEPKc, __ZN3WTF22CrossThreadTaskHandler13postTaskReplyEONS_15CrossThreadTaskE, 
+                       __ZN3WTF22CrossThreadTaskHandler14suspendAndWaitEv, __ZN3WTF22CrossThreadTaskHandler21setCompletionCallbackEONS_8FunctionIFvvEEE, 
+                       __ZN3WTF22CrossThreadTaskHandler4killEv, __ZN3WTF22CrossThreadTaskHandler6resumeEv, 
                        __ZN3WTF22CrossThreadTaskHandler8postTaskEONS_15CrossThreadTaskE, 
                        __ZN3WTF22CrossThreadTaskHandlerC1EPKcNS0_25AutodrainedPoolForRunLoopE, 
                        __ZN3WTF22CrossThreadTaskHandlerC2EPKcNS0_25AutodrainedPoolForRunLoopE, 
@@ -1760,9 +1761,10 @@ exports:
                        __ZN3WTF24normalizeLineEndingsToLFEONS_6VectorIhLm0ENS_15CrashOnOverflowELm16ENS_10FastMallocEEE, 
                        __ZN3WTF24numberToFixedWidthStringEdjRNSt3__15arrayIcLm123EEE, 
                        __ZN3WTF24numberToFixedWidthStringEfjRNSt3__15arrayIcLm123EEE, 
-                       __ZN3WTF25addLanguageChangeObserverEPvPFvS0_E, __ZN3WTF25createCanonicalUUIDStringEv, 
-                       __ZN3WTF25deallocateSendRightSafelyEj, __ZN3WTF25fastDecommitAlignedMemoryEPvm, 
-                       __ZN3WTF25fastMallocDumpMallocStatsEv, __ZN3WTF26normalizeLineEndingsToCRLFEONS_6VectorIhLm0ENS_15CrashOnOverflowELm16ENS_10FastMallocEEE, 
+                       __ZN3WTF24setApplicationSDKVersionEj, __ZN3WTF25addLanguageChangeObserverEPvPFvS0_E, 
+                       __ZN3WTF25createCanonicalUUIDStringEv, __ZN3WTF25deallocateSendRightSafelyEj, 
+                       __ZN3WTF25fastDecommitAlignedMemoryEPvm, __ZN3WTF25fastMallocDumpMallocStatsEv, 
+                       __ZN3WTF26normalizeLineEndingsToCRLFEONS_6VectorIhLm0ENS_15CrashOnOverflowELm16ENS_10FastMallocEEE, 
                        __ZN3WTF27protocolHostAndPortAreEqualERKNS_3URLES2_, __ZN3WTF28displayNameForLanguageLocaleERKNS_6StringE, 
                        __ZN3WTF28encodeWithURLEscapeSequencesERKNS_6StringE, __ZN3WTF28normalizeLineEndingsToNativeEONS_6VectorIhLm0ENS_15CrashOnOverflowELm16ENS_10FastMallocEEE, 
                        __ZN3WTF28numberToFixedPrecisionStringEdjRNSt3__15arrayIcLm123EEEb, 

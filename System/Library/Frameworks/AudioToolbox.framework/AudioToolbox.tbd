@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 58B2D18A-CA77-347D-BE24-C9A3E1C748F9', 'x86_64: 2D4D631E-F44A-3AA9-B0B2-1846872373F8' ]
+uuids:           [ 'i386: 58B2D18A-CA77-347D-BE24-C9A3E1C748F9', 'x86_64: 3A7A1004-84E3-33A1-B727-2CB7C4FD04F0' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox'
 current-version: 1000
@@ -256,7 +256,7 @@ exports:
                        AVHapticPlayerParameterCurveControlPoint, AVHapticSequence ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: A11F7097-DCFC-3034-A59B-49CCF7219990' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 199848B8-74ED-3135-B453-2E25289EFCC1' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/AudioToolboxCore.framework/AudioToolboxCore'
 exports:         

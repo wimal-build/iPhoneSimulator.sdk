@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1B902B83-989C-3FA0-A587-476FCD5F3AF2', 'x86_64: 84D474E7-9309-344C-8E84-6290210179DA' ]
+uuids:           [ 'i386: 1B902B83-989C-3FA0-A587-476FCD5F3AF2', 'x86_64: E66A3BC5-9AEA-3905-A18F-ED5BE629EB70' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreMedia.framework/CoreMedia'
 exports:         

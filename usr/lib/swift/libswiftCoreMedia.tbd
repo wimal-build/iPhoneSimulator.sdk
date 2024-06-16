@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A30D840E-8ABF-3427-B654-D8BA77B053F8', 'x86_64: 837872D5-D53D-3A51-A8CE-B4163BFDD0F5' ]
+uuids:           [ 'i386: A30D840E-8ABF-3427-B654-D8BA77B053F8', 'x86_64: 89F0A437-6BAC-39BD-AF02-96F536E497CA' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCoreMedia.dylib'
 current-version: 0

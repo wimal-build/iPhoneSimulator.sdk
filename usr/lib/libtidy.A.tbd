@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F3D3A459-8CF0-31E4-B7C4-3B72D20171BB', 'x86_64: EA2F1B52-C747-3000-A1EF-0AB47EBE773E' ]
+uuids:           [ 'i386: F3D3A459-8CF0-31E4-B7C4-3B72D20171BB', 'x86_64: A8CF9CB4-F76D-347A-8F30-EAC9AF50583A' ]
 platform:        ios
 install-name:    '/usr/lib/libtidy.A.dylib'
 exports:         

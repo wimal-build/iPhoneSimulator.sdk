@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9D64E5B3-2A59-366A-8D46-E0378CA67666', 'x86_64: 15EAE96B-907B-3407-88C6-EF5039E7AFC5' ]
+uuids:           [ 'i386: 9D64E5B3-2A59-366A-8D46-E0378CA67666', 'x86_64: C0F9B3C0-79FE-3806-8128-A635BCF1B06D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/HomeKit.framework/HomeKit'
-current-version: 621.5.29
+current-version: 621.6.6
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _HMBridgePutAccessoryInAssociateMode, _HMBridgePutAccessoryInDisassociateMode, 
@@ -177,13 +177,13 @@ exports:
                        _HMBulletinContextServiceIDKey, _HMBulletinContextTriggerIDKey, 
                        _HMBulletinContextTriggerNameKey, _HMCameraAccessModeAsString, 
                        _HMCameraClipEncryptedDataContextInitializationVectorLength, 
-                       _HMCameraClipEncryptedDataContextTagLength, _HMCameraClipHLSPlaylistEncryptionKeyURLString, 
-                       _HMCameraClipHTTPHeaderNameStreamingAssetVersion, _HMCameraClipManagerAssetContextExpirationBuffer, 
-                       _HMCameraClipManagerDeleteAllClipsMessage, _HMCameraClipManagerDeleteClipMessage, 
-                       _HMCameraClipManagerDidChangeClipsMessage, _HMCameraClipManagerDidFetchClipsMessage, 
-                       _HMCameraClipManagerFetchClipForSignificantEventMessage, _HMCameraClipManagerFetchClipMessage, 
-                       _HMCameraClipManagerFetchClipsMessage, _HMCameraClipManagerFetchCountOfClipsMessage, 
-                       _HMCameraClipManagerFetchPosterFramesAssetContextMessage, 
+                       _HMCameraClipEncryptedDataContextTagLength, _HMCameraClipExpirationTimeInterval, 
+                       _HMCameraClipHLSPlaylistEncryptionKeyURLString, _HMCameraClipHTTPHeaderNameStreamingAssetVersion, 
+                       _HMCameraClipManagerAssetContextExpirationBuffer, _HMCameraClipManagerDeleteAllClipsMessage, 
+                       _HMCameraClipManagerDeleteClipMessage, _HMCameraClipManagerDidChangeClipsMessage, 
+                       _HMCameraClipManagerDidFetchClipsMessage, _HMCameraClipManagerFetchClipForSignificantEventMessage, 
+                       _HMCameraClipManagerFetchClipMessage, _HMCameraClipManagerFetchClipsMessage, 
+                       _HMCameraClipManagerFetchCountOfClipsMessage, _HMCameraClipManagerFetchPosterFramesAssetContextMessage, 
                        _HMCameraClipManagerFetchVideoSegmentsAssetContextMessage, 
                        _HMCameraClipManagerImportClipsMessage, _HMCameraClipManagerMessageKeyAssetContext, 
                        _HMCameraClipManagerMessageKeyClip, _HMCameraClipManagerMessageKeyClipImportData, 

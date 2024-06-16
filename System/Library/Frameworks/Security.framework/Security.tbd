@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: 83A95E78-412E-314A-BD4B-A1C5165FF736' ]
+uuids:           [ 'i386: 7AEAE72C-98CB-36FC-A282-A7EF44A906F2', 'x86_64: B42FEE42-AA30-3825-84B9-53B35A1F8B25' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Security.framework/Security'
-current-version: 59306.102.1
+current-version: 59306.120.7
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _DERDecodeItem, _DEROidCompare, _SOSAccountPeerGotInSync, 

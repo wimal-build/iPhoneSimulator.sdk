@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: 268A5B1D-FC93-320A-9EE2-22087AB3112D' ]
+uuids:           [ 'i386: 689311C2-0BA4-34AA-B4EC-AA46D04D3ED2', 'x86_64: 4407A7E2-91A1-329D-A5B3-5099B0B11B0D' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CoreMotion.framework/CoreMotion'
-current-version: 2394.0.25
+current-version: 2394.0.31
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _CMCaptureModeData, _CMWorkoutKeyEventDate, _CMWorkoutKeyLocation, 
@@ -34,11 +34,11 @@ exports:
                        _CLInternalPerformMigration, _CLMotionSyncStoreLastUpdate, 
                        _CLPassKitNotifyPayment, _CLPingDaemon, _CLSetLocationDefault, 
                        _CLSetMapMatchingRouteHint, _CLSetRouteHintsForMapMatching, 
-                       _CLShouldDisplayStatusBarIconChangedNotification, _CLStartStopAdvertisingBeacon, 
-                       _CLTechStatusChangedNotification, _CLWeatherNotifyForecast, 
-                       _CMActivityData, _CMAnomalyDetectorEnabled, _CMAnomalyDetectorEvent, 
-                       _CMAnomalyEventType, _CMAnomalySensorTestModeEnabled, _CMAuthorized, 
-                       _CMAvailable, _CMCameraVcmActuatorId, _CMCompassCalibrationData, 
+                       _CLShouldDisplayEEDUI, _CLShouldDisplayStatusBarIconChangedNotification, 
+                       _CLStartStopAdvertisingBeacon, _CLTechStatusChangedNotification, 
+                       _CLWeatherNotifyForecast, _CMActivityData, _CMAnomalyDetectorEnabled, 
+                       _CMAnomalyDetectorEvent, _CMAnomalyEventType, _CMAnomalySensorTestModeEnabled, 
+                       _CMAuthorized, _CMAvailable, _CMCameraVcmActuatorId, _CMCompassCalibrationData, 
                        _CMDatabaseType, _CMDeviceHasOriginalBackCamera, _CMDyskinesiaResultsKey, 
                        _CMErrorDomain, _CMErrorMessage, _CMExerciseMinuteDataArray, 
                        _CMExerciseMinuteRecordId, _CMExerciseMinuteSourceId, _CMExerciseMinuteStartDate, 

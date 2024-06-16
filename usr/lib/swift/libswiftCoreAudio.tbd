@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0C31951E-1A0E-3120-B4F7-D9C20BEE9696', 'x86_64: 8E02FEF0-2D6C-367E-98EA-B0BACAA76BDC' ]
+uuids:           [ 'i386: 0C31951E-1A0E-3120-B4F7-D9C20BEE9696', 'x86_64: 1DE78DBF-A4C7-3176-9D2E-A11FF45C4301' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftCoreAudio.dylib'
 current-version: 0

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: BA42BF36-F511-303D-9549-724EE2A6C62C' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 2DF9B3A0-2479-34FC-87A4-433FD356F594' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftMetricKit.dylib'
 current-version: 0

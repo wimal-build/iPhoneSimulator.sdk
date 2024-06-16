@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: 629C1A85-89A6-387E-95FD-786CAEF08AA8' ]
+uuids:           [ 'i386: 1C314A18-896D-3832-9B2B-872510E0C384', 'x86_64: E483FB26-0EEB-39AA-BEEE-CCADCAB27A22' ]
 platform:        ios
 install-name:    '/usr/lib/libAccessibility.dylib'
 exports:         
@@ -122,8 +122,9 @@ exports:
                        __AXSHomeClickSpeed, __AXSInDataMigrationMode, __AXSInPerformanceTestMode, 
                        __AXSInUnitTestMode, __AXSIncreaseButtonLegibility, __AXSInvertColorsDisplaySetEnabled, 
                        __AXSInvertColorsEnabled, __AXSInvertColorsMarkInvertColorsPreloadComplete, 
-                       __AXSInvertColorsSetEnabled, __AXSKeyRepeatDelay, __AXSKeyRepeatEnabled, 
-                       __AXSKeyRepeatInterval, __AXSLargeTextUsesExtendedRange, __AXSLeftRightAudioBalance, 
+                       __AXSInvertColorsReloadPreferenceImmediately, __AXSInvertColorsSetEnabled, 
+                       __AXSKeyRepeatDelay, __AXSKeyRepeatEnabled, __AXSKeyRepeatInterval, 
+                       __AXSLargeTextUsesExtendedRange, __AXSLeftRightAudioBalance, 
                        __AXSLetterFeedbackEnabled, __AXSLocalizationCaptionMode, 
                        __AXSLockClickDownPressDurationScaleFactor, __AXSLockClickVarianceScaleFactor, 
                        __AXSLogValidationErrors, __AXSLowercaseKeyboardDisplayEnabled, 

@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: EF80E294-57CE-3734-9FD1-9E1207166E10' ]
+uuids:           [ 'i386: 2DBB7A14-B28A-3A81-9DFF-BED4CE31C670', 'x86_64: DC88753D-FC55-32F6-98DD-96CBF61210D0' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/MediaToolbox.framework/MediaToolbox'
 exports:         

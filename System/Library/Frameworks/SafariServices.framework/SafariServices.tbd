@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: 3A06A34F-D1EA-3168-81E8-DC9BC51EBA7F' ]
+uuids:           [ 'i386: 6631C17E-EAD4-3262-95FD-BA9B0B8755E6', 'x86_64: D926A803-0262-3827-B165-32070F107D16' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SafariServices.framework/SafariServices'
 exports:         
@@ -82,7 +82,7 @@ exports:
                        __SFPrivateBrowsingDefaultsKey, __SFReaderConfigurationDefaultsKey, 
                        __SFReaderExtractorErrorDomain, __SFReaderPageGroupIdentifier, 
                        __SFReaderURLScheme, __SFReadingListFetcherScheduleBackgroundTasksImmediatelyKey, 
-                       __SFReadingListUserActivityType, __SFRequestDesktopSiteActivitySourceJavaScriptString, 
+                       __SFReadingListUserActivityType, __SFRectIsInvalid, __SFRequestDesktopSiteActivitySourceJavaScriptString, 
                        __SFRequestDesktopSitePreferenceDidChangeDistributedNotification, 
                        __SFResizableImageWithContinuousCurveCorners, __SFRoundEdgeInsetsToPixels, 
                        __SFRoundFloatToPixels, __SFRoundPointToPixels, __SFRoundRectToPixels, 

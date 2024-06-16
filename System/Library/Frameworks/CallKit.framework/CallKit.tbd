@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 0D760A25-CE1B-370A-A302-8D0435E99427', 'x86_64: 24FA2A54-FE9E-335A-892E-2A0D962B28B1' ]
+uuids:           [ 'i386: 0D760A25-CE1B-370A-A302-8D0435E99427', 'x86_64: 45959C2D-8C06-326D-9171-88836980AECC' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/CallKit.framework/CallKit'
 exports:         

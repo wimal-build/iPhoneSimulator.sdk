@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 89EBB8AE-C31D-3601-843A-C42F41AA59A9' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 4ACAB2A6-A185-3E71-9328-A6D39F2DB427' ]
 platform:        ios
 install-name:    '/usr/lib/libobjc-trampolines.dylib'
 current-version: 228

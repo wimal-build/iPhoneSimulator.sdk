@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 4F59D247-B5D0-32BC-8369-349064587671', 'x86_64: 9E717149-615F-316A-B3A3-1835270722D2' ]
+uuids:           [ 'i386: 4F59D247-B5D0-32BC-8369-349064587671', 'x86_64: 1AA013F8-B4AA-31BA-A47E-A51959E0A748' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration'
-current-version: 1061.100.6
+current-version: 1061.120.2
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _SCDynamicStoreCopyLocation, _SCDynamicStoreNotifySignal, 

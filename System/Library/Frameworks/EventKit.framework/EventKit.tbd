@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 5C5B4316-72FB-3B98-95DB-695623E75B0A', 'x86_64: 08F08577-A121-388F-8A15-DDE51C664AC6' ]
+uuids:           [ 'i386: 5C5B4316-72FB-3B98-95DB-695623E75B0A', 'x86_64: EFB1C454-3520-3DD5-BFDC-CFB46CDFB093' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/EventKit.framework/EventKit'
 current-version: 100

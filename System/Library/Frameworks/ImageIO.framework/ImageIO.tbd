@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7F350477-EE83-3076-9D8B-52746E326045', 'x86_64: E7011DEE-744A-3552-A487-2C6F74FC5724' ]
+uuids:           [ 'i386: 7F350477-EE83-3076-9D8B-52746E326045', 'x86_64: E7C2CDA5-563B-3273-87F2-AB41EACF96C1' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/ImageIO.framework/ImageIO'
 current-version: 0

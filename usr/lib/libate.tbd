@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 229BEE3E-ACB9-3B3D-9E45-A98DC830A2FD' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 9C49EAD4-67BF-3D3A-9F76-99208EB3396A' ]
 platform:        ios
 install-name:    '/usr/lib/libate.dylib'
 current-version: 3.0.1

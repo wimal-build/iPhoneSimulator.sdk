@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: B8BCEFF8-DA2A-36B1-90C6-5175411ED9BF' ]
+uuids:           [ 'i386: AC43A95D-A238-3B76-A7B2-F6842B10FE3B', 'x86_64: 37167C15-02BA-348C-9C3D-0988440FA542' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/GameKit.framework/GameKit'
 current-version: 665.26
@@ -33,7 +33,7 @@ exports:
                        _kGameCenterGameCenterVersionString ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: 9A675A2B-19C9-3AB4-85C3-2DA74702C1E6' ]
+uuids:           [ 'i386: 7DC1BC15-715E-3597-AE82-60D80289C5F2', 'x86_64: 6AA59360-731B-3EF4-A98F-65E4E5EE88C3' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/GameCenterFoundation.framework/GameCenterFoundation'
 exports:         
@@ -396,7 +396,7 @@ exports:
                        _GKStateMachine._validTransitions ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: 5EFB8033-8EE0-3C4E-A9AE-7543C0BEB12D' ]
+uuids:           [ 'i386: 01BD7301-E836-39F7-9CCD-0F0E2793580D', 'x86_64: 644E57F0-D4EF-3DCB-9AFC-7A39018CD1BF' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI'
 exports:         
@@ -592,7 +592,7 @@ exports:
                        GKUITheme._resourceCache ]
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: C324C143-3CBA-3191-8E35-45842E97DB93' ]
+uuids:           [ 'i386: CE980D4B-ADBE-3A5D-96C8-AA221ADE6B67', 'x86_64: B1BD0070-E9FC-3DC9-9596-A676CA496E07' ]
 platform:        ios
 install-name:    '/System/Library/PrivateFrameworks/LegacyGameKit.framework/LegacyGameKit'
 exports:         

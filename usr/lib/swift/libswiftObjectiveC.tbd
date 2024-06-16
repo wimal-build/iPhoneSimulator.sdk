@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22', 'x86_64: D6CA18EE-3517-3DF0-A14F-FCB826BF5CFE' ]
+uuids:           [ 'i386: 9787D26C-6CD6-30A9-B5A1-E9C7C42DDB22', 'x86_64: 28E2F399-9626-3B03-A30E-CA1EC02B10AC' ]
 platform:        ios
 install-name:    '/usr/lib/swift/libswiftObjectiveC.dylib'
 current-version: 0

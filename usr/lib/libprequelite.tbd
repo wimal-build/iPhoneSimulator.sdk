@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 08B6349B-6DA0-3CCE-BF7F-199D91D1F71A', 'x86_64: 4DEE08B9-DA4D-3EF5-A272-51BE1C1F5BA3' ]
+uuids:           [ 'i386: 08B6349B-6DA0-3CCE-BF7F-199D91D1F71A', 'x86_64: 165CA435-B83E-33BC-90DD-E8B68AB486F4' ]
 platform:        ios
 install-name:    '/usr/lib/libprequelite.dylib'
 current-version: 102

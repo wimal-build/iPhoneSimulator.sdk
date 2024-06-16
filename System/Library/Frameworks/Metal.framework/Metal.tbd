@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: F2F63001-9170-37A5-9943-EAFBB9F84426', 'x86_64: 2646A3F5-1D08-32AB-BCD8-7C8AD1F11661' ]
+uuids:           [ 'i386: F2F63001-9170-37A5-9943-EAFBB9F84426', 'x86_64: 2D94A4BD-5B2B-311D-B698-40B0D9B86E87' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Metal.framework/Metal'
 current-version: 213.5.3

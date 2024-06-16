@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: 7CC58491-E375-3533-BE87-8725E7E8B2D3' ]
+uuids:           [ 'i386: A43ED024-8A0E-3D37-AFFE-9E0740771C3E', 'x86_64: 762783A0-5853-3B01-9DF8-E4DD633E1C9A' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/QuartzCore.framework/QuartzCore'
 current-version: 1.11
@@ -86,8 +86,8 @@ exports:
                        _CARenderImageHasAlpha, _CARenderImageIsNative, _CARenderImageNew, 
                        _CARenderImageNewMipmapped, _CARenderImageNewWithCGImage, 
                        _CARenderImageRowbytes, _CARenderImageSetShouldTile, _CARenderLayerGetContextId, 
-                       _CARenderMTLCompileShader, _CARenderMTLGetState, _CARenderMTLSetState, 
-                       _CARenderNotificationAddObserver, _CARenderNotificationPostNotification, 
+                       _CARenderMTLCompileShader, _CARenderMTLGetState, _CARenderMTLLoadPipelines, 
+                       _CARenderMTLSetState, _CARenderNotificationAddObserver, _CARenderNotificationPostNotification, 
                        _CARenderNotificationRemoveEveryObserver, _CARenderNotificationRemoveObserver, 
                        _CARenderOGLCollect, _CARenderOGLDestroy, _CARenderOGLFinish, 
                        _CARenderOGLFlush, _CARenderOGLGetColorSpace, _CARenderOGLGetFeatureFlags, 

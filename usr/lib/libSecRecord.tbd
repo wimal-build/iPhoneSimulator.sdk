@@ -1,6 +1,6 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: 3728938C-E8AC-34D9-8317-6C8E7017DABC' ]
+uuids:           [ 'i386: 00000000-0000-0000-0000-000000000000', 'x86_64: EC014627-337F-3B9F-8922-CE6F03CBEF94' ]
 platform:        ios
 install-name:    '/usr/lib/libSecRecord.dylib'
 current-version: 0

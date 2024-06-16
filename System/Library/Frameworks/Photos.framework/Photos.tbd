@@ -1,9 +1,9 @@
 --- !tapi-tbd-v3
 archs:           [ i386, x86_64 ]
-uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: CCAC065A-37B6-37B9-996E-77D01DAFCDE7' ]
+uuids:           [ 'i386: 985BD824-146F-3611-B2B3-8D47F3E3C97E', 'x86_64: 4DA6A0FC-E7FC-3516-9E97-03B3E4A72777' ]
 platform:        ios
 install-name:    '/System/Library/Frameworks/Photos.framework/Photos'
-current-version: 3642.30.210
+current-version: 3652.30.210
 exports:         
   - archs:           [ i386 ]
     symbols:         [ _PHAdjustmentDataOpaqueFormatIdentifier, _PHAssertPredicateContainsNoManagedObjects, 
